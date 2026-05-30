@@ -23,8 +23,17 @@ const PORT = process.env.PORT || 4000;
 
 // ─── Security ────────────────────────────────────────────────
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
+
+// CLIENT_URL may be a comma-separated list of allowed origins
+// (e.g. "https://saus-admin.vercel.app,http://localhost:3100")
+const allowedOrigins = (process.env.CLIENT_URL || 'http://localhost:3000,http://localhost:3100')
+  .split(',').map(s => s.trim()).filter(Boolean);
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: (origin, cb) => {
+    if (!origin) return cb(null, true);            // curl, health checks, server-to-server
+    if (allowedOrigins.includes(origin)) return cb(null, true);
+    return cb(new Error('Not allowed by CORS: ' + origin));
+  },
   credentials: true,
 }));
 

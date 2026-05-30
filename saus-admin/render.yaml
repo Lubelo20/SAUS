@@ -1,0 +1,21 @@
+# Render blueprint for the SAUS CMS backend API.
+# In Render: New → Blueprint → connect the Lubelo20/SAUS repo → it reads this file.
+# You will be prompted to fill the env vars marked `sync: false`.
+services:
+  - type: web
+    name: saus-admin-api
+    runtime: node
+    plan: free
+    rootDir: saus-admin/server
+    buildCommand: npm install && npm run build && npx prisma db push && npm run db:seed
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL          # from Neon / Supabase (Postgres connection string)
+        sync: false
+      - key: JWT_SECRET            # any long random string
+        sync: false
+      - key: CLIENT_URL            # the admin frontend URL, e.g. https://saus-admin.vercel.app
+        sync: false
