@@ -1,0 +1,21 @@
+{
+  "abbr": "UP",
+  "general": {
+    "phone": "+27 12 420 3111",
+    "email": "csc@up.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 12 420 3111",
+    "email": "csc@up.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 12 420 4555",
+    "email": "financialaid@up.ac.za"
+  },
+  "address": "University of Pretoria, Private Bag X20, Hatfield, Pretoria, 0028",
+  "social": {
+    "facebook": "https://www.facebook.com/universityofpretoria",
+    "twitter": "https://twitter.com/UPTuks",
+    "instagram": "https://www.instagram.com/universityofpretoria"
+  }
+}

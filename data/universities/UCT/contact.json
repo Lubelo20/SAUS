@@ -1,0 +1,21 @@
+{
+  "abbr": "UCT",
+  "general": {
+    "phone": "+27 21 650 9111",
+    "email": "registrar@uct.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 21 650 2128",
+    "email": "ugadmissions@uct.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 21 650 3545",
+    "email": "financial.aid@uct.ac.za"
+  },
+  "address": "University of Cape Town, Private Bag X3, Rondebosch, Cape Town, 7701",
+  "social": {
+    "facebook": "https://www.facebook.com/UCT.ac.za",
+    "twitter": "https://twitter.com/UCT_news",
+    "instagram": "https://www.instagram.com/uct_official"
+  }
+}

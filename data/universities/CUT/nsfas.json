@@ -1,0 +1,38 @@
+{
+  "abbr": "CUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@cut.ac.za",
+  "phone": "+27 51 507 4011",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "CUT Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 26+; Free State students preferred",
+      "url": "https://www.cut.ac.za/financial-aid"
+    },
+    {
+      "name": "CUT Merit Bursary",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 22+; maintained academic standing per year",
+      "url": "https://www.cut.ac.za/financial-aid"
+    },
+    {
+      "name": "CUT Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "National or provincial sport representation",
+      "url": "https://www.cut.ac.za/financial-aid"
+    },
+    {
+      "name": "CUT Engineering Bursary",
+      "type": "faculty",
+      "value": "Partial tuition and equipment",
+      "criteria": "Engineering & IT students; APS 22+; Welkom or Bloemfontein campus",
+      "url": "https://www.cut.ac.za/financial-aid"
+    }
+  ]
+}

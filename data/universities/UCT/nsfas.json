@@ -1,0 +1,38 @@
+{
+  "abbr": "UCT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financial.aid@uct.ac.za",
+  "phone": "+27 21 650 3545",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UCT Academic Excellence Scholarship",
+      "type": "merit",
+      "value": "Full tuition + R50,000 stipend/yr",
+      "criteria": "Matric aggregate 90%+ or APS 44+; South African citizens",
+      "url": "https://www.uct.ac.za/apply/fees-funding/scholarships"
+    },
+    {
+      "name": "UCT Vice-Chancellor's Scholarship",
+      "type": "merit",
+      "value": "Full tuition + accommodation",
+      "criteria": "Exceptional academic and leadership record; top 0.1% matric cohort",
+      "url": "https://www.uct.ac.za/apply/fees-funding/scholarships"
+    },
+    {
+      "name": "UCT Sports Excellence Award",
+      "type": "sports",
+      "value": "Up to 50% tuition reduction",
+      "criteria": "National or provincial colours; must maintain academic standing",
+      "url": "https://www.uct.ac.za/apply/fees-funding/scholarships"
+    },
+    {
+      "name": "UCT Equity Scholarship",
+      "type": "need-based",
+      "value": "Partial tuition support",
+      "criteria": "Historically disadvantaged South African students with financial need",
+      "url": "https://www.uct.ac.za/apply/fees-funding/scholarships"
+    }
+  ]
+}

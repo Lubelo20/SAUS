@@ -1,0 +1,21 @@
+{
+  "abbr": "CPUT",
+  "general": {
+    "phone": "+27 21 959 6767",
+    "email": "info@cput.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 21 959 6767",
+    "email": "admissions@cput.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 21 959 6040",
+    "email": "financialaid@cput.ac.za"
+  },
+  "address": "CPUT, PO Box 652, Cape Town, 8000",
+  "social": {
+    "facebook": "https://www.facebook.com/CPUTofficial",
+    "twitter": "https://twitter.com/CPUT",
+    "instagram": "https://www.instagram.com/cput_official"
+  }
+}

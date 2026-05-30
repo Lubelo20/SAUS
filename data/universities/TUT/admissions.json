@@ -1,0 +1,25 @@
+{
+  "abbr": "TUT",
+  "applicationPeriod": {
+    "opens": "3 April 2026",
+    "closes": "31 July 2026",
+    "intakeYear": 2027
+  },
+  "applicationFee": 100,
+  "feeWaiver": false,
+  "minimumAPS": 18,
+  "apsNote": "Ga-Rankuwa and eMalahleni campuses may have separate intakes.",
+  "applyUrl": "https://www.tut.ac.za/apply",
+  "requiredDocuments": [
+    "Certified copy of South African ID or valid passport",
+    "Certified copy of matric certificate or statement of results",
+    "Grade 11 and Grade 12 school report",
+    "Proof of residence (not older than 3 months)",
+    "Completed application form"
+  ],
+  "internationalStudents": {
+    "accepted": true,
+    "note": "International applicants require SAQA evaluation of qualifications."
+  },
+  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+}

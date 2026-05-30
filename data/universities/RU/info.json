@@ -1,0 +1,33 @@
+{
+  "abbr": "RU",
+  "name": "Rhodes University",
+  "type": "Traditional University",
+  "established": 1904,
+  "students": 8000,
+  "aps": "28–36+",
+  "location": {
+    "city": "Makhanda",
+    "province": "Eastern Cape"
+  },
+  "website": "https://www.ru.ac.za",
+  "apply": "https://applications.ru.ac.za/",
+  "prospectus": "https://www.ru.ac.za/institutionalplanning/registrar/applications/",
+  "logo": "ru.png",
+  "description": "A small, selective university known for high academic standards and vibrant student life in Makhanda. Consistently among the top SA universities with outstanding journalism, law and science schools.",
+  "faculties": [
+    "Commerce",
+    "Education",
+    "Humanities",
+    "Law",
+    "Pharmacy",
+    "Science"
+  ],
+  "motto": "Where Leaders Learn",
+  "languages": [
+    "English"
+  ],
+  "campuses": [
+    "Main Campus (Makhanda)"
+  ],
+  "nsfasAccredited": true
+}

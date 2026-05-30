@@ -1,0 +1,38 @@
+{
+  "abbr": "SU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "finaid@sun.ac.za",
+  "phone": "+27 21 808 4982",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "SU Rector's Award",
+      "type": "merit",
+      "value": "Full tuition + accommodation",
+      "criteria": "Exceptional matric (90%+); subject requirements per faculty",
+      "url": "https://www.sun.ac.za/english/student-affairs/Pages/Bursaries.aspx"
+    },
+    {
+      "name": "SU Merit Bursary",
+      "type": "merit",
+      "value": "25%–75% tuition reduction",
+      "criteria": "APS 38+; strong academic record in relevant subjects",
+      "url": "https://www.sun.ac.za/english/student-affairs/Pages/Bursaries.aspx"
+    },
+    {
+      "name": "SU Sport Bursary",
+      "type": "sports",
+      "value": "Up to 40% tuition reduction",
+      "criteria": "National colours or Maties team representative",
+      "url": "https://www.sun.ac.za/english/student-affairs/Pages/Bursaries.aspx"
+    },
+    {
+      "name": "SU Equity Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and living costs",
+      "criteria": "Black African, Coloured or Indian students with financial need",
+      "url": "https://www.sun.ac.za/english/student-affairs/Pages/Bursaries.aspx"
+    }
+  ]
+}

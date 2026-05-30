@@ -1,0 +1,39 @@
+{
+  "abbr": "UJ",
+  "name": "University of Johannesburg",
+  "type": "Comprehensive University",
+  "established": 2005,
+  "students": 52000,
+  "aps": "24–38+",
+  "location": {
+    "city": "Johannesburg",
+    "province": "Gauteng"
+  },
+  "website": "https://www.uj.ac.za",
+  "apply": "https://www.uj.ac.za/apply-to-uj/",
+  "prospectus": "https://www.uj.ac.za/apply-to-uj/applications/undergraduate-admissions/prospectus/",
+  "logo": "uj.png",
+  "description": "One of South Africa's largest urban universities with four campuses across Johannesburg. Known for diverse offerings spanning arts, science, engineering and business with strong industry connections.",
+  "faculties": [
+    "Art, Design & Architecture",
+    "Education",
+    "Engineering & Built Env.",
+    "Health Sciences",
+    "Humanities",
+    "Law",
+    "Management",
+    "Science"
+  ],
+  "motto": "Transformation through Knowledge",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Auckland Park Kingsway",
+    "Auckland Park Bunting Road",
+    "Doornfontein",
+    "Soweto"
+  ],
+  "nsfasAccredited": true
+}

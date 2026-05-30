@@ -1,0 +1,21 @@
+{
+  "abbr": "SMU",
+  "general": {
+    "phone": "+27 12 521 4444",
+    "email": "admissions@smu.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 12 521 4444",
+    "email": "admissions@smu.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 12 521 4500",
+    "email": "financialaid@smu.ac.za"
+  },
+  "address": "Sefako Makgatho Health Sciences University, PO Box 218, Medunsa, Pretoria, 0204",
+  "social": {
+    "facebook": "https://www.facebook.com/SMUMedunsa",
+    "twitter": "https://twitter.com/SMUMedunsa",
+    "instagram": "https://www.instagram.com/smu_medunsa"
+  }
+}

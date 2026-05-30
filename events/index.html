@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Events — South African Union of Students</title>
+<meta name="description" content="Official SAUS events calendar — congresses, summits, town halls and campus activations."/>
+<meta property="og:title" content="Events — South African Union of Students (SAUS)"/>
+<meta name="theme-color" content="#0A1628"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --navy:#0A1628;--navy-mid:#122040;--navy-light:#1E3160;
+  --green:#00692F;--green-lt:#00873E;--red:#A8200D;--gold:#C9A227;
+  --white:#FFFFFF;--cream:#F7F6F2;--stone:#EEECEA;
+  --border:#D0CEC8;--border-dk:#B8B5AE;
+  --text:#1A1918;--text-mid:#4A4845;--text-lt:#7A7874;
+  --ff-serif:'EB Garamond',Georgia,'Times New Roman',serif;
+  --ff-sans:'Source Sans 3','Segoe UI',sans-serif;
+  --ff-mono:'Source Code Pro',monospace;
+  --max:1200px;--topbar-h:38px;--header-h:88px;--nav-h:52px;
+  --total-top:178px;--ease:cubic-bezier(.4,0,.2,1);
+}
+body{font-family:var(--ff-sans);background:var(--cream);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:var(--ff-sans)}
+p{margin-bottom:1rem}
+p:last-child{margin-bottom:0}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--stone)}::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
+#topbar{position:fixed;top:0;left:0;right:0;z-index:1100;height:var(--topbar-h);background:var(--navy);border-bottom:2px solid var(--gold);display:flex;align-items:center;}
+.topbar-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.topbar-left{display:flex;align-items:center;gap:0;font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.02em;}
+.topbar-left .sep{display:inline-block;width:1px;height:14px;background:rgba(255,255,255,.2);margin:0 14px;}
+.topbar-flag{display:inline-flex;gap:2px;align-items:center;margin-right:14px;}
+.flag-seg{width:18px;height:12px;border-radius:1px}
+.topbar-right{display:flex;align-items:center;gap:20px;}
+.topbar-right a{font-size:12px;color:rgba(255,255,255,.65);display:flex;align-items:center;gap:6px;transition:color .2s;text-decoration:none;}
+.topbar-right a:hover{color:var(--gold)}
+.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
+#header{position:fixed;top:var(--topbar-h);left:0;right:0;z-index:1090;height:var(--header-h);background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;}
+.header-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;gap:24px;}
+.header-seal{width:64px;height:64px;flex-shrink:0;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:3px solid var(--gold);}
+.header-seal-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
+.seal-top-stripe{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 33%,var(--green) 33% 67%,var(--red) 67%);}
+.seal-globe{font-size:24px;line-height:1;position:relative;z-index:1;}
+.seal-text{font-family:var(--ff-mono);font-size:6px;color:var(--gold);letter-spacing:.08em;text-align:center;font-weight:500;position:relative;z-index:1;text-transform:uppercase;}
+.seal-stars{display:flex;gap:2px;position:relative;z-index:1;}
+.seal-stars span{font-size:5px;color:var(--gold)}
+.header-ident{display:flex;flex-direction:column}
+.header-ident-main{font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.15;letter-spacing:.01em;}
+.header-ident-main em{font-style:normal;color:var(--green)}
+.header-ident-sub{font-size:12px;color:var(--text-mid);letter-spacing:.04em;font-weight:400;margin-top:2px;}
+.header-divider{width:1px;height:48px;background:var(--border);margin:0 8px;flex-shrink:0;}
+.header-established{display:flex;flex-direction:column;font-family:var(--ff-mono);font-size:10px;color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;line-height:1.8;}
+.header-established strong{font-family:var(--ff-serif);font-size:20px;color:var(--navy);letter-spacing:.02em;font-weight:600;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.header-contact-btn{display:flex;align-items:center;padding:9px 20px;border-radius:3px;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;border:none;transition:background .2s;letter-spacing:.02em;}
+.header-contact-btn:hover{background:var(--navy-light);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:1px;transition:.3s}
+#navbar{position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1080;height:var(--nav-h);background:var(--navy-mid);border-bottom:3px solid var(--green);}
+.nav-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;height:100%;display:flex;align-items:center;}
+.nav-links{display:flex;height:100%}
+.nav-item{height:100%;display:flex;align-items:center;padding:0 16px;position:relative;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:.03em;text-transform:uppercase;border:none;background:none;font-family:var(--ff-sans);transition:color .2s,background .2s;white-space:nowrap;text-decoration:none;}
+.nav-item::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .25s var(--ease);}
+.nav-item:hover{color:var(--white);background:rgba(255,255,255,.05);text-decoration:none}
+.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
+.nav-item.active{color:var(--white)}
+.nav-ref{margin-left:auto;font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
+.mobile-nav{display:none;position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1079;background:var(--navy);border-bottom:2px solid var(--green);flex-direction:column;padding:8px 0;}
+.mobile-nav.open{display:flex}
+.mobile-nav-item{padding:14px 32px;font-size:14px;font-weight:600;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.04em;border:none;background:none;font-family:var(--ff-sans);text-align:left;border-left:3px solid transparent;transition:all .2s;text-decoration:none;}
+.mobile-nav-item:hover,.mobile-nav-item.active{color:var(--white);background:rgba(255,255,255,.05);border-left-color:var(--gold);text-decoration:none;}
+main{min-height:100vh;padding-top:var(--total-top)}
+.breadcrumb-bar{background:var(--stone);border-bottom:1px solid var(--border);padding:9px 0;}
+.breadcrumb-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-lt);}
+.breadcrumb-inner a{color:var(--text-lt);transition:color .2s;text-decoration:none}
+.breadcrumb-inner a:hover{color:var(--green)}
+.breadcrumb-inner .sep{color:var(--border-dk);font-size:11px;user-select:none}
+.breadcrumb-inner .current{color:var(--text-mid);font-weight:500}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.section{padding:72px 0}
+.official-hero{background:var(--navy);color:var(--white);padding:72px 32px;position:relative;overflow:hidden;}
+.official-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;}
+.official-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 20%,var(--green) 20% 40%,var(--gold) 40% 60%,var(--red) 60% 80%,var(--navy) 80%);}
+.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}
+.hero-ref{font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.hero-ref::before{content:'';display:block;width:32px;height:1px;background:var(--gold);}
+.hero-title{font-family:var(--ff-serif);font-size:clamp(36px,5.5vw,68px);font-weight:700;line-height:1.1;color:var(--white);margin-bottom:20px;max-width:760px;}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-lead{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,.7);max-width:560px;line-height:1.75;margin-bottom:36px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:var(--ff-sans);letter-spacing:.03em;transition:all .2s var(--ease);text-decoration:none;}
+.btn:hover{text-decoration:none}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-light)}
+.btn-green{background:var(--green);color:var(--white)}
+.btn-green:hover{background:var(--green-lt)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border-dk)}
+.btn-outline:hover{border-color:var(--navy);background:var(--stone)}
+.btn-sm{padding:8px 20px;font-size:13px}
+.sec-header{margin-bottom:48px}
+.sec-header .ref{font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.sec-header .ref::before{content:'';display:block;width:24px;height:2px;background:var(--green);}
+.sec-header h2{font-family:var(--ff-serif);font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;color:var(--navy);}
+.sec-header h2 em{font-style:italic;color:var(--green)}
+.event-row{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:24px;display:flex;gap:24px;align-items:flex-start;margin-bottom:12px;border-left:4px solid var(--navy);transition:box-shadow .2s;}
+.event-row:hover{box-shadow:0 4px 16px rgba(10,22,40,.07)}
+.event-row.green{border-left-color:var(--green)}
+.event-row.red{border-left-color:var(--red)}
+.event-row.gold{border-left-color:var(--gold)}
+.event-cal{flex-shrink:0;width:60px;text-align:center;background:var(--navy);border-radius:2px;padding:8px 6px;color:var(--white);}
+.event-cal-month{font-family:var(--ff-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.event-cal-day{font-family:var(--ff-serif);font-size:28px;font-weight:700;line-height:1.1}
+.event-body-title{font-family:var(--ff-serif);font-size:18px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.event-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--text-lt);margin-bottom:8px;}
+.event-desc{font-size:14px;color:var(--text-mid);line-height:1.65}
+.sidebar-panel{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:24px;margin-bottom:20px;border-top:3px solid var(--green);}
+.sidebar-title{font-family:var(--ff-serif);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.sidebar-link{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--stone);font-size:14px;color:var(--text);transition:color .2s;text-decoration:none;}
+.sidebar-link:last-child{border-bottom:none}
+.sidebar-link:hover{color:var(--green);text-decoration:none}
+.sidebar-link::before{content:'›';color:var(--green);font-size:16px;flex-shrink:0}
+.with-sidebar{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.sidebar{position:sticky;top:calc(var(--total-top) + 20px)}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:2px;font-family:var(--ff-mono);font-size:10.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;}
+.badge-green{background:rgba(0,105,47,.1);color:var(--green)}
+.badge-navy{background:rgba(10,22,40,.08);color:var(--navy)}
+.badge-red{background:rgba(168,32,13,.1);color:var(--red)}
+.badge-gold{background:rgba(201,162,39,.15);color:#7a5a00}
+.badge-gray{background:var(--stone);color:var(--text-lt)}
+#footer{background:var(--navy);color:var(--white);margin-top:0;}
+.footer-gov-bar{background:var(--navy-mid);padding:18px 32px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-gov-bar-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.footer-gov-bar-inner p{font-size:12px;color:rgba(255,255,255,.45);font-family:var(--ff-mono);margin:0;letter-spacing:.04em;}
+.footer-main{padding:64px 32px 40px}
+.footer-main-inner{max-width:var(--max);margin:0 auto}
+.footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand-name{font-family:var(--ff-serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.footer-brand-sub{font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+.footer-brand-desc{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;max-width:240px;margin-bottom:24px;}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:36px;height:36px;border-radius:2px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:15px;text-decoration:none;transition:background .2s;}
+.footer-social a:hover{background:rgba(255,255,255,.12)}
+.footer-col-title{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;text-decoration:none;transition:color .2s;line-height:1.5;}
+.footer-col p{font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;margin:0;line-height:1.5;}
+.footer-col a:hover{color:var(--white);text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);font-family:var(--ff-mono);letter-spacing:.04em;margin:0;}
+.footer-stripe{height:4px;background:linear-gradient(to right,var(--navy) 15%,var(--green) 15% 38%,var(--gold) 38% 62%,var(--red) 62% 85%,var(--navy) 85%);}
+#cookie{position:fixed;bottom:0;left:0;right:0;background:var(--navy-mid);color:var(--white);padding:18px 32px;display:flex;align-items:center;gap:24px;z-index:8000;border-top:3px solid var(--gold);transform:translateY(100%);transition:transform .5s var(--ease);flex-wrap:wrap;}
+#cookie.show{transform:translateY(0)}
+#cookie p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px;margin:0}
+#cookie p a{color:var(--gold)}
+.cookie-btns{display:flex;gap:10px}
+.c-accept{background:var(--green);color:var(--white);border:none;padding:9px 20px;border-radius:2px;font-size:13px;font-weight:600;cursor:pointer;}
+.c-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.2);padding:9px 20px;border-radius:2px;font-size:13px;cursor:pointer;}
+.cal-wrap{background:var(--white);border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+.cal-header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:12px;}
+.cal-nav{display:flex;align-items:center;gap:12px;}
+.cal-nav-btn{width:36px;height:36px;border:1.5px solid var(--border);background:none;border-radius:3px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;color:var(--navy);}
+.cal-nav-btn:hover{background:var(--stone);border-color:var(--navy)}
+.cal-month-label{font-family:var(--ff-serif);font-size:20px;font-weight:600;color:var(--navy);min-width:190px;text-align:center;}
+.cal-filter{border:1.5px solid var(--border);border-radius:3px;padding:9px 16px;font-family:var(--ff-sans);font-size:13px;color:var(--text);background:var(--white);cursor:pointer;outline:none;min-width:170px;}
+.cal-filter:focus{border-color:var(--navy)}
+.cal-days-header{display:grid;grid-template-columns:repeat(7,1fr);background:var(--navy);}
+.cal-day-name{padding:10px 0;text-align:center;font-family:var(--ff-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);}
+.cal-day-name.wknd{color:var(--gold)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);}
+.cal-cell{padding:8px 10px;min-height:70px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
+.cal-cell:nth-child(7n){border-right:none}
+.cal-cell:hover{background:var(--stone)}
+.cal-cell.out{background:var(--cream);}
+.cal-cell.out .cal-dn{color:var(--text-lt)}
+.cal-cell.tod .cal-dn{background:var(--green);color:var(--white);border-radius:50%;}
+.cal-cell.sel{background:rgba(10,22,40,.04);}
+.cal-cell.sel .cal-dn{background:var(--navy);color:var(--white);border-radius:50%;}
+.cal-dn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:13.5px;font-family:var(--ff-sans);color:var(--text);font-weight:500;}
+.cal-dots{display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end;}
+.cal-dot{width:6px;height:6px;border-radius:50%;}
+.evt-label{font-size:14.5px;color:var(--text-mid);margin-bottom:28px;padding-bottom:14px;border-bottom:1px solid var(--border);}
+.evt-label strong{color:var(--navy);font-weight:600}
+@media(max-width:960px){
+  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
+  .with-sidebar{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-ref{display:none}
+  .cal-cell{min-height:52px;padding:6px 6px;}
+  .cal-month-label{min-width:140px;font-size:17px;}
+}
+@media(max-width:640px){
+  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
+  .wrap{padding:0 20px}
+  .header-established,.header-divider{display:none}
+  .header-ident-main{font-size:17px}
+  .footer-cols{grid-template-columns:1fr}
+  .official-hero{padding:48px 20px}
+  .section{padding:48px 0}
+  .topbar-left .sep,.topbar-left span:nth-child(3),.topbar-left span:nth-child(4){display:none}
+  .cal-day-name{font-size:9px;letter-spacing:.02em;}
+  .cal-dn{font-size:12px;width:26px;height:26px;}
+  .cal-cell{min-height:44px;padding:4px 4px;}
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <div class="topbar-flag">
+        <div class="flag-seg" style="background:#009A44"></div>
+        <div class="flag-seg" style="background:#FFB612"></div>
+        <div class="flag-seg" style="background:#003580"></div>
+        <div class="flag-seg" style="background:#DE3831"></div>
+        <div class="flag-seg" style="background:#FFFFFF"></div>
+        <div class="flag-seg" style="background:#000000"></div>
+      </div>
+      <span>Republic of South Africa</span>
+      <span class="sep"></span>
+      <span>Official National Student Representative Body</span>
+      <span class="sep"></span>
+      <span>Established April 2006</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:Secretariat@saus.org.za">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 5 7-5"/></svg>
+        Secretariat@saus.org.za
+      </a>
+      <a href="tel:+27791295948">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h3l1.5 4-2 1.5a9 9 0 004 4L11 9.5l4 1.5v3a2 2 0 01-2 2A14 14 0 012 4a2 2 0 012-2z"/></svg>
+        +27 79 129 5948
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="header">
+  <div class="header-inner">
+    <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
+      <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </a>
+    <a href="/" class="header-ident" style="text-decoration:none">
+      <div class="header-ident-main">South African <em>Union of Students</em></div>
+      <div class="header-ident-sub">SAUS — Official National Representative Body in Higher Education</div>
+    </a>
+    <div class="header-divider"></div>
+    <div class="header-established"><span>Established</span><strong>2006</strong><span>9th Congress</span></div>
+    <div class="header-right">
+      <div class="header-contact-btn" style="background:transparent;border:none;padding:4px 8px;cursor:default;"><span style="display:block;width:60px;height:40px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span></div>
+      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="/" class="nav-item" data-page="home">Home</a>
+      <a href="/about/" class="nav-item" data-page="about">About SAUS</a>
+      <a href="/campaigns/" class="nav-item" data-page="campaigns">Campaigns</a>
+      <a href="/leadership/" class="nav-item" data-page="leadership">Leadership</a>
+      <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
+      <a href="/events/" class="nav-item" data-page="events">Events</a>
+      <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
+      <a href="/nsfas/" class="nav-item" data-page="nsfas">NSFAS</a>
+      <a href="/apply/" class="nav-item" data-page="apply">Universities</a>
+      <a href="/contact/" class="nav-item" data-page="contact">Contact</a>
+    </div>
+    <span class="nav-ref">REF: SAUS/GOV/2026</span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mnav">
+  <a href="/" class="mobile-nav-item" data-page="home" onclick="closeMobile()">Home</a>
+  <a href="/about/" class="mobile-nav-item" data-page="about" onclick="closeMobile()">About SAUS</a>
+  <a href="/campaigns/" class="mobile-nav-item" data-page="campaigns" onclick="closeMobile()">Campaigns</a>
+  <a href="/leadership/" class="mobile-nav-item" data-page="leadership" onclick="closeMobile()">Leadership</a>
+  <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
+  <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
+  <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>
+  <a href="/nsfas/" class="mobile-nav-item" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
+  <a href="/apply/" class="mobile-nav-item" data-page="apply" onclick="closeMobile()">Universities</a>
+  <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main>
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><a href="/">Home</a><span class="sep">›</span><span class="current">Events &amp; Engagements</span></div></div>
+
+  <div class="official-hero" style="background:linear-gradient(to right,var(--navy),#0a2e1a);padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/EVENTS/2026 · Engagements Calendar</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Official Events <em>&amp; Engagements</em></h1>
+      <p class="hero-lead">National congresses, student leadership summits, policy town halls, and campus activations scheduled for the current term of office.</p>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);padding:48px 0 72px;">
+    <div class="wrap">
+      <div class="cal-wrap">
+        <div class="cal-header">
+          <div class="cal-nav">
+            <button class="cal-nav-btn" onclick="prevMonth()" title="Previous month">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 3L5 8l5 5"/></svg>
+            </button>
+            <span class="cal-month-label" id="cal-month-label"></span>
+            <button class="cal-nav-btn" onclick="nextMonth()" title="Next month">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 3l5 5-5 5"/></svg>
+            </button>
+          </div>
+          <select class="cal-filter" id="cat-filter" onchange="applyFilter()">
+            <option value="">All Categories</option>
+            <option value="National Congresses">National Congresses</option>
+            <option value="Regional Town Halls">Regional Town Halls</option>
+            <option value="Campus Activations">Campus Activations</option>
+            <option value="Leadership Summits">Leadership Summits</option>
+            <option value="Policy Workshops">Policy Workshops</option>
+          </select>
+        </div>
+        <div class="cal-days-header">
+          <div class="cal-day-name">Mon</div><div class="cal-day-name">Tue</div><div class="cal-day-name">Wed</div>
+          <div class="cal-day-name">Thu</div><div class="cal-day-name">Fri</div>
+          <div class="cal-day-name wknd">Sat</div><div class="cal-day-name wknd">Sun</div>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+
+      <div style="margin-top:48px" id="evt-panel">
+        <div class="evt-label" id="evt-label">Showing <strong>all upcoming events</strong></div>
+        <div id="evt-list"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="footer">
+  <div class="footer-gov-bar">
+    <div class="footer-gov-bar-inner">
+      <p><span style="display:inline-flex;gap:2px;align-items:center;vertical-align:middle;margin-right:4px"><span style="display:inline-block;width:16px;height:10px;background:linear-gradient(to bottom,#DE3831 33%,#FFFFFF 33% 67%,#002395 67%)"></span></span>Republic of South Africa — South African Union of Students (SAUS)</p>
+      <p>Official National Representative Body in Higher Education · Established April 2006</p>
+      <p>SAUS/GOV/2026 · POPIA Compliant</p>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-main-inner">
+      <div class="footer-cols">
+        <div>
+          <div class="footer-brand-name">South African Union of Students</div>
+          <div class="footer-brand-sub">SAUS · Official National Student Body · Est. 2006</div>
+          <p class="footer-brand-desc">The official representative body for students across all 26 public universities in the Republic of South Africa — empowering student voices, advancing higher education.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/SAUStudents/" title="Facebook" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/sa.union.of.students/" title="Instagram" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.2 4 4 5.2 4 7.6v8.8C4 18.8 5.2 20 7.6 20h8.8c2.4 0 3.6-1.2 3.6-3.6V7.6C20 5.2 18.8 4 16.4 4H7.6zM17.5 6.5a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10A5 5 0 0112 7zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg></a>
+            <a href="https://za.linkedin.com/company/south-african-union-of-students" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V9h4v2.8A6 6 0 0116 8zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.tiktok.com/@southafricanunionofstud8" title="TikTok" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.89 2.89 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.15 8.15 0 004.77 1.52V6.72a4.86 4.86 0 01-1-.03z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="/">Home</a><a href="/about/">About SAUS</a><a href="/campaigns/">Campaigns</a>
+          <a href="/leadership/">NEC Leadership</a><a href="/news/">Newsroom</a>
+          <a href="/events/">Events</a><a href="/gallery/">Gallery</a><a href="/contact/">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Policy Areas</div>
+          <p>NSFAS Reform</p><p>Student Debt Relief</p><p>Missing Middle Funding</p>
+          <p>GBV &amp; Campus Safety</p><p>No Application Fees</p>
+          <p>AI in Higher Education</p><p>Higher Education Act Review</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Secretariat</div>
+          <a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a>
+          <a href="tel:+27791295948">+27 79 129 5948</a>
+          <p>Johannesburg, Gauteng</p><p>South Africa</p><p>Mon–Fri · 08:00–17:00</p>
+          <p style="margin-top:10px;color:rgba(255,255,255,.2);font-size:11px;font-family:var(--ff-mono)">www.saus.org.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="http://localhost:3000" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stripe"></div>
+</footer>
+
+<div id="cookie">
+  <p>This website uses cookies to improve your experience in accordance with the <a href="#">Protection of Personal Information Act (POPIA), Act 4 of 2013</a>.</p>
+  <div class="cookie-btns">
+    <button class="c-accept" onclick="acceptC()">Accept</button>
+    <button class="c-decline" onclick="declineC()">Decline</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const path=window.location.pathname.replace(/\/$/,'')||'/';
+  const map={'/':'home','/about':'about','/campaigns':'campaigns','/leadership':'leadership','/news':'news','/events':'events','/gallery':'gallery','/nsfas':'nsfas','/contact':'contact'};
+  const id=Object.keys(map).find(k=>path.endsWith(k))||'home';
+  document.querySelectorAll('.nav-item,.mobile-nav-item').forEach(n=>{if(n.dataset.page===id)n.classList.add('active');});
+})();
+function toggleMenu(){const m=document.getElementById('mnav');m.classList.toggle('open');const h=document.getElementById('ham');const o=m.classList.contains('open');h.children[0].style.transform=o?'rotate(45deg) translateY(7px)':'none';h.children[1].style.opacity=o?'0':'1';h.children[2].style.transform=o?'rotate(-45deg) translateY(-7px)':'none';}
+function closeMobile(){document.getElementById('mnav').classList.remove('open')}
+function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.getElementById('cookie').classList.remove('show')}
+function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
+
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const EVTS=[
+  {date:'2026-09-15',title:'National Student Leadership Summit 2026',location:'University of Johannesburg',time:'09:00 – 17:00',category:'Leadership Summits',dot:'#00692F',calBg:'#00692F',badge:'Open Registration',bCls:'badge-green',desc:'Annual gathering of SRC leaders from all 26 universities to align on national student priorities, share governance best practices, and engage directly with NEC leadership on the 2026 advocacy agenda.',btn:'Register to Attend →',btnCls:'btn-green',past:false},
+  {date:'2026-10-02',title:'NSFAS Reform Town Hall — KwaZulu-Natal Region',location:'Durban University of Technology',time:'10:00 – 14:00',category:'Regional Town Halls',dot:'#A8200D',calBg:'#A8200D',badge:'KZN Region',bCls:'badge-red',desc:'Regional town hall enabling students to engage directly with SAUS leadership on the state of NSFAS reform, share testimonials, and contribute to the national advocacy submission.',btn:'Register to Attend →',btnCls:'btn-navy',past:false},
+  {date:'2026-10-16',title:'GBV Awareness Month — National Campus Activation Tour',location:'Campuses Nationwide',time:'All Day — Throughout October',category:'Campus Activations',dot:'#C9A227',calBg:'#7a5a00',badge:'October Campaign',bCls:'badge-gold',desc:'SAUS activates across multiple campuses throughout October as part of the GBV Awareness Month campaign — distributing resources, gathering testimonials, and advancing institutional accountability on GBVF policy.',btn:'View Schedule',btnCls:'btn-outline',past:false},
+  {date:'2026-11-08',title:'9th NEC Mid-Term Review &amp; Policy Workshop',location:'Pretoria, Gauteng',time:'08:00 – 18:00',category:'Policy Workshops',dot:'#1E3160',calBg:'#1E3160',badge:'NEC Official',bCls:'badge-navy',desc:'The 9th NEC mid-term review to assess progress on congress resolutions, review campaign outcomes, and develop the working paper on AI in higher education. Attendance restricted to NEC members and invitees.',btn:'View Details',btnCls:'btn-outline',past:false},
+  {date:'2025-08-23',title:'9th National Elective Congress — Day 2 (Completed)',location:'Boontjieskraal, Kimberley, Northern Cape',time:'Full Day',category:'National Congresses',dot:'#B8B5AE',calBg:'#7A7874',badge:'Completed',bCls:'badge-gray',desc:'Final session — 9th NEC elected and key resolutions adopted on NSFAS, student debt, GBV, and AI in education.',btn:null,btnCls:null,past:true},
+  {date:'2025-07-10',title:'9th National Elective Congress — Day 1 (Completed)',location:'Nelson Mandela University, Port Elizabeth',time:'Full Day',category:'National Congresses',dot:'#B8B5AE',calBg:'#7A7874',badge:'Completed',bCls:'badge-gray',desc:'Opening of the 9th Congress. Delegates from all 26 universities convened to debate the future of student governance in South Africa.',btn:null,btnCls:null,past:true}
+];
+const TODAY=new Date(2026,4,11);
+let vy=2026,vm=4,sel=null,cat='';
+function pad(n){return n<10?'0'+n:''+n}
+function ds(y,m,d){return y+'-'+pad(m+1)+'-'+pad(d)}
+function dotsFor(s){return EVTS.filter(e=>e.date===s&&(!cat||e.category===cat));}
+function renderCal(){
+  document.getElementById('cal-month-label').textContent=MONTHS[vm]+' '+vy;
+  const first=new Date(vy,vm,1).getDay();
+  const dim=new Date(vy,vm+1,0).getDate();
+  const dimP=new Date(vy,vm,0).getDate();
+  const off=(first+6)%7;
+  const todS=ds(TODAY.getFullYear(),TODAY.getMonth(),TODAY.getDate());
+  const g=document.getElementById('cal-grid');g.innerHTML='';
+  const cells=[];
+  for(let i=off-1;i>=0;i--)cells.push({d:dimP-i,y:vm===0?vy-1:vy,m:vm===0?11:vm-1,out:true});
+  for(let d=1;d<=dim;d++)cells.push({d,y:vy,m:vm,out:false});
+  let nx=1;while(cells.length%7)cells.push({d:nx++,y:vm===11?vy+1:vy,m:vm===11?0:vm+1,out:true});
+  cells.forEach(c=>{
+    const dStr=ds(c.y,c.m,c.d);
+    const dots=dotsFor(dStr);
+    const el=document.createElement('div');
+    el.className='cal-cell'+(c.out?' out':'')+(dStr===todS?' tod':'')+(dStr===sel?' sel':'');
+    el.onclick=()=>selectDay(dStr);
+    el.innerHTML='<div class="cal-dn">'+c.d+'</div>'+(dots.length?'<div class="cal-dots">'+dots.map(e=>'<span class="cal-dot" style="background:'+e.dot+'"></span>').join('')+'</div>':'');
+    g.appendChild(el);
+  });
+}
+function prevMonth(){vm--;if(vm<0){vm=11;vy--;}renderCal();}
+function nextMonth(){vm++;if(vm>11){vm=0;vy++;}renderCal();}
+function selectDay(d){sel=d;renderCal();renderEvts();document.getElementById('evt-panel').scrollIntoView({behavior:'smooth',block:'nearest'});}
+function applyFilter(){cat=document.getElementById('cat-filter').value;renderCal();renderEvts();}
+function showAll(){sel=null;renderCal();renderEvts();}
+function renderEvts(){
+  const lbl=document.getElementById('evt-label');
+  const list=document.getElementById('evt-list');
+  let data=EVTS.filter(e=>!cat||e.category===cat);
+  if(sel){
+    const d=new Date(sel+'T12:00:00');
+    lbl.innerHTML='Showing events for <strong>'+d.toLocaleDateString('en-ZA',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</strong>';
+    data=data.filter(e=>e.date===sel);
+  } else {
+    lbl.innerHTML=cat?'Showing category: <strong>'+cat+'</strong>':'Showing <strong>all upcoming events</strong>';
+    data=data.filter(e=>!e.past);
+  }
+  if(!data.length){
+    list.innerHTML='<div style="text-align:center;padding:56px 0;color:var(--text-lt)"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:block;margin:0 auto 16px;opacity:.35"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span style="font-family:var(--ff-serif);font-size:18px;color:var(--text-mid)">No events scheduled for this date</span><br><button onclick="showAll()" style="margin-top:18px;border:1.5px solid var(--border-dk);background:none;padding:9px 24px;border-radius:3px;font-size:13px;cursor:pointer;color:var(--navy);font-family:var(--ff-sans)">View all upcoming events</button></div>';
+    return;
+  }
+  const pinSVG='<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline;vertical-align:-1px;margin-right:3px"><path d="M8 1.5A4.5 4.5 0 0112.5 6c0 2.5-4.5 9-4.5 9S3.5 8.5 3.5 6A4.5 4.5 0 018 1.5z"/><circle cx="8" cy="6" r="1.5"/></svg>';
+  const clkSVG='<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline;vertical-align:-1px;margin-right:3px"><circle cx="8" cy="8" r="6.5"/><path d="M8 5V8l2 2"/></svg>';
+  list.innerHTML=data.map(e=>{
+    const mo=new Date(e.date+'T12:00:00').toLocaleDateString('en-ZA',{month:'short'});
+    const dy=parseInt(e.date.split('-')[2]);
+    return '<div class="event-row" style="border-left-color:'+e.calBg+';'+(e.past?'opacity:.55;':'')+'">'
+      +'<div class="event-cal" style="background:'+e.calBg+'"><div class="event-cal-month">'+mo+'</div><div class="event-cal-day">'+dy+'</div></div>'
+      +'<div style="flex:1">'
+      +'<div class="event-body-title">'+e.title+'</div>'
+      +'<div class="event-meta"><span>'+pinSVG+e.location+'</span><span>'+clkSVG+e.time+'</span><span class="badge '+e.bCls+'">'+e.badge+'</span></div>'
+      +'<div class="event-desc">'+e.desc+'</div>'
+      +(e.btn?'<button class="btn '+e.btnCls+' btn-sm" style="margin-top:14px">'+e.btn+'</button>':'')
+      +'</div></div>';
+  }).join('');
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  renderCal();renderEvts();
+  if(!localStorage.getItem('saus_gov_cookie')){setTimeout(()=>document.getElementById('cookie').classList.add('show'),1800);}
+});
+</script>
+</body>
+</html>

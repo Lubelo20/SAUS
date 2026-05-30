@@ -1,0 +1,354 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────
+// ENUMS
+// ─────────────────────────────────────────────────────────────
+
+enum Role {
+  SUPER_ADMIN
+  SECRETARIAT
+  MARKETING
+  MEDIA
+  EDITOR
+  CONTRIBUTOR
+}
+
+enum ContentStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  ARCHIVED
+  SCHEDULED
+}
+
+enum MediaType {
+  IMAGE
+  VIDEO
+  DOCUMENT
+  PDF
+}
+
+// ─────────────────────────────────────────────────────────────
+// USERS & AUTH
+// ─────────────────────────────────────────────────────────────
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         Role     @default(CONTRIBUTOR)
+  avatar       String?
+  department   String?
+  isActive     Boolean  @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  news          NewsArticle[]
+  events        Event[]
+  campaigns     Campaign[]
+  documents     Document[]
+  mediaUploads  MediaItem[]
+  activityLogs  ActivityLog[]
+  refreshTokens RefreshToken[]
+
+  @@map("users")
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("refresh_tokens")
+}
+
+// ─────────────────────────────────────────────────────────────
+// NEWS & STATEMENTS
+// ─────────────────────────────────────────────────────────────
+
+model NewsArticle {
+  id              String        @id @default(cuid())
+  title           String
+  slug            String        @unique
+  excerpt         String?       @db.Text
+  content         String        @db.Text
+  coverImage      String?
+  status          ContentStatus @default(DRAFT)
+  isFeatured      Boolean       @default(false)
+  publishedAt     DateTime?
+  scheduledAt     DateTime?
+  readTimeMinutes Int?
+  viewCount       Int           @default(0)
+  seoTitle        String?
+  seoDescription  String?
+  seoKeywords     String?
+  authorId        String
+  categoryId      String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  author   User          @relation(fields: [authorId], references: [id])
+  category NewsCategory? @relation(fields: [categoryId], references: [id])
+  tags     NewsTag[]
+
+  @@map("news_articles")
+}
+
+model NewsCategory {
+  id          String        @id @default(cuid())
+  name        String        @unique
+  slug        String        @unique
+  description String?
+  color       String        @default("#00692F")
+  createdAt   DateTime      @default(now())
+  articles    NewsArticle[]
+
+  @@map("news_categories")
+}
+
+model NewsTag {
+  id       String        @id @default(cuid())
+  name     String        @unique
+  slug     String        @unique
+  articles NewsArticle[]
+
+  @@map("news_tags")
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTS
+// ─────────────────────────────────────────────────────────────
+
+model Event {
+  id               String        @id @default(cuid())
+  title            String
+  slug             String        @unique
+  description      String        @db.Text
+  shortDescription String?
+  bannerImage      String?
+  venue            String?
+  address          String?
+  city             String?
+  province         String?
+  startDate        DateTime
+  endDate          DateTime?
+  registrationUrl  String?
+  rsvpEnabled      Boolean       @default(false)
+  isFeatured       Boolean       @default(false)
+  status           ContentStatus @default(DRAFT)
+  categoryId       String?
+  createdById      String
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  createdBy     User           @relation(fields: [createdById], references: [id])
+  category      EventCategory? @relation(fields: [categoryId], references: [id])
+
+  @@map("events")
+}
+
+model EventCategory {
+  id     String  @id @default(cuid())
+  name   String  @unique
+  slug   String  @unique
+  color  String  @default("#C9A227")
+  events Event[]
+
+  @@map("event_categories")
+}
+
+// ─────────────────────────────────────────────────────────────
+// CAMPAIGNS
+// ─────────────────────────────────────────────────────────────
+
+model Campaign {
+  id          String        @id @default(cuid())
+  title       String
+  slug        String        @unique
+  description String        @db.Text
+  graphic     String?
+  ctaLabel    String?
+  ctaUrl      String?
+  startDate   DateTime?
+  endDate     DateTime?
+  isFeatured  Boolean       @default(false)
+  status      ContentStatus @default(DRAFT)
+  categoryId  String?
+  createdById String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  createdBy User              @relation(fields: [createdById], references: [id])
+  category  CampaignCategory? @relation(fields: [categoryId], references: [id])
+  resources Document[]
+
+  @@map("campaigns")
+}
+
+model CampaignCategory {
+  id        String     @id @default(cuid())
+  name      String     @unique
+  slug      String     @unique
+  campaigns Campaign[]
+
+  @@map("campaign_categories")
+}
+
+// ─────────────────────────────────────────────────────────────
+// MEDIA LIBRARY
+// ─────────────────────────────────────────────────────────────
+
+model MediaItem {
+  id           String    @id @default(cuid())
+  filename     String
+  originalName String
+  url          String
+  thumbnailUrl String?
+  mimeType     String
+  size         Int
+  width        Int?
+  height       Int?
+  alt          String?
+  caption      String?
+  type         MediaType @default(IMAGE)
+  albumId      String?
+  uploadedById String
+  createdAt    DateTime  @default(now())
+
+  uploadedBy User        @relation(fields: [uploadedById], references: [id])
+  album      MediaAlbum? @relation(fields: [albumId], references: [id])
+
+  @@map("media_items")
+}
+
+model MediaAlbum {
+  id          String      @id @default(cuid())
+  name        String
+  description String?
+  coverImage  String?
+  createdAt   DateTime    @default(now())
+  items       MediaItem[]
+
+  @@map("media_albums")
+}
+
+// ─────────────────────────────────────────────────────────────
+// DOCUMENTS & POLICIES
+// ─────────────────────────────────────────────────────────────
+
+model Document {
+  id           String        @id @default(cuid())
+  title        String
+  description  String?
+  filename     String
+  url          String
+  mimeType     String
+  size         Int
+  version      String        @default("1.0")
+  isPublic     Boolean       @default(true)
+  isFeatured   Boolean       @default(false)
+  expiresAt    DateTime?
+  status       ContentStatus @default(PUBLISHED)
+  categoryId   String?
+  campaignId   String?
+  uploadedById String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  uploadedBy User              @relation(fields: [uploadedById], references: [id])
+  category   DocumentCategory? @relation(fields: [categoryId], references: [id])
+  campaign   Campaign?         @relation(fields: [campaignId], references: [id])
+
+  @@map("documents")
+}
+
+model DocumentCategory {
+  id          String     @id @default(cuid())
+  name        String     @unique
+  slug        String     @unique
+  description String?
+  documents   Document[]
+
+  @@map("document_categories")
+}
+
+// ─────────────────────────────────────────────────────────────
+// LEADERSHIP PROFILES
+// ─────────────────────────────────────────────────────────────
+
+model LeadershipProfile {
+  id           String  @id @default(cuid())
+  name         String
+  position     String
+  university   String?
+  photo        String?
+  bio          String? @db.Text
+  email        String?
+  order        Int     @default(0)
+  isActive     Boolean @default(true)
+  necYear      String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("leadership_profiles")
+}
+
+// ─────────────────────────────────────────────────────────────
+// SITE SETTINGS & ANNOUNCEMENTS
+// ─────────────────────────────────────────────────────────────
+
+model SiteSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String   @db.Text
+  group     String   @default("general")
+  updatedAt DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model Announcement {
+  id        String        @id @default(cuid())
+  message   String
+  type      String        @default("info")  // info | warning | success | urgent
+  isActive  Boolean       @default(true)
+  startsAt  DateTime?
+  expiresAt DateTime?
+  ctaLabel  String?
+  ctaUrl    String?
+  createdAt DateTime      @default(now())
+
+  @@map("announcements")
+}
+
+// ─────────────────────────────────────────────────────────────
+// ACTIVITY LOG (AUDIT TRAIL)
+// ─────────────────────────────────────────────────────────────
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  userId     String
+  action     String
+  resource   String
+  resourceId String?
+  details    String?  @db.Text
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("activity_logs")
+}

@@ -1,0 +1,33 @@
+{
+  "abbr": "UL",
+  "name": "University of Limpopo",
+  "type": "Traditional University",
+  "established": 1959,
+  "students": 18000,
+  "aps": "18–28+",
+  "location": {
+    "city": "Polokwane",
+    "province": "Limpopo"
+  },
+  "website": "https://www.ul.ac.za",
+  "apply": "https://www.ul.ac.za/admissions",
+  "prospectus": "https://www.ul.ac.za/admissions",
+  "logo": "ul.png",
+  "description": "Formerly the University of the North (Turfloop). A historically Black institution that produced many anti-apartheid activists. Especially strong in health sciences and law.",
+  "faculties": [
+    "Humanities",
+    "Management & Law",
+    "Science & Agriculture"
+  ],
+  "motto": "Touching Lives, Inspiring Hope",
+  "languages": [
+    "English",
+    "Sepedi",
+    "Sesotho sa Leboa"
+  ],
+  "campuses": [
+    "Polokwane (Turfloop)",
+    "Medunsa"
+  ],
+  "nsfasAccredited": true
+}

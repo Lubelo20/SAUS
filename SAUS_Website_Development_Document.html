@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SAUS — Website Development Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --green:  #00873E;
+    --red:    #CC2200;
+    --blue:   #003A8C;
+    --yellow: #F5C300;
+    --black:  #0D0D0D;
+    --white:  #FFFFFF;
+    --off-white: #F9F9F7;
+    --light-gray: #F2F2EF;
+    --mid-gray:  #999;
+    --text:   #1A1A1A;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'DM Sans', sans-serif;
+    --font-mono:    'DM Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    .no-print { display: none !important; }
+    body { font-size: 12px; }
+    .page-break { page-break-before: always; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* ── COVER ── */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 80px;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 420px; height: 100%;
+    background: var(--off-white);
+    z-index: 0;
+  }
+
+  .cover-stripe {
+    position: absolute;
+    top: 0; right: 420px;
+    width: 6px; height: 100%;
+    background: linear-gradient(to bottom, var(--blue) 33%, var(--green) 33% 66%, var(--red) 66%);
+    z-index: 1;
+  }
+
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-logo-wrap {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--green);
+    flex-shrink: 0;
+  }
+
+  .cover-logo-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+
+  .doc-meta {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--mid-gray);
+    letter-spacing: 0.08em;
+    line-height: 2;
+  }
+
+  .cover-body {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+  }
+
+  .cover-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 24px;
+  }
+
+  .cover-title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 8vw, 88px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  .cover-title span { color: var(--green); }
+
+  .cover-subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 400;
+    color: var(--mid-gray);
+    margin-bottom: 48px;
+  }
+
+  .cover-tagline {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--text);
+    max-width: 460px;
+    border-left: 3px solid var(--yellow);
+    padding-left: 20px;
+  }
+
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+
+  .color-swatches {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .swatch-dot {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,.06);
+  }
+
+  .swatch span {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--mid-gray);
+    letter-spacing: 0.05em;
+  }
+
+  .cover-prepared {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--mid-gray);
+    text-align: right;
+    line-height: 2;
+  }
+
+  /* ── LAYOUT ── */
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: var(--light-gray);
+    margin: 0;
+  }
+
+  .divider.thick {
+    height: 4px;
+    background: linear-gradient(to right, var(--blue) 33.3%, var(--green) 33.3% 66.6%, var(--red) 66.6%);
+  }
+
+  /* ── SECTION ── */
+  .section {
+    padding: 80px 0;
+  }
+
+  .section + .section {
+    padding-top: 0;
+  }
+
+  .section-number {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--mid-gray);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 40px;
+    line-height: 1.15;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--green);
+  }
+
+  /* ── CHAPTER HEADER ── */
+  .chapter {
+    padding: 60px 0 40px;
+  }
+
+  .chapter-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .chapter-num {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .chapter-num.green  { background: var(--green); }
+  .chapter-num.blue   { background: var(--blue);  }
+  .chapter-num.red    { background: var(--red);   }
+  .chapter-num.yellow { background: var(--yellow); color: var(--black); }
+
+  .chapter-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+  }
+
+  .chapter-title {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 4vw, 34px);
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 24px;
+  }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    margin: 48px 0;
+    padding: 32px 40px;
+    border-left: 5px solid var(--green);
+    background: var(--off-white);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .pull-quote p {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--black);
+    line-height: 1.5;
+  }
+
+  /* ── CARD GRID ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+  }
+
+  .card {
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 4px;
+  }
+  .card.green::before { background: var(--green); }
+  .card.blue::before  { background: var(--blue);  }
+  .card.red::before   { background: var(--red);   }
+  .card.yellow::before{ background: var(--yellow);}
+
+  .card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  .card-body {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* ── DATA TABLE ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+    border-bottom: 2px solid var(--light-gray);
+    padding: 12px 16px;
+  }
+
+  .data-table td {
+    padding: 16px 16px;
+    border-bottom: 1px solid var(--light-gray);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  .data-table td:first-child {
+    font-weight: 600;
+    color: var(--black);
+    width: 220px;
+  }
+
+  .data-table td.highlight {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--green);
+  }
+
+  /* ── TWO COL ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin: 32px 0;
+  }
+
+  @media (max-width: 700px) {
+    .two-col { grid-template-columns: 1fr; }
+    .cover { padding: 40px 32px; }
+    .wrapper { padding: 0 32px; }
+    .cover::before { display: none; }
+    .cover-stripe { display: none; }
+    .cover-bottom { flex-direction: column; gap: 24px; align-items: flex-start; }
+  }
+
+  /* ── LIST ── */
+  .styled-list {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  .styled-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .styled-list li:last-child { border-bottom: none; }
+
+  .styled-list li::before {
+    content: attr(data-icon);
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ── PALETTE BAR ── */
+  .palette-bar {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 72px;
+    margin: 32px 0;
+  }
+
+  .palette-segment {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 14px;
+  }
+
+  .palette-segment span {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+
+  /* ── PAGE TAG ── */
+  .page-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light-gray);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 4px;
+  }
+
+  .page-tag.primary { background: var(--green); color: var(--white); }
+  .page-tag.accent  { background: var(--blue);  color: var(--white); }
+
+  /* ── FEATURE ROW ── */
+  .feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .feature-row:last-child { border-bottom: none; }
+
+  .feature-icon {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .feature-icon.green  { background: rgba(0,135,62,.1); }
+  .feature-icon.blue   { background: rgba(0,58,140,.1); }
+  .feature-icon.red    { background: rgba(204,34,0,.1); }
+  .feature-icon.yellow { background: rgba(245,195,0,.15); }
+
+  .feature-text h4 { font-weight: 600; margin-bottom: 4px; }
+  .feature-text p  { font-size: 14px; color: #555; }
+
+  /* ── NEC TABLE ── */
+  .nec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 24px 0;
+  }
+
+  .nec-table th {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  .nec-table tr:nth-child(even) td { background: var(--off-white); }
+  .nec-table td { padding: 14px 16px; border-bottom: 1px solid var(--light-gray); }
+  .nec-table td:first-child { font-weight: 600; color: var(--green); }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 60px 80px;
+    margin-top: 80px;
+  }
+
+  .doc-footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+  }
+
+  .doc-footer h4 {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 16px;
+  }
+
+  .doc-footer p, .doc-footer a {
+    font-size: 14px;
+    color: rgba(255,255,255,.65);
+    line-height: 2;
+    text-decoration: none;
+  }
+
+  .doc-footer a:hover { color: var(--white); }
+
+  .footer-bottom {
+    max-width: 900px;
+    margin: 48px auto 0;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255,255,255,.35);
+    font-family: var(--font-mono);
+  }
+
+  /* ── TOC ── */
+  .toc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin: 32px 0;
+  }
+
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.2s;
+  }
+
+  .toc-item:hover { background: var(--off-white); }
+
+  .toc-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--mid-gray);
+    width: 28px;
+    flex-shrink: 0;
+  }
+
+  .toc-name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .toc-arrow {
+    margin-left: auto;
+    color: var(--mid-gray);
+    font-size: 12px;
+  }
+
+  /* ── INTRO BLOCK ── */
+  .intro-block {
+    background: var(--green);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 48px 48px;
+    margin: 48px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-block::after {
+    content: 'SAUS';
+    position: absolute;
+    bottom: -20px; right: 24px;
+    font-family: var(--font-display);
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(255,255,255,.08);
+    line-height: 1;
+  }
+
+  .intro-block p {
+    font-size: 18px;
+    line-height: 1.75;
+    max-width: 640px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .intro-block p + p { margin-top: 16px; }
+
+  /* ── SPEC ROW ── */
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--light-gray);
+    gap: 24px;
+  }
+
+  .spec-row:last-child { border-bottom: none; }
+
+  .spec-label {
+    font-size: 14px;
+    color: #555;
+    flex-shrink: 0;
+    width: 200px;
+  }
+
+  .spec-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    text-align: right;
+  }
+
+  .spec-value.green { color: var(--green); }
+  .spec-value.blue  { color: var(--blue);  }
+
+  /* ── BADGE ── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--light-gray);
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text);
+    margin: 3px;
+  }
+
+  .badge.green  { background: rgba(0,135,62,.12);  color: var(--green); }
+  .badge.blue   { background: rgba(0,58,140,.12);   color: var(--blue);  }
+  .badge.red    { background: rgba(204,34,0,.12);   color: var(--red);   }
+  .badge.yellow { background: rgba(245,195,0,.2);   color: #7a6000;      }
+
+  /* ── SECTION HERO ── */
+  .section-hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 0;
+    margin-bottom: 40px;
+  }
+
+  .section-hero-bar {
+    width: 6px;
+    height: 64px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .section-hero-text h2 {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .section-hero-text p {
+    font-size: 15px;
+    color: #666;
+    margin-top: 6px;
+  }
+
+  p { margin-bottom: 16px; }
+  p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ COVER ═══════════════════ -->
+<div class="cover">
+  <div class="cover-stripe"></div>
+
+  <div class="cover-top">
+    <div class="cover-logo-wrap">
+      <img src="/mnt/user-data/uploads/sauslogo.jpeg" alt="SAUS Logo" />
+    </div>
+    <div class="doc-meta">
+      DOCUMENT TYPE / Website Development Brief<br>
+      PREPARED BY / Lubelo Tech Solutions<br>
+      DATE / May 2026<br>
+      VERSION / 1.0
+    </div>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-eyebrow">South African Union of Students</div>
+    <div class="cover-title">Website<br><span>Development</span><br>Document</div>
+    <div class="cover-subtitle">Brand · Content · Architecture</div>
+    <p class="cover-tagline">
+      A comprehensive guide for designing and building the official
+      SAUS digital platform — empowering students across all 26 public universities.
+    </p>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="color-swatches">
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#003A8C"></div>
+        <span>#003A8C</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#00873E"></div>
+        <span>#00873E</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#CC2200"></div>
+        <span>#CC2200</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#F5C300; border-color:rgba(0,0,0,.12)"></div>
+        <span>#F5C300</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#0D0D0D"></div>
+        <span>#0D0D0D</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#FFFFFF; border-color:rgba(0,0,0,.15)"></div>
+        <span>#FFFFFF</span>
+      </div>
+    </div>
+    <div class="cover-prepared">
+      Prepared by Lubelo Tech Solutions<br>
+      lubelotechsolutions.co.za
+    </div>
+  </div>
+</div>
+
+<div class="divider thick"></div>
+
+<!-- ═══════════════════ TOC ═══════════════════ -->
+<div class="wrapper">
+  <div class="section">
+    <div class="section-number">00 — Overview</div>
+    <div class="section-title">Table of<br><em>Contents</em></div>
+
+    <div class="toc-grid">
+      <a href="#org" class="toc-item">
+        <span class="toc-num">01</span>
+        <span class="toc-name">Organisation Profile</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#brand" class="toc-item">
+        <span class="toc-num">02</span>
+        <span class="toc-name">Brand Identity</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#goals" class="toc-item">
+        <span class="toc-num">03</span>
+        <span class="toc-name">Website Goals</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#audience" class="toc-item">
+        <span class="toc-num">04</span>
+        <span class="toc-name">Target Audience</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#architecture" class="toc-item">
+        <span class="toc-num">05</span>
+        <span class="toc-name">Site Architecture</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#content" class="toc-item">
+        <span class="toc-num">06</span>
+        <span class="toc-name">Page Content</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#design" class="toc-item">
+        <span class="toc-num">07</span>
+        <span class="toc-name">Design System</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#leadership" class="toc-item">
+        <span class="toc-num">08</span>
+        <span class="toc-name">Leadership & Contact</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#seo" class="toc-item">
+        <span class="toc-num">09</span>
+        <span class="toc-name">SEO & Technical</span>
+        <span class="toc-arrow">→</span>
+      </a>
+      <a href="#features" class="toc-item">
+        <span class="toc-num">10</span>
+        <span class="toc-name">Features & Functions</span>
+        <span class="toc-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 01 ORG PROFILE ═══════════════════ -->
+<div class="wrapper" id="org">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num green">01</div>
+        <span class="chapter-eyebrow">Organisation Profile</span>
+      </div>
+      <div class="chapter-title">Who is SAUS?</div>
+    </div>
+
+    <div class="intro-block">
+      <p>The South African Union of Students (SAUS) is the official national representative body for students in higher education across South Africa. Launched in April 2006, SAUS unites the voices of students from all 26 public universities and colleges, ensuring their concerns are amplified at a national level.</p>
+      <p>SAUS is driven by the belief that <strong>education is a right, not a privilege</strong> — with a mission to ensure that every student, regardless of background, has access to affordable, quality, and inclusive education.</p>
+    </div>
+
+    <table class="data-table">
+      <tr><th>Field</th><th>Details</th></tr>
+      <tr><td>Full Name</td><td>South African Union of Students (SAUS)</td></tr>
+      <tr><td>Founded</td><td class="highlight">April 2006</td></tr>
+      <tr><td>Type</td><td>Non-profit Student Representative Body</td></tr>
+      <tr><td>Current Congress</td><td>9th National Executive Committee (2025)</td></tr>
+      <tr><td>Reach</td><td>All 26 public universities in South Africa</td></tr>
+      <tr><td>Headquarters</td><td>Johannesburg, Gauteng, South Africa</td></tr>
+      <tr><td>Current Website</td><td class="highlight">www.saus.org.za</td></tr>
+      <tr><td>Email</td><td>Secretariat@saus.org.za</td></tr>
+      <tr><td>Phone</td><td>+27 79 129 5948</td></tr>
+    </table>
+
+    <div class="pull-quote">
+      <p>"The first national union of students since NUSAS dissolved in the late 1980s — built to unite universities and universities of technology under one powerful student voice."</p>
+    </div>
+
+    <div class="chapter-title" style="margin-top:48px">Mission, Vision & Values</div>
+
+    <div class="card-grid">
+      <div class="card green">
+        <span class="card-icon">🎯</span>
+        <div class="card-title">Mission</div>
+        <div class="card-body">To consolidate and strengthen student voices in the governance and enhancement of Higher Education and Training in South Africa.</div>
+      </div>
+      <div class="card blue">
+        <span class="card-icon">🌍</span>
+        <div class="card-title">Vision</div>
+        <div class="card-body">A just, inclusive, and accessible higher education system where every student, regardless of background, can succeed.</div>
+      </div>
+      <div class="card red">
+        <span class="card-icon">⚖️</span>
+        <div class="card-title">Equity & Justice</div>
+        <div class="card-body">Advocating for fair, inclusive, and accessible education for all.</div>
+      </div>
+      <div class="card yellow">
+        <span class="card-icon">🤝</span>
+        <div class="card-title">Unity & Solidarity</div>
+        <div class="card-body">Building collective strength through collaboration, activism, and shared purpose.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 02 BRAND ═══════════════════ -->
+<div class="wrapper" id="brand">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num blue">02</div>
+        <span class="chapter-eyebrow">Brand Identity</span>
+      </div>
+      <div class="chapter-title">Colour Palette & Visual Language</div>
+    </div>
+
+    <p>The SAUS brand is drawn from the South African national colours — representing the rainbow nation and the diversity of students across the country. The palette is bold, purposeful, and immediately recognisable.</p>
+
+    <div class="palette-bar" style="margin-top:40px">
+      <div class="palette-segment" style="background:#003A8C; flex:2">
+        <span style="color:rgba(255,255,255,.8); font-family:'DM Mono',monospace; font-size:10px">SAUS Blue<br>#003A8C</span>
+      </div>
+      <div class="palette-segment" style="background:#00873E; flex:2">
+        <span style="color:rgba(255,255,255,.8); font-family:'DM Mono',monospace; font-size:10px">SAUS Green<br>#00873E</span>
+      </div>
+      <div class="palette-segment" style="background:#CC2200; flex:2">
+        <span style="color:rgba(255,255,255,.8); font-family:'DM Mono',monospace; font-size:10px">SAUS Red<br>#CC2200</span>
+      </div>
+      <div class="palette-segment" style="background:#F5C300; flex:1.5">
+        <span style="color:rgba(0,0,0,.6); font-family:'DM Mono',monospace; font-size:10px">Gold<br>#F5C300</span>
+      </div>
+      <div class="palette-segment" style="background:#0D0D0D; flex:1">
+        <span style="color:rgba(255,255,255,.6); font-family:'DM Mono',monospace; font-size:10px">Black<br>#0D0D0D</span>
+      </div>
+      <div class="palette-segment" style="background:#FFFFFF; border:1px solid #eee; flex:1.5">
+        <span style="color:rgba(0,0,0,.4); font-family:'DM Mono',monospace; font-size:10px">White<br>#FFFFFF</span>
+      </div>
+    </div>
+
+    <table class="data-table" style="margin-top:40px">
+      <tr><th>Colour</th><th>Hex</th><th>Role / Usage</th></tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#003A8C;display:inline-block"></span>SAUS Blue</span></td>
+        <td class="highlight">#003A8C</td>
+        <td>Primary hero backgrounds, navigation, headers, trust elements</td>
+      </tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#00873E;display:inline-block"></span>SAUS Green</span></td>
+        <td class="highlight">#00873E</td>
+        <td>Primary action buttons, highlights, links, accents, section dividers</td>
+      </tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#CC2200;display:inline-block"></span>SAUS Red</span></td>
+        <td class="highlight">#CC2200</td>
+        <td>Alerts, urgent notices, secondary CTAs, campaign highlights</td>
+      </tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#F5C300;border:1px solid #ddd;display:inline-block"></span>Gold</span></td>
+        <td class="highlight">#F5C300</td>
+        <td>Stars, awards, SAUS wordmark, special recognition, banners</td>
+      </tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#0D0D0D;display:inline-block"></span>Black</span></td>
+        <td class="highlight">#0D0D0D</td>
+        <td>Body text, navigation text, footer backgrounds</td>
+      </tr>
+      <tr>
+        <td><span style="display:inline-flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:4px;background:#FFFFFF;border:1px solid #eee;display:inline-block"></span>White</span></td>
+        <td class="highlight">#FFFFFF</td>
+        <td>Primary background — generous white space throughout</td>
+      </tr>
+    </table>
+
+    <div class="chapter-title" style="margin-top:48px">Typography</div>
+    <table class="data-table">
+      <tr><th>Role</th><th>Font</th><th>Weights</th><th>Usage</th></tr>
+      <tr><td>Display / Headings</td><td class="highlight">Playfair Display</td><td>700, 900</td><td>Page titles, section headers, pull quotes</td></tr>
+      <tr><td>Body</td><td class="highlight">DM Sans</td><td>300, 400, 500, 600</td><td>Paragraphs, labels, navigation, UI</td></tr>
+      <tr><td>Mono / Labels</td><td class="highlight">DM Mono</td><td>400, 500</td><td>Codes, meta-info, hex values, captions</td></tr>
+    </table>
+
+    <div class="chapter-title" style="margin-top:48px">Logo Usage</div>
+    <div class="two-col">
+      <div>
+        <p>The SAUS logo features a globe centred on Africa, flanked by raised fists in the national colours — symbolising student power, continental awareness, and pan-African unity. The circular design with gold stars echoes the African Union aesthetic.</p>
+        <ul class="styled-list">
+          <li data-icon="✅">Always use the logo on a white or very light background for maximum clarity.</li>
+          <li data-icon="✅">Maintain clear space equal to the height of the "S" in SAUS around all sides.</li>
+          <li data-icon="✅">The circular logo mark may be used standalone as a favicon and app icon.</li>
+          <li data-icon="❌">Do not distort, recolour, or apply drop shadows to the logo.</li>
+          <li data-icon="❌">Do not place the logo on dark or busy photographic backgrounds without a white container.</li>
+        </ul>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;background:#f9f9f7;border-radius:12px;padding:40px">
+        <img src="/mnt/user-data/uploads/sauslogo.jpeg" alt="SAUS Logo" style="width:180px;height:180px;object-fit:contain;border-radius:50%" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 03 GOALS ═══════════════════ -->
+<div class="wrapper" id="goals">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num red">03</div>
+        <span class="chapter-eyebrow">Website Goals</span>
+      </div>
+      <div class="chapter-title">What the Website Must Achieve</div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-icon green">🏛️</div>
+      <div class="feature-text">
+        <h4>Build Credibility & Authority</h4>
+        <p>Position SAUS as the definitive, legitimate voice of students in South African higher education. The site must convey professionalism and institutional weight.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-icon blue">📢</div>
+      <div class="feature-text">
+        <h4>Share Information & News</h4>
+        <p>Serve as the go-to source for students, media, and institutions to find SAUS positions, press releases, campaigns, and announcements.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-icon red">🙋</div>
+      <div class="feature-text">
+        <h4>Enable Student Participation</h4>
+        <p>Make it easy for students to get involved — understand their rights, engage with campaigns, contact leadership, and access resources.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-icon yellow">🔗</div>
+      <div class="feature-text">
+        <h4>Connect SRCs to National Body</h4>
+        <p>Provide a transparent window into SAUS governance — NEC members, congress resolutions, and institutional affiliations across all 26 universities.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-icon green">📲</div>
+      <div class="feature-text">
+        <h4>Mobile-First Accessibility</h4>
+        <p>The majority of South African students access the internet via mobile. The website must be responsive, fast, and fully functional on all device sizes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 04 AUDIENCE ═══════════════════ -->
+<div class="wrapper" id="audience">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num yellow">04</div>
+        <span class="chapter-eyebrow">Target Audience</span>
+      </div>
+      <div class="chapter-title">Who Will Visit the Site?</div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card green">
+        <span class="card-icon">🎓</span>
+        <div class="card-title">University Students</div>
+        <div class="card-body">Primary audience. Students across all 26 public universities seeking information on rights, NSFAS, campaigns, and how to get involved.</div>
+      </div>
+      <div class="card blue">
+        <span class="card-icon">🏫</span>
+        <div class="card-title">SRC Members</div>
+        <div class="card-body">Student Representative Council leaders who need updates, policy documents, congress resolutions, and leadership contacts.</div>
+      </div>
+      <div class="card red">
+        <span class="card-icon">📰</span>
+        <div class="card-title">Media & Journalists</div>
+        <div class="card-body">Reporters seeking official SAUS statements, spokesperson contacts, and background on higher education matters.</div>
+      </div>
+      <div class="card yellow">
+        <span class="card-icon">🏛️</span>
+        <div class="card-title">Government & Institutions</div>
+        <div class="card-body">DHET officials, university management, and policy-makers engaging with SAUS on higher education governance.</div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:48px">
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Demographics</h3>
+        <div class="spec-row"><span class="spec-label">Primary Age Range</span><span class="spec-value green">18 – 25 years</span></div>
+        <div class="spec-row"><span class="spec-label">Geographic Reach</span><span class="spec-value">National (all 9 provinces)</span></div>
+        <div class="spec-row"><span class="spec-label">Primary Device</span><span class="spec-value blue">Mobile (Android)</span></div>
+        <div class="spec-row"><span class="spec-label">Languages</span><span class="spec-value">English (primary)</span></div>
+        <div class="spec-row"><span class="spec-label">Connectivity</span><span class="spec-value">Mixed — must be data-light</span></div>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Key Pain Points</h3>
+        <ul class="styled-list">
+          <li data-icon="🔴">NSFAS funding delays and errors</li>
+          <li data-icon="🔴">Unresolved historical student debt</li>
+          <li data-icon="🔴">Lack of affordable student accommodation</li>
+          <li data-icon="🔴">GBV and safety on campuses</li>
+          <li data-icon="🔴">Suppression of student activism</li>
+          <li data-icon="🔴">Missing middle funding gap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 05 ARCHITECTURE ═══════════════════ -->
+<div class="wrapper" id="architecture">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num green">05</div>
+        <span class="chapter-eyebrow">Site Architecture</span>
+      </div>
+      <div class="chapter-title">Pages & Navigation Structure</div>
+    </div>
+
+    <p>The website follows a clean multi-page structure. Navigation should be persistent, minimal, and mobile-friendly. Primary pages are accessible within one click from the homepage.</p>
+
+    <div style="margin:40px 0">
+      <div style="margin-bottom:12px;font-weight:600;font-size:13px;color:var(--mid-gray);font-family:var(--font-mono);letter-spacing:.15em;text-transform:uppercase">Primary Navigation</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px">
+        <span class="page-tag primary">🏠 Home</span>
+        <span class="page-tag primary">ℹ️ About</span>
+        <span class="page-tag primary">⚡ Campaigns</span>
+        <span class="page-tag primary">👥 Leadership</span>
+        <span class="page-tag primary">📰 News</span>
+        <span class="page-tag primary">📅 Events</span>
+        <span class="page-tag primary">📞 Contact</span>
+      </div>
+
+      <div style="margin-bottom:12px;font-weight:600;font-size:13px;color:var(--mid-gray);font-family:var(--font-mono);letter-spacing:.15em;text-transform:uppercase">Secondary / Sub-Pages</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span class="page-tag accent">🏛️ About → Our History</span>
+        <span class="page-tag accent">🏛️ About → Mission & Vision</span>
+        <span class="page-tag accent">🏛️ About → Constitution</span>
+        <span class="page-tag accent">👥 Leadership → NEC Members</span>
+        <span class="page-tag accent">👥 Leadership → Past Presidents</span>
+        <span class="page-tag accent">📰 News → Press Releases</span>
+        <span class="page-tag accent">📰 News → Media Gallery</span>
+        <span class="page-tag accent">📥 Resources → Download Centre</span>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <tr><th>Page</th><th>Purpose</th><th>Priority</th></tr>
+      <tr><td>Home</td><td>First impression — hero, mission, latest news, CTA to get involved</td><td><span class="badge green">P1 — Critical</span></td></tr>
+      <tr><td>About</td><td>History (since 2006), mission, vision, values, structure</td><td><span class="badge green">P1 — Critical</span></td></tr>
+      <tr><td>Leadership</td><td>9th NEC profiles, roles, university affiliations</td><td><span class="badge green">P1 — Critical</span></td></tr>
+      <tr><td>Campaigns</td><td>NSFAS reform, student debt, GBV, accommodation, missing middle</td><td><span class="badge green">P1 — Critical</span></td></tr>
+      <tr><td>News</td><td>Press releases, media statements, congress updates</td><td><span class="badge blue">P2 — Important</span></td></tr>
+      <tr><td>Events</td><td>Upcoming congresses, workshops, student activations</td><td><span class="badge blue">P2 — Important</span></td></tr>
+      <tr><td>Gallery</td><td>Photo and video archive of activities</td><td><span class="badge">P3 — Nice to have</span></td></tr>
+      <tr><td>Resources</td><td>Downloadable documents, policies, POPIA notice</td><td><span class="badge blue">P2 — Important</span></td></tr>
+      <tr><td>Contact</td><td>Contact form, map, phone, email, social links</td><td><span class="badge green">P1 — Critical</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 06 CONTENT ═══════════════════ -->
+<div class="wrapper" id="content">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num blue">06</div>
+        <span class="chapter-eyebrow">Page Content</span>
+      </div>
+      <div class="chapter-title">Content Briefs Per Page</div>
+    </div>
+
+    <!-- HOME -->
+    <div style="padding:32px;background:var(--off-white);border-radius:12px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+        <div class="chapter-num green" style="width:40px;height:40px;font-size:14px">H</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">Homepage</div>
+          <div style="font-size:13px;color:var(--mid-gray)">First impression — must hook within 3 seconds</div>
+        </div>
+      </div>
+      <div class="spec-row"><span class="spec-label">Hero Headline</span><span class="spec-value">"Empowering Voices, Shaping Futures"</span></div>
+      <div class="spec-row"><span class="spec-label">Sub-headline</span><span class="spec-value">The official student voice across all 26 universities</span></div>
+      <div class="spec-row"><span class="spec-label">Primary CTA</span><span class="spec-value green">Get Involved →</span></div>
+      <div class="spec-row"><span class="spec-label">Secondary CTA</span><span class="spec-value">Latest News</span></div>
+      <div class="spec-row"><span class="spec-label">Key Sections</span><span class="spec-value">Stats bar, Campaign highlights, News feed, Leadership preview, Contact strip</span></div>
+      <div class="spec-row"><span class="spec-label">Stats to Feature</span><span class="spec-value">26 Universities · Founded 2006 · 9th National Congress · National reach</span></div>
+    </div>
+
+    <!-- ABOUT -->
+    <div style="padding:32px;background:var(--off-white);border-radius:12px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+        <div class="chapter-num blue" style="width:40px;height:40px;font-size:14px">A</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">About Page</div>
+          <div style="font-size:13px;color:var(--mid-gray)">Organisation backstory, mission, vision, values</div>
+        </div>
+      </div>
+      <p style="font-size:14px;color:#444;margin-bottom:16px"><strong>Company Story:</strong> SAUS was officially launched in April 2006 as the first national union of students since NUSAS dissolved in the late 1980s. It was formed to bring together two wings of higher education — universities and universities of technology — under one unified student voice. The institutional restructuring by the South African government in the early 2000s resulted in a new higher education sector which necessitated a national student body. Students have historically played an important role in education since the 1960s and the 1976 uprisings. The 9th National Elective Congress was held in 2025 at Nelson Mandela University and Kimberley, Northern Cape.</p>
+      <div class="spec-row"><span class="spec-label">Mission</span><span class="spec-value" style="text-align:right;font-size:13px;max-width:400px">To consolidate and strengthen students' views in the governance and enhancement of Higher Education and Training in South Africa.</span></div>
+      <div class="spec-row"><span class="spec-label">Vision</span><span class="spec-value" style="text-align:right;font-size:13px;max-width:400px">A unified, equitable, non-sexist, non-racial, democratic education system appropriate and responsive to the needs of South Africa, Africa, and the world.</span></div>
+    </div>
+
+    <!-- CAMPAIGNS -->
+    <div style="padding:32px;background:var(--off-white);border-radius:12px;margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+        <div class="chapter-num red" style="width:40px;height:40px;font-size:14px">C</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">Campaigns Page</div>
+          <div style="font-size:13px;color:var(--mid-gray)">Active advocacy issues — must feel urgent and action-oriented</div>
+        </div>
+      </div>
+      <ul class="styled-list">
+        <li data-icon="⚡"><strong>NSFAS Reform</strong> — Redesigning NSFAS for sustainability and reliability with a strengthened communication system.</li>
+        <li data-icon="⚡"><strong>Student Debt Relief</strong> — Campaigning for government to clear all historical student debt, starting with deceased students and unemployed graduates.</li>
+        <li data-icon="⚡"><strong>Missing Middle Funding</strong> — Developing a sustainable funding scheme for "missing middle," postgraduate, and N+ students.</li>
+        <li data-icon="⚡"><strong>No Application Fees</strong> — Abolishing application fees at all higher education institutions.</li>
+        <li data-icon="⚡"><strong>GBV & Campus Safety</strong> — Proposing minimum standards for security and handling GBVF cases on campuses.</li>
+        <li data-icon="⚡"><strong>AI in Education</strong> — Developing a working paper on the role of AI in broadening academic support for students.</li>
+        <li data-icon="⚡"><strong>National Credit Act</strong> — Opposing amendments that would list student debt with credit bureaus.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 07 DESIGN ═══════════════════ -->
+<div class="wrapper" id="design">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num yellow">07</div>
+        <span class="chapter-eyebrow">Design System</span>
+      </div>
+      <div class="chapter-title">Visual Direction & Style</div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Design Principles</h3>
+        <ul class="styled-list">
+          <li data-icon="⬜"><strong>White Space First</strong> — Generous padding and breathing room. Never cluttered.</li>
+          <li data-icon="🎨"><strong>Colour with Purpose</strong> — Use brand colours as accents, not wallpaper. White dominates.</li>
+          <li data-icon="✒️"><strong>Bold Typography</strong> — Headlines are large and confident. Body text is clean and readable.</li>
+          <li data-icon="📱"><strong>Mobile-First</strong> — Design for 360px wide first; scale up for desktop.</li>
+          <li data-icon="⚡"><strong>Fast & Accessible</strong> — No heavy animations. WCAG AA contrast. Screen-reader friendly.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Style Reference</h3>
+        <div class="spec-row"><span class="spec-label">Overall Feel</span><span class="spec-value green">Corporate + Activist</span></div>
+        <div class="spec-row"><span class="spec-label">Theme</span><span class="spec-value">Light (white dominant)</span></div>
+        <div class="spec-row"><span class="spec-label">Button Style</span><span class="spec-value">Solid, rounded corners (8px)</span></div>
+        <div class="spec-row"><span class="spec-label">Card Style</span><span class="spec-value">Flat, subtle shadow, light bg</span></div>
+        <div class="spec-row"><span class="spec-label">Photography</span><span class="spec-value">Real students, campus life, activism</span></div>
+        <div class="spec-row"><span class="spec-label">Icons</span><span class="spec-value">Outlined, consistent stroke weight</span></div>
+      </div>
+    </div>
+
+    <div class="pull-quote" style="border-left-color:var(--blue)">
+      <p>"The website should feel like a national institution — authoritative and trustworthy — but also alive with student energy, urgency, and purpose."</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 08 LEADERSHIP ═══════════════════ -->
+<div class="wrapper" id="leadership">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num green">08</div>
+        <span class="chapter-eyebrow">Leadership & Contact</span>
+      </div>
+      <div class="chapter-title">9th National Executive Committee</div>
+    </div>
+
+    <p>The 9th NEC was elected at the national congress held at Nelson Mandela University (July 2025) and Boontjieskraal, Kimberley (August 2025), under the theme: <em>"Confronting the suppression of student activism and advancing transformative student governance."</em></p>
+
+    <table class="nec-table">
+      <tr>
+        <th>Position</th>
+        <th>Name</th>
+        <th>University</th>
+      </tr>
+      <tr><td>President</td><td>Siyabonga Moses Nkambako</td><td>UKZN</td></tr>
+      <tr><td>Deputy President</td><td>Mcntosh Khasembe</td><td>UWC</td></tr>
+      <tr><td>Secretary General</td><td>Nhlonipho Nxumalo</td><td>WITS</td></tr>
+      <tr><td>1st Deputy Secretary General</td><td>Jemina Mokoena</td><td>CUT</td></tr>
+      <tr><td>2nd Deputy Secretary General</td><td>Martin Mnyaka</td><td>UFS</td></tr>
+      <tr><td>Treasurer General</td><td>Nkosinathi Mabilane</td><td>UNISA</td></tr>
+      <tr><td>International Relations</td><td>Nomfundo Mbatha</td><td>—</td></tr>
+      <tr><td>Spokesperson</td><td>Thato Masekoa</td><td>—</td></tr>
+      <tr><td>National Organiser</td><td>Olive Vilakazi</td><td>—</td></tr>
+    </table>
+
+    <div class="chapter-title" style="margin-top:48px">Contact Information</div>
+    <table class="data-table">
+      <tr><th>Channel</th><th>Details</th></tr>
+      <tr><td>General Email</td><td class="highlight">Secretariat@saus.org.za</td></tr>
+      <tr><td>Phone / WhatsApp</td><td class="highlight">+27 79 129 5948</td></tr>
+      <tr><td>Website</td><td class="highlight">www.saus.org.za</td></tr>
+      <tr><td>Location</td><td>Johannesburg, South Africa</td></tr>
+      <tr><td>Facebook</td><td>facebook.com/SAUStudents</td></tr>
+      <tr><td>LinkedIn</td><td>linkedin.com/company/south-african-union-of-students</td></tr>
+      <tr><td>YouTube</td><td>SAUS Channel</td></tr>
+      <tr><td>TikTok</td><td>@saus</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 09 SEO ═══════════════════ -->
+<div class="wrapper" id="seo">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num blue">09</div>
+        <span class="chapter-eyebrow">SEO & Technical</span>
+      </div>
+      <div class="chapter-title">Search & Technical Specifications</div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Target Keywords</h3>
+        <ul class="styled-list">
+          <li data-icon="🔍">South African Union of Students</li>
+          <li data-icon="🔍">SAUS South Africa</li>
+          <li data-icon="🔍">Student rights South Africa</li>
+          <li data-icon="🔍">NSFAS funding 2025</li>
+          <li data-icon="🔍">Higher education students South Africa</li>
+          <li data-icon="🔍">Student debt relief South Africa</li>
+          <li data-icon="🔍">SRC national body</li>
+          <li data-icon="🔍">Student activism South Africa</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:22px;margin-bottom:20px">Technical Requirements</h3>
+        <ul class="styled-list">
+          <li data-icon="⚙️">Static website (HTML/CSS/JS)</li>
+          <li data-icon="⚙️">Fully responsive — mobile, tablet, desktop</li>
+          <li data-icon="⚙️">Google PageSpeed score ≥ 90</li>
+          <li data-icon="⚙️">HTTPS / SSL certificate</li>
+          <li data-icon="⚙️">Sitemap.xml + robots.txt</li>
+          <li data-icon="⚙️">Open Graph meta tags (social sharing)</li>
+          <li data-icon="⚙️">WCAG AA accessibility</li>
+          <li data-icon="⚙️">POPIA compliant contact forms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ 10 FEATURES ═══════════════════ -->
+<div class="wrapper" id="features">
+  <div class="section">
+    <div class="chapter">
+      <div class="chapter-label">
+        <div class="chapter-num red">10</div>
+        <span class="chapter-eyebrow">Features & Functions</span>
+      </div>
+      <div class="chapter-title">Functional Requirements</div>
+    </div>
+
+    <table class="data-table">
+      <tr><th>Feature</th><th>Description</th><th>Priority</th></tr>
+      <tr><td>Contact Form</td><td>Name, email, phone, message with POPIA notice and email delivery</td><td><span class="badge green">P1</span></td></tr>
+      <tr><td>News / Blog</td><td>Press releases, statements, campaign updates — filterable by category</td><td><span class="badge green">P1</span></td></tr>
+      <tr><td>Newsletter Sign-up</td><td>Email subscription for students to receive SAUS updates</td><td><span class="badge blue">P2</span></td></tr>
+      <tr><td>Testimonials Section</td><td>Quotes from students and partner organisations on the homepage</td><td><span class="badge blue">P2</span></td></tr>
+      <tr><td>Google Maps Embed</td><td>SAUS office location on the Contact page</td><td><span class="badge blue">P2</span></td></tr>
+      <tr><td>Downloadable Files</td><td>Constitutions, congress resolutions, policy papers — PDF download</td><td><span class="badge blue">P2</span></td></tr>
+      <tr><td>Social Media Links</td><td>Facebook, LinkedIn, YouTube, TikTok in header/footer</td><td><span class="badge green">P1</span></td></tr>
+      <tr><td>Cookie Banner</td><td>POPIA-compliant cookie consent notification</td><td><span class="badge green">P1</span></td></tr>
+      <tr><td>Photo Gallery</td><td>Responsive image grid of events and activities</td><td><span class="badge">P3</span></td></tr>
+      <tr><td>Events Calendar</td><td>Upcoming congress dates, workshops, activations</td><td><span class="badge blue">P2</span></td></tr>
+      <tr><td>Print / PDF Export</td><td>Documents and pages should be print-friendly</td><td><span class="badge">P3</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<div class="divider thick"></div>
+
+<footer class="doc-footer">
+  <div class="doc-footer-inner">
+    <div>
+      <h4>Document</h4>
+      <p>
+        SAUS Website Development Document<br>
+        Version 1.0 — May 2026<br>
+        Static Website Brief
+      </p>
+    </div>
+    <div>
+      <h4>Organisation</h4>
+      <p>
+        South African Union of Students<br>
+        Johannesburg, South Africa<br>
+        <a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a><br>
+        +27 79 129 5948
+      </p>
+    </div>
+    <div>
+      <h4>Prepared By</h4>
+      <p>
+        Lubelo Tech Solutions<br>
+        Durban, KwaZulu-Natal<br>
+        <a href="https://lubelotechsolutions.co.za">lubelotechsolutions.co.za</a><br>
+        <a href="mailto:info@lubelotechsolutions.co.za">info@lubelotechsolutions.co.za</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lubelo Tech Solutions — All rights reserved</span>
+    <span>Confidential · For SAUS Use Only</span>
+  </div>
+</footer>
+
+</body>
+</html>

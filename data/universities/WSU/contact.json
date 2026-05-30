@@ -1,0 +1,21 @@
+{
+  "abbr": "WSU",
+  "general": {
+    "phone": "+27 47 502 2111",
+    "email": "admissions@wsu.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 47 502 2111",
+    "email": "admissions@wsu.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 47 502 2388",
+    "email": "financialaid@wsu.ac.za"
+  },
+  "address": "Walter Sisulu University, Private Bag X1, Mthatha, Eastern Cape, 5117",
+  "social": {
+    "facebook": "https://www.facebook.com/WalterSisuluUniversity",
+    "twitter": "https://twitter.com/WSUcoza",
+    "instagram": "https://www.instagram.com/wsucoza"
+  }
+}

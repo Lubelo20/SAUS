@@ -1,0 +1,21 @@
+{
+  "abbr": "SU",
+  "general": {
+    "phone": "+27 21 808 9111",
+    "email": "info@sun.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 21 808 9227",
+    "email": "undergraduate@sun.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 21 808 4982",
+    "email": "finaid@sun.ac.za"
+  },
+  "address": "Stellenbosch University, Private Bag X1, Matieland, Stellenbosch, 7602",
+  "social": {
+    "facebook": "https://www.facebook.com/StellenboschUni",
+    "twitter": "https://twitter.com/StellenboschUni",
+    "instagram": "https://www.instagram.com/stellenboschuni"
+  }
+}

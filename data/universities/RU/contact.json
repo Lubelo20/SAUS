@@ -1,0 +1,21 @@
+{
+  "abbr": "RU",
+  "general": {
+    "phone": "+27 46 603 8111",
+    "email": "admissions@ru.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 46 603 8523",
+    "email": "admissions@ru.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 46 603 8399",
+    "email": "financialaid@ru.ac.za"
+  },
+  "address": "Rhodes University, PO Box 94, Makhanda, Eastern Cape, 6140",
+  "social": {
+    "facebook": "https://www.facebook.com/RhodesUniversity",
+    "twitter": "https://twitter.com/RhodesUniversity",
+    "instagram": "https://www.instagram.com/rhodesuniversity"
+  }
+}

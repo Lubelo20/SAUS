@@ -1,0 +1,38 @@
+{
+  "abbr": "UKZN",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "ssc@ukzn.ac.za",
+  "phone": "+27 31 260 2111",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UKZN Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition + R24,000 allowance",
+      "criteria": "Top matric results; strong academic and leadership profile",
+      "url": "https://www.ukzn.ac.za/bursaries-scholarships/"
+    },
+    {
+      "name": "UKZN Academic Merit Award",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 32+; demonstrated academic excellence per faculty",
+      "url": "https://www.ukzn.ac.za/bursaries-scholarships/"
+    },
+    {
+      "name": "UKZN Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "Provincial or national representative in recognised sports code",
+      "url": "https://www.ukzn.ac.za/bursaries-scholarships/"
+    },
+    {
+      "name": "UKZN Foundation Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and meals",
+      "criteria": "Disadvantaged students with financial need; South African citizens",
+      "url": "https://www.ukzn.ac.za/bursaries-scholarships/"
+    }
+  ]
+}

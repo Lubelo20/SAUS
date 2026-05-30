@@ -1,0 +1,38 @@
+{
+  "abbr": "NMU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@mandela.ac.za",
+  "phone": "+27 41 504 2072",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "NMU Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition + R24,000 stipend",
+      "criteria": "Top matric results (85%+); APS 38+; leadership record",
+      "url": "https://www.mandela.ac.za/Study-at-Mandela/Financial-Aid"
+    },
+    {
+      "name": "NMU Merit Bursary",
+      "type": "merit",
+      "value": "25%–75% tuition reduction",
+      "criteria": "APS 30+ and relevant subject performance",
+      "url": "https://www.mandela.ac.za/Study-at-Mandela/Financial-Aid"
+    },
+    {
+      "name": "NMU Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "National or provincial sport representation",
+      "url": "https://www.mandela.ac.za/Study-at-Mandela/Financial-Aid"
+    },
+    {
+      "name": "NMU Equity Scholarship",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Designated group students with financial need",
+      "url": "https://www.mandela.ac.za/Study-at-Mandela/Financial-Aid"
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About SAUS — South African Union of Students</title>
+<meta name="description" content="SAUS is the official representative body for students in higher education across the Republic of South Africa, established April 2006."/>
+<meta property="og:title" content="South African Union of Students (SAUS)"/>
+<meta name="theme-color" content="#0A1628"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --navy:#0A1628;--navy-mid:#122040;--navy-light:#1E3160;
+  --green:#00692F;--green-lt:#00873E;--red:#A8200D;--red-lt:#CC2200;
+  --gold:#C9A227;--gold-lt:#E8C04A;--white:#FFFFFF;--cream:#F7F6F2;
+  --stone:#EEECEA;--border:#D0CEC8;--border-dk:#B8B5AE;
+  --text:#1A1918;--text-mid:#4A4845;--text-lt:#7A7874;
+  --ff-serif:'EB Garamond',Georgia,'Times New Roman',serif;
+  --ff-sans:'Source Sans 3','Segoe UI',sans-serif;
+  --ff-mono:'Source Code Pro',monospace;
+  --max:1200px;--topbar-h:38px;--header-h:88px;--nav-h:52px;
+  --total-top:178px;--ease:cubic-bezier(.4,0,.2,1);
+}
+body{font-family:var(--ff-sans);background:var(--cream);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:var(--ff-sans)}
+p{margin-bottom:1rem}
+p:last-child{margin-bottom:0}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--stone)}
+::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
+#topbar{position:fixed;top:0;left:0;right:0;z-index:1100;height:var(--topbar-h);background:var(--navy);border-bottom:2px solid var(--gold);display:flex;align-items:center;}
+.topbar-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.topbar-left{display:flex;align-items:center;gap:0;font-family:var(--ff-sans);font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.02em;}
+.topbar-left .sep{display:inline-block;width:1px;height:14px;background:rgba(255,255,255,.2);margin:0 14px;}
+.topbar-flag{display:inline-flex;gap:2px;align-items:center;margin-right:14px;}
+.flag-seg{width:18px;height:12px;border-radius:1px}
+.topbar-right{display:flex;align-items:center;gap:20px;}
+.topbar-right a{font-size:12px;color:rgba(255,255,255,.65);display:flex;align-items:center;gap:6px;transition:color .2s;text-decoration:none;}
+.topbar-right a:hover{color:var(--gold)}
+.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
+#header{position:fixed;top:var(--topbar-h);left:0;right:0;z-index:1090;height:var(--header-h);background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;}
+.header-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;gap:24px;}
+.header-seal{width:64px;height:64px;flex-shrink:0;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:3px solid var(--gold);}
+.header-seal-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
+.seal-top-stripe{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 33%,var(--green) 33% 67%,var(--red) 67%);}
+.seal-globe{font-size:24px;line-height:1;position:relative;z-index:1;}
+.seal-text{font-family:var(--ff-mono);font-size:6px;color:var(--gold);letter-spacing:.08em;text-align:center;font-weight:500;position:relative;z-index:1;text-transform:uppercase;}
+.seal-stars{display:flex;gap:2px;position:relative;z-index:1;}
+.seal-stars span{font-size:5px;color:var(--gold)}
+.header-ident{display:flex;flex-direction:column}
+.header-ident-main{font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.15;letter-spacing:.01em;}
+.header-ident-main em{font-style:normal;color:var(--green)}
+.header-ident-sub{font-family:var(--ff-sans);font-size:12px;color:var(--text-mid);letter-spacing:.04em;font-weight:400;margin-top:2px;}
+.header-divider{width:1px;height:48px;background:var(--border);margin:0 8px;flex-shrink:0;}
+.header-established{display:flex;flex-direction:column;font-family:var(--ff-mono);font-size:10px;color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;line-height:1.8;}
+.header-established strong{font-family:var(--ff-serif);font-size:20px;color:var(--navy);letter-spacing:.02em;font-weight:600;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.header-contact-btn{display:flex;align-items:center;gap:8px;padding:9px 20px;border-radius:3px;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;border:none;transition:background .2s;letter-spacing:.02em;}
+.header-contact-btn:hover{background:var(--navy-light);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:1px;transition:.3s}
+#navbar{position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1080;height:var(--nav-h);background:var(--navy-mid);border-bottom:3px solid var(--green);}
+.nav-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;height:100%;display:flex;align-items:center;}
+.nav-links{display:flex;height:100%}
+.nav-item{height:100%;display:flex;align-items:center;padding:0 16px;position:relative;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:.03em;text-transform:uppercase;cursor:pointer;border:none;background:none;font-family:var(--ff-sans);transition:color .2s,background .2s;white-space:nowrap;text-decoration:none;}
+.nav-item::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .25s var(--ease);}
+.nav-item:hover{color:var(--white);background:rgba(255,255,255,.05);text-decoration:none}
+.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
+.nav-item.active{color:var(--white)}
+.nav-ref{margin-left:auto;font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
+.mobile-nav{display:none;position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1079;background:var(--navy);border-bottom:2px solid var(--green);flex-direction:column;padding:8px 0;}
+.mobile-nav.open{display:flex}
+.mobile-nav-item{padding:14px 32px;font-size:14px;font-weight:600;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.04em;cursor:pointer;border:none;background:none;font-family:var(--ff-sans);text-align:left;border-left:3px solid transparent;transition:all .2s;text-decoration:none;}
+.mobile-nav-item:hover,.mobile-nav-item.active{color:var(--white);background:rgba(255,255,255,.05);border-left-color:var(--gold);text-decoration:none;}
+main{min-height:100vh;padding-top:var(--total-top)}
+.breadcrumb-bar{background:var(--stone);border-bottom:1px solid var(--border);padding:9px 0;}
+.breadcrumb-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-lt);font-family:var(--ff-sans);}
+.breadcrumb-inner a{color:var(--text-lt);transition:color .2s;text-decoration:none}
+.breadcrumb-inner a:hover{color:var(--green)}
+.breadcrumb-inner .sep{color:var(--border-dk);font-size:11px;user-select:none}
+.breadcrumb-inner .current{color:var(--text-mid);font-weight:500}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.section{padding:72px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.official-hero{background:var(--navy);color:var(--white);padding:72px 32px;position:relative;overflow:hidden;}
+.official-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;}
+.official-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 20%,var(--green) 20% 40%,var(--gold) 40% 60%,var(--red) 60% 80%,var(--navy) 80%);}
+.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}
+.hero-ref{font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.hero-ref::before{content:'';display:block;width:32px;height:1px;background:var(--gold);}
+.hero-title{font-family:var(--ff-serif);font-size:clamp(36px,5.5vw,68px);font-weight:700;line-height:1.1;color:var(--white);margin-bottom:20px;max-width:760px;}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-lead{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,.7);max-width:560px;line-height:1.75;margin-bottom:36px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:var(--ff-sans);letter-spacing:.03em;transition:all .2s var(--ease);text-decoration:none;}
+.btn:hover{text-decoration:none}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-light);box-shadow:0 4px 16px rgba(10,22,40,.25)}
+.btn-green{background:var(--green);color:var(--white)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border-dk)}
+.btn-outline:hover{border-color:var(--navy);background:var(--stone)}
+.btn-sm{padding:8px 20px;font-size:13px}
+.btn-lg{padding:15px 36px;font-size:15px}
+.sec-header{margin-bottom:48px}
+.sec-header .ref{font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.sec-header .ref::before{content:'';display:block;width:24px;height:2px;background:var(--green);}
+.sec-header h2{font-family:var(--ff-serif);font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;color:var(--navy);}
+.sec-header h2 em{font-style:italic;color:var(--green)}
+.panel{background:var(--white);border:1px solid var(--border);border-radius:2px;overflow:hidden;}
+.panel-header{padding:20px 28px;background:var(--navy);color:var(--white);display:flex;align-items:center;gap:14px;}
+.panel-header h3{font-family:var(--ff-serif);font-size:18px;font-weight:600;color:var(--white);}
+.panel-header .panel-icon{width:36px;height:36px;background:rgba(255,255,255,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.panel-body{padding:28px}
+.official-table{width:100%;border-collapse:collapse;font-size:14.5px;}
+.official-table thead tr{background:var(--navy);}
+.official-table th{padding:14px 18px;font-family:var(--ff-sans);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);text-align:left;}
+.official-table td{padding:15px 18px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top;}
+.official-table tbody tr:hover td{background:var(--stone)}
+.official-table td:first-child{font-weight:600;color:var(--navy)}
+.official-table tfoot td{background:var(--stone);font-size:12px;color:var(--text-lt);padding:10px 18px;font-style:italic;}
+.timeline{position:relative;padding-left:36px}
+.timeline::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--border);}
+.timeline-item{position:relative;margin-bottom:36px}
+.timeline-dot{position:absolute;left:-41px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--green);border:3px solid var(--white);box-shadow:0 0 0 2px var(--green);}
+.timeline-year{font-family:var(--ff-mono);font-size:11px;color:var(--green);letter-spacing:.1em;margin-bottom:6px;text-transform:uppercase;}
+.timeline-title{font-family:var(--ff-serif);font-size:17px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.timeline-body{font-size:14px;color:var(--text-mid);line-height:1.65}
+.sidebar-panel{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:24px;margin-bottom:20px;border-top:3px solid var(--green);}
+.sidebar-title{font-family:var(--ff-serif);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+.sidebar-link{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--stone);font-size:14px;color:var(--text);cursor:pointer;transition:color .2s;text-decoration:none;}
+.sidebar-link:last-child{border-bottom:none}
+.sidebar-link:hover{color:var(--green);text-decoration:none}
+.sidebar-link::before{content:'›';color:var(--green);font-size:16px;flex-shrink:0}
+.with-sidebar{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.sidebar{position:sticky;top:calc(var(--total-top) + 20px)}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:2px;font-family:var(--ff-mono);font-size:10.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;}
+.badge-green{background:rgba(0,105,47,.1);color:var(--green)}
+.badge-navy{background:rgba(10,22,40,.08);color:var(--navy)}
+.badge-gold{background:rgba(201,162,39,.15);color:#7a5a00}
+.badge-gray{background:var(--stone);color:var(--text-lt)}
+#footer{background:var(--navy);color:var(--white);margin-top:0;}
+.footer-gov-bar{background:var(--navy-mid);padding:18px 32px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-gov-bar-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.footer-gov-bar-inner p{font-size:12px;color:rgba(255,255,255,.45);font-family:var(--ff-mono);margin:0;letter-spacing:.04em;}
+.footer-main{padding:64px 32px 40px}
+.footer-main-inner{max-width:var(--max);margin:0 auto}
+.footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand-name{font-family:var(--ff-serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.footer-brand-sub{font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+.footer-brand-desc{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;max-width:240px;margin-bottom:24px;}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:36px;height:36px;border-radius:2px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:15px;text-decoration:none;transition:background .2s;}
+.footer-social a:hover{background:rgba(255,255,255,.12)}
+.footer-col-title{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-col a{display:block;width:100%;text-align:left;font-size:13.5px;color:rgba(255,255,255,.5);background:none;border:none;padding:5px 0;cursor:pointer;font-family:var(--ff-sans);text-decoration:none;transition:color .2s;line-height:1.5;}
+.footer-col p{font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;margin:0;line-height:1.5;}
+.footer-col a:hover{color:var(--white);text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);font-family:var(--ff-mono);letter-spacing:.04em;margin:0;}
+.footer-stripe{height:4px;background:linear-gradient(to right,var(--navy) 15%,var(--green) 15% 38%,var(--gold) 38% 62%,var(--red) 62% 85%,var(--navy) 85%);}
+#cookie{position:fixed;bottom:0;left:0;right:0;background:var(--navy-mid);color:var(--white);padding:18px 32px;display:flex;align-items:center;gap:24px;z-index:8000;border-top:3px solid var(--gold);transform:translateY(100%);transition:transform .5s var(--ease);flex-wrap:wrap;}
+#cookie.show{transform:translateY(0)}
+#cookie p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px;margin:0}
+#cookie p a{color:var(--gold)}
+.cookie-btns{display:flex;gap:10px}
+.c-accept{background:var(--green);color:var(--white);border:none;padding:9px 20px;border-radius:2px;font-size:13px;font-weight:600;cursor:pointer;font-family:var(--ff-sans);}
+.c-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.2);padding:9px 20px;border-radius:2px;font-size:13px;cursor:pointer;font-family:var(--ff-sans);}
+@media(max-width:960px){
+  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
+  .with-sidebar{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-ref{display:none}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
+  .wrap{padding:0 20px}
+  .header-established,.header-divider{display:none}
+  .header-ident-main{font-size:17px}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .footer-cols{grid-template-columns:1fr}
+  .official-hero{padding:48px 20px}
+  .section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <div class="topbar-flag">
+        <div class="flag-seg" style="background:#009A44"></div>
+        <div class="flag-seg" style="background:#FFB612"></div>
+        <div class="flag-seg" style="background:#003580"></div>
+        <div class="flag-seg" style="background:#DE3831"></div>
+        <div class="flag-seg" style="background:#FFFFFF"></div>
+        <div class="flag-seg" style="background:#000000"></div>
+      </div>
+      <span>Republic of South Africa</span>
+      <span class="sep"></span>
+      <span>Official National Student Representative Body</span>
+      <span class="sep"></span>
+      <span>Established April 2006</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:Secretariat@saus.org.za">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 5 7-5"/></svg>
+        Secretariat@saus.org.za
+      </a>
+      <a href="tel:+27791295948">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h3l1.5 4-2 1.5a9 9 0 004 4L11 9.5l4 1.5v3a2 2 0 01-2 2A14 14 0 012 4a2 2 0 012-2z"/></svg>
+        +27 79 129 5948
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="header">
+  <div class="header-inner">
+    <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
+      <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </a>
+    <a href="/" class="header-ident" style="text-decoration:none">
+      <div class="header-ident-main">South African <em>Union of Students</em></div>
+      <div class="header-ident-sub">SAUS — Official National Representative Body in Higher Education</div>
+    </a>
+    <div class="header-divider"></div>
+    <div class="header-established">
+      <span>Established</span><strong>2006</strong><span>9th Congress</span>
+    </div>
+    <div class="header-right">
+      <div class="header-contact-btn" style="background:transparent;border:none;padding:4px 8px;cursor:default;"><span style="display:block;width:60px;height:40px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span></div>
+      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="/" class="nav-item" data-page="home">Home</a>
+      <a href="/about/" class="nav-item" data-page="about">About SAUS</a>
+      <a href="/campaigns/" class="nav-item" data-page="campaigns">Campaigns</a>
+      <a href="/leadership/" class="nav-item" data-page="leadership">Leadership</a>
+      <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
+      <a href="/events/" class="nav-item" data-page="events">Events</a>
+      <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
+      <a href="/nsfas/" class="nav-item" data-page="nsfas">NSFAS</a>
+      <a href="/apply/" class="nav-item" data-page="apply">Universities</a>
+      <a href="/contact/" class="nav-item" data-page="contact">Contact</a>
+    </div>
+    <span class="nav-ref">REF: SAUS/GOV/2026</span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mnav">
+  <a href="/" class="mobile-nav-item" data-page="home" onclick="closeMobile()">Home</a>
+  <a href="/about/" class="mobile-nav-item" data-page="about" onclick="closeMobile()">About SAUS</a>
+  <a href="/campaigns/" class="mobile-nav-item" data-page="campaigns" onclick="closeMobile()">Campaigns</a>
+  <a href="/leadership/" class="mobile-nav-item" data-page="leadership" onclick="closeMobile()">Leadership</a>
+  <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
+  <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
+  <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>
+  <a href="/nsfas/" class="mobile-nav-item" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
+  <a href="/apply/" class="mobile-nav-item" data-page="apply" onclick="closeMobile()">Universities</a>
+  <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main>
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><a href="/">Home</a><span class="sep">›</span><span class="current">About SAUS</span></div></div>
+
+  <div class="official-hero" style="padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/ABOUT/2026 · Institutional Overview</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">About the South African <em>Union of Students</em></h1>
+      <p class="hero-lead">A constitutional overview of SAUS — its establishment, mandate, institutional history, and continental standing as South Africa's official national student body.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header">
+            <div class="ref">SAUS/PROFILE/2026</div>
+            <h2>Institutional <em>Profile</em></h2>
+          </div>
+
+          <table class="official-table" style="margin-bottom:40px">
+            <thead><tr><th>Field</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr><td>Full Designation</td><td>South African Union of Students (SAUS)</td></tr>
+              <tr><td>Date of Establishment</td><td>April 2006</td></tr>
+              <tr><td>Legal Status</td><td>Non-Profit National Student Representative Body</td></tr>
+              <tr><td>Current Congress</td><td>9th National Executive Committee (2025)</td></tr>
+              <tr><td>Institutional Coverage</td><td>All 26 Public Universities in the Republic of South Africa</td></tr>
+              <tr><td>Headquarters</td><td>Johannesburg, Gauteng, South Africa</td></tr>
+              <tr><td>Website</td><td><a href="https://www.saus.org.za">www.saus.org.za</a></td></tr>
+              <tr><td>General Correspondence</td><td><a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a></td></tr>
+              <tr><td>Office Hours</td><td>Monday to Friday, 08:00 – 17:00</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="2">Source: SAUS Secretariat, 2026</td></tr></tfoot>
+          </table>
+
+          <div class="sec-header" style="margin-top:48px">
+            <div class="ref">SAUS/MISSION/2026</div>
+            <h2>Mission, Vision <em>& Values</em></h2>
+          </div>
+
+          <div class="panel" style="margin-bottom:20px">
+            <div class="panel-header"><div class="panel-icon"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3"/><circle cx="8" cy="8" r=".75" fill="currentColor" stroke="none"/></svg></div><h3>Mission Statement</h3></div>
+            <div class="panel-body"><p>To consolidate and strengthen students' views in the governance and enhancement of Higher Education and Training in South Africa, ensuring every student has access to affordable, quality, and inclusive education — delivered within a system that is equitable, non-sexist, non-racial, and democratic.</p></div>
+          </div>
+          <div class="panel" style="margin-bottom:20px">
+            <div class="panel-header" style="background:var(--green)"><div class="panel-icon"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-1.8 2-2.8 4-2.8 6.5s1 4.5 2.8 6.5M8 1.5c1.8 2 2.8 4 2.8 6.5s-1 4.5-2.8 6.5"/></svg></div><h3>Vision Statement</h3></div>
+            <div class="panel-body"><p>A unified, equitable, non-sexist, non-racial, democratic, and well-governed education system that is appropriate and responsive to the needs of South Africa, Africa, and the world — providing a conducive environment for learning, teaching, research, and community service.</p></div>
+          </div>
+
+          <div style="margin:32px 0 48px;border-radius:6px;overflow:hidden;box-shadow:0 4px 24px rgba(10,22,40,.18);background:var(--navy);">
+            <video src="/about/AboutVideo/AboutVID1.mov" controls playsinline
+              style="width:100%;height:auto;max-height:60vh;display:block;">
+              Your browser does not support this video format.
+            </video>
+          </div>
+
+          <div class="sec-header" style="margin-top:56px">
+            <div class="ref">SAUS/HISTORY/2026</div>
+            <h2>Historical <em>Background</em></h2>
+          </div>
+          <p style="font-size:15px;color:var(--text-mid);margin-bottom:24px;line-height:1.75">SAUS represents a historic milestone in South African student politics — the first national union of students constituted since the dissolution of the National Union of South African Students (NUSAS) in the late 1980s. Students have played an instrumental role in education since the 1960s, most notably in the 1976 Soweto Uprisings.</p>
+          <div class="timeline">
+            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1960s</div><div class="timeline-title">Emergence of Student Structures</div><div class="timeline-body">Student organisations become instrumental in the education sector, laying the foundation for organised student resistance against apartheid education policies.</div></div>
+            <div class="timeline-item"><div class="timeline-dot" style="background:var(--red);box-shadow:0 0 0 2px var(--red)"></div><div class="timeline-year">16 June 1976</div><div class="timeline-title">Soweto Student Uprisings</div><div class="timeline-body">Students play a decisive role in the 1976 uprisings — a defining moment in the liberation struggle that established the student movement as a critical political force in South Africa.</div></div>
+            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">Late 1980s</div><div class="timeline-title">Dissolution of NUSAS</div><div class="timeline-body">The National Union of South African Students (NUSAS) is dissolved, creating a void in national student representation that would persist for nearly two decades.</div></div>
+            <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">Early 2000s</div><div class="timeline-title">Higher Education Restructuring</div><div class="timeline-body">The South African government restructures the higher education landscape, creating universities and universities of technology — necessitating a new unified national student voice.</div></div>
+            <div class="timeline-item"><div class="timeline-dot" style="background:var(--gold);box-shadow:0 0 0 2px var(--gold)"></div><div class="timeline-year">April 2006</div><div class="timeline-title">SAUS Founded</div><div class="timeline-body">The South African Union of Students is officially constituted — uniting universities and universities of technology under one national student representative body for the first time since the 1980s.</div></div>
+            <div class="timeline-item" style="margin-bottom:0"><div class="timeline-dot" style="background:var(--navy);box-shadow:0 0 0 2px var(--navy)"></div><div class="timeline-year">July–August 2025</div><div class="timeline-title">9th National Elective Congress</div><div class="timeline-body">The 9th NEC is elected at Nelson Mandela University and Boontjieskraal, Kimberley — advancing transformative student governance under a renewed mandate.</div></div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">On This Page</div>
+            <a class="sidebar-link">Institutional Profile</a>
+            <a class="sidebar-link">Mission &amp; Vision</a>
+            <a class="sidebar-link">Historical Background</a>
+            <a class="sidebar-link">Continental Presence</a>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--gold)">
+            <div class="sidebar-title">Key Documents</div>
+            <a class="sidebar-link">SAUS Constitution</a>
+            <a class="sidebar-link">9th Congress Resolutions</a>
+            <a class="sidebar-link">Annual Report 2025</a>
+            <a class="sidebar-link">POPIA Compliance Notice</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="footer">
+  <div class="footer-gov-bar">
+    <div class="footer-gov-bar-inner">
+      <p><span style="display:inline-flex;gap:2px;align-items:center;vertical-align:middle;margin-right:4px"><span style="display:inline-block;width:16px;height:10px;background:linear-gradient(to bottom,#DE3831 33%,#FFFFFF 33% 67%,#002395 67%)"></span></span>Republic of South Africa — South African Union of Students (SAUS)</p>
+      <p>Official National Representative Body in Higher Education · Established April 2006</p>
+      <p>SAUS/GOV/2026 · POPIA Compliant</p>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-main-inner">
+      <div class="footer-cols">
+        <div>
+          <div class="footer-brand-name">South African Union of Students</div>
+          <div class="footer-brand-sub">SAUS · Official National Student Body · Est. 2006</div>
+          <p class="footer-brand-desc">The official representative body for students across all 26 public universities in the Republic of South Africa — empowering student voices, advancing higher education.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/SAUStudents/" title="Facebook" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/sa.union.of.students/" title="Instagram" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.2 4 4 5.2 4 7.6v8.8C4 18.8 5.2 20 7.6 20h8.8c2.4 0 3.6-1.2 3.6-3.6V7.6C20 5.2 18.8 4 16.4 4H7.6zM17.5 6.5a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10A5 5 0 0112 7zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg></a>
+            <a href="https://za.linkedin.com/company/south-african-union-of-students" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V9h4v2.8A6 6 0 0116 8zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.tiktok.com/@southafricanunionofstud8" title="TikTok" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.89 2.89 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.15 8.15 0 004.77 1.52V6.72a4.86 4.86 0 01-1-.03z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="/">Home</a>
+          <a href="/about/">About SAUS</a>
+          <a href="/campaigns/">Campaigns</a>
+          <a href="/leadership/">NEC Leadership</a>
+          <a href="/news/">Newsroom</a>
+          <a href="/events/">Events</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/contact/">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Policy Areas</div>
+          <p>NSFAS Reform</p>
+          <p>Student Debt Relief</p>
+          <p>Missing Middle Funding</p>
+          <p>GBV &amp; Campus Safety</p>
+          <p>No Application Fees</p>
+          <p>AI in Higher Education</p>
+          <p>Higher Education Act Review</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Secretariat</div>
+          <a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a>
+          <a href="tel:+27791295948">+27 79 129 5948</a>
+          <p>Johannesburg, Gauteng</p>
+          <p>South Africa</p>
+          <p>Mon–Fri · 08:00–17:00</p>
+          <p style="margin-top:10px;color:rgba(255,255,255,.2);font-size:11px;font-family:var(--ff-mono)">www.saus.org.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="http://localhost:3000" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stripe"></div>
+</footer>
+
+<div id="cookie">
+  <p>This website uses cookies to improve your experience in accordance with the <a href="#">Protection of Personal Information Act (POPIA), Act 4 of 2013</a>.</p>
+  <div class="cookie-btns">
+    <button class="c-accept" onclick="acceptC()">Accept</button>
+    <button class="c-decline" onclick="declineC()">Decline</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const path = window.location.pathname.replace(/\/$/, '') || '/';
+  const map = {'/':'home','/about':'about','/campaigns':'campaigns','/leadership':'leadership','/news':'news','/events':'events','/gallery':'gallery','/nsfas':'nsfas','/contact':'contact'};
+  const id = Object.keys(map).find(k => path.endsWith(k)) || 'home';
+  document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(n => {
+    if(n.dataset.page === id) n.classList.add('active');
+  });
+})();
+function toggleMenu(){
+  const m=document.getElementById('mnav');m.classList.toggle('open');
+  const h=document.getElementById('ham');const open=m.classList.contains('open');
+  h.children[0].style.transform=open?'rotate(45deg) translateY(7px)':'none';
+  h.children[1].style.opacity=open?'0':'1';
+  h.children[2].style.transform=open?'rotate(-45deg) translateY(-7px)':'none';
+}
+function closeMobile(){document.getElementById('mnav').classList.remove('open')}
+window.addEventListener('DOMContentLoaded',()=>{
+  if(!localStorage.getItem('saus_gov_cookie')){
+    setTimeout(()=>document.getElementById('cookie').classList.add('show'),1800);
+  }
+});
+function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.getElementById('cookie').classList.remove('show')}
+function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "abbr": "UWC",
+  "general": {
+    "phone": "+27 21 959 2911",
+    "email": "studinfo@uwc.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 21 959 2911",
+    "email": "studinfo@uwc.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 21 959 2938",
+    "email": "financialaid@uwc.ac.za"
+  },
+  "address": "University of the Western Cape, Private Bag X17, Bellville, Cape Town, 7535",
+  "social": {
+    "facebook": "https://www.facebook.com/UWCofficial",
+    "twitter": "https://twitter.com/UWCofficial",
+    "instagram": "https://www.instagram.com/uwc_official"
+  }
+}

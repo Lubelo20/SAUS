@@ -1,0 +1,31 @@
+{
+  "abbr": "UMP",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@ump.ac.za",
+  "phone": "+27 13 002 0111",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UMP Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 28+; Mpumalanga students preferred",
+      "url": "https://www.ump.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "UMP Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 24+; demonstrated academic potential",
+      "url": "https://www.ump.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "UMP Agricultural Bursary",
+      "type": "faculty",
+      "value": "Full tuition + stipend",
+      "criteria": "Agriculture students committed to Mpumalanga rural development",
+      "url": "https://www.ump.ac.za/admissions/financial-aid"
+    }
+  ]
+}

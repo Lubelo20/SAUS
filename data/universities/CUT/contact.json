@@ -1,0 +1,21 @@
+{
+  "abbr": "CUT",
+  "general": {
+    "phone": "+27 51 507 3911",
+    "email": "info@cut.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 51 507 3911",
+    "email": "admissions@cut.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 51 507 4011",
+    "email": "financialaid@cut.ac.za"
+  },
+  "address": "Central University of Technology, Private Bag X20539, Bloemfontein, Free State, 9300",
+  "social": {
+    "facebook": "https://www.facebook.com/CUTfreestate",
+    "twitter": "https://twitter.com/CUTfreestate",
+    "instagram": "https://www.instagram.com/cut_freestate"
+  }
+}

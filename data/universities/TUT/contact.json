@@ -1,0 +1,21 @@
+{
+  "abbr": "TUT",
+  "general": {
+    "phone": "+27 12 382 4911",
+    "email": "contact@tut.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 12 382 5614",
+    "email": "applications@tut.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 12 382 5151",
+    "email": "financialaid@tut.ac.za"
+  },
+  "address": "Tshwane University of Technology, Private Bag X680, Pretoria, 0001",
+  "social": {
+    "facebook": "https://www.facebook.com/TUTsa",
+    "twitter": "https://twitter.com/TUTsa",
+    "instagram": "https://www.instagram.com/tut_sa"
+  }
+}

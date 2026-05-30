@@ -1,0 +1,38 @@
+{
+  "abbr": "UWC",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@uwc.ac.za",
+  "phone": "+27 21 959 2938",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UWC Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition + accommodation",
+      "criteria": "Top matric results (85%+); APS 36+; all provinces",
+      "url": "https://www.uwc.ac.za/financial-aid"
+    },
+    {
+      "name": "UWC Merit Bursary",
+      "type": "merit",
+      "value": "25%–75% tuition reduction",
+      "criteria": "APS 30+; strong performance in relevant subjects",
+      "url": "https://www.uwc.ac.za/financial-aid"
+    },
+    {
+      "name": "UWC Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "Western Province or national sport representative",
+      "url": "https://www.uwc.ac.za/financial-aid"
+    },
+    {
+      "name": "UWC Equity Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and books",
+      "criteria": "Black, Coloured or Indian students; financial need assessment required",
+      "url": "https://www.uwc.ac.za/financial-aid"
+    }
+  ]
+}

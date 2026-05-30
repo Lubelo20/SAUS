@@ -1,0 +1,33 @@
+{
+  "abbr": "SPU",
+  "name": "Sol Plaatje University",
+  "type": "Comprehensive University",
+  "established": 2014,
+  "students": 4000,
+  "aps": "22–30+",
+  "location": {
+    "city": "Kimberley",
+    "province": "Northern Cape"
+  },
+  "website": "https://www.spu.ac.za",
+  "apply": "https://www.spu.ac.za/admissions",
+  "prospectus": "https://www.spu.ac.za/admissions",
+  "logo": "spu.png",
+  "description": "South Africa's newest traditional university (est. 2014), named after journalist and activist Sol Plaatje. Located in Kimberley, focusing on economic development and serving the Northern Cape.",
+  "faculties": [
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Humanities",
+    "Natural & Applied Sciences"
+  ],
+  "motto": "Aspire. Achieve. Make a Difference.",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Setswana"
+  ],
+  "campuses": [
+    "Kimberley (Main)"
+  ],
+  "nsfasAccredited": true
+}

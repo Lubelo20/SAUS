@@ -1,0 +1,38 @@
+{
+  "abbr": "UFS",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@ufs.ac.za",
+  "phone": "+27 51 401 2799",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UFS Chancellor's Scholarship",
+      "type": "merit",
+      "value": "Full tuition + R30,000 stipend/yr",
+      "criteria": "Top matric achievers; APS 40+; all provinces",
+      "url": "https://www.ufs.ac.za/apply/funding/bursaries"
+    },
+    {
+      "name": "UFS Rector's Academic Award",
+      "type": "merit",
+      "value": "50%–100% tuition reduction",
+      "criteria": "APS 36+; 85%+ matric aggregate",
+      "url": "https://www.ufs.ac.za/apply/funding/bursaries"
+    },
+    {
+      "name": "UFS Sport Bursary",
+      "type": "sports",
+      "value": "Up to 40% tuition reduction",
+      "criteria": "National colours; Kovsies varsity sport team member",
+      "url": "https://www.ufs.ac.za/apply/funding/bursaries"
+    },
+    {
+      "name": "UFS Language Bursary",
+      "type": "faculty",
+      "value": "Partial tuition support",
+      "criteria": "Students studying Sesotho, Afrikaans or isiZulu as major subject",
+      "url": "https://www.ufs.ac.za/apply/funding/bursaries"
+    }
+  ]
+}

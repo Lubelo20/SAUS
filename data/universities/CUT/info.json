@@ -1,0 +1,33 @@
+{
+  "abbr": "CUT",
+  "name": "Central University of Technology",
+  "type": "University of Technology",
+  "established": 1981,
+  "students": 15000,
+  "aps": "18–26+",
+  "location": {
+    "city": "Bloemfontein",
+    "province": "Free State"
+  },
+  "website": "https://www.cut.ac.za",
+  "apply": "https://www.cut.ac.za/apply",
+  "prospectus": "https://www.cut.ac.za/apply",
+  "logo": "cut.png",
+  "description": "The only university of technology in the Free State. Offers applied programmes in engineering, health, management and built environment across Bloemfontein and Welkom campuses.",
+  "faculties": [
+    "Engineering & IT",
+    "Health & Environmental Sciences",
+    "Humanities",
+    "Management Sciences"
+  ],
+  "motto": "Transforming Lives",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Bloemfontein (Main)",
+    "Welkom"
+  ],
+  "nsfasAccredited": true
+}

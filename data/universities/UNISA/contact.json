@@ -1,0 +1,21 @@
+{
+  "abbr": "UNISA",
+  "general": {
+    "phone": "+27 12 429 3111",
+    "email": "study-info@unisa.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 12 429 3111",
+    "email": "study-info@unisa.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 12 429 6211",
+    "email": "financialaid@unisa.ac.za"
+  },
+  "address": "UNISA, PO Box 392, Pretoria, 0003",
+  "social": {
+    "facebook": "https://www.facebook.com/UnisaSA",
+    "twitter": "https://twitter.com/UnisaSA",
+    "instagram": "https://www.instagram.com/unisa_sa"
+  }
+}

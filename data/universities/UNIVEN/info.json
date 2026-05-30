@@ -1,0 +1,35 @@
+{
+  "abbr": "UNIVEN",
+  "name": "University of Venda",
+  "type": "Traditional University",
+  "established": 1982,
+  "students": 15000,
+  "aps": "18–26+",
+  "location": {
+    "city": "Thohoyandou",
+    "province": "Limpopo"
+  },
+  "website": "https://www.univen.ac.za",
+  "apply": "https://www.univen.ac.za/admissions",
+  "prospectus": "https://www.univen.ac.za/admissions",
+  "logo": "univen.png",
+  "description": "Serves the rural Vhembe district in Limpopo. Known for environmental sciences, health sciences and agriculture, training professionals for remote and underserved communities.",
+  "faculties": [
+    "Agriculture",
+    "Education",
+    "Health Sciences",
+    "Human Sciences",
+    "Law",
+    "Science, Engineering & Technology"
+  ],
+  "motto": "Empowering Future Leaders",
+  "languages": [
+    "English",
+    "Tshivenda",
+    "Xitsonga"
+  ],
+  "campuses": [
+    "Thohoyandou (Main)"
+  ],
+  "nsfasAccredited": true
+}

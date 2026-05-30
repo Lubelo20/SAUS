@@ -1,0 +1,37 @@
+{
+  "abbr": "UCT",
+  "name": "University of Cape Town",
+  "type": "Research University",
+  "established": 1829,
+  "students": 29000,
+  "aps": "36–44+",
+  "location": {
+    "city": "Cape Town",
+    "province": "Western Cape"
+  },
+  "website": "https://www.uct.ac.za",
+  "apply": "https://myapps.uct.ac.za/",
+  "prospectus": "https://www.uct.ac.za/apply/undergraduate/undergraduate-prospectus",
+  "logo": "uct.png",
+  "description": "Africa's leading research university, ranked #1 on the continent. UCT sits on the slopes of Devil's Peak in Cape Town with six faculties and world-class medical, engineering and law schools.",
+  "faculties": [
+    "Commerce",
+    "Engineering & Built Env.",
+    "Health Sciences",
+    "Humanities",
+    "Law",
+    "Science"
+  ],
+  "motto": "Spes bona (Good Hope)",
+  "languages": [
+    "English"
+  ],
+  "campuses": [
+    "Upper Campus",
+    "Middle Campus",
+    "Lower Campus",
+    "Health Sciences",
+    "Breakwater (GSB)"
+  ],
+  "nsfasAccredited": true
+}

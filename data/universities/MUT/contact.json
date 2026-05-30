@@ -1,0 +1,21 @@
+{
+  "abbr": "MUT",
+  "general": {
+    "phone": "+27 31 907 7000",
+    "email": "registrar@mut.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 31 907 7000",
+    "email": "admissions@mut.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 31 907 7111",
+    "email": "financialaid@mut.ac.za"
+  },
+  "address": "Mangosuthu University of Technology, PO Box 12363, Jacobs, Durban, 4026",
+  "social": {
+    "facebook": "https://www.facebook.com/MangosuthuUT",
+    "twitter": "https://twitter.com/MangosuthuUT",
+    "instagram": "https://www.instagram.com/mangosuthuut"
+  }
+}

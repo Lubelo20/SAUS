@@ -1,0 +1,38 @@
+{
+  "abbr": "UniZ",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@unizulu.ac.za",
+  "phone": "+27 35 902 6232",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UniZ Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 26+; KwaZulu-Natal focus",
+      "url": "https://www.unizulu.ac.za/financial-aid"
+    },
+    {
+      "name": "UniZ Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 22+; maintained academic performance",
+      "url": "https://www.unizulu.ac.za/financial-aid"
+    },
+    {
+      "name": "UniZ Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "Provincial or national sport representation",
+      "url": "https://www.unizulu.ac.za/financial-aid"
+    },
+    {
+      "name": "UniZ Community Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and books",
+      "criteria": "Students from KZN rural communities; financial need",
+      "url": "https://www.unizulu.ac.za/financial-aid"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "abbr": "NWU",
+  "general": {
+    "phone": "+27 18 299 1111",
+    "email": "admissions@nwu.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 18 299 4444",
+    "email": "admissions@nwu.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 18 299 2222",
+    "email": "financialaid@nwu.ac.za"
+  },
+  "address": "North-West University, Private Bag X6001, Potchefstroom, 2520",
+  "social": {
+    "facebook": "https://www.facebook.com/nwuac",
+    "twitter": "https://twitter.com/nwuac",
+    "instagram": "https://www.instagram.com/nwuac"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "abbr": "NMU",
+  "general": {
+    "phone": "+27 41 504 1111",
+    "email": "info@mandela.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 41 504 2262",
+    "email": "admissions@mandela.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 41 504 2072",
+    "email": "financialaid@mandela.ac.za"
+  },
+  "address": "Nelson Mandela University, PO Box 77000, Gqeberha, 6031",
+  "social": {
+    "facebook": "https://www.facebook.com/MandelaUni",
+    "twitter": "https://twitter.com/MandelaUni",
+    "instagram": "https://www.instagram.com/mandelauni"
+  }
+}

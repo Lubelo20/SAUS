@@ -1,0 +1,31 @@
+{
+  "abbr": "UL",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@ul.ac.za",
+  "phone": "+27 15 268 2400",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UL Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 26+; Limpopo students preferred",
+      "url": "https://www.ul.ac.za/financial-aid"
+    },
+    {
+      "name": "UL Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 22+; consistent academic performance",
+      "url": "https://www.ul.ac.za/financial-aid"
+    },
+    {
+      "name": "UL Turfloop Heritage Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from historically disadvantaged communities in Limpopo",
+      "url": "https://www.ul.ac.za/financial-aid"
+    }
+  ]
+}

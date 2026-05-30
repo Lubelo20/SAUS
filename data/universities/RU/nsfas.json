@@ -1,0 +1,38 @@
+{
+  "abbr": "RU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@ru.ac.za",
+  "phone": "+27 46 603 8399",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "Rhodes Trust Scholarship",
+      "type": "merit",
+      "value": "Full tuition + accommodation + stipend",
+      "criteria": "Top matric achievers nationally; strong community engagement record",
+      "url": "https://www.ru.ac.za/admissions/financialassistance/"
+    },
+    {
+      "name": "Rhodes Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition + R20,000 allowance",
+      "criteria": "90%+ matric; subject excellence and leadership activities",
+      "url": "https://www.ru.ac.za/admissions/financialassistance/"
+    },
+    {
+      "name": "Rhodes Merit Bursary",
+      "type": "merit",
+      "value": "25%–75% tuition reduction",
+      "criteria": "APS 32+; all faculties considered",
+      "url": "https://www.ru.ac.za/admissions/financialassistance/"
+    },
+    {
+      "name": "Rhodes Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "National or provincial representative athlete",
+      "url": "https://www.ru.ac.za/admissions/financialassistance/"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Diploma in Biological Sciences",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Chemistry",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Computer Science",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Data Science",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Environmental Science",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Geology",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Information Technology",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Mathematics & Statistics",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Physics",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Applied & Computer Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Bachelor of Architectural Studies",
+    "qual": "BAS",
+    "type": "Degree",
+    "faculty": "Engineering & Technology",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Bachelor of Science in Construction / Quantity Surveying",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Engineering & Technology",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Diploma in Engineering (Chemical)",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Engineering & Technology",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Engineering (Civil)",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Engineering & Technology",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Engineering (Electrical & Electronic)",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Engineering & Technology",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Engineering (Industrial)",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Engineering & Technology",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Engineering (Mechanical)",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Engineering & Technology",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Broad humanities grounding across languages, society and thought."
+  },
+  {
+    "name": "Bachelor of Arts in Languages & Literature",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Broad humanities grounding across languages, society and thought."
+  },
+  {
+    "name": "Bachelor of Arts in Political Science",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Broad humanities grounding across languages, society and thought."
+  },
+  {
+    "name": "Bachelor of Arts in Psychology",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Broad humanities grounding across languages, society and thought."
+  },
+  {
+    "name": "Bachelor of Social Science",
+    "qual": "BSocSci",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Bachelor of Social Work",
+    "qual": "BSW",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 21,
+    "duration": "4 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Accounting",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Business Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Economics",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Financial Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Human Resource Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Information Systems",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 18,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Marketing Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  }
+]

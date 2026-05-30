@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Lubelo Tech Solutions — SAUS Proposal v2</title>
+<style>
+  @page { size: A4; margin: 14mm 18mm 16mm 18mm; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; font-size: 10.5pt; color: #222; background: #fff; }
+
+  /* ── Page break helpers ── */
+  .pb { break-before: page; }
+
+  /* ── Cover ── */
+  .cover { text-align: center; padding: 10mm 0 8mm; }
+  .cover-bar { height: 12mm; background: #0A1628; margin: 0 -18mm 12mm; }
+  .cover h1 { font-size: 26pt; font-weight: 900; color: #0A1628; letter-spacing: 1px; margin-bottom: 2mm; }
+  .cover .tagline { font-size: 12pt; color: #C9A227; font-style: italic; margin-bottom: 8mm; }
+  .cover hr.gold { border: none; border-top: 2.5px solid #C9A227; margin: 6mm 0; }
+  .version-badge { display: inline-block; background: #C9A227; color: #0A1628; font-weight: 900; font-size: 9.5pt; padding: 2px 12px; border-radius: 12px; margin-bottom: 4mm; }
+  .cover h2 { font-size: 19pt; font-weight: 900; color: #0A1628; text-transform: uppercase; line-height: 1.3; margin-bottom: 10mm; }
+  .cover .prep { font-size: 10pt; color: #555; line-height: 2; }
+  .cover .prep strong { color: #0A1628; font-size: 11pt; }
+  .meta-table { width: 100%; border-collapse: collapse; margin: 8mm 0; font-size: 9.5pt; }
+  .meta-table td { padding: 4px 8px; border: 1px solid #ccc; }
+  .meta-table td:first-child { background: #f0f0f0; font-weight: 700; width: 30%; }
+  .cover-footer-bar { height: 8mm; background: #C9A227; margin: 6mm -18mm 0; }
+
+  /* ── Running page header (all pages except cover) ── */
+  .pg-header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.5px solid #0A1628; padding-bottom: 2px; margin-bottom: 6mm; font-size: 8.5pt; }
+  .pg-header .brand { font-weight: 900; color: #0A1628; }
+  .pg-header .doc { color: #666; }
+
+  /* ── Section headings ── */
+  h2.st { font-size: 14pt; font-weight: 900; color: #0A1628; text-transform: uppercase; margin-bottom: 2mm; }
+  h2.st + .gold-rule { border: none; border-top: 2px solid #C9A227; margin-bottom: 5mm; }
+  h3.ss { font-size: 11pt; font-weight: 700; color: #0A1628; margin: 4mm 0 2mm; }
+  h4.ms { font-size: 10pt; font-weight: 700; margin: 3mm 0 1.5mm; }
+
+  /* ── Body text ── */
+  p { margin-bottom: 2.5mm; line-height: 1.5; }
+  ul, ol { margin: 1.5mm 0 2.5mm 5mm; }
+  li { margin-bottom: 1.5mm; line-height: 1.5; }
+
+  /* ── Tables ── */
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 9.5pt; }
+  th { background: #0A1628; color: #fff; padding: 5px 7px; text-align: left; font-weight: 700; font-size: 9.5pt; }
+  td { padding: 4px 7px; border: 1px solid #d0d0d0; vertical-align: top; line-height: 1.45; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+
+  /* ── Badges ── */
+  .high { color: #c0392b; font-weight: 700; }
+  .medium { color: #d35400; font-weight: 700; }
+  .low { color: #27ae60; font-weight: 700; }
+  .badge-p { background: #0A1628; color: #fff; padding: 1px 5px; border-radius: 3px; font-size: 8.5pt; font-weight: 700; }
+  .badge-s { background: #555; color: #fff; padding: 1px 5px; border-radius: 3px; font-size: 8.5pt; }
+  .badge-f { background: #999; color: #fff; padding: 1px 5px; border-radius: 3px; font-size: 8.5pt; }
+
+  /* ── Comparison table ── */
+  .old-h { background: #8B1A1A !important; }
+  .new-h { background: #00692F !important; }
+  .old-c { background: #fff5f5 !important; }
+  .new-c { background: #f2fff5 !important; }
+  .tick { color: #00692F; font-weight: 700; }
+  .cross { color: #A8200D; font-weight: 700; }
+
+  /* ── Investment rows ── */
+  .total-row td { background: #C9A227 !important; color: #0A1628; font-weight: 900; }
+  .total-price { font-size: 14pt; }
+  .once-row td { background: #eaf4fd !important; }
+  .phase-done td:first-child { background: #0A1628; color: #fff; font-weight: 700; }
+
+  /* ── Callout boxes ── */
+  .box-navy { background: #f0f4fa; border-left: 4px solid #0A1628; padding: 3mm 4mm; margin: 3mm 0; font-size: 10pt; }
+  .box-gold { background: #fffbec; border-left: 4px solid #C9A227; padding: 3mm 4mm; margin: 3mm 0; font-size: 10pt; }
+
+  /* ── TOC ── */
+  .toc { list-style: none; }
+  .toc li { display: flex; justify-content: space-between; padding: 2mm 0; border-bottom: 1px dotted #ccc; font-size: 10pt; }
+  .toc li.main { font-weight: 700; font-size: 10.5pt; }
+  .toc li.sub { padding-left: 8mm; font-size: 9.5pt; color: #444; }
+
+  /* ── Closing box ── */
+  .closing { background: #0A1628; color: #fff; padding: 7mm; text-align: center; border-radius: 4px; margin-top: 6mm; }
+  .closing h3 { font-size: 14pt; font-weight: 900; letter-spacing: 1px; margin-bottom: 2mm; }
+  .closing .gold-txt { color: #C9A227; font-style: italic; font-size: 10.5pt; }
+  .closing p { color: #ccc; font-size: 9.5pt; margin-top: 2mm; }
+  .italic-close { font-style: italic; text-align: center; color: #555; margin: 5mm 0; font-size: 10.5pt; }
+
+  /* ── Done badge inline ── */
+  .done { color: #C9A227; font-weight: 700; font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ COVER ══════════════ -->
+<div class="cover">
+  <div class="cover-bar"></div>
+  <h1>LUBELO TECH SOLUTIONS</h1>
+  <p class="tagline">Digital Strategy &amp; Technology Services</p>
+  <hr class="gold"/>
+  <div class="version-badge">VERSION 2.0 — UPDATED PROPOSAL</div>
+  <h2>Digital Strategy &amp;<br/>Website Upgrade Proposal</h2>
+  <div class="prep">
+    <p><em>Prepared for</em></p>
+    <p><strong>The South African Union of Students (SAUS)</strong></p>
+    <br/>
+    <p><em>Prepared by</em></p>
+    <p><strong>Lubelo Tech Solutions</strong></p>
+  </div>
+  <table class="meta-table">
+    <tr><td>Date:</td><td>20 May 2026</td></tr>
+    <tr><td>Version:</td><td>2.0 — Updated (Delivered Website Included)</td></tr>
+    <tr><td>Status:</td><td>Confidential</td></tr>
+    <tr><td>Contact:</td><td>info@lubelotechsolutions.co.za &nbsp;|&nbsp; www.lubelotechsolutions.co.za</td></tr>
+  </table>
+  <div class="cover-footer-bar"></div>
+</div>
+
+
+<!-- ══════════════ TABLE OF CONTENTS ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 style="color:#0A1628;font-size:14pt;margin-bottom:4mm;">Table of Contents</h2>
+  <hr class="gold-rule" style="border:none;border-top:2px solid #C9A227;margin-bottom:5mm;">
+  <ul class="toc">
+    <li class="main"><span>1. Executive Summary</span><span>3</span></li>
+    <li class="main"><span>2. Current State Assessment</span><span>4</span></li>
+    <li class="sub"><span>2.1 Website Audit — The Old saus.org.za</span><span>4</span></li>
+    <li class="sub"><span>2.2 Social Media Audit</span><span>5</span></li>
+    <li class="sub"><span>2.3 Email &amp; Communication Systems</span><span>5</span></li>
+    <li class="main"><span>3. What Was Delivered — Old vs New</span><span>6</span></li>
+    <li class="sub"><span>3.1 Website Redesign — What Changed</span><span>6</span></li>
+    <li class="sub"><span>3.2 Custom Admin CMS — A First for SAUS</span><span>7</span></li>
+    <li class="main"><span>4. Recommended Solutions</span><span>8</span></li>
+    <li class="sub"><span>4.1 Email System Resolution</span><span>8</span></li>
+    <li class="sub"><span>4.2 Social Media Strategy</span><span>8</span></li>
+    <li class="sub"><span>4.3 Brand Visibility &amp; Growth Strategy</span><span>9</span></li>
+    <li class="main"><span>5. Implementation Roadmap</span><span>9</span></li>
+    <li class="main"><span>6. Service Management Approach</span><span>10</span></li>
+    <li class="main"><span>7. Investment Overview</span><span>11</span></li>
+    <li class="main"><span>8. Why Lubelo Tech Solutions</span><span>12</span></li>
+    <li class="main"><span>9. Next Steps</span><span>13</span></li>
+  </ul>
+</div>
+
+
+<!-- ══════════════ 1. EXECUTIVE SUMMARY ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">1. Executive Summary</h2>
+  <hr class="gold-rule"/>
+  <p>The South African Union of Students (SAUS) is the official representative body for Student Representative Councils (SRCs) across all South African public universities. Founded in 2006 at Stellenbosch University, SAUS plays a critical role in higher education governance and student advocacy at a national level.</p>
+  <p>Following our initial engagement, the Lubelo Tech Solutions team conducted a thorough audit of SAUS's digital presence — including the website (www.saus.org.za), social media channels, and email systems. We identified significant design, content, and technical issues that undermined SAUS's credibility as a national institution.</p>
+  <p><strong>Since that audit, Lubelo Tech Solutions has already delivered the core website upgrade.</strong> A fully custom, professionally designed SAUS website has been built from the ground up — replacing the broken WordPress site with a modern, authoritative, and fully responsive web presence. In addition, a custom Admin CMS has been developed, giving SAUS full control over its digital content without relying on any third-party platform.</p>
+  <h4 class="ms">Our core findings from the original audit:</h4>
+  <ul>
+    <li>The existing website had significant design, content, and technical issues that undermined credibility</li>
+    <li>Social media presence was fragmented and underutilised across all platforms</li>
+    <li>Email infrastructure needed to be properly configured and professionalised</li>
+    <li>There was enormous untapped potential to grow SAUS's visibility and influence through strategic digital engagement</li>
+  </ul>
+  <p style="margin-top:2mm">This updated proposal reflects the <strong>work already completed</strong>, the <strong>improvements delivered</strong> compared to the old website, and the <strong>ongoing management investment</strong> required to keep SAUS's digital presence at its best.</p>
+</div>
+
+
+<!-- ══════════════ 2. CURRENT STATE ASSESSMENT ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">2. Current State Assessment</h2>
+  <hr class="gold-rule"/>
+
+  <h3 class="ss">2.1 Website Audit — The Old www.saus.org.za</h3>
+  <p>The previous website was built on WordPress and set up quickly (likely September 2025). While it had a basic structure, several critical issues needed to be addressed before SAUS could use it as a credible national platform.</p>
+  <table>
+    <tr><th style="width:28%">Issue</th><th style="width:14%">Severity</th><th>Details</th></tr>
+    <tr><td>Team section duplicated</td><td><span class="high">High</span></td><td>President's card repeated 12 times instead of showing the full leadership team</td></tr>
+    <tr><td>Placeholder content visible</td><td><span class="high">High</span></td><td>Timeline section contained generic 'Some information' text never replaced</td></tr>
+    <tr><td>Broken navigation links</td><td><span class="medium">Medium</span></td><td>Multiple 'Find Out More' and CTA buttons linked to '#' (nowhere)</td></tr>
+    <tr><td>Inconsistent branding</td><td><span class="medium">Medium</span></td><td>No consistent colour scheme, typography, or visual identity across pages</td></tr>
+    <tr><td>No mobile optimisation</td><td><span class="medium">Medium</span></td><td>Site layout not fully responsive for mobile users</td></tr>
+    <tr><td>Missing SEO fundamentals</td><td><span class="medium">Medium</span></td><td>No meta descriptions, no structured data, poor heading hierarchy</td></tr>
+    <tr><td>Events not functional</td><td><span class="high">High</span></td><td>Events section showed static text with no actual event management or calendar</td></tr>
+    <tr><td>No member/SRC portal</td><td><span class="medium">Medium</span></td><td>No way for SRC members to access resources, documents, or updates</td></tr>
+    <tr><td>Testimonial is generic</td><td><span class="medium">Medium</span></td><td>'Sarah Johnson – Student Leader' placeholder — not an actual SAUS member</td></tr>
+    <tr><td>No content management</td><td><span class="high">High</span></td><td>Every update required developer access — no CMS in place</td></tr>
+  </table>
+
+  <h4 class="ms">Content &amp; Structure Issues</h4>
+  <ul>
+    <li>Homepage too long and repetitive — same mission information appeared multiple times</li>
+    <li>No 'Resources' or 'Documents' section for policy papers, statements, or the SAUS constitution</li>
+    <li>No regular content strategy beyond occasional press statements</li>
+    <li>Website built by 'Zapture' (visible in footer) — appeared to be a rushed, generic setup</li>
+  </ul>
+
+  <h3 class="ss">2.2 Social Media Audit</h3>
+  <table>
+    <tr><th>Platform</th><th>Handle</th><th>Status &amp; Issues</th></tr>
+    <tr><td><strong>Facebook</strong></td><td>@SAUStudents</td><td>Active but limited engagement. Most active platform.</td></tr>
+    <tr><td><strong>X (Twitter)</strong></td><td>@SAUS_2019</td><td>Dormant — zero visible posts despite existing since 2019</td></tr>
+    <tr><td><strong>Instagram</strong></td><td>@sa.union.of.students</td><td>Exists but very limited activity and followers</td></tr>
+    <tr><td><strong>LinkedIn</strong></td><td>South African Union of Students</td><td>~95 followers. Good bio but no regular content</td></tr>
+    <tr><td><strong>YouTube / TikTok</strong></td><td>Listed on website</td><td>Links on website not connected to actual channels</td></tr>
+  </table>
+
+  <h3 class="ss">2.3 Email &amp; Communication Systems</h3>
+  <p>SAUS uses domain-based email (Secretariat@saus.org.za, info@saus.org.za). Reported problems are likely due to: missing DNS records (MX, SPF, DKIM, DMARC); email tied to unreliable shared hosting; no professional email management system; and no backup or archiving system for official correspondence.</p>
+</div>
+
+
+<!-- ══════════════ 3. WHAT WAS DELIVERED ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">3. What Was Delivered — Old vs New</h2>
+  <hr class="gold-rule"/>
+
+  <h3 class="ss">3.1 Website Redesign — What Changed</h3>
+  <p>Rather than patching the broken WordPress site, Lubelo Tech Solutions built a completely custom SAUS website from scratch — modern, authoritative, and fully functional, designed specifically for a national student body.</p>
+
+  <table>
+    <tr>
+      <th style="width:22%">Feature</th>
+      <th class="old-h" style="width:39%">Old WordPress Website</th>
+      <th class="new-h" style="width:39%">New SAUS Website (Delivered)</th>
+    </tr>
+    <tr>
+      <td><strong>Platform</strong></td>
+      <td class="old-c"><span class="cross">✗</span> WordPress by Zapture — no control, third-party dependency</td>
+      <td class="new-c"><span class="tick">✓</span> 100% custom HTML/CSS/JS — no plugins, no WordPress</td>
+    </tr>
+    <tr>
+      <td><strong>Design &amp; Branding</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Inconsistent colours, generic fonts, no SAUS colour scheme</td>
+      <td class="new-c"><span class="tick">✓</span> Full SAUS brand system: navy, gold, green, red — consistent throughout</td>
+    </tr>
+    <tr>
+      <td><strong>Mobile</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Broken layout on mobile devices</td>
+      <td class="new-c"><span class="tick">✓</span> Mobile-first, fully responsive across all screen sizes</td>
+    </tr>
+    <tr>
+      <td><strong>Leadership</strong></td>
+      <td class="old-c"><span class="cross">✗</span> President's card repeated 12 times</td>
+      <td class="new-c"><span class="tick">✓</span> Full NEC profiles with photos, positions, bios, and university</td>
+    </tr>
+    <tr>
+      <td><strong>News &amp; Statements</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Static page — links go nowhere</td>
+      <td class="new-c"><span class="tick">✓</span> Full article modal — click any headline to read the complete press release</td>
+    </tr>
+    <tr>
+      <td><strong>Campaigns</strong></td>
+      <td class="old-c"><span class="cross">✗</span> No campaigns section</td>
+      <td class="new-c"><span class="tick">✓</span> Dedicated campaigns page with resolution index and scroll navigation</td>
+    </tr>
+    <tr>
+      <td><strong>Events</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Static text, no real event listings</td>
+      <td class="new-c"><span class="tick">✓</span> Dynamic events with dates, venues, and registration CTA</td>
+    </tr>
+    <tr>
+      <td><strong>Navigation</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Multiple broken links pointing to '#'</td>
+      <td class="new-c"><span class="tick">✓</span> All links functional; 3-tier header; mobile hamburger menu</td>
+    </tr>
+    <tr>
+      <td><strong>Cookie / POPIA</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Banner present but empty — not compliant</td>
+      <td class="new-c"><span class="tick">✓</span> POPIA-compliant cookie consent with localStorage persistence</td>
+    </tr>
+    <tr>
+      <td><strong>Performance</strong></td>
+      <td class="old-c"><span class="cross">✗</span> WordPress plugins — slow load times</td>
+      <td class="new-c"><span class="tick">✓</span> Lean single-file app — loads in under 1 second</td>
+    </tr>
+    <tr>
+      <td><strong>Content Control</strong></td>
+      <td class="old-c"><span class="cross">✗</span> Required developer access to change anything</td>
+      <td class="new-c"><span class="tick">✓</span> Full custom Admin CMS — staff publish news, events, and more from a dashboard</td>
+    </tr>
+  </table>
+</div>
+
+
+<!-- ══════════════ 3.2 ADMIN CMS ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h3 class="ss">3.2 Custom Admin CMS — A First for SAUS</h3>
+  <p>One of the most significant deliverables is a purpose-built Content Management System (CMS) — something the old WordPress site never properly provided. This admin dashboard gives SAUS full, independent control of its digital content.</p>
+  <div class="box-navy">
+    <strong>The SAUS Admin CMS is a fully custom web application</strong> — built with Next.js, an Express.js API, and a PostgreSQL database. Designed and built specifically for SAUS's workflows and structure — not an off-the-shelf product.
+  </div>
+
+  <table style="margin-top:3mm">
+    <tr><th style="width:28%">Module</th><th>What SAUS Can Now Do</th></tr>
+    <tr><td><strong>News &amp; Articles</strong></td><td>Publish press releases with rich text editor, SEO fields, categories, cover images, scheduling, and featured flags</td></tr>
+    <tr><td><strong>Events</strong></td><td>Create events with venue, city, province, start/end times, banner images, RSVP links, and status tracking</td></tr>
+    <tr><td><strong>Campaigns</strong></td><td>Launch advocacy campaigns with descriptions, graphics, call-to-action buttons, and featured flags</td></tr>
+    <tr><td><strong>Leadership Profiles</strong></td><td>Add, edit, and reorder NEC members with photos, bios, positions, universities — no more duplicate cards</td></tr>
+    <tr><td><strong>Documents &amp; PDFs</strong></td><td>Upload constitutions, policy papers, reports, and SRC toolkits with categories and search</td></tr>
+    <tr><td><strong>Media Library</strong></td><td>Drag-and-drop image and video uploads with search and URL copy for easy embedding</td></tr>
+    <tr><td><strong>Announcements</strong></td><td>Set a site-wide banner visible to all visitors — ideal for urgent student updates like NSFAS notices</td></tr>
+    <tr><td><strong>Users &amp; Roles</strong></td><td>Manage staff with role-based access: Super Admin, Secretariat, Marketing, Media, Editor, Contributor</td></tr>
+    <tr><td><strong>Site Settings</strong></td><td>Update contact details, social media links, SEO metadata, and Google Analytics ID — no code needed</td></tr>
+    <tr><td><strong>Analytics Dashboard</strong></td><td>Total articles, events, campaigns, media files, and documents at a glance with performance charts</td></tr>
+    <tr><td><strong>News Categories</strong></td><td>Create colour-coded categories (Press Release, Statement, Media Advisory) with article count tracking</td></tr>
+  </table>
+
+  <div class="box-gold" style="margin-top:3mm">
+    <strong>Bottom line:</strong> SAUS now has a professional-grade content management system comparable to what large media organisations use — built exclusively for SAUS, owned by SAUS, and managed by Lubelo Tech Solutions on a monthly basis.
+  </div>
+</div>
+
+
+<!-- ══════════════ 4. RECOMMENDED SOLUTIONS ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">4. Recommended Solutions</h2>
+  <hr class="gold-rule"/>
+
+  <h3 class="ss">4.1 Email System Resolution</h3>
+  <p>Lubelo Tech Solutions recommends migrating SAUS email to Google Workspace, which provides professional @saus.org.za addresses with 30GB storage, reliable delivery, proper SPF/DKIM/DMARC authentication, Google Drive, Google Calendar, and a full admin console. Microsoft 365 is an alternative if Outlook is preferred.</p>
+  <h4 class="ms">Immediate email fixes included in our management service:</h4>
+  <ul>
+    <li>Audit and correct all DNS records (MX, SPF, DKIM, DMARC)</li>
+    <li>Set up proper email accounts for all NEC members (president@saus.org.za, sg@saus.org.za, etc.)</li>
+    <li>Configure email forwarding, shared inboxes, and SAUS-branded signatures for all members</li>
+    <li>Implement email backup and archiving procedures</li>
+  </ul>
+
+  <h3 class="ss">4.2 Social Media Strategy</h3>
+  <table>
+    <tr><th style="width:18%">Priority</th><th style="width:20%">Platform</th><th>Strategy</th></tr>
+    <tr><td><span class="badge-p">Primary</span></td><td><strong>X (Twitter)</strong></td><td>Breaking news, statements, live event coverage, engagement with media and government</td></tr>
+    <tr><td><span class="badge-p">Primary</span></td><td><strong>Instagram</strong></td><td>Visual storytelling: event photos, reels, infographics, student spotlights</td></tr>
+    <tr><td><span class="badge-p">Primary</span></td><td><strong>TikTok</strong></td><td>Short-form video: explainers on student rights, NSFAS updates, behind-the-scenes</td></tr>
+    <tr><td><span class="badge-s">Secondary</span></td><td><strong>Facebook</strong></td><td>Community building, event pages, longer-form content and discussions</td></tr>
+    <tr><td><span class="badge-s">Secondary</span></td><td><strong>LinkedIn</strong></td><td>Professional engagement with higher education stakeholders and government</td></tr>
+    <tr><td><span class="badge-s">Secondary</span></td><td><strong>WhatsApp Channel</strong></td><td>Direct student updates — most-used messaging app in South Africa</td></tr>
+    <tr><td><span class="badge-f">Future</span></td><td><strong>YouTube</strong></td><td>Long-form: press conferences, panel discussions, documentary-style content</td></tr>
+  </table>
+
+  <h3 class="ss">4.3 Brand Visibility &amp; Growth Strategy</h3>
+  <ul>
+    <li><strong>Media Engagement:</strong> Build relationships with education journalists (Daily Maverick, News24, SABC, eNCA) and issue regular press releases via the Admin CMS</li>
+    <li><strong>Google Presence:</strong> Set up a Google Business Profile and implement SEO so SAUS appears for searches like 'student union South Africa'</li>
+    <li><strong>Newsletter:</strong> Monthly email newsletter to SRC leaders, university administrators, media, and students</li>
+    <li><strong>Annual Report:</strong> Professional annual report documenting SAUS activities, achievements, and goals — published via the Admin CMS Documents module</li>
+    <li><strong>Partnerships:</strong> Approach NYDA, Harambee, Allan Grey Orbis Foundation, and university alumni associations</li>
+    <li><strong>Campus Ambassador Programme:</strong> A network of SAUS ambassadors at every university to share content and represent SAUS locally</li>
+  </ul>
+</div>
+
+
+<!-- ══════════════ 5. IMPLEMENTATION ROADMAP ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">5. Implementation Roadmap</h2>
+  <hr class="gold-rule"/>
+  <p>The project is being delivered in four phases. Phases 1 and 2 have been <strong>completed</strong>. Phases 3 and 4 continue as part of the ongoing monthly management retainer.</p>
+  <table>
+    <tr><th style="width:30%">Phase</th><th style="width:22%">Timeline</th><th>Deliverables</th></tr>
+    <tr class="phase-done">
+      <td>Phase 1: Audit &amp; Setup</td>
+      <td>Weeks 1–2 &nbsp;<span class="done">✓ Done</span></td>
+      <td>Full technical audit of website, email, and hosting. DNS and email fixes. Access handover and platform setup.</td>
+    </tr>
+    <tr class="phase-done">
+      <td>Phase 2: Website &amp; Admin CMS</td>
+      <td>Weeks 3–6 &nbsp;<span class="done">✓ Done</span></td>
+      <td>Custom website delivered. Full Admin CMS built — News, Events, Campaigns, Leadership, Documents, Media Library, Users, Settings, and Analytics modules all complete.</td>
+    </tr>
+    <tr>
+      <td>Phase 3: Social Media Activation</td>
+      <td>Ongoing (Monthly)</td>
+      <td>Account setup/verification, branded templates, content calendar, initial content push, team training.</td>
+    </tr>
+    <tr>
+      <td>Phase 4: Growth &amp; Optimisation</td>
+      <td>Ongoing (Monthly)</td>
+      <td>Newsletter setup, SEO implementation, Google Business Profile, ambassador programme framework, leadership transition training.</td>
+    </tr>
+  </table>
+  <div class="box-gold">
+    <strong>Phases 1 &amp; 2 are complete.</strong> The new SAUS website and Admin CMS have been built and delivered. What follows is the ongoing monthly management service that keeps everything running, updated, and growing.
+  </div>
+
+
+<!-- ══════════════ 6. SERVICE MANAGEMENT ══════════════ -->
+  <h2 class="st pb" style="margin-top:6mm">6. Service Management Approach</h2>
+  <hr class="gold-rule"/>
+  <p>Lubelo Tech Solutions will serve as SAUS's ongoing digital services provider. The monthly retainer covers everything needed to keep SAUS's digital presence professional, current, and growing.</p>
+
+  <h3 class="ss">Ongoing Monthly Management — What R50,000/month Covers</h3>
+  <table>
+    <tr><th style="width:30%">Service Area</th><th>What Is Included</th></tr>
+    <tr><td><strong>Website Updates &amp; Maintenance</strong></td><td>Regular content updates via the Admin CMS; security patches; performance monitoring; hosting management; backups; new page additions as needed</td></tr>
+    <tr><td><strong>Email Management</strong></td><td>Adding/removing staff email accounts; resolving delivery issues; monitoring spam and blacklisting; managing shared inboxes; setting up new @saus.org.za addresses; storage management</td></tr>
+    <tr><td><strong>Social Media Support</strong></td><td>Monthly content calendar creation; branded post template design; scheduled posting support; analytics reporting; community engagement guidance</td></tr>
+    <tr><td><strong>Technical &amp; CMS Support</strong></td><td>24-hour response for urgent issues; on-call developer support for website errors or outages; bug fixes and CMS improvements</td></tr>
+    <tr><td><strong>Staff Training</strong></td><td>Onboarding for new NEC members; training on the Admin CMS; documentation and how-to guides</td></tr>
+    <tr><td><strong>SEO &amp; Analytics Reporting</strong></td><td>Quarterly performance reports with Google Analytics data, SEO health check, and strategic recommendations</td></tr>
+    <tr><td><strong>Leadership Transition</strong></td><td>Training for new NEC members during each annual handover; updating leadership profiles, email accounts, and access credentials</td></tr>
+    <tr><td><strong>Content Publishing Support</strong></td><td>Formatting and publishing press releases, statements, event notices, and campaign materials when SAUS staff need assistance</td></tr>
+  </table>
+  <div class="box-navy">
+    <strong>One point of contact, all digital services covered.</strong> Rather than managing multiple vendors separately, SAUS has one reliable partner handling everything — website, email, social media, and technical services — under a single monthly arrangement.
+  </div>
+</div>
+
+
+<!-- ══════════════ 7. INVESTMENT OVERVIEW ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">7. Investment Overview</h2>
+  <hr class="gold-rule"/>
+  <p>All prices are exclusive of VAT. Domain renewal and hosting fees are separate and will be assessed during the audit.</p>
+
+  <h3 class="ss">Once-Off Investment — Complete Website &amp; Digital Infrastructure Delivery</h3>
+  <table>
+    <tr><th>Service</th><th style="width:18%">Type</th><th style="width:22%">Price (ZAR)</th></tr>
+    <tr class="once-row"><td>Custom website redesign (full rebuild — no WordPress)</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>Custom Admin CMS (News, Events, Campaigns, Leadership, Documents, Media, Users, Settings, Analytics)</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>Email system setup &amp; DNS configuration</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>Social media branding pack &amp; account setup</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>SEO setup &amp; Google Business Profile</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>Newsletter setup (Mailchimp/Brevo)</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="once-row"><td>Staff training &amp; handover documentation</td><td>Once-off</td><td>Included</td></tr>
+    <tr class="total-row">
+      <td colspan="2"><strong>TOTAL ONCE-OFF FEE</strong><br/><span style="font-size:8.5pt;font-weight:400">Website, Admin CMS, email setup, social media branding, SEO, newsletter &amp; training — all included</span></td>
+      <td><span class="total-price"><strong>R80,000</strong></span></td>
+    </tr>
+  </table>
+
+  <h3 class="ss" style="margin-top:4mm">Monthly Retainer — Ongoing Management of All Digital Services</h3>
+  <table>
+    <tr><th>Service</th><th style="width:18%">Type</th><th style="width:22%">Monthly Fee</th></tr>
+    <tr><td>Website updates, maintenance &amp; backups</td><td>Monthly</td><td>Included</td></tr>
+    <tr><td>Email management (accounts, DNS, delivery, storage)</td><td>Monthly</td><td>Included</td></tr>
+    <tr><td>Social media content calendar &amp; scheduling support</td><td>Monthly</td><td>Included</td></tr>
+    <tr><td>Technical &amp; CMS support (24hr response)</td><td>Monthly</td><td>Included</td></tr>
+    <tr><td>SEO monitoring &amp; quarterly performance reports</td><td>Monthly</td><td>Included</td></tr>
+    <tr><td>Leadership transition training &amp; onboarding</td><td>Monthly</td><td>Included</td></tr>
+    <tr class="total-row">
+      <td colspan="2"><strong>TOTAL MONTHLY RETAINER</strong><br/><span style="font-size:8.5pt;font-weight:400">Website updates, email management, social media, technical support &amp; SEO — everything covered</span></td>
+      <td><span class="total-price"><strong>R50,000/month</strong></span></td>
+    </tr>
+  </table>
+
+  <div class="box-gold" style="margin-top:3mm">
+    <strong>Summary:</strong> R80,000 once-off to deliver the complete website, Admin CMS, email, and all digital infrastructure. Then R50,000 per month for Lubelo Tech Solutions to manage everything — the website, emails, social media, and all technical services — on an ongoing basis.
+  </div>
+  <p style="font-size:9.5pt;color:#555;margin-top:2mm">Where SAUS has budget constraints, Lubelo Tech Solutions is open to discussing phased payments or prioritisation of critical items first.</p>
+</div>
+
+
+<!-- ══════════════ 8. WHY LUBELO ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">8. Why Lubelo Tech Solutions</h2>
+  <hr class="gold-rule"/>
+  <p>Lubeo Tech Solutions is a South African technology and digital strategy firm dedicated to empowering organisations, businesses, and youth-serving institutions through smart, practical digital solutions. Here is why we are the right partner for SAUS:</p>
+  <ul>
+    <li><strong>We already delivered.</strong> The new SAUS website and Admin CMS are not a promise — they have been built and are ready to view before any commitment is made</li>
+    <li>Proven experience in web development, digital strategy, and IT services for organisations across South Africa</li>
+    <li>Deep understanding of the local digital landscape and the student ecosystem, including platform behaviour, connectivity constraints, and content preferences</li>
+    <li>Hands-on approach: we do not outsource. You work directly with our lead developer and strategist throughout the project</li>
+    <li>Expertise in training and capacity building — ensuring SAUS's team can use the Admin CMS and manage day-to-day digital tasks independently</li>
+    <li>Flexible, responsive, and committed to long-term partnership rather than one-off project delivery</li>
+    <li>Dedicated to using technology to empower organisations that serve young people and education in South Africa</li>
+    <li>Full-service capability: from infrastructure and email systems to design, content strategy, and social media management — all under one roof</li>
+  </ul>
+  <h3 class="ss">Our Commitment</h3>
+  <p>We understand that SAUS is not just a client — it is a national institution representing hundreds of thousands of students. We take that responsibility seriously. Our goal is to help SAUS build a digital presence that reflects its authority, reaches students where they are, and sustains itself long after our initial engagement ends.</p>
+  <p>The work already completed — a custom website, a purpose-built Admin CMS, and complete digital infrastructure — demonstrates that commitment. This is not a proposal about what we plan to do. It is a record of what we have done, and an offer to keep doing it.</p>
+</div>
+
+
+<!-- ══════════════ 9. NEXT STEPS ══════════════ -->
+<div class="pb">
+  <div class="pg-header"><span class="brand">LUBELO TECH SOLUTIONS</span><span class="doc">SAUS Digital Strategy &amp; Website Upgrade Proposal</span></div>
+  <h2 class="st">9. Next Steps</h2>
+  <hr class="gold-rule"/>
+  <p>To move forward, we propose the following immediate actions:</p>
+  <ol style="margin:3mm 0 4mm 5mm;line-height:2">
+    <li>Review this proposal and the delivered website — provide feedback or questions to Lubelo Tech Solutions</li>
+    <li>Schedule a demonstration with the NEC or designated digital committee to walk through the new website and Admin CMS</li>
+    <li>Approve and settle the once-off fee of <strong>R80,000</strong> to finalise delivery and transfer of all assets</li>
+    <li>Sign the monthly retainer agreement for <strong>R50,000/month</strong> for ongoing management of all digital services</li>
+    <li>Grant Lubelo Tech Solutions access to current hosting, domain, and email administration panels to begin email migration</li>
+    <li>Lubelo Tech Solutions to deliver a detailed monthly reporting framework and communication plan</li>
+  </ol>
+  <hr style="border:none;border-top:2px solid #C9A227;margin:5mm 0;"/>
+  <p class="italic-close">We look forward to partnering with SAUS to build a digital presence that truly reflects the importance and impact of the South African Union of Students.</p>
+  <div class="closing">
+    <h3>LUBELO TECH SOLUTIONS</h3>
+    <p class="gold-txt">Digital Strategy &amp; Technology Services</p>
+    <p>info@lubelotechsolutions.co.za &nbsp;|&nbsp; www.lubelotechsolutions.co.za &nbsp;|&nbsp; South Africa</p>
+  </div>
+</div>
+
+</body>
+</html>

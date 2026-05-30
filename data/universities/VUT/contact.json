@@ -1,0 +1,21 @@
+{
+  "abbr": "VUT",
+  "general": {
+    "phone": "+27 16 950 9000",
+    "email": "infocenter@vut.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 16 950 9000",
+    "email": "admissions@vut.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 16 950 9200",
+    "email": "financialaid@vut.ac.za"
+  },
+  "address": "Vaal University of Technology, Private Bag X021, Vanderbijlpark, 1900",
+  "social": {
+    "facebook": "https://www.facebook.com/VaalUniversityofTechnology",
+    "twitter": "https://twitter.com/VUT_official",
+    "instagram": "https://www.instagram.com/vut_official"
+  }
+}

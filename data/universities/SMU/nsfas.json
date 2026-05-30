@@ -1,0 +1,31 @@
+{
+  "abbr": "SMU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@smu.ac.za",
+  "phone": "+27 12 521 4500",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "SMU Academic Excellence Award",
+      "type": "merit",
+      "value": "Full tuition + stipend",
+      "criteria": "Top matric results; APS 44+; exceptional performance in life sciences and maths",
+      "url": "https://www.smu.ac.za/admissions"
+    },
+    {
+      "name": "SMU Health Sciences Bursary",
+      "type": "faculty",
+      "value": "Partial tuition support",
+      "criteria": "Students in health-critical disciplines; South African citizens",
+      "url": "https://www.smu.ac.za/admissions"
+    },
+    {
+      "name": "SMU Rural Service Commitment Bursary",
+      "type": "need-based",
+      "value": "Partial tuition",
+      "criteria": "Students who commit to rural/underserved community service post-graduation",
+      "url": "https://www.smu.ac.za/admissions"
+    }
+  ]
+}

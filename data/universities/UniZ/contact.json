@@ -1,0 +1,21 @@
+{
+  "abbr": "UniZ",
+  "general": {
+    "phone": "+27 35 902 6000",
+    "email": "registrar@unizulu.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 35 902 6000",
+    "email": "admissions@unizulu.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 35 902 6232",
+    "email": "financialaid@unizulu.ac.za"
+  },
+  "address": "University of Zululand, Private Bag X1001, KwaDlangezwa, 3886",
+  "social": {
+    "facebook": "https://www.facebook.com/UniZululand",
+    "twitter": "https://twitter.com/UniZululand",
+    "instagram": "https://www.instagram.com/unizululand"
+  }
+}

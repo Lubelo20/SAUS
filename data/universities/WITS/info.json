@@ -1,0 +1,35 @@
+{
+  "abbr": "WITS",
+  "name": "University of the Witwatersrand",
+  "type": "Research University",
+  "established": 1922,
+  "students": 40000,
+  "aps": "34–44+",
+  "location": {
+    "city": "Johannesburg",
+    "province": "Gauteng"
+  },
+  "website": "https://www.wits.ac.za",
+  "apply": "https://www.wits.ac.za/application/",
+  "prospectus": "https://www.wits.ac.za/application/undergraduate/",
+  "logo": "wits.jpg",
+  "description": "One of Africa's premier research universities, renowned for engineering, medicine and the arts. Located in Johannesburg's Braamfontein education hub with a strong legacy of academic activism.",
+  "faculties": [
+    "Commerce, Law & Management",
+    "Engineering & Built Env.",
+    "Health Sciences",
+    "Humanities",
+    "Science"
+  ],
+  "motto": "Scientia et Labor (Knowledge and Work)",
+  "languages": [
+    "English"
+  ],
+  "campuses": [
+    "East Campus",
+    "West Campus",
+    "Education Campus",
+    "Health Sciences (Parktown)"
+  ],
+  "nsfasAccredited": true
+}

@@ -1,0 +1,31 @@
+{
+  "abbr": "UFH",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@ufh.ac.za",
+  "phone": "+27 40 602 2346",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UFH Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 30+; Eastern Cape preferred",
+      "url": "https://www.ufh.ac.za/financial-aid"
+    },
+    {
+      "name": "UFH Merit Bursary",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 26+; demonstrated academic excellence",
+      "url": "https://www.ufh.ac.za/financial-aid"
+    },
+    {
+      "name": "UFH Rural Development Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from rural Eastern Cape communities",
+      "url": "https://www.ufh.ac.za/financial-aid"
+    }
+  ]
+}

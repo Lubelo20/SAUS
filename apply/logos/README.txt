@@ -1,0 +1,1 @@
+Place university logo files here as: uct.png, wits.png, su.png, up.png, uj.png, ukzn.png, ru.png, cput.png, dut.png, nmu.png, ufs.png, unisa.png, uwc.png, ufh.png, wsu.png, nwu.png, unizulu.png, univen.png, ul.png, smu.png, tut.png, vut.png, mut.png, spu.png, ump.png, cut.png

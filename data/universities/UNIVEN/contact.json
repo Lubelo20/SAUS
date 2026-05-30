@@ -1,0 +1,21 @@
+{
+  "abbr": "UNIVEN",
+  "general": {
+    "phone": "+27 15 962 8000",
+    "email": "registrar@univen.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 15 962 8000",
+    "email": "admissions@univen.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 15 962 8219",
+    "email": "financialaid@univen.ac.za"
+  },
+  "address": "University of Venda, Private Bag X5050, Thohoyandou, Limpopo, 0950",
+  "social": {
+    "facebook": "https://www.facebook.com/UniVenda",
+    "twitter": "https://twitter.com/univen_za",
+    "instagram": "https://www.instagram.com/univen_za"
+  }
+}

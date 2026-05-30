@@ -1,0 +1,39 @@
+{
+  "abbr": "NMU",
+  "name": "Nelson Mandela University",
+  "type": "Comprehensive University",
+  "established": 2005,
+  "students": 27000,
+  "aps": "22–36+",
+  "location": {
+    "city": "Gqeberha",
+    "province": "Eastern Cape"
+  },
+  "website": "https://www.mandela.ac.za",
+  "apply": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply",
+  "prospectus": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate",
+  "logo": "nmu.png",
+  "description": "Named in honour of Nelson Mandela. A comprehensive university blending academic and technology programmes across seven faculties in Port Elizabeth (Gqeberha), Eastern Cape.",
+  "faculties": [
+    "Arts",
+    "Business & Economic Sciences",
+    "Education",
+    "Engineering & Built Env.",
+    "Health Sciences",
+    "Law",
+    "Science"
+  ],
+  "motto": "Change the World",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "isiXhosa"
+  ],
+  "campuses": [
+    "South (Main)",
+    "North",
+    "Missionvale",
+    "George"
+  ],
+  "nsfasAccredited": true
+}

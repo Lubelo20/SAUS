@@ -1,0 +1,31 @@
+{
+  "abbr": "WSU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@wsu.ac.za",
+  "phone": "+27 47 502 2388",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "WSU Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 28+; Walter Sisulu service ethos",
+      "url": "https://www.wsu.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "WSU Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 24+; strong subject performance in chosen field",
+      "url": "https://www.wsu.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "WSU Rural Community Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from rural Eastern Cape; financial need",
+      "url": "https://www.wsu.ac.za/admissions/financial-aid"
+    }
+  ]
+}

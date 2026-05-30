@@ -1,0 +1,31 @@
+{
+  "abbr": "SPU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@spu.ac.za",
+  "phone": "+27 53 491 0111",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "SPU Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 28+; Northern Cape students preferred",
+      "url": "https://www.spu.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "SPU Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 24+; maintained academic performance each year",
+      "url": "https://www.spu.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "SPU Northern Cape Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from Northern Cape; financial need",
+      "url": "https://www.spu.ac.za/admissions/financial-aid"
+    }
+  ]
+}

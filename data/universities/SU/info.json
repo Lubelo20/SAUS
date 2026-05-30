@@ -1,0 +1,39 @@
+{
+  "abbr": "SU",
+  "name": "Stellenbosch University",
+  "type": "Research University",
+  "established": 1918,
+  "students": 32000,
+  "aps": "30–42+",
+  "location": {
+    "city": "Stellenbosch",
+    "province": "Western Cape"
+  },
+  "website": "https://www.sun.ac.za",
+  "apply": "https://www.sun.ac.za/english/student-affairs/Pages/Applications.aspx",
+  "prospectus": "https://www.sun.ac.za/english/student-affairs/Pages/Prospectus.aspx",
+  "logo": "su.jpg",
+  "description": "A bilingual Afrikaans/English research university in the scenic Winelands, renowned for engineering, agriculture, medicine and business. Consistently ranked among Africa's top 5 universities.",
+  "faculties": [
+    "AgriSciences",
+    "Arts & Social Sciences",
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Engineering",
+    "Law",
+    "Medicine & Health Sciences",
+    "Science",
+    "Theology"
+  ],
+  "motto": "Pectora roborant cultus (Culture strengthens hearts)",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Stellenbosch",
+    "Tygerberg (Medical)",
+    "Saldanha (Military)"
+  ],
+  "nsfasAccredited": true
+}

@@ -1,0 +1,21 @@
+{
+  "abbr": "UL",
+  "general": {
+    "phone": "+27 15 268 2400",
+    "email": "registrar@ul.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 15 268 2400",
+    "email": "admissions@ul.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 15 268 2400",
+    "email": "financialaid@ul.ac.za"
+  },
+  "address": "University of Limpopo, Private Bag X1106, Sovenga, Polokwane, 0727",
+  "social": {
+    "facebook": "https://www.facebook.com/ULimpopo",
+    "twitter": "https://twitter.com/ULimpopo",
+    "instagram": "https://www.instagram.com/ulimpopo"
+  }
+}

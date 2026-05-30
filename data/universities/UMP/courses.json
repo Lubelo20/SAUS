@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Bachelor of Agricultural Management",
+    "qual": "BAgric",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 22,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Bachelor of Science in Agriculture",
+    "qual": "BSc Agric",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "4 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Animal Science",
+    "qual": "BSc Agric",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "4 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Biological Sciences",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Chemistry",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Computer Science",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Environmental Science",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Food Science & Technology",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "4 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Geology",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Mathematics & Statistics",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Science in Physics",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Agriculture & Natural Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Scientific theory, laboratory practice and research methods."
+  },
+  {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Education",
+    "aps": 22,
+    "duration": "4 Years",
+    "desc": "Professional teacher training (SACE-recognised)."
+  },
+  {
+    "name": "Bachelor of Education (Intermediate Phase)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Education",
+    "aps": 22,
+    "duration": "4 Years",
+    "desc": "Professional teacher training (SACE-recognised)."
+  },
+  {
+    "name": "Bachelor of Education (Senior & FET Phase)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Education",
+    "aps": 25,
+    "duration": "4 Years",
+    "desc": "Professional teacher training (SACE-recognised)."
+  },
+  {
+    "name": "Bachelor of Tourism Management",
+    "qual": "BTourism",
+    "type": "Degree",
+    "faculty": "Hospitality & Tourism",
+    "aps": 22,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  },
+  {
+    "name": "Diploma in Hospitality Management",
+    "qual": "Dip",
+    "type": "Diploma",
+    "faculty": "Hospitality & Tourism",
+    "aps": 22,
+    "duration": "3 Years",
+    "desc": "Accredited South African higher-education qualification."
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "abbr": "UP",
+  "name": "University of Pretoria",
+  "type": "Comprehensive University",
+  "established": 1908,
+  "students": 54000,
+  "aps": "28–42+",
+  "location": {
+    "city": "Pretoria",
+    "province": "Gauteng"
+  },
+  "website": "https://www.up.ac.za",
+  "apply": "https://www.up.ac.za/apply",
+  "prospectus": "https://www.up.ac.za/prospective-student",
+  "logo": "up.png",
+  "description": "South Africa's largest residential university with over 1,000 study programmes. Famous for its Veterinary Science, Medical and Engineering faculties on a stunning 650-hectare campus in Pretoria.",
+  "faculties": [
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Engineering, Built Env. & IT",
+    "Health Sciences",
+    "Humanities",
+    "IT",
+    "Law",
+    "Natural & Agricultural Sciences",
+    "Theology & Religion",
+    "Veterinary Science"
+  ],
+  "motto": "Lampadem Tradam (I Will Hand on the Torch)",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Hatfield",
+    "Groenkloof",
+    "Onderstepoort (Vet)",
+    "Prinshof (Health Sciences)"
+  ],
+  "nsfasAccredited": true
+}

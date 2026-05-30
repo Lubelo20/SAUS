@@ -1,0 +1,37 @@
+{
+  "abbr": "UWC",
+  "name": "University of the Western Cape",
+  "type": "Comprehensive University",
+  "established": 1960,
+  "students": 22000,
+  "aps": "22–34+",
+  "location": {
+    "city": "Bellville",
+    "province": "Western Cape"
+  },
+  "website": "https://www.uwc.ac.za",
+  "apply": "https://www.uwc.ac.za/apply",
+  "prospectus": "https://www.uwc.ac.za/study/all-programmes",
+  "logo": "uwc.svg",
+  "description": "A historically significant institution that became a leading academic university. Strong in dentistry, law and community health. Serves diverse students across the Western Cape.",
+  "faculties": [
+    "Arts",
+    "Community & Health Sciences",
+    "Dentistry",
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Law",
+    "Natural Sciences",
+    "Nursing"
+  ],
+  "motto": "A place for learning, a place for growth",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Xhosa"
+  ],
+  "campuses": [
+    "Bellville (Main)"
+  ],
+  "nsfasAccredited": true
+}

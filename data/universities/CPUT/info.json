@@ -1,0 +1,35 @@
+{
+  "abbr": "CPUT",
+  "name": "Cape Peninsula University of Technology",
+  "type": "University of Technology",
+  "established": 2005,
+  "students": 35000,
+  "aps": "18–28+",
+  "location": {
+    "city": "Cape Town",
+    "province": "Western Cape"
+  },
+  "website": "https://www.cput.ac.za",
+  "apply": "https://www.cput.ac.za/apply",
+  "prospectus": "https://www.cput.ac.za/students/faculties",
+  "logo": "cput.svg",
+  "description": "The largest university of technology in the Western Cape, offering industry-linked diplomas and degrees. Six faculties spanning engineering, business, health, IT and design across two main campuses.",
+  "faculties": [
+    "Applied Sciences",
+    "Business & Mgmt Sciences",
+    "Education",
+    "Engineering",
+    "Health & Wellness Sciences",
+    "Informatics & Design"
+  ],
+  "motto": "Innovative Excellence",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Bellville",
+    "Cape Town City"
+  ],
+  "nsfasAccredited": true
+}

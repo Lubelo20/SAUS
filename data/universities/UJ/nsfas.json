@@ -1,0 +1,38 @@
+{
+  "abbr": "UJ",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@uj.ac.za",
+  "phone": "+27 11 559 2407",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UJ Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition + R30,000 stipend",
+      "criteria": "Top matric results (90%+); all provinces considered",
+      "url": "https://www.uj.ac.za/financial-aid/"
+    },
+    {
+      "name": "UJ Academic Merit Bursary",
+      "type": "merit",
+      "value": "25%–100% tuition reduction",
+      "criteria": "APS 34+; subject-specific requirements by faculty",
+      "url": "https://www.uj.ac.za/financial-aid/"
+    },
+    {
+      "name": "UJ Sport Bursary",
+      "type": "sports",
+      "value": "Up to 40% tuition reduction",
+      "criteria": "National, provincial or UJ varsity sport team representation",
+      "url": "https://www.uj.ac.za/financial-aid/"
+    },
+    {
+      "name": "UJ Equity Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from designated groups with proven financial need",
+      "url": "https://www.uj.ac.za/financial-aid/"
+    }
+  ]
+}

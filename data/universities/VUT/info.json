@@ -1,0 +1,32 @@
+{
+  "abbr": "VUT",
+  "name": "Vaal University of Technology",
+  "type": "University of Technology",
+  "established": 1966,
+  "students": 20000,
+  "aps": "18–26+",
+  "location": {
+    "city": "Vanderbijlpark",
+    "province": "Gauteng"
+  },
+  "website": "https://www.vut.ac.za",
+  "apply": "https://www.vut.ac.za/admissions",
+  "prospectus": "https://www.vut.ac.za/admissions",
+  "logo": "vut.png",
+  "description": "Located in the industrial Vaal Triangle with strong links to automotive, steel and manufacturing industries. Offers career-focused applied programmes with work-integrated learning.",
+  "faculties": [
+    "Applied & Computer Sciences",
+    "Engineering & Technology",
+    "Humanities",
+    "Management Sciences"
+  ],
+  "motto": "Knowledge — Empowerment — Career",
+  "languages": [
+    "Afrikaans",
+    "English"
+  ],
+  "campuses": [
+    "Vanderbijlpark (Main)"
+  ],
+  "nsfasAccredited": true
+}

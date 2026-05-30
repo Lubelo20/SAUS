@@ -1,0 +1,31 @@
+{
+  "abbr": "CPUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@cput.ac.za",
+  "phone": "+27 21 959 6040",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "CPUT Academic Merit Award",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "Top matric results (80%+); APS 26+",
+      "url": "https://www.cput.ac.za/financial-aid/bursaries"
+    },
+    {
+      "name": "CPUT Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "Provincial or national sport representation",
+      "url": "https://www.cput.ac.za/financial-aid/bursaries"
+    },
+    {
+      "name": "CPUT Equity Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and books",
+      "criteria": "Historically disadvantaged students; financial need; South African citizens",
+      "url": "https://www.cput.ac.za/financial-aid/bursaries"
+    }
+  ]
+}

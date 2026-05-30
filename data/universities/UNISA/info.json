@@ -1,0 +1,40 @@
+{
+  "abbr": "UNISA",
+  "name": "University of South Africa",
+  "type": "Distance University",
+  "established": 1873,
+  "students": 400000,
+  "aps": "15–30+",
+  "location": {
+    "city": "Pretoria",
+    "province": "National"
+  },
+  "website": "https://www.unisa.ac.za",
+  "apply": "https://my.unisa.ac.za/portal/",
+  "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-prospectus",
+  "logo": "unisa.jpg",
+  "description": "The largest university on the African continent by enrolment. Offers flexible distance education to over 400,000 students across South Africa and globally — study at your own pace.",
+  "faculties": [
+    "Accounting Sciences",
+    "Agriculture & Env Sciences",
+    "Communication & Human Sciences",
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Law",
+    "Science, Engineering & Technology",
+    "Theology & Religion"
+  ],
+  "motto": "In Diebus Illis (In Those Days)",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Sepedi",
+    "Sesotho",
+    "Setswana",
+    "isiZulu"
+  ],
+  "campuses": [
+    "Distance Learning (National)"
+  ],
+  "nsfasAccredited": true
+}

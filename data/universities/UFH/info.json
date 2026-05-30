@@ -1,0 +1,35 @@
+{
+  "abbr": "UFH",
+  "name": "University of Fort Hare",
+  "type": "Traditional University",
+  "established": 1916,
+  "students": 12000,
+  "aps": "18–28+",
+  "location": {
+    "city": "Alice",
+    "province": "Eastern Cape"
+  },
+  "website": "https://www.ufh.ac.za",
+  "apply": "https://www.ufh.ac.za/admissions",
+  "prospectus": "https://www.ufh.ac.za/admissions",
+  "logo": "ufh.png",
+  "description": "One of Africa's oldest historically Black universities — alma mater of Nelson Mandela, Oliver Tambo and many African leaders. A symbol of the African liberation movement.",
+  "faculties": [
+    "Agriculture",
+    "Education",
+    "Law",
+    "Management & Commerce",
+    "Science & Agriculture",
+    "Social Sciences & Humanities"
+  ],
+  "motto": "Lux in Tenebris (Light in Darkness)",
+  "languages": [
+    "English",
+    "isiXhosa"
+  ],
+  "campuses": [
+    "Alice (Main)",
+    "East London"
+  ],
+  "nsfasAccredited": true
+}

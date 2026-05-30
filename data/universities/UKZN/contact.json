@@ -1,0 +1,21 @@
+{
+  "abbr": "UKZN",
+  "general": {
+    "phone": "+27 31 260 2212",
+    "email": "registrar@ukzn.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 31 260 2212",
+    "email": "applications@ukzn.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 31 260 2111",
+    "email": "ssc@ukzn.ac.za"
+  },
+  "address": "UKZN, Postal Bag X54001, Durban, 4000",
+  "social": {
+    "facebook": "https://www.facebook.com/UKZNonline",
+    "twitter": "https://twitter.com/UKZNonline",
+    "instagram": "https://www.instagram.com/ukznonline"
+  }
+}

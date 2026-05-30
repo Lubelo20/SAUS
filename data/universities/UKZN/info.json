@@ -1,0 +1,37 @@
+{
+  "abbr": "UKZN",
+  "name": "University of KwaZulu-Natal",
+  "type": "Comprehensive University",
+  "established": 2004,
+  "students": 47000,
+  "aps": "26–42+",
+  "location": {
+    "city": "Durban",
+    "province": "KwaZulu-Natal"
+  },
+  "website": "https://www.ukzn.ac.za",
+  "apply": "https://applications.ukzn.ac.za/",
+  "prospectus": "https://www.ukzn.ac.za/ukzn-for-students/",
+  "logo": "ukzn.png",
+  "description": "Spread across five campuses in KwaZulu-Natal with strong health sciences, law and humanities programmes. A merger of the former University of Natal and University of Durban-Westville in 2004.",
+  "faculties": [
+    "Agriculture, Engineering & Science",
+    "Health Sciences",
+    "Humanities",
+    "Law & Mgmt Studies",
+    "Science & Agriculture"
+  ],
+  "motto": "Inspiring Greatness",
+  "languages": [
+    "English",
+    "isiZulu"
+  ],
+  "campuses": [
+    "Howard College (Durban)",
+    "Medical School (Durban)",
+    "Westville",
+    "Edgewood (Pinetown)",
+    "Pietermaritzburg"
+  ],
+  "nsfasAccredited": true
+}

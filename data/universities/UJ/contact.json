@@ -1,0 +1,21 @@
+{
+  "abbr": "UJ",
+  "general": {
+    "phone": "+27 11 559 4555",
+    "email": "info@uj.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 11 559 4555",
+    "email": "undergrad@uj.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 11 559 2407",
+    "email": "financialaid@uj.ac.za"
+  },
+  "address": "University of Johannesburg, PO Box 524, Auckland Park, Johannesburg, 2006",
+  "social": {
+    "facebook": "https://www.facebook.com/UJuniversity",
+    "twitter": "https://twitter.com/UJReporter",
+    "instagram": "https://www.instagram.com/ujuniversity"
+  }
+}

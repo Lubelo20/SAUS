@@ -1,0 +1,38 @@
+{
+  "abbr": "UFS",
+  "name": "University of the Free State",
+  "type": "Comprehensive University",
+  "established": 1904,
+  "students": 39000,
+  "aps": "22–38+",
+  "location": {
+    "city": "Bloemfontein",
+    "province": "Free State"
+  },
+  "website": "https://www.ufs.ac.za",
+  "apply": "https://apply.ufs.ac.za/",
+  "prospectus": "https://www.ufs.ac.za/apply/prospectus",
+  "logo": "ufs.png",
+  "description": "The only university in the Free State, offering programmes from foundation to doctoral level across three campuses. Strong medical school and a rich history of student activism.",
+  "faculties": [
+    "Economic & Mgmt Sciences",
+    "Education",
+    "Health Sciences",
+    "Humanities",
+    "Law",
+    "Natural & Agricultural Sciences",
+    "Theology & Religion"
+  ],
+  "motto": "In Limine Aurorae (At the Threshold of Dawn)",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Sesotho"
+  ],
+  "campuses": [
+    "Bloemfontein (Main)",
+    "South Campus",
+    "Qwaqwa"
+  ],
+  "nsfasAccredited": true
+}

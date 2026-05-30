@@ -1,0 +1,21 @@
+{
+  "abbr": "UFS",
+  "general": {
+    "phone": "+27 51 401 9111",
+    "email": "info@ufs.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 51 401 2009",
+    "email": "admissions@ufs.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 51 401 2799",
+    "email": "financialaid@ufs.ac.za"
+  },
+  "address": "University of the Free State, PO Box 339, Bloemfontein, 9300",
+  "social": {
+    "facebook": "https://www.facebook.com/ufs.ac.za",
+    "twitter": "https://twitter.com/ufsacademic",
+    "instagram": "https://www.instagram.com/ufsacademic"
+  }
+}

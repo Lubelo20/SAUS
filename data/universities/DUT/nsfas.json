@@ -1,0 +1,31 @@
+{
+  "abbr": "DUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "sas@dut.ac.za",
+  "phone": "+27 31 373 2537",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "DUT Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top 5 matric achievers per province; APS 28+",
+      "url": "https://www.dut.ac.za/admissions/financial-aid/"
+    },
+    {
+      "name": "DUT Merit Bursary",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 26+; strong subject results in chosen field",
+      "url": "https://www.dut.ac.za/admissions/financial-aid/"
+    },
+    {
+      "name": "DUT Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "National or provincial sport colours",
+      "url": "https://www.dut.ac.za/admissions/financial-aid/"
+    }
+  ]
+}

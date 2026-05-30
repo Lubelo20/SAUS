@@ -1,0 +1,38 @@
+{
+  "abbr": "NWU",
+  "name": "North-West University",
+  "type": "Comprehensive University",
+  "established": 2004,
+  "students": 65000,
+  "aps": "20–34+",
+  "location": {
+    "city": "Potchefstroom",
+    "province": "North West"
+  },
+  "website": "https://www.nwu.ac.za",
+  "apply": "https://www.nwu.ac.za/applying-for-studies",
+  "prospectus": "https://www.nwu.ac.za/applying-for-studies",
+  "logo": "nwu.png",
+  "description": "South Africa's largest university by student numbers. Three campuses spanning Potchefstroom, Mahikeng and Vanderbijlpark with strong engineering, health and education faculties.",
+  "faculties": [
+    "Commerce & Law",
+    "Education",
+    "Engineering",
+    "Health Sciences",
+    "Humanities",
+    "Natural Sciences",
+    "Theology"
+  ],
+  "motto": "Ons bring mekaar verder / We take each other further",
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Setswana"
+  ],
+  "campuses": [
+    "Potchefstroom",
+    "Mahikeng",
+    "Vanderbijlpark (Vaal Triangle)"
+  ],
+  "nsfasAccredited": true
+}

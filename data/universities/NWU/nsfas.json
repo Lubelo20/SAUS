@@ -1,0 +1,38 @@
+{
+  "abbr": "NWU",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@nwu.ac.za",
+  "phone": "+27 18 299 2222",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "NWU Chancellor's Medal",
+      "type": "merit",
+      "value": "Full tuition + R24,000 allowance",
+      "criteria": "Top matric achievers; APS 36+; any of the three campuses",
+      "url": "https://www.nwu.ac.za/bursaries"
+    },
+    {
+      "name": "NWU Merit Bursary",
+      "type": "merit",
+      "value": "25%–75% tuition reduction",
+      "criteria": "APS 30+; relevant subject performance per faculty",
+      "url": "https://www.nwu.ac.za/bursaries"
+    },
+    {
+      "name": "NWU Sport Bursary",
+      "type": "sports",
+      "value": "Up to 40% tuition reduction",
+      "criteria": "National or provincial sport representation; Pukke/Eagles team member",
+      "url": "https://www.nwu.ac.za/bursaries"
+    },
+    {
+      "name": "NWU Language Bursary",
+      "type": "faculty",
+      "value": "Partial tuition support",
+      "criteria": "Students studying Setswana, Afrikaans or isiZulu as main language",
+      "url": "https://www.nwu.ac.za/bursaries"
+    }
+  ]
+}

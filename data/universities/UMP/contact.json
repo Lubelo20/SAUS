@@ -1,0 +1,21 @@
+{
+  "abbr": "UMP",
+  "general": {
+    "phone": "+27 13 002 0000",
+    "email": "admissions@ump.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 13 002 0000",
+    "email": "admissions@ump.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 13 002 0111",
+    "email": "financialaid@ump.ac.za"
+  },
+  "address": "University of Mpumalanga, Private Bag X11283, Mbombela, Mpumalanga, 1200",
+  "social": {
+    "facebook": "https://www.facebook.com/UniMpumalanga",
+    "twitter": "https://twitter.com/UMpumalanga",
+    "instagram": "https://www.instagram.com/umpumalanga"
+  }
+}

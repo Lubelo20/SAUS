@@ -1,0 +1,25 @@
+{
+  "abbr": "CUT",
+  "applicationPeriod": {
+    "opens": "1 April 2026",
+    "closes": "30 September 2026",
+    "intakeYear": 2027
+  },
+  "applicationFee": 100,
+  "feeWaiver": false,
+  "minimumAPS": 18,
+  "apsNote": "Welkom campus focuses on engineering and management sciences.",
+  "applyUrl": "https://www.cut.ac.za/apply",
+  "requiredDocuments": [
+    "Certified copy of South African ID or valid passport",
+    "Certified copy of matric certificate or statement of results",
+    "Grade 11 and Grade 12 school report",
+    "Proof of residence (not older than 3 months)",
+    "Completed application form"
+  ],
+  "internationalStudents": {
+    "accepted": true,
+    "note": "International applicants require SAQA evaluation of qualifications."
+  },
+  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+}

@@ -1,0 +1,31 @@
+{
+  "abbr": "VUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@vut.ac.za",
+  "phone": "+27 16 950 9200",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "VUT Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 24+",
+      "url": "https://www.vut.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "VUT Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 22+; maintained academic performance",
+      "url": "https://www.vut.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "VUT Industrial Partnership Bursary",
+      "type": "faculty",
+      "value": "Full tuition + stipend",
+      "criteria": "Engineering students with Vaal industrial partner sponsorships",
+      "url": "https://www.vut.ac.za/admissions/financial-aid"
+    }
+  ]
+}

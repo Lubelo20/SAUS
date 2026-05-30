@@ -1,0 +1,25 @@
+{
+  "abbr": "UNISA",
+  "applicationPeriod": {
+    "opens": "August 2026",
+    "closes": "November 2026",
+    "intakeYear": 2027
+  },
+  "applicationFee": 135,
+  "feeWaiver": false,
+  "minimumAPS": 15,
+  "apsNote": "Semester 1 registration: January–February. Semester 2: July–August.",
+  "applyUrl": "https://my.unisa.ac.za/portal/",
+  "requiredDocuments": [
+    "Certified copy of South African ID or valid passport",
+    "Certified copy of matric certificate or statement of results",
+    "Grade 11 and Grade 12 school report",
+    "Proof of residence (not older than 3 months)",
+    "Completed application form"
+  ],
+  "internationalStudents": {
+    "accepted": true,
+    "note": "International applicants require SAQA evaluation of qualifications."
+  },
+  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+}

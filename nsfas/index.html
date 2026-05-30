@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>NSFAS Application Guide — South African Union of Students</title>
+<meta name="description" content="SAUS official NSFAS application guide — step-by-step help for South African students applying for financial aid through the National Student Financial Aid Scheme."/>
+<meta property="og:title" content="NSFAS Application Guide — South African Union of Students (SAUS)"/>
+<meta name="theme-color" content="#0A1628"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --navy:#0A1628;--navy-mid:#122040;--navy-light:#1E3160;
+  --green:#00692F;--green-lt:#00873E;--red:#A8200D;--gold:#C9A227;
+  --white:#FFFFFF;--cream:#F7F6F2;--stone:#EEECEA;
+  --border:#D0CEC8;--border-dk:#B8B5AE;
+  --text:#1A1918;--text-mid:#4A4845;--text-lt:#7A7874;
+  --ff-serif:'EB Garamond',Georgia,'Times New Roman',serif;
+  --ff-sans:'Source Sans 3','Segoe UI',sans-serif;
+  --ff-mono:'Source Code Pro',monospace;
+  --max:1200px;--topbar-h:38px;--header-h:88px;--nav-h:52px;
+  --total-top:178px;--ease:cubic-bezier(.4,0,.2,1);
+}
+body{font-family:var(--ff-sans);background:var(--cream);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:var(--ff-sans)}
+p{margin-bottom:1rem}p:last-child{margin-bottom:0}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--stone)}::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
+
+/* ── Fixed header stack ── */
+#topbar{position:fixed;top:0;left:0;right:0;z-index:1100;height:var(--topbar-h);background:var(--navy);border-bottom:2px solid var(--gold);display:flex;align-items:center;}
+.topbar-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.topbar-left{display:flex;align-items:center;gap:0;font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.02em;}
+.topbar-left .sep{display:inline-block;width:1px;height:14px;background:rgba(255,255,255,.2);margin:0 14px;}
+.topbar-flag{display:inline-flex;gap:2px;align-items:center;margin-right:14px;}
+.flag-seg{width:18px;height:12px;border-radius:1px}
+.topbar-right{display:flex;align-items:center;gap:20px;}
+.topbar-right a{font-size:12px;color:rgba(255,255,255,.65);display:flex;align-items:center;gap:6px;transition:color .2s;text-decoration:none;}
+.topbar-right a:hover{color:var(--gold)}
+.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
+#header{position:fixed;top:var(--topbar-h);left:0;right:0;z-index:1090;height:var(--header-h);background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;}
+.header-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;gap:24px;}
+.header-seal{width:64px;height:64px;flex-shrink:0;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:3px solid var(--gold);}
+.header-ident{display:flex;flex-direction:column}
+.header-ident-main{font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.15;letter-spacing:.01em;}
+.header-ident-main em{font-style:normal;color:var(--green)}
+.header-ident-sub{font-size:12px;color:var(--text-mid);letter-spacing:.04em;font-weight:400;margin-top:2px;}
+.header-divider{width:1px;height:48px;background:var(--border);margin:0 8px;flex-shrink:0;}
+.header-established{display:flex;flex-direction:column;font-family:var(--ff-mono);font-size:10px;color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;line-height:1.8;}
+.header-established strong{font-family:var(--ff-serif);font-size:20px;color:var(--navy);letter-spacing:.02em;font-weight:600;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.header-salogo{display:block;width:56px;height:56px;overflow:hidden;border-radius:2px;flex-shrink:0;}
+.header-contact-btn{display:flex;align-items:center;gap:8px;padding:9px 20px;border-radius:3px;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;border:none;transition:background .2s;letter-spacing:.02em;text-decoration:none;cursor:pointer;font-family:var(--ff-sans);}
+.header-contact-btn:hover{background:var(--navy-light);text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:1px;transition:.3s}
+#navbar{position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1080;height:var(--nav-h);background:var(--navy-mid);border-bottom:3px solid var(--green);}
+.nav-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;height:100%;display:flex;align-items:center;}
+.nav-links{display:flex;height:100%}
+.nav-item{height:100%;display:flex;align-items:center;padding:0 13px;position:relative;font-size:13px;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:.03em;text-transform:uppercase;border:none;background:none;font-family:var(--ff-sans);transition:color .2s,background .2s;white-space:nowrap;text-decoration:none;}
+.nav-item::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .25s var(--ease);}
+.nav-item:hover{color:var(--white);background:rgba(255,255,255,.05);text-decoration:none}
+.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
+.nav-item.active{color:var(--white)}
+.nav-ref{margin-left:auto;font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
+.mobile-nav{display:none;position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1079;background:var(--navy);border-bottom:2px solid var(--green);flex-direction:column;padding:8px 0;}
+.mobile-nav.open{display:flex}
+.mobile-nav-item{padding:14px 32px;font-size:14px;font-weight:600;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.04em;border:none;background:none;font-family:var(--ff-sans);text-align:left;border-left:3px solid transparent;transition:all .2s;text-decoration:none;display:block;}
+.mobile-nav-item:hover,.mobile-nav-item.active{color:var(--white);background:rgba(255,255,255,.05);border-left-color:var(--gold);text-decoration:none;}
+main{min-height:100vh;padding-top:var(--total-top)}
+
+/* ── Layout helpers ── */
+.breadcrumb-bar{background:var(--stone);border-bottom:1px solid var(--border);padding:9px 0;}
+.breadcrumb-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-lt);}
+.breadcrumb-inner a{color:var(--text-lt);transition:color .2s;text-decoration:none}
+.breadcrumb-inner a:hover{color:var(--green)}
+.breadcrumb-inner .sep{color:var(--border-dk);font-size:11px}
+.breadcrumb-inner .current{color:var(--text-mid);font-weight:500}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.section{padding:72px 0}
+.official-hero{background:var(--navy);color:var(--white);padding:72px 32px;position:relative;overflow:hidden;}
+.official-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;}
+.official-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 20%,var(--green) 20% 40%,var(--gold) 40% 60%,var(--red) 60% 80%,var(--navy) 80%);}
+.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}
+.hero-ref{font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.hero-ref::before{content:'';display:block;width:32px;height:1px;background:var(--gold);}
+.hero-title{font-family:var(--ff-serif);font-size:clamp(36px,5.5vw,62px);font-weight:700;line-height:1.1;color:var(--white);margin-bottom:20px;max-width:800px;}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-lead{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,.7);max-width:600px;line-height:1.75;margin-bottom:36px;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:var(--ff-sans);letter-spacing:.03em;transition:all .2s;text-decoration:none;}
+.btn:hover{text-decoration:none}
+.btn-green{background:var(--green);color:var(--white)}.btn-green:hover{background:var(--green-lt)}
+.btn-navy{background:var(--navy);color:var(--white)}.btn-navy:hover{background:var(--navy-light)}
+.btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35)}.btn-outline-white:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border-dk)}.btn-outline:hover{border-color:var(--navy);background:var(--stone)}
+.btn-sm{padding:8px 20px;font-size:13px}
+.sec-header{margin-bottom:48px}
+.sec-header .ref{font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.sec-header .ref::before{content:'';display:block;width:24px;height:2px;background:var(--green);}
+.sec-header h2{font-family:var(--ff-serif);font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;color:var(--navy);}
+.sec-header h2 em{font-style:italic;color:var(--green)}
+.sec-header p{font-size:16px;color:var(--text-mid);margin-top:12px;max-width:640px;line-height:1.7}
+.with-sidebar{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.sidebar{position:sticky;top:calc(var(--total-top) + 20px)}
+.sidebar-panel{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:24px;margin-bottom:16px;border-top:3px solid var(--green);}
+.sidebar-panel.gold-top{border-top-color:var(--gold)}
+.sidebar-panel.red-top{border-top-color:var(--red)}
+.sidebar-title{font-family:var(--ff-serif);font-size:15px;font-weight:600;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.sidebar-link{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--stone);font-size:13.5px;color:var(--text);transition:color .2s;text-decoration:none;}
+.sidebar-link:last-child{border-bottom:none;padding-bottom:0}
+.sidebar-link:hover{color:var(--green);text-decoration:none}
+.sidebar-link::before{content:'›';color:var(--green);font-size:15px;flex-shrink:0}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:2px;font-family:var(--ff-mono);font-size:10.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;}
+.badge-green{background:rgba(0,105,47,.1);color:var(--green)}
+.badge-red{background:rgba(168,32,13,.1);color:var(--red)}
+.badge-gold{background:rgba(201,162,39,.15);color:#7a5a00}
+.badge-navy{background:rgba(10,22,40,.08);color:var(--navy)}
+
+/* ── Stats bar ── */
+.stats-bar{background:var(--green);padding:18px 0;}
+.stats-bar-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.stat-num{font-family:var(--ff-serif);font-size:30px;font-weight:700;color:var(--white);line-height:1;}
+.stat-label{font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;margin-top:5px;}
+
+/* ── Eligibility ── */
+.elig-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.elig-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:24px;border-top:4px solid var(--green);}
+.elig-card.no{border-top-color:var(--red)}
+.elig-card-head{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+.elig-card-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.elig-card-icon.yes-icon{background:rgba(0,105,47,.1);}
+.elig-card-icon.no-icon{background:rgba(168,32,13,.08);}
+.elig-card-title{font-family:var(--ff-serif);font-size:17px;font-weight:600;color:var(--navy);}
+.elig-list{list-style:none;padding:0;margin:0;}
+.elig-list li{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--stone);font-size:14px;color:var(--text-mid);line-height:1.55;}
+.elig-list li:last-child{border-bottom:none;padding-bottom:0}
+.elig-list li svg{flex-shrink:0;margin-top:2px;}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:16px 20px;border-radius:3px;margin-top:20px;}
+.callout.gold{background:rgba(201,162,39,.1);border-left:4px solid var(--gold);}
+.callout.info{background:rgba(10,22,40,.05);border-left:4px solid var(--navy);}
+.callout.warn{background:rgba(168,32,13,.07);border-left:4px solid var(--red);}
+.callout p{font-size:13.5px;color:var(--text-mid);margin:0;line-height:1.65;}
+.callout strong{color:var(--text);}
+
+/* ── Documents checklist ── */
+.doc-list{display:flex;flex-direction:column;gap:8px;}
+.doc-item{display:flex;align-items:flex-start;gap:14px;padding:14px 18px;background:var(--white);border:1px solid var(--border);border-radius:3px;transition:box-shadow .2s;}
+.doc-item:hover{box-shadow:0 2px 12px rgba(10,22,40,.06)}
+.doc-check{width:22px;height:22px;border:2px solid var(--green);border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:3px;background:rgba(0,105,47,.06);}
+.doc-body{flex:1;}
+.doc-body strong{display:block;font-size:14.5px;color:var(--text);font-weight:600;margin-bottom:2px;}
+.doc-body span{font-size:12.5px;color:var(--text-lt);line-height:1.5;display:block;}
+.doc-req{margin-left:auto;padding-left:12px;flex-shrink:0;font-family:var(--ff-mono);font-size:10px;color:var(--green);letter-spacing:.06em;text-transform:uppercase;padding-top:3px;}
+.doc-req.opt{color:var(--text-lt)}
+
+/* ── Step-by-step ── */
+.step-row{display:flex;gap:0;margin-bottom:0;}
+.step-left{display:flex;flex-direction:column;align-items:center;width:56px;flex-shrink:0;}
+.step-circle{width:48px;height:48px;border-radius:50%;color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--ff-serif);font-size:20px;font-weight:700;flex-shrink:0;background:var(--navy);}
+.step-line{width:2px;flex:1;background:var(--border);margin-top:4px;min-height:28px;}
+.step-row:last-child .step-line{display:none}
+.step-content{flex:1;padding:4px 0 36px 20px;}
+.step-row:last-child .step-content{padding-bottom:0}
+.step-content h3{font-family:var(--ff-serif);font-size:20px;color:var(--navy);margin-bottom:8px;font-weight:600;line-height:1.2;}
+.step-content p{font-size:14.5px;color:var(--text-mid);margin:0;line-height:1.7;}
+.step-tag{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12.5px;font-weight:600;}
+.step-tag.green{color:var(--green)}
+.step-tag.gold{color:#7a5a00}
+.step-tag svg{flex-shrink:0}
+.step-action-box{margin-top:14px;padding:12px 16px;background:var(--stone);border-radius:2px;border-left:3px solid var(--green);font-size:13.5px;color:var(--text-mid);}
+.step-action-box strong{color:var(--navy);}
+
+/* ── Important dates ── */
+.date-list{display:flex;flex-direction:column;gap:0;}
+.date-row{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.08);}
+.date-row:last-child{border-bottom:none;padding-bottom:0}
+.date-period{font-family:var(--ff-serif);font-size:17px;color:var(--gold);font-weight:600;margin-bottom:4px;}
+.date-status{font-family:var(--ff-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;display:inline-block;padding:3px 8px;border-radius:2px;margin-top:4px;}
+.date-status.upcoming{background:rgba(201,162,39,.2);color:var(--gold);}
+.date-status.open{background:rgba(0,135,62,.25);color:#6fda9e;}
+.date-status.closed{background:rgba(255,255,255,.08);color:rgba(255,255,255,.4);}
+.date-status.critical{background:rgba(168,32,13,.25);color:#f4998a;}
+.date-info h4{font-family:var(--ff-serif);font-size:19px;color:var(--white);margin-bottom:6px;font-weight:600;}
+.date-info p{font-size:13.5px;color:rgba(255,255,255,.55);margin:0;line-height:1.65;}
+
+/* ── Tips & mistakes ── */
+.tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+.tip-section-label{font-family:var(--ff-mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.tip-section-label::before{content:'';display:block;width:20px;height:2px;}
+.tip-section-label.gold-line::before{background:var(--gold)}
+.tip-section-label.red-line::before{background:var(--red)}
+.tip-section-label.gold-line{color:#7a5a00}
+.tip-section-label.red-line{color:var(--red)}
+.tip-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--stone);}
+.tip-item:last-child{border-bottom:none;padding-bottom:0}
+.tip-ico{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.tip-ico.gold-bg{background:rgba(201,162,39,.15);}
+.tip-ico.red-bg{background:rgba(168,32,13,.08);}
+.tip-item strong{display:block;font-size:14.5px;color:var(--text);font-weight:600;margin-bottom:3px;}
+.tip-item p{font-size:13.5px;color:var(--text-mid);margin:0;line-height:1.6;}
+
+/* ── Help cards ── */
+.help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.help-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:32px 24px;text-align:center;border-top:4px solid var(--navy);transition:box-shadow .2s;}
+.help-card:hover{box-shadow:0 4px 20px rgba(10,22,40,.1)}
+.help-card.green-top{border-top-color:var(--green)}
+.help-card.gold-top{border-top-color:var(--gold)}
+.help-card-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.help-card-icon.navy-bg{background:rgba(10,22,40,.07);}
+.help-card-icon.green-bg{background:rgba(0,105,47,.09);}
+.help-card-icon.gold-bg{background:rgba(201,162,39,.13);}
+.help-card h3{font-family:var(--ff-serif);font-size:17px;color:var(--navy);margin-bottom:8px;font-weight:600;}
+.help-card .h-value{font-family:var(--ff-serif);font-size:21px;font-weight:700;color:var(--green);margin:12px 0 4px;line-height:1.2;}
+.help-card .h-detail{font-size:13px;color:var(--text-lt);line-height:1.55;}
+.help-card .h-hours{font-size:12px;font-family:var(--ff-mono);color:var(--text-lt);margin-top:6px;letter-spacing:.04em;}
+
+/* ── Footer ── */
+#footer{background:var(--navy);color:var(--white);margin-top:0;}
+.footer-gov-bar{background:var(--navy-mid);padding:18px 32px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-gov-bar-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.footer-gov-bar-inner p{font-size:12px;color:rgba(255,255,255,.45);font-family:var(--ff-mono);margin:0;letter-spacing:.04em;}
+.footer-main{padding:64px 32px 40px}
+.footer-main-inner{max-width:var(--max);margin:0 auto}
+.footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand-name{font-family:var(--ff-serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.footer-brand-sub{font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+.footer-brand-desc{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;max-width:240px;margin-bottom:24px;}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:36px;height:36px;border-radius:2px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background .2s;}
+.footer-social a:hover{background:rgba(255,255,255,.12)}
+.footer-col-title{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08);}
+.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;text-decoration:none;transition:color .2s;line-height:1.5;}
+.footer-col p{font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;margin:0;line-height:1.5;}
+.footer-col a:hover{color:var(--white);text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);font-family:var(--ff-mono);letter-spacing:.04em;margin:0;}
+.footer-stripe{height:4px;background:linear-gradient(to right,var(--navy) 15%,var(--green) 15% 38%,var(--gold) 38% 62%,var(--red) 62% 85%,var(--navy) 85%);}
+
+/* ── Cookie ── */
+#cookie{position:fixed;bottom:0;left:0;right:0;background:var(--navy-mid);color:var(--white);padding:18px 32px;display:flex;align-items:center;gap:24px;z-index:8000;border-top:3px solid var(--gold);transform:translateY(100%);transition:transform .5s var(--ease);flex-wrap:wrap;}
+#cookie.show{transform:translateY(0)}
+#cookie p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px;margin:0}
+#cookie p a{color:var(--gold)}
+.cookie-btns{display:flex;gap:10px}
+.c-accept{background:var(--green);color:var(--white);border:none;padding:9px 20px;border-radius:2px;font-size:13px;font-weight:600;cursor:pointer;}
+.c-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.2);padding:9px 20px;border-radius:2px;font-size:13px;cursor:pointer;}
+
+/* ── What NSFAS Covers ── */
+.cover-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.cover-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:24px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
+.cover-card:hover{box-shadow:0 6px 24px rgba(10,22,40,.08);transform:translateY(-2px);}
+.cover-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green);}
+.cover-card.c-navy::before{background:var(--navy);}
+.cover-card.c-gold::before{background:var(--gold);}
+.cover-card.c-red::before{background:var(--red);}
+.cover-ico{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,105,47,.08);}
+.cover-card.c-navy .cover-ico{background:rgba(10,22,40,.06);}
+.cover-card.c-gold .cover-ico{background:rgba(201,162,39,.12);}
+.cover-card.c-red .cover-ico{background:rgba(168,32,13,.08);}
+.cover-title{font-family:var(--ff-serif);font-size:17px;font-weight:600;color:var(--navy);margin-bottom:6px;}
+.cover-amount{font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--green);line-height:1.1;margin-bottom:8px;}
+.cover-card.c-navy .cover-amount{color:var(--navy);}
+.cover-card.c-gold .cover-amount{color:#7a5a00;}
+.cover-card.c-red .cover-amount{color:var(--red);}
+.cover-desc{font-size:13.5px;color:var(--text-mid);line-height:1.6;margin:0;}
+.cover-note{font-family:var(--ff-mono);font-size:10.5px;color:var(--text-lt);letter-spacing:.04em;margin-top:10px;text-transform:uppercase;}
+/* hero image treatment */
+.official-hero.hero-photo::before{content:none;}
+.official-hero.hero-photo{background-size:cover;background-position:center;}
+
+/* ── Responsive ── */
+@media(max-width:960px){
+  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
+  .elig-grid,.tips-grid{grid-template-columns:1fr}
+  .help-grid{grid-template-columns:1fr 1fr}
+  .cover-grid{grid-template-columns:1fr 1fr}
+  .with-sidebar{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .date-row{grid-template-columns:1fr}
+  .stats-bar-inner{grid-template-columns:repeat(2,1fr)}
+  .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-ref{display:none}
+}
+@media(max-width:640px){
+  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
+  .wrap{padding:0 20px}
+  .header-established,.header-divider,.header-salogo{display:none}
+  .header-ident-main{font-size:17px}
+  .cover-grid{grid-template-columns:1fr}
+  .footer-cols{grid-template-columns:1fr}
+  .official-hero{padding:48px 20px}
+  .section{padding:48px 0}
+  .topbar-left .sep,.topbar-left span:nth-child(3),.topbar-left span:nth-child(4){display:none}
+  .help-grid{grid-template-columns:1fr}
+  .stats-bar-inner{grid-template-columns:repeat(2,1fr);gap:12px}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <div class="topbar-flag">
+        <div class="flag-seg" style="background:#009A44"></div>
+        <div class="flag-seg" style="background:#FFB612"></div>
+        <div class="flag-seg" style="background:#003580"></div>
+        <div class="flag-seg" style="background:#DE3831"></div>
+        <div class="flag-seg" style="background:#FFFFFF"></div>
+        <div class="flag-seg" style="background:#000000"></div>
+      </div>
+      <span>Republic of South Africa</span>
+      <span class="sep"></span>
+      <span>Official National Student Representative Body</span>
+      <span class="sep"></span>
+      <span>Established April 2006</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:Secretariat@saus.org.za">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 5 7-5"/></svg>
+        Secretariat@saus.org.za
+      </a>
+      <a href="tel:+27791295948">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h3l1.5 4-2 1.5a9 9 0 004 4L11 9.5l4 1.5v3a2 2 0 01-2 2A14 14 0 012 4a2 2 0 012-2z"/></svg>
+        +27 79 129 5948
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="header">
+  <div class="header-inner">
+    <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
+      <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </a>
+    <a href="/" class="header-ident" style="text-decoration:none">
+      <div class="header-ident-main">South African <em>Union of Students</em></div>
+      <div class="header-ident-sub">SAUS — Official National Representative Body in Higher Education</div>
+    </a>
+    <div class="header-divider"></div>
+    <div class="header-established"><span>Established</span><strong>2006</strong><span>9th Congress</span></div>
+    <div class="header-right">
+      <span class="header-salogo"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+      <a href="/contact/" class="header-contact-btn">Contact SAUS</a>
+      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="/" class="nav-item" data-page="home">Home</a>
+      <a href="/about/" class="nav-item" data-page="about">About SAUS</a>
+      <a href="/campaigns/" class="nav-item" data-page="campaigns">Campaigns</a>
+      <a href="/leadership/" class="nav-item" data-page="leadership">Leadership</a>
+      <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
+      <a href="/events/" class="nav-item" data-page="events">Events</a>
+      <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
+      <a href="/nsfas/" class="nav-item" data-page="nsfas">NSFAS</a>
+      <a href="/apply/" class="nav-item" data-page="apply">Universities</a>
+      <a href="/contact/" class="nav-item" data-page="contact">Contact</a>
+    </div>
+    <span class="nav-ref">REF: SAUS/GOV/2026</span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mnav">
+  <a href="/" class="mobile-nav-item" data-page="home" onclick="closeMobile()">Home</a>
+  <a href="/about/" class="mobile-nav-item" data-page="about" onclick="closeMobile()">About SAUS</a>
+  <a href="/campaigns/" class="mobile-nav-item" data-page="campaigns" onclick="closeMobile()">Campaigns</a>
+  <a href="/leadership/" class="mobile-nav-item" data-page="leadership" onclick="closeMobile()">Leadership</a>
+  <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
+  <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
+  <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>
+  <a href="/nsfas/" class="mobile-nav-item" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
+  <a href="/apply/" class="mobile-nav-item" data-page="apply" onclick="closeMobile()">Universities</a>
+  <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main>
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a><span class="sep">›</span>
+      <span class="current">NSFAS Application Guide</span>
+    </div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <div class="official-hero hero-photo" style="background-image:linear-gradient(115deg,rgba(10,22,40,.94) 40%,rgba(13,51,32,.82) 100%),url('/gallery/galleryIMG/IMG12.jpg');padding:68px 32px;">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/NSFAS/GUIDE/2026 · Student Financial Aid</div>
+      <h1 class="hero-title">NSFAS Application <em>Guide 2026/2027</em></h1>
+      <p class="hero-lead">A clear, step-by-step guide to applying for financial aid through the National Student Financial Aid Scheme — brought to you by SAUS to help every qualifying student access higher education.</p>
+      <div class="hero-btns">
+        <a href="#eligibility" class="btn btn-green">Check Eligibility
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3 8l5 5 5-5"/></svg>
+        </a>
+        <a href="#steps" class="btn btn-outline-white">View Application Steps
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3l5 5-5 5"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STATS BAR ── -->
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div>
+        <div class="stat-num">26</div>
+        <div class="stat-label">Public Universities Covered</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Tuition &amp; Fees Covered</div>
+      </div>
+      <div>
+        <div class="stat-num">R350K</div>
+        <div class="stat-label">Max Household Income</div>
+      </div>
+      <div>
+        <div class="stat-num">Free</div>
+        <div class="stat-label">Application — No Cost</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WHAT NSFAS COVERS ── -->
+  <section class="section" style="background:var(--cream)" id="covers">
+    <div class="wrap">
+      <div class="sec-header">
+        <div class="ref">SAUS/NSFAS/COVERAGE/2026</div>
+        <h2>What NSFAS <em>Covers</em></h2>
+        <p>NSFAS is a full bursary — not a loan. Qualifying university students receive comprehensive support covering tuition and a range of allowances. There is nothing to repay.</p>
+      </div>
+
+      <div class="cover-grid">
+        <div class="cover-card c-navy">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div class="cover-title">Tuition &amp; Registration</div>
+          <div class="cover-amount">Fully Covered</div>
+          <p class="cover-desc">Full payment of registration and tuition fees, paid directly to your public university.</p>
+        </div>
+
+        <div class="cover-card c-green">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div class="cover-title">Accommodation</div>
+          <div class="cover-amount">Up to R45,000<span style="font-size:13px;color:var(--text-lt)">/yr</span></div>
+          <p class="cover-desc">For students in university residence or accredited private accommodation. Capped per the annual NSFAS housing policy.</p>
+        </div>
+
+        <div class="cover-card c-green">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div class="cover-title">Living Allowance</div>
+          <div class="cover-amount">R1,650<span style="font-size:13px;color:var(--text-lt)">/mo</span></div>
+          <p class="cover-desc">A monthly allowance to help cover food, toiletries and day-to-day personal expenses while you study.</p>
+        </div>
+
+        <div class="cover-card c-gold">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7a5a00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 17.5h-6l-1-9h11l-1.5 5"/></svg></div>
+          <div class="cover-title">Transport Allowance</div>
+          <div class="cover-amount">R750<span style="font-size:13px;color:var(--text-lt)">/mo</span></div>
+          <p class="cover-desc">For non-residential students living within 40&nbsp;km of campus, to assist with daily travel costs.</p>
+        </div>
+
+        <div class="cover-card c-gold">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7a5a00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+          <div class="cover-title">Learning Materials</div>
+          <div class="cover-amount">Annual Allowance</div>
+          <p class="cover-desc">For prescribed textbooks, study materials and an approved learning device, disbursed each academic year.</p>
+        </div>
+
+        <div class="cover-card c-red">
+          <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="cover-title">Personal Care</div>
+          <div class="cover-amount">R3,167<span style="font-size:13px;color:var(--text-lt)">/yr</span></div>
+          <p class="cover-desc">For students in catered residences and distance-learning students, towards personal care essentials.</p>
+        </div>
+      </div>
+
+      <div class="callout info" style="margin-top:24px">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="var(--navy)" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4M8 5h.01"/></svg>
+        <p><strong>A full bursary, not a loan.</strong> Qualifying students receive total support of over <strong>R110,000 per year</strong> depending on accommodation type — with nothing to repay after graduation. Allowance amounts are 2025 guideline figures, reviewed annually by NSFAS; confirm current rates at <a href="https://www.nsfas.org.za" target="_blank" rel="noopener">nsfas.org.za</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ELIGIBILITY ── -->
+  <section class="section" style="background:var(--white)" id="eligibility">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header">
+            <div class="ref">SAUS/NSFAS/ELIGIBILITY/2026</div>
+            <h2>Do You <em>Qualify?</em></h2>
+            <p>Before applying, check that you meet NSFAS eligibility criteria. Both conditions — citizenship and income — must be satisfied.</p>
+          </div>
+
+          <div class="elig-grid">
+            <div class="elig-card">
+              <div class="elig-card-head">
+                <div class="elig-card-icon yes-icon">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                </div>
+                <div class="elig-card-title">You May Qualify If…</div>
+              </div>
+              <ul class="elig-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                  You are a South African citizen or permanent resident with a valid SA ID
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                  Your combined household income is <strong>R350,000 or less per year</strong> (R600,000 for students with disabilities)
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                  You are enrolled at or have been accepted to a <strong>public university</strong>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                  You have not exceeded the N+ rule for your qualification (standard duration plus 1 year)
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+                  You are a SASSA grant recipient's dependent (automatic financial need qualification)
+                </li>
+              </ul>
+            </div>
+            <div class="elig-card no">
+              <div class="elig-card-head">
+                <div class="elig-card-icon no-icon">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                </div>
+                <div class="elig-card-title">You Do Not Qualify If…</div>
+              </div>
+              <ul class="elig-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                  Your household income exceeds the applicable threshold
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                  You are enrolled at a <strong>private institution</strong> (NSFAS only covers public institutions)
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                  You have exceeded the N+1 rule and have not been granted an academic exception
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                  You already hold a funded qualification at the same or higher level
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="2"><path d="M3 3l10 10M13 3L3 13"/></svg>
+                  You are not a South African citizen or permanent resident
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="callout gold" style="margin-top:24px">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4M8 5h.01"/></svg>
+            <p><strong>Not sure about your household income?</strong> Include all income sources — salaries, wages, grants, rental income, and business income — for all adults living in the household. If parents are unemployed, an affidavit confirming this is accepted as proof.</p>
+          </div>
+          <div class="callout warn" style="margin-top:12px">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><path d="M8 1.5L14.5 13H1.5L8 1.5z"/><path d="M8 6v3.5M8 11h.01"/></svg>
+            <p><strong>Applying is free.</strong> NSFAS does not charge any application fee. If anyone requests payment to assist with your application, it is a scam. Report it to NSFAS immediately.</p>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">On This Page</div>
+            <a href="#covers" class="sidebar-link">What NSFAS Covers</a>
+            <a href="#eligibility" class="sidebar-link">Check Eligibility</a>
+            <a href="#documents" class="sidebar-link">Required Documents</a>
+            <a href="#steps" class="sidebar-link">Application Steps</a>
+            <a href="#dates" class="sidebar-link">Important Dates</a>
+            <a href="#tips" class="sidebar-link">Tips &amp; Pitfalls</a>
+            <a href="#help" class="sidebar-link">Get Help</a>
+          </div>
+          <div class="sidebar-panel gold-top">
+            <div class="sidebar-title">Quick Facts</div>
+            <div style="font-size:13.5px;color:var(--text-mid);line-height:1.65">
+              <p style="margin-bottom:10px"><strong style="color:var(--navy)">Application Window</strong><br>August – November 2026</p>
+              <p style="margin-bottom:10px"><strong style="color:var(--navy)">Application Portal</strong><br>myNSFAS online portal</p>
+              <p style="margin-bottom:10px"><strong style="color:var(--navy)">Helpline</strong><br>0800 067 327 (toll-free)</p>
+              <p style="margin-bottom:0"><strong style="color:var(--navy)">Cost to Apply</strong><br><span style="color:var(--green);font-weight:600">Free</span> — no fees ever</p>
+            </div>
+          </div>
+          <div class="sidebar-panel red-top">
+            <div class="sidebar-title">SAUS Advocacy Note</div>
+            <p style="font-size:13.5px;color:var(--text-mid);line-height:1.65;margin:0">SAUS continues to advocate for the removal of the income threshold — so that all deserving students can access funding regardless of household income. Join our campaign.</p>
+            <a href="/campaigns/" class="btn btn-outline btn-sm" style="margin-top:14px;width:100%;justify-content:center">View Campaigns →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DOCUMENTS ── -->
+  <section class="section" style="background:var(--cream)" id="documents">
+    <div class="wrap">
+      <div class="sec-header">
+        <div class="ref">SAUS/NSFAS/DOCS/2026</div>
+        <h2>Required <em>Documents</em></h2>
+        <p>Gather all documents before you begin your application. Incomplete submissions are the leading cause of delays and rejections.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <p style="font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px"><span style="display:block;width:16px;height:2px;background:var(--green)"></span>Your Documents</p>
+          <div class="doc-list">
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Certified Copy of South African ID</strong>
+                <span>Green barcoded ID book or smart ID card. Must be certified within 3 months of application date.</span>
+              </div>
+              <div class="doc-req">Required</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Proof of Academic Registration or Acceptance</strong>
+                <span>Acceptance letter from your institution, or proof of registration if already enrolled. Must show your student number and qualification.</span>
+              </div>
+              <div class="doc-req">Required</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Disability Letter</strong>
+                <span>Letter from a registered medical professional confirming the nature of your disability. Only required if applying under the R600,000 threshold.</span>
+              </div>
+              <div class="doc-req opt">If applicable</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px"><span style="display:block;width:16px;height:2px;background:var(--navy)"></span>Household Documents</p>
+          <div class="doc-list">
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Certified Copies of Parent / Guardian IDs</strong>
+                <span>Both parents or all guardians must provide certified copies of their SA IDs. Certified within 3 months of application.</span>
+              </div>
+              <div class="doc-req">Required</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Proof of Household Income</strong>
+                <span>IRP5 or salary slip (employed) · SASSA letter (grant recipients) · Signed affidavit if unemployed · Pension slip if retired.</span>
+              </div>
+              <div class="doc-req">Required</div>
+            </div>
+            <div class="doc-item">
+              <div class="doc-check">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="#00692F" stroke-width="2.5"><path d="M2 8l4 4 8-8"/></svg>
+              </div>
+              <div class="doc-body">
+                <strong>Death Certificates (Orphaned Students)</strong>
+                <span>Certified copies of parent(s)' death certificate(s), plus a sworn affidavit from your legal guardian confirming the arrangement.</span>
+              </div>
+              <div class="doc-req opt">If applicable</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout info" style="margin-top:28px">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="var(--navy)" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4M8 5h.01"/></svg>
+        <p><strong>Certifying your documents:</strong> Documents must be certified by a commissioner of oaths — available at police stations, banks, and post offices. Bring your originals and clean photocopies. Most institutions will certify free of charge.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STEPS ── -->
+  <section class="section" style="background:var(--white)" id="steps">
+    <div class="wrap">
+      <div class="sec-header">
+        <div class="ref">SAUS/NSFAS/STEPS/2026</div>
+        <h2>Application <em>Steps</em></h2>
+        <p>Follow each step in order. Do not skip ahead — NSFAS requires a complete application before it can be reviewed.</p>
+      </div>
+
+      <div style="max-width:780px">
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--green)">1</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Confirm You Meet the Eligibility Requirements</h3>
+            <p>Before anything else, use the eligibility checklist above to confirm you qualify. Check your citizenship status, household income, and institution type. This saves time and prevents a failed application.</p>
+            <div class="step-tag green">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+              Takes 5 minutes — do this first
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--navy)">2</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Gather All Required Documents</h3>
+            <p>Collect every document on the checklist before opening the application portal. Incomplete applications are a leading reason for delays. Get certified copies done early — certification queues at police stations can be long.</p>
+            <div class="step-action-box">
+              <strong>Pro tip:</strong> Make multiple certified copies of each document — one for NSFAS, one for your institution, and one for your own records.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--navy-light)">3</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Register on the myNSFAS Portal</h3>
+            <p>Visit the official NSFAS website at <strong>nsfas.org.za</strong> and click "Register". You will need your South African ID number, a valid email address, and a mobile number. Choose a secure password and store it safely.</p>
+            <div class="step-tag green">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="6.5"/><path d="M8 5V8l2 2"/></svg>
+              Applications open 1 August 2026
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--green-lt)">4</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Complete the Online Application Form</h3>
+            <p>Log in to your myNSFAS account and click "Apply". Fill in all sections carefully — personal details, household information, income details, and your institution and qualification. Double-check every entry before moving to the next section.</p>
+            <div class="step-action-box">
+              <strong>Be accurate:</strong> Incorrect information — especially income figures — can result in disqualification, even if it was an honest mistake. If unsure, contact NSFAS before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--navy-mid)">5</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Upload Your Supporting Documents</h3>
+            <p>Scan or photograph each document clearly — good lighting, no shadows, all four corners visible. Upload in PDF or JPG format. Each file must be under the portal's size limit. Name your files clearly (e.g. "MyName_ID.pdf").</p>
+            <div class="step-tag green">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3 8l5-5 5 5"/></svg>
+              All documents must be uploaded in a single session
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--navy)">6</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Submit and Save Your Confirmation</h3>
+            <p>Review your entire application one final time, then click "Submit". NSFAS will send a confirmation email and SMS to your registered details. Save or print your application reference number — you will need it for all future queries.</p>
+            <div class="step-action-box">
+              <strong>Deadline:</strong> Applications close 30 November 2026. Submissions after this date will not be considered. Do not wait until the last day.
+            </div>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-left">
+            <div class="step-circle" style="background:var(--green)">7</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>Track Your Application &amp; Respond Promptly</h3>
+            <p>Log in to myNSFAS regularly to check your application status. NSFAS may request additional documents — respond within the given timeframe or your application could lapse. If approved, you will be required to sign a Student Financial Aid Agreement (SFAA) online.</p>
+            <div class="step-tag green">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8l4 4 8-8"/></svg>
+              Results expected January 2027
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── IMPORTANT DATES ── -->
+  <section class="section" style="background:var(--navy)" id="dates">
+    <div class="wrap">
+      <div class="sec-header" style="margin-bottom:40px">
+        <div class="ref" style="color:rgba(255,255,255,.4)">SAUS/NSFAS/DATES/2026–2027</div>
+        <h2 style="color:var(--white)">Important <em style="color:var(--gold)">Dates</em></h2>
+        <p style="color:rgba(255,255,255,.6)">Mark these dates in your calendar. Missing a deadline — especially the application deadline — means waiting a full year to reapply.</p>
+      </div>
+
+      <div class="date-list">
+        <div class="date-row">
+          <div>
+            <div class="date-period">1 August 2026</div>
+            <div class="date-status upcoming">Upcoming</div>
+          </div>
+          <div class="date-info">
+            <h4>Applications Open</h4>
+            <p>The myNSFAS portal opens for 2027 academic year applications. Register your account early so you are ready to apply on day one.</p>
+          </div>
+        </div>
+        <div class="date-row">
+          <div>
+            <div class="date-period">30 November 2026</div>
+            <div class="date-status critical">Deadline</div>
+          </div>
+          <div class="date-info">
+            <h4>Application Deadline</h4>
+            <p>All applications and supporting documents must be submitted by midnight. Late submissions will not be reviewed under any circumstances.</p>
+          </div>
+        </div>
+        <div class="date-row">
+          <div>
+            <div class="date-period">January 2027</div>
+            <div class="date-status upcoming">Upcoming</div>
+          </div>
+          <div class="date-info">
+            <h4>Preliminary Outcome Notifications</h4>
+            <p>NSFAS begins notifying applicants of their preliminary outcome via email and SMS. Log in to myNSFAS to view your status and any action required.</p>
+          </div>
+        </div>
+        <div class="date-row">
+          <div>
+            <div class="date-period">Feb – Mar 2027</div>
+            <div class="date-status upcoming">Upcoming</div>
+          </div>
+          <div class="date-info">
+            <h4>Appeals Period</h4>
+            <p>If your application was unsuccessful, you may appeal during this window. Submit your appeal through myNSFAS with supporting documentation explaining your grounds for appeal.</p>
+          </div>
+        </div>
+        <div class="date-row">
+          <div>
+            <div class="date-period">February 2027</div>
+            <div class="date-status upcoming">Upcoming</div>
+          </div>
+          <div class="date-info">
+            <h4>Funding Disbursement Begins</h4>
+            <p>Approved students receive their first allowance payments. Sign your Student Financial Aid Agreement (SFAA) in myNSFAS as soon as you receive the prompt — unsigned agreements delay disbursement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout warn" style="margin-top:32px;background:rgba(168,32,13,.15);border-left-color:var(--red)">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#f4998a" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><path d="M8 1.5L14.5 13H1.5L8 1.5z"/><path d="M8 6v3.5M8 11h.01"/></svg>
+        <p style="color:rgba(255,255,255,.7)"><strong style="color:var(--white)">SAUS Reminder:</strong> These are guideline dates based on historical NSFAS patterns. Always verify the official application dates on the NSFAS website or through your institution's financial aid office, as dates may shift.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TIPS & MISTAKES ── -->
+  <section class="section" style="background:var(--cream)" id="tips">
+    <div class="wrap">
+      <div class="sec-header">
+        <div class="ref">SAUS/NSFAS/TIPS/2026</div>
+        <h2>Tips &amp; <em>Common Mistakes</em></h2>
+        <p>Students who apply successfully share one thing in common: preparation. Avoid the pitfalls that cost thousands of students their funding each year.</p>
+      </div>
+
+      <div class="tips-grid">
+        <div>
+          <div class="tip-section-label gold-line">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M8 5V8l2 2"/></svg>
+            Helpful Tips
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico gold-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="1.5"/><path d="M5 8h6M8 5v6"/></svg>
+            </div>
+            <div>
+              <strong>Apply on the first day applications open</strong>
+              <p>Early applicants receive earlier decisions and avoid system congestion near the deadline. Set a reminder for 1 August.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico gold-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><path d="M13 2H3a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1V3a1 1 0 00-1-1z"/><path d="M5 6h6M5 9h4"/></svg>
+            </div>
+            <div>
+              <strong>Keep copies of everything you submit</strong>
+              <p>Save PDFs of every uploaded document and screenshot your confirmation page. If NSFAS requests resubmission, you have ready copies.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico gold-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 5 7-5"/></svg>
+            </div>
+            <div>
+              <strong>Use an email address you check daily</strong>
+              <p>All NSFAS correspondence goes to your registered email. A missed request for additional documents can invalidate your application.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico gold-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><path d="M8 2a6 6 0 100 12A6 6 0 008 2zM8 6v3l2 2"/></svg>
+            </div>
+            <div>
+              <strong>Get certifications done before August</strong>
+              <p>Police stations get extremely busy in August as thousands of students rush to certify documents. Go in July while queues are short.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico gold-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5"><path d="M3 8a5 5 0 0110 0"/><path d="M8 5v3l1.5 1.5"/><path d="M12 13l1-1.5M4 13l-1-1.5"/></svg>
+            </div>
+            <div>
+              <strong>Visit your institution's financial aid office</strong>
+              <p>Many universities have dedicated NSFAS liaison staff who can help you complete your application and flag potential issues before you submit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="tip-section-label red-line">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M8 1.5L14.5 13H1.5L8 1.5z"/><path d="M8 6v3.5M8 11h.01"/></svg>
+            Mistakes to Avoid
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico red-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </div>
+            <div>
+              <strong>Submitting without all required documents</strong>
+              <p>Incomplete applications are automatically flagged and may be rejected outright. NSFAS will not chase you for missing documents.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico red-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </div>
+            <div>
+              <strong>Using uncertified or expired photocopies</strong>
+              <p>All copies must be certified within 3 months of your application date. Old certifications — even from a previous application — are not accepted.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico red-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </div>
+            <div>
+              <strong>Incorrect or understated household income</strong>
+              <p>Fraudulent income declarations are a criminal offence. NSFAS cross-references income with SARS. Discrepancies lead to disqualification and potential prosecution.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico red-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </div>
+            <div>
+              <strong>Ignoring status updates after submission</strong>
+              <p>Applications are not automatically finalised. NSFAS often requests additional information. Ignoring these requests causes your application to lapse.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <div class="tip-ico red-bg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A8200D" stroke-width="1.5"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </div>
+            <div>
+              <strong>Missing the appeals window</strong>
+              <p>If your application is unsuccessful, you have a narrow appeals window. Missing it means waiting the full year. Set a reminder for February 2027.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GET HELP ── -->
+  <section class="section" style="background:var(--white)" id="help">
+    <div class="wrap">
+      <div class="sec-header" style="margin-bottom:40px">
+        <div class="ref">SAUS/NSFAS/SUPPORT/2026</div>
+        <h2>Get <em>Help</em></h2>
+        <p>You are not alone. Multiple support channels exist to help you through the process — use them.</p>
+      </div>
+
+      <div class="help-grid">
+        <div class="help-card">
+          <div class="help-card-icon navy-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.8 19.8 0 01.02 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </div>
+          <h3>NSFAS Contact Centre</h3>
+          <div class="h-value">0800 067 327</div>
+          <div class="h-detail">Toll-free from any South African network</div>
+          <div class="h-hours">Mon – Fri · 08:00 – 16:30</div>
+        </div>
+
+        <div class="help-card green-top">
+          <div class="help-card-icon green-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg>
+          </div>
+          <h3>Email NSFAS</h3>
+          <div class="h-value" style="font-size:16px">info@nsfas.org.za</div>
+          <div class="h-detail">For general queries, document resubmission, and status follow-ups. Include your SA ID number and application reference in all emails.</div>
+        </div>
+
+        <div class="help-card gold-top">
+          <div class="help-card-icon gold-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7a5a00" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>SAUS Student Support</h3>
+          <div class="h-value" style="font-size:16px">Secretariat@saus.org.za</div>
+          <div class="h-detail">SAUS can assist with escalations, campus referrals, and advocacy support if your application is being unfairly handled.</div>
+          <div class="h-hours">Mon – Fri · 08:00 – 17:00</div>
+        </div>
+      </div>
+
+      <div class="callout gold" style="margin-top:32px">
+        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#C9A227" stroke-width="1.5" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6.5"/><path d="M8 7v4M8 5h.01"/></svg>
+        <p><strong>Visit your institution's financial aid office.</strong> Every public university has a dedicated financial aid office staffed by trained NSFAS liaison officers. They can review your documents, submit queries on your behalf, and assist with appeals — in person, for free.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <div class="footer-gov-bar">
+    <div class="footer-gov-bar-inner">
+      <p><span style="display:inline-flex;gap:2px;align-items:center;vertical-align:middle;margin-right:4px"><span style="display:inline-block;width:16px;height:10px;background:linear-gradient(to bottom,#DE3831 33%,#FFFFFF 33% 67%,#002395 67%)"></span></span>Republic of South Africa — South African Union of Students (SAUS)</p>
+      <p>Official National Representative Body in Higher Education · Established April 2006</p>
+      <p>SAUS/GOV/2026 · POPIA Compliant</p>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-main-inner">
+      <div class="footer-cols">
+        <div>
+          <div class="footer-brand-name">South African Union of Students</div>
+          <div class="footer-brand-sub">SAUS · Official National Student Body · Est. 2006</div>
+          <p class="footer-brand-desc">The official representative body for students across all 26 public universities in the Republic of South Africa — empowering student voices, advancing higher education.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/SAUStudents/" title="Facebook" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/sa.union.of.students/" title="Instagram" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.2 4 4 5.2 4 7.6v8.8C4 18.8 5.2 20 7.6 20h8.8c2.4 0 3.6-1.2 3.6-3.6V7.6C20 5.2 18.8 4 16.4 4H7.6zM17.5 6.5a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10A5 5 0 0112 7zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg></a>
+            <a href="https://za.linkedin.com/company/south-african-union-of-students" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V9h4v2.8A6 6 0 0116 8zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.tiktok.com/@southafricanunionofstud8" title="TikTok" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.89 2.89 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.15 8.15 0 004.77 1.52V6.72a4.86 4.86 0 01-1-.03z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="/">Home</a><a href="/about/">About SAUS</a><a href="/campaigns/">Campaigns</a>
+          <a href="/leadership/">NEC Leadership</a><a href="/news/">Newsroom</a>
+          <a href="/events/">Events</a><a href="/gallery/">Gallery</a>
+          <a href="/nsfas/">NSFAS Guide</a><a href="/contact/">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Policy Areas</div>
+          <p>NSFAS Reform</p><p>Student Debt Relief</p><p>Missing Middle Funding</p>
+          <p>GBV &amp; Campus Safety</p><p>No Application Fees</p>
+          <p>AI in Higher Education</p><p>Higher Education Act Review</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Secretariat</div>
+          <a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a>
+          <a href="tel:+27791295948">+27 79 129 5948</a>
+          <p>Johannesburg, Gauteng</p><p>South Africa</p><p>Mon–Fri · 08:00–17:00</p>
+          <p style="margin-top:10px;color:rgba(255,255,255,.2);font-size:11px;font-family:var(--ff-mono)">www.saus.org.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="https://admin.saus.org.za" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none">Staff Login</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stripe"></div>
+</footer>
+
+<div id="cookie">
+  <p>This website uses cookies to improve your experience in accordance with the <a href="#">Protection of Personal Information Act (POPIA), Act 4 of 2013</a>.</p>
+  <div class="cookie-btns">
+    <button class="c-accept" onclick="acceptC()">Accept</button>
+    <button class="c-decline" onclick="declineC()">Decline</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const path=window.location.pathname.replace(/\/$/,'')||'/';
+  const map={'/':'home','/about':'about','/campaigns':'campaigns','/leadership':'leadership','/news':'news','/events':'events','/gallery':'gallery','/nsfas':'nsfas','/contact':'contact'};
+  const id=Object.keys(map).find(k=>path.endsWith(k))||'home';
+  document.querySelectorAll('.nav-item,.mobile-nav-item').forEach(n=>{if(n.dataset.page===id)n.classList.add('active');});
+})();
+function toggleMenu(){const m=document.getElementById('mnav');m.classList.toggle('open');const h=document.getElementById('ham');const o=m.classList.contains('open');h.children[0].style.transform=o?'rotate(45deg) translateY(7px)':'none';h.children[1].style.opacity=o?'0':'1';h.children[2].style.transform=o?'rotate(-45deg) translateY(-7px)':'none';}
+function closeMobile(){document.getElementById('mnav').classList.remove('open')}
+function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.getElementById('cookie').classList.remove('show')}
+function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
+window.addEventListener('DOMContentLoaded',()=>{
+  if(!localStorage.getItem('saus_gov_cookie')){setTimeout(()=>document.getElementById('cookie').classList.add('show'),1800);}
+});
+(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://admin.saus.org.za';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();
+</script>
+</body>
+</html>

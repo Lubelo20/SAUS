@@ -1,0 +1,38 @@
+{
+  "abbr": "WITS",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "sas@wits.ac.za",
+  "phone": "+27 11 717 9030",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "Wits Chancellor's Scholarship",
+      "type": "merit",
+      "value": "Full tuition + R48,000 stipend/yr",
+      "criteria": "90%+ matric average; APS 44+; South African citizens",
+      "url": "https://www.wits.ac.za/fees-and-funding/bursaries/"
+    },
+    {
+      "name": "Wits Academic Merit Award",
+      "type": "merit",
+      "value": "25%–100% tuition reduction",
+      "criteria": "APS 40+ and subject-specific requirements per faculty",
+      "url": "https://www.wits.ac.za/fees-and-funding/bursaries/"
+    },
+    {
+      "name": "Wits Sports Scholarship",
+      "type": "sports",
+      "value": "Up to 50% tuition support",
+      "criteria": "National / provincial representation; maintained academic pass rate",
+      "url": "https://www.wits.ac.za/fees-and-funding/bursaries/"
+    },
+    {
+      "name": "Wits Equity Advancement Bursary",
+      "type": "need-based",
+      "value": "Partial fees and living costs",
+      "criteria": "Historically disadvantaged South Africans; household income < R350,000",
+      "url": "https://www.wits.ac.za/fees-and-funding/bursaries/"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "abbr": "SPU",
+  "general": {
+    "phone": "+27 53 491 0000",
+    "email": "info@spu.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 53 491 0000",
+    "email": "admissions@spu.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 53 491 0111",
+    "email": "financialaid@spu.ac.za"
+  },
+  "address": "Sol Plaatje University, Private Bag X5008, Kimberley, Northern Cape, 8301",
+  "social": {
+    "facebook": "https://www.facebook.com/SolPlaatjeUniversity",
+    "twitter": "https://twitter.com/SPU_official",
+    "instagram": "https://www.instagram.com/spu_official"
+  }
+}

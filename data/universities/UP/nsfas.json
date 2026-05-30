@@ -1,0 +1,45 @@
+{
+  "abbr": "UP",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@up.ac.za",
+  "phone": "+27 12 420 4555",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UP Top Achiever Bursary",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top 5 learners per province in matric NSC",
+      "url": "https://www.up.ac.za/bursaries"
+    },
+    {
+      "name": "UP Vice-Chancellor's Bursary",
+      "type": "merit",
+      "value": "Full tuition + R36,000 stipend/yr",
+      "criteria": "APS 40+ and 90%+ aggregate; exceptional leadership record",
+      "url": "https://www.up.ac.za/bursaries"
+    },
+    {
+      "name": "UP Merit Bursary",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 34+ and strong subject performance in relevant field",
+      "url": "https://www.up.ac.za/bursaries"
+    },
+    {
+      "name": "UP Sport Bursary",
+      "type": "sports",
+      "value": "Up to 50% tuition support",
+      "criteria": "National or Tuks varsity sport representation",
+      "url": "https://www.up.ac.za/bursaries"
+    },
+    {
+      "name": "UP Disability Bursary",
+      "type": "need-based",
+      "value": "Full tuition support",
+      "criteria": "Students with documented disabilities; financial need assessment",
+      "url": "https://www.up.ac.za/bursaries"
+    }
+  ]
+}

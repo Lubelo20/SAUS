@@ -1,0 +1,21 @@
+{
+  "abbr": "DUT",
+  "general": {
+    "phone": "+27 31 373 2000",
+    "email": "info@dut.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 31 373 2000",
+    "email": "admissions@dut.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 31 373 2537",
+    "email": "sas@dut.ac.za"
+  },
+  "address": "Durban University of Technology, PO Box 1334, Durban, 4000",
+  "social": {
+    "facebook": "https://www.facebook.com/DurbanUniversityofTechnology",
+    "twitter": "https://twitter.com/DUT4life",
+    "instagram": "https://www.instagram.com/dut_sa"
+  }
+}

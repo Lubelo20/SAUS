@@ -1,0 +1,31 @@
+{
+  "abbr": "SMU",
+  "name": "Sefako Makgatho Health Sciences University",
+  "type": "Health Sciences University",
+  "established": 2015,
+  "students": 5000,
+  "aps": "34–44+",
+  "location": {
+    "city": "Medunsa",
+    "province": "Gauteng"
+  },
+  "website": "https://www.smu.ac.za",
+  "apply": "https://www.smu.ac.za/admissions",
+  "prospectus": "https://www.smu.ac.za/admissions",
+  "logo": "smu.png",
+  "description": "South Africa's only dedicated health sciences university. Offers MBChB, dentistry, pharmacy and allied health programmes at the Dr George Mukhari Academic Hospital campus.",
+  "faculties": [
+    "Dentistry",
+    "Health Sciences",
+    "Pharmacy",
+    "Preclinical Sciences"
+  ],
+  "motto": "Excellence in Health Sciences Education",
+  "languages": [
+    "English"
+  ],
+  "campuses": [
+    "Medunsa, Ga-Rankuwa"
+  ],
+  "nsfasAccredited": true
+}

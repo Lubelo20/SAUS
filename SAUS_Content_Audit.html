@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>SAUS Website — Content Accuracy Audit</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Arial,sans-serif;font-size:14px;color:#1a1918;background:#f7f6f2;line-height:1.6}
+  @media print{body{background:#fff}.no-print{display:none}section{page-break-inside:avoid}}
+
+  /* Cover */
+  .cover{background:#0A1628;color:#fff;padding:56px 64px;border-bottom:6px solid #C9A227}
+  .cover-logo{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px;font-family:monospace}
+  .cover h1{font-size:36px;font-weight:700;margin-bottom:8px;font-family:Georgia,serif}
+  .cover h1 em{font-style:italic;color:#C9A227}
+  .cover-sub{font-size:15px;color:rgba(255,255,255,.6);margin-bottom:32px}
+  .cover-meta{display:flex;gap:40px;flex-wrap:wrap}
+  .cover-meta-item label{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);font-family:monospace;margin-bottom:4px}
+  .cover-meta-item span{font-size:14px;color:rgba(255,255,255,.85)}
+
+  /* Page wrapper */
+  .doc{max-width:900px;margin:0 auto;padding:48px 32px}
+
+  /* Section heading */
+  .section-hd{display:flex;align-items:center;gap:12px;margin:48px 0 20px;padding-bottom:12px;border-bottom:2px solid #0A1628}
+  .section-num{width:32px;height:32px;background:#0A1628;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;font-family:monospace}
+  .section-hd h2{font-size:20px;font-weight:700;color:#0A1628;font-family:Georgia,serif}
+  .section-hd .page-ref{margin-left:auto;font-size:11px;color:#7a7874;font-family:monospace;letter-spacing:.08em;text-transform:uppercase}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;margin-bottom:24px;font-size:13.5px}
+  thead tr{background:#0A1628}
+  th{padding:10px 14px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);text-align:left;font-family:monospace}
+  td{padding:12px 14px;border-bottom:1px solid #e0deda;vertical-align:top}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:#f0f8f4}
+  td:first-child{font-weight:600;color:#0A1628;width:220px}
+  tfoot td{background:#f7f6f2;font-size:12px;color:#7a7874;font-style:italic;padding:8px 14px}
+
+  /* Status badges */
+  .badge{display:inline-block;padding:2px 8px;border-radius:2px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-family:monospace}
+  .badge-ok{background:rgba(0,105,47,.12);color:#00692F}
+  .badge-need{background:rgba(168,32,13,.1);color:#A8200D}
+  .badge-check{background:rgba(201,162,39,.15);color:#7a5a00}
+  .badge-missing{background:#fff0ee;color:#A8200D;border:1px dashed #A8200D}
+
+  /* Note boxes */
+  .note{padding:12px 16px;border-radius:3px;font-size:13px;margin:12px 0 20px;line-height:1.6}
+  .note-info{background:rgba(10,22,40,.05);border-left:3px solid #0A1628}
+  .note-warn{background:rgba(168,32,13,.06);border-left:3px solid #A8200D;color:#5a1a0d}
+  .note-ok{background:rgba(0,105,47,.07);border-left:3px solid #00692F}
+
+  /* Field rows */
+  .field-row{display:grid;grid-template-columns:220px 1fr 140px;gap:0;border-bottom:1px solid #e8e6e2}
+  .field-row:last-child{border-bottom:none}
+  .field-label{padding:11px 14px;font-weight:600;font-size:13px;color:#0A1628;background:#f7f6f2;border-right:1px solid #e8e6e2}
+  .field-value{padding:11px 14px;font-size:13px;color:#4a4845;border-right:1px solid #e8e6e2}
+  .field-status{padding:11px 14px;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .field-block{border:1px solid #e0deda;border-radius:2px;margin-bottom:20px;overflow:hidden}
+
+  /* Placeholder row */
+  .placeholder-row td{background:#fff8f7;color:#7a7874;font-style:italic}
+
+  /* Divider */
+  hr{border:none;border-top:1px solid #e0deda;margin:32px 0}
+
+  /* Footer */
+  .doc-footer{margin-top:64px;padding-top:24px;border-top:2px solid #0A1628;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#7a7874;font-family:monospace}
+
+  /* Print button */
+  .print-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 24px;background:#0A1628;color:#fff;border:none;border-radius:3px;font-size:13px;font-weight:600;cursor:pointer;margin-bottom:32px}
+  .print-btn:hover{background:#1E3160}
+
+  /* Instructions */
+  .instructions{background:#fff;border:1px solid #e0deda;border-radius:3px;padding:24px;margin-bottom:40px}
+  .instructions h3{font-size:15px;font-weight:700;color:#0A1628;margin-bottom:12px}
+  .instructions ol{padding-left:20px;font-size:13.5px;color:#4a4845;line-height:2}
+  .instructions li span{display:inline-block;padding:1px 7px;border-radius:2px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-family:monospace;vertical-align:middle;margin-left:4px}
+
+  h3.sub{font-size:15px;font-weight:700;color:#0A1628;margin:24px 0 10px;font-family:Georgia,serif}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-logo">Lubelo Tech Solutions · SAUS Website Project · Confidential</div>
+  <h1>SAUS Website<br><em>Content Accuracy Audit</em></h1>
+  <p class="cover-sub">Every field, every page — what is confirmed, what needs verification, and what is missing before deployment.</p>
+  <div class="cover-meta">
+    <div class="cover-meta-item"><label>Document Ref</label><span>LTS/SAUS/AUDIT/2026/01</span></div>
+    <div class="cover-meta-item"><label>Prepared by</label><span>Lubelo Tech Solutions</span></div>
+    <div class="cover-meta-item"><label>Date</label><span>30 May 2026</span></div>
+    <div class="cover-meta-item"><label>Status</label><span>Awaiting Client Sign-off</span></div>
+  </div>
+</div>
+
+<div class="doc">
+
+  <!-- Print button -->
+  <button class="print-btn no-print" onclick="window.print()">⎙ Print / Save as PDF</button>
+
+  <!-- Instructions -->
+  <div class="instructions no-print">
+    <h3>How to use this document</h3>
+    <ol>
+      <li>Go through each section below. Items marked <span class="badge badge-need">Needs Input</span> require information from SAUS before the site goes live.</li>
+      <li>Items marked <span class="badge badge-check">Please Confirm</span> are currently on the site but must be verified as accurate by SAUS.</li>
+      <li>Items marked <span class="badge badge-ok">Confirmed</span> are verified from authoritative sources and require no action.</li>
+      <li>Items marked <span class="badge badge-missing">Missing</span> are completely absent and must be provided.</li>
+      <li>Fill in corrections in the empty "Correct Value" column, sign off, and return to Lubelo Tech Solutions.</li>
+    </ol>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1: ORGANISATION DETAILS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">1</div>
+    <h2>Organisation Details</h2>
+    <span class="page-ref">All Pages — Header &amp; Footer</span>
+  </div>
+  <div class="note note-info">These details appear in the topbar, header, footer, About page, and Contact page. All instances must be identical.</div>
+
+  <table>
+    <thead><tr><th>Field</th><th>Currently on Site</th><th>Status</th><th>Correct Value (if different)</th></tr></thead>
+    <tbody>
+      <tr><td>Full Organisation Name</td><td>South African Union of Students (SAUS)</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>Acronym</td><td>SAUS</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>Date of Establishment</td><td>April 2006</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Legal Status</td><td>Non-Profit National Student Representative Body</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Headquarters</td><td>Johannesburg, Gauteng, South Africa</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Official Website</td><td>www.saus.org.za</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Secretariat Email</td><td>Secretariat@saus.org.za</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Main Phone Number</td><td>+27 79 129 5948</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Office Hours</td><td>Monday to Friday, 08:00 – 17:00</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Current Congress Number</td><td>9th National Executive Committee (2025)</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Number of Universities</td><td>26 public universities</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>Students Represented</td><td>1 million+</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="4">Used in: Header subtitle · About page profile table · Footer · Contact page · Topbar · All page heroes</td></tr></tfoot>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2: CONTACT & MEDIA
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">2</div>
+    <h2>Contact &amp; Media Spokesperson</h2>
+    <span class="page-ref">Contact Page · Leadership Page · All Footers</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Field</th><th>Currently on Site</th><th>Status</th><th>Correct Value (if different)</th></tr></thead>
+    <tbody>
+      <tr><td>Spokesperson Name</td><td>Thato Masekoa</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Spokesperson Title</td><td>SAUS Official Spokesperson</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Spokesperson Phone</td><td>+27 79 129 5948</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Spokesperson Email</td><td>Secretariat@saus.org.za (shared)</td><td><span class="badge badge-need">Needs Input</span></td><td>Direct email for Thato Masekoa?</td></tr>
+      <tr><td>WhatsApp Number</td><td>+27 79 129 5948 (same as phone)</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Physical Address</td><td>Johannesburg, Gauteng, South Africa</td><td><span class="badge badge-need">Needs Input</span></td><td>Full street address for contact page?</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3: SOCIAL MEDIA
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">3</div>
+    <h2>Social Media Links</h2>
+    <span class="page-ref">Footer · Contact Page</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Platform</th><th>URL Currently on Site</th><th>Status</th><th>Correct URL (if different)</th></tr></thead>
+    <tbody>
+      <tr><td>Facebook</td><td>facebook.com/SAUStudents/</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Instagram</td><td>instagram.com/sa.union.of.students/</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>LinkedIn</td><td>za.linkedin.com/company/south-african-union-of-students</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>TikTok</td><td>tiktok.com/@southafricanunionofstud8</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>YouTube</td><td>Not linked</td><td><span class="badge badge-need">Needs Input</span></td><td>YouTube channel URL if available</td></tr>
+      <tr><td>X / Twitter</td><td>Not linked</td><td><span class="badge badge-need">Needs Input</span></td><td>X/Twitter handle if active</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4: LEADERSHIP — PRINCIPAL OFFICE BEARERS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">4</div>
+    <h2>Leadership — 9th NEC Principal Office Bearers</h2>
+    <span class="page-ref">Leadership Page</span>
+  </div>
+  <div class="note note-warn">All names and institutions below must be verified. Spelling errors on a public government site carry significant reputational risk.</div>
+
+  <table>
+    <thead><tr><th>Position</th><th>Name on Site</th><th>Institution on Site</th><th>Status</th><th>Corrections</th></tr></thead>
+    <tbody>
+      <tr><td>President</td><td>Siyabonga Moses Nkambako</td><td>UKZN</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Deputy President</td><td>Mcntosh Khasembe</td><td>UWC</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Secretary General</td><td>Nhlonipho Nxumalo</td><td>WITS</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>1st Deputy Secretary General</td><td>Jemina Mokoena</td><td>CUT</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>2nd Deputy Secretary General</td><td>Martin Mnyaka</td><td>UFS</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Treasurer General</td><td>Nkosinathi Mabilane</td><td>UNISA</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>International Relations Officer</td><td>Nomfundo Mbatha</td><td>National Office</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Spokesperson</td><td>Thato Masekoa</td><td>National Office</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>National Organiser</td><td>Olive Vilakazi</td><td>National Office</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="5">Source cited on site: SAUS 9th National Elective Congress — August 2025</td></tr></tfoot>
+  </table>
+
+  <h3 class="sub">President Bio Text (currently on site)</h3>
+  <div class="note note-info">"President Nkambako leads the 9th NEC with a mandate to confront the suppression of student activism and advance transformative student governance across South African higher education institutions. Elected at the 9th National Elective Congress, he represents the aspirations of over one million students."<br><br><strong>Action required:</strong> Please provide a more detailed official biography if available.</div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 5: LEADERSHIP — INSTITUTIONAL REPS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">5</div>
+    <h2>Leadership — Institutional Representatives</h2>
+    <span class="page-ref">Leadership Page — "Institutional Representatives" Grid</span>
+  </div>
+  <div class="note note-warn">All 8 cards currently show "NEC Member / Representative" with no names. These must be filled in before deployment or the section must be removed.</div>
+
+  <table>
+    <thead><tr><th>Institution</th><th>Currently Shows</th><th>Status</th><th>Actual Name &amp; Role</th></tr></thead>
+    <tbody>
+      <tr class="placeholder-row"><td>University of Johannesburg (UJ)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Nelson Mandela University (NMU)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>North-West University (NWU)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Mangosuthu University (MUT)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Durban University of Technology (DUT)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Walter Sisulu University (WSU)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Cape Peninsula University of Technology (CPUT)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+      <tr class="placeholder-row"><td>Tshwane University of Technology (TUT)</td><td>NEC Member / Representative</td><td><span class="badge badge-missing">Missing</span></td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="4">Option: If names are not available, this section can be removed from the live site and added later via update.</td></tr></tfoot>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 6: LEADERSHIP PHOTOS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">6</div>
+    <h2>Leadership Photos</h2>
+    <span class="page-ref">Leadership Page — President Card</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Person</th><th>Photo File Found</th><th>Status</th><th>Action Required</th></tr></thead>
+    <tbody>
+      <tr><td>Siyabonga Moses Nkambako (President)</td><td>nkambako.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm photo is correct person &amp; approved for web</td></tr>
+      <tr><td>Mcntosh Khasembe (Deputy President)</td><td>khasembe.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm approval for web use</td></tr>
+      <tr><td>Nhlonipho Nxumalo (Sec General)</td><td>nxumalo.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm approval for web use</td></tr>
+      <tr><td>Jemina Mokoena (1st DSG)</td><td>mokoena.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm approval for web use</td></tr>
+      <tr><td>Nkosinathi Mabilane (Treasurer)</td><td>mabilane.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm approval for web use</td></tr>
+      <tr><td>Martin Mnyaka (2nd DSG)</td><td>nyaka.jpg ✓</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm approval for web use</td></tr>
+      <tr><td>Nomfundo Mbatha (IRO)</td><td>Not found</td><td><span class="badge badge-missing">Missing</span></td><td>Provide photo or confirm initials only</td></tr>
+      <tr><td>Thato Masekoa (Spokesperson)</td><td>Not found</td><td><span class="badge badge-missing">Missing</span></td><td>Provide photo or confirm initials only</td></tr>
+      <tr><td>Olive Vilakazi (National Organiser)</td><td>Not found</td><td><span class="badge badge-missing">Missing</span></td><td>Provide photo or confirm initials only</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 7: CAMPAIGNS & RESOLUTIONS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">7</div>
+    <h2>Campaigns &amp; Congress Resolutions</h2>
+    <span class="page-ref">Campaigns Page · Home Page Campaign Cards</span>
+  </div>
+  <div class="note note-info">All 6 resolutions are attributed to the 9th National Elective Congress, 2025. The progress percentages and statuses must be verified against actual campaign progress.</div>
+
+  <table>
+    <thead><tr><th>Ref</th><th>Title on Site</th><th>Progress Shown</th><th>Status Shown</th><th>Correct Progress</th></tr></thead>
+    <tbody>
+      <tr><td>RES 01</td><td>NSFAS Reform &amp; Redesign</td><td>65%</td><td>In Progress</td><td></td></tr>
+      <tr><td>RES 02</td><td>Historical Student Debt Relief</td><td>30%</td><td>Active</td><td></td></tr>
+      <tr><td>RES 03</td><td>Missing Middle &amp; Postgraduate Funding</td><td>45%</td><td>In Development</td><td></td></tr>
+      <tr><td>RES 04</td><td>GBV &amp; Campus Safety Standards</td><td>50%</td><td>Under Investigation</td><td></td></tr>
+      <tr><td>RES 05</td><td>Abolition of Application Fees</td><td>80%</td><td>Active Campaign</td><td></td></tr>
+      <tr><td>RES 06</td><td>Artificial Intelligence in Higher Education</td><td>15%</td><td>Working Paper Phase</td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="5">Source cited: 9th National Elective Congress — August 2025. Please provide accurate progress figures or confirm current values.</td></tr></tfoot>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 8: NEWS & MEDIA STATEMENTS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">8</div>
+    <h2>News &amp; Media Statements</h2>
+    <span class="page-ref">Newsroom Page · Home Page News Strip</span>
+  </div>
+  <div class="note note-warn">Statement reference numbers (SAUS/STM/005–009/2025) must match actual issued statements. Incorrect references on a public government body's website are a credibility risk.</div>
+
+  <table>
+    <thead><tr><th>Ref Number</th><th>Date Shown</th><th>Title on Site</th><th>Status</th><th>Corrections</th></tr></thead>
+    <tbody>
+      <tr><td>SAUS/STM/009/2025</td><td>23 Aug 2025</td><td>Post-9th National Congress Statement: SAUS 9th NEC Elected</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>SAUS/STM/008/2025</td><td>14 Jul 2025</td><td>SAUS Calls for Complete NSFAS Redesign — Students Cannot Wait</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>SAUS/STM/007/2025</td><td>02 Jun 2025</td><td>SAUS Categorically Opposes National Credit Act Amendments</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>SAUS/STM/006/2025</td><td>19 May 2025</td><td>SAUS Mandates GBV Policy Review Across All 26 Universities</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>SAUS/STM/005/2025</td><td>03 Apr 2025</td><td>SAUS Campaigns for Full Historical Student Debt Write-off</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="5">Full statement text is not yet on the site. Statements are currently request-only via Secretariat email. Full text can be added at any time post-launch.</td></tr></tfoot>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 9: EVENTS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">9</div>
+    <h2>Events &amp; Engagements Calendar</h2>
+    <span class="page-ref">Events Page</span>
+  </div>
+  <div class="note note-warn">All upcoming event dates, venues, and times must be confirmed. Publishing incorrect event details will damage SAUS's credibility with students and institutions.</div>
+
+  <h3 class="sub">Upcoming Events (currently shown)</h3>
+  <table>
+    <thead><tr><th>Date Shown</th><th>Event Title</th><th>Venue</th><th>Time</th><th>Status</th><th>Correct Details</th></tr></thead>
+    <tbody>
+      <tr><td>15 September 2026</td><td>National Student Leadership Summit 2026</td><td>University of Johannesburg</td><td>09:00 – 17:00</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>2 October 2026</td><td>NSFAS Reform Town Hall — KwaZulu-Natal Region</td><td>Durban University of Technology</td><td>10:00 – 14:00</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>16 October 2026</td><td>GBV Awareness Month — National Campus Activation Tour</td><td>Campuses Nationwide</td><td>All Day / Throughout October</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>8 November 2026</td><td>9th NEC Mid-Term Review &amp; Policy Workshop</td><td>Pretoria, Gauteng</td><td>08:00 – 18:00</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Past Events (shown as completed)</h3>
+  <table>
+    <thead><tr><th>Date Shown</th><th>Event Title</th><th>Venue</th><th>Status</th><th>Corrections</th></tr></thead>
+    <tbody>
+      <tr><td>10 July 2025</td><td>9th National Elective Congress — Day 1</td><td>Nelson Mandela University, Port Elizabeth</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>23 August 2025</td><td>9th National Elective Congress — Day 2</td><td>Boontjieskraal, Kimberley, Northern Cape</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 10: 9TH CONGRESS DETAILS
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">10</div>
+    <h2>9th National Elective Congress Details</h2>
+    <span class="page-ref">Leadership Page Sidebar · About Page Timeline · Events Page</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Field</th><th>Currently on Site</th><th>Status</th><th>Correct Value</th></tr></thead>
+    <tbody>
+      <tr><td>Congress Theme</td><td>"Confronting the suppression of student activism and advancing transformative student governance."</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Venue 1</td><td>Nelson Mandela University, Port Elizabeth</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Venue 1 Date</td><td>July 2025</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Venue 2</td><td>Boontjieskraal, Kimberley, Northern Cape</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Venue 2 Date</td><td>August 2025</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 11: HISTORICAL TIMELINE
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">11</div>
+    <h2>Historical Background &amp; Timeline</h2>
+    <span class="page-ref">About Page — Historical Background Section</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Year / Period</th><th>Event Title on Site</th><th>Status</th><th>Corrections / Additional Detail</th></tr></thead>
+    <tbody>
+      <tr><td>1960s</td><td>Emergence of Student Structures</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>16 June 1976</td><td>Soweto Student Uprisings</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>Late 1980s</td><td>Dissolution of NUSAS</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>Early 2000s</td><td>Higher Education Restructuring</td><td><span class="badge badge-ok">Confirmed</span></td><td></td></tr>
+      <tr><td>April 2006</td><td>SAUS Founded</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>2015–2016</td><td>#FeesMustFall Movement</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>July–August 2025</td><td>9th National Elective Congress</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 12: GALLERY
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">12</div>
+    <h2>Gallery — Photo Captions &amp; Accuracy</h2>
+    <span class="page-ref">Gallery Page</span>
+  </div>
+  <div class="note note-warn">Photos are used but captions are generic. For a government body website, photos must be correctly labelled. Misidentified event photos are a credibility risk.</div>
+
+  <table>
+    <thead><tr><th>File</th><th>Caption on Site</th><th>Status</th><th>Correct Caption / Event</th></tr></thead>
+    <tbody>
+      <tr><td>img1.jpg</td><td>9th National Congress</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>img2.jpg</td><td>Congress delegates</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>img3.jpg</td><td>Student leadership</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>img4.jpg</td><td>Congress proceedings</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>img5.jpg</td><td>NEC election</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>IMG6.jpg – IMG10.jpg</td><td>Campus activation / Student engagement</td><td><span class="badge badge-check">Please Confirm</span></td><td></td></tr>
+      <tr><td>IMG11.jpg – IMG29.jpg</td><td>Not yet displayed on site</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide captions for all remaining photos to add to gallery</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 13: LEGAL & COMPLIANCE
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">13</div>
+    <h2>Legal &amp; Compliance</h2>
+    <span class="page-ref">Footer · Contact Page · Cookie Banner</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Item</th><th>Currently on Site</th><th>Status</th><th>Action Required</th></tr></thead>
+    <tbody>
+      <tr><td>POPIA Reference</td><td>POPIA Act 4 of 2013</td><td><span class="badge badge-ok">Confirmed</span></td><td>None</td></tr>
+      <tr><td>Copyright Year</td><td>© 2026 South African Union of Students</td><td><span class="badge badge-ok">Confirmed</span></td><td>None — correct for current year</td></tr>
+      <tr><td>Developer Credit</td><td>Developed by Lubelo Tech Solutions</td><td><span class="badge badge-ok">Confirmed</span></td><td>None</td></tr>
+      <tr><td>Privacy Policy Page</td><td>Not present — only POPIA mention in cookie banner</td><td><span class="badge badge-need">Needs Input</span></td><td>A full Privacy Policy page is required for POPIA compliance. Provide policy text.</td></tr>
+      <tr><td>Terms of Use</td><td>Not present</td><td><span class="badge badge-need">Needs Input</span></td><td>Recommended for a government body website</td></tr>
+      <tr><td>Accessibility Statement</td><td>Not present</td><td><span class="badge badge-need">Needs Input</span></td><td>Required for SA government web standards compliance</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 14: TECHNICAL — PRE-DEPLOYMENT
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">14</div>
+    <h2>Technical — Pre-Deployment Checklist</h2>
+    <span class="page-ref">Entire Site</span>
+  </div>
+
+  <table>
+    <thead><tr><th>Item</th><th>Current State</th><th>Status</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>localhost:3000 links</td><td>Removed — replaced with Secretariat email</td><td><span class="badge badge-ok">Fixed</span></td><td>None</td></tr>
+      <tr><td>Domain (www.saus.org.za)</td><td>Not yet pointing to this site</td><td><span class="badge badge-need">Needs Input</span></td><td>DNS must be updated to point to hosting server</td></tr>
+      <tr><td>Hosting Server</td><td>Currently running on localhost:8080</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide hosting provider and server details</td></tr>
+      <tr><td>SSL Certificate (HTTPS)</td><td>Not configured</td><td><span class="badge badge-need">Needs Input</span></td><td>Required before going live — any government/official site must use HTTPS</td></tr>
+      <tr><td>Contact Form Backend</td><td>Cosmetic only — no emails sent</td><td><span class="badge badge-need">Needs Input</span></td><td>A form submission handler (email service / backend) must be set up to receive enquiries</td></tr>
+      <tr><td>Event Registration Buttons</td><td>Buttons present but not linked</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide registration form URLs or email address for each event</td></tr>
+      <tr><td>Staff/Admin Portal URL</td><td>Currently links to Secretariat email</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide actual admin system URL when ready</td></tr>
+      <tr><td>favicon / browser icon</td><td>Not set — shows browser default</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide SAUS logo in .ico or .png (32×32px) format</td></tr>
+      <tr><td>Meta og:image (social share)</td><td>Not set</td><td><span class="badge badge-need">Needs Input</span></td><td>Provide a 1200×630px banner image for social media link previews</td></tr>
+      <tr><td>Analytics / Tracking</td><td>None installed</td><td><span class="badge badge-need">Needs Input</span></td><td>Confirm whether Google Analytics or similar is required</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ══════════════════════════════════════
+       SECTION 15: SUMMARY
+  ══════════════════════════════════════ -->
+  <div class="section-hd">
+    <div class="section-num">15</div>
+    <h2>Summary — What Must Be Done Before Go-Live</h2>
+    <span class="page-ref">All Pages</span>
+  </div>
+
+  <table>
+    <thead><tr><th>#</th><th>Item</th><th>Priority</th><th>Who Provides</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Confirm all 9 NEC officer names &amp; spellings</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>2</td><td>Provide names for 8 institutional representative cards</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>3</td><td>Confirm all 4 upcoming event dates, venues &amp; times</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>4</td><td>Confirm all 5 news statement references &amp; dates</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>5</td><td>Approve all 6 leadership photos for public web use</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>6</td><td>Confirm campaign progress percentages</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>7</td><td>Confirm gallery photo captions</td><td><span class="badge badge-need">Critical</span></td><td>SAUS</td></tr>
+      <tr><td>8</td><td>Provide DNS / hosting details for deployment</td><td><span class="badge badge-need">Critical</span></td><td>SAUS + LTS</td></tr>
+      <tr><td>9</td><td>Set up SSL certificate (HTTPS)</td><td><span class="badge badge-need">Critical</span></td><td>LTS</td></tr>
+      <tr><td>10</td><td>Connect contact form to live email handler</td><td><span class="badge badge-need">Critical</span></td><td>LTS</td></tr>
+      <tr><td>11</td><td>Provide Privacy Policy text for POPIA compliance</td><td><span class="badge badge-check">High</span></td><td>SAUS / Legal</td></tr>
+      <tr><td>12</td><td>Confirm/update all social media URLs</td><td><span class="badge badge-check">High</span></td><td>SAUS</td></tr>
+      <tr><td>13</td><td>Provide favicon &amp; og:image assets</td><td><span class="badge badge-check">High</span></td><td>SAUS / LTS</td></tr>
+      <tr><td>14</td><td>Provide full street address for contact page</td><td><span class="badge badge-check">Medium</span></td><td>SAUS</td></tr>
+      <tr><td>15</td><td>Confirm analytics requirement</td><td><span class="badge badge-check">Medium</span></td><td>SAUS</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note note-ok" style="margin-top:32px">
+    <strong>Sign-off:</strong> By returning this completed document, SAUS confirms that all information marked "Confirmed" or corrected herein is accurate and approved for publication on the official SAUS website.<br><br>
+    <strong>Authorised by:</strong> ___________________________________ &nbsp;&nbsp; <strong>Position:</strong> _____________________________ &nbsp;&nbsp; <strong>Date:</strong> _______________
+  </div>
+
+  <div class="doc-footer">
+    <span>LTS/SAUS/AUDIT/2026/01 · Lubelo Tech Solutions · Confidential</span>
+    <span>Page 1 of 1 · Generated 30 May 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

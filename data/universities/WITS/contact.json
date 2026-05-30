@@ -1,0 +1,21 @@
+{
+  "abbr": "WITS",
+  "general": {
+    "phone": "+27 11 717 1000",
+    "email": "admission@wits.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 11 717 1888",
+    "email": "admission@wits.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 11 717 9030",
+    "email": "sas@wits.ac.za"
+  },
+  "address": "University of the Witwatersrand, 1 Jan Smuts Ave, Braamfontein, 2000",
+  "social": {
+    "facebook": "https://www.facebook.com/WitsUniversity",
+    "twitter": "https://twitter.com/WitsUniversity",
+    "instagram": "https://www.instagram.com/witsuniversity"
+  }
+}

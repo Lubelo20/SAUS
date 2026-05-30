@@ -1,0 +1,38 @@
+{
+  "abbr": "TUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@tut.ac.za",
+  "phone": "+27 12 382 5151",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "TUT Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 28+; any TUT campus",
+      "url": "https://www.tut.ac.za/financial-aid"
+    },
+    {
+      "name": "TUT Merit Bursary",
+      "type": "merit",
+      "value": "25%–50% tuition reduction",
+      "criteria": "APS 24+; demonstrated academic potential",
+      "url": "https://www.tut.ac.za/financial-aid"
+    },
+    {
+      "name": "TUT Sport Bursary",
+      "type": "sports",
+      "value": "Partial tuition support",
+      "criteria": "National or provincial sport colours; maintained academic standing",
+      "url": "https://www.tut.ac.za/financial-aid"
+    },
+    {
+      "name": "TUT Engineering Bursary",
+      "type": "faculty",
+      "value": "Partial tuition and equipment",
+      "criteria": "Students in Engineering & Built Environment; APS 24+",
+      "url": "https://www.tut.ac.za/financial-aid"
+    }
+  ]
+}

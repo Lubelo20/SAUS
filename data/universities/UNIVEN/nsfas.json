@@ -1,0 +1,31 @@
+{
+  "abbr": "UNIVEN",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@univen.ac.za",
+  "phone": "+27 15 962 8219",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UNIVEN Vice-Chancellor's Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 26+; Limpopo province preference",
+      "url": "https://www.univen.ac.za/financial-aid"
+    },
+    {
+      "name": "UNIVEN Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 22+; strong subject performance in chosen programme",
+      "url": "https://www.univen.ac.za/financial-aid"
+    },
+    {
+      "name": "UNIVEN Rural Health Bursary",
+      "type": "faculty",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students in Health Sciences committed to rural community service",
+      "url": "https://www.univen.ac.za/financial-aid"
+    }
+  ]
+}

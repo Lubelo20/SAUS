@@ -1,0 +1,37 @@
+# ── Dependencies ──
+node_modules/
+**/node_modules/
+
+# ── Secrets / environment (NEVER commit) ──
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+saus-admin/server/.env
+saus-admin/client/.env.local
+
+# ── Build output ──
+saus-admin/server/dist/
+**/dist/
+.next/
+**/.next/
+out/
+
+# ── Runtime / uploads ──
+saus-admin/server/uploads/*
+!saus-admin/server/uploads/.gitkeep
+
+# ── OS / editor cruft ──
+.DS_Store
+**/.DS_Store
+*.log
+npm-debug.log*
+
+# ── Tooling / local agent state ──
+.superpowers/
+.claude/settings.local.json
+
+# ── Misc ──
+*.tmp
+Thumbs.db

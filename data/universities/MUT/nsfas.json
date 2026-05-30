@@ -1,0 +1,31 @@
+{
+  "abbr": "MUT",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@mut.ac.za",
+  "phone": "+27 31 907 7111",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "MUT Academic Award",
+      "type": "merit",
+      "value": "Full tuition for first year",
+      "criteria": "Top matric results; APS 24+; KZN students preferred",
+      "url": "https://www.mut.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "MUT Merit Bursary",
+      "type": "merit",
+      "value": "Partial tuition reduction",
+      "criteria": "APS 20+; demonstrated academic potential",
+      "url": "https://www.mut.ac.za/admissions/financial-aid"
+    },
+    {
+      "name": "MUT Community Upliftment Bursary",
+      "type": "need-based",
+      "value": "Partial tuition and accommodation",
+      "criteria": "Students from Umlazi and surrounding communities; financial need",
+      "url": "https://www.mut.ac.za/admissions/financial-aid"
+    }
+  ]
+}

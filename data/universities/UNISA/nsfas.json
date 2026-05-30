@@ -1,0 +1,31 @@
+{
+  "abbr": "UNISA",
+  "accredited": true,
+  "financialAidOffice": "Financial Aid Office",
+  "email": "financialaid@unisa.ac.za",
+  "phone": "+27 12 429 6211",
+  "applicationNote": "Apply through the myNSFAS portal at www.nsfas.org.za before the national closing date.",
+  "additionalFunding": [
+    {
+      "name": "UNISA Merit Bursary",
+      "type": "merit",
+      "value": "Partial module fee reduction",
+      "criteria": "60%+ average in first year; continuing students only",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Financial-Aid"
+    },
+    {
+      "name": "UNISA Disability Bursary",
+      "type": "need-based",
+      "value": "Full module fees",
+      "criteria": "Students with documented disabilities; any study level",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Financial-Aid"
+    },
+    {
+      "name": "UNISA Staff Bursary",
+      "type": "need-based",
+      "value": "Full tuition support",
+      "criteria": "UNISA employees and direct dependants",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Financial-Aid"
+    }
+  ]
+}

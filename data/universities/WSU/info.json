@@ -1,0 +1,35 @@
+{
+  "abbr": "WSU",
+  "name": "Walter Sisulu University",
+  "type": "Comprehensive University",
+  "established": 2005,
+  "students": 28000,
+  "aps": "18–28+",
+  "location": {
+    "city": "Mthatha",
+    "province": "Eastern Cape"
+  },
+  "website": "https://www.wsu.ac.za",
+  "apply": "https://www.wsu.ac.za/admissions",
+  "prospectus": "https://www.wsu.ac.za/admissions",
+  "logo": "wsu.png",
+  "description": "Named after liberation hero Walter Sisulu. A comprehensive university serving rural Eastern Cape communities with campuses across the region.",
+  "faculties": [
+    "Business, Mgmt Sciences & Law",
+    "Education",
+    "Health Sciences",
+    "Natural Sciences, Engineering & Technology"
+  ],
+  "motto": "Excellence and Relevance",
+  "languages": [
+    "English",
+    "isiXhosa"
+  ],
+  "campuses": [
+    "Mthatha (Main)",
+    "Butterworth",
+    "East London",
+    "Queenstown"
+  ],
+  "nsfasAccredited": true
+}

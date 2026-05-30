@@ -1,0 +1,55 @@
+{
+  "_updated": "2026-05-19",
+  "overview": "NSFAS (National Student Financial Aid Scheme) is a government bursary that covers tuition, accommodation, meals, transport and personal care for qualifying South African students at public universities and TVET colleges.",
+  "eligibility": {
+    "combinedHouseholdIncome": 350000,
+    "disability": 600000,
+    "sassaRecipients": "Automatically qualify — no income verification required",
+    "citizenship": "South African citizens only",
+    "study": "Must be registered at an accredited public institution",
+    "academic": "Must maintain satisfactory academic progress each year"
+  },
+  "applicationPeriod": {
+    "opens": "August 2025",
+    "closes": "31 January 2026",
+    "note": "Apply as early as possible — applications are processed on a first-come, first-served basis"
+  },
+  "portal": "https://www.nsfas.org.za",
+  "myNSFAS": "https://my.nsfas.org.za",
+  "helpline": "0800 067 327",
+  "email": "info@nsfas.org.za",
+  "twitter": "https://twitter.com/myNSFAS",
+  "facebook": "https://www.facebook.com/myNSFAS",
+  "fundingComponents": {
+    "tuition": "Full tuition fees paid directly to institution",
+    "accommodation": "Up to R57,000 per year (university residence or accredited private)",
+    "meals": "Up to R15,000 per year",
+    "transport": "Up to R7,500 per year (for non-residential students)",
+    "personalCare": "R4,500 per year",
+    "learningMaterials": "Up to R5,000 per year (books, stationery, data)"
+  },
+  "requiredDocuments": [
+    "Certified copy of South African ID",
+    "Certified copies of parent/guardian IDs",
+    "Latest payslips or proof of income (last 3 months)",
+    "SASSA grant letter (if applicable)",
+    "Death certificate of parent/guardian (if deceased)",
+    "Proof of disability (if applicable)",
+    "University acceptance/registration letter"
+  ],
+  "howToApply": [
+    "Visit myNSFAS at my.nsfas.org.za",
+    "Create a myNSFAS account with your ID number",
+    "Complete the online application form",
+    "Upload all required supporting documents",
+    "Submit your application before the closing date",
+    "Track your application status on the myNSFAS portal"
+  ],
+  "importantNotes": [
+    "NSFAS does not fund postgraduate studies (honours, masters, doctoral)",
+    "Students who fail more than 50% of modules may lose funding",
+    "Bursary amounts are reviewed annually — check myNSFAS for current figures",
+    "Gap year students must re-apply each year",
+    "NSFAS is a bursary, not a loan — no repayment required"
+  ]
+}

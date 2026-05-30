@@ -1,0 +1,21 @@
+{
+  "abbr": "UFH",
+  "general": {
+    "phone": "+27 40 602 2011",
+    "email": "registrar@ufh.ac.za"
+  },
+  "admissions": {
+    "phone": "+27 40 602 2011",
+    "email": "admissions@ufh.ac.za"
+  },
+  "financialAid": {
+    "phone": "+27 40 602 2346",
+    "email": "financialaid@ufh.ac.za"
+  },
+  "address": "University of Fort Hare, Private Bag X1314, Alice, Eastern Cape, 5700",
+  "social": {
+    "facebook": "https://www.facebook.com/UFHfortHare",
+    "twitter": "https://twitter.com/FortHareUni",
+    "instagram": "https://www.instagram.com/forthareuiversity"
+  }
+}

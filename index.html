@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>South African Union of Students — Official National Student Representative Body</title>
+<meta name="description" content="SAUS is the official representative body for students in higher education across the Republic of South Africa, established April 2006."/>
+<meta property="og:title" content="South African Union of Students (SAUS)"/>
+<meta name="theme-color" content="#0A1628"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+
+<style>
+/* ═══════════════════════════════════════
+   ROOT & RESET
+═══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  /* Official Palette */
+  --navy:      #0A1628;
+  --navy-mid:  #122040;
+  --navy-light:#1E3160;
+  --green:     #00692F;
+  --green-lt:  #00873E;
+  --red:       #A8200D;
+  --red-lt:    #CC2200;
+  --gold:      #C9A227;
+  --gold-lt:   #E8C04A;
+  --white:     #FFFFFF;
+  --cream:     #F7F6F2;
+  --stone:     #EEECEA;
+  --border:    #D0CEC8;
+  --border-dk: #B8B5AE;
+  --text:      #1A1918;
+  --text-mid:  #4A4845;
+  --text-lt:   #7A7874;
+  /* Typography */
+  --ff-serif:  'EB Garamond',Georgia,'Times New Roman',serif;
+  --ff-sans:   'Source Sans 3','Segoe UI',sans-serif;
+  --ff-mono:   'Source Code Pro',monospace;
+  /* Layout */
+  --max:       1200px;
+  --topbar-h:  38px;
+  --header-h:  88px;
+  --nav-h:     52px;
+  --total-top: 178px;
+  --ease:      cubic-bezier(.4,0,.2,1);
+}
+
+body{
+  font-family:var(--ff-sans);
+  background:var(--cream);
+  color:var(--text);
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:var(--ff-sans)}
+p{margin-bottom:1rem}
+p:last-child{margin-bottom:0}
+
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--stone)}
+::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
+
+/* ═══════════════════════════════════════
+   TOP UTILITY BAR
+═══════════════════════════════════════ */
+#topbar{
+  position:fixed;top:0;left:0;right:0;z-index:1100;
+  height:var(--topbar-h);
+  background:var(--navy);
+  border-bottom:2px solid var(--gold);
+  display:flex;align-items:center;
+}
+.topbar-inner{
+  max-width:var(--max);margin:0 auto;
+  width:100%;padding:0 32px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;
+}
+.topbar-left{
+  display:flex;align-items:center;gap:0;
+  font-family:var(--ff-sans);font-size:12px;
+  color:rgba(255,255,255,.7);letter-spacing:.02em;
+}
+.topbar-left .sep{
+  display:inline-block;width:1px;height:14px;
+  background:rgba(255,255,255,.2);margin:0 14px;
+}
+.topbar-flag{
+  display:inline-flex;gap:2px;align-items:center;margin-right:14px;
+}
+.flag-seg{width:18px;height:12px;border-radius:1px}
+.topbar-right{
+  display:flex;align-items:center;gap:20px;
+}
+.topbar-right a{
+  font-size:12px;color:rgba(255,255,255,.65);
+  display:flex;align-items:center;gap:6px;
+  transition:color .2s;text-decoration:none;
+}
+.topbar-right a:hover{color:var(--gold)}
+.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
+
+/* ═══════════════════════════════════════
+   OFFICIAL HEADER
+═══════════════════════════════════════ */
+#header{
+  position:fixed;top:var(--topbar-h);left:0;right:0;z-index:1090;
+  height:var(--header-h);
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;
+}
+.header-inner{
+  max-width:var(--max);margin:0 auto;
+  width:100%;padding:0 32px;
+  display:flex;align-items:center;gap:24px;
+}
+.header-seal{
+  width:64px;height:64px;flex-shrink:0;
+  border-radius:50%;
+  background:var(--navy);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  border:3px solid var(--gold);
+}
+.header-seal-inner{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;
+}
+.seal-top-stripe{
+  position:absolute;top:0;left:0;right:0;
+  height:4px;
+  background:linear-gradient(to right,var(--navy) 33%,var(--green) 33% 67%,var(--red) 67%);
+}
+.seal-globe{
+  font-size:24px;line-height:1;position:relative;z-index:1;
+}
+.seal-text{
+  font-family:var(--ff-mono);font-size:6px;color:var(--gold);
+  letter-spacing:.08em;text-align:center;font-weight:500;
+  position:relative;z-index:1;text-transform:uppercase;
+}
+.seal-stars{
+  display:flex;gap:2px;position:relative;z-index:1;
+}
+.seal-stars span{font-size:5px;color:var(--gold)}
+
+.header-ident{display:flex;flex-direction:column}
+.header-ident-main{
+  font-family:var(--ff-serif);
+  font-size:22px;font-weight:700;
+  color:var(--navy);line-height:1.15;
+  letter-spacing:.01em;
+}
+.header-ident-main em{font-style:normal;color:var(--green)}
+.header-ident-sub{
+  font-family:var(--ff-sans);font-size:12px;
+  color:var(--text-mid);letter-spacing:.04em;
+  font-weight:400;margin-top:2px;
+}
+.header-divider{
+  width:1px;height:48px;background:var(--border);
+  margin:0 8px;flex-shrink:0;
+}
+.header-established{
+  display:flex;flex-direction:column;
+  font-family:var(--ff-mono);font-size:10px;
+  color:var(--text-lt);letter-spacing:.1em;
+  text-transform:uppercase;line-height:1.8;
+}
+.header-established strong{
+  font-family:var(--ff-serif);font-size:20px;
+  color:var(--navy);letter-spacing:.02em;font-weight:600;
+}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.header-contact-btn{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 20px;border-radius:3px;
+  background:var(--navy);color:var(--white);
+  font-size:13px;font-weight:600;border:none;
+  transition:background .2s;
+  letter-spacing:.02em;
+}
+.header-contact-btn:hover{background:var(--navy-light)}
+.hamburger{
+  display:none;flex-direction:column;gap:5px;
+  background:none;border:none;padding:6px;
+}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:1px;transition:.3s}
+
+/* ═══════════════════════════════════════
+   NAVIGATION BAR
+═══════════════════════════════════════ */
+#navbar{
+  position:fixed;
+  top:calc(var(--topbar-h) + var(--header-h));
+  left:0;right:0;z-index:1080;
+  height:var(--nav-h);
+  background:var(--navy-mid);
+  border-bottom:3px solid var(--green);
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;
+  width:100%;padding:0 32px;
+  height:100%;display:flex;align-items:center;
+}
+.nav-links{display:flex;height:100%}
+.nav-item{
+  height:100%;display:flex;align-items:center;
+  padding:0 16px;position:relative;
+  font-size:13.5px;font-weight:600;
+  color:rgba(255,255,255,.75);
+  letter-spacing:.03em;text-transform:uppercase;
+  cursor:pointer;border:none;background:none;
+  font-family:var(--ff-sans);
+  transition:color .2s,background .2s;
+  white-space:nowrap;
+}
+.nav-item::after{
+  content:'';position:absolute;bottom:-3px;left:0;right:0;
+  height:3px;background:var(--gold);
+  transform:scaleX(0);transition:transform .25s var(--ease);
+}
+.nav-item:hover{color:var(--white);background:rgba(255,255,255,.05)}
+.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
+.nav-item.active{color:var(--white)}
+.nav-ref{
+  margin-left:auto;
+  font-family:var(--ff-mono);font-size:11px;
+  color:rgba(255,255,255,.3);letter-spacing:.08em;
+}
+
+/* Mobile nav */
+.mobile-nav{
+  display:none;position:fixed;
+  top:calc(var(--topbar-h) + var(--header-h));
+  left:0;right:0;z-index:1079;
+  background:var(--navy);
+  border-bottom:2px solid var(--green);
+  flex-direction:column;padding:8px 0;
+}
+.mobile-nav.open{display:flex}
+.mobile-nav-item{
+  padding:14px 32px;font-size:14px;font-weight:600;
+  color:rgba(255,255,255,.75);text-transform:uppercase;
+  letter-spacing:.04em;cursor:pointer;border:none;background:none;
+  font-family:var(--ff-sans);text-align:left;
+  border-left:3px solid transparent;transition:all .2s;
+}
+.mobile-nav-item:hover,.mobile-nav-item.active{
+  color:var(--white);background:rgba(255,255,255,.05);
+  border-left-color:var(--gold);
+}
+
+/* ═══════════════════════════════════════
+   PAGE SYSTEM
+═══════════════════════════════════════ */
+.page{display:none;min-height:100vh;padding-top:var(--total-top);animation:pgIn .35s var(--ease)}
+.page.active{display:block}
+@keyframes pgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ═══════════════════════════════════════
+   BREADCRUMB
+═══════════════════════════════════════ */
+.breadcrumb-bar{
+  background:var(--stone);
+  border-bottom:1px solid var(--border);
+  padding:9px 0;
+}
+.breadcrumb-inner{
+  max-width:var(--max);margin:0 auto;
+  padding:0 32px;
+  display:flex;align-items:center;gap:8px;
+  font-size:12.5px;color:var(--text-lt);
+  font-family:var(--ff-sans);
+}
+.breadcrumb-inner span{cursor:pointer;transition:color .2s}
+.breadcrumb-inner span:hover{color:var(--green)}
+.breadcrumb-inner .sep{color:var(--border-dk);font-size:11px;user-select:none}
+.breadcrumb-inner .current{color:var(--text-mid);font-weight:500}
+
+/* ═══════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════ */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.section{padding:72px 0}
+.section-lg{padding:96px 0}
+.section-sm{padding:48px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+
+/* ═══════════════════════════════════════
+   OFFICIAL HERO
+═══════════════════════════════════════ */
+.official-hero{
+  background:var(--navy);
+  color:var(--white);
+  padding:72px 32px;
+  position:relative;overflow:hidden;
+}
+.official-hero::after{
+  content:'';position:absolute;
+  bottom:0;left:0;right:0;height:4px;
+  background:linear-gradient(to right,var(--navy) 20%,var(--green) 20% 40%,var(--gold) 40% 60%,var(--red) 60% 80%,var(--navy) 80%);
+}
+.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}
+.hero-ref{
+  font-family:var(--ff-mono);font-size:11px;
+  color:rgba(255,255,255,.4);letter-spacing:.15em;
+  text-transform:uppercase;margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.hero-ref::before{
+  content:'';display:block;width:32px;height:1px;background:var(--gold);
+}
+.hero-title{
+  font-family:var(--ff-serif);
+  font-size:clamp(36px,5.5vw,68px);
+  font-weight:700;line-height:1.1;
+  color:var(--white);margin-bottom:20px;
+  max-width:760px;
+}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-lead{
+  font-size:clamp(15px,2vw,18px);
+  color:rgba(255,255,255,.7);
+  max-width:560px;line-height:1.75;
+  margin-bottom:36px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ═══ HERO BG IMAGE (home page) ═══ */
+.hero-bg{
+  background-image:
+    linear-gradient(to right, rgba(10,22,40,.92) 45%, rgba(10,22,40,.55) 100%),
+    url('/home/homeIMG.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* ═══════════════════════════════════════
+   ANNOUNCEMENT BANNER
+═══════════════════════════════════════ */
+.announcement{
+  background:var(--navy-light);
+  color:var(--white);
+  padding:14px 32px;
+  display:flex;align-items:center;gap:16px;
+  border-bottom:2px solid var(--gold);
+}
+.announcement-badge{
+  flex-shrink:0;background:var(--red);
+  padding:3px 10px;border-radius:2px;
+  font-family:var(--ff-mono);font-size:10px;
+  font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+}
+.announcement p{font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.4}
+.announcement p strong{color:var(--white)}
+.announcement-close{
+  margin-left:auto;background:none;border:none;
+  color:rgba(255,255,255,.4);font-size:18px;
+  cursor:pointer;padding:4px 8px;flex-shrink:0;
+  transition:color .2s;
+}
+.announcement-close:hover{color:var(--white)}
+
+/* ═══════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════ */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 28px;border-radius:3px;
+  font-size:14px;font-weight:600;cursor:pointer;border:none;
+  font-family:var(--ff-sans);letter-spacing:.03em;
+  transition:all .2s var(--ease);text-decoration:none;
+}
+.btn:hover{text-decoration:none}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-light);box-shadow:0 4px 16px rgba(10,22,40,.25)}
+.btn-green{background:var(--green);color:var(--white)}
+.btn-green:hover{background:var(--green-lt);box-shadow:0 4px 16px rgba(0,105,47,.3)}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35)}
+.btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,.07)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border-dk)}
+.btn-outline:hover{border-color:var(--navy);background:var(--stone)}
+.btn-sm{padding:8px 20px;font-size:13px}
+.btn-lg{padding:15px 36px;font-size:15px}
+
+/* ═══════════════════════════════════════
+   OFFICIAL SECTION HEADER
+═══════════════════════════════════════ */
+.sec-header{margin-bottom:48px}
+.sec-header .ref{
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--text-lt);letter-spacing:.15em;
+  text-transform:uppercase;margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.sec-header .ref::before{
+  content:'';display:block;width:24px;height:2px;background:var(--green);
+}
+.sec-header h2{
+  font-family:var(--ff-serif);
+  font-size:clamp(28px,4vw,42px);
+  font-weight:700;line-height:1.2;
+  color:var(--navy);
+}
+.sec-header h2 em{font-style:italic;color:var(--green)}
+.sec-header .lead{
+  font-size:16px;color:var(--text-mid);
+  max-width:560px;line-height:1.75;
+  margin-top:14px;
+}
+
+/* ═══════════════════════════════════════
+   OFFICIAL PANEL / CARD
+═══════════════════════════════════════ */
+.panel{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:2px;
+  overflow:hidden;
+}
+.panel-header{
+  padding:20px 28px;
+  background:var(--navy);
+  color:var(--white);
+  display:flex;align-items:center;gap:14px;
+}
+.panel-header h3{
+  font-family:var(--ff-serif);
+  font-size:18px;font-weight:600;
+  color:var(--white);
+}
+.panel-header .panel-icon{
+  width:36px;height:36px;
+  background:rgba(255,255,255,.1);
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.panel-body{padding:28px}
+
+/* ═══════════════════════════════════════
+   STAT ROW
+═══════════════════════════════════════ */
+.stat-strip{
+  background:var(--white);
+  border-top:4px solid var(--navy);
+  border-bottom:1px solid var(--border);
+}
+.stat-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.stat-cell{
+  padding:36px 24px;
+  border-right:1px solid var(--border);
+  position:relative;
+}
+.stat-cell:last-child{border-right:none}
+.stat-num{
+  font-family:var(--ff-serif);
+  font-size:clamp(36px,5vw,52px);
+  font-weight:700;line-height:1;
+  color:var(--navy);
+  margin-bottom:6px;
+}
+.stat-label{
+  font-size:13px;color:var(--text-lt);
+  font-weight:500;line-height:1.4;
+}
+.stat-cell::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:3px;
+  background:var(--green);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease);
+}
+.stat-cell:hover::before{transform:scaleX(1)}
+
+/* ═══════════════════════════════════════
+   OFFICIAL BLOCK QUOTE
+═══════════════════════════════════════ */
+.official-quote{
+  margin:40px 0;
+  padding:32px 36px;
+  background:var(--navy);
+  border-left:5px solid var(--gold);
+  border-radius:0 2px 2px 0;
+  position:relative;
+}
+.official-quote::before{
+  content:'\201C';
+  position:absolute;top:-16px;left:28px;
+  font-family:var(--ff-serif);font-size:80px;
+  color:rgba(255,255,255,.08);line-height:1;
+}
+.official-quote p{
+  font-family:var(--ff-serif);
+  font-size:20px;font-style:italic;
+  color:rgba(255,255,255,.9);
+  line-height:1.6;
+  position:relative;z-index:1;
+  margin:0;
+}
+.official-quote cite{
+  display:block;margin-top:14px;
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--gold);letter-spacing:.1em;
+  text-transform:uppercase;font-style:normal;
+}
+
+/* ═══════════════════════════════════════
+   OFFICIAL TABLE
+═══════════════════════════════════════ */
+.official-table{
+  width:100%;border-collapse:collapse;
+  font-size:14.5px;
+}
+.official-table thead tr{
+  background:var(--navy);
+}
+.official-table th{
+  padding:14px 18px;
+  font-family:var(--ff-sans);font-size:11px;
+  font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.8);
+  text-align:left;
+}
+.official-table td{
+  padding:15px 18px;
+  border-bottom:1px solid var(--border);
+  color:var(--text);
+  vertical-align:top;
+}
+.official-table tbody tr:hover td{background:var(--stone)}
+.official-table td:first-child{font-weight:600;color:var(--navy)}
+.official-table tfoot td{
+  background:var(--stone);
+  font-size:12px;color:var(--text-lt);
+  padding:10px 18px;
+  font-style:italic;
+}
+
+/* ═══════════════════════════════════════
+   CONTENT CARD (info tile)
+═══════════════════════════════════════ */
+.info-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:2px;
+  padding:28px;
+  position:relative;
+  transition:box-shadow .25s var(--ease);
+}
+.info-card:hover{box-shadow:0 4px 20px rgba(10,22,40,.08)}
+.info-card-accent{
+  position:absolute;top:0;left:0;right:0;height:3px;
+}
+.info-card-accent.green{background:var(--green)}
+.info-card-accent.navy{background:var(--navy)}
+.info-card-accent.red{background:var(--red)}
+.info-card-accent.gold{background:var(--gold)}
+.info-card-icon{
+  width:44px;height:44px;
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  margin-bottom:16px;
+}
+.info-card-icon.green{background:rgba(0,105,47,.08)}
+.info-card-icon.navy{background:rgba(10,22,40,.06)}
+.info-card-icon.red{background:rgba(168,32,13,.08)}
+.info-card-icon.gold{background:rgba(201,162,39,.1)}
+.info-card h4{
+  font-family:var(--ff-serif);
+  font-size:18px;font-weight:600;
+  color:var(--navy);margin-bottom:8px;
+}
+.info-card p{font-size:14px;color:var(--text-mid);line-height:1.65}
+
+/* ═══════════════════════════════════════
+   POLICY / RESOLUTION CARD
+═══════════════════════════════════════ */
+.resolution{
+  border:1px solid var(--border);
+  background:var(--white);
+  border-radius:2px;
+  overflow:hidden;
+  margin-bottom:16px;
+  transition:box-shadow .2s;
+}
+.resolution:hover{box-shadow:0 4px 16px rgba(10,22,40,.07)}
+.resolution-head{
+  padding:20px 24px;
+  display:flex;align-items:flex-start;gap:16px;
+  border-bottom:1px solid var(--border);
+}
+.res-num{
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--white);
+  background:var(--navy);
+  padding:4px 10px;border-radius:2px;
+  letter-spacing:.08em;flex-shrink:0;margin-top:2px;
+}
+.res-num.green{background:var(--green)}
+.res-num.red{background:var(--red)}
+.res-num.gold{background:var(--gold);color:var(--navy)}
+.resolution-title{
+  font-family:var(--ff-serif);
+  font-size:18px;font-weight:600;color:var(--navy);
+  margin-bottom:4px;
+}
+.resolution-meta{
+  font-size:12px;color:var(--text-lt);
+  display:flex;gap:16px;flex-wrap:wrap;
+}
+.resolution-body{padding:20px 24px}
+.resolution-body p{font-size:14.5px;color:var(--text-mid);line-height:1.7}
+.resolution-footer{
+  padding:14px 24px;
+  background:var(--stone);
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.progress-track{
+  flex:1;height:5px;
+  background:var(--border);border-radius:1px;
+  overflow:hidden;min-width:80px;
+}
+.progress-fill{height:100%;background:var(--green);border-radius:1px}
+.progress-fill.red{background:var(--red)}
+.progress-fill.gold{background:var(--gold)}
+.progress-label{
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--text-lt);letter-spacing:.06em;
+  white-space:nowrap;
+}
+
+/* ═══════════════════════════════════════
+   LEADER
+═══════════════════════════════════════ */
+.leader-feature{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:2px;padding:36px;
+  display:flex;gap:32px;align-items:flex-start;
+  border-top:4px solid var(--navy);
+}
+.leader-avatar-lg{
+  width:100px;height:100px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--navy),var(--navy-light));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff-serif);font-size:32px;font-weight:700;
+  color:var(--white);flex-shrink:0;
+  border:3px solid var(--gold);
+  overflow:hidden;
+}
+.leader-avatar-lg img,.leader-avatar-sm img{
+  width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;
+}
+.leader-avatar-sm{overflow:hidden;}
+.leader-card-sm{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:2px;
+  padding:22px;text-align:center;
+  border-top:3px solid var(--navy);
+  transition:box-shadow .2s;
+}
+.leader-card-sm:hover{box-shadow:0 4px 16px rgba(10,22,40,.08)}
+.leader-avatar-sm{
+  width:64px;height:64px;border-radius:50%;
+  margin:0 auto 14px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff-serif);font-size:18px;font-weight:700;
+  color:var(--white);
+  border:2px solid var(--border);
+}
+.leader-name{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:3px}
+.leader-role{font-size:12.5px;color:var(--green);font-weight:600;margin-bottom:3px}
+.leader-uni{font-family:var(--ff-mono);font-size:10px;color:var(--text-lt);letter-spacing:.06em;text-transform:uppercase}
+
+/* ═══════════════════════════════════════
+   NEWS
+═══════════════════════════════════════ */
+.news-item{
+  display:flex;gap:24px;
+  padding:24px 0;
+  border-bottom:1px solid var(--border);
+  align-items:flex-start;
+}
+.news-item:last-child{border-bottom:none}
+.news-date-col{
+  flex-shrink:0;width:64px;text-align:center;
+}
+.news-day{
+  font-family:var(--ff-serif);font-size:32px;font-weight:700;
+  color:var(--navy);line-height:1;
+}
+.news-month{
+  font-family:var(--ff-mono);font-size:10px;
+  color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;
+}
+.news-type{
+  font-family:var(--ff-mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;padding:3px 8px;
+  border-radius:2px;display:inline-block;margin-bottom:8px;font-weight:500;
+}
+.news-type.statement{background:rgba(0,105,47,.1);color:var(--green)}
+.news-type.urgent{background:rgba(168,32,13,.1);color:var(--red)}
+.news-type.policy{background:rgba(10,22,40,.08);color:var(--navy)}
+.news-type.congress{background:rgba(201,162,39,.15);color:#7a5a00}
+.news-title{
+  font-family:var(--ff-serif);font-size:18px;font-weight:600;
+  color:var(--navy);margin-bottom:6px;line-height:1.35;cursor:pointer;
+}
+.news-title:hover{color:var(--green)}
+.news-excerpt{font-size:13.5px;color:var(--text-mid);line-height:1.65}
+.news-link{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:10px;font-size:13px;font-weight:600;
+  color:var(--green);cursor:pointer;
+}
+
+/* ═══════════════════════════════════════
+   EVENT
+═══════════════════════════════════════ */
+.event-row{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:2px;padding:24px;
+  display:flex;gap:24px;align-items:flex-start;
+  margin-bottom:12px;
+  border-left:4px solid var(--navy);
+  transition:box-shadow .2s;
+}
+.event-row:hover{box-shadow:0 4px 16px rgba(10,22,40,.07)}
+.event-row.green{border-left-color:var(--green)}
+.event-row.red{border-left-color:var(--red)}
+.event-row.gold{border-left-color:var(--gold)}
+.event-cal{
+  flex-shrink:0;width:60px;
+  text-align:center;
+  background:var(--navy);
+  border-radius:2px;padding:8px 6px;color:var(--white);
+}
+.event-cal-month{font-family:var(--ff-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.event-cal-day{font-family:var(--ff-serif);font-size:28px;font-weight:700;line-height:1.1}
+.event-body-title{
+  font-family:var(--ff-serif);font-size:18px;font-weight:600;
+  color:var(--navy);margin-bottom:6px;
+}
+.event-meta{
+  display:flex;gap:16px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--text-lt);margin-bottom:8px;
+}
+.event-desc{font-size:14px;color:var(--text-mid);line-height:1.65}
+
+/* ═══════════════════════════════════════
+   TIMELINE
+═══════════════════════════════════════ */
+.timeline{position:relative;padding-left:36px}
+.timeline::before{
+  content:'';position:absolute;left:0;top:6px;bottom:6px;
+  width:2px;background:var(--border);
+}
+.timeline-item{position:relative;margin-bottom:36px}
+.timeline-dot{
+  position:absolute;left:-41px;top:5px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--green);
+  border:3px solid var(--white);
+  box-shadow:0 0 0 2px var(--green);
+}
+.timeline-year{
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--green);letter-spacing:.1em;margin-bottom:6px;
+  text-transform:uppercase;
+}
+.timeline-title{
+  font-family:var(--ff-serif);font-size:17px;
+  font-weight:600;color:var(--navy);margin-bottom:6px;
+}
+.timeline-body{font-size:14px;color:var(--text-mid);line-height:1.65}
+
+/* ═══════════════════════════════════════
+   FORM
+═══════════════════════════════════════ */
+.form-group{margin-bottom:20px}
+.form-label{
+  display:block;font-size:13px;font-weight:600;
+  color:var(--navy);margin-bottom:6px;
+  letter-spacing:.02em;
+}
+.form-label .req{color:var(--red);margin-left:2px}
+.form-control{
+  width:100%;padding:11px 14px;
+  border:1.5px solid var(--border-dk);
+  border-radius:2px;font-size:14.5px;
+  font-family:var(--ff-sans);color:var(--text);
+  background:var(--white);outline:none;
+  transition:border-color .2s,box-shadow .2s;
+}
+.form-control:focus{
+  border-color:var(--navy);
+  box-shadow:0 0 0 3px rgba(10,22,40,.08);
+}
+.form-control::placeholder{color:var(--text-lt)}
+textarea.form-control{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-note{
+  font-size:12px;color:var(--text-lt);
+  margin-top:6px;line-height:1.5;
+}
+.checkbox-group{display:flex;gap:10px;align-items:flex-start;margin-bottom:24px}
+.checkbox-group input{accent-color:var(--green);flex-shrink:0;margin-top:3px;width:15px;height:15px}
+.checkbox-group label{font-size:13px;color:var(--text-mid);line-height:1.55}
+
+/* ═══════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════ */
+.contact-row{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:18px;background:var(--white);
+  border:1px solid var(--border);border-radius:2px;
+  margin-bottom:10px;
+}
+.contact-icon{
+  width:40px;height:40px;border-radius:2px;
+  background:rgba(10,22,40,.06);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+}
+.contact-label{font-size:12px;color:var(--text-lt);margin-bottom:2px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.contact-value{font-size:15px;color:var(--navy);font-weight:500}
+.contact-value a{color:var(--green);text-decoration:none}
+
+/* ═══════════════════════════════════════
+   OFFICIAL SIDEBAR
+═══════════════════════════════════════ */
+.sidebar-panel{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:2px;padding:24px;margin-bottom:20px;
+  border-top:3px solid var(--green);
+}
+.sidebar-title{
+  font-family:var(--ff-serif);font-size:16px;font-weight:600;
+  color:var(--navy);margin-bottom:16px;
+  padding-bottom:12px;border-bottom:1px solid var(--border);
+}
+.sidebar-link{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 0;border-bottom:1px solid var(--stone);
+  font-size:14px;color:var(--text);cursor:pointer;
+  transition:color .2s;text-decoration:none;
+}
+.sidebar-link:last-child{border-bottom:none}
+.sidebar-link:hover{color:var(--green)}
+.sidebar-link::before{content:'›';color:var(--green);font-size:16px;flex-shrink:0}
+
+/* ═══════════════════════════════════════
+   LAYOUT WITH SIDEBAR
+═══════════════════════════════════════ */
+.with-sidebar{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.sidebar{position:sticky;top:calc(var(--total-top) + 20px)}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+#footer{
+  background:var(--navy);
+  color:var(--white);
+  margin-top:0;
+}
+.footer-gov-bar{
+  background:var(--navy-mid);
+  padding:18px 32px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-gov-bar-inner{
+  max-width:var(--max);margin:0 auto;
+  display:flex;align-items:center;gap:24px;
+  flex-wrap:wrap;
+}
+.footer-gov-bar-inner p{
+  font-size:12px;color:rgba(255,255,255,.45);
+  font-family:var(--ff-mono);margin:0;letter-spacing:.04em;
+}
+.footer-main{padding:64px 32px 40px}
+.footer-main-inner{max-width:var(--max);margin:0 auto}
+.footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand-name{
+  font-family:var(--ff-serif);font-size:20px;font-weight:700;
+  color:var(--white);margin-bottom:4px;
+}
+.footer-brand-sub{
+  font-family:var(--ff-mono);font-size:10px;
+  color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:16px;
+}
+.footer-brand-desc{
+  font-size:13.5px;color:rgba(255,255,255,.5);
+  line-height:1.7;max-width:240px;margin-bottom:24px;
+}
+.footer-social{display:flex;gap:10px}
+.footer-social a{
+  width:36px;height:36px;border-radius:2px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;text-decoration:none;
+  transition:background .2s;cursor:pointer;
+}
+.footer-social a:hover{background:rgba(255,255,255,.12)}
+.footer-col-title{
+  font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:18px;padding-bottom:10px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-col button,.footer-col a{
+  display:block;width:100%;text-align:left;
+  font-size:13.5px;color:rgba(255,255,255,.5);
+  background:none;border:none;padding:5px 0;
+  cursor:pointer;font-family:var(--ff-sans);
+  text-decoration:none;transition:color .2s;
+  line-height:1.5;
+}
+.footer-col button:hover,.footer-col a:hover{color:var(--white)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{
+  font-size:12px;color:rgba(255,255,255,.3);
+  font-family:var(--ff-mono);letter-spacing:.04em;margin:0;
+}
+.footer-stripe{
+  height:4px;
+  background:linear-gradient(to right,var(--navy) 15%,var(--green) 15% 38%,var(--gold) 38% 62%,var(--red) 62% 85%,var(--navy) 85%);
+}
+
+/* ═══ BADGE / TAG ═══ */
+.badge{
+  display:inline-flex;align-items:center;
+  padding:3px 10px;border-radius:2px;
+  font-family:var(--ff-mono);font-size:10.5px;
+  font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+}
+.badge-green{background:rgba(0,105,47,.1);color:var(--green)}
+.badge-navy{background:rgba(10,22,40,.08);color:var(--navy)}
+.badge-red{background:rgba(168,32,13,.1);color:var(--red)}
+.badge-gold{background:rgba(201,162,39,.15);color:#7a5a00}
+.badge-gray{background:var(--stone);color:var(--text-lt)}
+
+/* ═══ TOAST & COOKIE ═══ */
+#toast{
+  position:fixed;bottom:32px;right:32px;
+  background:var(--navy);color:var(--white);
+  padding:14px 22px;border-radius:2px;
+  font-size:14px;font-weight:500;
+  border-left:4px solid var(--green);
+  transform:translateY(80px);opacity:0;
+  transition:all .4s var(--ease);z-index:9999;
+  max-width:340px;line-height:1.4;
+  box-shadow:0 8px 32px rgba(0,0,0,.25);
+}
+#toast.show{transform:translateY(0);opacity:1}
+#cookie{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--navy-mid);color:var(--white);
+  padding:18px 32px;
+  display:flex;align-items:center;gap:24px;
+  z-index:8000;border-top:3px solid var(--gold);
+  transform:translateY(100%);transition:transform .5s var(--ease);
+  flex-wrap:wrap;
+}
+#cookie.show{transform:translateY(0)}
+#cookie p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px;margin:0}
+#cookie p a{color:var(--gold)}
+.cookie-btns{display:flex;gap:10px}
+.c-accept{
+  background:var(--green);color:var(--white);border:none;
+  padding:9px 20px;border-radius:2px;font-size:13px;
+  font-weight:600;cursor:pointer;font-family:var(--ff-sans);
+}
+.c-decline{
+  background:transparent;color:rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.2);
+  padding:9px 20px;border-radius:2px;font-size:13px;
+  cursor:pointer;font-family:var(--ff-sans);
+}
+
+/* ═══════════════════════════════════════
+   PILLAR GRID (home mandate section)
+═══════════════════════════════════════ */
+.pillar-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--border);
+  border-radius:2px;
+  overflow:hidden;
+  margin-bottom:48px;
+}
+.pillar{
+  padding:36px 28px;
+  border-right:1px solid var(--border);
+  position:relative;
+  background:var(--white);
+  transition:background .2s;
+}
+.pillar:last-child{border-right:none}
+.pillar:hover{background:var(--stone)}
+.pillar::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+}
+.pillar.p-green::before{background:var(--green)}
+.pillar.p-navy::before{background:var(--navy)}
+.pillar.p-red::before{background:var(--red)}
+.pillar.p-gold::before{background:var(--gold)}
+.pillar-icon{
+  width:48px;height:48px;border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;
+}
+.pillar-icon.p-green{background:rgba(0,105,47,.08);color:var(--green)}
+.pillar-icon.p-navy{background:rgba(10,22,40,.06);color:var(--navy)}
+.pillar-icon.p-red{background:rgba(168,32,13,.08);color:var(--red)}
+.pillar-icon.p-gold{background:rgba(201,162,39,.12);color:var(--gold)}
+.pillar-icon svg{width:22px;height:22px}
+.pillar h4{font-family:var(--ff-serif);font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.pillar p{font-size:13.5px;color:var(--text-mid);line-height:1.7;margin:0}
+
+/* ═══════════════════════════════════════
+   UNIVERSITY LOGOS MARQUEE
+═══════════════════════════════════════ */
+.logos-strip{
+  background:var(--stone);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:28px 0;
+  overflow:hidden;
+}
+.logos-strip-label{
+  text-align:center;
+  font-family:var(--ff-mono);font-size:10px;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-lt);margin-bottom:18px;
+}
+.logos-track-wrap{overflow:hidden;position:relative}
+.logos-track-wrap::before,.logos-track-wrap::after{
+  content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none;
+}
+.logos-track-wrap::before{left:0;background:linear-gradient(to right,var(--stone),transparent)}
+.logos-track-wrap::after{right:0;background:linear-gradient(to left,var(--stone),transparent)}
+.logos-track{
+  display:flex;align-items:center;gap:44px;
+  animation:scroll-logos 45s linear infinite;
+  width:max-content;padding:0 22px;
+}
+.logos-track:hover{animation-play-state:paused}
+.logos-track img{
+  height:36px;width:auto;max-width:100px;
+  opacity:.55;filter:grayscale(100%);
+  transition:opacity .25s,filter .25s;
+  flex-shrink:0;object-fit:contain;display:block;
+}
+.logos-track img:hover{opacity:1;filter:none}
+@keyframes scroll-logos{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+/* ═══════════════════════════════════════
+   SVG ICON SIZING (all icon containers)
+═══════════════════════════════════════ */
+.info-card-icon svg{width:22px;height:22px}
+.panel-icon svg{width:20px;height:20px;flex-shrink:0}
+.contact-icon svg{width:20px;height:20px;flex-shrink:0}
+.footer-social svg{width:16px;height:16px;flex-shrink:0}
+.event-meta-icon{display:inline-flex;align-items:center;gap:5px}
+.event-meta-icon svg{width:13px;height:13px;flex-shrink:0;opacity:.7}
+
+/* ═══════════════════════════════════════
+   EVENTS CTA BAND
+═══════════════════════════════════════ */
+.cta-band{
+  background:var(--navy-mid);
+  padding:72px 32px;
+  position:relative;overflow:hidden;
+}
+.cta-band::before{
+  content:'';position:absolute;right:-80px;top:-80px;
+  width:360px;height:360px;border-radius:50%;
+  background:rgba(255,255,255,.03);
+}
+.cta-band-inner{
+  max-width:var(--max);margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:40px;flex-wrap:wrap;
+  position:relative;z-index:1;
+}
+.cta-band-text .cta-ref{
+  font-family:var(--ff-mono);font-size:11px;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:12px;
+}
+.cta-band-text h2{
+  font-family:var(--ff-serif);
+  font-size:clamp(26px,3.5vw,38px);
+  font-weight:700;color:var(--white);
+  margin-bottom:10px;line-height:1.2;
+}
+.cta-band-text h2 em{font-style:italic;color:var(--gold)}
+.cta-band-text p{color:rgba(255,255,255,.6);max-width:480px;font-size:15px;line-height:1.7;margin:0}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:960px){
+  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
+  .with-sidebar{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-ref{display:none}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-cell:nth-child(2){border-right:none}
+  .stat-cell:nth-child(3){border-right:1px solid var(--border)}
+  .stat-cell:nth-child(1),.stat-cell:nth-child(2){border-bottom:1px solid var(--border)}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+  .pillar-grid{grid-template-columns:1fr 1fr}
+  .pillar:nth-child(2){border-right:none}
+  .pillar:nth-child(1),.pillar:nth-child(2){border-bottom:1px solid var(--border)}
+}
+@media(max-width:640px){
+  .pillar-grid{grid-template-columns:1fr}
+  .pillar{border-right:none !important;border-bottom:1px solid var(--border)}
+  .pillar:last-child{border-bottom:none}
+}
+@media(max-width:640px){
+  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
+  .wrap{padding:0 20px}
+  .header-established,.header-divider,.header-salogo{display:none}
+  .header-ident-main{font-size:17px}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-cols{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .official-hero{padding:48px 20px}
+  .section{padding:48px 0}
+  .leader-feature{flex-direction:column;gap:20px}
+  .topbar-left .sep,.topbar-left span:nth-child(3),.topbar-left span:nth-child(4){display:none}
+  .news-item{flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════ TOP UTILITY BAR ══════ -->
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>Republic of South Africa</span>
+      <span class="sep"></span>
+      <span>Official National Student Representative Body</span>
+      <span class="sep"></span>
+      <span>Established April 2006</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:Secretariat@saus.org.za">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 5l7 5 7-5"/></svg>
+        Secretariat@saus.org.za
+      </a>
+      <a href="tel:+27791295948">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h3l1.5 4-2 1.5a9 9 0 004 4L11 9.5l4 1.5v3a2 2 0 01-2 2A14 14 0 012 4a2 2 0 012-2z"/></svg>
+        +27 79 129 5948
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ OFFICIAL HEADER ══════ -->
+<div id="header">
+  <div class="header-inner">
+    <a class="header-seal" onclick="showPage('home')" style="cursor:pointer;text-decoration:none" title="SAUS Official Seal">
+      <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </a>
+    <div class="header-ident" onclick="showPage('home')" style="cursor:pointer">
+      <div class="header-ident-main">South African <em>Union of Students</em></div>
+      <div class="header-ident-sub">SAUS — Official National Representative Body in Higher Education</div>
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-established">
+      <span>Established</span>
+      <strong>2006</strong>
+      <span>9th Congress</span>
+    </div>
+    <div class="header-right">
+      <span class="header-salogo" style="display:block;width:56px;height:56px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+      <button class="header-contact-btn" onclick="showPage('contact')">Contact SAUS</button>
+      <button class="hamburger" onclick="toggleMenu()" id="ham">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ NAVIGATION ══════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <button class="nav-item active" onclick="showPage('home')">Home</button>
+      <button class="nav-item" onclick="showPage('about')">About SAUS</button>
+      <button class="nav-item" onclick="showPage('campaigns')">Campaigns</button>
+      <button class="nav-item" onclick="showPage('leadership')">Leadership</button>
+      <button class="nav-item" onclick="showPage('news')">Newsroom</button>
+      <button class="nav-item" onclick="showPage('events')">Events</button>
+      <button class="nav-item" onclick="showPage('gallery')">Gallery</button>
+      <a href="/nsfas/" class="nav-item">NSFAS</a>
+      <a href="/apply/" class="nav-item">Universities</a>
+      <button class="nav-item" onclick="showPage('contact')">Contact</button>
+    </div>
+    <span class="nav-ref">REF: SAUS/GOV/2026</span>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mnav">
+  <button class="mobile-nav-item active" onclick="showPage('home');closeMobile()">Home</button>
+  <button class="mobile-nav-item" onclick="showPage('about');closeMobile()">About SAUS</button>
+  <button class="mobile-nav-item" onclick="showPage('campaigns');closeMobile()">Campaigns</button>
+  <button class="mobile-nav-item" onclick="showPage('leadership');closeMobile()">Leadership</button>
+  <button class="mobile-nav-item" onclick="showPage('news');closeMobile()">Newsroom</button>
+  <button class="mobile-nav-item" onclick="showPage('events');closeMobile()">Events</button>
+  <button class="mobile-nav-item" onclick="showPage('gallery');closeMobile()">Gallery</button>
+  <a href="/nsfas/" class="mobile-nav-item">NSFAS Guide</a>
+  <a href="/apply/" class="mobile-nav-item">Universities</a>
+  <button class="mobile-nav-item" onclick="showPage('contact');closeMobile()">Contact</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: HOME
+══════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Announcement -->
+  <div class="announcement" id="ann">
+    <span class="announcement-badge">Official Notice</span>
+    <p><strong>9th National Executive Committee Elected</strong> — SAUS successfully concluded its 9th National Elective Congress at Nelson Mandela University &amp; Kimberley, August 2025.</p>
+    <button class="announcement-close" onclick="document.getElementById('ann').remove()">✕</button>
+  </div>
+
+  <!-- Hero -->
+  <div class="official-hero hero-bg">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/OFFICIAL/2026 · National Representative Body</div>
+      <h1 class="hero-title">
+        Empowering <em>Student Voices.</em><br>
+        Advancing Higher Education.
+      </h1>
+      <p class="hero-lead">The South African Union of Students (SAUS) is the official representative body for students across all 26 public universities in the Republic of South Africa. Education is a constitutional right — we ensure it is treated as such.</p>
+      <div class="hero-actions">
+        <button class="btn btn-gold btn-lg" onclick="showPage('campaigns')">View Active Campaigns</button>
+        <button class="btn btn-outline-white btn-lg" onclick="showPage('about')">About SAUS</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stat Strip -->
+  <div class="stat-strip">
+    <div class="wrap" style="padding:0">
+      <div class="stat-grid">
+        <div class="stat-cell">
+          <div class="stat-num" data-target="26" data-suffix="">0</div>
+          <div class="stat-label">Public Universities<br>Represented</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num" data-target="2006" data-suffix="">0</div>
+          <div class="stat-label">Year of<br>Establishment</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">9<span style="font-size:.5em;vertical-align:super">th</span></div>
+          <div class="stat-label">National Executive<br>Congress (2025)</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">1M<span style="font-size:.6em">+</span></div>
+          <div class="stat-label">Students<br>Represented</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- University Logos Marquee -->
+  <div class="logos-strip">
+    <div class="logos-strip-label">Representing all 26 public universities in the Republic of South Africa</div>
+    <div class="logos-track-wrap">
+      <div class="logos-track" id="logosTrack">
+        <img src="/apply/logos/uct.png" alt="UCT"><img src="/apply/logos/wits.jpg" alt="Wits">
+        <img src="/apply/logos/up.png" alt="UP"><img src="/apply/logos/uj.png" alt="UJ">
+        <img src="/apply/logos/ukzn.png" alt="UKZN"><img src="/apply/logos/uwc.svg" alt="UWC">
+        <img src="/apply/logos/ufs.png" alt="UFS"><img src="/apply/logos/unisa.jpg" alt="UNISA">
+        <img src="/apply/logos/nmu.png" alt="NMU"><img src="/apply/logos/ru.png" alt="Rhodes">
+        <img src="/apply/logos/su.jpg" alt="Stellenbosch"><img src="/apply/logos/cput.svg" alt="CPUT">
+        <img src="/apply/logos/dut.jpg" alt="DUT"><img src="/apply/logos/tut.png" alt="TUT">
+        <img src="/apply/logos/nwu.png" alt="NWU"><img src="/apply/logos/ul.png" alt="UL">
+        <img src="/apply/logos/ufh.png" alt="UFH"><img src="/apply/logos/wsu.png" alt="WSU">
+        <img src="/apply/logos/unizulu.png" alt="UniZulu"><img src="/apply/logos/univen.png" alt="UniVen">
+        <img src="/apply/logos/smu.png" alt="SMU"><img src="/apply/logos/spu.png" alt="SPU">
+        <img src="/apply/logos/ump.png" alt="UMP"><img src="/apply/logos/vut.png" alt="VUT">
+        <img src="/apply/logos/mut.png" alt="MUT"><img src="/apply/logos/cut.png" alt="CUT">
+        <!-- duplicate for seamless loop -->
+        <img src="/apply/logos/uct.png" alt="UCT"><img src="/apply/logos/wits.jpg" alt="Wits">
+        <img src="/apply/logos/up.png" alt="UP"><img src="/apply/logos/uj.png" alt="UJ">
+        <img src="/apply/logos/ukzn.png" alt="UKZN"><img src="/apply/logos/uwc.svg" alt="UWC">
+        <img src="/apply/logos/ufs.png" alt="UFS"><img src="/apply/logos/unisa.jpg" alt="UNISA">
+        <img src="/apply/logos/nmu.png" alt="NMU"><img src="/apply/logos/ru.png" alt="Rhodes">
+        <img src="/apply/logos/su.jpg" alt="Stellenbosch"><img src="/apply/logos/cput.svg" alt="CPUT">
+        <img src="/apply/logos/dut.jpg" alt="DUT"><img src="/apply/logos/tut.png" alt="TUT">
+        <img src="/apply/logos/nwu.png" alt="NWU"><img src="/apply/logos/ul.png" alt="UL">
+        <img src="/apply/logos/ufh.png" alt="UFH"><img src="/apply/logos/wsu.png" alt="WSU">
+        <img src="/apply/logos/unizulu.png" alt="UniZulu"><img src="/apply/logos/univen.png" alt="UniVen">
+        <img src="/apply/logos/smu.png" alt="SMU"><img src="/apply/logos/spu.png" alt="SPU">
+        <img src="/apply/logos/ump.png" alt="UMP"><img src="/apply/logos/vut.png" alt="VUT">
+        <img src="/apply/logos/mut.png" alt="MUT"><img src="/apply/logos/cut.png" alt="CUT">
+      </div>
+    </div>
+  </div>
+
+  <!-- Mandate Section -->
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="sec-header" style="text-align:center">
+        <div class="ref" style="justify-content:center">SAUS/MANDATE/2026</div>
+        <h2>What We <em>Stand For</em></h2>
+        <p class="lead" style="margin:14px auto 0;max-width:640px">SAUS was constituted to consolidate and strengthen student representation in governance of Higher Education and Training across all 26 public universities in South Africa.</p>
+      </div>
+      <div class="pillar-grid">
+        <div class="pillar p-green">
+          <div class="pillar-icon p-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h4>Mission</h4>
+          <p>To consolidate and strengthen students' views in the governance of Higher Education and Training, ensuring equitable access for all students across the Republic.</p>
+        </div>
+        <div class="pillar p-navy">
+          <div class="pillar-icon p-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4>Vision</h4>
+          <p>A unified, equitable, non-sexist, non-racial, and democratic education system that is responsive to the needs of South Africa, Africa, and the world.</p>
+        </div>
+        <div class="pillar p-red">
+          <div class="pillar-icon p-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 6l4-4 4 4"/></svg>
+          </div>
+          <h4>Equity &amp; Justice</h4>
+          <p>Advocating for fair, inclusive, and accessible education for all students regardless of socioeconomic background, race, or gender.</p>
+        </div>
+        <div class="pillar p-gold">
+          <div class="pillar-icon p-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Unity &amp; Solidarity</h4>
+          <p>Building collective student strength through collaboration, structured activism, and shared purpose across all institutions.</p>
+        </div>
+      </div>
+      <div class="official-quote">
+        <p>"Education is a right, not a privilege — SAUS ensures every student, regardless of background, has access to affordable, quality, and inclusive higher education."</p>
+        <cite>South African Union of Students — Constitutional Mandate</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- Active Campaigns -->
+  <section class="section" style="background:var(--cream)">
+    <div class="wrap">
+      <div class="sec-header">
+        <div class="ref">SAUS/CAMPAIGNS/2025–2026</div>
+        <h2>Priority <em>Campaign Areas</em></h2>
+        <p class="lead">The following campaigns represent the foremost policy advocacy priorities of the 9th National Executive Committee as resolved at the National Elective Congress, 2025.</p>
+      </div>
+      <div class="grid-3">
+        <div class="info-card">
+          <div class="info-card-accent green"></div>
+          <div class="info-card-icon green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><circle cx="12" cy="15" r="2"/></svg>
+          </div>
+          <h4>NSFAS Reform</h4>
+          <p>Redesigning the National Student Financial Aid Scheme for sustainability, reliability, and strengthened communication to ensure no student is left without support.</p>
+          <button class="btn btn-outline btn-sm" style="margin-top:16px" onclick="showPage('campaigns')">Read Policy Position →</button>
+        </div>
+        <div class="info-card">
+          <div class="info-card-accent red"></div>
+          <div class="info-card-icon red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+          </div>
+          <h4>Historical Debt Relief</h4>
+          <p>Compelling government to clear historical student debt, beginning with deceased students and unemployed graduates unable to service their accounts.</p>
+          <button class="btn btn-outline btn-sm" style="margin-top:16px" onclick="showPage('campaigns')">Read Policy Position →</button>
+        </div>
+        <div class="info-card">
+          <div class="info-card-accent navy"></div>
+          <div class="info-card-icon navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>GBV on Campuses</h4>
+          <p>Investigating GBV and Femicide policies across all 26 institutions and setting minimum standards for security conduct in handling GBVF cases.</p>
+          <button class="btn btn-outline btn-sm" style="margin-top:16px" onclick="showPage('campaigns')">Read Policy Position →</button>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <button class="btn btn-navy" onclick="showPage('campaigns')">View All Campaign Resolutions</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Statements -->
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="sec-header" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+        <div>
+          <div class="ref">SAUS/MEDIA/2025–2026</div>
+          <h2>Recent <em>Statements & Releases</em></h2>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="showPage('news')">All Releases →</button>
+      </div>
+      <div>
+        <div class="news-item">
+          <div class="news-date-col">
+            <div class="news-day">23</div>
+            <div class="news-month">Aug '25</div>
+          </div>
+          <div style="flex:1">
+            <div class="news-type congress">Congress Statement</div>
+            <div class="news-title" onclick="showPage('news')">Post-9th National Congress Statement — SAUS 9th NEC Elected</div>
+            <div class="news-excerpt">Following the successful conclusion of the 9th National Elective Congress, SAUS announces the newly elected National Executive Committee and outlines key resolutions for the 2025–2026 term.</div>
+            <a class="news-link" onclick="showPage('news')">Read Full Statement →</a>
+          </div>
+          <div style="flex-shrink:0;padding-left:20px"><span class="badge badge-green">Official</span></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-col">
+            <div class="news-day">14</div>
+            <div class="news-month">Jul '25</div>
+          </div>
+          <div style="flex:1">
+            <div class="news-type urgent">Urgent Statement</div>
+            <div class="news-title" onclick="showPage('news')">SAUS Calls for Complete Redesign of NSFAS</div>
+            <div class="news-excerpt">SAUS demands immediate intervention by the Department of Higher Education and Training to overhaul the National Student Financial Aid Scheme amid continued student funding crises.</div>
+            <a class="news-link" onclick="showPage('news')">Read Full Statement →</a>
+          </div>
+          <div style="flex-shrink:0;padding-left:20px"><span class="badge badge-red">Urgent</span></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date-col">
+            <div class="news-day">02</div>
+            <div class="news-month">Jun '25</div>
+          </div>
+          <div style="flex:1">
+            <div class="news-type policy">Policy Statement</div>
+            <div class="news-title" onclick="showPage('news')">SAUS Opposes National Credit Act Amendments Targeting Students</div>
+            <div class="news-excerpt">SAUS firmly and categorically rejects proposed amendments to the National Credit Act that would list student debt with credit bureaus, a punitive measure against South Africa's most vulnerable students.</div>
+            <a class="news-link" onclick="showPage('news')">Read Full Statement →</a>
+          </div>
+          <div style="flex-shrink:0;padding-left:20px"><span class="badge badge-navy">Policy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events CTA -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <div class="cta-band-text">
+        <div class="cta-ref">SAUS/EVENTS/2026</div>
+        <h2>Upcoming <em>Engagements</em></h2>
+        <p>National congresses, student leadership summits, policy town halls, and campus activations across the Republic of South Africa.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;flex-shrink:0">
+        <button class="btn btn-gold btn-lg" onclick="showPage('events')">View Events Calendar</button>
+        <button class="btn btn-outline-white" onclick="showPage('contact')">Register Interest</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: ABOUT
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')" style="cursor:pointer">Home</span><span class="sep">›</span><span class="current">About SAUS</span></div></div>
+
+  <!-- Hero -->
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG11.jpg');background-size:cover;background-position:center;padding:64px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/ABOUT/2026 · Institutional Overview</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">About the South African <em>Union of Students</em></h1>
+      <p class="hero-lead">A constitutional overview of SAUS — its establishment, mandate, institutional history, and continental standing as South Africa's official national student body.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn btn-gold" onclick="document.getElementById('about-profile').scrollIntoView({behavior:'smooth'})">Institutional Profile</button>
+        <button class="btn btn-outline-white" onclick="document.getElementById('about-history').scrollIntoView({behavior:'smooth'})">Our History</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick facts strip -->
+  <div class="stat-strip">
+    <div class="wrap" style="padding:0">
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Public Universities<br>Represented</div></div>
+        <div class="stat-cell"><div class="stat-num">2006</div><div class="stat-label">Year of<br>Establishment</div></div>
+        <div class="stat-cell"><div class="stat-num">9<span style="font-size:.5em;vertical-align:super">th</span></div><div class="stat-label">National Executive<br>Congress</div></div>
+        <div class="stat-cell"><div class="stat-num">1M<span style="font-size:.6em">+</span></div><div class="stat-label">Students<br>Represented</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile + sidebar -->
+  <section class="section" style="background:var(--white)" id="about-profile">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+
+          <!-- Institutional profile -->
+          <div class="sec-header">
+            <div class="ref">SAUS/PROFILE/2026</div>
+            <h2>Institutional <em>Profile</em></h2>
+            <p class="lead">SAUS is the only body mandated to represent all students across all 26 public universities in the Republic of South Africa.</p>
+          </div>
+          <table class="official-table" style="margin-bottom:48px">
+            <thead><tr><th>Field</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr><td>Full Designation</td><td>South African Union of Students (SAUS)</td></tr>
+              <tr><td>Date of Establishment</td><td>April 2006</td></tr>
+              <tr><td>Legal Status</td><td>Non-Profit National Student Representative Body</td></tr>
+              <tr><td>Current Congress</td><td>9th National Executive Committee (2025–2026)</td></tr>
+              <tr><td>Institutional Coverage</td><td>All 26 Public Universities in the Republic of South Africa</td></tr>
+              <tr><td>Headquarters</td><td>Johannesburg, Gauteng, South Africa</td></tr>
+              <tr><td>Website</td><td><a href="https://www.saus.org.za">www.saus.org.za</a></td></tr>
+              <tr><td>General Correspondence</td><td><a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a></td></tr>
+              <tr><td>Media Spokesperson</td><td>Thato Masekoa · <a href="tel:+27791295948">+27 79 129 5948</a></td></tr>
+              <tr><td>Office Hours</td><td>Monday to Friday, 08:00 – 17:00</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="2">Source: SAUS Secretariat, 2026</td></tr></tfoot>
+          </table>
+
+          <!-- Mission & Vision -->
+          <div class="sec-header" id="about-mission">
+            <div class="ref">SAUS/MISSION/2026</div>
+            <h2>Mission <em>&amp; Vision</em></h2>
+          </div>
+          <div class="panel" style="margin-bottom:16px">
+            <div class="panel-header"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Mission Statement</h3></div>
+            <div class="panel-body"><p>To consolidate and strengthen students' views in the governance and enhancement of Higher Education and Training in South Africa, ensuring every student has access to affordable, quality, and inclusive education — delivered within a system that is equitable, non-sexist, non-racial, and democratic.</p></div>
+          </div>
+          <div class="panel" style="margin-bottom:48px">
+            <div class="panel-header" style="background:var(--green)"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Vision Statement</h3></div>
+            <div class="panel-body"><p>A unified, equitable, non-sexist, non-racial, democratic, and well-governed education system that is appropriate and responsive to the needs of South Africa, Africa, and the world — providing a conducive environment for learning, teaching, research, and community service.</p></div>
+          </div>
+
+          <!-- Core Values -->
+          <div class="sec-header" id="about-values">
+            <div class="ref">SAUS/VALUES/2026</div>
+            <h2>Core <em>Values</em></h2>
+            <p class="lead">The values that govern SAUS's conduct, advocacy, and governance across all 26 institutions.</p>
+          </div>
+          <div class="grid-3" style="margin-bottom:48px">
+            <div class="info-card">
+              <div class="info-card-accent green"></div>
+              <div class="info-card-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <h4>Non-Racial</h4>
+              <p>Opposing all forms of racial discrimination and working towards a higher education system free of racial barriers and inequities.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-accent navy"></div>
+              <div class="info-card-icon navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <h4>Non-Sexist</h4>
+              <p>Championing gender equality across campuses and ensuring that all policies and practices are free from sexism in any form.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-accent gold"></div>
+              <div class="info-card-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+              <h4>Democratic</h4>
+              <p>Operating through democratic processes, structures, and elections that give every member institution an equal and meaningful voice.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-accent red"></div>
+              <div class="info-card-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <h4>Anti-Corruption</h4>
+              <p>Upholding integrity, transparency, and accountability in all governance structures and financial management at every level.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-accent green"></div>
+              <div class="info-card-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <h4>Progressive</h4>
+              <p>Advancing transformative change in higher education that addresses historical injustices and builds a more equitable future.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-accent navy"></div>
+              <div class="info-card-icon navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+              <h4>Pan-Africanist</h4>
+              <p>Situating South African student struggles within the broader context of African liberation, solidarity, and continental development.</p>
+            </div>
+          </div>
+
+          <!-- Historical Background -->
+          <div class="sec-header" id="about-history">
+            <div class="ref">SAUS/HISTORY/2026</div>
+            <h2>Historical <em>Background</em></h2>
+            <p class="lead">SAUS represents a historic milestone in South African student politics — the first national union of students constituted since the dissolution of NUSAS in the late 1980s.</p>
+          </div>
+          <p style="font-size:15px;color:var(--text-mid);margin-bottom:32px;line-height:1.75">Students have played an instrumental role in South African education and politics since the 1960s, most notably during the 1976 Soweto Uprisings. The reconstitution of a national student body in 2006 marked a new chapter — one defined by democratic governance and constructive engagement with the post-apartheid higher education system.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1960s</div>
+              <div class="timeline-title">Emergence of Student Structures</div>
+              <div class="timeline-body">Student organisations become instrumental in the education sector, laying the foundation for organised student resistance against apartheid education policies.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background:var(--red);box-shadow:0 0 0 2px var(--red)"></div>
+              <div class="timeline-year">16 June 1976</div>
+              <div class="timeline-title">Soweto Student Uprisings</div>
+              <div class="timeline-body">Students play a decisive role in the uprisings — a defining moment in the liberation struggle that established the student movement as a critical political force in South Africa. June 16 is now commemorated as Youth Day.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Late 1980s</div>
+              <div class="timeline-title">Dissolution of NUSAS</div>
+              <div class="timeline-body">The National Union of South African Students (NUSAS) is dissolved, creating a void in national student representation that would persist for nearly two decades.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Early 2000s</div>
+              <div class="timeline-title">Higher Education Restructuring</div>
+              <div class="timeline-body">The South African government restructures the higher education landscape through mergers and incorporations — creating a new landscape of universities and universities of technology that necessitated a unified national student voice.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background:var(--gold);box-shadow:0 0 0 2px var(--gold)"></div>
+              <div class="timeline-year">April 2006</div>
+              <div class="timeline-title">SAUS Founded</div>
+              <div class="timeline-body">The South African Union of Students is officially constituted — uniting universities and universities of technology under one national student representative body for the first time since the 1980s.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background:var(--green);box-shadow:0 0 0 2px var(--green)"></div>
+              <div class="timeline-year">2015–2016</div>
+              <div class="timeline-title">#FeesMustFall Movement</div>
+              <div class="timeline-body">SAUS plays a central coordinating role during the nationwide #FeesMustFall protests, which compelled government to announce fee freezes and ultimately the 2018 free higher education policy for qualifying students.</div>
+            </div>
+            <div class="timeline-item" style="margin-bottom:0">
+              <div class="timeline-dot" style="background:var(--navy);box-shadow:0 0 0 2px var(--navy)"></div>
+              <div class="timeline-year">July–August 2025</div>
+              <div class="timeline-title">9th National Elective Congress</div>
+              <div class="timeline-body">The 9th NEC is elected at Nelson Mandela University (Port Elizabeth) and Boontjieskraal (Kimberley) under the theme <em>"Confronting the suppression of student activism and advancing transformative student governance."</em></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">On This Page</div>
+            <a class="sidebar-link" onclick="document.getElementById('about-profile').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Institutional Profile</a>
+            <a class="sidebar-link" onclick="document.getElementById('about-mission').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Mission &amp; Vision</a>
+            <a class="sidebar-link" onclick="document.getElementById('about-values').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Core Values</a>
+            <a class="sidebar-link" onclick="document.getElementById('about-history').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Historical Background</a>
+            <a class="sidebar-link" onclick="document.getElementById('about-continental').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">Continental Presence</a>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--gold)">
+            <div class="sidebar-title">Key Documents</div>
+            <a class="sidebar-link" onclick="showPage('contact')" style="cursor:pointer">SAUS Constitution</a>
+            <a class="sidebar-link" onclick="showPage('contact')" style="cursor:pointer">9th Congress Resolutions</a>
+            <a class="sidebar-link" onclick="showPage('contact')" style="cursor:pointer">Annual Report 2025</a>
+            <a class="sidebar-link" onclick="showPage('contact')" style="cursor:pointer">POPIA Compliance Notice</a>
+            <p style="font-size:11px;color:var(--text-lt);margin-top:12px;line-height:1.5">Documents available on request via the Secretariat.</p>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--navy)">
+            <div class="sidebar-title">Official Contact</div>
+            <div style="font-size:13.5px;line-height:1.9;color:var(--text-mid)">
+              <p style="margin:0 0 2px"><strong style="color:var(--navy)">Secretariat</strong></p>
+              <a href="mailto:Secretariat@saus.org.za" style="display:block;font-size:13px">Secretariat@saus.org.za</a>
+              <a href="tel:+27791295948" style="display:block;font-size:13px">+27 79 129 5948</a>
+              <p style="margin:4px 0 0;color:var(--text-lt);font-size:12px">Mon–Fri · 08:00–17:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Continental Presence -->
+  <section class="section" style="background:var(--navy)" id="about-continental">
+    <div class="wrap">
+      <div class="sec-header" style="margin-bottom:40px">
+        <div class="ref" style="color:rgba(255,255,255,.4)">SAUS/CONTINENTAL/2026</div>
+        <h2 style="color:var(--white)">Continental <em>Presence</em></h2>
+        <p class="lead" style="color:rgba(255,255,255,.65)">SAUS situates South African student activism within the broader context of African solidarity and continental higher education development.</p>
+      </div>
+      <div class="grid-3">
+        <div class="info-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+          <div class="info-card-accent green"></div>
+          <div class="info-card-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h4 style="color:var(--white)">Pan-African Solidarity</h4>
+          <p style="color:rgba(255,255,255,.6)">SAUS maintains bilateral relations with student representative bodies across the African continent, fostering solidarity on shared challenges in higher education access and funding.</p>
+        </div>
+        <div class="info-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+          <div class="info-card-accent gold"></div>
+          <div class="info-card-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4 style="color:var(--white)">SADC Engagement</h4>
+          <p style="color:rgba(255,255,255,.6)">Active participation in Southern African Development Community student forums, contributing to regional policy development on higher education access, mobility, and recognition of qualifications.</p>
+        </div>
+        <div class="info-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+          <div class="info-card-accent red"></div>
+          <div class="info-card-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h4 style="color:var(--white)">African Union Forums</h4>
+          <p style="color:rgba(255,255,255,.6)">Engagement with African Union Commission structures on the Continental Education Strategy for Africa (CESA) and the African Continental Free Trade Area's implications for student mobility.</p>
+        </div>
+      </div>
+      <div class="official-quote" style="margin-top:48px;margin-bottom:0">
+        <p>"The struggles of South African students are inseparable from the struggles of students across Africa. SAUS stands in solidarity with every student fighting for the right to quality, affordable education."</p>
+        <cite>SAUS 9th National Congress — Continental Solidarity Resolution, 2025</cite>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: CAMPAIGNS
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-campaigns">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Campaigns & Policy Positions</span></div></div>
+
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/img4.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/CAMPAIGNS/2025–2026 · Policy Advocacy</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Policy Campaigns <em>&amp; Resolutions</em></h1>
+      <p class="hero-lead">The following policy positions were formally resolved at the 9th National Elective Congress (2025) and represent SAUS's official advocacy agenda for the current term of office.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header">
+            <div class="ref">SAUS/RES/2025 — 9th Congress Resolutions</div>
+            <h2>Active <em>Campaign Resolutions</em></h2>
+            <p class="lead">All resolutions below carry the full authority of the 9th National Elective Congress and are binding on the 9th National Executive Committee.</p>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num green">RES 01</div>
+              <div>
+                <div class="resolution-title">NSFAS Reform & Redesign</div>
+                <div class="resolution-meta"><span>Priority: <strong>Critical</strong></span><span>Status: Active</span><span>Dept: DHET</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>SAUS resolves to campaign for the complete redesign of the National Student Financial Aid Scheme (NSFAS) to ensure sustainability, reliability, and the establishment of a strengthened communication system between the scheme and beneficiary students.</p>
+              <p>SAUS further resolves to develop an alternative, sustainable funding model that centres student dignity and guarantees that no qualifying student is denied support mid-academic year. This includes addressing the chronic failures in disbursement timelines and the lack of transparent student communication protocols.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-green" style="flex-shrink:0">In Progress</span>
+              <div class="progress-track"><div class="progress-fill" style="width:65%"></div></div>
+              <span class="progress-label">65% complete</span>
+            </div>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num red">RES 02</div>
+              <div>
+                <div class="resolution-title">Historical Student Debt Relief</div>
+                <div class="resolution-meta"><span>Priority: <strong>Critical</strong></span><span>Status: Active</span><span>Dept: DHET / Treasury</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>SAUS resolves to actively campaign for the government to clear all historical student debt, commencing with deceased students and unemployed graduates who have demonstrated inability to service outstanding balances.</p>
+              <p>SAUS further resolves to initiate a lobbying campaign against proposed amendments to the National Credit Act that would list student debt with credit bureaus — a punitive measure that would close future financial opportunities for an entire generation of graduates.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-red" style="flex-shrink:0">Active</span>
+              <div class="progress-track"><div class="progress-fill red" style="width:30%"></div></div>
+              <span class="progress-label">30% complete</span>
+            </div>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num" style="background:var(--navy-light)">RES 03</div>
+              <div>
+                <div class="resolution-title">Missing Middle & Postgraduate Funding</div>
+                <div class="resolution-meta"><span>Priority: <strong>High</strong></span><span>Status: In Development</span><span>Dept: DHET</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>SAUS resolves to develop a sustainable, dedicated funding scheme for "missing middle" students, postgraduate students, and N+ students who have exceeded the standard funded period. This scheme must be developed in consultation with the Department of Higher Education and Training and relevant Treasury officials.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-navy" style="flex-shrink:0">Development</span>
+              <div class="progress-track"><div class="progress-fill" style="width:45%;background:var(--navy-light)"></div></div>
+              <span class="progress-label">45% complete</span>
+            </div>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num gold">RES 04</div>
+              <div>
+                <div class="resolution-title">GBV & Campus Safety Standards</div>
+                <div class="resolution-meta"><span>Priority: <strong>High</strong></span><span>Status: Under Investigation</span><span>Dept: All Institutions</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>SAUS mandates the NEC to investigate whether all institutions have fit-for-purpose Gender-Based Violence and Femicide (GBVF) policies, and to propose minimum standards for the appointment and conduct of private and institutional security personnel in relation to the handling of GBVF cases and student protests.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-gold" style="flex-shrink:0">Investigation</span>
+              <div class="progress-track"><div class="progress-fill gold" style="width:50%"></div></div>
+              <span class="progress-label">50% complete</span>
+            </div>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num green">RES 05</div>
+              <div>
+                <div class="resolution-title">Abolition of Application Fees</div>
+                <div class="resolution-meta"><span>Priority: <strong>High</strong></span><span>Status: Active Campaign</span><span>Dept: All Institutions</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>SAUS resolves to campaign actively for the abolition of application fees at all public higher education institutions in South Africa. Application fees constitute an unjust barrier that prevents the most economically vulnerable students from accessing the right to apply for a university place.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-green" style="flex-shrink:0">Active</span>
+              <div class="progress-track"><div class="progress-fill" style="width:80%"></div></div>
+              <span class="progress-label">80% complete</span>
+            </div>
+          </div>
+
+          <div class="resolution">
+            <div class="resolution-head">
+              <div class="res-num" style="background:var(--navy-light)">RES 06</div>
+              <div>
+                <div class="resolution-title">Artificial Intelligence in Higher Education</div>
+                <div class="resolution-meta"><span>Priority: <strong>Medium</strong></span><span>Status: Working Paper Phase</span><span>Dept: All Institutions / DHET</span></div>
+              </div>
+            </div>
+            <div class="resolution-body">
+              <p>The 9th Congress resolves that SAUS must develop a comprehensive working paper on the role of Artificial Intelligence in strengthening and broadening academic and administrative support for students across the higher education sector. The paper must address equity implications for students from under-resourced backgrounds.</p>
+            </div>
+            <div class="resolution-footer">
+              <span class="badge badge-gray" style="flex-shrink:0">New</span>
+              <div class="progress-track"><div class="progress-fill" style="width:15%;background:var(--navy-light)"></div></div>
+              <span class="progress-label">15% complete</span>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">Resolution Index</div>
+            <a class="sidebar-link">RES 01 — NSFAS Reform</a>
+            <a class="sidebar-link">RES 02 — Debt Relief</a>
+            <a class="sidebar-link">RES 03 — Missing Middle</a>
+            <a class="sidebar-link">RES 04 — GBV Standards</a>
+            <a class="sidebar-link">RES 05 — Application Fees</a>
+            <a class="sidebar-link">RES 06 — AI in Education</a>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--gold)">
+            <div class="sidebar-title">Congress Reference</div>
+            <div style="font-size:13px;color:var(--text-mid);line-height:1.8">
+              <p style="margin:0 0 6px"><strong style="color:var(--navy)">9th National Congress</strong></p>
+              <p style="margin:0 0 4px">Day 1: NMU, Port Elizabeth</p>
+              <p style="margin:0 0 4px">Day 2: Kimberley, N. Cape</p>
+              <p style="margin:0;font-family:var(--ff-mono);font-size:11px;color:var(--text-lt)">July–August 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: LEADERSHIP
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-leadership">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Leadership — 9th NEC</span></div></div>
+
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG28.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/NEC/9TH/2025 · National Executive Committee</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">9th National Executive <em>Committee</em></h1>
+      <p class="hero-lead">Elected at the 9th National Elective Congress — July and August 2025. The 9th NEC represents students across all 26 public universities in the Republic of South Africa.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <!-- President -->
+          <div class="sec-header">
+            <div class="ref">SAUS/PRESIDENT/9TH</div>
+            <h2>Office of the <em>President</em></h2>
+          </div>
+          <div class="leader-feature" style="margin-bottom:48px">
+            <div class="leader-avatar-lg"><img src="/leadership/LeadersIMG/nkambako.jpg" alt="Siyabonga Moses Nkambako, SAUS President"></div>
+            <div>
+              <div class="badge badge-gold" style="margin-bottom:12px">President — 9th National Executive Committee</div>
+              <h2 style="font-family:var(--ff-serif);font-size:28px;font-weight:700;color:var(--navy);margin-bottom:4px">Siyabonga Moses Nkambako</h2>
+              <div style="font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px">University of KwaZulu-Natal (UKZN)</div>
+              <p style="color:var(--text-mid);font-size:15px;line-height:1.75;max-width:560px">President Nkambako leads the 9th NEC with a mandate to confront the suppression of student activism and advance transformative student governance across South African higher education institutions. Elected at the 9th National Elective Congress, he represents the aspirations of over one million students.</p>
+              <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap">
+                <span class="badge badge-green">Elected 2025</span>
+                <span class="badge badge-navy">UKZN</span>
+                <span class="badge badge-gold">9th Congress</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEC Table -->
+          <div class="sec-header">
+            <div class="ref">SAUS/NEC/FULL-LIST/2025</div>
+            <h2>Principal <em>Office Bearers</em></h2>
+          </div>
+          <div class="grid-4" style="margin-bottom:16px">
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm"><img src="/leadership/LeadersIMG/khasembe.jpg" alt="Mcntosh Khasembe"></div>
+              <div class="leader-name">Mcntosh Khasembe</div>
+              <div class="leader-role">Deputy President</div>
+              <div class="leader-uni">University of the Western Cape</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm"><img src="/leadership/LeadersIMG/nxumalo.jpg" alt="Nhlonipho Nxumalo"></div>
+              <div class="leader-name">Nhlonipho Nxumalo</div>
+              <div class="leader-role">Secretary General</div>
+              <div class="leader-uni">University of the Witwatersrand</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm"><img src="/leadership/LeadersIMG/mokoena.jpg" alt="Jemina Mokoena"></div>
+              <div class="leader-name">Jemina Mokoena</div>
+              <div class="leader-role">1st Deputy Secretary General</div>
+              <div class="leader-uni">Central University of Technology</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm"><img src="/leadership/LeadersIMG/nyaka.jpg" alt="Martin Mnyaka"></div>
+              <div class="leader-name">Martin Mnyaka</div>
+              <div class="leader-role">2nd Deputy Secretary General</div>
+              <div class="leader-uni">University of the Free State</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm"><img src="/leadership/LeadersIMG/mabilane.jpg" alt="Nkosinathi Mabilane"></div>
+              <div class="leader-name">Nkosinathi Mabilane</div>
+              <div class="leader-role">Treasurer General</div>
+              <div class="leader-uni">University of South Africa</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--navy),var(--green))">NM</div>
+              <div class="leader-name">Nomfundo Mbatha</div>
+              <div class="leader-role">International Relations Officer</div>
+              <div class="leader-uni">National Office</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--red),#6b0a00)">TM</div>
+              <div class="leader-name">Thato Masekoa</div>
+              <div class="leader-role">Spokesperson</div>
+              <div class="leader-uni">National Office</div>
+            </div>
+            <div class="leader-card-sm">
+              <div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--gold),#7a5a00)">OV</div>
+              <div class="leader-name">Olive Vilakazi</div>
+              <div class="leader-role">National Organiser</div>
+              <div class="leader-uni">National Office</div>
+            </div>
+          </div>
+          <p style="font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);margin-bottom:48px">Source: SAUS 9th National Elective Congress — August 2025</p>
+
+          <!-- Institutional Representation -->
+          <div class="sec-header">
+            <div class="ref">SAUS/NEC/INSTITUTIONS/2025</div>
+            <h2>Institutional <em>Representation</em></h2>
+          </div>
+          <div class="info-card" style="border-top:3px solid var(--green)">
+            <p style="font-size:15px;color:var(--text-mid);line-height:1.75;margin-bottom:18px">Beyond the principal office bearers, the 9th National Executive Committee draws its mandate from Student Representative Councils (SRCs) across all <strong>26 public universities</strong> in the Republic. Each institution's elected SRC leadership forms the broader structure to which the NEC is accountable.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <span class="badge badge-navy">UCT</span><span class="badge badge-green">Wits</span><span class="badge badge-navy">Stellenbosch</span><span class="badge badge-green">UP</span><span class="badge badge-navy">UJ</span><span class="badge badge-green">UKZN</span><span class="badge badge-navy">Rhodes</span><span class="badge badge-green">UWC</span><span class="badge badge-navy">UFS</span><span class="badge badge-green">UNISA</span><span class="badge badge-navy">NMU</span><span class="badge badge-green">UFH</span><span class="badge badge-navy">WSU</span><span class="badge badge-green">NWU</span><span class="badge badge-navy">UL</span><span class="badge badge-green">UniZulu</span><span class="badge badge-navy">UniVen</span><span class="badge badge-green">SMU</span><span class="badge badge-navy">SPU</span><span class="badge badge-green">UMP</span><span class="badge badge-navy">CPUT</span><span class="badge badge-green">DUT</span><span class="badge badge-navy">TUT</span><span class="badge badge-green">VUT</span><span class="badge badge-navy">MUT</span><span class="badge badge-green">CUT</span>
+            </div>
+            <p style="font-size:12px;color:var(--text-lt);margin-top:18px;margin-bottom:0">Full institutional representative listings are published as they are confirmed by each SRC. For institution-specific representation, contact the <a href="#" onclick="showPage('contact');return false" style="color:var(--green)">SAUS Secretariat</a>.</p>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">Congress Details</div>
+            <div style="font-size:13px;color:var(--text-mid);line-height:1.8">
+              <p style="margin:0 0 6px"><strong style="color:var(--navy)">9th Congress Theme</strong></p>
+              <p style="font-style:italic;font-size:12.5px;color:var(--text-lt);margin:0 0 12px">"Confronting the suppression of student activism and advancing transformative student governance."</p>
+              <p style="margin:0 0 4px;font-weight:600">Venue 1</p>
+              <p style="margin:0 0 8px;font-size:12px">Nelson Mandela University, Port Elizabeth — July 2025</p>
+              <p style="margin:0 0 4px;font-weight:600">Venue 2</p>
+              <p style="margin:0;font-size:12px">Boontjieskraal, Kimberley, N. Cape — August 2025</p>
+            </div>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--red)">
+            <div class="sidebar-title">Media Enquiries</div>
+            <div style="font-size:13.5px;line-height:1.8;color:var(--text-mid)">
+              <p style="margin:0 0 4px;font-weight:600;color:var(--navy)">Thato Masekoa</p>
+              <p style="margin:0 0 4px;font-size:12px;color:var(--text-lt)">SAUS Spokesperson</p>
+              <a href="tel:+27791295948" style="color:var(--green);font-size:13.5px">+27 79 129 5948</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: NEWS
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-news">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Newsroom</span></div></div>
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG18.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/MEDIA/2025–2026 · Official Newsroom</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Statements, Releases <em>&amp; Media</em></h1>
+      <p class="hero-lead">Official press releases, policy statements, congress communiqués, and media advisories from the South African Union of Students.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header"><div class="ref">SAUS/MEDIA/RELEASES — Most Recent First</div><h2>Official <em>Releases</em></h2></div>
+          <!-- Featured -->
+          <div class="panel" style="margin-bottom:24px;border-top:4px solid var(--gold)">
+            <div class="panel-header" style="background:var(--navy-mid)"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div><h3>Featured Statement — August 2025</h3></div>
+            <div class="panel-body">
+              <div class="badge badge-gold" style="margin-bottom:14px">SAUS/STM/009/2025 — Congress Statement</div>
+              <h3 style="font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--navy);margin-bottom:10px">Post-9th National Congress Statement: SAUS 9th NEC Elected</h3>
+              <p style="color:var(--text-mid);line-height:1.75">Following the successful conclusion of the 9th National Elective Congress in two stages — Nelson Mandela University (July 2025) and Boontjieskraal, Kimberley (August 2025) — SAUS announces the election of the 9th National Executive Committee under the theme: <em>"Confronting the suppression of student activism and advancing transformative student governance."</em></p>
+              <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap">
+                <a href="mailto:Secretariat@saus.org.za" class="btn btn-navy btn-sm">Request Full Statement</a>
+                <a href="mailto:Secretariat@saus.org.za" class="btn btn-outline btn-sm">Request PDF</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- News List -->
+          <div>
+            <div class="news-item">
+              <div class="news-date-col"><div class="news-day">14</div><div class="news-month">Jul '25</div></div>
+              <div style="flex:1">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap">
+                  <div class="news-type urgent">Urgent Statement</div>
+                  <span style="font-family:var(--ff-mono);font-size:10px;color:var(--text-lt)">SAUS/STM/008/2025</span>
+                </div>
+                <div class="news-title">SAUS Calls for Complete NSFAS Redesign — Students Cannot Wait</div>
+                <div class="news-excerpt">SAUS demands immediate intervention by the Department of Higher Education and Training to overhaul the National Student Financial Aid Scheme, citing chronic disbursement failures and a breakdown in student communication.</div>
+                <a class="news-link" href="mailto:Secretariat@saus.org.za">Request Full Statement →</a>
+              </div>
+              <div style="flex-shrink:0"><span class="badge badge-red">Urgent</span></div>
+            </div>
+            <div class="news-item">
+              <div class="news-date-col"><div class="news-day">02</div><div class="news-month">Jun '25</div></div>
+              <div style="flex:1">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap">
+                  <div class="news-type policy">Policy Statement</div>
+                  <span style="font-family:var(--ff-mono);font-size:10px;color:var(--text-lt)">SAUS/STM/007/2025</span>
+                </div>
+                <div class="news-title">SAUS Categorically Opposes National Credit Act Amendments</div>
+                <div class="news-excerpt">SAUS rejects proposed amendments to the National Credit Act that would list outstanding student debt with credit bureaus, describing the proposal as a punitive measure that will irreparably harm an entire generation of graduates.</div>
+                <a class="news-link" href="mailto:Secretariat@saus.org.za">Request Full Statement →</a>
+              </div>
+              <div style="flex-shrink:0"><span class="badge badge-navy">Policy</span></div>
+            </div>
+            <div class="news-item">
+              <div class="news-date-col"><div class="news-day">19</div><div class="news-month">May '25</div></div>
+              <div style="flex:1">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap">
+                  <div class="news-type statement">Statement</div>
+                  <span style="font-family:var(--ff-mono);font-size:10px;color:var(--text-lt)">SAUS/STM/006/2025</span>
+                </div>
+                <div class="news-title">SAUS Mandates GBV Policy Review Across All 26 Universities</div>
+                <div class="news-excerpt">The NEC has been mandated to investigate whether all institutions have fit-for-purpose GBVF policies and to develop minimum standards for campus security conduct in handling gender-based violence cases.</div>
+                <a class="news-link" href="mailto:Secretariat@saus.org.za">Request Full Statement →</a>
+              </div>
+              <div style="flex-shrink:0"><span class="badge badge-green">Official</span></div>
+            </div>
+            <div class="news-item">
+              <div class="news-date-col"><div class="news-day">03</div><div class="news-month">Apr '25</div></div>
+              <div style="flex:1">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap">
+                  <div class="news-type policy">Policy Statement</div>
+                  <span style="font-family:var(--ff-mono);font-size:10px;color:var(--text-lt)">SAUS/STM/005/2025</span>
+                </div>
+                <div class="news-title">SAUS Campaigns for Full Historical Student Debt Write-off</div>
+                <div class="news-excerpt">SAUS announces a formal campaign compelling government to clear all historical student debt, with priority given to deceased students and unemployed graduates.</div>
+                <a class="news-link" href="mailto:Secretariat@saus.org.za">Request Full Statement →</a>
+              </div>
+              <div style="flex-shrink:0"><span class="badge badge-gold">Campaign</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">Filter by Type</div>
+            <a class="sidebar-link">All Releases</a>
+            <a class="sidebar-link">Congress Statements</a>
+            <a class="sidebar-link">Urgent Statements</a>
+            <a class="sidebar-link">Policy Positions</a>
+            <a class="sidebar-link">Media Advisories</a>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--red)">
+            <div class="sidebar-title">Media Contact</div>
+            <div style="font-size:13px;color:var(--text-mid);line-height:1.8">
+              <p style="margin:0 0 4px;font-weight:600;color:var(--navy)">Thato Masekoa</p>
+              <p style="margin:0 0 2px">Spokesperson, SAUS</p>
+              <a href="tel:+27791295948" style="color:var(--green)">+27 79 129 5948</a><br>
+              <a href="mailto:Secretariat@saus.org.za" style="color:var(--green)">Secretariat@saus.org.za</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: EVENTS
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-events">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Events & Engagements</span></div></div>
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG29.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/EVENTS/2026 · Engagements Calendar</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Official Events <em>&amp; Engagements</em></h1>
+      <p class="hero-lead">National congresses, student leadership summits, policy town halls, and campus activations scheduled for the current term of office.</p>
+    </div>
+  </div>
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header"><div class="ref">SAUS/EVT/UPCOMING/2026</div><h2>Upcoming <em>Engagements</em></h2></div>
+          <div class="event-row green">
+            <div class="event-cal"><div class="event-cal-month">Sep</div><div class="event-cal-day">15</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">National Student Leadership Summit 2026</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>University of Johannesburg</span><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>09:00 – 17:00</span><span class="badge badge-green">Open Registration</span></div>
+              <div class="event-desc">Annual gathering of SRC leaders from all 26 universities to align on national student priorities, share governance best practices, and engage directly with NEC leadership on the 2026 advocacy agenda.</div>
+              <button class="btn btn-green btn-sm" style="margin-top:14px">Register to Attend →</button>
+            </div>
+          </div>
+          <div class="event-row red">
+            <div class="event-cal" style="background:var(--red)"><div class="event-cal-month">Oct</div><div class="event-cal-day">02</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">NSFAS Reform Town Hall — KwaZulu-Natal Region</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Durban University of Technology</span><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 – 14:00</span><span class="badge badge-red">KZN Region</span></div>
+              <div class="event-desc">Regional town hall enabling students to engage directly with SAUS leadership on the state of NSFAS reform, share testimonials, and contribute to the national advocacy submission.</div>
+              <button class="btn btn-navy btn-sm" style="margin-top:14px">Register to Attend →</button>
+            </div>
+          </div>
+          <div class="event-row gold">
+            <div class="event-cal" style="background:#7a5a00"><div class="event-cal-month">Oct</div><div class="event-cal-day">16</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">GBV Awareness Month — National Campus Activation Tour</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Campuses Nationwide</span><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>All Day — Throughout October</span><span class="badge badge-gold">October Campaign</span></div>
+              <div class="event-desc">SAUS activates across multiple campuses throughout October as part of the GBV Awareness Month campaign — distributing resources, gathering testimonials, and advancing institutional accountability on GBVF policy.</div>
+              <button class="btn btn-outline btn-sm" style="margin-top:14px">View Schedule</button>
+            </div>
+          </div>
+          <div class="event-row" style="border-left-color:var(--navy-light)">
+            <div class="event-cal" style="background:var(--navy-light)"><div class="event-cal-month">Nov</div><div class="event-cal-day">08</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">9th NEC Mid-Term Review & Policy Workshop</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pretoria, Gauteng</span><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>08:00 – 18:00</span><span class="badge badge-navy">NEC Official</span></div>
+              <div class="event-desc">The 9th NEC mid-term review to assess progress on congress resolutions, review campaign outcomes, and develop the working paper on AI in higher education. Attendance restricted to NEC members and invitees.</div>
+              <button class="btn btn-outline btn-sm" style="margin-top:14px">View Details</button>
+            </div>
+          </div>
+
+          <div class="sec-header" style="margin-top:56px"><div class="ref">SAUS/EVT/PAST/2025</div><h2>Past <em>Engagements</em></h2></div>
+          <div class="event-row" style="opacity:.55;border-left-color:var(--border-dk)">
+            <div class="event-cal" style="background:var(--text-lt)"><div class="event-cal-month">Aug</div><div class="event-cal-day">23</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">9th National Elective Congress — Day 2 (Completed)</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Boontjieskraal, Kimberley, Northern Cape</span><span class="badge badge-gray">Completed</span></div>
+              <div class="event-desc">Final session — 9th NEC elected and key resolutions adopted on NSFAS, student debt, GBV, and AI in education.</div>
+            </div>
+          </div>
+          <div class="event-row" style="opacity:.55;border-left-color:var(--border-dk)">
+            <div class="event-cal" style="background:var(--text-lt)"><div class="event-cal-month">Jul</div><div class="event-cal-day">10</div></div>
+            <div style="flex:1">
+              <div class="event-body-title">9th National Elective Congress — Day 1 (Completed)</div>
+              <div class="event-meta"><span class="event-meta-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Nelson Mandela University, Port Elizabeth</span><span class="badge badge-gray">Completed</span></div>
+              <div class="event-desc">Opening of the 9th Congress. Delegates from all 26 universities convened to debate the future of student governance in South Africa.</div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel"><div class="sidebar-title">Event Categories</div><a class="sidebar-link">National Congresses</a><a class="sidebar-link">Regional Town Halls</a><a class="sidebar-link">Campus Activations</a><a class="sidebar-link">Leadership Summits</a><a class="sidebar-link">Policy Workshops</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: GALLERY
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-gallery">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Gallery</span></div></div>
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG23.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/MEDIA/GALLERY — Official Photo Archive</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Official <em>Photo Gallery</em></h1>
+      <p class="hero-lead">A visual record of SAUS engagements — congresses, campus activations, student leadership summits, and advocacy milestones.</p>
+    </div>
+  </div>
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="sec-header"><div class="ref">SAUS/GAL/2025 — 9th National Congress</div><h2>9th National <em>Elective Congress</em></h2></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:56px">
+        <div style="grid-column:span 2;aspect-ratio:2/1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/img1.jpg" alt="9th National Congress" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/img2.jpg" alt="Congress delegates" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/img3.jpg" alt="Student leadership" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/img4.jpg" alt="Congress proceedings" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/img5.jpg" alt="NEC election" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      </div>
+      <div class="sec-header"><div class="ref">SAUS/GAL/ACTIVATIONS — Campus Programme</div><h2>Campus <em>Activations</em></h2></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/IMG6.jpg" alt="Campus activation" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/IMG7.jpg" alt="Student engagement" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/IMG8.jpg" alt="Campus outreach" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="grid-column:span 2;aspect-ratio:2/1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/IMG9.jpg" alt="National campaign" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div style="aspect-ratio:1;border-radius:2px;overflow:hidden;border:1px solid var(--border)"><img src="/gallery/galleryIMG/IMG10.jpg" alt="Student solidarity" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE: CONTACT
+══════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="breadcrumb-bar"><div class="breadcrumb-inner"><span onclick="showPage('home')">Home</span><span class="sep">›</span><span class="current">Contact the Secretariat</span></div></div>
+  <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG27.jpg');background-size:cover;background-position:center;padding:56px 32px">
+    <div class="hero-inner">
+      <div class="hero-ref">SAUS/CONTACT/2026 · Secretariat</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">Contact <em>the Secretariat</em></h1>
+      <p class="hero-lead">Direct correspondence for students, officials, media representatives, and institutional partners. All enquiries are acknowledged within two business days.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white)">
+    <div class="wrap">
+      <div class="with-sidebar">
+        <div>
+          <div class="sec-header"><div class="ref">SAUS/ENQ/FORM/2026</div><h2>Submit an <em>Enquiry</em></h2></div>
+          <div class="panel" style="margin-bottom:32px">
+            <div class="panel-header"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg></div><h3>Official Enquiry Form</h3></div>
+            <div class="panel-body">
+              <div class="form-row">
+                <div class="form-group"><label class="form-label">First Name<span class="req">*</span></label><input class="form-control" type="text" placeholder="Your first name"/></div>
+                <div class="form-group"><label class="form-label">Surname<span class="req">*</span></label><input class="form-control" type="text" placeholder="Your surname"/></div>
+              </div>
+              <div class="form-group"><label class="form-label">Email Address<span class="req">*</span></label><input class="form-control" type="email" placeholder="your.email@institution.ac.za"/></div>
+              <div class="form-row">
+                <div class="form-group"><label class="form-label">Contact Number</label><input class="form-control" type="tel" placeholder="+27 82 000 0000"/></div>
+                <div class="form-group"><label class="form-label">Capacity<span class="req">*</span></label>
+                  <select class="form-control">
+                    <option value="">— Select your capacity —</option>
+                    <option>Student</option>
+                    <option>SRC Member / Office Bearer</option>
+                    <option>University Administration</option>
+                    <option>Government Official</option>
+                    <option>Media / Journalist</option>
+                    <option>NGO / Civil Society Organisation</option>
+                    <option>Academic / Researcher</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group"><label class="form-label">Institution / Organisation<span class="req">*</span></label><input class="form-control" type="text" placeholder="Name of your institution or organisation"/></div>
+              <div class="form-group"><label class="form-label">Subject / Matter<span class="req">*</span></label><input class="form-control" type="text" placeholder="Brief subject of your enquiry"/></div>
+              <div class="form-group"><label class="form-label">Detailed Enquiry<span class="req">*</span></label><textarea class="form-control" rows="5" placeholder="Please provide the full details of your enquiry. All information is treated with confidentiality."></textarea></div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="popia"/>
+                <label for="popia">I consent to SAUS processing my personal information in accordance with the <strong>Protection of Personal Information Act (POPIA), Act 4 of 2013</strong>. My information will be used solely for the purpose of responding to this enquiry and will not be shared with third parties without consent.</label>
+              </div>
+              <button class="btn btn-navy" style="width:100%;justify-content:center" onclick="submitForm()">Submit Formal Enquiry →</button>
+              <p class="form-note" style="margin-top:12px;text-align:center">All enquiries are acknowledged within 2 business days. Reference number provided on submission.</p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-panel">
+            <div class="sidebar-title">Secretariat Contact</div>
+            <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a></div></div></div>
+            <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="contact-label">Telephone</div><div class="contact-value"><a href="tel:+27791295948">+27 79 129 5948</a></div></div></div>
+            <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><div class="contact-label">WhatsApp</div><div class="contact-value"><a href="tel:+27791295948">+27 79 129 5948</a></div></div></div>
+            <div class="contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="contact-label">Location</div><div class="contact-value">Johannesburg, Gauteng<br>South Africa</div></div></div>
+            <div class="contact-row" style="border:none"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="contact-label">Office Hours</div><div class="contact-value">Mon–Fri · 08:00–17:00</div></div></div>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--red)">
+            <div class="sidebar-title">Media Spokesperson</div>
+            <div style="font-size:13.5px;color:var(--text-mid);line-height:1.8">
+              <p style="margin:0 0 2px;font-weight:700;color:var(--navy)">Thato Masekoa</p>
+              <p style="margin:0 0 8px;font-size:12px;color:var(--text-lt)">SAUS Official Spokesperson</p>
+              <a href="tel:+27791295948" style="color:var(--green)">+27 79 129 5948</a>
+            </div>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--gold);background:linear-gradient(135deg,#faf8f0 0%,#fff 100%)">
+            <div class="sidebar-title" style="color:var(--navy)">Staff Portal</div>
+            <p style="font-size:13px;color:var(--text-mid);margin:0 0 14px;line-height:1.6">SAUS staff and administrators can log in to the content management system to manage news, events, campaigns, and documents.</p>
+            <a href="https://admin.saus.org.za" class="admin-link btn btn-navy" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;text-decoration:none;font-size:13.5px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Staff Login
+            </a>
+          </div>
+          <div class="sidebar-panel" style="border-top-color:var(--navy)">
+            <div class="sidebar-title">Official Channels</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);padding:8px 0;border-bottom:1px solid var(--stone)" href="https://www.facebook.com/SAUStudents/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--navy)"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook</a>
+              <a style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);padding:8px 0;border-bottom:1px solid var(--stone)" href="https://za.linkedin.com/company/south-african-union-of-students" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--navy)"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+              <a style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);padding:8px 0;border-bottom:1px solid var(--stone)" href="https://www.instagram.com/sa.union.of.students/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;color:var(--navy)"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
+              <a style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-mid);padding:8px 0" href="https://www.tiktok.com/@southafricanunionofstud8" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--navy)"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.49a8.16 8.16 0 0 0 4.77 1.52V7.56a4.85 4.85 0 0 1-1-.87z"/></svg> TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════ FOOTER ══════ -->
+<footer id="footer">
+  <div class="footer-gov-bar">
+    <div class="footer-gov-bar-inner">
+      <p>🇿🇦 Republic of South Africa — South African Union of Students (SAUS)</p>
+      <p>Official National Representative Body in Higher Education · Established April 2006</p>
+      <p>SAUS/GOV/2026 · POPIA Compliant</p>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-main-inner">
+      <div class="footer-cols">
+        <div>
+          <div class="footer-brand-name">South African Union of Students</div>
+          <div class="footer-brand-sub">SAUS · Official National Student Body · Est. 2006</div>
+          <p class="footer-brand-desc">The official representative body for students across all 26 public universities in the Republic of South Africa — empowering student voices, advancing higher education.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/SAUStudents/" title="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/sa.union.of.students/" title="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://za.linkedin.com/company/south-african-union-of-students" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.tiktok.com/@southafricanunionofstud8" title="TikTok" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.49a8.16 8.16 0 0 0 4.77 1.52V7.56a4.85 4.85 0 0 1-1-.87z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <button onclick="showPage('home')">Home</button>
+          <button onclick="showPage('about')">About SAUS</button>
+          <button onclick="showPage('campaigns')">Campaigns</button>
+          <button onclick="showPage('leadership')">NEC Leadership</button>
+          <button onclick="showPage('news')">Newsroom</button>
+          <button onclick="showPage('events')">Events</button>
+          <button onclick="showPage('gallery')">Gallery</button>
+          <a href="/nsfas/">NSFAS Guide</a>
+          <a href="/apply/">Universities</a>
+          <button onclick="showPage('contact')">Contact</button>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Policy Areas</div>
+          <p>NSFAS Reform</p>
+          <p>Student Debt Relief</p>
+          <p>Missing Middle Funding</p>
+          <p>GBV &amp; Campus Safety</p>
+          <p>No Application Fees</p>
+          <p>AI in Higher Education</p>
+          <p>Higher Education Act Review</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Secretariat</div>
+          <a href="mailto:Secretariat@saus.org.za">Secretariat@saus.org.za</a>
+          <a href="tel:+27791295948">+27 79 129 5948</a>
+          <p>Johannesburg, Gauteng</p>
+          <p>South Africa</p>
+          <p>Mon–Fri · 08:00–17:00</p>
+          <p style="margin-top:10px;color:rgba(255,255,255,.2);font-size:11px;font-family:var(--ff-mono)">www.saus.org.za</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="https://admin.saus.org.za" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.85)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stripe"></div>
+</footer>
+
+<!-- Toast -->
+<div id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;color:var(--green-lt);display:inline-block;vertical-align:middle;margin-right:8px"><polyline points="20 6 9 17 4 12"/></svg>Your enquiry has been submitted. Reference: SAUS/ENQ/2026/001. We will respond within 2 business days.</div>
+
+<!-- Cookie -->
+<div id="cookie">
+  <p>This website uses cookies to improve your experience in accordance with the <a href="#">Protection of Personal Information Act (POPIA), Act 4 of 2013</a>.</p>
+  <div class="cookie-btns">
+    <button class="c-accept" onclick="acceptC()">Accept</button>
+    <button class="c-decline" onclick="declineC()">Decline</button>
+  </div>
+</div>
+
+<script>
+const PAGES=['home','about','campaigns','leadership','news','events','gallery','contact'];
+
+function showPage(id){
+  PAGES.forEach(p=>{
+    const pg=document.getElementById('page-'+p);
+    if(pg)pg.classList.remove('active');
+  });
+  document.querySelectorAll('.nav-item,.mobile-nav-item').forEach(n=>n.classList.remove('active'));
+  const t=document.getElementById('page-'+id);
+  if(t){t.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+  document.querySelectorAll('.nav-item,.mobile-nav-item').forEach(n=>{
+    const oc=n.getAttribute('onclick')||'';
+    if(oc.includes("'"+id+"'"))n.classList.add('active');
+  });
+}
+
+window.addEventListener('scroll',()=>{
+  // header shadow handled by sticky itself
+});
+
+function toggleMenu(){
+  const m=document.getElementById('mnav');
+  m.classList.toggle('open');
+  const h=document.getElementById('ham');
+  const open=m.classList.contains('open');
+  h.children[0].style.transform=open?'rotate(45deg) translateY(7px)':'none';
+  h.children[1].style.opacity=open?'0':'1';
+  h.children[2].style.transform=open?'rotate(-45deg) translateY(-7px)':'none';
+}
+function closeMobile(){document.getElementById('mnav').classList.remove('open')}
+
+function submitForm(){
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),5000);
+}
+
+window.addEventListener('DOMContentLoaded',()=>{
+  if(!localStorage.getItem('saus_gov_cookie')){
+    setTimeout(()=>document.getElementById('cookie').classList.add('show'),1800);
+  }
+
+  // Stat counter animation
+  function animateCounter(el){
+    const target=parseInt(el.dataset.target,10);
+    const duration=1800;
+    const start=performance.now();
+    const step=now=>{
+      const p=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-p,3);
+      el.textContent=Math.floor(eased*target).toLocaleString('en-ZA');
+      if(p<1)requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  const statObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.querySelectorAll('.stat-num[data-target]').forEach(animateCounter);
+        statObs.unobserve(e.target);
+      }
+    });
+  },{threshold:.4});
+  const strip=document.querySelector('.stat-strip');
+  if(strip)statObs.observe(strip);
+});
+function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.getElementById('cookie').classList.remove('show')}
+function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
+
+/* ══ Admin / Staff CMS link resolver — works in dev and production ══ */
+(function(){
+  var h=location.hostname;
+  var adminUrl=(h==='localhost'||h==='127.0.0.1'||h==='')
+    ? 'http://localhost:3100'
+    : 'https://admin.saus.org.za';
+  document.querySelectorAll('a.admin-link').forEach(function(a){a.href=adminUrl;});
+})();
+</script>
+</body>
+</html>
