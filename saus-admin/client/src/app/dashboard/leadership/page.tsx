@@ -4,6 +4,7 @@ import { Plus, Pencil, Trash2, Award, GripVertical } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
+const UPLOADS = (API || 'http://localhost:4000/api').replace(/\/api\/?$/, '');
 
 export default function LeadershipPage() {
   const [leaders, setLeaders] = useState<any[]>([]);
@@ -111,7 +112,7 @@ export default function LeadershipPage() {
           </div>
           {form.photo && (
             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-              <img src={form.photo.startsWith('http') ? form.photo : `http://localhost:4000/uploads/${form.photo}`}
+              <img src={form.photo.startsWith('http') ? form.photo : `${UPLOADS}/uploads/${form.photo}`}
                 alt={form.name} className="w-12 h-12 rounded-full object-cover border-2 border-gold" />
               <span className="text-xs text-gray-500">Photo preview</span>
             </div>
@@ -159,7 +160,7 @@ export default function LeadershipPage() {
                   <td>
                     <div className="flex items-center gap-3">
                       {l.photo ? (
-                        <img src={l.photo.startsWith('http') ? l.photo : `http://localhost:4000/uploads/${l.photo}`} alt={l.name}
+                        <img src={l.photo.startsWith('http') ? l.photo : `${UPLOADS}/uploads/${l.photo}`} alt={l.name}
                           className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
                       ) : (
                         <div className="w-8 h-8 rounded-full bg-navy-50 flex items-center justify-center text-navy font-bold text-sm flex-shrink-0">

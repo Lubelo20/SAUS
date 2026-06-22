@@ -6,9 +6,10 @@ import toast from 'react-hot-toast';
 import { formatDistanceToNow } from 'date-fns';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
+const UPLOADS = (API || 'http://localhost:4000/api').replace(/\/api\/?$/, '');
 
 interface MediaItem {
-  id: string; url: string; originalName: string;
+  id: string; url: string; filename: string; originalName: string;
   size: number; mimeType: string; createdAt: string;
   width?: number; height?: number; alt?: string;
 }
@@ -142,7 +143,7 @@ export default function MediaPage() {
               <div key={item.id} onClick={() => setSelected(item)}
                 className={`relative aspect-square rounded-lg overflow-hidden cursor-pointer group border-2 transition-all
                   ${selected?.id === item.id ? 'border-navy' : 'border-transparent hover:border-navy/30'}`}>
-                <img src={item.url} alt={item.alt || item.originalName}
+                <img src={item.url && item.url.startsWith('http') ? item.url : `${UPLOADS}/uploads/${item.filename}`} alt={item.alt || item.originalName}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/20 transition-colors" />
               </div>
@@ -157,7 +158,7 @@ export default function MediaPage() {
                   <tr key={item.id} onClick={() => setSelected(item)} className="cursor-pointer">
                     <td>
                       <div className="flex items-center gap-2">
-                        <img src={item.url} alt="" className="w-8 h-8 rounded object-cover flex-shrink-0" />
+                        <img src={item.url && item.url.startsWith('http') ? item.url : `${UPLOADS}/uploads/${item.filename}`} alt="" className="w-8 h-8 rounded object-cover flex-shrink-0" />
                         <span className="text-sm font-medium text-navy truncate max-w-[200px]">{item.originalName}</span>
                       </div>
                     </td>
@@ -188,7 +189,7 @@ export default function MediaPage() {
             </button>
           </div>
           <div className="rounded-lg overflow-hidden bg-gray-100">
-            <img src={selected.url} alt={selected.alt || ''} className="w-full object-contain max-h-48" />
+            <img src={selected.url && selected.url.startsWith('http') ? selected.url : `${UPLOADS}/uploads/${selected.filename}`} alt={selected.alt || ''} className="w-full object-contain max-h-48" />
           </div>
           <div className="space-y-2 text-sm">
             <div>

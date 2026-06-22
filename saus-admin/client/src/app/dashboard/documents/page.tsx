@@ -5,6 +5,7 @@ import { formatDistanceToNow } from 'date-fns';
 import toast from 'react-hot-toast';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
+const UPLOADS = (API || 'http://localhost:4000/api').replace(/\/api\/?$/, '');
 
 const CATEGORIES = ['', 'Policy', 'Constitution', 'Report', 'Press Release', 'Circular', 'Other'];
 
@@ -148,7 +149,7 @@ export default function DocumentsPage() {
                     </td>
                     <td>
                       <div className="flex items-center justify-center gap-1">
-                        <a href={`http://localhost:4000/uploads/${d.filename}`} target="_blank" rel="noopener noreferrer"
+                        <a href={`${UPLOADS}/uploads/${d.filename}`} target="_blank" rel="noopener noreferrer"
                           className="btn-ghost btn-icon" title="Download"><Download className="w-3.5 h-3.5" /></a>
                         <button onClick={() => deleteDoc(d.id, d.title)}
                           className="btn-ghost btn-icon text-red-400 hover:bg-red-50 hover:text-red-saus"><Trash2 className="w-3.5 h-3.5" /></button>
