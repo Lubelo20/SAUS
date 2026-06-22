@@ -23,6 +23,10 @@ import publicRoutes from './routes/public';
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// Trust the reverse proxy (Render/Vercel) so req.protocol reflects X-Forwarded-Proto
+// (https) — used to build absolute /uploads URLs from the request.
+app.set('trust proxy', true);
+
 // ─── Security ────────────────────────────────────────────────
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 
