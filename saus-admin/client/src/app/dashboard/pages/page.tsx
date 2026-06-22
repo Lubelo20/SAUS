@@ -24,8 +24,8 @@ const PAGES = [
     title: 'Contact',
     desc: 'Contact details, office bearers and enquiry information',
     icon: Mail,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/contact',
+    ready: true,
   },
   {
     slug: 'nsfas',

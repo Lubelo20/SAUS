@@ -290,7 +290,23 @@
     }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
   }
 
-  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); renderHomePage(); }
+  function renderContactPage() {
+    if (!document.getElementById('page-contact')) return;
+    fetchPublic('/public/page/contact').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('#page-contact [data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+      // No repeatables on this page.
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); renderHomePage(); renderContactPage(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
