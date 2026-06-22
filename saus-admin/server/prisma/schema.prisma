@@ -354,6 +354,21 @@ model ActivityLog {
 }
 
 // ─────────────────────────────────────────────────────────────
+// CMS PAGES (editable static-site pages — About, Home, Contact, NSFAS)
+// ─────────────────────────────────────────────────────────────
+
+model Page {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  content   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("pages")
+}
+
+// ─────────────────────────────────────────────────────────────
 // CONTACT MESSAGES (public website enquiry form)
 // ─────────────────────────────────────────────────────────────
 

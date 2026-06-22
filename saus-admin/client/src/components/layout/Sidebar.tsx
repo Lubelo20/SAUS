@@ -29,6 +29,7 @@ const NAV = [
       { href: '/dashboard/events', icon: CalendarDays, label: 'Events' },
       { href: '/dashboard/campaigns', icon: Megaphone, label: 'Campaigns' },
       { href: '/dashboard/leadership', icon: Award, label: 'Leadership' },
+      { href: '/dashboard/pages', icon: FileText, label: 'Pages' },
     ],
   },
   {

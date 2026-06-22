@@ -171,7 +171,93 @@
     }).catch(function () { /* keep hardcoded */ });
   }
 
-  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); }
+  // ── About page ─────────────────────────────────────────────
+  // Reads from a path like 'a.b.0.c' on an object; returns undefined if absent.
+  function getPath(obj, path) {
+    var parts = String(path).split('.');
+    var cur = obj;
+    for (var i = 0; i < parts.length; i++) {
+      if (cur == null) return undefined;
+      cur = cur[parts[i]];
+    }
+    return cur;
+  }
+
+  // Rebuild a container's children from an array `arr`. For each item we clone
+  // the matching original child (preserving fixed visual chrome — icons,
+  // accent colours, timeline dots — which are NOT in the CMS JSON) and rewrite
+  // only the editable text nodes via the `fill` callback. Items beyond the
+  // original count reuse the last original as a template.
+  function rebuild(container, arr, fill) {
+    if (!container || !arr || !arr.length) return; // missing → keep hardcoded
+    var templates = Array.prototype.slice.call(container.children);
+    if (!templates.length) return;
+    var frag = document.createDocumentFragment();
+    arr.forEach(function (item, i) {
+      var tpl = templates[i] || templates[templates.length - 1];
+      var node = tpl.cloneNode(true);
+      try { fill(node, item); } catch (e) { /* leave clone as-is */ }
+      frag.appendChild(node);
+    });
+    container.innerHTML = '';
+    container.appendChild(frag);
+  }
+  function setText(node, sel, val) {
+    if (val == null) return;
+    var t = node.querySelector(sel);
+    if (t) t.textContent = String(val);
+  }
+
+  function renderAboutPage() {
+    if (!document.getElementById('page-about')) return;
+    fetchPublic('/public/page/about').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('#page-about [data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+
+      // Repeatables — rebuild children, preserving fixed chrome per original markup.
+      rebuild(document.getElementById('aboutStats'), c.stats, function (node, s) {
+        var num = node.querySelector('.stat-num');
+        if (num && s.num != null) num.textContent = String(s.num);
+        var label = node.querySelector('.stat-label');
+        if (label && s.label != null) label.textContent = String(s.label);
+      });
+
+      rebuild(document.getElementById('aboutProfileRows'),
+        c.profile && c.profile.rows, function (node, r) {
+          var tds = node.querySelectorAll('td');
+          if (tds[0] && r.field != null) tds[0].textContent = String(r.field);
+          if (tds[1] && r.details != null) tds[1].textContent = String(r.details);
+        });
+
+      rebuild(document.getElementById('aboutValues'),
+        c.values && c.values.cards, function (node, card) {
+          setText(node, 'h4', card.title);
+          setText(node, 'p', card.text);
+        });
+
+      rebuild(document.getElementById('aboutTimeline'),
+        c.history && c.history.timeline, function (node, t) {
+          setText(node, '.timeline-year', t.year);
+          setText(node, '.timeline-title', t.title);
+          setText(node, '.timeline-body', t.body);
+        });
+
+      rebuild(document.getElementById('aboutContinental'),
+        c.continental && c.continental.cards, function (node, card) {
+          setText(node, 'h4', card.title);
+          setText(node, 'p', card.text);
+        });
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

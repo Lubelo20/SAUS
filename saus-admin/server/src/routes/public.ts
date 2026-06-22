@@ -154,4 +154,15 @@ router.get('/announcement', async (_req, res) => {
   }
 });
 
+// GET /api/public/page/:slug — the CMS-managed content JSON for a static page (or null).
+router.get('/page/:slug', async (req, res) => {
+  try {
+    const page = await prisma.page.findUnique({ where: { slug: req.params.slug } });
+    return res.json({ data: page?.content ?? null });
+  } catch (err: any) {
+    console.error('[public/page] failed:', err?.message || err);
+    return res.status(500).json({ error: 'Could not load page' });
+  }
+});
+
 export default router;
