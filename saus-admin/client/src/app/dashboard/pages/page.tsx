@@ -32,8 +32,8 @@ const PAGES = [
     title: 'NSFAS',
     desc: 'NSFAS financial-aid guide and eligibility content',
     icon: GraduationCap,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/nsfas',
+    ready: true,
   },
 ];
 
