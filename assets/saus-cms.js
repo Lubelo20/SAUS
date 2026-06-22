@@ -257,7 +257,126 @@
     }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
   }
 
-  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); }
+  function renderHomePage() {
+    if (!document.getElementById('page-home')) return;
+    fetchPublic('/public/page/home').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('#page-home [data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+
+      // Repeatables — rebuild children, preserving fixed chrome per original markup.
+      rebuild(document.getElementById('homeStats'), c.stats, function (node, s) {
+        setText(node, '.stat-num', s.num);
+        setText(node, '.stat-label', s.label);
+      });
+
+      rebuild(document.getElementById('homePillars'),
+        c.mandate && c.mandate.pillars, function (node, p) {
+          setText(node, 'h4', p.title);
+          setText(node, 'p', p.text);
+        });
+
+      rebuild(document.getElementById('homeCampaigns'),
+        c.campaigns && c.campaigns.cards, function (node, card) {
+          setText(node, 'h4', card.title);
+          setText(node, 'p', card.text);
+        });
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  function renderContactPage() {
+    if (!document.getElementById('page-contact')) return;
+    fetchPublic('/public/page/contact').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('#page-contact [data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+      // No repeatables on this page.
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  // Fill the editable text nodes of each node in `nodes` (a flat NodeList of
+  // existing repeated blocks) from `arr`, preserving chrome. Used for sections
+  // whose repeated blocks live across multiple column wrappers (so the single
+  // container's direct children are columns, not the blocks themselves).
+  function fillFlat(nodes, arr, fill) {
+    if (!nodes || !nodes.length || !arr || !arr.length) return; // missing → keep hardcoded
+    var n = Math.min(nodes.length, arr.length);
+    for (var i = 0; i < n; i++) {
+      try { fill(nodes[i], arr[i]); } catch (e) { /* leave node as-is */ }
+    }
+  }
+
+  function renderNsfasPage() {
+    // Marker present only on the NSFAS page → no-op everywhere else.
+    if (!document.getElementById('nsfasSteps')) return;
+    fetchPublic('/public/page/nsfas').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('[data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+
+      // Repeatables — clone-and-fill, preserving fixed chrome per original markup.
+      rebuild(document.getElementById('nsfasCovers'),
+        c.covers && c.covers.items, function (node, it) {
+          setText(node, '.cover-title', it.title);
+          setText(node, '.cover-desc', it.text);
+        });
+
+      rebuild(document.getElementById('nsfasQualify'),
+        c.qualify && c.qualify.items, function (node, it) {
+          setText(node, '.elig-card-title', it.title);
+        });
+
+      // Documents & Tips live across two column wrappers → fill in place.
+      fillFlat(document.querySelectorAll('#nsfasDocuments .doc-item'),
+        c.documents && c.documents.items, function (node, it) {
+          setText(node, 'strong', it.title);
+          setText(node, '.doc-body span', it.text);
+        });
+
+      rebuild(document.getElementById('nsfasSteps'),
+        c.steps && c.steps.items, function (node, it) {
+          setText(node, '.step-content h3', it.title);
+          setText(node, '.step-content > p', it.text);
+        });
+
+      rebuild(document.getElementById('nsfasDates'),
+        c.dates && c.dates.items, function (node, it) {
+          setText(node, '.date-period', it.value);
+          setText(node, '.date-info h4', it.label);
+        });
+
+      fillFlat(document.querySelectorAll('#nsfasTips .tip-item'),
+        c.tips && c.tips.items, function (node, it) {
+          setText(node, 'p', it.text);
+        });
+
+      rebuild(document.getElementById('nsfasHelp'),
+        c.help && c.help.items, function (node, it) {
+          setText(node, 'h3', it.title);
+          setText(node, '.h-value', it.text);
+        });
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); renderHomePage(); renderContactPage(); renderNsfasPage(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

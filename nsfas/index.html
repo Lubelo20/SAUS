@@ -290,9 +290,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <!-- ── HERO ── -->
   <div class="official-hero hero-photo" style="background-image:linear-gradient(115deg,rgba(10,22,40,.94) 40%,rgba(13,51,32,.82) 100%),url('/gallery/galleryIMG/IMG12.jpg');padding:68px 32px;">
     <div class="hero-inner">
-      <div class="hero-ref">SAUS/NSFAS/GUIDE/2026 · Student Financial Aid</div>
-      <h1 class="hero-title">NSFAS Application <em>Guide 2026/2027</em></h1>
-      <p class="hero-lead">A clear, step-by-step guide to applying for financial aid through the National Student Financial Aid Scheme — brought to you by SAUS to help every qualifying student access higher education.</p>
+      <div class="hero-ref" data-cms="hero.ref">SAUS/NSFAS/GUIDE/2026 · Student Financial Aid</div>
+      <h1 class="hero-title" data-cms="hero.title">NSFAS Application <em>Guide 2026/2027</em></h1>
+      <p class="hero-lead" data-cms="hero.lead">A clear, step-by-step guide to applying for financial aid through the National Student Financial Aid Scheme — brought to you by SAUS to help every qualifying student access higher education.</p>
       <div class="hero-btns">
         <a href="#eligibility" class="btn btn-green">Check Eligibility
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3 8l5 5 5-5"/></svg>
@@ -330,12 +330,12 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--cream)" id="covers">
     <div class="wrap">
       <div class="sec-header">
-        <div class="ref">SAUS/NSFAS/COVERAGE/2026</div>
-        <h2>What NSFAS <em>Covers</em></h2>
-        <p>NSFAS is a full bursary — not a loan. Qualifying university students receive comprehensive support covering tuition and a range of allowances. There is nothing to repay.</p>
+        <div class="ref" data-cms="covers.ref">SAUS/NSFAS/COVERAGE/2026</div>
+        <h2 data-cms="covers.title">What NSFAS <em>Covers</em></h2>
+        <p data-cms="covers.lead">NSFAS is a full bursary — not a loan. Qualifying university students receive comprehensive support covering tuition and a range of allowances. There is nothing to repay.</p>
       </div>
 
-      <div class="cover-grid">
+      <div class="cover-grid" id="nsfasCovers">
         <div class="cover-card c-navy">
           <div class="cover-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="cover-title">Tuition &amp; Registration</div>
@@ -392,12 +392,12 @@ main{min-height:100vh;padding-top:var(--total-top)}
       <div class="with-sidebar">
         <div>
           <div class="sec-header">
-            <div class="ref">SAUS/NSFAS/ELIGIBILITY/2026</div>
-            <h2>Do You <em>Qualify?</em></h2>
-            <p>Before applying, check that you meet NSFAS eligibility criteria. Both conditions — citizenship and income — must be satisfied.</p>
+            <div class="ref" data-cms="qualify.ref">SAUS/NSFAS/ELIGIBILITY/2026</div>
+            <h2 data-cms="qualify.title">Do You <em>Qualify?</em></h2>
+            <p data-cms="qualify.lead">Before applying, check that you meet NSFAS eligibility criteria. Both conditions — citizenship and income — must be satisfied.</p>
           </div>
 
-          <div class="elig-grid">
+          <div class="elig-grid" id="nsfasQualify">
             <div class="elig-card">
               <div class="elig-card-head">
                 <div class="elig-card-icon yes-icon">
@@ -504,9 +504,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--cream)" id="documents">
     <div class="wrap">
       <div class="sec-header">
-        <div class="ref">SAUS/NSFAS/DOCS/2026</div>
-        <h2>Required <em>Documents</em></h2>
-        <p>Gather all documents before you begin your application. Incomplete submissions are the leading cause of delays and rejections.</p>
+        <div class="ref" data-cms="documents.ref">SAUS/NSFAS/DOCS/2026</div>
+        <h2 data-cms="documents.title">Required <em>Documents</em></h2>
+        <p data-cms="documents.lead">Gather all documents before you begin your application. Incomplete submissions are the leading cause of delays and rejections.</p>
       </div>
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
@@ -594,12 +594,12 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--white)" id="steps">
     <div class="wrap">
       <div class="sec-header">
-        <div class="ref">SAUS/NSFAS/STEPS/2026</div>
-        <h2>Application <em>Steps</em></h2>
-        <p>Follow each step in order. Do not skip ahead — NSFAS requires a complete application before it can be reviewed.</p>
+        <div class="ref" data-cms="steps.ref">SAUS/NSFAS/STEPS/2026</div>
+        <h2 data-cms="steps.title">Application <em>Steps</em></h2>
+        <p data-cms="steps.lead">Follow each step in order. Do not skip ahead — NSFAS requires a complete application before it can be reviewed.</p>
       </div>
 
-      <div style="max-width:780px">
+      <div style="max-width:780px" id="nsfasSteps">
         <div class="step-row">
           <div class="step-left">
             <div class="step-circle" style="background:var(--green)">1</div>
@@ -709,12 +709,12 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--navy)" id="dates">
     <div class="wrap">
       <div class="sec-header" style="margin-bottom:40px">
-        <div class="ref" style="color:rgba(255,255,255,.4)">SAUS/NSFAS/DATES/2026–2027</div>
-        <h2 style="color:var(--white)">Important <em style="color:var(--gold)">Dates</em></h2>
-        <p style="color:rgba(255,255,255,.6)">Mark these dates in your calendar. Missing a deadline — especially the application deadline — means waiting a full year to reapply.</p>
+        <div class="ref" style="color:rgba(255,255,255,.4)" data-cms="dates.ref">SAUS/NSFAS/DATES/2026–2027</div>
+        <h2 style="color:var(--white)" data-cms="dates.title">Important <em style="color:var(--gold)">Dates</em></h2>
+        <p style="color:rgba(255,255,255,.6)" data-cms="dates.lead">Mark these dates in your calendar. Missing a deadline — especially the application deadline — means waiting a full year to reapply.</p>
       </div>
 
-      <div class="date-list">
+      <div class="date-list" id="nsfasDates">
         <div class="date-row">
           <div>
             <div class="date-period">1 August 2026</div>
@@ -778,9 +778,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--cream)" id="tips">
     <div class="wrap">
       <div class="sec-header">
-        <div class="ref">SAUS/NSFAS/TIPS/2026</div>
-        <h2>Tips &amp; <em>Common Mistakes</em></h2>
-        <p>Students who apply successfully share one thing in common: preparation. Avoid the pitfalls that cost thousands of students their funding each year.</p>
+        <div class="ref" data-cms="tips.ref">SAUS/NSFAS/TIPS/2026</div>
+        <h2 data-cms="tips.title">Tips &amp; <em>Common Mistakes</em></h2>
+        <p data-cms="tips.lead">Students who apply successfully share one thing in common: preparation. Avoid the pitfalls that cost thousands of students their funding each year.</p>
       </div>
 
       <div class="tips-grid">
@@ -895,12 +895,12 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <section class="section" style="background:var(--white)" id="help">
     <div class="wrap">
       <div class="sec-header" style="margin-bottom:40px">
-        <div class="ref">SAUS/NSFAS/SUPPORT/2026</div>
-        <h2>Get <em>Help</em></h2>
-        <p>You are not alone. Multiple support channels exist to help you through the process — use them.</p>
+        <div class="ref" data-cms="help.ref">SAUS/NSFAS/SUPPORT/2026</div>
+        <h2 data-cms="help.title">Get <em>Help</em></h2>
+        <p data-cms="help.lead">You are not alone. Multiple support channels exist to help you through the process — use them.</p>
       </div>
 
-      <div class="help-grid">
+      <div class="help-grid" id="nsfasHelp">
         <div class="help-card">
           <div class="help-card-icon navy-bg">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.8 19.8 0 01.02 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
@@ -1017,5 +1017,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 (function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3300':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();
 </script>
 <script src="/assets/saus.js" defer></script>
+<script src="/assets/saus-cms.js" defer></script>
 </body>
 </html>

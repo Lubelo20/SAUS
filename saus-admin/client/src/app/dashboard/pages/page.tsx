@@ -14,26 +14,26 @@ const PAGES = [
   {
     slug: 'home',
     title: 'Home',
-    desc: 'Landing page hero, highlights and featured content',
+    desc: 'Landing page hero, stats, mandate, priority campaigns & events CTA',
     icon: Home,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/home',
+    ready: true,
   },
   {
     slug: 'contact',
     title: 'Contact',
     desc: 'Contact details, office bearers and enquiry information',
     icon: Mail,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/contact',
+    ready: true,
   },
   {
     slug: 'nsfas',
     title: 'NSFAS',
     desc: 'NSFAS financial-aid guide and eligibility content',
     icon: GraduationCap,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/nsfas',
+    ready: true,
   },
 ];
 
