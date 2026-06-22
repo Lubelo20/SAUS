@@ -8,6 +8,7 @@ import Link from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
 import Placeholder from '@tiptap/extension-placeholder';
 import toast from 'react-hot-toast';
+import { uploadFile } from '@/lib/upload';
 import { Save, Eye, ArrowLeft, Star, Bold, Italic, UnderlineIcon,
          Heading2, Heading3, List, ListOrdered, Quote, Undo, Redo, Image as ImageIcon } from 'lucide-react';
 
@@ -23,6 +24,7 @@ export default function EditArticlePage() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<{ id: string; name: string }[]>([]);
   const [activeTab, setActiveTab] = useState<'write' | 'seo'>('write');
@@ -253,14 +255,20 @@ export default function EditArticlePage() {
                   className="absolute top-2 right-2 bg-red-saus text-white rounded px-2 py-0.5 text-xs">Remove</button>
               </div>
             ) : (
-              <div onClick={() => coverRef.current?.click()}
+              <div onClick={() => !uploading && coverRef.current?.click()}
                 className="border-2 border-dashed border-gray-200 rounded-lg h-32 flex flex-col items-center justify-center gap-2 cursor-pointer hover:border-navy/30 hover:bg-navy-50 transition-colors">
                 <ImageIcon className="w-6 h-6 text-gray-300" />
-                <span className="text-xs text-gray-400">Click to upload cover image</span>
+                <span className="text-xs text-gray-400">{uploading ? 'Uploading…' : 'Click to upload cover image'}</span>
               </div>
             )}
             <input ref={coverRef} type="file" accept="image/*" className="hidden"
-              onChange={e => { const file = e.target.files?.[0]; if (file) update('coverImage', URL.createObjectURL(file)); }} />
+              onChange={async e => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                try { setUploading(true); const url = await uploadFile(file); update('coverImage', url); }
+                catch { toast.error('Image upload failed'); }
+                finally { setUploading(false); }
+              }} />
             <input value={form.coverImage} onChange={e => update('coverImage', e.target.value)}
               placeholder="Or paste image URL…" className="input text-xs" />
           </div>

@@ -67,7 +67,8 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 
 // ─── Static Uploads ───────────────────────────────────────────
-app.use('/uploads', express.static(path.join(__dirname, '../../uploads')));
+// multer writes to ./uploads (cwd = server/), so serve that same dir
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // ─── Routes ───────────────────────────────────────────────────
 app.use('/api/auth',       authRoutes);

@@ -24,9 +24,13 @@
     var day = d ? d.getDate() : '';
     var mon = d ? (MONTHS[d.getMonth()] + " '" + String(d.getFullYear()).slice(2)) : '';
     var type = (a.category && a.category.name) || 'News';
+    var cover = a.coverImage
+      ? '<img src="' + esc(a.coverImage) + '" alt="" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:2px;display:block;margin-bottom:10px">'
+      : '';
     return '<div class="news-item">'
       + '<div class="news-date-col"><div class="news-day">' + esc(day) + '</div><div class="news-month">' + esc(mon) + '</div></div>'
       + '<div style="flex:1">'
+      + cover
       + '<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap"><div class="news-type">' + esc(type) + '</div></div>'
       + '<h3 style="font-family:var(--ff-serif);font-size:18px;color:var(--navy);margin-bottom:6px">' + esc(a.title) + '</h3>'
       + (a.excerpt ? '<p style="font-size:14px;color:var(--text-mid);line-height:1.6">' + esc(a.excerpt) + '</p>' : '')
@@ -73,8 +77,12 @@
     var day = d ? ('0' + d.getDate()).slice(-2) : '';
     var loc = [e.venue, e.city, e.province].filter(Boolean).join(', ');
     var pin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+    var thumb = e.bannerImage
+      ? '<img src="' + esc(e.bannerImage) + '" alt="" loading="lazy" style="width:96px;height:72px;object-fit:cover;border-radius:2px;display:block;flex:none">'
+      : '';
     return '<div class="event-row">'
       + '<div class="event-cal"><div class="event-cal-month">' + esc(mon) + '</div><div class="event-cal-day">' + esc(day) + '</div></div>'
+      + thumb
       + '<div style="flex:1">'
       + '<div class="event-body-title">' + esc(e.title) + '</div>'
       + (loc ? '<div class="event-meta"><span class="event-meta-icon">' + pin + esc(loc) + '</span></div>' : '')
@@ -96,12 +104,15 @@
     var paras = String(c.description || '').split(/\n+/).filter(Boolean).map(function (p) {
       return '<p>' + esc(p) + '</p>';
     }).join('');
+    var graphic = c.graphic
+      ? '<img src="' + esc(c.graphic) + '" alt="" loading="lazy" style="width:100%;max-height:240px;object-fit:cover;border-radius:2px;display:block;margin-bottom:14px">'
+      : '';
     return '<div class="resolution">'
       + '<div class="resolution-head">'
       + '<div class="res-num green">' + esc(num) + '</div>'
       + '<div><div class="resolution-title">' + esc(c.title) + '</div></div>'
       + '</div>'
-      + '<div class="resolution-body">' + paras + '</div>'
+      + '<div class="resolution-body">' + graphic + paras + '</div>'
       + '</div>';
   }
   function renderCampaigns() {

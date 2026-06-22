@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { Save, ArrowLeft, Star } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { uploadFile } from '@/lib/upload';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
 
@@ -17,6 +18,7 @@ export default function EditCampaignPage() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(true);
   const graphicRef = useRef<HTMLInputElement>(null);
   const [form, setForm] = useState<FormState>({
@@ -149,13 +151,19 @@ export default function EditCampaignPage() {
                 className="absolute top-2 right-2 bg-red-saus text-white rounded px-2 py-0.5 text-xs">Remove</button>
             </div>
           ) : (
-            <div onClick={() => graphicRef.current?.click()}
+            <div onClick={() => !uploading && graphicRef.current?.click()}
               className="border-2 border-dashed border-gray-200 rounded-lg h-32 flex flex-col items-center justify-center gap-2 cursor-pointer hover:border-navy/30 transition-colors mb-2">
-              <span className="text-xs text-gray-400">Click to upload graphic</span>
+              <span className="text-xs text-gray-400">{uploading ? 'Uploading…' : 'Click to upload graphic'}</span>
             </div>
           )}
           <input ref={graphicRef} type="file" accept="image/*" className="hidden"
-            onChange={e => { const f = e.target.files?.[0]; if (f) update('graphic', URL.createObjectURL(f)); }} />
+            onChange={async e => {
+              const f = e.target.files?.[0];
+              if (!f) return;
+              try { setUploading(true); const url = await uploadFile(f); update('graphic', url); }
+              catch { toast.error('Image upload failed'); }
+              finally { setUploading(false); }
+            }} />
           <input value={form.graphic} onChange={e => update('graphic', e.target.value)}
             placeholder="Or paste image URL…" className="input text-xs" />
         </div>
