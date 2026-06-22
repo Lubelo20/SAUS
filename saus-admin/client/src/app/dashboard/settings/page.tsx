@@ -71,6 +71,7 @@ export default function SettingsPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
+          <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/SETTINGS</div>
           <h1 className="text-xl font-bold text-navy">Site Settings</h1>
           <p className="text-sm text-gray-400 mt-0.5">Configure the SAUS website content and metadata</p>
         </div>

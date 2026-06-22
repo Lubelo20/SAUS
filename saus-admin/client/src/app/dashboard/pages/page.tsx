@@ -41,6 +41,7 @@ export default function PagesListPage() {
   return (
     <div className="space-y-5">
       <div>
+        <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/PAGES</div>
         <h1 className="text-xl font-bold text-navy">Pages</h1>
         <p className="text-sm text-gray-400 mt-0.5">Edit the content of the public website pages</p>
       </div>

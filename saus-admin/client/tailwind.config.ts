@@ -30,8 +30,9 @@ const config: Config = {
         stone: '#EEECEA',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans:  ['var(--font-sans)',  'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        mono:  ['var(--font-mono)',  'monospace'],
       },
       boxShadow: {
         card: '0 1px 3px rgba(10,22,40,.06), 0 4px 16px rgba(10,22,40,.04)',

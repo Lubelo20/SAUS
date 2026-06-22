@@ -92,7 +92,7 @@ export default function Sidebar({ onClose }: Props) {
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full border-2 border-gold flex items-center justify-center text-gold font-bold text-sm flex-shrink-0">S</div>
           <div>
-            <div className="font-bold text-sm leading-tight">SAUS CMS</div>
+            <div className="font-serif font-bold text-base leading-tight">SAUS CMS</div>
             <div className="text-white/35 text-[10px] font-mono tracking-widest uppercase">Admin Portal</div>
           </div>
         </div>

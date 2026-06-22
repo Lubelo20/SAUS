@@ -46,6 +46,7 @@ export default function AnalyticsPage() {
   return (
     <div className="space-y-6">
       <div>
+        <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/ANALYTICS</div>
         <h1 className="text-2xl font-bold text-navy">Analytics</h1>
         <p className="text-sm text-gray-400 mt-0.5">Content performance overview</p>
       </div>
