@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
-  "minimumAPS": 18,
+  "minimumAPS": 27,
   "apsNote": "Welkom campus focuses on engineering and management sciences.",
-  "applyUrl": "https://www.cut.ac.za/apply",
+  "applyUrl": "https://www.cut.ac.za/application-process",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,66 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/application-process"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.cut.ac.za/programmes-offered"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/application-process"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/application-process"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/announcements/166",
+        "note": "CORRECTION from R100; CUT free"
+      },
+      "minimumAPS": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/admission-points-ap",
+        "note": "CORRECTION from 18; min 27, Mech Eng 32+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/campus/1/bloemfontein"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/campus/1/bloemfontein"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.cut.ac.za",
+        "note": "CORRECTION from 15000; ~21596 (2024)"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.cut.ac.za/faculty"
+      }
+    }
+  }
 }

@@ -1,15 +1,15 @@
 {
   "abbr": "SPU",
   "applicationPeriod": {
-    "opens": "1 May 2026",
-    "closes": "30 November 2026",
+    "opens": "11 May 2026",
+    "closes": "31 October 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
   "minimumAPS": 22,
   "apsNote": "New university with growing intake. Community development focus.",
-  "applyUrl": "https://www.spu.ac.za/admissions",
+  "applyUrl": "https://applications-prod.spu.ac.za/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/index.php/how-to-apply/",
+        "note": "CORRECTION from spu.ac.za/admissions"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/index.php/prospectus-2026/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://richadmissions.com/spu-2027-undergraduate-applications-now-open/"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://richadmissions.com/spu-2027-undergraduate-applications-now-open/",
+        "note": "2027 not yet on official page"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.varsitywise.com/posts/sol-plaatje-university-application-fee",
+        "note": "CORRECTION from R100; SPU free"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+        "note": "floor; degrees ~30"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Sol_Plaatje_University"
+      },
+      "students": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/index.php/spu-factfile-2025/",
+        "note": "CORRECTION from 4000; Factfile 2025"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/"
+      }
+    }
+  }
 }

@@ -1,0 +1,76 @@
+[{
+  "abbr":"NMU",
+  "fields":{
+    "website":{"value":"https://www.mandela.ac.za","confidence":"high","source":"https://www.mandela.ac.za/"},
+    "applyUrl":{"value":"https://applyonline.mandela.ac.za/","confidence":"high","source":"https://www.mandela.ac.za/study-at-mandela/application"},
+    "prospectusUrl":{"value":"https://www.mandela.ac.za/study-at-mandela/application","confidence":"medium","source":"https://www.mandela.ac.za/study-at-mandela/application"},
+    "applicationOpens":{"value":"13 April 2026","confidence":"high","source":"https://www.mandela.ac.za/study-at-mandela/application/apply-undergraduate"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.mandela.ac.za/Study-at-Mandela/Application/Closing-dates","note":"Health Sciences 30 June"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://international.mandela.ac.za/Finance/Application-Fees","note":"CORRECTION from R100; SA free, intl R500"},
+    "minimumAPS":{"value":22,"confidence":"medium","source":"https://www.mandela.ac.za/Study-at-Mandela/Application/Academic-admission","note":"NMU uses Applicant Score not APS; floor"},
+    "city":{"value":"Gqeberha","confidence":"high","source":"https://www.mandela.ac.za/About-us/Campuses"},
+    "province":{"value":"Eastern Cape","confidence":"high","source":"https://www.mandela.ac.za/About-us/Campuses"},
+    "founded":{"value":2005,"confidence":"high","source":"https://www.mandela.ac.za/"},
+    "students":{"value":31000,"confidence":"low","source":"https://www.mandela.ac.za/","note":"CORRECTION from 27000; ~31000 per 2024 indicators"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.mandela.ac.za/"},
+    "faculties":{"value":["Humanities","Business and Economic Sciences","Education","Engineering, the Built Environment and Technology","Health Sciences","Law","Science"],"confidence":"high","source":"https://www.mandela.ac.za/Faculties-and-Schools","note":"CORRECTION: Arts->Humanities; Eng name fixed"}
+  },
+  "notes":"fee R100->R0; faculties fixed; opens 13 April; students 27k->31k"
+},
+{
+  "abbr":"RU",
+  "fields":{
+    "website":{"value":"https://www.ru.ac.za","confidence":"high","source":"https://www.ru.ac.za/"},
+    "applyUrl":{"value":"https://ross.ru.ac.za/ugadmissions","confidence":"high","source":"https://www.ru.ac.za/admissiongateway/application/","note":"CORRECTION from applications.ru.ac.za"},
+    "prospectusUrl":{"value":"https://www.ru.ac.za/institutionalplanning/registrar/applications/","confidence":"medium","source":"https://www.ru.ac.za/institutionalplanning/registrar/applications/"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"medium","source":"https://studentdesk.co.za/rhodes-university-ru-2027-applications/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.ru.ac.za/admissiongateway/application/applicationprocedure/"},
+    "applicationFee":{"value":100,"confidence":"high","source":"https://www.ru.ac.za/admissiongateway/application/feesandfinancialaid/fees/"},
+    "minimumAPS":{"value":28,"confidence":"low","source":"https://www.ru.ac.za/admissiongateway/application/entryrequirements/","note":"floor; automatic entry APS 45; competitive 38-45"},
+    "city":{"value":"Makhanda","confidence":"high","source":"https://www.ru.ac.za/introducingrhodes/historyofrhodes/"},
+    "province":{"value":"Eastern Cape","confidence":"high","source":"https://www.ru.ac.za/introducingrhodes/historyofrhodes/"},
+    "founded":{"value":1904,"confidence":"high","source":"https://www.ru.ac.za/introducingrhodes/historyofrhodes/"},
+    "students":{"value":9000,"confidence":"medium","source":"https://www.ru.ac.za/admissiongateway/whyrhodes/factsandfigures/","note":"CORRECTION from 8000"},
+    "type":{"value":"Traditional University","confidence":"high","source":"https://www.ru.ac.za/"},
+    "faculties":{"value":["Commerce","Education","Humanities","Law","Pharmacy","Science"],"confidence":"high","source":"https://www.ru.ac.za/admissiongateway/departmentsandfaculties/","note":"matches existing"}
+  },
+  "notes":"applyUrl->ross.ru.ac.za; students 8k->9k"
+},
+{
+  "abbr":"UWC",
+  "fields":{
+    "website":{"value":"https://www.uwc.ac.za","confidence":"high","source":"https://www.uwc.ac.za/"},
+    "applyUrl":{"value":"https://www.uwc.ac.za/admission-and-financial-aid/apply","confidence":"high","source":"https://www.uwc.ac.za/admission-and-financial-aid/apply"},
+    "prospectusUrl":{"value":"https://www.uwc.ac.za/study/faculties-and-programmes","confidence":"medium","source":"https://www.uwc.ac.za/study/faculties-and-programmes"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf","note":"Dentistry 31 August"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/application-information","note":"CORRECTION from R100; UWC free"},
+    "minimumAPS":{"value":22,"confidence":"medium","source":"https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/undergraduate-admission-requirements","note":"UWC points scale; LLB 37"},
+    "city":{"value":"Bellville","confidence":"high","source":"https://www.uwc.ac.za/"},
+    "province":{"value":"Western Cape","confidence":"high","source":"https://www.uwc.ac.za/"},
+    "founded":{"value":1960,"confidence":"high","source":"https://www.uwc.ac.za/"},
+    "students":{"value":23000,"confidence":"medium","source":"https://www.uwc.ac.za/","note":"CORRECTION from 22000"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.uwc.ac.za/"},
+    "faculties":{"value":["Arts and Humanities","Community and Health Sciences","Dentistry","Economic and Management Sciences","Education","Law","Natural Sciences"],"confidence":"high","source":"https://www.uwc.ac.za/study/faculties-and-programmes","note":"CORRECTION: 8->7; Nursing is a school under CHS; Arts->Arts and Humanities"}
+  },
+  "notes":"fee R100->R0; faculties 8->7; students 22k->23k"
+},
+{
+  "abbr":"UFH",
+  "fields":{
+    "website":{"value":"https://www.ufh.ac.za","confidence":"high","source":"https://www.ufh.ac.za/"},
+    "applyUrl":{"value":"https://www.ufh.ac.za/apply","confidence":"high","source":"https://www.ufh.ac.za/apply"},
+    "prospectusUrl":{"value":"https://www.ufh.ac.za/apply","confidence":"low","source":"https://www.ufh.ac.za/admission"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"medium","source":"https://www.ufh.ac.za/apply/apply-undergraduate"},
+    "applicationCloses":{"value":"31 October 2026","confidence":"medium","source":"https://www.ufh.ac.za/apply/apply-undergraduate","note":"CORRECTION from 30 Nov; official 31 Oct"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://fye.ufh.ac.za/faq-base/is-there-an-application-fee/","note":"CORRECTION from R100; online free, manual R120"},
+    "minimumAPS":{"value":26,"confidence":"high","source":"https://www.ufh.ac.za/admission","note":"CORRECTION from 18; bachelor min 26"},
+    "city":{"value":"Alice","confidence":"high","source":"https://www.ufh.ac.za/"},
+    "province":{"value":"Eastern Cape","confidence":"high","source":"https://www.ufh.ac.za/"},
+    "founded":{"value":1916,"confidence":"high","source":"https://www.ufh.ac.za/"},
+    "students":{"value":12000,"confidence":"low","source":"https://www.ufh.ac.za/","note":"unconfirmed officially"},
+    "type":{"value":"Traditional University","confidence":"high","source":"https://www.ufh.ac.za/"},
+    "faculties":{"value":["Education","Health Sciences","Law","Management and Commerce","Science and Agriculture","Social Sciences and Humanities"],"confidence":"high","source":"https://www.ufh.ac.za/faculties","note":"CORRECTION: added Health Sciences; merged Science & Agriculture"}
+  },
+  "notes":"fee R100->R0; minAPS 18->26; closes 30 Nov->31 Oct; faculties fixed"
+}]

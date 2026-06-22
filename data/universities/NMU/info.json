@@ -10,15 +10,15 @@
     "province": "Eastern Cape"
   },
   "website": "https://www.mandela.ac.za",
-  "apply": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply",
-  "prospectus": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate",
+  "apply": "https://applyonline.mandela.ac.za/",
+  "prospectus": "https://www.mandela.ac.za/study-at-mandela/application",
   "logo": "nmu.png",
   "description": "Named in honour of Nelson Mandela. A comprehensive university blending academic and technology programmes across seven faculties in Port Elizabeth (Gqeberha), Eastern Cape.",
   "faculties": [
-    "Arts",
-    "Business & Economic Sciences",
+    "Humanities",
+    "Business and Economic Sciences",
     "Education",
-    "Engineering & Built Env.",
+    "Engineering, the Built Environment and Technology",
     "Health Sciences",
     "Law",
     "Science"
@@ -35,5 +35,9 @@
     "Missionvale",
     "George"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

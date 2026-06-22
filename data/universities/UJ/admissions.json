@@ -5,11 +5,11 @@
     "closes": "31 October 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 200,
+  "applicationFee": 0,
   "feeWaiver": false,
   "minimumAPS": 24,
   "apsNote": "Applications on a first-come, first-served basis.",
-  "applyUrl": "https://www.uj.ac.za/apply-to-uj/",
+  "applyUrl": "https://www.uj.ac.za/admission-aid/apply/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,66 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/admission-aid/apply/"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/admission-aid/new/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/admission-aid/new/"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/admission-aid/new/",
+        "note": "online free; hardcopy R200. CORRECTION from R200"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.uj.ac.za/admission-aid/",
+        "note": "floor; varies by faculty"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/about/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/about/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/about/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.uj.ac.za/about/"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/about/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.uj.ac.za/faculties/",
+        "note": "CORRECTION: Management merged into CBE (2017)"
+      }
+    }
+  }
 }

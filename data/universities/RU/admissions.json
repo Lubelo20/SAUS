@@ -9,7 +9,7 @@
   "feeWaiver": true,
   "minimumAPS": 28,
   "apsNote": "Pharmacy closes 31 July. Rolling admissions — apply early.",
-  "applyUrl": "https://applications.ru.ac.za/",
+  "applyUrl": "https://ross.ru.ac.za/ugadmissions",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/admissiongateway/application/",
+        "note": "CORRECTION from applications.ru.ac.za"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.ru.ac.za/institutionalplanning/registrar/applications/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/rhodes-university-ru-2027-applications/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/admissiongateway/application/applicationprocedure/"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/admissiongateway/application/feesandfinancialaid/fees/"
+      },
+      "minimumAPS": {
+        "confidence": "low",
+        "source": "https://www.ru.ac.za/admissiongateway/application/entryrequirements/",
+        "note": "floor; automatic entry APS 45; competitive 38-45"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/introducingrhodes/historyofrhodes/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/introducingrhodes/historyofrhodes/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/introducingrhodes/historyofrhodes/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.ru.ac.za/admissiongateway/whyrhodes/factsandfigures/",
+        "note": "CORRECTION from 8000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.ru.ac.za/admissiongateway/departmentsandfaculties/",
+        "note": "matches existing"
+      }
+    }
+  }
 }

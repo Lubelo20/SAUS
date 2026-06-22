@@ -1,15 +1,15 @@
 {
   "abbr": "CPUT",
   "applicationPeriod": {
-    "opens": "1 May 2026",
-    "closes": "31 August 2026",
+    "opens": "11 May 2026",
+    "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Some programmes have earlier closing dates. Check website.",
-  "applyUrl": "https://www.cput.ac.za/apply",
+  "applyUrl": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,66 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.cput.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "medium",
+        "source": "https://www.cput.ac.za/study-at-cput/undergraduate/apply"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.cput.ac.za/academic"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/",
+        "note": "Health & Wellness close earlier"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://www.cput.ac.za/help/content/19/82/en/07-do-i-have-to-pay-any-application-fee-if-applying-online.html",
+        "note": "CORRECTION from R100; online free"
+      },
+      "minimumAPS": {
+        "confidence": "unconfirmed",
+        "source": null,
+        "note": "no university-wide min; varies by programme; kept floor"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.cput.ac.za/about-cput"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.cput.ac.za/academic"
+      }
+    }
+  }
 }

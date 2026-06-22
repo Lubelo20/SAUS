@@ -11,15 +11,15 @@
   },
   "website": "https://www.tut.ac.za",
   "apply": "https://www.tut.ac.za/apply",
-  "prospectus": "https://www.tut.ac.za/apply",
+  "prospectus": "https://www.tut.ac.za/index.php/prospectus",
   "logo": "tut.png",
   "description": "One of the largest universities of technology in South Africa. Campuses in Pretoria, Ga-Rankuwa and eMalahleni renowned for engineering, IT and design.",
   "faculties": [
     "Arts & Design",
     "Economics & Finance",
-    "Engineering & Built Env.",
+    "Engineering & the Built Environment",
     "Humanities",
-    "IT",
+    "Information and Communication Technology",
     "Management Sciences",
     "Science"
   ],
@@ -34,5 +34,9 @@
     "Ga-Rankuwa",
     "eMalahleni"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

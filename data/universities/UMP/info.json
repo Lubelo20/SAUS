@@ -10,14 +10,14 @@
     "province": "Mpumalanga"
   },
   "website": "https://www.ump.ac.za",
-  "apply": "https://www.ump.ac.za/admissions",
-  "prospectus": "https://www.ump.ac.za/admissions",
+  "apply": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+  "prospectus": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
   "logo": "ump.png",
   "description": "Established in 2014 to serve Mpumalanga's higher education needs. Focuses on agriculture, education and hospitality — industries central to the province's economy.",
   "faculties": [
     "Agriculture & Natural Sciences",
     "Education",
-    "Hospitality & Tourism"
+    "Economics, Development & Business Sciences"
   ],
   "motto": "Excellence in Teaching and Learning",
   "languages": [
@@ -29,5 +29,9 @@
     "Mbombela (Main)",
     "Siyabuswa"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

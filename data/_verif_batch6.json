@@ -1,0 +1,114 @@
+[{
+  "abbr":"UL",
+  "fields":{
+    "website":{"value":"https://www.ul.ac.za","confidence":"high","source":"https://www.ul.ac.za"},
+    "applyUrl":{"value":"https://www.ul.ac.za/admissions/undergraduate-studies/","confidence":"high","source":"https://www.ul.ac.za/admissions/undergraduate-studies/"},
+    "prospectusUrl":{"value":"https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf","confidence":"high","source":"https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/","note":"Health Sciences close 30 Jul-31 Aug"},
+    "applicationFee":{"value":200,"confidence":"high","source":"https://www.ul.ac.za/admissions/undergraduate-studies/","note":"CORRECTION from R100; R200 SA, R750 intl"},
+    "minimumAPS":{"value":18,"confidence":"medium","source":"https://www.ul.ac.za/admissions/undergraduate-studies/","note":"floor; most 22-28; MBChB 27, LLB 28"},
+    "city":{"value":"Mankweng (Polokwane)","confidence":"high","source":"https://www.ul.ac.za/about-us/"},
+    "province":{"value":"Limpopo","confidence":"high","source":"https://www.ul.ac.za/about-us/"},
+    "founded":{"value":1959,"confidence":"high","source":"https://www.ul.ac.za/about-us/"},
+    "students":{"value":18000,"confidence":"low","source":"https://www.ul.ac.za","note":"unconfirmed"},
+    "type":{"value":"Traditional University","confidence":"high","source":"https://www.ul.ac.za/about-us/"},
+    "faculties":{"value":["Health Sciences","Humanities","Management & Law","Science & Agriculture"],"confidence":"high","source":"https://www.ul.ac.za/faculty-of-health-sciences/","note":"CORRECTION: added Health Sciences (3->4)"}
+  },
+  "notes":"fee R100->R200; faculties 3->4 (add Health Sciences)"
+},
+{
+  "abbr":"UMP",
+  "fields":{
+    "website":{"value":"https://www.ump.ac.za","confidence":"high","source":"https://www.ump.ac.za"},
+    "applyUrl":{"value":"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications","confidence":"high","source":"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"},
+    "prospectusUrl":{"value":"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications","confidence":"medium","source":"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"},
+    "applicationOpens":{"value":"1 June 2026","confidence":"high","source":"https://www.varsitywise.com/posts/university-of-mpumalanga-2027-online-applications"},
+    "applicationCloses":{"value":"30 November 2026","confidence":"high","source":"https://studentdesk.co.za/university-of-mpumalanga-ump-application-dates-2027/"},
+    "applicationFee":{"value":200,"confidence":"high","source":"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications","note":"CORRECTION from R100; R200 SA, R400 SADC, R550 intl"},
+    "minimumAPS":{"value":22,"confidence":"medium","source":"https://www.studentroom.co.za/university-of-mpumalanga-ump-aps-requirements-explained-for-2027/","note":"floor; BSc Agric 30"},
+    "city":{"value":"Mbombela","confidence":"high","source":"https://www.ump.ac.za"},
+    "province":{"value":"Mpumalanga","confidence":"high","source":"https://www.ump.ac.za"},
+    "founded":{"value":2014,"confidence":"high","source":"https://www.ump.ac.za"},
+    "students":{"value":5000,"confidence":"low","source":"https://www.ump.ac.za","note":"unconfirmed"},
+    "type":{"value":"Comprehensive University","confidence":"medium","source":"https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx"},
+    "faculties":{"value":["Agriculture & Natural Sciences","Education","Economics, Development & Business Sciences"],"confidence":"high","source":"https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx","note":"CORRECTION: Hospitality is a School not faculty; 3 faculties"}
+  },
+  "notes":"fee R100->R200; faculties fixed (3)"
+},
+{
+  "abbr":"SMU",
+  "fields":{
+    "website":{"value":"https://www.smu.ac.za","confidence":"high","source":"https://www.smu.ac.za/"},
+    "applyUrl":{"value":"https://www.smu.ac.za/students/apply/","confidence":"high","source":"https://www.smu.ac.za/students/apply/","note":"CORRECTION from smu.ac.za/admissions"},
+    "prospectusUrl":{"value":"https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/","confidence":"medium","source":"https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://www.smu.ac.za/students/apply/"},
+    "applicationCloses":{"value":"31 July 2026","confidence":"high","source":"https://www.smu.ac.za/students/apply/","note":"PG 31 Aug"},
+    "applicationFee":{"value":300,"confidence":"high","source":"https://schoolhive.co.za/sefako-makgatho-health-sciences-university-smu-2027-applications/","note":"CORRECTION from R200; R300"},
+    "minimumAPS":{"value":34,"confidence":"medium","source":"https://www.nasi-ispani.co.za/sefako-makgatho-smu-2027-applications/","note":"health sciences uni; MBChB 38, BDS 37"},
+    "city":{"value":"Ga-Rankuwa","confidence":"high","source":"https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University","note":"CORRECTION from Medunsa (campus name)"},
+    "province":{"value":"Gauteng","confidence":"high","source":"https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"},
+    "founded":{"value":2015,"confidence":"high","source":"https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"},
+    "students":{"value":6300,"confidence":"medium","source":"https://www.unirank.org/za/uni/sefako-makgatho-health-sciences-university/","note":"CORRECTION from 5000"},
+    "type":{"value":"Health Sciences University","confidence":"high","source":"https://www.smu.ac.za/"},
+    "faculties":{"value":["Medicine","Dentistry","Health Care Sciences","Pharmacy","Science and Technology"],"confidence":"high","source":"https://www.smu.ac.za/schools/","note":"CORRECTION: 5 schools not 4; removed Preclinical Sciences"}
+  },
+  "notes":"fee R200->R300; city Medunsa->Ga-Rankuwa; faculties 4->5; students 5k->6.3k"
+},
+{
+  "abbr":"SPU",
+  "fields":{
+    "website":{"value":"https://www.spu.ac.za","confidence":"high","source":"https://www.spu.ac.za/"},
+    "applyUrl":{"value":"https://applications-prod.spu.ac.za/","confidence":"high","source":"https://www.spu.ac.za/index.php/how-to-apply/","note":"CORRECTION from spu.ac.za/admissions"},
+    "prospectusUrl":{"value":"https://www.spu.ac.za/wp-content/uploads/2025/04/2026-Undergraduate-Prospectus.pdf","confidence":"high","source":"https://www.spu.ac.za/index.php/prospectus-2026/"},
+    "applicationOpens":{"value":"11 May 2026","confidence":"medium","source":"https://richadmissions.com/spu-2027-undergraduate-applications-now-open/"},
+    "applicationCloses":{"value":"31 October 2026","confidence":"medium","source":"https://richadmissions.com/spu-2027-undergraduate-applications-now-open/","note":"2027 not yet on official page"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://www.varsitywise.com/posts/sol-plaatje-university-application-fee","note":"CORRECTION from R100; SPU free"},
+    "minimumAPS":{"value":22,"confidence":"medium","source":"https://www.spu.ac.za/index.php/admission-requirements-2/","note":"floor; degrees ~30"},
+    "city":{"value":"Kimberley","confidence":"high","source":"https://www.spu.ac.za/"},
+    "province":{"value":"Northern Cape","confidence":"high","source":"https://www.spu.ac.za/"},
+    "founded":{"value":2014,"confidence":"high","source":"https://en.wikipedia.org/wiki/Sol_Plaatje_University"},
+    "students":{"value":7183,"confidence":"high","source":"https://www.spu.ac.za/index.php/spu-factfile-2025/","note":"CORRECTION from 4000; Factfile 2025"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.spu.ac.za/"},
+    "faculties":{"value":["Economic & Management Sciences","Education","Humanities","Natural & Applied Sciences"],"confidence":"high","source":"https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/"}
+  },
+  "notes":"fee R100->R0; students 4000->7183; applyUrl/prospectus fixed"
+},
+{
+  "abbr":"UniZ",
+  "fields":{
+    "website":{"value":"https://www.unizulu.ac.za","confidence":"high","source":"https://www.unizulu.ac.za/"},
+    "applyUrl":{"value":"https://www.cao.ac.za","confidence":"high","source":"https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/","note":"UNIZULU applies via CAO"},
+    "prospectusUrl":{"value":"https://www.unizulu.ac.za/apply/","confidence":"medium","source":"https://www.unizulu.ac.za/apply/"},
+    "applicationOpens":{"value":"1 March 2026","confidence":"medium","source":"https://www.coursematch.co.za/blog/university-of-zululand-unizulu-2027-admissions-guide"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"medium","source":"https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/","note":"CORRECTION from 31 Oct; 31 Oct is late cutoff"},
+    "applicationFee":{"value":250,"confidence":"medium","source":"https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/","note":"CORRECTION from R100; CAO R250"},
+    "minimumAPS":{"value":18,"confidence":"medium","source":"https://www.coursematch.co.za/blog/university-of-zululand-unizulu-2027-admissions-guide","note":"floor; competitive 24-30"},
+    "city":{"value":"KwaDlangezwa","confidence":"high","source":"https://en.wikipedia.org/wiki/University_of_Zululand"},
+    "province":{"value":"KwaZulu-Natal","confidence":"high","source":"https://en.wikipedia.org/wiki/University_of_Zululand"},
+    "founded":{"value":1960,"confidence":"high","source":"https://en.wikipedia.org/wiki/University_of_Zululand"},
+    "students":{"value":17000,"confidence":"low","source":"https://en.wikipedia.org/wiki/University_of_Zululand","note":"~17360 (2018)"},
+    "type":{"value":"Traditional University","confidence":"high","source":"https://en.wikipedia.org/wiki/University_of_Zululand"},
+    "faculties":{"value":["Humanities and Social Sciences","Commerce, Administration and Law","Education","Science, Agriculture and Engineering"],"confidence":"high","source":"https://www.science.unizulu.ac.za/about-us/","note":"CORRECTION: outdated names fixed"}
+  },
+  "notes":"fee R100->R250; closes 31 Oct->30 Sep; faculties fixed; applies via CAO"
+},
+{
+  "abbr":"WSU",
+  "fields":{
+    "website":{"value":"https://www.wsu.ac.za","confidence":"high","source":"https://www.wsu.ac.za/"},
+    "applyUrl":{"value":"https://applications.wsu.ac.za","confidence":"high","source":"https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process","note":"CORRECTION from wsu.ac.za/admissions"},
+    "prospectusUrl":{"value":"https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf","confidence":"high","source":"https://www.wsu.ac.za/index.php/en/study-with-us/2024-prospectuses"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"medium","source":"https://studentdesk.co.za/walter-sisulu-university-wsu-applications-2027/"},
+    "applicationCloses":{"value":"31 October 2026","confidence":"medium","source":"https://studentdesk.co.za/walter-sisulu-university-wsu-applications-2027/","note":"Health Sciences 30 Sep"},
+    "applicationFee":{"value":100,"confidence":"medium","source":"https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process","note":"official R100; some sources say free"},
+    "minimumAPS":{"value":18,"confidence":"low","source":"https://www.wsu.ac.za/en/study-with-us/undergraduate-programmes/new-students/admission-requirement","note":"floor; most degrees 26+"},
+    "city":{"value":"Mthatha","confidence":"high","source":"https://www.wsu.ac.za/index.php/en/mthatha"},
+    "province":{"value":"Eastern Cape","confidence":"high","source":"https://en.wikipedia.org/wiki/Walter_Sisulu_University"},
+    "founded":{"value":2005,"confidence":"high","source":"https://en.wikipedia.org/wiki/Walter_Sisulu_University"},
+    "students":{"value":30000,"confidence":"medium","source":"https://www.wsu.ac.za/index.php/en/home/discovery-wsu/overview","note":"CORRECTION from 28000"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://en.wikipedia.org/wiki/Walter_Sisulu_University"},
+    "faculties":{"value":["Engineering, Built Environment and Information Technology","Management and Public Administration Sciences","Economic and Financial Sciences","Law, Humanities and Social Sciences","Medicine and Health Sciences","Natural Sciences","Education"],"confidence":"high","source":"https://www.wsu.ac.za/index.php/en/faculties-wsu","note":"CORRECTION: 4->7 faculties"}
+  },
+  "notes":"faculties 4->7; students 28k->30k; applyUrl fixed; fee R100 confirmed"
+}]

@@ -10,15 +10,15 @@
     "province": "KwaZulu-Natal"
   },
   "website": "https://www.unizulu.ac.za",
-  "apply": "https://www.unizulu.ac.za/application",
-  "prospectus": "https://www.unizulu.ac.za/prospectus",
+  "apply": "https://www.cao.ac.za",
+  "prospectus": "https://www.unizulu.ac.za/apply/",
   "logo": "unizulu.png",
   "description": "A historically Black university serving rural KwaZulu-Natal. Strong in social work, theology and natural sciences with a growing health sciences faculty.",
   "faculties": [
-    "Arts",
-    "Commerce, Administration & Law",
+    "Humanities and Social Sciences",
+    "Commerce, Administration and Law",
     "Education",
-    "Science & Agriculture"
+    "Science, Agriculture and Engineering"
   ],
   "motto": "Excellence in Learning and Teaching",
   "languages": [
@@ -29,5 +29,9 @@
     "KwaDlangezwa (Main)",
     "Richards Bay"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

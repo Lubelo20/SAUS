@@ -9,7 +9,7 @@
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Health Sciences closes 31 July. Space is limited — apply early.",
-  "applyUrl": "https://www.wsu.ac.za/admissions",
+  "applyUrl": "https://applications.wsu.ac.za",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,69 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.wsu.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process",
+        "note": "CORRECTION from wsu.ac.za/admissions"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.wsu.ac.za/index.php/en/study-with-us/2024-prospectuses"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/walter-sisulu-university-wsu-applications-2027/"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/walter-sisulu-university-wsu-applications-2027/",
+        "note": "Health Sciences 30 Sep"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process",
+        "note": "official R100; some sources say free"
+      },
+      "minimumAPS": {
+        "confidence": "low",
+        "source": "https://www.wsu.ac.za/en/study-with-us/undergraduate-programmes/new-students/admission-requirement",
+        "note": "floor; most degrees 26+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.wsu.ac.za/index.php/en/mthatha"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Walter_Sisulu_University"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Walter_Sisulu_University"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.wsu.ac.za/index.php/en/home/discovery-wsu/overview",
+        "note": "CORRECTION from 28000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Walter_Sisulu_University"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.wsu.ac.za/index.php/en/faculties-wsu",
+        "note": "CORRECTION: 4->7 faculties"
+      }
+    }
+  }
 }

@@ -2,14 +2,14 @@
   "abbr": "NWU",
   "applicationPeriod": {
     "opens": "1 June 2026",
-    "closes": "30 September 2026",
+    "closes": "31 August 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 150,
   "feeWaiver": false,
   "minimumAPS": 20,
   "apsNote": "Earlier closing than most universities. Potchefstroom is most competitive.",
-  "applyUrl": "https://www.nwu.ac.za/applying-for-studies",
+  "applyUrl": "https://studies.nwu.ac.za/undergraduate-studies/application",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.nwu.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/application",
+        "note": "CORRECTION from 30 Sep; selection courses close 30 June"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/application",
+        "note": "CORRECTION from R100; new R150 fee for 2027 (intl R600)"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://studies.nwu.ac.za/undergraduate-studies/application",
+        "note": "absolute min 18"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.nwu.ac.za/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.nwu.ac.za/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.nwu.ac.za/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.nwu.ac.za/",
+        "note": "CORRECTION from 65000; ~55096 per Quick Stats"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.nwu.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://studies.nwu.ac.za/studies/our-faculties",
+        "note": "CORRECTION: 8 faculties, fixed names"
+      }
+    }
+  }
 }

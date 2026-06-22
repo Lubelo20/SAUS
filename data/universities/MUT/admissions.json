@@ -1,15 +1,15 @@
 {
   "abbr": "MUT",
   "applicationPeriod": {
-    "opens": "1 January 2026",
+    "opens": "1 March 2026",
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 250,
   "feeWaiver": false,
-  "minimumAPS": 18,
+  "minimumAPS": 25,
   "apsNote": "Small institution — limited spaces per programme. Apply early.",
-  "applyUrl": "https://www.mut.ac.za/admissions",
+  "applyUrl": "https://www.mut.ac.za/prospective-students/apply/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/prospective-students/apply/"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.mut.ac.za/prospective-students/apply/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://www.mut.ac.za/prospective-students/apply/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/prospective-students/apply/"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/mut-application-dates-2027-cao-guide/",
+        "note": "CORRECTION from R100; CAO R250 on-time"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.mut.ac.za/admission-requirements/",
+        "note": "CORRECTION from 18; 25 Management Sciences"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/about-mut/our-story/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/about-mut/our-story/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/about-mut/our-story/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.mut.ac.za/about-mut/our-story/",
+        "note": "CORRECTION from 12000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.mut.ac.za/faculty-of-applied-and-health-sciences/",
+        "note": "CORRECTION: Natural Sciences->Applied and Health Sciences"
+      }
+    }
+  }
 }

@@ -5,11 +5,11 @@
     "closes": "31 July 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 200,
+  "applicationFee": 300,
   "feeWaiver": false,
   "minimumAPS": 34,
   "apsNote": "Dedicated health sciences university — all programmes extremely competitive.",
-  "applyUrl": "https://www.smu.ac.za/admissions",
+  "applyUrl": "https://www.smu.ac.za/students/apply/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,70 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/students/apply/",
+        "note": "CORRECTION from smu.ac.za/admissions"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/students/apply/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/students/apply/",
+        "note": "PG 31 Aug"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://schoolhive.co.za/sefako-makgatho-health-sciences-university-smu-2027-applications/",
+        "note": "CORRECTION from R200; R300"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.nasi-ispani.co.za/sefako-makgatho-smu-2027-applications/",
+        "note": "health sciences uni; MBChB 38, BDS 37"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University",
+        "note": "CORRECTION from Medunsa (campus name)"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.unirank.org/za/uni/sefako-makgatho-health-sciences-university/",
+        "note": "CORRECTION from 5000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.smu.ac.za/schools/",
+        "note": "CORRECTION: 5 schools not 4; removed Preclinical Sciences"
+      }
+    }
+  }
 }

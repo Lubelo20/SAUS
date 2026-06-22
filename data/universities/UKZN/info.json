@@ -11,15 +11,14 @@
   },
   "website": "https://www.ukzn.ac.za",
   "apply": "https://applications.ukzn.ac.za/",
-  "prospectus": "https://www.ukzn.ac.za/ukzn-for-students/",
+  "prospectus": "https://applications.ukzn.ac.za/applications/online-applications/",
   "logo": "ukzn.png",
   "description": "Spread across five campuses in KwaZulu-Natal with strong health sciences, law and humanities programmes. A merger of the former University of Natal and University of Durban-Westville in 2004.",
   "faculties": [
     "Agriculture, Engineering & Science",
     "Health Sciences",
     "Humanities",
-    "Law & Mgmt Studies",
-    "Science & Agriculture"
+    "Law & Management Studies"
   ],
   "motto": "Inspiring Greatness",
   "languages": [
@@ -33,5 +32,9 @@
     "Edgewood (Pinetown)",
     "Pietermaritzburg"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

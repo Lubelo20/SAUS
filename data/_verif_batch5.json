@@ -1,0 +1,76 @@
+[{
+  "abbr":"CUT",
+  "fields":{
+    "website":{"value":"https://www.cut.ac.za","confidence":"high","source":"https://www.cut.ac.za"},
+    "applyUrl":{"value":"https://www.cut.ac.za/application-process","confidence":"high","source":"https://www.cut.ac.za/application-process"},
+    "prospectusUrl":{"value":"https://www.cut.ac.za/programmes-offered","confidence":"medium","source":"https://www.cut.ac.za/programmes-offered"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://www.cut.ac.za/application-process"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.cut.ac.za/application-process"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://www.cut.ac.za/announcements/166","note":"CORRECTION from R100; CUT free"},
+    "minimumAPS":{"value":27,"confidence":"high","source":"https://www.cut.ac.za/admission-points-ap","note":"CORRECTION from 18; min 27, Mech Eng 32+"},
+    "city":{"value":"Bloemfontein","confidence":"high","source":"https://www.cut.ac.za/campus/1/bloemfontein"},
+    "province":{"value":"Free State","confidence":"high","source":"https://www.cut.ac.za/campus/1/bloemfontein"},
+    "founded":{"value":1981,"confidence":"high","source":"https://www.cut.ac.za"},
+    "students":{"value":21000,"confidence":"medium","source":"https://www.cut.ac.za","note":"CORRECTION from 15000; ~21596 (2024)"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://www.cut.ac.za"},
+    "faculties":{"value":["Engineering, Built Environment and Information Technology","Health and Environmental Sciences","Humanities","Management Sciences"],"confidence":"high","source":"https://www.cut.ac.za/faculty"}
+  },
+  "notes":"fee R100->R0; minAPS 18->27; students 15k->21k; faculty names"
+},
+{
+  "abbr":"MUT",
+  "fields":{
+    "website":{"value":"https://www.mut.ac.za","confidence":"high","source":"https://www.mut.ac.za"},
+    "applyUrl":{"value":"https://www.mut.ac.za/prospective-students/apply/","confidence":"high","source":"https://www.mut.ac.za/prospective-students/apply/"},
+    "prospectusUrl":{"value":"https://www.mut.ac.za/prospective-students/apply/","confidence":"medium","source":"https://www.mut.ac.za/prospective-students/apply/"},
+    "applicationOpens":{"value":"1 March 2026","confidence":"medium","source":"https://www.mut.ac.za/prospective-students/apply/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.mut.ac.za/prospective-students/apply/"},
+    "applicationFee":{"value":250,"confidence":"medium","source":"https://studentdesk.co.za/mut-application-dates-2027-cao-guide/","note":"CORRECTION from R100; CAO R250 on-time"},
+    "minimumAPS":{"value":25,"confidence":"medium","source":"https://www.mut.ac.za/admission-requirements/","note":"CORRECTION from 18; 25 Management Sciences"},
+    "city":{"value":"Umlazi","confidence":"high","source":"https://www.mut.ac.za/about-mut/our-story/"},
+    "province":{"value":"KwaZulu-Natal","confidence":"high","source":"https://www.mut.ac.za/about-mut/our-story/"},
+    "founded":{"value":1979,"confidence":"high","source":"https://www.mut.ac.za/about-mut/our-story/"},
+    "students":{"value":14500,"confidence":"medium","source":"https://www.mut.ac.za/about-mut/our-story/","note":"CORRECTION from 12000"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://www.mut.ac.za"},
+    "faculties":{"value":["Engineering","Management Sciences","Applied and Health Sciences"],"confidence":"high","source":"https://www.mut.ac.za/faculty-of-applied-and-health-sciences/","note":"CORRECTION: Natural Sciences->Applied and Health Sciences"}
+  },
+  "notes":"fee R100->R250; minAPS 18->25; students 12k->14.5k; faculty rename"
+},
+{
+  "abbr":"UNISA",
+  "fields":{
+    "website":{"value":"https://www.unisa.ac.za","confidence":"high","source":"https://www.unisa.ac.za/"},
+    "applyUrl":{"value":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool","confidence":"high","source":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"},
+    "prospectusUrl":{"value":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications","confidence":"medium","source":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications"},
+    "applicationOpens":{"value":"August 2026","confidence":"unconfirmed","source":null,"note":"Distance university; Sem1 historically opens mid-Aug; 2027 dates not yet confirmed"},
+    "applicationCloses":{"value":"October 2026","confidence":"unconfirmed","source":null,"note":"2027 Sem1 dates not yet officially confirmed"},
+    "applicationFee":{"value":150,"confidence":"medium","source":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/FAQs","note":"CORRECTION from R135; ~R150"},
+    "minimumAPS":{"value":15,"confidence":"medium","source":"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements","note":"15 absolute min (Higher Cert); degrees higher"},
+    "city":{"value":"Pretoria","confidence":"high","source":"https://www.unisa.ac.za/sites/corporate/default/Contact-us"},
+    "province":{"value":"National","confidence":"high","source":"https://www.unisa.ac.za/","note":"distance, national footprint"},
+    "founded":{"value":1873,"confidence":"high","source":"https://www.unisa.ac.za/"},
+    "students":{"value":370000,"confidence":"medium","source":"https://www.unisa.ac.za/","note":"CORRECTION from 400000; 'more than 370000'"},
+    "type":{"value":"Distance University","confidence":"high","source":"https://www.unisa.ac.za/"},
+    "faculties":{"value":["College of Accounting Sciences","College of Agriculture & Environmental Sciences","College of Economic & Management Sciences","College of Education","College of Human Sciences","College of Law","College of Science, Engineering & Technology","College of Graduate Studies"],"confidence":"high","source":"https://www.unisa.ac.za/sites/corporate/default/Colleges","note":"UNISA uses Colleges; Theology is a school in Human Sciences"}
+  },
+  "notes":"distance uni; 2027 dates UNCONFIRMED (keep+flag); fee R135->R150; students 400k->370k; colleges"
+},
+{
+  "abbr":"UNIVEN",
+  "fields":{
+    "website":{"value":"https://www.univen.ac.za","confidence":"high","source":"https://www.univen.ac.za/"},
+    "applyUrl":{"value":"https://admission.univen.ac.za/","confidence":"high","source":"https://www.univen.ac.za/students/student-support-services/how-to-apply/apply-online/"},
+    "prospectusUrl":{"value":"https://www.univen.ac.za/wp-content/uploads/2026/03/2027-Univen-Undergraduate-Prospectus.pdf","confidence":"high","source":"https://www.univen.ac.za/students/student-support-services/how-to-apply/prospectus/"},
+    "applicationOpens":{"value":"1 May 2026","confidence":"high","source":"https://www.univen.ac.za/students/student-support-services/how-to-apply/application-process/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://www.univen.ac.za/students/student-support-services/how-to-apply/application-process/"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://www.univen.ac.za/apply/","note":"CORRECTION from R100; online free"},
+    "minimumAPS":{"value":26,"confidence":"high","source":"https://www.univen.ac.za/students/student-support-services/how-to-apply/general-information/","note":"CORRECTION from 18; bachelor min 26; Nursing 36"},
+    "city":{"value":"Thohoyandou","confidence":"high","source":"https://www.univen.ac.za/about/"},
+    "province":{"value":"Limpopo","confidence":"high","source":"https://www.univen.ac.za/about/"},
+    "founded":{"value":1982,"confidence":"high","source":"https://www.univen.ac.za/"},
+    "students":{"value":15000,"confidence":"medium","source":"https://www.univen.ac.za/","note":"matches"},
+    "type":{"value":"Traditional University","confidence":"high","source":"https://www.univen.ac.za/about/"},
+    "faculties":{"value":["Science, Engineering and Agriculture","Management, Commerce and Law","Humanities, Social Sciences and Education","Health Sciences"],"confidence":"high","source":"https://www.univen.ac.za/faculties/","note":"CORRECTION: 6->4 combined faculties"}
+  },
+  "notes":"fee R100->R0; minAPS 18->26; faculties 6->4; opens 1 May"
+}]

@@ -10,17 +10,15 @@
     "province": "Limpopo"
   },
   "website": "https://www.univen.ac.za",
-  "apply": "https://www.univen.ac.za/admissions",
-  "prospectus": "https://www.univen.ac.za/admissions",
+  "apply": "https://admission.univen.ac.za/",
+  "prospectus": "https://www.univen.ac.za/wp-content/uploads/2026/03/2027-Univen-Undergraduate-Prospectus.pdf",
   "logo": "univen.png",
   "description": "Serves the rural Vhembe district in Limpopo. Known for environmental sciences, health sciences and agriculture, training professionals for remote and underserved communities.",
   "faculties": [
-    "Agriculture",
-    "Education",
-    "Health Sciences",
-    "Human Sciences",
-    "Law",
-    "Science, Engineering & Technology"
+    "Science, Engineering and Agriculture",
+    "Management, Commerce and Law",
+    "Humanities, Social Sciences and Education",
+    "Health Sciences"
   ],
   "motto": "Empowering Future Leaders",
   "languages": [
@@ -31,5 +29,9 @@
   "campuses": [
     "Thohoyandou (Main)"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

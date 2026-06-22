@@ -9,177 +9,40 @@
 <meta name="theme-color" content="#0A1628"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/saus.css">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-:root{
-  --navy:#0A1628;--navy-mid:#122040;--navy-light:#1E3160;
-  --green:#00692F;--green-lt:#00873E;--red:#A8200D;--gold:#C9A227;
-  --white:#FFFFFF;--cream:#F7F6F2;--stone:#EEECEA;
-  --border:#D0CEC8;--border-dk:#B8B5AE;
-  --text:#1A1918;--text-mid:#4A4845;--text-lt:#7A7874;
-  --ff-serif:'EB Garamond',Georgia,'Times New Roman',serif;
-  --ff-sans:'Source Sans 3','Segoe UI',sans-serif;
-  --ff-mono:'Source Code Pro',monospace;
-  --max:1200px;--topbar-h:38px;--header-h:88px;--nav-h:52px;
-  --total-top:178px;--ease:cubic-bezier(.4,0,.2,1);
-}
-body{font-family:var(--ff-sans);background:var(--cream);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;}
-a{color:var(--green);text-decoration:none}
-a:hover{text-decoration:underline}
-button{cursor:pointer;font-family:var(--ff-sans)}
-p{margin-bottom:1rem}
-p:last-child{margin-bottom:0}
-::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--stone)}::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
-#topbar{position:fixed;top:0;left:0;right:0;z-index:1100;height:var(--topbar-h);background:var(--navy);border-bottom:2px solid var(--gold);display:flex;align-items:center;}
-.topbar-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-.topbar-left{display:flex;align-items:center;gap:0;font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.02em;}
-.topbar-left .sep{display:inline-block;width:1px;height:14px;background:rgba(255,255,255,.2);margin:0 14px;}
-.topbar-flag{display:inline-flex;gap:2px;align-items:center;margin-right:14px;}
-.flag-seg{width:18px;height:12px;border-radius:1px}
-.topbar-right{display:flex;align-items:center;gap:20px;}
-.topbar-right a{font-size:12px;color:rgba(255,255,255,.65);display:flex;align-items:center;gap:6px;transition:color .2s;text-decoration:none;}
-.topbar-right a:hover{color:var(--gold)}
-.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
-#header{position:fixed;top:var(--topbar-h);left:0;right:0;z-index:1090;height:var(--header-h);background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;}
-.header-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;display:flex;align-items:center;gap:24px;}
+/* page: header-seal uses white bg (shared CSS uses navy) */
 .header-seal{width:64px;height:64px;flex-shrink:0;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:3px solid var(--gold);}
-.header-seal-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
-.seal-top-stripe{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 33%,var(--green) 33% 67%,var(--red) 67%);}
-.seal-globe{font-size:24px;line-height:1;position:relative;z-index:1;}
-.seal-text{font-family:var(--ff-mono);font-size:6px;color:var(--gold);letter-spacing:.08em;text-align:center;font-weight:500;position:relative;z-index:1;text-transform:uppercase;}
-.seal-stars{display:flex;gap:2px;position:relative;z-index:1;}
-.seal-stars span{font-size:5px;color:var(--gold)}
-.header-ident{display:flex;flex-direction:column}
-.header-ident-main{font-family:var(--ff-serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.15;letter-spacing:.01em;}
-.header-ident-main em{font-style:normal;color:var(--green)}
-.header-ident-sub{font-size:12px;color:var(--text-mid);letter-spacing:.04em;font-weight:400;margin-top:2px;}
-.header-divider{width:1px;height:48px;background:var(--border);margin:0 8px;flex-shrink:0;}
-.header-established{display:flex;flex-direction:column;font-family:var(--ff-mono);font-size:10px;color:var(--text-lt);letter-spacing:.1em;text-transform:uppercase;line-height:1.8;}
-.header-established strong{font-family:var(--ff-serif);font-size:20px;color:var(--navy);letter-spacing:.02em;font-weight:600;}
-.header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+/* page: header-contact-btn omits gap:8px */
 .header-contact-btn{display:flex;align-items:center;padding:9px 20px;border-radius:3px;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;border:none;transition:background .2s;letter-spacing:.02em;}
 .header-contact-btn:hover{background:var(--navy-light);text-decoration:none}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;}
-.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:1px;transition:.3s}
-#navbar{position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1080;height:var(--nav-h);background:var(--navy-mid);border-bottom:3px solid var(--green);}
-.nav-inner{max-width:var(--max);margin:0 auto;width:100%;padding:0 32px;height:100%;display:flex;align-items:center;}
-.nav-links{display:flex;height:100%}
+/* page: nav-item/mobile-nav-item carry text-decoration:none (links, not buttons) */
 .nav-item{height:100%;display:flex;align-items:center;padding:0 16px;position:relative;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:.03em;text-transform:uppercase;border:none;background:none;font-family:var(--ff-sans);transition:color .2s,background .2s;white-space:nowrap;text-decoration:none;}
-.nav-item::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .25s var(--ease);}
 .nav-item:hover{color:var(--white);background:rgba(255,255,255,.05);text-decoration:none}
-.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
-.nav-item.active{color:var(--white)}
-.nav-ref{margin-left:auto;font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
-.mobile-nav{display:none;position:fixed;top:calc(var(--topbar-h) + var(--header-h));left:0;right:0;z-index:1079;background:var(--navy);border-bottom:2px solid var(--green);flex-direction:column;padding:8px 0;}
-.mobile-nav.open{display:flex}
 .mobile-nav-item{padding:14px 32px;font-size:14px;font-weight:600;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.04em;border:none;background:none;font-family:var(--ff-sans);text-align:left;border-left:3px solid transparent;transition:all .2s;text-decoration:none;}
 .mobile-nav-item:hover,.mobile-nav-item.active{color:var(--white);background:rgba(255,255,255,.05);border-left-color:var(--gold);text-decoration:none;}
+/* page: standalone page uses <main> not .page */
 main{min-height:100vh;padding-top:var(--total-top)}
-.breadcrumb-bar{background:var(--stone);border-bottom:1px solid var(--border);padding:9px 0;}
-.breadcrumb-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-lt);}
+/* page: breadcrumb links are <a> tags, shared CSS styles <span> */
 .breadcrumb-inner a{color:var(--text-lt);transition:color .2s;text-decoration:none}
 .breadcrumb-inner a:hover{color:var(--green)}
-.breadcrumb-inner .sep{color:var(--border-dk);font-size:11px;user-select:none}
-.breadcrumb-inner .current{color:var(--text-mid);font-weight:500}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
-.section{padding:72px 0}
-.official-hero{background:var(--navy);color:var(--white);padding:72px 32px;position:relative;overflow:hidden;}
+/* page: grid overlay on hero not in shared CSS */
 .official-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;}
-.official-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--navy) 20%,var(--green) 20% 40%,var(--gold) 40% 60%,var(--red) 60% 80%,var(--navy) 80%);}
-.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}
-.hero-ref{font-family:var(--ff-mono);font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
-.hero-ref::before{content:'';display:block;width:32px;height:1px;background:var(--gold);}
-.hero-title{font-family:var(--ff-serif);font-size:clamp(36px,5.5vw,68px);font-weight:700;line-height:1.1;color:var(--white);margin-bottom:20px;max-width:760px;}
-.hero-title em{font-style:italic;color:var(--gold)}
-.hero-lead{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,.7);max-width:560px;line-height:1.75;margin-bottom:36px;}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:3px;font-size:14px;font-weight:600;cursor:pointer;border:none;font-family:var(--ff-sans);letter-spacing:.03em;transition:all .2s var(--ease);text-decoration:none;}
-.btn:hover{text-decoration:none}
-.btn-navy{background:var(--navy);color:var(--white)}
+/* page: btn-navy:hover omits box-shadow present in shared CSS */
 .btn-navy:hover{background:var(--navy-light)}
-.sec-header{margin-bottom:48px}
-.sec-header .ref{font-family:var(--ff-mono);font-size:11px;color:var(--text-lt);letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
-.sec-header .ref::before{content:'';display:block;width:24px;height:2px;background:var(--green);}
-.sec-header h2{font-family:var(--ff-serif);font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;color:var(--navy);}
-.sec-header h2 em{font-style:italic;color:var(--green)}
-.panel{background:var(--white);border:1px solid var(--border);border-radius:2px;overflow:hidden;}
-.panel-header{padding:20px 28px;background:var(--navy);color:var(--white);display:flex;align-items:center;gap:14px;}
-.panel-header h3{font-family:var(--ff-serif);font-size:18px;font-weight:600;color:var(--white);}
-.panel-header .panel-icon{width:36px;height:36px;background:rgba(255,255,255,.1);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
-.panel-body{padding:28px}
-.form-group{margin-bottom:20px}
-.form-label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:.02em;}
-.form-label .req{color:var(--red);margin-left:2px}
-.form-control{width:100%;padding:11px 14px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14.5px;font-family:var(--ff-sans);color:var(--text);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s;}
-.form-control:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(10,22,40,.08);}
-.form-control::placeholder{color:var(--text-lt)}
-textarea.form-control{resize:vertical;min-height:110px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.form-note{font-size:12px;color:var(--text-lt);margin-top:6px;line-height:1.5;}
-.checkbox-group{display:flex;gap:10px;align-items:flex-start;margin-bottom:24px}
-.checkbox-group input{accent-color:var(--green);flex-shrink:0;margin-top:3px;width:15px;height:15px}
-.checkbox-group label{font-size:13px;color:var(--text-mid);line-height:1.55}
-.contact-row{display:flex;gap:16px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid var(--border);border-radius:2px;margin-bottom:10px;}
-.contact-icon{width:40px;height:40px;border-radius:2px;background:rgba(10,22,40,.06);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;}
-.contact-label{font-size:12px;color:var(--text-lt);margin-bottom:2px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-.contact-value{font-size:15px;color:var(--navy);font-weight:500}
-.contact-value a{color:var(--green);text-decoration:none}
-.sidebar-panel{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:24px;margin-bottom:20px;border-top:3px solid var(--green);}
-.sidebar-title{font-family:var(--ff-serif);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
-.with-sidebar{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
-.sidebar{position:sticky;top:calc(var(--total-top) + 20px)}
-#footer{background:var(--navy);color:var(--white);margin-top:0;}
-.footer-gov-bar{background:var(--navy-mid);padding:18px 32px;border-bottom:1px solid rgba(255,255,255,.08);}
-.footer-gov-bar-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
-.footer-gov-bar-inner p{font-size:12px;color:rgba(255,255,255,.45);font-family:var(--ff-mono);margin:0;letter-spacing:.04em;}
-.footer-main{padding:64px 32px 40px}
-.footer-main-inner{max-width:var(--max);margin:0 auto}
-.footer-cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
-.footer-brand-name{font-family:var(--ff-serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
-.footer-brand-sub{font-family:var(--ff-mono);font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
-.footer-brand-desc{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;max-width:240px;margin-bottom:24px;}
-.footer-social{display:flex;gap:10px}
-.footer-social a{width:36px;height:36px;border-radius:2px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:15px;text-decoration:none;transition:background .2s;}
-.footer-social a:hover{background:rgba(255,255,255,.12)}
-.footer-col-title{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08);}
-.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;text-decoration:none;transition:color .2s;line-height:1.5;}
+/* page: footer-col p not covered by shared .footer-col button,.footer-col a rule */
 .footer-col p{font-size:13.5px;color:rgba(255,255,255,.5);padding:5px 0;margin:0;line-height:1.5;}
-.footer-col a:hover{color:var(--white);text-decoration:none}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-.footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);font-family:var(--ff-mono);letter-spacing:.04em;margin:0;}
-.footer-stripe{height:4px;background:linear-gradient(to right,var(--navy) 15%,var(--green) 15% 38%,var(--gold) 38% 62%,var(--red) 62% 85%,var(--navy) 85%);}
-#toast{position:fixed;bottom:32px;right:32px;background:var(--navy);color:var(--white);padding:14px 22px;border-radius:2px;font-size:14px;font-weight:500;border-left:4px solid var(--green);transform:translateY(80px);opacity:0;transition:all .4s var(--ease);z-index:9999;max-width:340px;line-height:1.4;box-shadow:0 8px 32px rgba(0,0,0,.25);}
-#toast.show{transform:translateY(0);opacity:1}
-#cookie{position:fixed;bottom:0;left:0;right:0;background:var(--navy-mid);color:var(--white);padding:18px 32px;display:flex;align-items:center;gap:24px;z-index:8000;border-top:3px solid var(--gold);transform:translateY(100%);transition:transform .5s var(--ease);flex-wrap:wrap;}
-#cookie.show{transform:translateY(0)}
-#cookie p{font-size:13px;color:rgba(255,255,255,.7);flex:1;min-width:200px;margin:0}
-#cookie p a{color:var(--gold)}
-.cookie-btns{display:flex;gap:10px}
+/* page: c-accept/c-decline omit font-family (conservative keep) */
 .c-accept{background:var(--green);color:var(--white);border:none;padding:9px 20px;border-radius:2px;font-size:13px;font-weight:600;cursor:pointer;}
 .c-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.2);padding:9px 20px;border-radius:2px;font-size:13px;cursor:pointer;}
+/* page: form-row collapse at 960px (shared CSS does it at 640px) */
 @media(max-width:960px){
-  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
-  .with-sidebar{grid-template-columns:1fr}
-  .sidebar{position:static}
-  .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .nav-ref{display:none}
   .form-row{grid-template-columns:1fr}
-}
-@media(max-width:640px){
-  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
-  .wrap{padding:0 20px}
-  .header-established,.header-divider{display:none}
-  .header-ident-main{font-size:17px}
-  .footer-cols{grid-template-columns:1fr}
-  .official-hero{padding:48px 20px}
-  .section{padding:48px 0}
-  .topbar-left .sep,.topbar-left span:nth-child(3),.topbar-left span:nth-child(4){display:none}
 }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <div id="topbar">
   <div class="topbar-inner">
@@ -211,7 +74,7 @@ textarea.form-control{resize:vertical;min-height:110px}
   </div>
 </div>
 
-<div id="header">
+<div id="header" role="banner">
   <div class="header-inner">
     <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
       <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
@@ -224,7 +87,7 @@ textarea.form-control{resize:vertical;min-height:110px}
     <div class="header-established"><span>Established</span><strong>2006</strong><span>9th Congress</span></div>
     <div class="header-right">
       <div class="header-contact-btn" style="background:transparent;border:none;padding:4px 8px;cursor:default;"><span style="display:block;width:60px;height:40px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span></div>
-      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+      <button class="hamburger" onclick="toggleMenu()" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mnav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </div>
 </div>
@@ -260,7 +123,7 @@ textarea.form-control{resize:vertical;min-height:110px}
   <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
 </div>
 
-<main>
+<main id="main" tabindex="-1">
   <div class="breadcrumb-bar"><div class="breadcrumb-inner"><a href="/">Home</a><span class="sep">›</span><span class="current">Contact the Secretariat</span></div></div>
   <div class="official-hero" style="padding:56px 32px">
     <div class="hero-inner">
@@ -279,14 +142,14 @@ textarea.form-control{resize:vertical;min-height:110px}
             <div class="panel-header"><div class="panel-icon"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1.5" width="10" height="13" rx="1"/><path d="M6 5.5h4M6 8h4M6 10.5h2.5"/></svg></div><h3>Official Enquiry Form</h3></div>
             <div class="panel-body">
               <div class="form-row">
-                <div class="form-group"><label class="form-label">First Name<span class="req">*</span></label><input class="form-control" type="text" placeholder="Your first name"/></div>
-                <div class="form-group"><label class="form-label">Surname<span class="req">*</span></label><input class="form-control" type="text" placeholder="Your surname"/></div>
+                <div class="form-group"><label class="form-label" for="cf-first">First Name<span class="req">*</span></label><input id="cf-first" class="form-control" type="text" placeholder="Your first name"/></div>
+                <div class="form-group"><label class="form-label" for="cf-surname">Surname<span class="req">*</span></label><input id="cf-surname" class="form-control" type="text" placeholder="Your surname"/></div>
               </div>
-              <div class="form-group"><label class="form-label">Email Address<span class="req">*</span></label><input class="form-control" type="email" placeholder="your.email@institution.ac.za"/></div>
+              <div class="form-group"><label class="form-label" for="cf-email">Email Address<span class="req">*</span></label><input id="cf-email" class="form-control" type="email" placeholder="your.email@institution.ac.za"/></div>
               <div class="form-row">
-                <div class="form-group"><label class="form-label">Contact Number</label><input class="form-control" type="tel" placeholder="+27 82 000 0000"/></div>
-                <div class="form-group"><label class="form-label">Capacity<span class="req">*</span></label>
-                  <select class="form-control">
+                <div class="form-group"><label class="form-label" for="cf-phone">Contact Number</label><input id="cf-phone" class="form-control" type="tel" placeholder="+27 82 000 0000"/></div>
+                <div class="form-group"><label class="form-label" for="cf-capacity">Capacity<span class="req">*</span></label>
+                  <select id="cf-capacity" class="form-control">
                     <option value="">— Select your capacity —</option>
                     <option>Student</option>
                     <option>SRC Member / Office Bearer</option>
@@ -299,9 +162,9 @@ textarea.form-control{resize:vertical;min-height:110px}
                   </select>
                 </div>
               </div>
-              <div class="form-group"><label class="form-label">Institution / Organisation<span class="req">*</span></label><input class="form-control" type="text" placeholder="Name of your institution or organisation"/></div>
-              <div class="form-group"><label class="form-label">Subject / Matter<span class="req">*</span></label><input class="form-control" type="text" placeholder="Brief subject of your enquiry"/></div>
-              <div class="form-group"><label class="form-label">Detailed Enquiry<span class="req">*</span></label><textarea class="form-control" rows="5" placeholder="Please provide the full details of your enquiry. All information is treated with confidentiality."></textarea></div>
+              <div class="form-group"><label class="form-label" for="cf-institution">Institution / Organisation<span class="req">*</span></label><input id="cf-institution" class="form-control" type="text" placeholder="Name of your institution or organisation"/></div>
+              <div class="form-group"><label class="form-label" for="cf-subject">Subject / Matter<span class="req">*</span></label><input id="cf-subject" class="form-control" type="text" placeholder="Brief subject of your enquiry"/></div>
+              <div class="form-group"><label class="form-label" for="cf-message">Detailed Enquiry<span class="req">*</span></label><textarea id="cf-message" class="form-control" rows="5" placeholder="Please provide the full details of your enquiry. All information is treated with confidentiality."></textarea></div>
               <div class="checkbox-group">
                 <input type="checkbox" id="popia"/>
                 <label for="popia">I consent to SAUS processing my personal information in accordance with the <strong>Protection of Personal Information Act (POPIA), Act 4 of 2013</strong>. My information will be used solely for the purpose of responding to this enquiry and will not be shared with third parties without consent.</label>
@@ -424,6 +287,7 @@ textarea.form-control{resize:vertical;min-height:110px}
 function toggleMenu(){
   const m=document.getElementById('mnav');m.classList.toggle('open');
   const h=document.getElementById('ham');const open=m.classList.contains('open');
+  h.setAttribute('aria-expanded', open?'true':'false');
   h.children[0].style.transform=open?'rotate(45deg) translateY(7px)':'none';
   h.children[1].style.opacity=open?'0':'1';
   h.children[2].style.transform=open?'rotate(-45deg) translateY(-7px)':'none';
@@ -436,7 +300,61 @@ window.addEventListener('DOMContentLoaded',()=>{
 });
 function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.getElementById('cookie').classList.remove('show')}
 function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
-function submitForm(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),5000);}
+function submitForm(){
+  var $ = function(id){ return document.getElementById(id); };
+  var toast = $('toast');
+  function showToast(msg, ok){
+    toast.textContent = (ok ? '✅ ' : '⚠️ ') + msg;
+    toast.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function(){ toast.classList.remove('show'); }, 6000);
+  }
+  function val(id){ var e = $(id); return e ? (e.value || '').trim() : ''; }
+
+  var first = val('cf-first'), surname = val('cf-surname'), email = val('cf-email');
+  var subject = val('cf-subject'), message = val('cf-message');
+  var phone = val('cf-phone'), capacity = val('cf-capacity'), institution = val('cf-institution');
+
+  if(!first || !surname){ showToast('Please enter your first name and surname.', false); return; }
+  if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ showToast('Please enter a valid email address.', false); return; }
+  if(!subject){ showToast('Please enter a subject for your enquiry.', false); return; }
+  if(!message){ showToast('Please enter the details of your enquiry.', false); return; }
+  if(!$('popia') || !$('popia').checked){ showToast('Please consent to POPIA processing to submit.', false); return; }
+
+  var fullMessage = message + '\n\n— Submitted via saus.org.za contact form —'
+    + (capacity ? '\nCapacity: ' + capacity : '')
+    + (institution ? '\nInstitution: ' + institution : '')
+    + (phone ? '\nPhone: ' + phone : '');
+  var payload = { name: (first + ' ' + surname).trim(), email: email, subject: subject, message: fullMessage };
+
+  // API base: local dev -> :4000; production -> deployed Render API.
+  var h = location.hostname;
+  var API_BASE = (h === 'localhost' || h === '127.0.0.1' || h === '')
+    ? 'http://localhost:4400/api'
+    : 'https://saus-admin-api.onrender.com/api'; // update if your Render API URL differs
+
+  var btn = document.querySelector('button[onclick="submitForm()"]');
+  var orig = btn ? btn.textContent : '';
+  if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+
+  fetch(API_BASE + '/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function(r){ return r.ok ? r.json() : Promise.reject(r); })
+  .then(function(){
+    showToast('Your enquiry has been submitted. We will respond within 2 business days.', true);
+    ['cf-first','cf-surname','cf-email','cf-phone','cf-institution','cf-subject','cf-message'].forEach(function(id){ var e = $(id); if(e) e.value = ''; });
+    if($('cf-capacity')) $('cf-capacity').selectedIndex = 0;
+    if($('popia')) $('popia').checked = false;
+  })
+  .catch(function(){
+    showToast('We couldn’t send your message right now. Please email Secretariat@saus.org.za directly.', false);
+  })
+  .finally(function(){ if(btn){ btn.disabled = false; btn.textContent = orig; } });
+}
 </script>
+<script src="/assets/saus.js" defer></script>
 </body>
 </html>

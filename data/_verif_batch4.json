@@ -1,0 +1,76 @@
+[{
+  "abbr":"CPUT",
+  "fields":{
+    "website":{"value":"https://www.cput.ac.za","confidence":"high","source":"https://www.cput.ac.za"},
+    "applyUrl":{"value":"https://www.cput.ac.za/study-at-cput/undergraduate/apply","confidence":"medium","source":"https://www.cput.ac.za/study-at-cput/undergraduate/apply"},
+    "prospectusUrl":{"value":"https://www.cput.ac.za/academic","confidence":"medium","source":"https://www.cput.ac.za/academic"},
+    "applicationOpens":{"value":"11 May 2026","confidence":"medium","source":"https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"medium","source":"https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/","note":"Health & Wellness close earlier"},
+    "applicationFee":{"value":0,"confidence":"medium","source":"https://www.cput.ac.za/help/content/19/82/en/07-do-i-have-to-pay-any-application-fee-if-applying-online.html","note":"CORRECTION from R100; online free"},
+    "minimumAPS":{"value":18,"confidence":"unconfirmed","source":null,"note":"no university-wide min; varies by programme; kept floor"},
+    "city":{"value":"Cape Town","confidence":"high","source":"https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"},
+    "province":{"value":"Western Cape","confidence":"high","source":"https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"},
+    "founded":{"value":2005,"confidence":"high","source":"https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"},
+    "students":{"value":35000,"confidence":"medium","source":"https://en.wikipedia.org/wiki/Cape_Peninsula_University_of_Technology"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://www.cput.ac.za/about-cput"},
+    "faculties":{"value":["Applied Sciences","Business & Management Sciences","Education","Engineering & the Built Environment","Health & Wellness Sciences","Informatics & Design"],"confidence":"high","source":"https://www.cput.ac.za/academic"}
+  },
+  "notes":"fee R100->R0 online; applyUrl fixed; opens 11 May; faculty names"
+},
+{
+  "abbr":"DUT",
+  "fields":{
+    "website":{"value":"https://www.dut.ac.za","confidence":"high","source":"https://www.dut.ac.za"},
+    "applyUrl":{"value":"https://www.cao.ac.za","confidence":"medium","source":"https://www.dut.ac.za/admissions/","note":"DUT applies via CAO"},
+    "prospectusUrl":{"value":"https://www.dut.ac.za/admissions/how-to-apply/","confidence":"medium","source":"https://www.dut.ac.za/admissions/"},
+    "applicationOpens":{"value":"1 March 2026","confidence":"medium","source":"https://studentoffice.co.za/dut-2027-applications-open-1-march/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"medium","source":"https://www.varsitywise.com/posts/dut-2027-admissions-online-applications-officially-open","note":"Health Sciences 31 Aug"},
+    "applicationFee":{"value":250,"confidence":"medium","source":"https://checkcaostatus.co.za/cao-fees-calculator/","note":"CORRECTION from R100; CAO R250"},
+    "minimumAPS":{"value":18,"confidence":"low","source":"https://kznuniupdates.org/dut-aps-score-requirements-per-course-updated-2027-list/","note":"floor; diplomas 24-27, degrees 28-32"},
+    "city":{"value":"Durban","confidence":"high","source":"https://en.wikipedia.org/wiki/Durban_University_of_Technology"},
+    "province":{"value":"KwaZulu-Natal","confidence":"high","source":"https://en.wikipedia.org/wiki/Durban_University_of_Technology"},
+    "founded":{"value":2002,"confidence":"high","source":"https://en.wikipedia.org/wiki/Durban_University_of_Technology"},
+    "students":{"value":32000,"confidence":"medium","source":"https://en.wikipedia.org/wiki/Durban_University_of_Technology","note":"CORRECTION from 25000"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://en.wikipedia.org/wiki/Durban_University_of_Technology"},
+    "faculties":{"value":["Accounting & Informatics","Applied Sciences","Arts & Design","Engineering & the Built Environment","Health Sciences","Management Sciences"],"confidence":"high","source":"https://www.dut.ac.za/academic/"}
+  },
+  "notes":"fee R100->R250 (CAO); students 25k->32k; applies via CAO"
+},
+{
+  "abbr":"TUT",
+  "fields":{
+    "website":{"value":"https://www.tut.ac.za","confidence":"high","source":"https://www.tut.ac.za"},
+    "applyUrl":{"value":"https://www.tut.ac.za/apply","confidence":"medium","source":"https://www.tut.ac.za/apply","note":"live portal applications-prod.tut.ac.za"},
+    "prospectusUrl":{"value":"https://www.tut.ac.za/index.php/prospectus","confidence":"medium","source":"https://www.tut.ac.za/index.php/prospectus"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"medium","source":"https://learnerstag.org/tut-2027-applications/","note":"CORRECTION from 3 April"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"medium","source":"https://varsitywise.com/posts/tut-2027-application-dates-you-cannot-miss","note":"CORRECTION from 31 Jul; tiered: high-demand 15 Jun, many 31 Jul, general 30 Sep"},
+    "applicationFee":{"value":240,"confidence":"high","source":"https://fundiconnect.co.za/tut-application-fees-2","note":"CORRECTION from R100; R240"},
+    "minimumAPS":{"value":18,"confidence":"medium","source":"https://www.studentroom.co.za/tshwane-university-of-technology-tut-aps-requirements-explained-for-2027/","note":"floor; degrees 20+"},
+    "city":{"value":"Pretoria","confidence":"high","source":"https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"},
+    "province":{"value":"Gauteng","confidence":"high","source":"https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"},
+    "founded":{"value":2004,"confidence":"high","source":"https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"},
+    "students":{"value":60000,"confidence":"high","source":"https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"},
+    "faculties":{"value":["Arts & Design","Economics & Finance","Engineering & the Built Environment","Humanities","Information and Communication Technology","Management Sciences","Science"],"confidence":"high","source":"https://www.tut.ac.za/study-at-tut/"}
+  },
+  "notes":"fee R100->R240; opens 3->1 April; closes 31 Jul->30 Sep; faculty IT name"
+},
+{
+  "abbr":"VUT",
+  "fields":{
+    "website":{"value":"https://www.vut.ac.za","confidence":"high","source":"https://vut.ac.za/"},
+    "applyUrl":{"value":"https://www.vut.ac.za/how-to-apply/","confidence":"medium","source":"https://vut.ac.za/how-to-apply/","note":"live portal applications-prod.vut.ac.za"},
+    "prospectusUrl":{"value":"https://www.vut.ac.za/undergraduate-studies/","confidence":"medium","source":"https://vut.ac.za/undergraduate-studies/"},
+    "applicationOpens":{"value":"21 May 2026","confidence":"medium","source":"https://www.studentroom.co.za/vaal-university-of-technology-vut-applications-2027-now-open/","note":"CORRECTION from 1 April"},
+    "applicationCloses":{"value":"30 October 2026","confidence":"medium","source":"https://www.varsitywise.com/posts/vut-application-dates-2027-your-complete-guide-varsity-wise","note":"CORRECTION from 30 Sep; national 30 Oct, intl 30 Sep"},
+    "applicationFee":{"value":110,"confidence":"medium","source":"https://www.studentroom.co.za/vaal-university-of-technology-vut-application-dates-2027-and-admission-requirements/","note":"CORRECTION from R100; R110, late R140"},
+    "minimumAPS":{"value":20,"confidence":"medium","source":"https://www.studentroom.co.za/vaal-university-of-technology-vut-aps-requirements-explained-for-2027/","note":"CORRECTION from 18; ~20"},
+    "city":{"value":"Vanderbijlpark","confidence":"high","source":"https://vut.ac.za/history/"},
+    "province":{"value":"Gauteng","confidence":"high","source":"https://en.wikipedia.org/wiki/Vaal_University_of_Technology"},
+    "founded":{"value":1966,"confidence":"high","source":"https://vut.ac.za/history/"},
+    "students":{"value":21000,"confidence":"high","source":"https://vut.ac.za/history/","note":"CORRECTION from 20000"},
+    "type":{"value":"University of Technology","confidence":"high","source":"https://vut.ac.za/history/"},
+    "faculties":{"value":["Applied and Computer Sciences","Engineering and Technology","Human Sciences","Management Sciences"],"confidence":"high","source":"https://vut.ac.za/faculty-of-human-sciences/","note":"CORRECTION: Humanities->Human Sciences"}
+  },
+  "notes":"fee R100->R110; opens 1 Apr->21 May; closes 30 Sep->30 Oct; faculty name; students 20k->21k"
+}]

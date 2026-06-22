@@ -2,14 +2,14 @@
   "abbr": "UniZ",
   "applicationPeriod": {
     "opens": "1 March 2026",
-    "closes": "31 October 2026",
+    "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 250,
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Richards Bay Campus may have separate closing dates for some programmes.",
-  "applyUrl": "https://www.unizulu.ac.za/application",
+  "applyUrl": "https://www.cao.ac.za",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,69 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.unizulu.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/",
+        "note": "UNIZULU applies via CAO"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.unizulu.ac.za/apply/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://www.coursematch.co.za/blog/university-of-zululand-unizulu-2027-admissions-guide"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/",
+        "note": "CORRECTION from 31 Oct; 31 Oct is late cutoff"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/",
+        "note": "CORRECTION from R100; CAO R250"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.coursematch.co.za/blog/university-of-zululand-unizulu-2027-admissions-guide",
+        "note": "floor; competitive 24-30"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/University_of_Zululand"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/University_of_Zululand"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/University_of_Zululand"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://en.wikipedia.org/wiki/University_of_Zululand",
+        "note": "~17360 (2018)"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/University_of_Zululand"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.science.unizulu.ac.za/about-us/",
+        "note": "CORRECTION: outdated names fixed"
+      }
+    }
+  }
 }

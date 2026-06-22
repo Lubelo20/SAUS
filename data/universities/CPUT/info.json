@@ -10,15 +10,15 @@
     "province": "Western Cape"
   },
   "website": "https://www.cput.ac.za",
-  "apply": "https://www.cput.ac.za/apply",
-  "prospectus": "https://www.cput.ac.za/students/faculties",
+  "apply": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+  "prospectus": "https://www.cput.ac.za/academic",
   "logo": "cput.svg",
   "description": "The largest university of technology in the Western Cape, offering industry-linked diplomas and degrees. Six faculties spanning engineering, business, health, IT and design across two main campuses.",
   "faculties": [
     "Applied Sciences",
-    "Business & Mgmt Sciences",
+    "Business & Management Sciences",
     "Education",
-    "Engineering",
+    "Engineering & the Built Environment",
     "Health & Wellness Sciences",
     "Informatics & Design"
   ],
@@ -31,5 +31,9 @@
     "Bellville",
     "Cape Town City"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

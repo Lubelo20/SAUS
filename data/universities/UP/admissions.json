@@ -5,11 +5,11 @@
     "closes": "30 June 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 200,
+  "applicationFee": 300,
   "feeWaiver": true,
   "minimumAPS": 28,
   "apsNote": "Health Sciences and Veterinary Science close 30 April.",
-  "applyUrl": "https://www.up.ac.za/apply",
+  "applyUrl": "https://www.up.ac.za/online-application/apply-online",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,69 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/online-application"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.up.ac.za/online-application",
+        "note": "2027 prospectus PDF on UP files server"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/online-application/important-dates"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/online-application/important-dates",
+        "note": "31 May 2026 Veterinary Science"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/online-application/application-fee",
+        "note": "CORRECTION: local had R200; official R300 for 2027"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.up.ac.za/students/admission-information",
+        "note": "floor; competitive programmes 35+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/article/2749257/about-us"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://www.up.ac.za/department-of-institutional-planning/core-students-statistics"
+      },
+      "type": {
+        "confidence": "medium",
+        "source": "https://www.up.ac.za/article/2749257/about-us",
+        "note": "CONFLICT: local had 'Comprehensive University'"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.up.ac.za/article/2749393/faculties",
+        "note": "CORRECTION: local listed 10 (IT standalone); official 9 (IT in Engineering)"
+      }
+    }
+  }
 }

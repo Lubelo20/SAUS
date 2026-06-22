@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 200,
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Health Sciences programmes close 30 June. Medunsa campus has limited space.",
-  "applyUrl": "https://www.ul.ac.za/admissions",
+  "applyUrl": "https://www.ul.ac.za/admissions/undergraduate-studies/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/admissions/undergraduate-studies/"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/",
+        "note": "Health Sciences close 30 Jul-31 Aug"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/admissions/undergraduate-studies/",
+        "note": "CORRECTION from R100; R200 SA, R750 intl"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.ul.ac.za/admissions/undergraduate-studies/",
+        "note": "floor; most 22-28; MBChB 27, LLB 28"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/about-us/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/about-us/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/about-us/"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://www.ul.ac.za",
+        "note": "unconfirmed"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/about-us/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.ul.ac.za/faculty-of-health-sciences/",
+        "note": "CORRECTION: added Health Sciences (3->4)"
+      }
+    }
+  }
 }

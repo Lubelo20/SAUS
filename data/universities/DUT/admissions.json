@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 250,
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Health Sciences closes 31 July. Applications processed on rolling basis.",
-  "applyUrl": "https://www.dut.ac.za/admissions/",
+  "applyUrl": "https://www.cao.ac.za",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.dut.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "medium",
+        "source": "https://www.dut.ac.za/admissions/",
+        "note": "DUT applies via CAO"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.dut.ac.za/admissions/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://studentoffice.co.za/dut-2027-applications-open-1-march/"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://www.varsitywise.com/posts/dut-2027-admissions-online-applications-officially-open",
+        "note": "Health Sciences 31 Aug"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://checkcaostatus.co.za/cao-fees-calculator/",
+        "note": "CORRECTION from R100; CAO R250"
+      },
+      "minimumAPS": {
+        "confidence": "low",
+        "source": "https://kznuniupdates.org/dut-aps-score-requirements-per-course-updated-2027-list/",
+        "note": "floor; diplomas 24-27, degrees 28-32"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology",
+        "note": "CORRECTION from 25000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.dut.ac.za/academic/"
+      }
+    }
+  }
 }

@@ -3,14 +3,14 @@
   "name": "Durban University of Technology",
   "type": "University of Technology",
   "established": 2002,
-  "students": 25000,
+  "students": 32000,
   "aps": "18–26+",
   "location": {
     "city": "Durban",
     "province": "KwaZulu-Natal"
   },
   "website": "https://www.dut.ac.za",
-  "apply": "https://www.dut.ac.za/admissions/",
+  "apply": "https://www.cao.ac.za",
   "prospectus": "https://www.dut.ac.za/admissions/how-to-apply/",
   "logo": "dut.jpg",
   "description": "KwaZulu-Natal's leading university of technology offering applied, vocational and career-focused programmes. Strong links to Durban's industrial and commercial sectors.",
@@ -18,7 +18,7 @@
     "Accounting & Informatics",
     "Applied Sciences",
     "Arts & Design",
-    "Engineering & Built Env.",
+    "Engineering & the Built Environment",
     "Health Sciences",
     "Management Sciences"
   ],
@@ -31,5 +31,9 @@
     "ML Sultan",
     "Riverside (Pietermaritzburg)"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }
