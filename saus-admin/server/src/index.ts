@@ -18,6 +18,7 @@ import settingsRoutes from './routes/settings';
 import dashboardRoutes from './routes/dashboard';
 import leadershipRoutes from './routes/leadership';
 import contactRoutes from './routes/contact';
+import pagesRoutes from './routes/pages';
 import publicRoutes from './routes/public';
 
 const app = express();
@@ -86,6 +87,7 @@ app.use('/api/users',      usersRoutes);
 app.use('/api/settings',   settingsRoutes);
 app.use('/api/leadership', leadershipRoutes);
 app.use('/api/contact',    contactRoutes);
+app.use('/api/pages',      pagesRoutes);
 app.use('/api/public',     publicRoutes);
 
 // ─── Health ───────────────────────────────────────────────────

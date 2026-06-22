@@ -353,9 +353,9 @@
   <!-- Hero -->
   <div class="official-hero" style="background-image:linear-gradient(to right,rgba(10,22,40,.92) 45%,rgba(10,22,40,.6) 100%),url('/gallery/galleryIMG/IMG11.jpg');background-size:cover;background-position:center;padding:64px 32px">
     <div class="hero-inner">
-      <div class="hero-ref">SAUS/ABOUT/2026 · Institutional Overview</div>
-      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)">About the South African <em>Union of Students</em></h1>
-      <p class="hero-lead">A constitutional overview of SAUS — its establishment, mandate, institutional history, and continental standing as South Africa's official national student body.</p>
+      <div class="hero-ref" data-cms="hero.ref">SAUS/ABOUT/2026 · Institutional Overview</div>
+      <h1 class="hero-title" style="font-size:clamp(32px,5vw,54px)" data-cms="hero.title">About the South African <em>Union of Students</em></h1>
+      <p class="hero-lead" data-cms="hero.lead">A constitutional overview of SAUS — its establishment, mandate, institutional history, and continental standing as South Africa's official national student body.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <button class="btn btn-gold" onclick="document.getElementById('about-profile').scrollIntoView({behavior:'smooth'})">Institutional Profile</button>
         <button class="btn btn-outline-white" onclick="document.getElementById('about-history').scrollIntoView({behavior:'smooth'})">Our History</button>
@@ -366,7 +366,7 @@
   <!-- Quick facts strip -->
   <div class="stat-strip">
     <div class="wrap" style="padding:0">
-      <div class="stat-grid">
+      <div class="stat-grid" id="aboutStats">
         <div class="stat-cell"><div class="stat-num">26</div><div class="stat-label">Public Universities<br>Represented</div></div>
         <div class="stat-cell"><div class="stat-num">2006</div><div class="stat-label">Year of<br>Establishment</div></div>
         <div class="stat-cell"><div class="stat-num">9<span style="font-size:.5em;vertical-align:super">th</span></div><div class="stat-label">National Executive<br>Congress</div></div>
@@ -383,13 +383,13 @@
 
           <!-- Institutional profile -->
           <div class="sec-header">
-            <div class="ref">SAUS/PROFILE/2026</div>
-            <h2>Institutional <em>Profile</em></h2>
-            <p class="lead">SAUS is the only body mandated to represent all students across all 26 public universities in the Republic of South Africa.</p>
+            <div class="ref" data-cms="profile.ref">SAUS/PROFILE/2026</div>
+            <h2 data-cms="profile.title">Institutional <em>Profile</em></h2>
+            <p class="lead" data-cms="profile.lead">SAUS is the only body mandated to represent all students across all 26 public universities in the Republic of South Africa.</p>
           </div>
           <table class="official-table" style="margin-bottom:48px">
             <thead><tr><th>Field</th><th>Details</th></tr></thead>
-            <tbody>
+            <tbody id="aboutProfileRows">
               <tr><td>Full Designation</td><td>South African Union of Students (SAUS)</td></tr>
               <tr><td>Date of Establishment</td><td>April 2006</td></tr>
               <tr><td>Legal Status</td><td>Non-Profit National Student Representative Body</td></tr>
@@ -411,20 +411,20 @@
           </div>
           <div class="panel" style="margin-bottom:16px">
             <div class="panel-header"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Mission Statement</h3></div>
-            <div class="panel-body"><p>To consolidate and strengthen students' views in the governance and enhancement of Higher Education and Training in South Africa, ensuring every student has access to affordable, quality, and inclusive education — delivered within a system that is equitable, non-sexist, non-racial, and democratic.</p></div>
+            <div class="panel-body"><p data-cms="mission">To consolidate and strengthen students' views in the governance and enhancement of Higher Education and Training in South Africa, ensuring every student has access to affordable, quality, and inclusive education — delivered within a system that is equitable, non-sexist, non-racial, and democratic.</p></div>
           </div>
           <div class="panel" style="margin-bottom:48px">
             <div class="panel-header" style="background:var(--green)"><div class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Vision Statement</h3></div>
-            <div class="panel-body"><p>A unified, equitable, non-sexist, non-racial, democratic, and well-governed education system that is appropriate and responsive to the needs of South Africa, Africa, and the world — providing a conducive environment for learning, teaching, research, and community service.</p></div>
+            <div class="panel-body"><p data-cms="vision">A unified, equitable, non-sexist, non-racial, democratic, and well-governed education system that is appropriate and responsive to the needs of South Africa, Africa, and the world — providing a conducive environment for learning, teaching, research, and community service.</p></div>
           </div>
 
           <!-- Core Values -->
           <div class="sec-header" id="about-values">
-            <div class="ref">SAUS/VALUES/2026</div>
-            <h2>Core <em>Values</em></h2>
-            <p class="lead">The values that govern SAUS's conduct, advocacy, and governance across all 26 institutions.</p>
+            <div class="ref" data-cms="values.ref">SAUS/VALUES/2026</div>
+            <h2 data-cms="values.title">Core <em>Values</em></h2>
+            <p class="lead" data-cms="values.lead">The values that govern SAUS's conduct, advocacy, and governance across all 26 institutions.</p>
           </div>
-          <div class="grid-3" style="margin-bottom:48px">
+          <div class="grid-3" style="margin-bottom:48px" id="aboutValues">
             <div class="info-card">
               <div class="info-card-accent green"></div>
               <div class="info-card-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -465,12 +465,12 @@
 
           <!-- Historical Background -->
           <div class="sec-header" id="about-history">
-            <div class="ref">SAUS/HISTORY/2026</div>
-            <h2>Historical <em>Background</em></h2>
-            <p class="lead">SAUS represents a historic milestone in South African student politics — the first national union of students constituted since the dissolution of NUSAS in the late 1980s.</p>
+            <div class="ref" data-cms="history.ref">SAUS/HISTORY/2026</div>
+            <h2 data-cms="history.title">Historical <em>Background</em></h2>
+            <p class="lead" data-cms="history.lead">SAUS represents a historic milestone in South African student politics — the first national union of students constituted since the dissolution of NUSAS in the late 1980s.</p>
           </div>
-          <p style="font-size:15px;color:var(--text-mid);margin-bottom:32px;line-height:1.75">Students have played an instrumental role in South African education and politics since the 1960s, most notably during the 1976 Soweto Uprisings. The reconstitution of a national student body in 2006 marked a new chapter — one defined by democratic governance and constructive engagement with the post-apartheid higher education system.</p>
-          <div class="timeline">
+          <p style="font-size:15px;color:var(--text-mid);margin-bottom:32px;line-height:1.75" data-cms="history.intro">Students have played an instrumental role in South African education and politics since the 1960s, most notably during the 1976 Soweto Uprisings. The reconstitution of a national student body in 2006 marked a new chapter — one defined by democratic governance and constructive engagement with the post-apartheid higher education system.</p>
+          <div class="timeline" id="aboutTimeline">
             <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-year">1960s</div>
@@ -552,11 +552,11 @@
   <section class="section" style="background:var(--navy)" id="about-continental">
     <div class="wrap">
       <div class="sec-header" style="margin-bottom:40px">
-        <div class="ref" style="color:rgba(255,255,255,.4)">SAUS/CONTINENTAL/2026</div>
-        <h2 style="color:var(--white)">Continental <em>Presence</em></h2>
-        <p class="lead" style="color:rgba(255,255,255,.65)">SAUS situates South African student activism within the broader context of African solidarity and continental higher education development.</p>
+        <div class="ref" style="color:rgba(255,255,255,.4)" data-cms="continental.ref">SAUS/CONTINENTAL/2026</div>
+        <h2 style="color:var(--white)" data-cms="continental.title">Continental <em>Presence</em></h2>
+        <p class="lead" style="color:rgba(255,255,255,.65)" data-cms="continental.lead">SAUS situates South African student activism within the broader context of African solidarity and continental higher education development.</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" id="aboutContinental">
         <div class="info-card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
           <div class="info-card-accent green"></div>
           <div class="info-card-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
@@ -577,8 +577,8 @@
         </div>
       </div>
       <div class="official-quote" style="margin-top:48px;margin-bottom:0">
-        <p>"The struggles of South African students are inseparable from the struggles of students across Africa. SAUS stands in solidarity with every student fighting for the right to quality, affordable education."</p>
-        <cite>SAUS 9th National Congress — Continental Solidarity Resolution, 2025</cite>
+        <p data-cms="continental.quote.text">"The struggles of South African students are inseparable from the struggles of students across Africa. SAUS stands in solidarity with every student fighting for the right to quality, affordable education."</p>
+        <cite data-cms="continental.quote.cite">SAUS 9th National Congress — Continental Solidarity Resolution, 2025</cite>
       </div>
     </div>
   </section>
