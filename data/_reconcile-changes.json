@@ -1,0 +1,1202 @@
+[
+  {
+    "abbr": "UCT",
+    "field": "info.apply",
+    "old": "\"https://myapps.uct.ac.za/\"",
+    "new": "\"https://applyonline.uct.ac.za/\"",
+    "conf": "high",
+    "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure"
+  },
+  {
+    "abbr": "UCT",
+    "field": "info.prospectus",
+    "old": "\"https://www.uct.ac.za/apply/undergraduate/undergraduate-prospectus\"",
+    "new": "\"https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus\"",
+    "conf": "high",
+    "source": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus"
+  },
+  {
+    "abbr": "UCT",
+    "field": "faculties",
+    "old": "6 items",
+    "new": "6 items",
+    "conf": "high",
+    "source": "https://uct.ac.za/students/applications-admission-requirements/undergraduates"
+  },
+  {
+    "abbr": "UCT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://myapps.uct.ac.za/\"",
+    "new": "\"https://applyonline.uct.ac.za/\"",
+    "conf": "high",
+    "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure"
+  },
+  {
+    "abbr": "WITS",
+    "field": "info.apply",
+    "old": "\"https://www.wits.ac.za/application/\"",
+    "new": "\"https://www.wits.ac.za/undergraduate/apply-to-wits/\"",
+    "conf": "high",
+    "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/"
+  },
+  {
+    "abbr": "WITS",
+    "field": "info.prospectus",
+    "old": "\"https://www.wits.ac.za/application/undergraduate/\"",
+    "new": "\"https://www.wits.ac.za/undergraduate/guide-for-undergraduates/\"",
+    "conf": "medium",
+    "source": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/"
+  },
+  {
+    "abbr": "WITS",
+    "field": "faculties",
+    "old": "5 items",
+    "new": "5 items",
+    "conf": "high",
+    "source": "https://www.wits.ac.za/faculties-and-schools/"
+  },
+  {
+    "abbr": "WITS",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.wits.ac.za/application/\"",
+    "new": "\"https://www.wits.ac.za/undergraduate/apply-to-wits/\"",
+    "conf": "high",
+    "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/"
+  },
+  {
+    "abbr": "SU",
+    "field": "info.apply",
+    "old": "\"https://www.sun.ac.za/english/student-affairs/Pages/Applications.aspx\"",
+    "new": "\"https://www.su.ac.za/en/apply/undergrad\"",
+    "conf": "high",
+    "source": "https://www.su.ac.za/en/apply/undergrad"
+  },
+  {
+    "abbr": "SU",
+    "field": "info.prospectus",
+    "old": "\"https://www.sun.ac.za/english/student-affairs/Pages/Prospectus.aspx\"",
+    "new": "\"https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf\"",
+    "conf": "high",
+    "source": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf"
+  },
+  {
+    "abbr": "SU",
+    "field": "faculties",
+    "old": "9 items",
+    "new": "9 items",
+    "conf": "high",
+    "source": "http://www.sun.ac.za/english/maties/admissions/requirements"
+  },
+  {
+    "abbr": "SU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.sun.ac.za/english/student-affairs/Pages/Applications.aspx\"",
+    "new": "\"https://www.su.ac.za/en/apply/undergrad\"",
+    "conf": "high",
+    "source": "https://www.su.ac.za/en/apply/undergrad"
+  },
+  {
+    "abbr": "UP",
+    "field": "info.apply",
+    "old": "\"https://www.up.ac.za/apply\"",
+    "new": "\"https://www.up.ac.za/online-application/apply-online\"",
+    "conf": "high",
+    "source": "https://www.up.ac.za/online-application"
+  },
+  {
+    "abbr": "UP",
+    "field": "info.prospectus",
+    "old": "\"https://www.up.ac.za/prospective-student\"",
+    "new": "\"https://www.up.ac.za/online-application\"",
+    "conf": "medium",
+    "source": "https://www.up.ac.za/online-application"
+  },
+  {
+    "abbr": "UP",
+    "field": "type",
+    "old": "\"Comprehensive University\"",
+    "new": "\"Research University\"",
+    "conf": "medium",
+    "source": "https://www.up.ac.za/article/2749257/about-us"
+  },
+  {
+    "abbr": "UP",
+    "field": "faculties",
+    "old": "10 items",
+    "new": "9 items",
+    "conf": "high",
+    "source": "https://www.up.ac.za/article/2749393/faculties"
+  },
+  {
+    "abbr": "UP",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.up.ac.za/apply\"",
+    "new": "\"https://www.up.ac.za/online-application/apply-online\"",
+    "conf": "high",
+    "source": "https://www.up.ac.za/online-application"
+  },
+  {
+    "abbr": "UP",
+    "field": "applicationFee",
+    "old": "200",
+    "new": "300",
+    "conf": "high",
+    "source": "https://www.up.ac.za/online-application/application-fee"
+  },
+  {
+    "abbr": "UJ",
+    "field": "info.apply",
+    "old": "\"https://www.uj.ac.za/apply-to-uj/\"",
+    "new": "\"https://www.uj.ac.za/admission-aid/apply/\"",
+    "conf": "high",
+    "source": "https://www.uj.ac.za/admission-aid/apply/"
+  },
+  {
+    "abbr": "UJ",
+    "field": "info.prospectus",
+    "old": "\"https://www.uj.ac.za/apply-to-uj/applications/undergraduate-admissions/prospectus/\"",
+    "new": "\"https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/\"",
+    "conf": "high",
+    "source": "https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/"
+  },
+  {
+    "abbr": "UJ",
+    "field": "students",
+    "old": "52000",
+    "new": "50000",
+    "conf": "medium",
+    "source": "https://www.uj.ac.za/about/"
+  },
+  {
+    "abbr": "UJ",
+    "field": "faculties",
+    "old": "8 items",
+    "new": "8 items",
+    "conf": "high",
+    "source": "https://www.uj.ac.za/faculties/"
+  },
+  {
+    "abbr": "UJ",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.uj.ac.za/apply-to-uj/\"",
+    "new": "\"https://www.uj.ac.za/admission-aid/apply/\"",
+    "conf": "high",
+    "source": "https://www.uj.ac.za/admission-aid/apply/"
+  },
+  {
+    "abbr": "UJ",
+    "field": "applicationFee",
+    "old": "200",
+    "new": "0",
+    "conf": "high",
+    "source": "https://www.uj.ac.za/admission-aid/new/"
+  },
+  {
+    "abbr": "UKZN",
+    "field": "info.prospectus",
+    "old": "\"https://www.ukzn.ac.za/ukzn-for-students/\"",
+    "new": "\"https://applications.ukzn.ac.za/applications/online-applications/\"",
+    "conf": "medium",
+    "source": "https://applications.ukzn.ac.za/applications/online-applications/"
+  },
+  {
+    "abbr": "UKZN",
+    "field": "faculties",
+    "old": "5 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://studyatukzn.ukzn.ac.za/our-colleges/"
+  },
+  {
+    "abbr": "UKZN",
+    "field": "applicationFee",
+    "old": "200",
+    "new": "210",
+    "conf": "medium",
+    "source": "https://applications.ukzn.ac.za/applications/2025-ukzn-application-fees/"
+  },
+  {
+    "abbr": "UKZN",
+    "field": "minimumAPS",
+    "old": "26",
+    "new": "28",
+    "conf": "medium",
+    "source": "https://applications.ukzn.ac.za/"
+  },
+  {
+    "abbr": "UKZN",
+    "field": "applicationOpens",
+    "old": "\"1 March 2026\"",
+    "new": "\"1 April 2026\"",
+    "conf": "high",
+    "source": "https://applications.ukzn.ac.za/"
+  },
+  {
+    "abbr": "NWU",
+    "field": "info.apply",
+    "old": "\"https://www.nwu.ac.za/applying-for-studies\"",
+    "new": "\"https://studies.nwu.ac.za/undergraduate-studies/application\"",
+    "conf": "high",
+    "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+  },
+  {
+    "abbr": "NWU",
+    "field": "info.prospectus",
+    "old": "\"https://www.nwu.ac.za/applying-for-studies\"",
+    "new": "\"https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027\"",
+    "conf": "medium",
+    "source": "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027"
+  },
+  {
+    "abbr": "NWU",
+    "field": "students",
+    "old": "65000",
+    "new": "55000",
+    "conf": "medium",
+    "source": "https://www.nwu.ac.za/"
+  },
+  {
+    "abbr": "NWU",
+    "field": "faculties",
+    "old": "7 items",
+    "new": "8 items",
+    "conf": "high",
+    "source": "https://studies.nwu.ac.za/studies/our-faculties"
+  },
+  {
+    "abbr": "NWU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.nwu.ac.za/applying-for-studies\"",
+    "new": "\"https://studies.nwu.ac.za/undergraduate-studies/application\"",
+    "conf": "high",
+    "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+  },
+  {
+    "abbr": "NWU",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "150",
+    "conf": "high",
+    "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+  },
+  {
+    "abbr": "NWU",
+    "field": "applicationCloses",
+    "old": "\"30 September 2026\"",
+    "new": "\"31 August 2026\"",
+    "conf": "high",
+    "source": "https://studies.nwu.ac.za/undergraduate-studies/application"
+  },
+  {
+    "abbr": "UFS",
+    "field": "info.prospectus",
+    "old": "\"https://www.ufs.ac.za/apply/prospectus\"",
+    "new": "\"https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf\"",
+    "conf": "high",
+    "source": "https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf"
+  },
+  {
+    "abbr": "UFS",
+    "field": "students",
+    "old": "39000",
+    "new": "40000",
+    "conf": "medium",
+    "source": "https://www.ufs.ac.za/about-the-ufs/ufs-in-focus/ufs-in-figures"
+  },
+  {
+    "abbr": "UFS",
+    "field": "faculties",
+    "old": "7 items",
+    "new": "7 items",
+    "conf": "high",
+    "source": "https://www.ufs.ac.za/templates/faculty-list"
+  },
+  {
+    "abbr": "UFS",
+    "field": "applicationFee",
+    "old": "200",
+    "new": "0",
+    "conf": "high",
+    "source": "https://apply.ufs.ac.za/"
+  },
+  {
+    "abbr": "NMU",
+    "field": "info.apply",
+    "old": "\"https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply\"",
+    "new": "\"https://applyonline.mandela.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.mandela.ac.za/study-at-mandela/application"
+  },
+  {
+    "abbr": "NMU",
+    "field": "info.prospectus",
+    "old": "\"https://www.mandela.ac.za/Study-at-Mandela/Undergraduate\"",
+    "new": "\"https://www.mandela.ac.za/study-at-mandela/application\"",
+    "conf": "medium",
+    "source": "https://www.mandela.ac.za/study-at-mandela/application"
+  },
+  {
+    "abbr": "NMU",
+    "field": "faculties",
+    "old": "7 items",
+    "new": "7 items",
+    "conf": "high",
+    "source": "https://www.mandela.ac.za/Faculties-and-Schools"
+  },
+  {
+    "abbr": "NMU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply\"",
+    "new": "\"https://applyonline.mandela.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.mandela.ac.za/study-at-mandela/application"
+  },
+  {
+    "abbr": "NMU",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://international.mandela.ac.za/Finance/Application-Fees"
+  },
+  {
+    "abbr": "RU",
+    "field": "info.apply",
+    "old": "\"https://applications.ru.ac.za/\"",
+    "new": "\"https://ross.ru.ac.za/ugadmissions\"",
+    "conf": "high",
+    "source": "https://www.ru.ac.za/admissiongateway/application/"
+  },
+  {
+    "abbr": "RU",
+    "field": "students",
+    "old": "8000",
+    "new": "9000",
+    "conf": "medium",
+    "source": "https://www.ru.ac.za/admissiongateway/whyrhodes/factsandfigures/"
+  },
+  {
+    "abbr": "RU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://applications.ru.ac.za/\"",
+    "new": "\"https://ross.ru.ac.za/ugadmissions\"",
+    "conf": "high",
+    "source": "https://www.ru.ac.za/admissiongateway/application/"
+  },
+  {
+    "abbr": "UWC",
+    "field": "info.apply",
+    "old": "\"https://www.uwc.ac.za/apply\"",
+    "new": "\"https://www.uwc.ac.za/admission-and-financial-aid/apply\"",
+    "conf": "high",
+    "source": "https://www.uwc.ac.za/admission-and-financial-aid/apply"
+  },
+  {
+    "abbr": "UWC",
+    "field": "info.prospectus",
+    "old": "\"https://www.uwc.ac.za/study/all-programmes\"",
+    "new": "\"https://www.uwc.ac.za/study/faculties-and-programmes\"",
+    "conf": "medium",
+    "source": "https://www.uwc.ac.za/study/faculties-and-programmes"
+  },
+  {
+    "abbr": "UWC",
+    "field": "students",
+    "old": "22000",
+    "new": "23000",
+    "conf": "medium",
+    "source": "https://www.uwc.ac.za/"
+  },
+  {
+    "abbr": "UWC",
+    "field": "faculties",
+    "old": "8 items",
+    "new": "7 items",
+    "conf": "high",
+    "source": "https://www.uwc.ac.za/study/faculties-and-programmes"
+  },
+  {
+    "abbr": "UWC",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.uwc.ac.za/apply\"",
+    "new": "\"https://www.uwc.ac.za/admission-and-financial-aid/apply\"",
+    "conf": "high",
+    "source": "https://www.uwc.ac.za/admission-and-financial-aid/apply"
+  },
+  {
+    "abbr": "UWC",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/application-information"
+  },
+  {
+    "abbr": "UFH",
+    "field": "info.apply",
+    "old": "\"https://www.ufh.ac.za/admissions\"",
+    "new": "\"https://www.ufh.ac.za/apply\"",
+    "conf": "high",
+    "source": "https://www.ufh.ac.za/apply"
+  },
+  {
+    "abbr": "UFH",
+    "field": "faculties",
+    "old": "6 items",
+    "new": "6 items",
+    "conf": "high",
+    "source": "https://www.ufh.ac.za/faculties"
+  },
+  {
+    "abbr": "UFH",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.ufh.ac.za/admissions\"",
+    "new": "\"https://www.ufh.ac.za/apply\"",
+    "conf": "high",
+    "source": "https://www.ufh.ac.za/apply"
+  },
+  {
+    "abbr": "UFH",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://fye.ufh.ac.za/faq-base/is-there-an-application-fee/"
+  },
+  {
+    "abbr": "UFH",
+    "field": "minimumAPS",
+    "old": "18",
+    "new": "26",
+    "conf": "high",
+    "source": "https://www.ufh.ac.za/admission"
+  },
+  {
+    "abbr": "UFH",
+    "field": "applicationCloses",
+    "old": "\"30 November 2026\"",
+    "new": "\"31 October 2026\"",
+    "conf": "medium",
+    "source": "https://www.ufh.ac.za/apply/apply-undergraduate"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "info.apply",
+    "old": "\"https://www.cput.ac.za/apply\"",
+    "new": "\"https://www.cput.ac.za/study-at-cput/undergraduate/apply\"",
+    "conf": "medium",
+    "source": "https://www.cput.ac.za/study-at-cput/undergraduate/apply"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "info.prospectus",
+    "old": "\"https://www.cput.ac.za/students/faculties\"",
+    "new": "\"https://www.cput.ac.za/academic\"",
+    "conf": "medium",
+    "source": "https://www.cput.ac.za/academic"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "faculties",
+    "old": "6 items",
+    "new": "6 items",
+    "conf": "high",
+    "source": "https://www.cput.ac.za/academic"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.cput.ac.za/apply\"",
+    "new": "\"https://www.cput.ac.za/study-at-cput/undergraduate/apply\"",
+    "conf": "medium",
+    "source": "https://www.cput.ac.za/study-at-cput/undergraduate/apply"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "medium",
+    "source": "https://www.cput.ac.za/help/content/19/82/en/07-do-i-have-to-pay-any-application-fee-if-applying-online.html"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "applicationOpens",
+    "old": "\"1 May 2026\"",
+    "new": "\"11 May 2026\"",
+    "conf": "medium",
+    "source": "https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/"
+  },
+  {
+    "abbr": "CPUT",
+    "field": "applicationCloses",
+    "old": "\"31 August 2026\"",
+    "new": "\"30 September 2026\"",
+    "conf": "medium",
+    "source": "https://www.setacareers.co.za/cput-2027-undergraduate-applications-now-open/"
+  },
+  {
+    "abbr": "DUT",
+    "field": "info.apply",
+    "old": "\"https://www.dut.ac.za/admissions/\"",
+    "new": "\"https://www.cao.ac.za\"",
+    "conf": "medium",
+    "source": "https://www.dut.ac.za/admissions/"
+  },
+  {
+    "abbr": "DUT",
+    "field": "students",
+    "old": "25000",
+    "new": "32000",
+    "conf": "medium",
+    "source": "https://en.wikipedia.org/wiki/Durban_University_of_Technology"
+  },
+  {
+    "abbr": "DUT",
+    "field": "faculties",
+    "old": "6 items",
+    "new": "6 items",
+    "conf": "high",
+    "source": "https://www.dut.ac.za/academic/"
+  },
+  {
+    "abbr": "DUT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.dut.ac.za/admissions/\"",
+    "new": "\"https://www.cao.ac.za\"",
+    "conf": "medium",
+    "source": "https://www.dut.ac.za/admissions/"
+  },
+  {
+    "abbr": "DUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "250",
+    "conf": "medium",
+    "source": "https://checkcaostatus.co.za/cao-fees-calculator/"
+  },
+  {
+    "abbr": "TUT",
+    "field": "info.prospectus",
+    "old": "\"https://www.tut.ac.za/apply\"",
+    "new": "\"https://www.tut.ac.za/index.php/prospectus\"",
+    "conf": "medium",
+    "source": "https://www.tut.ac.za/index.php/prospectus"
+  },
+  {
+    "abbr": "TUT",
+    "field": "faculties",
+    "old": "7 items",
+    "new": "7 items",
+    "conf": "high",
+    "source": "https://www.tut.ac.za/study-at-tut/"
+  },
+  {
+    "abbr": "TUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "240",
+    "conf": "high",
+    "source": "https://fundiconnect.co.za/tut-application-fees-2"
+  },
+  {
+    "abbr": "TUT",
+    "field": "applicationOpens",
+    "old": "\"3 April 2026\"",
+    "new": "\"1 April 2026\"",
+    "conf": "medium",
+    "source": "https://learnerstag.org/tut-2027-applications/"
+  },
+  {
+    "abbr": "TUT",
+    "field": "applicationCloses",
+    "old": "\"31 July 2026\"",
+    "new": "\"30 September 2026\"",
+    "conf": "medium",
+    "source": "https://varsitywise.com/posts/tut-2027-application-dates-you-cannot-miss"
+  },
+  {
+    "abbr": "VUT",
+    "field": "info.apply",
+    "old": "\"https://www.vut.ac.za/admissions\"",
+    "new": "\"https://www.vut.ac.za/how-to-apply/\"",
+    "conf": "medium",
+    "source": "https://vut.ac.za/how-to-apply/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "info.prospectus",
+    "old": "\"https://www.vut.ac.za/admissions\"",
+    "new": "\"https://www.vut.ac.za/undergraduate-studies/\"",
+    "conf": "medium",
+    "source": "https://vut.ac.za/undergraduate-studies/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "students",
+    "old": "20000",
+    "new": "21000",
+    "conf": "high",
+    "source": "https://vut.ac.za/history/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://vut.ac.za/faculty-of-human-sciences/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.vut.ac.za/admissions\"",
+    "new": "\"https://www.vut.ac.za/how-to-apply/\"",
+    "conf": "medium",
+    "source": "https://vut.ac.za/how-to-apply/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "110",
+    "conf": "medium",
+    "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-application-dates-2027-and-admission-requirements/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "minimumAPS",
+    "old": "18",
+    "new": "20",
+    "conf": "medium",
+    "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-aps-requirements-explained-for-2027/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "applicationOpens",
+    "old": "\"1 April 2026\"",
+    "new": "\"21 May 2026\"",
+    "conf": "medium",
+    "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-applications-2027-now-open/"
+  },
+  {
+    "abbr": "VUT",
+    "field": "applicationCloses",
+    "old": "\"30 September 2026\"",
+    "new": "\"30 October 2026\"",
+    "conf": "medium",
+    "source": "https://www.varsitywise.com/posts/vut-application-dates-2027-your-complete-guide-varsity-wise"
+  },
+  {
+    "abbr": "CUT",
+    "field": "info.apply",
+    "old": "\"https://www.cut.ac.za/apply\"",
+    "new": "\"https://www.cut.ac.za/application-process\"",
+    "conf": "high",
+    "source": "https://www.cut.ac.za/application-process"
+  },
+  {
+    "abbr": "CUT",
+    "field": "info.prospectus",
+    "old": "\"https://www.cut.ac.za/apply\"",
+    "new": "\"https://www.cut.ac.za/programmes-offered\"",
+    "conf": "medium",
+    "source": "https://www.cut.ac.za/programmes-offered"
+  },
+  {
+    "abbr": "CUT",
+    "field": "students",
+    "old": "15000",
+    "new": "21000",
+    "conf": "medium",
+    "source": "https://www.cut.ac.za"
+  },
+  {
+    "abbr": "CUT",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://www.cut.ac.za/faculty"
+  },
+  {
+    "abbr": "CUT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.cut.ac.za/apply\"",
+    "new": "\"https://www.cut.ac.za/application-process\"",
+    "conf": "high",
+    "source": "https://www.cut.ac.za/application-process"
+  },
+  {
+    "abbr": "CUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://www.cut.ac.za/announcements/166"
+  },
+  {
+    "abbr": "CUT",
+    "field": "minimumAPS",
+    "old": "18",
+    "new": "27",
+    "conf": "high",
+    "source": "https://www.cut.ac.za/admission-points-ap"
+  },
+  {
+    "abbr": "MUT",
+    "field": "info.apply",
+    "old": "\"https://www.mut.ac.za/admissions\"",
+    "new": "\"https://www.mut.ac.za/prospective-students/apply/\"",
+    "conf": "high",
+    "source": "https://www.mut.ac.za/prospective-students/apply/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "info.prospectus",
+    "old": "\"https://www.mut.ac.za/admissions\"",
+    "new": "\"https://www.mut.ac.za/prospective-students/apply/\"",
+    "conf": "medium",
+    "source": "https://www.mut.ac.za/prospective-students/apply/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "students",
+    "old": "12000",
+    "new": "14500",
+    "conf": "medium",
+    "source": "https://www.mut.ac.za/about-mut/our-story/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "faculties",
+    "old": "3 items",
+    "new": "3 items",
+    "conf": "high",
+    "source": "https://www.mut.ac.za/faculty-of-applied-and-health-sciences/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.mut.ac.za/admissions\"",
+    "new": "\"https://www.mut.ac.za/prospective-students/apply/\"",
+    "conf": "high",
+    "source": "https://www.mut.ac.za/prospective-students/apply/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "250",
+    "conf": "medium",
+    "source": "https://studentdesk.co.za/mut-application-dates-2027-cao-guide/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "minimumAPS",
+    "old": "18",
+    "new": "25",
+    "conf": "medium",
+    "source": "https://www.mut.ac.za/admission-requirements/"
+  },
+  {
+    "abbr": "MUT",
+    "field": "applicationOpens",
+    "old": "\"1 January 2026\"",
+    "new": "\"1 March 2026\"",
+    "conf": "medium",
+    "source": "https://www.mut.ac.za/prospective-students/apply/"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "info.apply",
+    "old": "\"https://my.unisa.ac.za/portal/\"",
+    "new": "\"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool\"",
+    "conf": "high",
+    "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "info.prospectus",
+    "old": "\"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-prospectus\"",
+    "new": "\"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications\"",
+    "conf": "medium",
+    "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "students",
+    "old": "400000",
+    "new": "370000",
+    "conf": "medium",
+    "source": "https://www.unisa.ac.za/"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "faculties",
+    "old": "8 items",
+    "new": "8 items",
+    "conf": "high",
+    "source": "https://www.unisa.ac.za/sites/corporate/default/Colleges"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "admissions.applyUrl",
+    "old": "\"https://my.unisa.ac.za/portal/\"",
+    "new": "\"https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool\"",
+    "conf": "high",
+    "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
+  },
+  {
+    "abbr": "UNISA",
+    "field": "applicationFee",
+    "old": "135",
+    "new": "150",
+    "conf": "medium",
+    "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/FAQs"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "info.apply",
+    "old": "\"https://www.univen.ac.za/admissions\"",
+    "new": "\"https://admission.univen.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/apply-online/"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "info.prospectus",
+    "old": "\"https://www.univen.ac.za/admissions\"",
+    "new": "\"https://www.univen.ac.za/wp-content/uploads/2026/03/2027-Univen-Undergraduate-Prospectus.pdf\"",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/prospectus/"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "faculties",
+    "old": "6 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/faculties/"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.univen.ac.za/admissions\"",
+    "new": "\"https://admission.univen.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/apply-online/"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/apply/"
+  },
+  {
+    "abbr": "UNIVEN",
+    "field": "minimumAPS",
+    "old": "18",
+    "new": "26",
+    "conf": "high",
+    "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/general-information/"
+  },
+  {
+    "abbr": "UL",
+    "field": "info.apply",
+    "old": "\"https://www.ul.ac.za/admissions\"",
+    "new": "\"https://www.ul.ac.za/admissions/undergraduate-studies/\"",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/admissions/undergraduate-studies/"
+  },
+  {
+    "abbr": "UL",
+    "field": "info.prospectus",
+    "old": "\"https://www.ul.ac.za/admissions\"",
+    "new": "\"https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf\"",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf"
+  },
+  {
+    "abbr": "UL",
+    "field": "faculties",
+    "old": "3 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/faculty-of-health-sciences/"
+  },
+  {
+    "abbr": "UL",
+    "field": "city",
+    "old": "\"Polokwane\"",
+    "new": "\"Mankweng (Polokwane)\"",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/about-us/"
+  },
+  {
+    "abbr": "UL",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.ul.ac.za/admissions\"",
+    "new": "\"https://www.ul.ac.za/admissions/undergraduate-studies/\"",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/admissions/undergraduate-studies/"
+  },
+  {
+    "abbr": "UL",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "200",
+    "conf": "high",
+    "source": "https://www.ul.ac.za/admissions/undergraduate-studies/"
+  },
+  {
+    "abbr": "UMP",
+    "field": "info.apply",
+    "old": "\"https://www.ump.ac.za/admissions\"",
+    "new": "\"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications\"",
+    "conf": "high",
+    "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+  },
+  {
+    "abbr": "UMP",
+    "field": "info.prospectus",
+    "old": "\"https://www.ump.ac.za/admissions\"",
+    "new": "\"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications\"",
+    "conf": "medium",
+    "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+  },
+  {
+    "abbr": "UMP",
+    "field": "faculties",
+    "old": "3 items",
+    "new": "3 items",
+    "conf": "high",
+    "source": "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx"
+  },
+  {
+    "abbr": "UMP",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.ump.ac.za/admissions\"",
+    "new": "\"https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications\"",
+    "conf": "high",
+    "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+  },
+  {
+    "abbr": "UMP",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "200",
+    "conf": "high",
+    "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+  },
+  {
+    "abbr": "SMU",
+    "field": "info.apply",
+    "old": "\"https://www.smu.ac.za/admissions\"",
+    "new": "\"https://www.smu.ac.za/students/apply/\"",
+    "conf": "high",
+    "source": "https://www.smu.ac.za/students/apply/"
+  },
+  {
+    "abbr": "SMU",
+    "field": "info.prospectus",
+    "old": "\"https://www.smu.ac.za/admissions\"",
+    "new": "\"https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/\"",
+    "conf": "medium",
+    "source": "https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/"
+  },
+  {
+    "abbr": "SMU",
+    "field": "students",
+    "old": "5000",
+    "new": "6300",
+    "conf": "medium",
+    "source": "https://www.unirank.org/za/uni/sefako-makgatho-health-sciences-university/"
+  },
+  {
+    "abbr": "SMU",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "5 items",
+    "conf": "high",
+    "source": "https://www.smu.ac.za/schools/"
+  },
+  {
+    "abbr": "SMU",
+    "field": "city",
+    "old": "\"Medunsa\"",
+    "new": "\"Ga-Rankuwa\"",
+    "conf": "high",
+    "source": "https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"
+  },
+  {
+    "abbr": "SMU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.smu.ac.za/admissions\"",
+    "new": "\"https://www.smu.ac.za/students/apply/\"",
+    "conf": "high",
+    "source": "https://www.smu.ac.za/students/apply/"
+  },
+  {
+    "abbr": "SMU",
+    "field": "applicationFee",
+    "old": "200",
+    "new": "300",
+    "conf": "high",
+    "source": "https://schoolhive.co.za/sefako-makgatho-health-sciences-university-smu-2027-applications/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "info.apply",
+    "old": "\"https://www.spu.ac.za/admissions\"",
+    "new": "\"https://applications-prod.spu.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.spu.ac.za/index.php/how-to-apply/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "info.prospectus",
+    "old": "\"https://www.spu.ac.za/admissions\"",
+    "new": "\"https://www.spu.ac.za/wp-content/uploads/2025/04/2026-Undergraduate-Prospectus.pdf\"",
+    "conf": "high",
+    "source": "https://www.spu.ac.za/index.php/prospectus-2026/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "students",
+    "old": "4000",
+    "new": "7183",
+    "conf": "high",
+    "source": "https://www.spu.ac.za/index.php/spu-factfile-2025/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.spu.ac.za/admissions\"",
+    "new": "\"https://applications-prod.spu.ac.za/\"",
+    "conf": "high",
+    "source": "https://www.spu.ac.za/index.php/how-to-apply/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "0",
+    "conf": "high",
+    "source": "https://www.varsitywise.com/posts/sol-plaatje-university-application-fee"
+  },
+  {
+    "abbr": "SPU",
+    "field": "applicationOpens",
+    "old": "\"1 May 2026\"",
+    "new": "\"11 May 2026\"",
+    "conf": "medium",
+    "source": "https://richadmissions.com/spu-2027-undergraduate-applications-now-open/"
+  },
+  {
+    "abbr": "SPU",
+    "field": "applicationCloses",
+    "old": "\"30 November 2026\"",
+    "new": "\"31 October 2026\"",
+    "conf": "medium",
+    "source": "https://richadmissions.com/spu-2027-undergraduate-applications-now-open/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "info.apply",
+    "old": "\"https://www.unizulu.ac.za/application\"",
+    "new": "\"https://www.cao.ac.za\"",
+    "conf": "high",
+    "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "info.prospectus",
+    "old": "\"https://www.unizulu.ac.za/prospectus\"",
+    "new": "\"https://www.unizulu.ac.za/apply/\"",
+    "conf": "medium",
+    "source": "https://www.unizulu.ac.za/apply/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "4 items",
+    "conf": "high",
+    "source": "https://www.science.unizulu.ac.za/about-us/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.unizulu.ac.za/application\"",
+    "new": "\"https://www.cao.ac.za\"",
+    "conf": "high",
+    "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "applicationFee",
+    "old": "100",
+    "new": "250",
+    "conf": "medium",
+    "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/"
+  },
+  {
+    "abbr": "UniZ",
+    "field": "applicationCloses",
+    "old": "\"31 October 2026\"",
+    "new": "\"30 September 2026\"",
+    "conf": "medium",
+    "source": "https://studentdesk.co.za/unizulu-application-2027-opening-dates-cao/"
+  },
+  {
+    "abbr": "WSU",
+    "field": "info.apply",
+    "old": "\"https://www.wsu.ac.za/admissions\"",
+    "new": "\"https://applications.wsu.ac.za\"",
+    "conf": "high",
+    "source": "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process"
+  },
+  {
+    "abbr": "WSU",
+    "field": "info.prospectus",
+    "old": "\"https://www.wsu.ac.za/admissions\"",
+    "new": "\"https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf\"",
+    "conf": "high",
+    "source": "https://www.wsu.ac.za/index.php/en/study-with-us/2024-prospectuses"
+  },
+  {
+    "abbr": "WSU",
+    "field": "students",
+    "old": "28000",
+    "new": "30000",
+    "conf": "medium",
+    "source": "https://www.wsu.ac.za/index.php/en/home/discovery-wsu/overview"
+  },
+  {
+    "abbr": "WSU",
+    "field": "faculties",
+    "old": "4 items",
+    "new": "7 items",
+    "conf": "high",
+    "source": "https://www.wsu.ac.za/index.php/en/faculties-wsu"
+  },
+  {
+    "abbr": "WSU",
+    "field": "admissions.applyUrl",
+    "old": "\"https://www.wsu.ac.za/admissions\"",
+    "new": "\"https://applications.wsu.ac.za\"",
+    "conf": "high",
+    "source": "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process"
+  }
+]

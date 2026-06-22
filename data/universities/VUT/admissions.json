@@ -1,15 +1,15 @@
 {
   "abbr": "VUT",
   "applicationPeriod": {
-    "opens": "1 April 2026",
-    "closes": "30 September 2026",
+    "opens": "21 May 2026",
+    "closes": "30 October 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 110,
   "feeWaiver": false,
-  "minimumAPS": 18,
+  "minimumAPS": 20,
   "apsNote": "Applications on a first-come, first-served basis per programme.",
-  "applyUrl": "https://www.vut.ac.za/admissions",
+  "applyUrl": "https://www.vut.ac.za/how-to-apply/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,70 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "medium",
+        "source": "https://vut.ac.za/how-to-apply/",
+        "note": "live portal applications-prod.vut.ac.za"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://vut.ac.za/undergraduate-studies/"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-applications-2027-now-open/",
+        "note": "CORRECTION from 1 April"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://www.varsitywise.com/posts/vut-application-dates-2027-your-complete-guide-varsity-wise",
+        "note": "CORRECTION from 30 Sep; national 30 Oct, intl 30 Sep"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-application-dates-2027-and-admission-requirements/",
+        "note": "CORRECTION from R100; R110, late R140"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.studentroom.co.za/vaal-university-of-technology-vut-aps-requirements-explained-for-2027/",
+        "note": "CORRECTION from 18; ~20"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/history/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Vaal_University_of_Technology"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/history/"
+      },
+      "students": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/history/",
+        "note": "CORRECTION from 20000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/history/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://vut.ac.za/faculty-of-human-sciences/",
+        "note": "CORRECTION: Humanities->Human Sciences"
+      }
+    }
+  }
 }

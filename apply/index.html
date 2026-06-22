@@ -10,101 +10,9 @@
 <meta name="theme-color" content="#0A1628"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/saus.css"/>
 
 <style>
-/* ═══════════════════════════════════════
-   ROOT & RESET
-═══════════════════════════════════════ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-:root{
-  --navy:       #0A1628;
-  --navy-mid:   #122040;
-  --navy-light: #1E3160;
-  --green:      #00692F;
-  --green-lt:   #00873E;
-  --red:        #A8200D;
-  --gold:       #C9A227;
-  --gold-lt:    #E8C04A;
-  --white:      #FFFFFF;
-  --cream:      #F7F6F2;
-  --stone:      #EEECEA;
-  --border:     #D0CEC8;
-  --border-dk:  #B8B5AE;
-  --text:       #1A1918;
-  --text-mid:   #4A4845;
-  --text-lt:    #7A7874;
-  --ff-serif:   'EB Garamond',Georgia,serif;
-  --ff-sans:    'Source Sans 3','Segoe UI',sans-serif;
-  --ff-mono:    'Source Code Pro',monospace;
-  --max:        1200px;
-  --topbar-h:   38px;
-  --header-h:   88px;
-  --nav-h:      52px;
-  --total-top:  178px;
-  --ease:       cubic-bezier(.4,0,.2,1);
-}
-
-body{
-  font-family:var(--ff-sans);
-  background:var(--cream);
-  color:var(--text);
-  font-size:16px;
-  line-height:1.7;
-  -webkit-font-smoothing:antialiased;
-}
-
-img{max-width:100%;display:block}
-a{color:var(--green);text-decoration:none}
-a:hover{text-decoration:underline}
-button{cursor:pointer;font-family:var(--ff-sans)}
-p{margin-bottom:1rem}
-p:last-child{margin-bottom:0}
-
-/* ═══ SCROLLBAR ═══ */
-::-webkit-scrollbar{width:5px}
-::-webkit-scrollbar-track{background:var(--stone)}
-::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:2px}
-
-/* ═══════════════════════════════════════
-   TOP UTILITY BAR
-═══════════════════════════════════════ */
-#topbar{
-  position:fixed;top:0;left:0;right:0;z-index:1100;
-  height:var(--topbar-h);
-  background:var(--navy);
-  border-bottom:2px solid var(--gold);
-  display:flex;align-items:center;
-}
-.topbar-inner{
-  max-width:var(--max);margin:0 auto;
-  width:100%;padding:0 32px;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:16px;
-}
-.topbar-left{
-  display:flex;align-items:center;gap:0;
-  font-family:var(--ff-sans);font-size:12px;
-  color:rgba(255,255,255,.7);letter-spacing:.02em;
-}
-.topbar-left .sep{
-  display:inline-block;width:1px;height:14px;
-  background:rgba(255,255,255,.2);margin:0 14px;
-}
-.topbar-flag{
-  display:inline-flex;gap:2px;align-items:center;margin-right:14px;
-}
-.flag-seg{width:18px;height:12px;border-radius:1px}
-.topbar-right{
-  display:flex;align-items:center;gap:20px;
-}
-.topbar-right a{
-  font-size:12px;color:rgba(255,255,255,.65);
-  display:flex;align-items:center;gap:6px;
-  transition:color .2s;text-decoration:none;
-}
-.topbar-right a:hover{color:var(--gold)}
-.topbar-right a svg{width:12px;height:12px;flex-shrink:0}
 
 /* ═══════════════════════════════════════
    OFFICIAL HEADER
@@ -1466,6 +1374,8 @@ p:last-child{margin-bottom:0}
 .filter-pill{background:#fff;border:1px solid var(--border);padding:7px 18px;border-radius:20px;font-size:13px;font-weight:600;color:var(--text-mid);cursor:pointer;transition:all .2s;font-family:var(--ff-sans);}
 .filter-pill:hover{border-color:var(--navy);color:var(--navy);}
 .filter-pill.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+#typeFilters{margin-top:8px}
+.cmp-free-pill.active{background:var(--green);border-color:var(--green);color:#fff}
 .uni-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .uni-card{background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s;}
 .uni-card:hover{box-shadow:0 12px 40px rgba(10,22,40,.12);transform:translateY(-4px);}
@@ -1721,6 +1631,22 @@ p:last-child{margin-bottom:0}
   cursor:pointer;transition:background .2s;
 }
 .modal-close:hover{background:rgba(255,255,255,.25);}
+.uni-card{position:relative}
+.compare-chk{position:absolute;top:8px;right:8px;display:flex;align-items:center;gap:4px;font-size:11px;font-family:var(--ff-sans);color:var(--text-mid);background:rgba(255,255,255,.92);padding:2px 7px;border-radius:3px;cursor:pointer;z-index:3;border:1px solid var(--border)}
+.compare-chk input{cursor:pointer;margin:0}
+#compareBar{position:fixed;left:0;right:0;bottom:0;z-index:1200;background:var(--navy);color:#fff;padding:10px 20px;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,.25)}
+.cmp-bar-chips{display:flex;gap:8px;flex-wrap:wrap}
+.cmp-chip{background:rgba(255,255,255,.12);padding:4px 10px;border-radius:14px;font-size:13px;font-family:var(--ff-mono)}
+.cmp-chip-x{cursor:pointer;color:var(--gold-lt);font-weight:700;margin-left:2px}
+.cmp-bar-actions{display:flex;align-items:center;gap:12px}
+.cmp-clear{background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:13px;text-decoration:underline}
+.cmp-max{color:var(--gold-lt);font-size:11px;font-family:var(--ff-mono)}
+.cmp-table-wrap{overflow-x:auto;padding:16px 24px 24px}
+.cmp-table{width:100%;border-collapse:collapse;font-size:13px;min-width:480px}
+.cmp-table th,.cmp-table td{border:1px solid var(--border);padding:10px 12px;text-align:center;vertical-align:middle}
+.cmp-table th{background:var(--navy);color:#fff;font-family:var(--ff-serif);font-size:13.5px}
+.cmp-rowlabel{background:var(--stone);font-weight:600;text-align:left;font-family:var(--ff-mono);font-size:11px;text-transform:uppercase;color:var(--text-mid);white-space:nowrap}
+.cmp-unconf{color:var(--red-lt);font-size:11px}
 .modal-logo{
   width:72px;height:72px;border-radius:12px;
   background:#fff;flex-shrink:0;
@@ -1751,6 +1677,9 @@ p:last-child{margin-bottom:0}
 .modal-tab-btn{flex:1;padding:12px 20px;font-size:13px;font-weight:600;font-family:var(--ff-sans);background:none;border:none;border-bottom:2px solid transparent;color:var(--text-lt);cursor:pointer;transition:color .2s,border-color .2s;display:flex;align-items:center;justify-content:center;gap:8px;}
 .modal-tab-btn.active{color:var(--navy);border-bottom-color:var(--green);}
 .modal-tab-btn:hover:not(.active){color:var(--text);}
+.adm-block{margin-bottom:16px}.adm-block h4{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-lt);margin-bottom:4px;font-family:var(--ff-mono)}.adm-block p{font-size:13.5px;color:var(--text);line-height:1.5}.adm-note{font-size:12.5px;color:var(--text-lt)!important;margin-top:4px}.adm-list{margin:4px 0 0 18px;font-size:13px;color:var(--text-mid)}.adm-list li{margin-bottom:3px}
+.fund-badge{display:inline-block;background:rgba(0,105,47,.1);color:var(--green);font-weight:600;font-size:12px;padding:4px 10px;border-radius:3px;margin-bottom:10px}.fund-card{border:1px solid var(--border);border-radius:4px;padding:12px 14px;margin-bottom:10px}.fund-card-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}.fund-value{color:var(--green);font-weight:600;font-size:13px;margin:2px 0}.fund-card p{font-size:13px;color:var(--text-mid);line-height:1.5}.fund-card a{font-size:12.5px;font-weight:600;color:var(--navy)}
+.contact-row{padding:9px 0;border-bottom:1px solid var(--border);font-size:13.5px;color:var(--text)}.contact-row:last-child{border-bottom:none}.contact-row strong{display:inline-block;min-width:96px;color:var(--navy)}.contact-row a{color:var(--green)}
 .modal-tab-count{background:var(--green);color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;font-family:var(--ff-mono);}
 
 /* ══ Courses panel ══ */
@@ -1806,6 +1735,7 @@ p:last-child{margin-bottom:0}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ══════════════════════════════════════════════
      TOP BAR
@@ -1837,7 +1767,7 @@ p:last-child{margin-bottom:0}
 <!-- ══════════════════════════════════════════════
      HEADER
 ══════════════════════════════════════════════ -->
-<div id="header">
+<div id="header" role="banner">
   <div class="header-inner">
     <a href="/" class="header-seal" title="SAUS" style="text-decoration:none">
       <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
@@ -1851,7 +1781,7 @@ p:last-child{margin-bottom:0}
     <div class="header-right">
       <span class="header-salogo"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
       <a href="/contact/" class="header-contact-btn">Contact SAUS</a>
-      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+      <button class="hamburger" onclick="toggleMenu()" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mnav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </div>
 </div>
@@ -1890,7 +1820,7 @@ p:last-child{margin-bottom:0}
   <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
 </div>
 
-<main>
+<main id="main" tabindex="-1">
 
 <!-- ══════════════════════════════════════════════
      HERO
@@ -1910,7 +1840,7 @@ p:last-child{margin-bottom:0}
     </div>
     <div class="hero-search" style="max-width:580px">
       <svg class="hero-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="text" placeholder="Search universities, courses, or qualifications&hellip;" id="heroSearch" autocomplete="off"/>
+      <input type="text" placeholder="Search universities, courses, or qualifications&hellip;" id="heroSearch" autocomplete="off" aria-label="Search universities, courses, or qualifications"/>
       <button onclick="doSearch()" class="hero-search-btn">Search</button>
     </div>
   </div>
@@ -1982,6 +1912,17 @@ p:last-child{margin-bottom:0}
       <button class="filter-pill" onclick="filterUnis('Eastern Cape',this)">Eastern Cape</button>
       <button class="filter-pill" onclick="filterUnis('Other',this)">Other Provinces</button>
     </div>
+    <div class="uni-filter-bar" id="typeFilters">
+      <button class="filter-pill active" onclick="setTypeFilter('all',this)">All Types</button>
+      <button class="filter-pill" onclick="setTypeFilter('Research University',this)">Research</button>
+      <button class="filter-pill" onclick="setTypeFilter('Comprehensive University',this)">Comprehensive</button>
+      <button class="filter-pill" onclick="setTypeFilter('University of Technology',this)">University of Technology</button>
+      <button class="filter-pill" onclick="setTypeFilter('Distance University',this)">Distance</button>
+      <button class="filter-pill" onclick="setTypeFilter('Health Sciences University',this)">Health Sciences</button>
+      <button class="filter-pill cmp-free-pill" onclick="toggleFreeFilter(this)">Free to apply</button>
+    </div>
+    <div id="filterCount" style="font-size:12.5px;color:var(--text-lt);font-family:var(--ff-mono);margin:4px 2px 0">Showing 26 of 26 universities</div>
+    <div id="noResults" style="display:none;text-align:center;padding:36px 20px;color:var(--text-mid)"><p style="margin-bottom:12px">No universities match your filters.</p><button class="btn btn-outline btn-sm" onclick="clearFilters()">Clear filters</button></div>
 
     <div class="uni-grid" id="uniGrid">
 
@@ -2672,7 +2613,7 @@ p:last-child{margin-bottom:0}
 
           <div class="subject-rows" id="subjectRows">
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 1">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2689,11 +2630,11 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 1 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 2">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2710,11 +2651,11 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 2 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 3">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2731,11 +2672,11 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 3 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 4">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2752,11 +2693,11 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 4 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 5">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2773,11 +2714,11 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 5 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
             <div class="subject-row">
-              <select class="dark-select subject-select">
+              <select class="dark-select subject-select" aria-label="Matric subject 6">
                 <option value="">Select Subject</option>
                 <option value="Mathematics">Mathematics</option>
                 <option value="Mathematical Literacy">Mathematical Literacy</option>
@@ -2794,7 +2735,7 @@ p:last-child{margin-bottom:0}
                 <option value="Information Technology">Information Technology</option>
                 <option value="Life Orientation">Life Orientation</option>
               </select>
-              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" />
+              <input type="number" class="dark-input mark-input" placeholder="%" min="0" max="100" aria-label="Mark for subject 6 (percentage)"/>
               <span class="aps-pts">–</span>
             </div>
           </div>
@@ -2811,7 +2752,7 @@ p:last-child{margin-bottom:0}
 
           <div class="matcher-filters">
             <div class="filter-group">
-              <label class="dark-label">Study Interest</label>
+              <label class="dark-label" for="interestFilter">Study Interest</label>
               <select class="dark-select" id="interestFilter">
                 <option value="all">All Fields</option>
                 <option value="science">Science &amp; Engineering</option>
@@ -2823,7 +2764,7 @@ p:last-child{margin-bottom:0}
               </select>
             </div>
             <div class="filter-group">
-              <label class="dark-label">Preferred Province</label>
+              <label class="dark-label" for="provinceFilter">Preferred Province</label>
               <select class="dark-select" id="provinceFilter">
                 <option value="all">All Provinces</option>
                 <option value="Western Cape">Western Cape</option>
@@ -3762,13 +3703,13 @@ p:last-child{margin-bottom:0}
         <p style="font-size:13px;color:var(--text-lt);margin-bottom:24px;font-family:var(--ff-mono);letter-spacing:.04em;text-transform:uppercase">SAUS/GUID/FORM/2026</p>
         <div id="guidanceForm">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-            <div><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">First Name <span style="color:var(--red)">*</span></label><input id="gf-fname" type="text" placeholder="First name" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
-            <div><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Surname <span style="color:var(--red)">*</span></label><input id="gf-lname" type="text" placeholder="Surname" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
+            <div><label for="gf-fname" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">First Name <span style="color:var(--red)">*</span></label><input id="gf-fname" type="text" placeholder="First name" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
+            <div><label for="gf-lname" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Surname <span style="color:var(--red)">*</span></label><input id="gf-lname" type="text" placeholder="Surname" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
           </div>
-          <div style="margin-bottom:14px"><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Email Address <span style="color:var(--red)">*</span></label><input id="gf-email" type="email" placeholder="your@email.com" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
-          <div style="margin-bottom:14px"><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Phone / WhatsApp <span style="color:var(--red)">*</span></label><input id="gf-phone" type="tel" placeholder="+27 82 000 0000" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
+          <div style="margin-bottom:14px"><label for="gf-email" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Email Address <span style="color:var(--red)">*</span></label><input id="gf-email" type="email" placeholder="your@email.com" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
+          <div style="margin-bottom:14px"><label for="gf-phone" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Phone / WhatsApp <span style="color:var(--red)">*</span></label><input id="gf-phone" type="tel" placeholder="+27 82 000 0000" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
-            <div><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Province <span style="color:var(--red)">*</span></label>
+            <div><label for="gf-province" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Province <span style="color:var(--red)">*</span></label>
               <select id="gf-province" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none;background:var(--white)">
                 <option value="">— Select province —</option>
                 <option>Eastern Cape</option><option>Free State</option><option>Gauteng</option>
@@ -3776,9 +3717,9 @@ p:last-child{margin-bottom:0}
                 <option>Northern Cape</option><option>North West</option><option>Western Cape</option>
               </select>
             </div>
-            <div><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Your APS Score</label><input id="gf-aps" type="number" min="0" max="50" placeholder="e.g. 32" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
+            <div><label for="gf-aps" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Your APS Score</label><input id="gf-aps" type="number" min="0" max="50" placeholder="e.g. 32" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
           </div>
-          <div style="margin-bottom:14px"><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Field of Study Interest <span style="color:var(--red)">*</span></label>
+          <div style="margin-bottom:14px"><label for="gf-field" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Field of Study Interest <span style="color:var(--red)">*</span></label>
             <select id="gf-field" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none;background:var(--white)">
               <option value="">— Select field —</option>
               <option>Engineering &amp; Technology</option><option>Medicine &amp; Health Sciences</option>
@@ -3788,7 +3729,7 @@ p:last-child{margin-bottom:0}
               <option>Arts &amp; Design</option><option>Not sure yet</option>
             </select>
           </div>
-          <div style="margin-bottom:20px"><label style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">What do you need help with?</label>
+          <div style="margin-bottom:20px"><label for="gf-help" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">What do you need help with?</label>
             <textarea id="gf-help" rows="3" placeholder="e.g. Which university suits my APS? How do I apply for NSFAS? Which courses are available?" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none;resize:vertical"></textarea>
           </div>
           <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:20px">
@@ -3935,6 +3876,9 @@ p:last-child{margin-bottom:0}
     <div class="modal-tabs-nav">
       <button class="modal-tab-btn active" data-tab="overview" onclick="switchModalTab('overview',this)">Overview</button>
       <button class="modal-tab-btn" data-tab="courses" onclick="switchModalTab('courses',this)">Courses <span class="modal-tab-count" id="modalCourseCnt">0</span></button>
+      <button class="modal-tab-btn" data-tab="admissions" onclick="switchModalTab('admissions',this)">Admissions</button>
+      <button class="modal-tab-btn" data-tab="funding" onclick="switchModalTab('funding',this)">Funding</button>
+      <button class="modal-tab-btn" data-tab="contact" onclick="switchModalTab('contact',this)">Contact</button>
     </div>
 
     <!-- Overview panel -->
@@ -3974,7 +3918,7 @@ p:last-child{margin-bottom:0}
       <div class="modal-courses-toolbar">
         <div class="course-search-wrap">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" id="courseSearchInput" placeholder="Search courses…" oninput="filterModalCourses()" autocomplete="off"/>
+          <input type="text" id="courseSearchInput" placeholder="Search courses…" oninput="filterModalCourses()" autocomplete="off" aria-label="Search courses within this university"/>
         </div>
         <div class="course-qual-filters" id="courseQualFilters">
           <button class="cqf-btn active" data-qual="all" onclick="setCourseQualFilter('all',this)">All</button>
@@ -3985,8 +3929,20 @@ p:last-child{margin-bottom:0}
       </div>
       <div class="modal-course-list" id="modalCourseList"></div>
     </div>
+    <div class="modal-panel" id="modalPanelAdmissions" style="display:none"><div class="modal-body" id="modalAdmissions"></div></div>
+    <div class="modal-panel" id="modalPanelFunding" style="display:none"><div class="modal-body" id="modalFunding"></div></div>
+    <div class="modal-panel" id="modalPanelContact" style="display:none"><div class="modal-body" id="modalContact"></div></div>
   </div>
 </div>
+
+<div class="modal-overlay" id="compareOverlay" onclick="if(event.target===this)closeCompare()">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-label="Compare universities" style="max-width:920px">
+    <button class="modal-close" onclick="closeCompare()" aria-label="Close comparison">&times;</button>
+    <h3 style="padding:22px 24px 0;font-family:var(--ff-serif);color:var(--navy)">Compare universities</h3>
+    <div class="cmp-table-wrap" id="compareBody"></div>
+  </div>
+</div>
+<div id="compareBar" style="display:none"></div>
 
 <!-- Cookie consent -->
 <div id="cookie">
@@ -4002,26 +3958,33 @@ p:last-child{margin-bottom:0}
 ══════════════════════════════════════════════ -->
 <script>
 /* ── Mobile nav ── */
+function guidanceMsg(text,ok){
+  var m=document.getElementById('guidanceStatus');
+  if(!m){ m=document.createElement('div'); m.id='guidanceStatus'; m.style.cssText='margin:0 0 12px;font-size:13px;font-weight:600'; var f=document.getElementById('guidanceForm'); if(f)f.insertBefore(m,f.firstChild); }
+  if(m){ m.textContent=(ok?'✅ ':'⚠️ ')+text; m.style.color=ok?'var(--green)':'var(--red)'; }
+}
 function submitGuidanceForm(){
-  var fname=document.getElementById('gf-fname').value.trim();
-  var lname=document.getElementById('gf-lname').value.trim();
-  var email=document.getElementById('gf-email').value.trim();
-  var phone=document.getElementById('gf-phone').value.trim();
-  var province=document.getElementById('gf-province').value;
-  var field=document.getElementById('gf-field').value;
-  var popia=document.getElementById('gf-popia').checked;
-  if(!fname||!lname||!email||!phone||!province||!field){
-    alert('Please complete all required fields.');return;
-  }
-  if(!popia){alert('Please accept the POPIA consent to proceed.');return;}
+  var $=function(id){return document.getElementById(id);};
+  var v=function(id){var e=$(id);return e?(e.value||'').trim():'';};
+  var fname=v('gf-fname'),lname=v('gf-lname'),email=v('gf-email'),phone=v('gf-phone'),province=v('gf-province'),field=v('gf-field');
+  if(!fname||!lname||!email||!phone||!province||!field){ guidanceMsg('Please complete all required fields.',false); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ guidanceMsg('Please enter a valid email address.',false); return; }
+  if(!$('gf-popia')||!$('gf-popia').checked){ guidanceMsg('Please accept the POPIA consent to proceed.',false); return; }
   var ref='SAUS/GUID/'+new Date().getFullYear()+'/'+(Math.floor(Math.random()*9000)+1000);
-  document.getElementById('guidanceForm').style.display='none';
-  document.getElementById('guidanceSuccess').style.display='block';
-  document.getElementById('guidanceRef').textContent='Reference: '+ref;
-  // Send mailto as fallback
-  var subject=encodeURIComponent('Student Guidance Request — '+fname+' '+lname+' — '+ref);
-  var body=encodeURIComponent('Name: '+fname+' '+lname+'\nEmail: '+email+'\nPhone: '+phone+'\nProvince: '+province+'\nField: '+field+'\nAPS: '+(document.getElementById('gf-aps').value||'Not provided')+'\nHelp needed: '+(document.getElementById('gf-help').value||'Not specified')+'\nRef: '+ref);
-  window.location.href='mailto:Secretariat@saus.org.za?subject='+subject+'&body='+body;
+  var aps=v('gf-aps'),help=v('gf-help');
+  var message='Student guidance request ('+ref+')\nProvince: '+province+'\nField of interest: '+field+'\nAPS: '+(aps||'Not provided')+'\nPhone: '+phone+'\nHelp needed: '+(help||'Not specified');
+  var hN=location.hostname; var API=(hN==='localhost'||hN==='127.0.0.1'||hN==='')?'http://localhost:4400/api':'https://saus-admin-api.onrender.com/api';
+  var btn=document.querySelector('button[onclick="submitGuidanceForm()"]'); var orig=btn?btn.textContent:'';
+  if(btn){ btn.disabled=true; btn.textContent='Sending…'; }
+  fetch(API+'/contact',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ name:(fname+' '+lname).trim(), email:email, subject:'Student guidance request — '+fname+' '+lname, message:message, source:'guidance' }) })
+    .then(function(r){ return r.ok?r.json():Promise.reject(r); })
+    .then(function(){
+      if($('guidanceForm'))$('guidanceForm').style.display='none';
+      if($('guidanceSuccess'))$('guidanceSuccess').style.display='block';
+      if($('guidanceRef'))$('guidanceRef').textContent='Reference: '+ref;
+    })
+    .catch(function(){ guidanceMsg('We couldn’t submit your request right now. Please email Secretariat@saus.org.za directly.',false); })
+    .finally(function(){ if(btn){ btn.disabled=false; btn.textContent=orig; } });
 }
 
 function toggleMenu(){
@@ -4029,6 +3992,7 @@ function toggleMenu(){
   m.classList.toggle('open');
   const h=document.getElementById('ham');
   const o=m.classList.contains('open');
+  h.setAttribute('aria-expanded',o?'true':'false');
   h.children[0].style.transform=o?'rotate(45deg) translateY(7px)':'none';
   h.children[1].style.opacity=o?'0':'1';
   h.children[2].style.transform=o?'rotate(-45deg) translateY(-7px)':'none';
@@ -4058,29 +4022,59 @@ const counterObs=new IntersectionObserver(entries=>{
 document.querySelectorAll('[data-target]').forEach(el=>counterObs.observe(el));
 
 /* ── Province filter ── */
+/* ── Unified search + filters ── */
+var filterState={q:'',province:'all',type:'all',freeOnly:false};
+function applyFilters(){
+  var q=filterState.q, shown=0, total=0;
+  document.querySelectorAll('.uni-card').forEach(function(card){
+    var img=card.querySelector('img[alt]'); if(!img)return; total++;
+    var abbr=img.getAttribute('alt').trim(); var u=(typeof UNI_INDEX!=='undefined'&&UNI_INDEX[abbr])||{};
+    var okProv=filterState.province==='all'||card.dataset.province===filterState.province;
+    var okType=filterState.type==='all'||u.type===filterState.type;
+    var okFree=!filterState.freeOnly||u.fee===0;
+    var name=((card.querySelector('.uni-card-name')||{}).textContent||'').toLowerCase();
+    var idx=(window._courseIdx&&window._courseIdx[abbr])||'';
+    var okQ=!q||name.indexOf(q)>-1||idx.indexOf(q)>-1||card.textContent.toLowerCase().indexOf(q)>-1;
+    var show=okProv&&okType&&okFree&&okQ;
+    card.style.display=show?'':'none'; if(show)shown++;
+  });
+  var c=document.getElementById('filterCount'); if(c)c.textContent='Showing '+shown+' of '+total+' universities';
+  var nr=document.getElementById('noResults'); if(nr)nr.style.display=shown===0?'block':'none';
+}
 function filterUnis(province,btn){
-  document.querySelectorAll('.filter-pill').forEach(p=>p.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.uni-card').forEach(card=>{
-    const prov=card.dataset.province;
-    const show=province==='all'||prov===province;
-    card.style.display=show?'':'none';
-    if(show){card.style.animation='none';void card.offsetWidth;card.style.animation='cardIn .35s var(--ease) both';}
+  filterState.province=province;
+  document.querySelectorAll('.uni-filter-bar .filter-pill').forEach(function(p){p.classList.remove('active');});
+  if(btn)btn.classList.add('active'); applyFilters();
+}
+function setTypeFilter(type,btn){
+  filterState.type=type;
+  document.querySelectorAll('#typeFilters .filter-pill:not(.cmp-free-pill)').forEach(function(p){p.classList.remove('active');});
+  if(btn)btn.classList.add('active'); applyFilters();
+}
+function toggleFreeFilter(btn){ filterState.freeOnly=!filterState.freeOnly; if(btn)btn.classList.toggle('active',filterState.freeOnly); applyFilters(); }
+function clearFilters(){
+  filterState={q:'',province:'all',type:'all',freeOnly:false};
+  var hs=document.getElementById('heroSearch'); if(hs)hs.value='';
+  document.querySelectorAll('.filter-pill').forEach(function(p){p.classList.remove('active');});
+  var allP=document.querySelector('.uni-filter-bar .filter-pill'); if(allP)allP.classList.add('active');
+  var allT=document.querySelector('#typeFilters .filter-pill'); if(allT)allT.classList.add('active');
+  applyFilters();
+}
+function doSearch(){ var s=document.getElementById('universities'); if(s)s.scrollIntoView({behavior:'smooth'}); }
+function buildCourseIdx(){
+  if(typeof UNI_INDEX==='undefined')return;
+  window._courseIdx=window._courseIdx||{};
+  Object.keys(UNI_INDEX).forEach(function(abbr){
+    fetch(DATA_BASE+abbr+'/courses.json').then(function(r){return r.json();}).then(function(list){
+      var u=UNI_INDEX[abbr]||{};
+      var txt=(Array.isArray(list)?list.map(function(c){return (c.name||'')+' '+(c.qual||'')+' '+(c.faculty||'');}).join(' '):'')+' '+(u.type||'');
+      window._courseIdx[abbr]=txt.toLowerCase();
+    }).catch(function(){window._courseIdx[abbr]='';});
   });
 }
-
-/* ── Hero search ── */
-function doSearch(){
-  const q=document.getElementById('heroSearch').value.trim().toLowerCase();
-  if(!q)return;
-  document.getElementById('universities').scrollIntoView({behavior:'smooth'});
-  document.querySelectorAll('.uni-card').forEach(card=>{
-    const text=card.textContent.toLowerCase();
-    card.style.display=text.includes(q)?'':'none';
-  });
-  document.querySelectorAll('.filter-pill').forEach(p=>p.classList.remove('active'));
-}
-document.getElementById('heroSearch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
+var _searchT;
+document.getElementById('heroSearch').addEventListener('input',function(){ filterState.q=this.value.trim().toLowerCase(); clearTimeout(_searchT); _searchT=setTimeout(applyFilters,200); });
+document.getElementById('heroSearch').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch();});
 
 /* ── APS Calculator ── */
 function markToAPS(mark){
@@ -4278,12 +4272,12 @@ window.addEventListener('DOMContentLoaded',()=>{
 /* ══════════════════════════════════════════════
    COURSES DATABASE
 ══════════════════════════════════════════════ */
-/* UNI_COURSES now loaded from /data/universities/*/courses.json */
+/* UNI_COURSES now loaded from per-university courses.json files */
 
 /* ══════════════════════════════════════════════
    UNIVERSITY DATA
 ══════════════════════════════════════════════ */
-/* UNI_DATA now loaded from /data/universities/*/info.json */
+/* UNI_DATA now loaded from per-university info.json files */
 
 /* ══════════════════════════════════════════════
    UNIVERSITY MODAL
@@ -4304,15 +4298,17 @@ function loadUni(abbr){
   return Promise.all([
     fetch(DATA_BASE+abbr+'/info.json').then(function(r){return r.json();}),
     fetch(DATA_BASE+abbr+'/courses.json').then(function(r){return r.json();}).catch(function(){return [];}),
-    fetch(DATA_BASE+abbr+'/admissions.json').then(function(r){return r.json();}).catch(function(){return {};})
+    fetch(DATA_BASE+abbr+'/admissions.json').then(function(r){return r.json();}).catch(function(){return {};}),
+    fetch(DATA_BASE+abbr+'/contact.json').then(function(r){return r.json();}).catch(function(){return {};}),
+    fetch(DATA_BASE+abbr+'/nsfas.json').then(function(r){return r.json();}).catch(function(){return {};})
   ]).then(function(res){
-    var info=res[0]||{},courses=res[1]||[],adm=res[2]||{},loc=info.location||{};
+    var info=res[0]||{},courses=res[1]||[],adm=res[2]||{},contact=res[3]||{},nsfas=res[4]||{},loc=info.location||{};
     var merged={abbr:abbr,name:info.name,type:info.type,founded:info.established,
       students:info.students,aps:info.aps,
       city:(loc.city?loc.city+(loc.province?', '+loc.province:''):''),
       website:info.website,apply:info.apply,prospectus:info.prospectus,
       desc:info.description,faculties:info.faculties||[],logo:info.logo,
-      courses:courses,admissions:adm};
+      courses:courses,admissions:adm,contact:contact,nsfas:nsfas};
     _uniCache[abbr]=merged;return merged;
   });
 }
@@ -4345,7 +4341,6 @@ function openUniModal(abbr){
     document.getElementById('modalProspBtn').href=d.prospectus||'#';
     document.getElementById('modalWebBtn').href=d.website||'#';
     var logoDiv=document.getElementById('modalLogo');
-    document.getElementById('modalLogoAbbr').textContent=abbr;
     logoDiv.innerHTML='<span class="modal-logo-abbr">'+abbr+'</span>';
     if(d.logo){var img=new Image();img.alt=abbr+' logo';img.style.cssText='width:100%;height:100%;object-fit:contain;padding:6px;';img.onload=function(){logoDiv.innerHTML='';logoDiv.appendChild(img);};img.src='logos/'+d.logo;}
     var courses=d.courses||[];
@@ -4354,6 +4349,9 @@ function openUniModal(abbr){
     document.getElementById('courseSearchInput').value='';
     document.querySelectorAll('.cqf-btn').forEach(function(b){b.classList.toggle('active',b.dataset.qual==='all');});
     renderModalCourses(courses);
+    try{renderAdmissions(d);}catch(e){console.warn('admissions',e);}
+    try{renderFunding(d);}catch(e){console.warn('funding',e);}
+    try{renderContact(d);}catch(e){console.warn('contact',e);}
   }).catch(function(e){
     console.warn('Failed to load university',abbr,e);
     document.getElementById('modalUniName').textContent='Information unavailable';
@@ -4366,16 +4364,103 @@ function closeUniModal(){
   document.body.style.overflow='';
 }
 
+/* ── University comparison ── */
+var compareSet=[];
+function toggleCompare(abbr){
+  var i=compareSet.indexOf(abbr);
+  if(i>-1)compareSet.splice(i,1);
+  else if(compareSet.length>=3){return;}
+  else compareSet.push(abbr);
+  syncCompareChecks();renderCompareBar();
+}
+function clearCompare(){compareSet=[];syncCompareChecks();renderCompareBar();}
+function syncCompareChecks(){
+  document.querySelectorAll('.uni-card').forEach(function(card){
+    var img=card.querySelector('img[alt]');if(!img)return;
+    var chk=card.querySelector('.compare-chk input');if(chk)chk.checked=compareSet.indexOf(img.getAttribute('alt').trim())>-1;
+  });
+}
+function renderCompareBar(){
+  var bar=document.getElementById('compareBar');if(!bar)return;
+  if(!compareSet.length){bar.style.display='none';return;}
+  bar.style.display='flex';
+  bar.innerHTML='<div class="cmp-bar-chips">'+compareSet.map(function(a){return '<span class="cmp-chip">'+a+' <span class="cmp-chip-x" onclick="toggleCompare(\''+a+'\')" role="button" aria-label="Remove '+a+'">&times;</span></span>';}).join('')+'</div>'+'<div class="cmp-bar-actions">'+(compareSet.length>=3?'<span class="cmp-max">max 3</span> ':'')+'<button class="btn btn-gold btn-sm"'+(compareSet.length<2?' disabled':'')+' onclick="openCompare()">Compare ('+compareSet.length+')</button> <button class="cmp-clear" onclick="clearCompare()">Clear</button></div>';
+}
+function closeCompare(){var o=document.getElementById('compareOverlay');if(o)o.classList.remove('open');document.body.style.overflow='';}
+function openCompare(){
+  if(compareSet.length<2)return;
+  var o=document.getElementById('compareOverlay');o.classList.add('open');document.body.style.overflow='hidden';
+  document.getElementById('compareBody').innerHTML='<p style="padding:24px">Loading…</p>';
+  Promise.all(compareSet.map(function(a){return loadUni(a).catch(function(){return {abbr:a,_err:true};});})).then(renderCompareTable);
+}
+function cmpCell(d,fn){try{if(d._err)return '&mdash;';var v=fn(d);return (v==null||v==='')?'&mdash;':v;}catch(e){return '&mdash;';}}
+function renderCompareTable(unis){
+  var rows=[
+    ['Location',function(d){return esc(d.city||'');}],
+    ['Type',function(d){return esc(d.type);}],
+    ['Founded',function(d){return esc(d.founded);}],
+    ['Students',function(d){return d.students!=null?esc((d.students.toLocaleString?d.students.toLocaleString():d.students)):'';}],
+    ['Applications open',function(d){var ap=(d.admissions||{}).applicationPeriod||{};var vf=(((d.admissions||{})._verified||{}).fields||{});var note=(vf.applicationOpens||{}).confidence==='unconfirmed'?' <span class="cmp-unconf">(confirm on site)</span>':'';return ap.opens?esc(ap.opens)+note:'';}],
+    ['Applications close',function(d){var ap=(d.admissions||{}).applicationPeriod||{};return ap.closes?esc(ap.closes):'';}],
+    ['Application fee',function(d){var f=(d.admissions||{}).applicationFee;return f===0?'Free':(f!=null?'R'+esc(f):'');}],
+    ['Minimum APS',function(d){var m=(d.admissions||{}).minimumAPS;return m!=null?esc(m):'';}],
+    ['Faculties',function(d){return (d.faculties||[]).length||'';}],
+    ['NSFAS',function(d){return (d.nsfas||{}).accredited?'Accredited':'&mdash;';}],
+    ['Apply',function(d){var a=d.apply||((d.admissions||{}).applyUrl);return a?'<a class="btn btn-green btn-sm" href="'+esc(a)+'" target="_blank" rel="noopener">Apply</a>':'';}]
+  ];
+  var head='<tr><th></th>'+unis.map(function(d){return '<th>'+(d.logo?'<img src="logos/'+esc(d.logo)+'" alt="'+esc(d.abbr)+'" style="height:28px;display:block;margin:0 auto 4px">':'')+'<div>'+esc(d.name||d.abbr)+'</div></th>';}).join('')+'</tr>';
+  var body=rows.map(function(r){return '<tr><td class="cmp-rowlabel">'+r[0]+'</td>'+unis.map(function(d){return '<td>'+cmpCell(d,r[1])+'</td>';}).join('')+'</tr>';}).join('');
+  document.getElementById('compareBody').innerHTML='<table class="cmp-table">'+head+body+'</table>';
+}
 function handleModalClick(e){
   if(e.target===document.getElementById('uniModal'))closeUniModal();
 }
 
 /* ══ Modal tab switching ══ */
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function renderAdmissions(d){
+  var el=document.getElementById('modalAdmissions'); if(!el)return;
+  var a=d.admissions||{}; var ap=a.applicationPeriod||{}; var vf=(a._verified&&a._verified.fields)||{}; var h='';
+  var unconf=((vf.applicationOpens||{}).confidence==='unconfirmed')||((vf.applicationCloses||{}).confidence==='unconfirmed');
+  h+='<div class="adm-block"><h4>Application window'+(ap.intakeYear?' ('+esc(ap.intakeYear)+' intake)':'')+'</h4><p>'+(ap.opens?esc(ap.opens):'TBC')+' &ndash; '+(ap.closes?esc(ap.closes):'TBC')+'</p>';
+  if(unconf)h+='<p class="adm-note">Dates not yet officially published &mdash; confirm on the university’s site.</p>';
+  h+='</div>';
+  h+='<div class="adm-block"><h4>Application fee</h4><p>'+(a.applicationFee===0?'Free to apply':(a.applicationFee!=null?'R'+esc(a.applicationFee):'See site'))+(a.feeWaiver?' &middot; fee waiver available':'')+'</p></div>';
+  if(a.minimumAPS!=null)h+='<div class="adm-block"><h4>Minimum APS</h4><p>'+esc(a.minimumAPS)+(a.apsNote?' &middot; '+esc(a.apsNote):'')+'</p></div>';
+  if(Array.isArray(a.requiredDocuments)&&a.requiredDocuments.length)h+='<div class="adm-block"><h4>Required documents</h4><ul class="adm-list">'+a.requiredDocuments.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul></div>';
+  if(a.internationalStudents&&a.internationalStudents.note)h+='<div class="adm-block"><h4>International students</h4><p>'+esc(a.internationalStudents.note)+'</p></div>';
+  var apply=d.apply||a.applyUrl; if(apply)h+='<a class="btn btn-green btn-sm" href="'+esc(apply)+'" target="_blank" rel="noopener">Apply Online</a>';
+  el.innerHTML=h;
+}
+function renderFunding(d){
+  var el=document.getElementById('modalFunding'); if(!el)return;
+  var n=d.nsfas||{}; var h='';
+  if(n.accredited)h+='<div class="fund-badge">NSFAS accredited</div>';
+  if(n.applicationNote)h+='<p class="adm-note">'+esc(n.applicationNote)+'</p>';
+  if(n.email||n.phone)h+='<p>Financial aid: '+(n.email?'<a href="mailto:'+esc(n.email)+'">'+esc(n.email)+'</a>':'')+(n.phone?' &middot; <a href="tel:'+esc((n.phone+'').replace(/\s/g,''))+'">'+esc(n.phone)+'</a>':'')+'</p>';
+  var f=Array.isArray(n.additionalFunding)?n.additionalFunding:[];
+  if(f.length)h+='<h4>Bursaries &amp; scholarships</h4>'+f.map(function(b){return '<div class="fund-card"><div class="fund-card-head"><strong>'+esc(b.name)+'</strong>'+(b.type?'<span class="badge">'+esc(b.type)+'</span>':'')+'</div>'+(b.value?'<p class="fund-value">'+esc(b.value)+'</p>':'')+(b.criteria?'<p>'+esc(b.criteria)+'</p>':'')+(b.url?'<a href="'+esc(b.url)+'" target="_blank" rel="noopener">Details &rarr;</a>':'')+'</div>';}).join('');
+  else h+='<p>See the university’s financial-aid page for bursary options.</p>';
+  el.innerHTML=h;
+}
+function renderContact(d){
+  var el=document.getElementById('modalContact'); if(!el)return;
+  var c=d.contact||{}; var h='';
+  function row(label,o){ if(!o||(!o.phone&&!o.email))return ''; return '<div class="contact-row"><strong>'+label+'</strong>'+(o.email?' <a href="mailto:'+esc(o.email)+'">'+esc(o.email)+'</a>':'')+(o.phone?' &middot; <a href="tel:'+esc((o.phone+'').replace(/\s/g,''))+'">'+esc(o.phone)+'</a>':'')+'</div>'; }
+  h+=row('Admissions',c.admissions)+row('Financial aid',c.financialAid)+row('General',c.general);
+  if(c.address)h+='<div class="contact-row"><strong>Address</strong> '+esc(c.address)+'</div>';
+  var s=c.social||{}; var links=Object.keys(s).filter(function(k){return s[k];}).map(function(k){return '<a href="'+esc(s[k])+'" target="_blank" rel="noopener">'+k+'</a>';});
+  if(links.length)h+='<div class="contact-row"><strong>Social</strong> '+links.join(' &middot; ')+'</div>';
+  if(!h)h='<p>Contact details not available.</p>';
+  el.innerHTML=h;
+}
 function switchModalTab(tab,btn){
   document.querySelectorAll('.modal-tab-btn').forEach(function(b){b.classList.remove('active');});
   if(btn)btn.classList.add('active');
   document.getElementById('modalPanelOverview').style.display=tab==='overview'?'':'none';
   document.getElementById('modalPanelCourses').style.display=tab==='courses'?'':'none';
+  var ext={admissions:'modalPanelAdmissions',funding:'modalPanelFunding',contact:'modalPanelContact'};
+  Object.keys(ext).forEach(function(k){var p=document.getElementById(ext[k]);if(p)p.style.display=tab===k?'':'none';});
 }
 
 /* ══ Course filter helpers ══ */
@@ -4442,12 +4527,18 @@ if(uniGrid){
 }
 
 /* ══ Wire real hrefs + rename buttons on all uni cards ══ */
-indexReady.then(function(){document.querySelectorAll('.uni-card').forEach(function(card){
+indexReady.then(function(){buildCourseIdx();document.querySelectorAll('.uni-card').forEach(function(card){
   var _img=card.querySelector('img[alt]');
   if(!_img)return;
   var abbr=_img.getAttribute('alt').trim();
   var u=UNI_INDEX[abbr];
   if(!u)return;
+  if(!card.querySelector('.compare-chk')){
+    var _lbl=document.createElement('label'); _lbl.className='compare-chk';
+    _lbl.innerHTML='<input type="checkbox"'+(compareSet.indexOf(abbr)>-1?' checked':'')+'><span>Compare</span>';
+    _lbl.querySelector('input').addEventListener('click',function(e){e.stopPropagation();toggleCompare(abbr);});
+    card.appendChild(_lbl);
+  }
   var nameEl=card.querySelector('.uni-card-name');
   if(nameEl&&!nameEl.querySelector('a')){
     var link=document.createElement('a');
@@ -4466,7 +4557,7 @@ indexReady.then(function(){document.querySelectorAll('.uni-card').forEach(functi
     applyBtn.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/><polyline points="10,17 15,12 10,7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Apply Online';
     applyBtn.href=u.apply;applyBtn.setAttribute('target','_blank');applyBtn.setAttribute('rel','noopener');
   }
-});}););
+});});
 
 /* ══ Event delegation for prospectus download buttons ══ */
 var prospGrid=document.querySelector('.prosp-grid');
@@ -4567,7 +4658,8 @@ document.querySelectorAll('.career-card').forEach(function(card){
     document.getElementById('aps-calculator').scrollIntoView({behavior:'smooth'});
   });
 });
-(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();
+(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3300':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();
 </script>
+<script src="/assets/saus.js" defer></script>
 </body>
 </html>

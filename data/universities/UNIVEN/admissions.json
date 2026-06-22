@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
-  "minimumAPS": 18,
+  "minimumAPS": 26,
   "apsNote": "Health Sciences programmes close 31 May. Space limited — apply early.",
-  "applyUrl": "https://www.univen.ac.za/admissions",
+  "applyUrl": "https://admission.univen.ac.za/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/apply-online/"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/prospectus/"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/application-process/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/application-process/"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/apply/",
+        "note": "CORRECTION from R100; online free"
+      },
+      "minimumAPS": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/students/student-support-services/how-to-apply/general-information/",
+        "note": "CORRECTION from 18; bachelor min 26; Nursing 36"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/about/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/about/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.univen.ac.za/",
+        "note": "matches"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/about/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.univen.ac.za/faculties/",
+        "note": "CORRECTION: 6->4 combined faculties"
+      }
+    }
+  }
 }

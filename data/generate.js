@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+/* ⚠️ 2026-06: the per-university JSON in data/universities/ has been HAND-VERIFIED against
+   official sources (see data/VERIFICATION-2026-06.md). Do NOT re-run this generator without
+   first merging those corrections into the master objects below — it will clobber verified data. */
 // Generates all university JSON data files into /data/universities/<ABBR>/
 const fs = require('fs');
 const path = require('path');

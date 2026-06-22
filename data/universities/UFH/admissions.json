@@ -2,14 +2,14 @@
   "abbr": "UFH",
   "applicationPeriod": {
     "opens": "1 April 2026",
-    "closes": "30 November 2026",
+    "closes": "31 October 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
-  "minimumAPS": 18,
+  "minimumAPS": 26,
   "apsNote": "East London campus has different intake dates for some programmes.",
-  "applyUrl": "https://www.ufh.ac.za/admissions",
+  "applyUrl": "https://www.ufh.ac.za/apply",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/apply"
+      },
+      "prospectusUrl": {
+        "confidence": "low",
+        "source": "https://www.ufh.ac.za/admission"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://www.ufh.ac.za/apply/apply-undergraduate"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://www.ufh.ac.za/apply/apply-undergraduate",
+        "note": "CORRECTION from 30 Nov; official 31 Oct"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://fye.ufh.ac.za/faq-base/is-there-an-application-fee/",
+        "note": "CORRECTION from R100; online free, manual R120"
+      },
+      "minimumAPS": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/admission",
+        "note": "CORRECTION from 18; bachelor min 26"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://www.ufh.ac.za/",
+        "note": "unconfirmed officially"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.ufh.ac.za/faculties",
+        "note": "CORRECTION: added Health Sciences; merged Science & Agriculture"
+      }
+    }
+  }
 }

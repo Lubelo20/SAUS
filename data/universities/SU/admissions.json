@@ -9,7 +9,7 @@
   "feeWaiver": false,
   "minimumAPS": 30,
   "apsNote": "Medicine closes 31 May. Some faculties close as early as 30 April.",
-  "applyUrl": "https://www.sun.ac.za/english/student-affairs/Pages/Applications.aspx",
+  "applyUrl": "https://www.su.ac.za/en/apply/undergrad",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.sun.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.su.ac.za/en/apply/undergrad",
+        "note": "live portal is su.ac.za"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.su.ac.za/en/apply/undergrad"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.su.ac.za/en/apply/undergrad",
+        "note": "MBChB closes earlier"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.su.ac.za/en/apply/undergrad/fees/application-fees",
+        "note": "R100 domestic; R400 international; Quintile 1-4 exempt"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "http://www.sun.ac.za/english/maties/admissions/requirements",
+        "note": "floor; competitive 36-42+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.sun.ac.za"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.sun.ac.za"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.sun.ac.za"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.sun.ac.za"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.sun.ac.za"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "http://www.sun.ac.za/english/maties/admissions/requirements"
+      }
+    }
+  }
 }

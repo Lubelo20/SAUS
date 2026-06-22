@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": true,
   "minimumAPS": 22,
   "apsNote": "Extended closing date for most programmes. Health Sciences closes earlier.",
-  "applyUrl": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply",
+  "applyUrl": "https://applyonline.mandela.ac.za/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/study-at-mandela/application"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.mandela.ac.za/study-at-mandela/application"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/study-at-mandela/application/apply-undergraduate"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/Study-at-Mandela/Application/Closing-dates",
+        "note": "Health Sciences 30 June"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://international.mandela.ac.za/Finance/Application-Fees",
+        "note": "CORRECTION from R100; SA free, intl R500"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.mandela.ac.za/Study-at-Mandela/Application/Academic-admission",
+        "note": "NMU uses Applicant Score not APS; floor"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/About-us/Campuses"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/About-us/Campuses"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://www.mandela.ac.za/",
+        "note": "CORRECTION from 27000; ~31000 per 2024 indicators"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.mandela.ac.za/Faculties-and-Schools",
+        "note": "CORRECTION: Arts->Humanities; Eng name fixed"
+      }
+    }
+  }
 }

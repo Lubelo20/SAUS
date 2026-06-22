@@ -5,11 +5,11 @@
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 0,
   "feeWaiver": false,
   "minimumAPS": 22,
   "apsNote": "Dentistry closes 30 June. Applications assessed on ongoing basis.",
-  "applyUrl": "https://www.uwc.ac.za/apply",
+  "applyUrl": "https://www.uwc.ac.za/admission-and-financial-aid/apply",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/admission-and-financial-aid/apply"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.uwc.ac.za/study/faculties-and-programmes"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf",
+        "note": "Dentistry 31 August"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/application-information",
+        "note": "CORRECTION from R100; UWC free"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/undergraduate-admission-requirements",
+        "note": "UWC points scale; LLB 37"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.uwc.ac.za/",
+        "note": "CORRECTION from 22000"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.uwc.ac.za/study/faculties-and-programmes",
+        "note": "CORRECTION: 8->7; Nursing is a school under CHS; Arts->Arts and Humanities"
+      }
+    }
+  }
 }

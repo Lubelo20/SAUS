@@ -1,0 +1,76 @@
+[{
+  "abbr":"UJ",
+  "fields":{
+    "website":{"value":"https://www.uj.ac.za","confidence":"high","source":"https://www.uj.ac.za/"},
+    "applyUrl":{"value":"https://www.uj.ac.za/admission-aid/apply/","confidence":"high","source":"https://www.uj.ac.za/admission-aid/apply/"},
+    "prospectusUrl":{"value":"https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/","confidence":"high","source":"https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://www.uj.ac.za/admission-aid/new/"},
+    "applicationCloses":{"value":"31 October 2026","confidence":"high","source":"https://www.uj.ac.za/admission-aid/new/"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://www.uj.ac.za/admission-aid/new/","note":"online free; hardcopy R200. CORRECTION from R200"},
+    "minimumAPS":{"value":24,"confidence":"medium","source":"https://www.uj.ac.za/admission-aid/","note":"floor; varies by faculty"},
+    "city":{"value":"Johannesburg","confidence":"high","source":"https://www.uj.ac.za/about/"},
+    "province":{"value":"Gauteng","confidence":"high","source":"https://www.uj.ac.za/about/"},
+    "founded":{"value":2005,"confidence":"high","source":"https://www.uj.ac.za/about/"},
+    "students":{"value":50000,"confidence":"medium","source":"https://www.uj.ac.za/about/"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.uj.ac.za/about/"},
+    "faculties":{"value":["Art, Design & Architecture","College of Business and Economics","Education","Engineering & Built Environment","Health Sciences","Humanities","Law","Science"],"confidence":"high","source":"https://www.uj.ac.za/faculties/","note":"CORRECTION: Management merged into CBE (2017)"}
+  },
+  "notes":"fee R200->R0 online; faculties updated; no MBChB"
+},
+{
+  "abbr":"UKZN",
+  "fields":{
+    "website":{"value":"https://www.ukzn.ac.za","confidence":"high","source":"https://ukzn.ac.za/"},
+    "applyUrl":{"value":"https://applications.ukzn.ac.za/","confidence":"high","source":"https://applications.ukzn.ac.za/"},
+    "prospectusUrl":{"value":"https://applications.ukzn.ac.za/applications/online-applications/","confidence":"medium","source":"https://applications.ukzn.ac.za/applications/online-applications/"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://applications.ukzn.ac.za/","note":"CORRECTION from 1 March 2026"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://applications.ukzn.ac.za/applications/online-applications/","note":"Medicine closes 30 June"},
+    "applicationFee":{"value":210,"confidence":"medium","source":"https://applications.ukzn.ac.za/applications/2025-ukzn-application-fees/","note":"CORRECTION from R200; R210 direct, CAO R250"},
+    "minimumAPS":{"value":28,"confidence":"medium","source":"https://applications.ukzn.ac.za/","note":"floor; Medicine 42+"},
+    "city":{"value":"Durban","confidence":"high","source":"https://ukzn.ac.za/ukzn-campuses/"},
+    "province":{"value":"KwaZulu-Natal","confidence":"high","source":"https://ukzn.ac.za/ukzn-campuses/"},
+    "founded":{"value":2004,"confidence":"high","source":"https://ukzn.ac.za/"},
+    "students":{"value":47000,"confidence":"low","source":"https://ukzn.ac.za/"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://ukzn.ac.za/"},
+    "faculties":{"value":["Agriculture, Engineering & Science","Health Sciences","Humanities","Law & Management Studies"],"confidence":"high","source":"https://studyatukzn.ukzn.ac.za/our-colleges/","note":"CORRECTION: 4 colleges, removed duplicate"}
+  },
+  "notes":"opens 1 March->1 April; fee R200->R210; colleges 5->4"
+},
+{
+  "abbr":"NWU",
+  "fields":{
+    "website":{"value":"https://www.nwu.ac.za","confidence":"high","source":"https://www.nwu.ac.za/"},
+    "applyUrl":{"value":"https://studies.nwu.ac.za/undergraduate-studies/application","confidence":"high","source":"https://studies.nwu.ac.za/undergraduate-studies/application"},
+    "prospectusUrl":{"value":"https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027","confidence":"medium","source":"https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027"},
+    "applicationOpens":{"value":"1 June 2026","confidence":"high","source":"https://studies.nwu.ac.za/undergraduate-studies/application"},
+    "applicationCloses":{"value":"31 August 2026","confidence":"high","source":"https://studies.nwu.ac.za/undergraduate-studies/application","note":"CORRECTION from 30 Sep; selection courses close 30 June"},
+    "applicationFee":{"value":150,"confidence":"high","source":"https://studies.nwu.ac.za/undergraduate-studies/application","note":"CORRECTION from R100; new R150 fee for 2027 (intl R600)"},
+    "minimumAPS":{"value":20,"confidence":"medium","source":"https://studies.nwu.ac.za/undergraduate-studies/application","note":"absolute min 18"},
+    "city":{"value":"Potchefstroom","confidence":"high","source":"https://www.nwu.ac.za/"},
+    "province":{"value":"North West","confidence":"high","source":"https://www.nwu.ac.za/"},
+    "founded":{"value":2004,"confidence":"high","source":"https://www.nwu.ac.za/"},
+    "students":{"value":55000,"confidence":"medium","source":"https://www.nwu.ac.za/","note":"CORRECTION from 65000; ~55096 per Quick Stats"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.nwu.ac.za/"},
+    "faculties":{"value":["Economic and Management Sciences","Education","Engineering","Health Sciences","Humanities","Law","Natural and Agricultural Sciences","Theology"],"confidence":"high","source":"https://studies.nwu.ac.za/studies/our-faculties","note":"CORRECTION: 8 faculties, fixed names"}
+  },
+  "notes":"fee R100->R150; closes Sep->Aug; students 65k->55k; faculties fixed"
+},
+{
+  "abbr":"UFS",
+  "fields":{
+    "website":{"value":"https://www.ufs.ac.za","confidence":"high","source":"https://www.ufs.ac.za/"},
+    "applyUrl":{"value":"https://apply.ufs.ac.za/","confidence":"high","source":"https://apply.ufs.ac.za/"},
+    "prospectusUrl":{"value":"https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf","confidence":"high","source":"https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf"},
+    "applicationOpens":{"value":"1 April 2026","confidence":"high","source":"https://apply.ufs.ac.za/"},
+    "applicationCloses":{"value":"30 September 2026","confidence":"high","source":"https://apply.ufs.ac.za/","note":"Medicine 31 May; Nursing/Social Work/Architecture 31 July"},
+    "applicationFee":{"value":0,"confidence":"high","source":"https://apply.ufs.ac.za/","note":"CORRECTION from R200; UFS free for 2027"},
+    "minimumAPS":{"value":22,"confidence":"medium","source":"https://www.ufs.ac.za/","note":"floor; Medicine 36+, LLB 33"},
+    "city":{"value":"Bloemfontein","confidence":"high","source":"https://www.ufs.ac.za/about-the-ufs"},
+    "province":{"value":"Free State","confidence":"high","source":"https://www.ufs.ac.za/about-the-ufs"},
+    "founded":{"value":1904,"confidence":"high","source":"https://www.ufs.ac.za/"},
+    "students":{"value":40000,"confidence":"medium","source":"https://www.ufs.ac.za/about-the-ufs/ufs-in-focus/ufs-in-figures","note":"CORRECTION from 39000"},
+    "type":{"value":"Comprehensive University","confidence":"high","source":"https://www.ufs.ac.za/about-the-ufs"},
+    "faculties":{"value":["Economic & Management Sciences","Education","Health Sciences","Humanities","Law","Natural & Agricultural Sciences","Theology & Religion"],"confidence":"high","source":"https://www.ufs.ac.za/templates/faculty-list","note":"matches existing"}
+  },
+  "notes":"fee R200->R0; students 39k->40k; Medicine closes 31 May not 30 Apr"
+}]

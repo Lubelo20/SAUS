@@ -1,11 +1,11 @@
 {
   "abbr": "TUT",
   "applicationPeriod": {
-    "opens": "3 April 2026",
-    "closes": "31 July 2026",
+    "opens": "1 April 2026",
+    "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 240,
   "feeWaiver": false,
   "minimumAPS": 18,
   "apsNote": "Ga-Rankuwa and eMalahleni campuses may have separate intakes.",
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.tut.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "medium",
+        "source": "https://www.tut.ac.za/apply",
+        "note": "live portal applications-prod.tut.ac.za"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.tut.ac.za/index.php/prospectus"
+      },
+      "applicationOpens": {
+        "confidence": "medium",
+        "source": "https://learnerstag.org/tut-2027-applications/",
+        "note": "CORRECTION from 3 April"
+      },
+      "applicationCloses": {
+        "confidence": "medium",
+        "source": "https://varsitywise.com/posts/tut-2027-application-dates-you-cannot-miss",
+        "note": "CORRECTION from 31 Jul; tiered: high-demand 15 Jun, many 31 Jul, general 30 Sep"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://fundiconnect.co.za/tut-application-fees-2",
+        "note": "CORRECTION from R100; R240"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.studentroom.co.za/tshwane-university-of-technology-tut-aps-requirements-explained-for-2027/",
+        "note": "floor; degrees 20+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"
+      },
+      "students": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://en.wikipedia.org/wiki/Tshwane_University_of_Technology"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.tut.ac.za/study-at-tut/"
+      }
+    }
+  }
 }

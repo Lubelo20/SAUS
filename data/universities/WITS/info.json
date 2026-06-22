@@ -10,13 +10,13 @@
     "province": "Gauteng"
   },
   "website": "https://www.wits.ac.za",
-  "apply": "https://www.wits.ac.za/application/",
-  "prospectus": "https://www.wits.ac.za/application/undergraduate/",
+  "apply": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+  "prospectus": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/",
   "logo": "wits.jpg",
   "description": "One of Africa's premier research universities, renowned for engineering, medicine and the arts. Located in Johannesburg's Braamfontein education hub with a strong legacy of academic activism.",
   "faculties": [
-    "Commerce, Law & Management",
-    "Engineering & Built Env.",
+    "Commerce, Law and Management",
+    "Engineering and the Built Environment",
     "Health Sciences",
     "Humanities",
     "Science"
@@ -31,5 +31,9 @@
     "Education Campus",
     "Health Sciences (Parktown)"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

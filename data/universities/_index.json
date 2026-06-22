@@ -14,8 +14,9 @@
       "founded": 1829,
       "logo": "uct.png",
       "website": "https://www.uct.ac.za",
-      "apply": "https://myapps.uct.ac.za/",
-      "prospectus": "https://www.uct.ac.za/apply/undergraduate/undergraduate-prospectus"
+      "apply": "https://applyonline.uct.ac.za/",
+      "prospectus": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus",
+      "fee": 100
     },
     {
       "abbr": "WITS",
@@ -28,8 +29,9 @@
       "founded": 1922,
       "logo": "wits.jpg",
       "website": "https://www.wits.ac.za",
-      "apply": "https://www.wits.ac.za/application/",
-      "prospectus": "https://www.wits.ac.za/application/undergraduate/"
+      "apply": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+      "prospectus": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/",
+      "fee": 100
     },
     {
       "abbr": "SU",
@@ -42,22 +44,24 @@
       "founded": 1918,
       "logo": "su.jpg",
       "website": "https://www.sun.ac.za",
-      "apply": "https://www.sun.ac.za/english/student-affairs/Pages/Applications.aspx",
-      "prospectus": "https://www.sun.ac.za/english/student-affairs/Pages/Prospectus.aspx"
+      "apply": "https://www.su.ac.za/en/apply/undergrad",
+      "prospectus": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf",
+      "fee": 100
     },
     {
       "abbr": "UP",
       "name": "University of Pretoria",
       "city": "Pretoria",
       "province": "Gauteng",
-      "type": "Comprehensive University",
+      "type": "Research University",
       "aps": "28–42+",
       "students": 54000,
       "founded": 1908,
       "logo": "up.png",
       "website": "https://www.up.ac.za",
-      "apply": "https://www.up.ac.za/apply",
-      "prospectus": "https://www.up.ac.za/prospective-student"
+      "apply": "https://www.up.ac.za/online-application/apply-online",
+      "prospectus": "https://www.up.ac.za/online-application",
+      "fee": 300
     },
     {
       "abbr": "UJ",
@@ -66,12 +70,13 @@
       "province": "Gauteng",
       "type": "Comprehensive University",
       "aps": "24–38+",
-      "students": 52000,
+      "students": 50000,
       "founded": 2005,
       "logo": "uj.png",
       "website": "https://www.uj.ac.za",
-      "apply": "https://www.uj.ac.za/apply-to-uj/",
-      "prospectus": "https://www.uj.ac.za/apply-to-uj/applications/undergraduate-admissions/prospectus/"
+      "apply": "https://www.uj.ac.za/admission-aid/apply/",
+      "prospectus": "https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/",
+      "fee": 0
     },
     {
       "abbr": "UKZN",
@@ -85,7 +90,8 @@
       "logo": "ukzn.png",
       "website": "https://www.ukzn.ac.za",
       "apply": "https://applications.ukzn.ac.za/",
-      "prospectus": "https://www.ukzn.ac.za/ukzn-for-students/"
+      "prospectus": "https://applications.ukzn.ac.za/applications/online-applications/",
+      "fee": 210
     },
     {
       "abbr": "RU",
@@ -94,12 +100,13 @@
       "province": "Eastern Cape",
       "type": "Traditional University",
       "aps": "28–36+",
-      "students": 8000,
+      "students": 9000,
       "founded": 1904,
       "logo": "ru.png",
       "website": "https://www.ru.ac.za",
-      "apply": "https://applications.ru.ac.za/",
-      "prospectus": "https://www.ru.ac.za/institutionalplanning/registrar/applications/"
+      "apply": "https://ross.ru.ac.za/ugadmissions",
+      "prospectus": "https://www.ru.ac.za/institutionalplanning/registrar/applications/",
+      "fee": 100
     },
     {
       "abbr": "CPUT",
@@ -112,8 +119,9 @@
       "founded": 2005,
       "logo": "cput.svg",
       "website": "https://www.cput.ac.za",
-      "apply": "https://www.cput.ac.za/apply",
-      "prospectus": "https://www.cput.ac.za/students/faculties"
+      "apply": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+      "prospectus": "https://www.cput.ac.za/academic",
+      "fee": 0
     },
     {
       "abbr": "DUT",
@@ -122,12 +130,13 @@
       "province": "KwaZulu-Natal",
       "type": "University of Technology",
       "aps": "18–26+",
-      "students": 25000,
+      "students": 32000,
       "founded": 2002,
       "logo": "dut.jpg",
       "website": "https://www.dut.ac.za",
-      "apply": "https://www.dut.ac.za/admissions/",
-      "prospectus": "https://www.dut.ac.za/admissions/how-to-apply/"
+      "apply": "https://www.cao.ac.za",
+      "prospectus": "https://www.dut.ac.za/admissions/how-to-apply/",
+      "fee": 250
     },
     {
       "abbr": "NMU",
@@ -140,8 +149,9 @@
       "founded": 2005,
       "logo": "nmu.png",
       "website": "https://www.mandela.ac.za",
-      "apply": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate/Apply",
-      "prospectus": "https://www.mandela.ac.za/Study-at-Mandela/Undergraduate"
+      "apply": "https://applyonline.mandela.ac.za/",
+      "prospectus": "https://www.mandela.ac.za/study-at-mandela/application",
+      "fee": 0
     },
     {
       "abbr": "UFS",
@@ -150,12 +160,13 @@
       "province": "Free State",
       "type": "Comprehensive University",
       "aps": "22–38+",
-      "students": 39000,
+      "students": 40000,
       "founded": 1904,
       "logo": "ufs.png",
       "website": "https://www.ufs.ac.za",
       "apply": "https://apply.ufs.ac.za/",
-      "prospectus": "https://www.ufs.ac.za/apply/prospectus"
+      "prospectus": "https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf",
+      "fee": 0
     },
     {
       "abbr": "UNISA",
@@ -164,12 +175,13 @@
       "province": "National",
       "type": "Distance University",
       "aps": "15–30+",
-      "students": 400000,
+      "students": 370000,
       "founded": 1873,
       "logo": "unisa.jpg",
       "website": "https://www.unisa.ac.za",
-      "apply": "https://my.unisa.ac.za/portal/",
-      "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-prospectus"
+      "apply": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool",
+      "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications",
+      "fee": 150
     },
     {
       "abbr": "UWC",
@@ -178,12 +190,13 @@
       "province": "Western Cape",
       "type": "Comprehensive University",
       "aps": "22–34+",
-      "students": 22000,
+      "students": 23000,
       "founded": 1960,
       "logo": "uwc.svg",
       "website": "https://www.uwc.ac.za",
-      "apply": "https://www.uwc.ac.za/apply",
-      "prospectus": "https://www.uwc.ac.za/study/all-programmes"
+      "apply": "https://www.uwc.ac.za/admission-and-financial-aid/apply",
+      "prospectus": "https://www.uwc.ac.za/study/faculties-and-programmes",
+      "fee": 0
     },
     {
       "abbr": "UFH",
@@ -196,8 +209,9 @@
       "founded": 1916,
       "logo": "ufh.png",
       "website": "https://www.ufh.ac.za",
-      "apply": "https://www.ufh.ac.za/admissions",
-      "prospectus": "https://www.ufh.ac.za/admissions"
+      "apply": "https://www.ufh.ac.za/apply",
+      "prospectus": "https://www.ufh.ac.za/admissions",
+      "fee": 0
     },
     {
       "abbr": "WSU",
@@ -206,12 +220,13 @@
       "province": "Eastern Cape",
       "type": "Comprehensive University",
       "aps": "18–28+",
-      "students": 28000,
+      "students": 30000,
       "founded": 2005,
       "logo": "wsu.png",
       "website": "https://www.wsu.ac.za",
-      "apply": "https://www.wsu.ac.za/admissions",
-      "prospectus": "https://www.wsu.ac.za/admissions"
+      "apply": "https://applications.wsu.ac.za",
+      "prospectus": "https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf",
+      "fee": 100
     },
     {
       "abbr": "NWU",
@@ -220,12 +235,13 @@
       "province": "North West",
       "type": "Comprehensive University",
       "aps": "20–34+",
-      "students": 65000,
+      "students": 55000,
       "founded": 2004,
       "logo": "nwu.png",
       "website": "https://www.nwu.ac.za",
-      "apply": "https://www.nwu.ac.za/applying-for-studies",
-      "prospectus": "https://www.nwu.ac.za/applying-for-studies"
+      "apply": "https://studies.nwu.ac.za/undergraduate-studies/application",
+      "prospectus": "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027",
+      "fee": 150
     },
     {
       "abbr": "UniZ",
@@ -238,8 +254,9 @@
       "founded": 1960,
       "logo": "unizulu.png",
       "website": "https://www.unizulu.ac.za",
-      "apply": "https://www.unizulu.ac.za/application",
-      "prospectus": "https://www.unizulu.ac.za/prospectus"
+      "apply": "https://www.cao.ac.za",
+      "prospectus": "https://www.unizulu.ac.za/apply/",
+      "fee": 250
     },
     {
       "abbr": "UNIVEN",
@@ -252,13 +269,14 @@
       "founded": 1982,
       "logo": "univen.png",
       "website": "https://www.univen.ac.za",
-      "apply": "https://www.univen.ac.za/admissions",
-      "prospectus": "https://www.univen.ac.za/admissions"
+      "apply": "https://admission.univen.ac.za/",
+      "prospectus": "https://www.univen.ac.za/wp-content/uploads/2026/03/2027-Univen-Undergraduate-Prospectus.pdf",
+      "fee": 0
     },
     {
       "abbr": "UL",
       "name": "University of Limpopo",
-      "city": "Polokwane",
+      "city": "Mankweng (Polokwane)",
       "province": "Limpopo",
       "type": "Traditional University",
       "aps": "18–28+",
@@ -266,22 +284,24 @@
       "founded": 1959,
       "logo": "ul.png",
       "website": "https://www.ul.ac.za",
-      "apply": "https://www.ul.ac.za/admissions",
-      "prospectus": "https://www.ul.ac.za/admissions"
+      "apply": "https://www.ul.ac.za/admissions/undergraduate-studies/",
+      "prospectus": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf",
+      "fee": 200
     },
     {
       "abbr": "SMU",
       "name": "Sefako Makgatho Health Sciences University",
-      "city": "Medunsa",
+      "city": "Ga-Rankuwa",
       "province": "Gauteng",
       "type": "Health Sciences University",
       "aps": "34–44+",
-      "students": 5000,
+      "students": 6300,
       "founded": 2015,
       "logo": "smu.png",
       "website": "https://www.smu.ac.za",
-      "apply": "https://www.smu.ac.za/admissions",
-      "prospectus": "https://www.smu.ac.za/admissions"
+      "apply": "https://www.smu.ac.za/students/apply/",
+      "prospectus": "https://www.smu.ac.za/3d-flip-book/smu-prospectus-2025_2026/",
+      "fee": 300
     },
     {
       "abbr": "TUT",
@@ -295,7 +315,8 @@
       "logo": "tut.png",
       "website": "https://www.tut.ac.za",
       "apply": "https://www.tut.ac.za/apply",
-      "prospectus": "https://www.tut.ac.za/apply"
+      "prospectus": "https://www.tut.ac.za/index.php/prospectus",
+      "fee": 240
     },
     {
       "abbr": "VUT",
@@ -304,12 +325,13 @@
       "province": "Gauteng",
       "type": "University of Technology",
       "aps": "18–26+",
-      "students": 20000,
+      "students": 21000,
       "founded": 1966,
       "logo": "vut.png",
       "website": "https://www.vut.ac.za",
-      "apply": "https://www.vut.ac.za/admissions",
-      "prospectus": "https://www.vut.ac.za/admissions"
+      "apply": "https://www.vut.ac.za/how-to-apply/",
+      "prospectus": "https://www.vut.ac.za/undergraduate-studies/",
+      "fee": 110
     },
     {
       "abbr": "MUT",
@@ -318,12 +340,13 @@
       "province": "KwaZulu-Natal",
       "type": "University of Technology",
       "aps": "18–24+",
-      "students": 12000,
+      "students": 14500,
       "founded": 1979,
       "logo": "mut.png",
       "website": "https://www.mut.ac.za",
-      "apply": "https://www.mut.ac.za/admissions",
-      "prospectus": "https://www.mut.ac.za/admissions"
+      "apply": "https://www.mut.ac.za/prospective-students/apply/",
+      "prospectus": "https://www.mut.ac.za/prospective-students/apply/",
+      "fee": 250
     },
     {
       "abbr": "SPU",
@@ -332,12 +355,13 @@
       "province": "Northern Cape",
       "type": "Comprehensive University",
       "aps": "22–30+",
-      "students": 4000,
+      "students": 7183,
       "founded": 2014,
       "logo": "spu.png",
       "website": "https://www.spu.ac.za",
-      "apply": "https://www.spu.ac.za/admissions",
-      "prospectus": "https://www.spu.ac.za/admissions"
+      "apply": "https://applications-prod.spu.ac.za/",
+      "prospectus": "https://www.spu.ac.za/wp-content/uploads/2025/04/2026-Undergraduate-Prospectus.pdf",
+      "fee": 0
     },
     {
       "abbr": "UMP",
@@ -350,8 +374,9 @@
       "founded": 2014,
       "logo": "ump.png",
       "website": "https://www.ump.ac.za",
-      "apply": "https://www.ump.ac.za/admissions",
-      "prospectus": "https://www.ump.ac.za/admissions"
+      "apply": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+      "prospectus": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+      "fee": 200
     },
     {
       "abbr": "CUT",
@@ -360,12 +385,14 @@
       "province": "Free State",
       "type": "University of Technology",
       "aps": "18–26+",
-      "students": 15000,
+      "students": 21000,
       "founded": 1981,
       "logo": "cut.png",
       "website": "https://www.cut.ac.za",
-      "apply": "https://www.cut.ac.za/apply",
-      "prospectus": "https://www.cut.ac.za/apply"
+      "apply": "https://www.cut.ac.za/application-process",
+      "prospectus": "https://www.cut.ac.za/programmes-offered",
+      "fee": 0
     }
-  ]
+  ],
+  "_verified": "2026-06-21"
 }

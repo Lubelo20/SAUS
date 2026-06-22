@@ -1,0 +1,76 @@
+[{
+  "abbr": "UCT",
+  "fields": {
+    "website": { "value": "https://www.uct.ac.za", "confidence": "high", "source": "https://www.uct.ac.za" },
+    "applyUrl": { "value": "https://applyonline.uct.ac.za/", "confidence": "high", "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure", "note": "older portal was myapps.uct.ac.za" },
+    "prospectusUrl": { "value": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus", "confidence": "high", "source": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus" },
+    "applicationOpens": { "value": "1 April 2026", "confidence": "high", "source": "https://uct.ac.za/students/applications/key-dates" },
+    "applicationCloses": { "value": "31 July 2026", "confidence": "high", "source": "https://uct.ac.za/students/applications/key-dates", "note": "Health Sciences closes 30 June 2026" },
+    "applicationFee": { "value": 100, "confidence": "high", "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure", "note": "R100 SA/SADC; R300 other international" },
+    "minimumAPS": { "value": 36, "confidence": "medium", "source": "https://uct.ac.za/students/applications-admission-requirements/eligibility-admission", "note": "UCT uses Faculty Points Score /600 for competitive entry" },
+    "city": { "value": "Cape Town", "confidence": "high", "source": "https://uct.ac.za/history-introduction" },
+    "province": { "value": "Western Cape", "confidence": "high", "source": "https://uct.ac.za/history-introduction" },
+    "founded": { "value": 1829, "confidence": "high", "source": "https://uct.ac.za/history-introduction" },
+    "students": { "value": 29000, "confidence": "medium", "source": "https://www.news.uct.ac.za/article/-2024-01-27-about-uct-and-cape-town" },
+    "type": { "value": "Research University", "confidence": "high", "source": "https://uct.ac.za/international" },
+    "faculties": { "value": ["Commerce", "Engineering & the Built Environment", "Health Sciences", "Humanities", "Law", "Science"], "confidence": "high", "source": "https://uct.ac.za/students/applications-admission-requirements/undergraduates" }
+  },
+  "notes": "applyUrl update myapps->applyonline; UCT uses FPS /600 distinct from NSC APS"
+},
+{
+  "abbr": "WITS",
+  "fields": {
+    "website": { "value": "https://www.wits.ac.za", "confidence": "high", "source": "https://www.wits.ac.za" },
+    "applyUrl": { "value": "https://www.wits.ac.za/undergraduate/apply-to-wits/", "confidence": "high", "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/" },
+    "prospectusUrl": { "value": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/", "confidence": "medium", "source": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/" },
+    "applicationOpens": { "value": "1 April 2026", "confidence": "high", "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/" },
+    "applicationCloses": { "value": "30 September 2026", "confidence": "high", "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/", "note": "30 June 2026 for Health Sciences, Architecture, Audiology, Speech-Language Pathology, BA Film & TV" },
+    "applicationFee": { "value": 100, "confidence": "high", "source": "https://www.wits.ac.za", "note": "R100 undergraduate; R200 postgraduate" },
+    "minimumAPS": { "value": 34, "confidence": "medium", "source": "https://www.wits.ac.za/undergraduate/entry-requirements/admission-requirements-nsc/", "note": "34 general minimum; competitive programmes much higher" },
+    "city": { "value": "Johannesburg", "confidence": "high", "source": "https://www.wits.ac.za/faculties-and-schools/" },
+    "province": { "value": "Gauteng", "confidence": "high", "source": "https://www.wits.ac.za/faculties-and-schools/" },
+    "founded": { "value": 1922, "confidence": "high", "source": "https://www.wits.ac.za/about-wits/general-prospectus/" },
+    "students": { "value": 40000, "confidence": "medium", "source": "https://www.wits.ac.za/about-wits/general-prospectus/" },
+    "type": { "value": "Research University", "confidence": "high", "source": "https://www.wits.ac.za" },
+    "faculties": { "value": ["Commerce, Law and Management", "Engineering and the Built Environment", "Health Sciences", "Humanities", "Science"], "confidence": "high", "source": "https://www.wits.ac.za/faculties-and-schools/" }
+  },
+  "notes": "applyUrl /application/ -> /undergraduate/apply-to-wits/; faculty name corrected"
+},
+{
+  "abbr": "SU",
+  "fields": {
+    "website": { "value": "https://www.sun.ac.za", "confidence": "high", "source": "https://www.sun.ac.za" },
+    "applyUrl": { "value": "https://www.su.ac.za/en/apply/undergrad", "confidence": "high", "source": "https://www.su.ac.za/en/apply/undergrad", "note": "live portal is su.ac.za" },
+    "prospectusUrl": { "value": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf", "confidence": "high", "source": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf" },
+    "applicationOpens": { "value": "1 April 2026", "confidence": "high", "source": "https://www.su.ac.za/en/apply/undergrad" },
+    "applicationCloses": { "value": "31 July 2026", "confidence": "high", "source": "https://www.su.ac.za/en/apply/undergrad", "note": "MBChB closes earlier" },
+    "applicationFee": { "value": 100, "confidence": "high", "source": "https://www.su.ac.za/en/apply/undergrad/fees/application-fees", "note": "R100 domestic; R400 international; Quintile 1-4 exempt" },
+    "minimumAPS": { "value": 30, "confidence": "medium", "source": "http://www.sun.ac.za/english/maties/admissions/requirements", "note": "floor; competitive 36-42+" },
+    "city": { "value": "Stellenbosch", "confidence": "high", "source": "https://www.sun.ac.za" },
+    "province": { "value": "Western Cape", "confidence": "high", "source": "https://www.sun.ac.za" },
+    "founded": { "value": 1918, "confidence": "high", "source": "https://www.sun.ac.za" },
+    "students": { "value": 32000, "confidence": "medium", "source": "https://www.sun.ac.za" },
+    "type": { "value": "Research University", "confidence": "high", "source": "https://www.sun.ac.za" },
+    "faculties": { "value": ["AgriSciences", "Arts & Social Sciences", "Economic & Management Sciences", "Education", "Engineering", "Law", "Medicine & Health Sciences", "Science", "Theology"], "confidence": "high", "source": "http://www.sun.ac.za/english/maties/admissions/requirements" }
+  },
+  "notes": "applyUrl -> su.ac.za/en/apply/undergrad; prospectus -> 2027 PDF"
+},
+{
+  "abbr": "UP",
+  "fields": {
+    "website": { "value": "https://www.up.ac.za", "confidence": "high", "source": "https://www.up.ac.za/" },
+    "applyUrl": { "value": "https://www.up.ac.za/online-application/apply-online", "confidence": "high", "source": "https://www.up.ac.za/online-application" },
+    "prospectusUrl": { "value": "https://www.up.ac.za/online-application", "confidence": "medium", "source": "https://www.up.ac.za/online-application", "note": "2027 prospectus PDF on UP files server" },
+    "applicationOpens": { "value": "1 April 2026", "confidence": "high", "source": "https://www.up.ac.za/online-application/important-dates" },
+    "applicationCloses": { "value": "30 June 2026", "confidence": "high", "source": "https://www.up.ac.za/online-application/important-dates", "note": "31 May 2026 Veterinary Science" },
+    "applicationFee": { "value": 300, "confidence": "high", "source": "https://www.up.ac.za/online-application/application-fee", "note": "CORRECTION: local had R200; official R300 for 2027" },
+    "minimumAPS": { "value": 28, "confidence": "medium", "source": "https://www.up.ac.za/students/admission-information", "note": "floor; competitive programmes 35+" },
+    "city": { "value": "Pretoria", "confidence": "high", "source": "https://www.up.ac.za/" },
+    "province": { "value": "Gauteng", "confidence": "high", "source": "https://www.up.ac.za/" },
+    "founded": { "value": 1908, "confidence": "high", "source": "https://www.up.ac.za/article/2749257/about-us" },
+    "students": { "value": 54000, "confidence": "low", "source": "https://www.up.ac.za/department-of-institutional-planning/core-students-statistics" },
+    "type": { "value": "Research University", "confidence": "medium", "source": "https://www.up.ac.za/article/2749257/about-us", "note": "CONFLICT: local had 'Comprehensive University'" },
+    "faculties": { "value": ["Economic and Management Sciences", "Education", "Engineering, Built Environment and Information Technology", "Health Sciences", "Humanities", "Law", "Natural and Agricultural Sciences", "Theology and Religion", "Veterinary Science"], "confidence": "high", "source": "https://www.up.ac.za/article/2749393/faculties", "note": "CORRECTION: local listed 10 (IT standalone); official 9 (IT in Engineering)" }
+  },
+  "notes": "fee R200->R300; faculties 10->9; type Comprehensive->Research(medium); close 30 June / Vet 31 May"
+}]

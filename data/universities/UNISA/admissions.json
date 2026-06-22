@@ -5,11 +5,11 @@
     "closes": "November 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 135,
+  "applicationFee": 150,
   "feeWaiver": false,
   "minimumAPS": 15,
   "apsNote": "Semester 1 registration: January–February. Semester 2: July–August.",
-  "applyUrl": "https://my.unisa.ac.za/portal/",
+  "applyUrl": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,70 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications"
+      },
+      "applicationOpens": {
+        "confidence": "unconfirmed",
+        "source": null,
+        "note": "Distance university; Sem1 historically opens mid-Aug; 2027 dates not yet confirmed"
+      },
+      "applicationCloses": {
+        "confidence": "unconfirmed",
+        "source": null,
+        "note": "2027 Sem1 dates not yet officially confirmed"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/FAQs",
+        "note": "CORRECTION from R135; ~R150"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+        "note": "15 absolute min (Higher Cert); degrees higher"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Contact-us"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/",
+        "note": "distance, national footprint"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.unisa.ac.za/",
+        "note": "CORRECTION from 400000; 'more than 370000'"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.unisa.ac.za/sites/corporate/default/Colleges",
+        "note": "UNISA uses Colleges; Theology is a school in Human Sciences"
+      }
+    }
+  }
 }

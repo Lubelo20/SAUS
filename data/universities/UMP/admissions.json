@@ -5,11 +5,11 @@
     "closes": "30 November 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 100,
+  "applicationFee": 200,
   "feeWaiver": false,
   "minimumAPS": 22,
   "apsNote": "Siyabuswa campus focuses on education and agriculture programmes.",
-  "applyUrl": "https://www.ump.ac.za/admissions",
+  "applyUrl": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.varsitywise.com/posts/university-of-mpumalanga-2027-online-applications"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://studentdesk.co.za/university-of-mpumalanga-ump-application-dates-2027/"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+        "note": "CORRECTION from R100; R200 SA, R400 SADC, R550 intl"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.studentroom.co.za/university-of-mpumalanga-ump-aps-requirements-explained-for-2027/",
+        "note": "floor; BSc Agric 30"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://www.ump.ac.za",
+        "note": "unconfirmed"
+      },
+      "type": {
+        "confidence": "medium",
+        "source": "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx",
+        "note": "CORRECTION: Hospitality is a School not faculty; 3 faculties"
+      }
+    }
+  }
 }

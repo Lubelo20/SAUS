@@ -9,7 +9,7 @@
   "feeWaiver": true,
   "minimumAPS": 34,
   "apsNote": "Engineering and Health Sciences close earlier. Check faculty pages.",
-  "applyUrl": "https://www.wits.ac.za/application/",
+  "applyUrl": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,66 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/",
+        "note": "30 June 2026 for Health Sciences, Architecture, Audiology, Speech-Language Pathology, BA Film & TV"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za",
+        "note": "R100 undergraduate; R200 postgraduate"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://www.wits.ac.za/undergraduate/entry-requirements/admission-requirements-nsc/",
+        "note": "34 general minimum; competitive programmes much higher"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/faculties-and-schools/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/faculties-and-schools/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/about-wits/general-prospectus/"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.wits.ac.za/about-wits/general-prospectus/"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://www.wits.ac.za/faculties-and-schools/"
+      }
+    }
+  }
 }

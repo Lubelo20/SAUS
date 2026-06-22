@@ -3,21 +3,21 @@
   "name": "Mangosuthu University of Technology",
   "type": "University of Technology",
   "established": 1979,
-  "students": 12000,
+  "students": 14500,
   "aps": "18–24+",
   "location": {
     "city": "Umlazi",
     "province": "KwaZulu-Natal"
   },
   "website": "https://www.mut.ac.za",
-  "apply": "https://www.mut.ac.za/admissions",
-  "prospectus": "https://www.mut.ac.za/admissions",
+  "apply": "https://www.mut.ac.za/prospective-students/apply/",
+  "prospectus": "https://www.mut.ac.za/prospective-students/apply/",
   "logo": "mut.png",
   "description": "Named after Prince Mangosuthu Buthelezi. A small specialised technology university in Umlazi, Durban with strong process engineering, public management and nature conservation programmes.",
   "faculties": [
     "Engineering",
     "Management Sciences",
-    "Natural Sciences"
+    "Applied and Health Sciences"
   ],
   "motto": "Empowering the Community through Education",
   "languages": [
@@ -27,5 +27,9 @@
   "campuses": [
     "Umlazi, Durban"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

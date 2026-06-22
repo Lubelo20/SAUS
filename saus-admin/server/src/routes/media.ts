@@ -41,8 +41,8 @@ router.get('/', async (req: AuthRequest, res: Response) => {
     prisma.mediaItem.findMany({ where, skip, take: Number(limit), orderBy: { createdAt: 'desc' } }),
     prisma.mediaItem.count({ where }),
   ]);
-  const baseUrl = `${process.env.APP_URL || 'http://localhost:4000'}`;
-  const items = data.map(item => ({ ...item, url: `${baseUrl}/uploads/${item.filename}` }));
+  const baseUrl = process.env.APP_URL || 'http://localhost:4400';
+  const items = data.map(item => ({ ...item, url: item.url && item.url.startsWith('http') ? item.url : `${baseUrl}/uploads/${item.filename}` }));
   return res.json({ data: items, total });
 });
 
@@ -64,8 +64,8 @@ router.post('/upload', upload.single('file'), async (req: AuthRequest, res: Resp
       uploadedById: req.user!.id,
     },
   });
-  const baseUrl = process.env.APP_URL || 'http://localhost:4000';
-  return res.status(201).json({ ...item, url: `${baseUrl}/uploads/${item.filename}` });
+  const baseUrl = process.env.APP_URL || 'http://localhost:4400';
+  return res.status(201).json({ ...item, url: item.url && item.url.startsWith('http') ? item.url : `${baseUrl}/uploads/${item.filename}` });
 });
 
 router.delete('/:id', async (req: AuthRequest, res: Response) => {

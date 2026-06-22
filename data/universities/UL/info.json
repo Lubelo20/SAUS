@@ -6,15 +6,16 @@
   "students": 18000,
   "aps": "18–28+",
   "location": {
-    "city": "Polokwane",
+    "city": "Mankweng (Polokwane)",
     "province": "Limpopo"
   },
   "website": "https://www.ul.ac.za",
-  "apply": "https://www.ul.ac.za/admissions",
-  "prospectus": "https://www.ul.ac.za/admissions",
+  "apply": "https://www.ul.ac.za/admissions/undergraduate-studies/",
+  "prospectus": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf",
   "logo": "ul.png",
   "description": "Formerly the University of the North (Turfloop). A historically Black institution that produced many anti-apartheid activists. Especially strong in health sciences and law.",
   "faculties": [
+    "Health Sciences",
     "Humanities",
     "Management & Law",
     "Science & Agriculture"
@@ -29,5 +30,9 @@
     "Polokwane (Turfloop)",
     "Medunsa"
   ],
-  "nsfasAccredited": true
+  "nsfasAccredited": true,
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research"
+  }
 }

@@ -9,7 +9,7 @@
   "feeWaiver": true,
   "minimumAPS": 36,
   "apsNote": "Health Sciences closes 30 June. NBT required for most faculties.",
-  "applyUrl": "https://myapps.uct.ac.za/",
+  "applyUrl": "https://applyonline.uct.ac.za/",
   "requiredDocuments": [
     "Certified copy of South African ID or valid passport",
     "Certified copy of matric certificate or statement of results",
@@ -21,5 +21,67 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://www.uct.ac.za"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure",
+        "note": "older portal was myapps.uct.ac.za"
+      },
+      "prospectusUrl": {
+        "confidence": "high",
+        "source": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/students/applications/key-dates"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/students/applications/key-dates",
+        "note": "Health Sciences closes 30 June 2026"
+      },
+      "applicationFee": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure",
+        "note": "R100 SA/SADC; R300 other international"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://uct.ac.za/students/applications-admission-requirements/eligibility-admission",
+        "note": "UCT uses Faculty Points Score /600 for competitive entry"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/history-introduction"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/history-introduction"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/history-introduction"
+      },
+      "students": {
+        "confidence": "medium",
+        "source": "https://www.news.uct.ac.za/article/-2024-01-27-about-uct-and-cape-town"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/international"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://uct.ac.za/students/applications-admission-requirements/undergraduates"
+      }
+    }
+  }
 }

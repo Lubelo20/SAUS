@@ -1,13 +1,13 @@
 {
   "abbr": "UKZN",
   "applicationPeriod": {
-    "opens": "1 March 2026",
+    "opens": "1 April 2026",
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 200,
+  "applicationFee": 210,
   "feeWaiver": false,
-  "minimumAPS": 26,
+  "minimumAPS": 28,
   "apsNote": "Health Sciences closes 30 June. Apply early for competitive programmes.",
   "applyUrl": "https://applications.ukzn.ac.za/",
   "requiredDocuments": [
@@ -21,5 +21,68 @@
     "accepted": true,
     "note": "International applicants require SAQA evaluation of qualifications."
   },
-  "_datesUpdated": "2026-05-30 (web-verified, 2027 intake)"
+  "_datesUpdated": "2026-06-21 (web-verified, 2027 intake)",
+  "_verified": {
+    "date": "2026-06-21",
+    "method": "official-site-research",
+    "fields": {
+      "website": {
+        "confidence": "high",
+        "source": "https://ukzn.ac.za/"
+      },
+      "applyUrl": {
+        "confidence": "high",
+        "source": "https://applications.ukzn.ac.za/"
+      },
+      "prospectusUrl": {
+        "confidence": "medium",
+        "source": "https://applications.ukzn.ac.za/applications/online-applications/"
+      },
+      "applicationOpens": {
+        "confidence": "high",
+        "source": "https://applications.ukzn.ac.za/",
+        "note": "CORRECTION from 1 March 2026"
+      },
+      "applicationCloses": {
+        "confidence": "high",
+        "source": "https://applications.ukzn.ac.za/applications/online-applications/",
+        "note": "Medicine closes 30 June"
+      },
+      "applicationFee": {
+        "confidence": "medium",
+        "source": "https://applications.ukzn.ac.za/applications/2025-ukzn-application-fees/",
+        "note": "CORRECTION from R200; R210 direct, CAO R250"
+      },
+      "minimumAPS": {
+        "confidence": "medium",
+        "source": "https://applications.ukzn.ac.za/",
+        "note": "floor; Medicine 42+"
+      },
+      "city": {
+        "confidence": "high",
+        "source": "https://ukzn.ac.za/ukzn-campuses/"
+      },
+      "province": {
+        "confidence": "high",
+        "source": "https://ukzn.ac.za/ukzn-campuses/"
+      },
+      "founded": {
+        "confidence": "high",
+        "source": "https://ukzn.ac.za/"
+      },
+      "students": {
+        "confidence": "low",
+        "source": "https://ukzn.ac.za/"
+      },
+      "type": {
+        "confidence": "high",
+        "source": "https://ukzn.ac.za/"
+      },
+      "faculties": {
+        "confidence": "high",
+        "source": "https://studyatukzn.ukzn.ac.za/our-colleges/",
+        "note": "CORRECTION: 4 colleges, removed duplicate"
+      }
+    }
+  }
 }
