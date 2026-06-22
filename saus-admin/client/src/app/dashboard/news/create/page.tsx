@@ -123,7 +123,7 @@ export default function CreateArticlePage() {
           </div>
 
           {/* Tabs */}
-          <div className="flex gap-1 border-b border-gray-200 pb-0">
+          <div className="flex gap-1 border-b border-gray-200">
             {(['write', 'seo'] as const).map(tab => (
               <button key={tab} onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 text-sm font-medium capitalize transition-colors border-b-2 -mb-px
@@ -261,7 +261,7 @@ export default function CreateArticlePage() {
             <h3 className="font-semibold text-navy text-sm">Cover Image</h3>
             {form.coverImage ? (
               <div className="relative rounded overflow-hidden">
-                <img src={form.coverImage} alt="Cover" className="w-full h-32 object-cover" />
+                <img src={form.coverImage} alt="Cover" className="w-full h-40 object-cover" />
                 <button onClick={() => update('coverImage', '')}
                   className="absolute top-2 right-2 bg-red-saus text-white rounded px-2 py-0.5 text-xs">
                   Remove
@@ -270,7 +270,7 @@ export default function CreateArticlePage() {
             ) : (
               <div
                 onClick={() => !uploading && coverRef.current?.click()}
-                className="border-2 border-dashed border-gray-200 rounded-lg h-32 flex flex-col items-center
+                className="border-2 border-dashed border-gray-200 rounded-lg h-40 flex flex-col items-center
                            justify-center gap-2 cursor-pointer hover:border-navy/30 hover:bg-navy-50 transition-colors">
                 <ImageIcon className="w-6 h-6 text-gray-300" />
                 <span className="text-xs text-gray-400">{uploading ? 'Uploading…' : 'Click to upload cover image'}</span>

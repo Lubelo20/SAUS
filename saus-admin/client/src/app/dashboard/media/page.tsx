@@ -138,13 +138,13 @@ export default function MediaPage() {
             <p className="text-sm text-gray-400">No media uploaded yet</p>
           </div>
         ) : view === 'grid' ? (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 gap-2 overflow-y-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 overflow-y-auto items-start content-start">
             {items.map(item => (
-              <div key={item.id} onClick={() => setSelected(item)}
+              <div key={item.id} onClick={() => setSelected(item)} style={{ aspectRatio: '1 / 1' }}
                 className={`relative aspect-square rounded-lg overflow-hidden cursor-pointer group border-2 transition-all
                   ${selected?.id === item.id ? 'border-navy' : 'border-transparent hover:border-navy/30'}`}>
                 <img src={item.url && item.url.startsWith('http') ? item.url : `${UPLOADS}/uploads/${item.filename}`} alt={item.alt || item.originalName}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/20 transition-colors" />
               </div>
             ))}

@@ -64,7 +64,7 @@ export default function NewsCategoriesPage() {
         <Link href="/dashboard/news" className="btn-ghost btn-icon"><ArrowLeft className="w-4 h-4" /></Link>
         <div className="flex-1">
           <h1 className="text-xl font-bold text-navy">News Categories</h1>
-          <p className="text-sm text-gray-400">{categories.length} categories</p>
+          <p className="text-sm text-gray-400 mt-0.5">{categories.length} categories</p>
         </div>
         <button onClick={() => setShowForm(f => !f)} className="btn-primary btn-sm">
           <Plus className="w-3.5 h-3.5" /> New Category
