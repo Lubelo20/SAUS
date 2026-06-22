@@ -72,7 +72,7 @@ export default function SettingsPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold text-navy">Site Settings</h1>
-          <p className="text-sm text-gray-400">Configure the SAUS website content and metadata</p>
+          <p className="text-sm text-gray-400 mt-0.5">Configure the SAUS website content and metadata</p>
         </div>
         <button onClick={save} disabled={saving} className="btn-primary">
           <Save className="w-4 h-4" /> {saving ? 'Saving…' : 'Save Changes'}

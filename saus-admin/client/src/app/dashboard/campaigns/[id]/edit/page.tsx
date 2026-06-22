@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { Save, ArrowLeft, Star } from 'lucide-react';
+import { Save, ArrowLeft, Star, Image as ImageIcon } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { uploadFile } from '@/lib/upload';
 
@@ -152,7 +152,8 @@ export default function EditCampaignPage() {
             </div>
           ) : (
             <div onClick={() => !uploading && graphicRef.current?.click()}
-              className="border-2 border-dashed border-gray-200 rounded-lg h-32 flex flex-col items-center justify-center gap-2 cursor-pointer hover:border-navy/30 transition-colors mb-2">
+              className="border-2 border-dashed border-gray-200 rounded-lg h-40 flex flex-col items-center justify-center gap-2 cursor-pointer hover:border-navy/30 hover:bg-navy-50 transition-colors mb-2">
+              <ImageIcon className="w-6 h-6 text-gray-300" />
               <span className="text-xs text-gray-400">{uploading ? 'Uploading…' : 'Click to upload graphic'}</span>
             </div>
           )}
