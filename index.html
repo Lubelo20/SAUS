@@ -113,12 +113,12 @@
   <!-- Hero -->
   <div class="official-hero hero-bg">
     <div class="hero-inner">
-      <div class="hero-ref">SAUS/OFFICIAL/2026 · National Representative Body</div>
-      <h1 class="hero-title">
+      <div class="hero-ref" data-cms="hero.ref">SAUS/OFFICIAL/2026 · National Representative Body</div>
+      <h1 class="hero-title" data-cms="hero.title">
         Empowering <em>Student Voices.</em><br>
         Advancing Higher Education.
       </h1>
-      <p class="hero-lead">The South African Union of Students (SAUS) is the official representative body for students across all 26 public universities in the Republic of South Africa. Education is a constitutional right — we ensure it is treated as such.</p>
+      <p class="hero-lead" data-cms="hero.lead">The South African Union of Students (SAUS) is the official representative body for students across all 26 public universities in the Republic of South Africa. Education is a constitutional right — we ensure it is treated as such.</p>
       <div class="hero-actions">
         <button class="btn btn-gold btn-lg" onclick="showPage('campaigns')">View Active Campaigns</button>
         <button class="btn btn-outline-white btn-lg" onclick="showPage('about')">About SAUS</button>
@@ -129,7 +129,7 @@
   <!-- Stat Strip -->
   <div class="stat-strip">
     <div class="wrap" style="padding:0">
-      <div class="stat-grid">
+      <div class="stat-grid" id="homeStats">
         <div class="stat-cell">
           <div class="stat-num" data-target="26" data-suffix="">0</div>
           <div class="stat-label">Public Universities<br>Represented</div>
@@ -190,11 +190,11 @@
   <section class="section" style="background:var(--white)">
     <div class="wrap">
       <div class="sec-header" style="text-align:center">
-        <div class="ref" style="justify-content:center">SAUS/MANDATE/2026</div>
-        <h2>What We <em>Stand For</em></h2>
-        <p class="lead" style="margin:14px auto 0;max-width:640px">SAUS was constituted to consolidate and strengthen student representation in governance of Higher Education and Training across all 26 public universities in South Africa.</p>
+        <div class="ref" style="justify-content:center" data-cms="mandate.ref">SAUS/MANDATE/2026</div>
+        <h2 data-cms="mandate.title">What We <em>Stand For</em></h2>
+        <p class="lead" style="margin:14px auto 0;max-width:640px" data-cms="mandate.lead">SAUS was constituted to consolidate and strengthen student representation in governance of Higher Education and Training across all 26 public universities in South Africa.</p>
       </div>
-      <div class="pillar-grid">
+      <div class="pillar-grid" id="homePillars">
         <div class="pillar p-green">
           <div class="pillar-icon p-green">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -225,8 +225,8 @@
         </div>
       </div>
       <div class="official-quote">
-        <p>"Education is a right, not a privilege — SAUS ensures every student, regardless of background, has access to affordable, quality, and inclusive higher education."</p>
-        <cite>South African Union of Students — Constitutional Mandate</cite>
+        <p data-cms="mandate.quote.text">"Education is a right, not a privilege — SAUS ensures every student, regardless of background, has access to affordable, quality, and inclusive higher education."</p>
+        <cite data-cms="mandate.quote.cite">South African Union of Students — Constitutional Mandate</cite>
       </div>
     </div>
   </section>
@@ -235,11 +235,11 @@
   <section class="section" style="background:var(--cream)">
     <div class="wrap">
       <div class="sec-header">
-        <div class="ref">SAUS/CAMPAIGNS/2025–2026</div>
-        <h2>Priority <em>Campaign Areas</em></h2>
-        <p class="lead">The following campaigns represent the foremost policy advocacy priorities of the 9th National Executive Committee as resolved at the National Elective Congress, 2025.</p>
+        <div class="ref" data-cms="campaigns.ref">SAUS/CAMPAIGNS/2025–2026</div>
+        <h2 data-cms="campaigns.title">Priority <em>Campaign Areas</em></h2>
+        <p class="lead" data-cms="campaigns.lead">The following campaigns represent the foremost policy advocacy priorities of the 9th National Executive Committee as resolved at the National Elective Congress, 2025.</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" id="homeCampaigns">
         <div class="info-card">
           <div class="info-card-accent green"></div>
           <div class="info-card-icon green">
@@ -332,9 +332,9 @@
   <div class="cta-band">
     <div class="cta-band-inner">
       <div class="cta-band-text">
-        <div class="cta-ref">SAUS/EVENTS/2026</div>
-        <h2>Upcoming <em>Engagements</em></h2>
-        <p>National congresses, student leadership summits, policy town halls, and campus activations across the Republic of South Africa.</p>
+        <div class="cta-ref" data-cms="eventsCta.ref">SAUS/EVENTS/2026</div>
+        <h2 data-cms="eventsCta.title">Upcoming <em>Engagements</em></h2>
+        <p data-cms="eventsCta.lead">National congresses, student leadership summits, policy town halls, and campus activations across the Republic of South Africa.</p>
       </div>
       <div style="display:flex;gap:14px;flex-wrap:wrap;flex-shrink:0">
         <button class="btn btn-gold btn-lg" onclick="showPage('events')">View Events Calendar</button>

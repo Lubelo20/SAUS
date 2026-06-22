@@ -14,10 +14,10 @@ const PAGES = [
   {
     slug: 'home',
     title: 'Home',
-    desc: 'Landing page hero, highlights and featured content',
+    desc: 'Landing page hero, stats, mandate, priority campaigns & events CTA',
     icon: Home,
-    href: '#',
-    ready: false,
+    href: '/dashboard/pages/home',
+    ready: true,
   },
   {
     slug: 'contact',

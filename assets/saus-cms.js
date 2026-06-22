@@ -257,7 +257,40 @@
     }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
   }
 
-  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); }
+  function renderHomePage() {
+    if (!document.getElementById('page-home')) return;
+    fetchPublic('/public/page/home').then(function (j) {
+      if (!j || !j.data) return; // empty → keep hardcoded
+      var c = j.data;
+
+      // Singletons: set textContent of each [data-cms] node from its JSON path.
+      var nodes = document.querySelectorAll('#page-home [data-cms]');
+      Array.prototype.forEach.call(nodes, function (el) {
+        var v = getPath(c, el.getAttribute('data-cms'));
+        if (v != null && typeof v !== 'object') el.textContent = String(v);
+      });
+
+      // Repeatables — rebuild children, preserving fixed chrome per original markup.
+      rebuild(document.getElementById('homeStats'), c.stats, function (node, s) {
+        setText(node, '.stat-num', s.num);
+        setText(node, '.stat-label', s.label);
+      });
+
+      rebuild(document.getElementById('homePillars'),
+        c.mandate && c.mandate.pillars, function (node, p) {
+          setText(node, 'h4', p.title);
+          setText(node, 'p', p.text);
+        });
+
+      rebuild(document.getElementById('homeCampaigns'),
+        c.campaigns && c.campaigns.cards, function (node, card) {
+          setText(node, 'h4', card.title);
+          setText(node, 'p', card.text);
+        });
+    }).catch(function () { /* CMS unavailable → keep existing hardcoded content */ });
+  }
+
+  function init() { renderNews(); renderLeadership(); renderEvents(); renderCampaigns(); renderGallery(); renderAnnouncement(); renderAboutPage(); renderHomePage(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
