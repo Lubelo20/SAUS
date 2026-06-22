@@ -78,6 +78,7 @@ export default function DashboardPage() {
       {/* ── Page header ── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
+          <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/DASHBOARD</div>
           <h1 className="text-2xl font-bold text-navy">Dashboard</h1>
           <p className="text-sm text-gray-400 mt-0.5">
             South African Union of Students — Content Management System

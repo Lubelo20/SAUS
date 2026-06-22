@@ -45,7 +45,14 @@ export default function Header({ onMenuClick }: Props) {
   const title = resolveBreadcrumb(pathname);
 
   return (
-    <header className="h-14 bg-white border-b border-gray-100 flex items-center gap-4 px-4 lg:px-6 flex-shrink-0">
+    <header className="bg-white border-b border-gray-100 flex flex-col flex-shrink-0">
+      {/* SA-flag accent stripe (echoes the public-site topbar) */}
+      <div className="h-[3px] flex flex-shrink-0">
+        <div className="flex-1 bg-green" />
+        <div className="flex-1 bg-gold" />
+        <div className="flex-1 bg-red-saus" />
+      </div>
+      <div className="h-14 flex items-center gap-4 px-4 lg:px-6">
       {/* Mobile menu trigger */}
       <button onClick={onMenuClick}
         className="lg:hidden p-1.5 rounded-md text-gray-500 hover:bg-gray-100 hover:text-navy transition-colors">
@@ -103,6 +110,7 @@ export default function Header({ onMenuClick }: Props) {
           <div className="w-2 h-2 rounded-sm bg-green" />
           <div className="w-2 h-2 rounded-sm bg-gold" />
         </div>
+      </div>
       </div>
     </header>
   );

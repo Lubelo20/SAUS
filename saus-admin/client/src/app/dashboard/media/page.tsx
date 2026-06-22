@@ -88,6 +88,7 @@ export default function MediaPage() {
         {/* Header */}
         <div className="flex items-center justify-between gap-4">
           <div>
+            <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/MEDIA</div>
             <h1 className="text-xl font-bold text-navy">Media Library</h1>
             <p className="text-sm text-gray-400 mt-0.5">{items.length} items</p>
           </div>

@@ -86,6 +86,7 @@ export default function UsersPage() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
+          <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/USERS</div>
           <h1 className="text-xl font-bold text-navy">Users & Roles</h1>
           <p className="text-sm text-gray-400 mt-0.5">{users.length} accounts registered</p>
         </div>
