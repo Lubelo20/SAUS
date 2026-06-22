@@ -23,6 +23,10 @@ import publicRoutes from './routes/public';
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// Trust the reverse proxy (Render/Vercel) so req.protocol reflects X-Forwarded-Proto
+// (https) — used to build absolute /uploads URLs from the request.
+app.set('trust proxy', true);
+
 // ─── Security ────────────────────────────────────────────────
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 
@@ -67,7 +71,8 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 
 // ─── Static Uploads ───────────────────────────────────────────
-app.use('/uploads', express.static(path.join(__dirname, '../../uploads')));
+// multer writes to ./uploads (cwd = server/), so serve that same dir
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // ─── Routes ───────────────────────────────────────────────────
 app.use('/api/auth',       authRoutes);

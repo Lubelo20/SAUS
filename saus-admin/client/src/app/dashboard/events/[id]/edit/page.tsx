@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { Save, ArrowLeft, Star, Calendar, MapPin } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { uploadFile } from '@/lib/upload';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
 
@@ -18,6 +19,7 @@ export default function EditEventPage() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(true);
   const bannerRef = useRef<HTMLInputElement>(null);
   const [form, setForm] = useState<FormState>({
@@ -200,13 +202,19 @@ export default function EditEventPage() {
                 className="absolute top-2 right-2 bg-red-saus text-white rounded px-2 py-0.5 text-xs">Remove</button>
             </div>
           ) : (
-            <div onClick={() => bannerRef.current?.click()}
+            <div onClick={() => !uploading && bannerRef.current?.click()}
               className="border-2 border-dashed border-gray-200 rounded-lg h-32 flex flex-col items-center justify-center gap-2 cursor-pointer hover:border-navy/30 transition-colors mb-2">
-              <span className="text-xs text-gray-400">Click to upload banner</span>
+              <span className="text-xs text-gray-400">{uploading ? 'Uploading…' : 'Click to upload banner'}</span>
             </div>
           )}
           <input ref={bannerRef} type="file" accept="image/*" className="hidden"
-            onChange={e => { const f = e.target.files?.[0]; if (f) update('bannerImage', URL.createObjectURL(f)); }} />
+            onChange={async e => {
+              const f = e.target.files?.[0];
+              if (!f) return;
+              try { setUploading(true); const url = await uploadFile(f); update('bannerImage', url); }
+              catch { toast.error('Image upload failed'); }
+              finally { setUploading(false); }
+            }} />
           <input value={form.bannerImage} onChange={e => update('bannerImage', e.target.value)}
             placeholder="Or paste image URL…" className="input text-xs" />
         </div>

@@ -113,7 +113,7 @@ router.get('/campaigns', async (_req, res) => {
 });
 
 // GET /api/public/media — gallery images, grouped by album, oldest first.
-router.get('/media', async (_req, res) => {
+router.get('/media', async (req, res) => {
   try {
     const media = await prisma.mediaItem.findMany({
       where: { type: 'IMAGE' },
@@ -121,12 +121,18 @@ router.get('/media', async (_req, res) => {
       select: {
         id: true,
         url: true,
+        filename: true,
         alt: true,
         caption: true,
         album: { select: { name: true } },
       },
     });
-    return res.json({ data: media });
+    const baseUrl = process.env.APP_URL || `${req.protocol}://${req.get('host')}`;
+    const data = media.map(m => ({
+      ...m,
+      url: m.url && m.url.startsWith('http') ? m.url : `${baseUrl}/uploads/${m.filename}`,
+    }));
+    return res.json({ data });
   } catch (err: any) {
     console.error('[public/media] failed:', err?.message || err);
     return res.status(500).json({ error: 'Could not load media' });
