@@ -36,7 +36,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
 .sec-header p{font-size:16px;color:var(--text-mid);margin-top:12px;max-width:640px;line-height:1.7}
 
 /* ── Sidebar overrides (values differ from saus.css) ── */
-.sidebar-panel{margin-bottom:16px;}
+.sidebar-panel{margin-bottom:16px;border:0;border-radius:14px;box-shadow:0 8px 28px rgba(10,22,40,.09);border-top:3px solid var(--green);}
 .sidebar-panel.gold-top{border-top-color:var(--gold)}
 .sidebar-panel.red-top{border-top-color:var(--red)}
 .sidebar-title{font-size:15px;margin-bottom:14px;padding-bottom:10px;}
@@ -53,7 +53,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
 
 /* ── Eligibility ── */
 .elig-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-.elig-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:24px;border-top:4px solid var(--green);}
+.elig-card{background:var(--white);border:0;border-radius:14px;box-shadow:0 8px 28px rgba(10,22,40,.09);padding:24px;border-top:4px solid var(--green);}
 .elig-card.no{border-top-color:var(--red)}
 .elig-card-head{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
 .elig-card-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
@@ -130,8 +130,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
 
 /* ── Help cards ── */
 .help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.help-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:32px 24px;text-align:center;border-top:4px solid var(--navy);transition:box-shadow .2s;}
-.help-card:hover{box-shadow:0 4px 20px rgba(10,22,40,.1)}
+.help-card{background:var(--white);border:0;border-radius:14px;box-shadow:0 8px 28px rgba(10,22,40,.09);padding:32px 24px;text-align:center;border-top:4px solid var(--navy);transition:box-shadow .2s,transform .2s;}
+.help-card:hover{box-shadow:0 14px 36px rgba(10,22,40,.13);transform:translateY(-2px);}
+@media(prefers-reduced-motion:reduce){.help-card{transition:none}.help-card:hover{transform:none}}
 .help-card.green-top{border-top-color:var(--green)}
 .help-card.gold-top{border-top-color:var(--gold)}
 .help-card-icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
@@ -150,8 +151,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
 
 /* ── What NSFAS Covers ── */
 .cover-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.cover-card{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:24px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
-.cover-card:hover{box-shadow:0 6px 24px rgba(10,22,40,.08);transform:translateY(-2px);}
+.cover-card{background:var(--white);border:0;border-radius:14px;box-shadow:0 8px 28px rgba(10,22,40,.09);padding:24px;position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
+.cover-card:hover{box-shadow:0 14px 36px rgba(10,22,40,.13);transform:translateY(-2px);}
+@media(prefers-reduced-motion:reduce){.cover-card{transition:none}.cover-card:hover{transform:none}}
 .cover-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green);}
 .cover-card.c-navy::before{background:var(--navy);}
 .cover-card.c-gold::before{background:var(--gold);}
