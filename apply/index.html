@@ -4096,32 +4096,8 @@ document.querySelectorAll('.mark-input,.subject-select').forEach(el=>{
 });
 
 /* ── Course database (demo) ── */
-const COURSES=[
-  {name:'Bachelor of Science in Computer Science',qual:'BSc',uni:'UCT — University of Cape Town',province:'Western Cape',aps:42,field:'it',duration:'3 Years',desc:'Algorithms, software systems, AI, machine learning and theoretical computing.'},
-  {name:'BSc Computer Science',qual:'BSc',uni:'Wits — University of the Witwatersrand',province:'Gauteng',aps:40,field:'it',duration:'3 Years',desc:'Programming, data structures, systems design and software engineering.'},
-  {name:'BSc Information Technology',qual:'BSc',uni:'UP — University of Pretoria',province:'Gauteng',aps:36,field:'it',duration:'3 Years',desc:'Networks, databases, systems analysis and software development.'},
-  {name:'Bachelor of Engineering (Civil)',qual:'BEng',uni:'UCT — University of Cape Town',province:'Western Cape',aps:42,field:'science',duration:'4 Years',desc:'Structural engineering, construction, infrastructure and environmental systems.'},
-  {name:'Bachelor of Engineering (Electrical)',qual:'BEng',uni:'Wits — University of the Witwatersrand',province:'Gauteng',aps:40,field:'science',duration:'4 Years',desc:'Power systems, electronics, control systems and telecommunications.'},
-  {name:'BSc Mechanical Engineering',qual:'BSc',uni:'SU — Stellenbosch University',province:'Western Cape',aps:38,field:'science',duration:'4 Years',desc:'Thermodynamics, fluid mechanics, manufacturing and materials science.'},
-  {name:'MBChB — Bachelor of Medicine',qual:'MBChB',uni:'UCT — University of Cape Town',province:'Western Cape',aps:44,field:'health',duration:'6 Years',desc:'Comprehensive medical training from basic sciences to clinical rotations.'},
-  {name:'MBChB — Bachelor of Medicine',qual:'MBChB',uni:'Wits — University of the Witwatersrand',province:'Gauteng',aps:42,field:'health',duration:'6 Years',desc:'One of Africa\'s leading medical schools with state-of-the-art training facilities.'},
-  {name:'BSc Pharmacy',qual:'BSc',uni:'UP — University of Pretoria',province:'Gauteng',aps:36,field:'health',duration:'4 Years',desc:'Pharmaceutical sciences, pharmacology, drug dispensing and patient care.'},
-  {name:'BSc Physiotherapy',qual:'BSc',uni:'UKZN — Univ. of KwaZulu-Natal',province:'KwaZulu-Natal',aps:34,field:'health',duration:'4 Years',desc:'Rehabilitation, sports medicine, musculoskeletal and neurological therapy.'},
-  {name:'Bachelor of Laws (LLB)',qual:'LLB',uni:'UCT — University of Cape Town',province:'Western Cape',aps:38,field:'humanities',duration:'4 Years',desc:'Constitutional, commercial, criminal and international law. Accredited by the Law Society of SA.'},
-  {name:'Bachelor of Laws (LLB)',qual:'LLB',uni:'Rhodes University',province:'Eastern Cape',aps:32,field:'humanities',duration:'4 Years',desc:'Highly rated law school in the Eastern Cape with strong moot court programme.'},
-  {name:'BCom Accounting',qual:'BCom',uni:'UP — University of Pretoria',province:'Gauteng',aps:34,field:'commerce',duration:'3 Years',desc:'Financial accounting, auditing, taxation and management accounting towards CA(SA).'},
-  {name:'BCom Finance',qual:'BCom',uni:'UCT — University of Cape Town',province:'Western Cape',aps:38,field:'commerce',duration:'3 Years',desc:'Corporate finance, investments, financial markets and quantitative methods.'},
-  {name:'BCom General',qual:'BCom',uni:'UJ — University of Johannesburg',province:'Gauteng',aps:28,field:'commerce',duration:'3 Years',desc:'Economics, management, accounting and business law fundamentals.'},
-  {name:'BEd Foundation Phase',qual:'BEd',uni:'UKZN — Univ. of KwaZulu-Natal',province:'KwaZulu-Natal',aps:26,field:'education',duration:'4 Years',desc:'Teaching Grades R–3, early childhood development, literacy and numeracy.'},
-  {name:'BEd Intermediate Phase',qual:'BEd',uni:'NWU — North-West University',province:'Other',aps:26,field:'education',duration:'4 Years',desc:'Teaching Grades 4–7, curriculum design and educational psychology.'},
-  {name:'BSc Agriculture',qual:'BSc',uni:'UP — University of Pretoria',province:'Gauteng',aps:28,field:'science',duration:'4 Years',desc:'Crop science, animal production, soil science and agribusiness management.'},
-  {name:'Diploma in Information Technology',qual:'Diploma',uni:'DUT — Durban Univ. of Technology',province:'KwaZulu-Natal',aps:22,field:'it',duration:'3 Years',desc:'Software development, networking, databases and web technologies.'},
-  {name:'Diploma in Business Management',qual:'Diploma',uni:'CPUT — Cape Peninsula Univ. of Tech.',province:'Western Cape',aps:20,field:'commerce',duration:'3 Years',desc:'Entrepreneurship, marketing, human resources and financial management.'},
-  {name:'Bachelor of Social Science (Psychology)',qual:'BSocSci',uni:'UCT — University of Cape Town',province:'Western Cape',aps:38,field:'humanities',duration:'3 Years',desc:'Research methods, developmental, clinical and organisational psychology.'},
-  {name:'BA Political Science',qual:'BA',uni:'Wits — University of the Witwatersrand',province:'Gauteng',aps:30,field:'humanities',duration:'3 Years',desc:'Government, international relations, public policy and political theory.'},
-  {name:'BSc Data Science',qual:'BSc',uni:'SU — Stellenbosch University',province:'Western Cape',aps:38,field:'it',duration:'3 Years',desc:'Statistics, machine learning, big data analytics and AI applications.'},
-  {name:'BCom Business Science',qual:'BCom',uni:'UCT — University of Cape Town',province:'Western Cape',aps:42,field:'commerce',duration:'4 Years',desc:'Integrated business, management, economics and quantitative skills.'},
-];
+let COURSES=[];
+fetch('/data/universities/_courses.json').then(function(r){return r.json();}).then(function(d){COURSES=d;}).catch(function(){});
 
 function findCourses(){
   const aps=+document.getElementById('apsTotal').textContent||0;
@@ -4133,10 +4109,14 @@ function findCourses(){
     return;
   }
 
+  if(!COURSES.length){
+    fetch('/data/universities/_courses.json').then(function(r){return r.json();}).then(function(d){COURSES=d;findCourses();});
+    return;
+  }
+  const MAIN_PROV=['Western Cape','Gauteng','KwaZulu-Natal','Eastern Cape'];
   let matches=COURSES.filter(c=>{
-    const apsOk=aps>=c.aps;
     const fieldOk=field==='all'||c.field===field;
-    const provOk=prov==='all'||c.province===prov||c.province==='National (Distance)';
+    const provOk=prov==='all'||c.province===prov||c.province==='National'||(prov==='Other'&&MAIN_PROV.indexOf(c.province)===-1);
     return fieldOk&&provOk;
   }).map(c=>({...c,qualifies:aps>=c.aps}))
     .sort((a,b)=>{
