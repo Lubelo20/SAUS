@@ -83,5 +83,28 @@
         "source": "http://www.sun.ac.za/english/maties/admissions/requirements"
       }
     }
+  },
+  "internationalFee": "R400",
+  "apsSystem": "NSC aggregate % (best 6 subjects excl. Life Orientation) — SU uses percentage aggregate out of 100, not APS /42",
+  "apsRange": "55%–80% NSC aggregate (programme dependent)",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf",
+      "https://en.wikipedia.org/wiki/Stellenbosch_University",
+      "https://www.coursematch.co.za/blog/2027-applications-open-at-stellenbosch-university",
+      "https://www.varsitywise.com/posts/stellenbosch-university-opens-2027-online-applications",
+      "https://apsscore.com/medicine-degrees-south-africa-mbchb-requirements/",
+      "https://blogs.sun.ac.za/open-day/files/2026/03/How-to-Apply-Undergraduate-programmes-2027-intake.pdf"
+    ],
+    "flags": [
+      "SU uses NSC aggregate percentage (not the /42 APS scale) — aps values in programmes represent minimum NSC aggregate % thresholds, not APS points",
+      "healthSciencesCloses: MBChB and Health Sciences close 31 July like all programmes; no earlier health-sciences-specific date confirmed from official sources for 2027",
+      "Military Science (Faculty) undergraduate programmes are exclusively for SANDF personnel — not open to civilian applicants; no civilian admission requirements exist",
+      "feeSA exemption: quintile 1–4 school applicants are exempt from the R100 fee; international fee R400 confirmed from secondary sources citing official SU pages, not directly from su.ac.za (403 on application-fees page)",
+      "Enrolment figure of ~32 000 is approximate; Wikipedia cites 25 042 undergraduates and 10 051 postgraduates (total ~35 093) as of most recent data"
+    ]
   }
 }

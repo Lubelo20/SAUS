@@ -3,7 +3,7 @@
   "name": "University of Zululand",
   "type": "Traditional University",
   "established": 1960,
-  "students": 16000,
+  "students": 16337,
   "aps": "18–26+",
   "location": {
     "city": "KwaDlangezwa",
@@ -11,7 +11,7 @@
   },
   "website": "https://www.unizulu.ac.za",
   "apply": "https://www.cao.ac.za",
-  "prospectus": "https://www.unizulu.ac.za/apply/",
+  "prospectus": "https://www.unizulu.ac.za/wp-content/uploads/2025/02/2026-Brochure-for-undergraduate.pdf",
   "logo": "unizulu.png",
   "description": "A historically Black university serving rural KwaZulu-Natal. Strong in social work, theology and natural sciences with a growing health sciences faculty.",
   "faculties": [
@@ -33,5 +33,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42"
 }

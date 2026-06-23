@@ -85,5 +85,28 @@
         "note": "CORRECTION: 4->7 faculties"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "APS /42 (best 6 subjects; 7 subjects including Life Orientation for Education)",
+  "apsRange": "20–37+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process",
+      "https://www.wsu.ac.za/index.php/en/study-with-us/undergraduate-programmes/new-students/admission-requirement",
+      "https://www.wsu.ac.za/index.php/en/study-with-us/international-students",
+      "https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf",
+      "https://www.bizcommunity.com/article/2027-university-application-dates-everything-you-need-to-know-514550a",
+      "https://www.varsitywise.com/posts/walter-sisulu-university-application-fee-details"
+    ],
+    "flags": [
+      "applicationOpens: official WSU 'How to Apply' page returned 1 June 2026 but multiple third-party aggregators (including FundiConnect/bizcommunity) state 1 April 2026 — could not definitively reconcile from official page alone",
+      "MBChB minimum APS not officially published in accessible sources; programme is listed with aps:0",
+      "healthSciencesCloses: no separate earlier closing date confirmed for Health Sciences/Medicine from official source — only a requirement to submit June Grade 12 report",
+      "Programme-level APS values for most programmes sourced from southafricaportal.com (third-party), not directly from official WSU prospectus PDF (binary, unreadable by tool)",
+      "feeSA: R100 confirmed on official 'How to Apply' page; some third-party sources incorrectly state free for all applicants"
+    ]
   }
 }

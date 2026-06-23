@@ -84,5 +84,32 @@
         "note": "CORRECTION: 8 faculties, fixed names"
       }
     }
+  },
+  "internationalFee": "R600",
+  "apsSystem": "APS /42",
+  "apsRange": "18–36",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://studies.nwu.ac.za/undergraduate-studies/application",
+      "https://studies.nwu.ac.za/studies/apply",
+      "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027",
+      "https://studies.nwu.ac.za/undergraduate-studies/fields-study",
+      "https://studies.nwu.ac.za/undergraduate-studies/fields-study-economic",
+      "https://studies.nwu.ac.za/undergraduate-studies/education-2027"
+    ],
+    "flags": [
+      "applicationOpens: 2027 cycle opened 1 June 2026 per official NWU news — confirm 2028-intake opening date when announced",
+      "healthSciencesCloses: 30 June closing applies to multiple selection-course programmes (Pharmacy, Consumer Studies, Social Work, Biokinetics, Dietetics, Occupational Hygiene) — not a single named 'Health Sciences' faculty deadline",
+      "students: 56,000 figure from Wikipedia; official Quick Stats PDF could not be parsed to verify exact current headcount",
+      "BCom Statistics minimum APS range is 20–24 (extended option 20); flagged as range rather than single value",
+      "BCom Economic Sciences minimum APS range is 20–26 depending on specialization",
+      "BAdmin Human Resources Management minimum APS range is 21–23 depending on campus",
+      "BSc (general) APS 26 covers multiple specializations; some extended versions accept APS 24–28",
+      "Desmond Tutu School of Medicine under construction — first MBChB enrolment not until 2028, so no Medicine programme listed"
+    ]
   }
 }

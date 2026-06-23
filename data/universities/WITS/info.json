@@ -3,7 +3,7 @@
   "name": "University of the Witwatersrand",
   "type": "Research University",
   "established": 1922,
-  "students": 40000,
+  "students": 41702,
   "aps": "34–44+",
   "location": {
     "city": "Johannesburg",
@@ -35,5 +35,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /56 (best 7 subjects including Life Orientation; English and Mathematics attract bonus points)"
 }

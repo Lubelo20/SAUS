@@ -84,5 +84,28 @@
         "note": "CORRECTION: Arts->Humanities; Eng name fixed"
       }
     }
+  },
+  "internationalFee": "R500",
+  "apsSystem": "NMU Applicant Score (AS) /600 — sum of top 6 NSC subject percentages (Life Orientation excluded); +7 bonus points for quintile 1–3 school applicants achieving 50%+ in LO",
+  "apsRange": "240–430+ (AS out of 600)",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.mandela.ac.za/Study-at-Mandela/Application/Closing-dates",
+      "https://www.mandela.ac.za/study-at-mandela/application/apply-undergraduate",
+      "https://www.mandela.ac.za/Study-at-Mandela/Application/Academic-admission",
+      "https://www.mandela.ac.za/Study-at-Mandela/Discovery/Entry-requirements",
+      "https://www.mandela.ac.za/faculties-and-schools",
+      "https://medicalschool.mandela.ac.za/Frequently-Asked-Questions/Prospective-Students"
+    ],
+    "flags": [
+      "minApsRange lower bound (240) is an approximate AS equivalent derived from third-party sources; official NMU website does not publish per-programme AS minimums in a single accessible location",
+      "students enrolment figure (27000) is the on-file estimate; one third-party source cites 30000+ but this was not confirmed from an official NMU source",
+      "programme-specific AS minimums other than MBChB (430) could not be confirmed from official NMU pages — all other programme aps fields set to 0",
+      "applicationCloses represents the late/final closing date (30 September 2026); early closing date is 3 August 2026 for most programmes"
+    ]
   }
 }

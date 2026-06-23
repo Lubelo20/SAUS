@@ -82,5 +82,28 @@
         "source": "https://www.cut.ac.za/faculty"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "APS /48 (8-point scale per subject; Life Orientation counts max 1 point)",
+  "apsRange": "27–32+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.cut.ac.za/application-process",
+      "https://www.cut.ac.za/programmes-offered",
+      "https://www.cut.ac.za/admission-points-ap",
+      "https://www.cut.ac.za/cut-at-a-glance",
+      "https://www.cut.ac.za/faculty",
+      "https://www.cut.ac.za/nsfas"
+    ],
+    "flags": [
+      "Per-programme APS values above 27 (e.g. 28, 30, 32) are drawn from the cut.ac.za/programmes-offered page as AI-rendered; CUT's official admission-points-ap page only confirms the 27-point general minimum — verify exact per-programme thresholds from the official CUT Calendar or faculty pages",
+      "International application fee confirmed as free from the general announcement (cut.ac.za/announcements/166) but no specific 2027 international-student fee schedule was found — flag if a processing fee applies",
+      "CUT was established via merger in 2004 but its predecessor (Technikon Free State) opened in 1981 — founded year of 1981 used to reflect institutional lineage as commonly cited",
+      "Health Sciences early closing date not found on official site — all programmes share 30 September 2026 deadline per official sources",
+      "Application open date of 1 April 2026 confirmed by third-party sources (coursematch.co.za) but not explicitly stated on the official cut.ac.za application-process page — verify directly"
+    ]
   }
 }

@@ -10,8 +10,8 @@
     "province": "Eastern Cape"
   },
   "website": "https://www.ufh.ac.za",
-  "apply": "https://www.ufh.ac.za/apply",
-  "prospectus": "https://www.ufh.ac.za/admissions",
+  "apply": "https://ienabler.ufh.ac.za/pls/prodi41/w99pkg.mi_login",
+  "prospectus": "https://www.ufh.ac.za/admission",
   "logo": "ufh.png",
   "description": "One of Africa's oldest historically Black universities — alma mater of Nelson Mandela, Oliver Tambo and many African leaders. A symbol of the African liberation movement.",
   "faculties": [
@@ -35,5 +35,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42"
 }

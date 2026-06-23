@@ -84,5 +84,29 @@
         "note": "CORRECTION: 8->7; Nursing is a school under CHS; Arts->Arts and Humanities"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "UWC Points /42 (weighted scale by subject and achievement level)",
+  "apsRange": "30–40",
+  "healthSciencesCloses": "31 August 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.uwc.ac.za/admission-and-financial-aid/apply",
+      "https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf",
+      "https://www.uwc.ac.za/files/files/SEMU-8-Panel-Print-Admissions-2027.pdf",
+      "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/undergraduate-admission-requirements",
+      "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/faculty-specific-requirements",
+      "https://www.uwc.ac.za/study/faculties-and-programmes/faculty-of-law/programmes-2"
+    ],
+    "flags": [
+      "APS values for programmes are drawn from the official 2025 General Admissions Criteria brochure (the 2027 brochure PDF was image-based and could not be fully parsed); values may change slightly for 2027 intake",
+      "International application fee listed as free based on application guide stating 'not required to pay an application fee' — confirm whether this applies equally to international applicants",
+      "Exact enrolment figure (~23000) not verified from a current official source",
+      "Application open date: Application Guide states 01 April 2026; the 2027 admissions brochure states 2 April 2026 — minor discrepancy, used 1 April 2026 as per the dedicated Application Guide",
+      "BDS APS of 40 is from the 2025 brochure; the 2021 SEMU document also cited 40 — treat as reliable but flag for 2027 confirmation"
+    ]
   }
 }

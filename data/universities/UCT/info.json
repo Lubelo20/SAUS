@@ -3,7 +3,7 @@
   "name": "University of Cape Town",
   "type": "Research University",
   "established": 1829,
-  "students": 29000,
+  "students": 30000,
   "aps": "36–44+",
   "location": {
     "city": "Cape Town",
@@ -37,5 +37,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /600 (sum of 6 best NSC subject percentages, excluding Life Orientation; results below 40% score zero)"
 }

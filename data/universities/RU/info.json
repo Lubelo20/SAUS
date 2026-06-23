@@ -3,7 +3,7 @@
   "name": "Rhodes University",
   "type": "Traditional University",
   "established": 1904,
-  "students": 9000,
+  "students": 7005,
   "aps": "28–36+",
   "location": {
     "city": "Makhanda",
@@ -11,7 +11,7 @@
   },
   "website": "https://www.ru.ac.za",
   "apply": "https://ross.ru.ac.za/ugadmissions",
-  "prospectus": "https://www.ru.ac.za/institutionalplanning/registrar/applications/",
+  "prospectus": "https://www.ru.ac.za/media/rhodesuniversity/content/registrar/documents/information/studentrecruitment/RU_READY_Undergraduate_Prospectus_2026_DIGITAL_A5_Landscape_24pp_18Mar2026.pdf",
   "logo": "ru.png",
   "description": "A small, selective university known for high academic standards and vibrant student life in Makhanda. Consistently among the top SA universities with outstanding journalism, law and science schools.",
   "faculties": [
@@ -33,5 +33,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42 (best 6 NSC subjects excluding Life Orientation; subjects below 40% excluded)"
 }

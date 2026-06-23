@@ -83,5 +83,29 @@
         "note": "CORRECTION: Hospitality is a School not faculty; 3 faculties"
       }
     }
+  },
+  "internationalFee": "R550",
+  "apsSystem": "APS /42 (Life Orientation counted at half value; all 7 NSC subjects included)",
+  "apsRange": "23–33",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+      "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx",
+      "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Biology-and-Environmental-Sciences/Bachelor-of-Science-Degree.aspx",
+      "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Education/School-of-Early-Childhood-Education/Bachelor-of-Education-in-Foundation-Phase-Teaching.aspx",
+      "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Social-Sciences/Bachelor-of-Arts-General.aspx",
+      "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Development-Studies/Bachelor-of-Commerce.aspx"
+    ],
+    "flags": [
+      "applyUrl: The on-file URL (Online-Applications page) redirects to a general info page; the direct iEnabler application portal URL is used instead — verify this is the correct direct application link",
+      "students: On-file figure of ~5000 is outdated; UMP had ~7100 in 2022 and targeted ~8000 for 2023 — used ~8000 as estimate; no more recent official headcount confirmed",
+      "BAgric Agricultural Extension APS not confirmed from official programme page (404 error returned)",
+      "SADC fee of R400 confirmed from official site but not included in schema field — feeSA field reflects SA-citizen rate only",
+      "prospectusUrl: The PDF is a binary download; may not render in browser — verify accessibility",
+      "No Health Sciences or Medicine faculty at UMP; healthSciencesCloses left empty"
+    ]
   }
 }

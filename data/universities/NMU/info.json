@@ -11,7 +11,7 @@
   },
   "website": "https://www.mandela.ac.za",
   "apply": "https://applyonline.mandela.ac.za/",
-  "prospectus": "https://www.mandela.ac.za/study-at-mandela/application",
+  "prospectus": "https://www.mandela.ac.za/study-at-mandela/discovery/quick-guides",
   "logo": "nmu.png",
   "description": "Named in honour of Nelson Mandela. A comprehensive university blending academic and technology programmes across seven faculties in Port Elizabeth (Gqeberha), Eastern Cape.",
   "faculties": [
@@ -39,5 +39,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "NMU Applicant Score (AS) /600 — sum of top 6 NSC subject percentages (Life Orientation excluded); +7 bonus points for quintile 1–3 school applicants achieving 50%+ in LO"
 }

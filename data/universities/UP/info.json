@@ -3,7 +3,7 @@
   "name": "University of Pretoria",
   "type": "Research University",
   "established": 1908,
-  "students": 54000,
+  "students": 56409,
   "aps": "28–42+",
   "location": {
     "city": "Pretoria",
@@ -11,7 +11,7 @@
   },
   "website": "https://www.up.ac.za",
   "apply": "https://www.up.ac.za/online-application/apply-online",
-  "prospectus": "https://www.up.ac.za/online-application",
+  "prospectus": "https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_UG%20Prospectus%202027_NSC-IEB_DevV5_web_0.pdf?VersionId=mFTqP2HthIDn48ISjWf4b4g6CtdE6beU",
   "logo": "up.png",
   "description": "South Africa's largest residential university with over 1,000 study programmes. Famous for its Veterinary Science, Medical and Engineering faculties on a stunning 650-hectare campus in Pretoria.",
   "faculties": [
@@ -40,5 +40,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42"
 }

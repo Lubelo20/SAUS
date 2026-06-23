@@ -3,14 +3,14 @@
   "name": "University of Limpopo",
   "type": "Traditional University",
   "established": 1959,
-  "students": 18000,
+  "students": 23455,
   "aps": "18–28+",
   "location": {
     "city": "Mankweng (Polokwane)",
     "province": "Limpopo"
   },
   "website": "https://www.ul.ac.za",
-  "apply": "https://www.ul.ac.za/admissions/undergraduate-studies/",
+  "apply": "https://ulc-prod-webserver.ul.ac.za/pls/prodi41/gen.gw1pkg.gw1view",
   "prospectus": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf",
   "logo": "ul.png",
   "description": "Formerly the University of the North (Turfloop). A historically Black institution that produced many anti-apartheid activists. Especially strong in health sciences and law.",
@@ -34,5 +34,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42"
 }

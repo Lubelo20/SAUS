@@ -84,5 +84,30 @@
         "note": "CORRECTION: added Health Sciences (3->4)"
       }
     }
+  },
+  "internationalFee": "R750",
+  "apsSystem": "APS /42",
+  "apsRange": "22–30",
+  "healthSciencesCloses": "30 July 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/",
+      "https://www.ul.ac.za/admissions/undergraduate-studies/",
+      "https://www.ul.ac.za/admissions/",
+      "https://www.ul.ac.za/faculty-of-management-and-law/school-of-law/",
+      "https://www.ul.ac.za/faculty-of-health-sciences/school-of-medicine/",
+      "https://www.ul.ac.za/late-application-open-selected-programmes-in-faculty-of-science-and-agriculture/"
+    ],
+    "flags": [
+      "APS values for individual programmes sourced from third-party StudentRoom.co.za (based on 2026 prospectus) — not directly verifiable from the 2027 prospectus PDF (binary-compressed, not readable by WebFetch)",
+      "International application fee of R750 sourced from ul.ac.za/admissions/undergraduate-studies/ — the 2027 announcement page only mentioned R200 without distinguishing SA vs international",
+      "Student enrolment figure (23,455) is from 2024 data — 2025/2026 official figure not confirmed",
+      "Founded year 1959 reflects University of the North origins; formal UL merger date is 2005",
+      "BSc Agriculture APS values cross-referenced from varsitywise.com (2024 article) and studentroom.co.za — treat as indicative, not guaranteed 2027 values",
+      "MBChB APS of 27 is widely reported but the official UL Medicine page does not publish a numeric APS minimum — verify in prospectus"
+    ]
   }
 }

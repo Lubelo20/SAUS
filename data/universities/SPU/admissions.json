@@ -1,7 +1,7 @@
 {
   "abbr": "SPU",
   "applicationPeriod": {
-    "opens": "11 May 2026",
+    "opens": "1 April 2026",
     "closes": "31 October 2026",
     "intakeYear": 2027
   },
@@ -84,5 +84,28 @@
         "source": "https://www.spu.ac.za/index.php/faculty-of-natural-and-applied-sciences-home/"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "APS /42 (8-subject scale, includes Life Orientation)",
+  "apsRange": "28–32",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.spu.ac.za/index.php/how-to-apply/",
+      "https://www.spu.ac.za/",
+      "https://www.spu.ac.za/index.php/admission-requirements-2/",
+      "https://www.spu.ac.za/index.php/faculty-of-edu-programmes/",
+      "https://www.spu.ac.za/index.php/prospectus-2026/",
+      "https://apply.org.za/university/spu"
+    ],
+    "flags": [
+      "applicationOpens: '1 April 2026' sourced from third-party aggregators (applyvasities.com, schoolhive.co.za, apply.org.za) — official SPU how-to-apply page only confirms 31 October 2026 closing date, not the opening date",
+      "Programme-level APS scores sourced from third-party sites (southportal.co.za, apply.org.za) and cross-referenced — could not be verified directly from official SPU prospectus PDF (binary/image-only)",
+      "feeIntl: Multiple sources confirm free for all applicants including international, but official SPU site does not explicitly state this for international students",
+      "BEd Foundation Phase APS may be as low as 25 on some sources — 30 used as the consistent figure from official-adjacent sources",
+      "2027 prospectus PDF not yet confirmed as a separate URL; on-file 2026 prospectus URL used"
+    ]
   }
 }

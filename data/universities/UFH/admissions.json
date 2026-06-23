@@ -1,11 +1,11 @@
 {
   "abbr": "UFH",
   "applicationPeriod": {
-    "opens": "1 April 2026",
+    "opens": "1 May 2026",
     "closes": "31 October 2026",
     "intakeYear": 2027
   },
-  "applicationFee": 0,
+  "applicationFee": 120,
   "feeWaiver": false,
   "minimumAPS": 26,
   "apsNote": "East London campus has different intake dates for some programmes.",
@@ -84,5 +84,28 @@
         "note": "CORRECTION: added Health Sciences; merged Science & Agriculture"
       }
     }
+  },
+  "internationalFee": "R500",
+  "apsSystem": "APS /42",
+  "apsRange": "22–30",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.ufh.ac.za/admission",
+      "https://www.ufh.ac.za/apply/apply-undergraduate",
+      "https://www.ufh.ac.za/apply",
+      "https://fye.ufh.ac.za/faq-base/is-there-an-application-fee/",
+      "https://www.ufh.ac.za/international-office/undergraduate",
+      "https://www.ufh.ac.za/faculties/faculty-of-science-agriculture"
+    ],
+    "flags": [
+      "healthSciencesCloses: no separate earlier closing date for Health Sciences confirmed from official sources — same 31 October 2026 deadline applies",
+      "prospectusUrl: no direct 2027 prospectus PDF found on official site; admissions page used as proxy",
+      "students: approximate figure (~12 000); official DHET-audited enrolment figure not confirmed for latest year",
+      "BSc in Speech-Language Pathology noted as not offered in 2026 — 2027 status unconfirmed",
+      "feeSA R120 confirmed via official UFH FAQ; online application may be free — conflicting signals in non-official sources not resolved"
+    ]
   }
 }

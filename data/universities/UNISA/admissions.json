@@ -1,8 +1,8 @@
 {
   "abbr": "UNISA",
   "applicationPeriod": {
-    "opens": "August 2026",
-    "closes": "November 2026",
+    "opens": "18 August 2026",
+    "closes": "10 October 2026",
     "intakeYear": 2027
   },
   "applicationFee": 150,
@@ -86,5 +86,29 @@
         "note": "UNISA uses Colleges; Theology is a school in Human Sciences"
       }
     }
+  },
+  "internationalFee": "R150",
+  "apsSystem": "APS /42 (programme-specific; calculated from NSC best 6 subjects excluding Life Orientation)",
+  "apsRange": "15–23+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission",
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Apply-for-admission",
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications",
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+      "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Laws-(98680-%E2%80%93-NEW)"
+    ],
+    "flags": [
+      "applicationOpens and applicationCloses for 2027 intake are projected based on the established UNISA annual pattern (2026 intake ran 18 Aug–11 Oct 2025); not yet officially published on unisa.ac.za as of June 2026",
+      "APS values for many programmes (BCom specialisations, BSc combinations, BAccSci specialisations, Law diplomas) not retrieved from official pages — set to 0",
+      "UNISA does not publish a separate international application fee; the R150 fee appears to apply equally to all applicants but this was not confirmed from a single definitive fee schedule page",
+      "No medical school or MBChB programme — UNISA does not offer Medicine, so healthSciencesCloses is inapplicable",
+      "BSc General (98801-GEN) APS not confirmed from official page",
+      "Enrolment figure of ~370,000 is the widely-cited historic figure; exact current enrolment not confirmed from a 2025/2026 official source"
+    ]
   }
 }

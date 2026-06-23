@@ -1,7 +1,7 @@
 {
   "abbr": "WITS",
   "applicationPeriod": {
-    "opens": "1 April 2026",
+    "opens": "1 March 2026",
     "closes": "30 September 2026",
     "intakeYear": 2027
   },
@@ -82,5 +82,30 @@
         "source": "https://www.wits.ac.za/faculties-and-schools/"
       }
     }
+  },
+  "internationalFee": "R100",
+  "apsSystem": "APS /56 (best 7 subjects including Life Orientation; English and Mathematics attract bonus points)",
+  "apsRange": "37–46+",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+      "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/",
+      "https://www.wits.ac.za/undergraduate/entry-requirements/",
+      "https://www.wits.ac.za/undergraduate/entry-requirements/admission-requirements-nsc/",
+      "https://www.wits.ac.za/undergraduate/academic-programmes/",
+      "https://www.wits.ac.za/faculties-and-schools/"
+    ],
+    "flags": [
+      "feeIntl: The R100 application fee was confirmed for SA applicants; the international applicants page did not specify the same R100 fee — international students pay a separate non-refundable International Registration Fee of R6,970 at registration, but the application fee itself is not separately stated for international applicants on official pages",
+      "Medicine/MBBCh APS set to 0 because admission uses a Composite Index (60% matric average of 5 subjects + 40% NBT score), not a standard APS threshold",
+      "LLB 3-year and 2-year streams do not use matric APS — admitted based on undergraduate degree performance",
+      "Prospectus URL links to a landing page; the 2027 guide PDF is available for download from that page but a direct PDF URL was not confirmed",
+      "applicationOpens confirmed as March 2026 from timelines page — specific day (1 March) sourced from third-party aggregators; official Wits timelines page states only 'March 2026'",
+      "BA Film and TV and Bachelor of Architectural Studies also close 30 June 2026 (same as Health Sciences early deadline)"
+    ]
   }
 }

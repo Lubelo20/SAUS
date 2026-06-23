@@ -84,5 +84,31 @@
         "note": "CORRECTION: 4 colleges, removed duplicate"
       }
     }
+  },
+  "internationalFee": "R490 (SADC/Africa); US$153 (outside Africa)",
+  "apsSystem": "APS /48 (six NSC subjects, Life Orientation excluded)",
+  "apsRange": "26–48",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://applications.ukzn.ac.za/uncategorized/2026-applications/",
+      "https://applications.ukzn.ac.za/applications/ukzn-applications/",
+      "https://applications.ukzn.ac.za/applications/online-applications/",
+      "https://applications.ukzn.ac.za/selection-procedure/undergraduate-selection-procedure/",
+      "https://applications.ukzn.ac.za/prospectus/",
+      "https://studyatukzn.ukzn.ac.za/apply-at-ukzn/how-to-apply/"
+    ],
+    "flags": [
+      "MBChB APS: Medicine applicants are ranked by average percentage score rather than APS — minimum APS not published; field set to 0",
+      "BEd Intermediate Phase and Senior Phase/FET APS: subject requirements confirmed but minimum APS score not explicitly published on official page; set to 0",
+      "BPhysio APS: subject requirements confirmed from official page but minimum APS score not listed; set to 0",
+      "BAud, BSLT, BSportsSci APS: programmes confirmed on CHS page but minimum APS not found on official programme pages; set to 0",
+      "Application opening date: 'April 2026' confirmed by official-linked news source (africazine.com citing UKZN); exact day not confirmed from ukzn.ac.za directly — '1 April 2026' is widely reported but treat as approximate",
+      "SA application fee R210 confirmed for 2026 intake on applications.ukzn.ac.za; 2027 fee not yet separately published — assumed same pending official update",
+      "enrolment figure 44,628 is for 2025 academic year per official UKZN news; on-file figure of 47,000 not confirmed from official sources"
+    ]
   }
 }

@@ -82,5 +82,30 @@
         "source": "https://www.cput.ac.za/academic"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "APS /42 (6 best NSC subjects excluding Life Orientation)",
+  "apsRange": "24–36+",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+      "https://www.cput.ac.za/enquiries/application-faq",
+      "https://www.cput.ac.za/study-at-cput/undergraduate/prospectus",
+      "https://www.cput.ac.za/about",
+      "https://cput.ac.za/study/international-applicants/admission-requirements",
+      "https://prospectus.cput.ac.za/index.php/course-details?q=BPETEE&f=140"
+    ],
+    "flags": [
+      "healthSciencesCloses: 30 June 2026 confirmed from official CPUT apply page for nursing/medical lab/radiography; Emergency Medical Care closes 31 July 2026; Education (BEd/PGCE) closes 31 August 2026 — multiple sub-deadlines exist within Health and Wellness Sciences",
+      "feeIntl: application is free per FAQ but international students pay a R1500 administration levy and R3500 upfront deposit after acceptance — not an application fee",
+      "Bachelor of Nursing minimum APS: prospectus page did not display numerical APS clearly; 28 sourced from third-party aggregator search snippet — treat with caution",
+      "BEd and Bachelor of Business Informatics APS not confirmed from official source — set to 0",
+      "prospectusUrl: official prospectus landing page confirmed; no direct 2027 PDF link retrievable",
+      "students: stated as 'over 35 000' on official About page — approximate figure"
+    ]
   }
 }

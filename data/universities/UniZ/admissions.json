@@ -85,5 +85,30 @@
         "note": "CORRECTION: outdated names fixed"
       }
     }
+  },
+  "internationalFee": "R300",
+  "apsSystem": "APS /42",
+  "apsRange": "26–36+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.unizulu.ac.za/office-of-the-registrar/admissions/",
+      "https://www.unizulu.ac.za/apply/",
+      "https://www.unizulu.ac.za/faculties-and-departments/",
+      "https://www.unizulu.ac.za/",
+      "https://www.unizulu.ac.za/overview/",
+      "https://www.cao.ac.za/"
+    ],
+    "flags": [
+      "applicationCloses: 30 September 2026 confirmed via third-party aggregators cross-referencing CAO; the CAO UNIZULU closing-date PDF (cao.ac.za) was binary-encoded and could not be read directly — value is consistent but not read from raw official document",
+      "healthSciencesCloses: UNIZULU does not have a standalone health sciences / medical faculty; Nursing is under Science, Agriculture and Engineering — no earlier closing date found from official source",
+      "minApsRange: range 26–36+ is derived from officially confirmed BEd APS 26 and Nursing APS 30 plus third-party estimates for engineering; no single official document listing all programme APS values was readable",
+      "aps values: only BEd (26) and Nursing (30) confirmed from official faculty sub-pages; all other programme APS fields set to 0 as no official document could be parsed",
+      "feeIntl: R300 confirmed via CAO third-party sources; not confirmed from official CAO document directly",
+      "prospectusUrl: the 2026 undergraduate brochure PDF is linked — a 2027-specific brochure had not been published as of the research date",
+      "students: 16,337 figure is from Wikipedia citing 2022 data; no more recent official headcount was found"
+    ]
   }
 }

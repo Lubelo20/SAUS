@@ -83,5 +83,28 @@
         "note": "matches existing"
       }
     }
+  },
+  "internationalFee": "R100",
+  "apsSystem": "APS /42 (best 6 NSC subjects excluding Life Orientation; subjects below 40% excluded)",
+  "apsRange": "33–45",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://ross.ru.ac.za/ugadmissions",
+      "https://www.ru.ac.za/admissiongateway/",
+      "https://www.varsitywise.com/posts/rhodes-university-2027-admission-now-open",
+      "https://www.bursariesafrica.co.za/universities/how-to-apply-to-rhodes-university-for-2026/",
+      "https://www.studentroom.co.za/rhodes-university-admission-entry-requirements/",
+      "https://johannesburglists.com/rhodes-university-courses-and-requirements/"
+    ],
+    "flags": [
+      "enrolment figure (7005) from Wikipedia — official Facts and Figures page at ru.ac.za returned HTTP 403; some sources cite ~8000–9000",
+      "international application fee not separately confirmed as R100 — same fee assumed from sources that do not differentiate",
+      "APS automatic-offer threshold is 45 for most programmes but precise minimum (floor) per programme varies by Dean discretion; floor APS values listed are indicative thresholds from third-party aggregators, not directly from official ru.ac.za programme pages (all returned 403)",
+      "LLB minimum APS not explicitly confirmed from official source — 40 cited by multiple aggregators",
+      "prospectus PDF URL is the 2027 intake document published March 2026; confirmed present in official Google index but direct fetch returned 403"
+    ]
   }
 }

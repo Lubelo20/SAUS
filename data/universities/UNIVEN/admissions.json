@@ -83,5 +83,29 @@
         "note": "CORRECTION: 6->4 combined faculties"
       }
     }
+  },
+  "internationalFee": "R300",
+  "apsSystem": "APS /42",
+  "apsRange": "26–38+",
+  "healthSciencesCloses": "30 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.univen.ac.za/students/student-support-services/how-to-apply/",
+      "https://www.univen.ac.za/students/student-support-services/how-to-apply/general-information/",
+      "https://www.univen.ac.za/students/student-support-services/how-to-apply/prospectus/",
+      "https://www.univen.ac.za/apply/",
+      "https://www.univen.ac.za/",
+      "https://www.univen.ac.za/faculties/health/"
+    ],
+    "flags": [
+      "applicationOpens (1 May 2026) and applicationCloses (30 September 2026) sourced from third-party sites (coursematch.co.za, varsitywise.com), not confirmed directly from the official UNIVEN website or prospectus PDF (PDF too large to fetch)",
+      "healthSciencesCloses date of 30 June 2026 sourced from third-party; official prospectus PDF could not be fetched to confirm",
+      "feeIntl of R300 sourced from coursematch.co.za, not confirmed on official UNIVEN domain",
+      "Programme-level APS values (BA=30, Social Work=35, BEd=36, BCur=36, etc.) sourced from varsitywise.com third-party; official prospectus PDF was too large to fetch for direct verification",
+      "Enrollment figure of 15,248 is from Wikipedia citing 2023 data; official current figure not confirmed from univen.ac.za"
+    ]
   }
 }

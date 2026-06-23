@@ -11,7 +11,7 @@
   },
   "website": "https://www.dut.ac.za",
   "apply": "https://www.cao.ac.za",
-  "prospectus": "https://www.dut.ac.za/admissions/how-to-apply/",
+  "prospectus": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
   "logo": "dut.jpg",
   "description": "KwaZulu-Natal's leading university of technology offering applied, vocational and career-focused programmes. Strong links to Durban's industrial and commercial sectors.",
   "faculties": [
@@ -35,5 +35,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "NSC points /42 (top 6 subjects, excluding Life Orientation)"
 }

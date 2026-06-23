@@ -84,5 +84,31 @@
         "note": "matches existing"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "AP score /56 (best 6 NSC subjects + Life Orientation capped at 1 point if ≥60%)",
+  "apsRange": "20–36",
+  "healthSciencesCloses": "31 May 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://apply.ufs.ac.za/",
+      "https://www.ufs.ac.za/prospective",
+      "https://www.ufs.ac.za/health/faculty-of-health-sciences-home/academic-information/undergraduate-admission",
+      "https://www.ufs.ac.za/humanities/departments-and-divisions/odeion-school-of-music-home/admission-requirements/admission-requirements",
+      "https://www.ufs.ac.za/natagri/departments-and-divisions/computer-science-and-informatics-university-of-the-free-state-ufs-home/academic-information/undergraduate",
+      "https://www.varsitywise.com/posts/university-of-free-state-ufs-2027-applications"
+    ],
+    "flags": [
+      "BEd AP score (28) sourced from third-party aggregators, not directly confirmed from official UFS page",
+      "Social Work APS not confirmed from official source",
+      "Architecture APS not confirmed from official source",
+      "BCom General APS (30) is an aggregated estimate; official prospectus PDF was too large to parse",
+      "Nursing APS (35) sourced from third-party sites, not directly confirmed on official ufs.ac.za page",
+      "Prospectus PDF URL confirmed as live but content could not be read due to file size limits — programme-level APS sourced mainly from official faculty pages and one verified third-party summary",
+      "MBChB APS: varsitywise.com states 33, other sources state 36 — 36 used as it is the more commonly cited official figure"
+    ]
   }
 }

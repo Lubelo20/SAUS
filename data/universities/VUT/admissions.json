@@ -86,5 +86,28 @@
         "note": "CORRECTION: Humanities->Human Sciences"
       }
     }
+  },
+  "internationalFee": "R110",
+  "apsSystem": "APS /42 (best 6 subjects, excluding Life Orientation)",
+  "apsRange": "19–27+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://vut.ac.za/how-to-apply/",
+      "https://vut.ac.za/admission-requirements/",
+      "https://vut.ac.za/applied-and-computer-sciences-programme/",
+      "https://vut.ac.za/engineering-programmes-vaal-university-of-technology/",
+      "https://vut.ac.za/human-sciences-programmes-vaal-university-of-technology/",
+      "https://vut.ac.za/management-sciences-programmes-vaal-university-of-technology/"
+    ],
+    "flags": [
+      "International application fee not separately confirmed — R110 cited on how-to-apply page appears to apply to all applicants but no explicit SA vs international fee split found",
+      "Prospectus URL links to 2025 General Prospectus (2027-specific prospectus PDF not yet published as of search date)",
+      "Health Sciences closing date not separately confirmed — no evidence of earlier closure for Medical Laboratory Science",
+      "Some programme-level APS values sourced from faculty pages which may reflect 2026 intake; 2027-specific PDF was not readable in binary form",
+      "Student enrolment figure of 23,000 is from homepage text ('over 23,000') — exact figure unconfirmed"
+    ]
   }
 }

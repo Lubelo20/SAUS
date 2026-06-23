@@ -83,5 +83,28 @@
         "source": "https://uct.ac.za/students/applications-admission-requirements/undergraduates"
       }
     }
+  },
+  "internationalFee": "R300",
+  "apsSystem": "APS /600 (sum of 6 best NSC subject percentages, excluding Life Orientation; results below 40% score zero)",
+  "apsRange": "300–450+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://uct.ac.za/students/applications/key-dates",
+      "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure",
+      "https://uct.ac.za/students/applications-admission-requirements/eligibility-admission",
+      "https://uct.ac.za/students/applications-admission-requirements/undergraduates",
+      "https://uct.ac.za/faculties",
+      "https://uct.ac.za/students/prospective-students/undergraduate-prospectus"
+    ],
+    "flags": [
+      "healthSciencesCloses: no separate earlier closing date for Health Sciences confirmed from official UCT sources — same 31 July 2026 deadline applies; third-party sources suggested NBT deadline differs but not application close date",
+      "minApsRange: expressed as APS/600 (UCT uses percentage-based scoring out of 600, not the standard /42 APS); range estimates based on third-party aggregator data cross-referenced with official subject requirements since official UCT site does not publish consolidated APS tables",
+      "programme APS values sourced from third-party aggregator (studentroom.co.za) cross-checked against official subject requirements; UCT official site directs to faculty-specific PDFs for exact cut-offs — treat as indicative only",
+      "MBChB aps:450 is a weighted score approximation; UCT uses a complex weighted formula for Health Sciences, not a simple APS sum",
+      "students: ~30,000 based on 2023 data from UCT News (17,862 UG + 11,638 PG + 465 occasional)"
+    ]
   }
 }

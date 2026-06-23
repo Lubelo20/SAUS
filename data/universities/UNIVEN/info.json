@@ -3,7 +3,7 @@
   "name": "University of Venda",
   "type": "Traditional University",
   "established": 1982,
-  "students": 15000,
+  "students": 15248,
   "aps": "18–26+",
   "location": {
     "city": "Thohoyandou",
@@ -33,5 +33,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42"
 }

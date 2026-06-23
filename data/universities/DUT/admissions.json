@@ -84,5 +84,29 @@
         "source": "https://www.dut.ac.za/academic/"
       }
     }
+  },
+  "internationalFee": "R300",
+  "apsSystem": "NSC points /42 (top 6 subjects, excluding Life Orientation)",
+  "apsRange": "20–36+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+      "https://www.dut.ac.za/admissions/",
+      "https://www.dut.ac.za/apply-4/",
+      "https://www.cao.ac.za/Apply.aspx?content=Apply",
+      "https://cao.ac.za/Institute.aspx?content=DU",
+      "https://www.dut.ac.za/faculties/"
+    ],
+    "flags": [
+      "applicationOpens: 1 March 2026 is widely reported by multiple sources but not explicitly stated in the official Study Opportunities 2027 PDF (which only states closing is 30 September 2026); treat as high-confidence but not page-confirmed",
+      "healthSciencesCloses: no earlier Health Sciences-specific closing date found in the official Study Opportunities 2027 PDF; all programmes listed with 30 September 2026 closing date",
+      "Most Diploma programme-level APS thresholds not explicitly published as a single number in the official PDF — entry requirements specify subject ratings rather than a total APS; aps:0 set for those",
+      "Engineering degree entry: ranked by sum of Mathematics and Physical Science scores rather than a single APS minimum; 28 points is the general NSC degree entry threshold stated",
+      "BHSc Chiropractic: listed as 30 points — sourced from third-party compilation; not independently confirmed from official Study Opportunities 2027 PDF page",
+      "prospectusUrl: PDF at this path confirmed to exist and downloaded (4.7MB, published May 2026) but the URL may change — verify at dut.ac.za/apply-4/"
+    ]
   }
 }

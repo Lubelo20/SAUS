@@ -85,5 +85,28 @@
         "note": "CORRECTION: local listed 10 (IT standalone); official 9 (IT in Engineering)"
       }
     }
+  },
+  "internationalFee": "US$30",
+  "apsSystem": "APS /42",
+  "apsRange": "28–42",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.up.ac.za/online-application",
+      "https://www.up.ac.za/online-application/important-dates",
+      "https://www.up.ac.za/online-application/application-fee",
+      "https://www.up.ac.za/students/admission-information",
+      "https://www.up.ac.za/students/faculty-brochures-2027",
+      "https://www.up.ac.za/article/2749393/faculties"
+    ],
+    "flags": [
+      "healthSciencesCloses: Health Sciences/Medicine does not have a separately confirmed earlier closing date — only Veterinary Science has 31 May 2026; confirm if Medicine follows general 30 June deadline",
+      "feeIntl: International fee of US$30 confirmed from third-party sources; official up.ac.za application-fee page returned HTTP 403 and could not be directly verified",
+      "programme APS values sourced primarily from third-party aggregator sites (studentroom.co.za, briefly.co.za, coursematch.co.za) — official UP_DESA_Application requirements tables 2027 PDF returned HTTP 403; values should be verified against official prospectus PDF",
+      "prospectusUrl: PDF URL contains a VersionId parameter that may expire; the canonical page is https://www.up.ac.za/online-application",
+      "enrolment: 56,409 figure sourced from Wikipedia (citing official UP data); official up.ac.za statistics pages returned HTTP 403"
+    ]
   }
 }

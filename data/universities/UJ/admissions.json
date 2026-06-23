@@ -82,5 +82,28 @@
         "note": "CORRECTION: Management merged into CBE (2017)"
       }
     }
+  },
+  "internationalFee": "Free",
+  "apsSystem": "APS /42",
+  "apsRange": "22–34+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.uj.ac.za/admission-aid/undergraduate/",
+      "https://www.uj.ac.za/admission-aid/apply/",
+      "https://www.varsitywise.com/posts/university-of-johannesburg-now-accepting-2027-applications",
+      "https://coursematch.co.za/blog/uj-2027-applications-now-open-free-online-application-closes-31-october-2026",
+      "https://en.wikipedia.org/wiki/University_of_Johannesburg",
+      "https://www.uj.ac.za/faculties/"
+    ],
+    "flags": [
+      "healthSciencesCloses: no specific early closing date for Health Sciences confirmed from official UJ source; programmes close on a rolling basis when full",
+      "feeIntl: confirmed free for online applications; R200 hardcopy fee applies — international-specific surcharge not confirmed",
+      "Several programme APS values sourced from secondary/aggregator sites (varsitywise, coursematch, southportal) as uj.ac.za returned HTTP 403; should be cross-checked against official prospectus PDF when accessible",
+      "No official 2027 prospectus PDF URL confirmed — prospectus download page URL used instead",
+      "Johannesburg Business School listed as separate entity but inclusion as a faculty/college requires verification"
+    ]
   }
 }

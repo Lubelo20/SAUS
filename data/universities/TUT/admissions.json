@@ -84,5 +84,29 @@
         "source": "https://www.tut.ac.za/study-at-tut/"
       }
     }
+  },
+  "internationalFee": "R240",
+  "apsSystem": "APS /42 (7-point NSC rating scale; Life Orientation included for most programmes)",
+  "apsRange": "18–30",
+  "healthSciencesCloses": "15 June 2026",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.tut.ac.za/study-at-tut/undergraduate/",
+      "https://www.tut.ac.za/programme-closing-dates/",
+      "https://www.tut.ac.za/international-office/fees/",
+      "https://www.tut.ac.za/engineering/",
+      "https://www.tut.ac.za/science/",
+      "https://www.tut.ac.za/"
+    ],
+    "flags": [
+      "feeIntl: international application fee not separately confirmed on official tut.ac.za — R240 appears to apply to all first-time applicants; international students additionally pay an annual levy of R1,820",
+      "healthSciencesCloses: 15 June 2026 confirmed for Nursing and Radiography from programme-closing-dates page; Pharmacy listed as 30 Sept 2026",
+      "APS values for several programmes sourced from third-party sites (varsitywise.com, coursematch.co.za) cross-referenced but not directly read from the official 2027 PDF (binary-encoded, not machine-readable)",
+      "Tshwane School for Business and Society — faculty listed on official undergraduate page but no programmes with APS confirmed from official source",
+      "prospectusUrl is the official 2027 First Year Course Information PDF on tut.ac.za; the traditional PART prospectus series (Part 1–9) is the 2026 series"
+    ]
   }
 }

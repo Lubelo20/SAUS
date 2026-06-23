@@ -10,8 +10,8 @@
     "province": "National"
   },
   "website": "https://www.unisa.ac.za",
-  "apply": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Apply-for-admission-to-study:-application-tool",
-  "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications",
+  "apply": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission",
+  "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
   "logo": "unisa.jpg",
   "description": "The largest university on the African continent by enrolment. Offers flexible distance education to over 400,000 students across South Africa and globally — study at your own pace.",
   "faculties": [
@@ -40,5 +40,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /42 (programme-specific; calculated from NSC best 6 subjects excluding Life Orientation)"
 }

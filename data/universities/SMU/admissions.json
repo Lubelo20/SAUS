@@ -86,5 +86,28 @@
         "note": "CORRECTION: 5 schools not 4; removed Preclinical Sciences"
       }
     }
+  },
+  "internationalFee": "R300",
+  "apsSystem": "APS /42",
+  "apsRange": "24–38",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "high",
+    "sources": [
+      "https://www.smu.ac.za/students/apply/",
+      "https://www.smu.ac.za/students/apply/undergraduate-students/",
+      "https://www.smu.ac.za/students/apply/online-application/",
+      "https://www.smu.ac.za/students/apply/faqs/",
+      "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
+      "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/"
+    ],
+    "flags": [
+      "healthSciencesCloses: no separate earlier deadline confirmed for medicine/health sciences — all undergraduate programmes share the 31 July 2026 date; verify with SMU directly",
+      "feeIntl: international fee not separately listed on the official site; R300 appears to apply universally but should be confirmed",
+      "prospectusUrl: no 2026/2027-specific prospectus PDF found; the undergraduate students page references a 2026/2027 flipbook but direct URL not confirmed — on-file URL (2025/2026 PDF) is the most recent PDF available",
+      "students: enrolment figure of ~7000 from Wikipedia; official SMU institutional data not directly confirmed on smu.ac.za",
+      "B Rad (Radiography) listed under School of Medicine — school attribution should be verified as it may fall under Health Care Sciences"
+    ]
   }
 }

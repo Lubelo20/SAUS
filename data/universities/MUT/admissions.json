@@ -83,5 +83,30 @@
         "note": "CORRECTION: Natural Sciences->Applied and Health Sciences"
       }
     }
+  },
+  "internationalFee": "R300 (on-time via CAO); R580 late (from 1 November)",
+  "apsSystem": "APS based on best 5 subjects (NSC rating scale: 90-100%=8pts down to 40-49%=3pts); minimum varies by faculty/programme",
+  "apsRange": "20–25+",
+  "_researchVerified": {
+    "date": "2026-06-24",
+    "intake": 2027,
+    "confidence": "medium",
+    "sources": [
+      "https://www.mut.ac.za/",
+      "https://www.mut.ac.za/prospective-students/apply/",
+      "https://www.mut.ac.za/admission-requirements/",
+      "https://www.mut.ac.za/prospective-students/study-at-mut/how-to-apply-to-mut/",
+      "https://www.mut.ac.za/faculties/faculty-of-engineering/",
+      "https://www.mut.ac.za/faculties/department-of-civil-engineering-and-survey/"
+    ],
+    "flags": [
+      "2027-specific APS minimums not yet published for most Engineering and Applied/Health Sciences programmes — values sourced from current/recent prospectuses which may differ for 2027 intake",
+      "CAO fee amounts (R250/R300/R470/R580) confirmed for 2026 entry structure; 2027 fee amounts assumed same but not yet officially confirmed for 2027 entry on CAO website",
+      "Prospectus URL on file (mut.ac.za/prospective-students/apply/) is a process page, not a PDF prospectus — no dedicated 2027 undergraduate prospectus PDF found yet on mut.ac.za",
+      "Health Sciences/Medical Laboratory Science minimum APS not published on official MUT department page",
+      "Engineering programme-specific APS totals not published on official MUT pages — only subject-level requirements (Math 4, Phys Sci 4, English 4) given; APS of 20 for Civil/Surveying sourced from department page",
+      "Second-semester programmes (Engineering, Analytical Chemistry) close 31 May 2026 via CAO — not reflected as a separate healthSciencesCloses field",
+      "Enrolment figure of 13,072 sourced from MUT homepage live count; may fluctuate"
+    ]
   }
 }

@@ -3,15 +3,15 @@
   "name": "University of KwaZulu-Natal",
   "type": "Comprehensive University",
   "established": 2004,
-  "students": 47000,
+  "students": 44628,
   "aps": "26–42+",
   "location": {
     "city": "Durban",
     "province": "KwaZulu-Natal"
   },
   "website": "https://www.ukzn.ac.za",
-  "apply": "https://applications.ukzn.ac.za/",
-  "prospectus": "https://applications.ukzn.ac.za/applications/online-applications/",
+  "apply": "https://www.cao.ac.za",
+  "prospectus": "https://applications.ukzn.ac.za/prospectus/undergraduate/latest",
   "logo": "ukzn.png",
   "description": "Spread across five campuses in KwaZulu-Natal with strong health sciences, law and humanities programmes. A merger of the former University of Natal and University of Durban-Westville in 2004.",
   "faculties": [
@@ -36,5 +36,6 @@
   "_verified": {
     "date": "2026-06-21",
     "method": "official-site-research"
-  }
+  },
+  "apsSystem": "APS /48 (six NSC subjects, Life Orientation excluded)"
 }
