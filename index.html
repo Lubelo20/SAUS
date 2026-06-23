@@ -19,6 +19,14 @@
 <div id="topbar">
   <div class="topbar-inner">
     <div class="topbar-left">
+      <div class="topbar-flag">
+        <div class="flag-seg" style="background:#009A44"></div>
+        <div class="flag-seg" style="background:#FFB612"></div>
+        <div class="flag-seg" style="background:#003580"></div>
+        <div class="flag-seg" style="background:#DE3831"></div>
+        <div class="flag-seg" style="background:#FFFFFF"></div>
+        <div class="flag-seg" style="background:#000000"></div>
+      </div>
       <span>Republic of South Africa</span>
       <span class="sep"></span>
       <span>Official National Student Representative Body</span>
@@ -38,63 +46,54 @@
   </div>
 </div>
 
-<!-- ══════ OFFICIAL HEADER ══════ -->
 <div id="header" role="banner">
   <div class="header-inner">
-    <a class="header-seal" onclick="showPage('home')" style="cursor:pointer;text-decoration:none" title="SAUS Official Seal">
+    <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
       <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
     </a>
-    <div class="header-ident" onclick="showPage('home')" style="cursor:pointer">
+    <a href="/" class="header-ident" style="text-decoration:none">
       <div class="header-ident-main">South African <em>Union of Students</em></div>
       <div class="header-ident-sub">SAUS — Official National Representative Body in Higher Education</div>
-    </div>
+    </a>
     <div class="header-divider"></div>
-    <div class="header-established">
-      <span>Established</span>
-      <strong>2006</strong>
-      <span>9th Congress</span>
-    </div>
+    <div class="header-established"><span>Established</span><strong>2006</strong><span>9th Congress</span></div>
     <div class="header-right">
-      <span class="header-salogo" style="display:block;width:56px;height:56px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
-      <button class="header-contact-btn" onclick="showPage('contact')">Contact SAUS</button>
-      <button class="hamburger" onclick="toggleMenu()" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mnav">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
+      <span class="header-salogo"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+      <a href="/contact/" class="header-contact-btn">Contact SAUS</a>
+      <button class="hamburger" onclick="toggleMenu()" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mnav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </div>
 </div>
 
-<!-- ══════ NAVIGATION ══════ -->
 <nav id="navbar">
   <div class="nav-inner">
     <div class="nav-links">
-      <button class="nav-item active" onclick="showPage('home')">Home</button>
-      <button class="nav-item" onclick="showPage('about')">About SAUS</button>
-      <button class="nav-item" onclick="showPage('campaigns')">Campaigns</button>
-      <button class="nav-item" onclick="showPage('leadership')">Leadership</button>
-      <button class="nav-item" onclick="showPage('news')">Newsroom</button>
-      <button class="nav-item" onclick="showPage('events')">Events</button>
-      <button class="nav-item" onclick="showPage('gallery')">Gallery</button>
-      <a href="/nsfas/" class="nav-item">NSFAS</a>
-      <a href="/apply/" class="nav-item">Universities</a>
-      <button class="nav-item" onclick="showPage('contact')">Contact</button>
+      <a href="/" class="nav-item active" data-page="home">Home</a>
+      <a href="/about/" class="nav-item" data-page="about">About SAUS</a>
+      <a href="/campaigns/" class="nav-item" data-page="campaigns">Campaigns</a>
+      <a href="/leadership/" class="nav-item" data-page="leadership">Leadership</a>
+      <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
+      <a href="/events/" class="nav-item" data-page="events">Events</a>
+      <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
+      <a href="/nsfas/" class="nav-item" data-page="nsfas">NSFAS</a>
+      <a href="/apply/" class="nav-item" data-page="apply">Universities</a>
+      <a href="/contact/" class="nav-item" data-page="contact">Contact</a>
     </div>
     <span class="nav-ref">REF: SAUS/GOV/2026</span>
   </div>
 </nav>
 
-<!-- Mobile Nav -->
 <div class="mobile-nav" id="mnav">
-  <button class="mobile-nav-item active" onclick="showPage('home');closeMobile()">Home</button>
-  <button class="mobile-nav-item" onclick="showPage('about');closeMobile()">About SAUS</button>
-  <button class="mobile-nav-item" onclick="showPage('campaigns');closeMobile()">Campaigns</button>
-  <button class="mobile-nav-item" onclick="showPage('leadership');closeMobile()">Leadership</button>
-  <button class="mobile-nav-item" onclick="showPage('news');closeMobile()">Newsroom</button>
-  <button class="mobile-nav-item" onclick="showPage('events');closeMobile()">Events</button>
-  <button class="mobile-nav-item" onclick="showPage('gallery');closeMobile()">Gallery</button>
-  <a href="/nsfas/" class="mobile-nav-item">NSFAS Guide</a>
-  <a href="/apply/" class="mobile-nav-item">Universities</a>
-  <button class="mobile-nav-item" onclick="showPage('contact');closeMobile()">Contact</button>
+  <a href="/" class="mobile-nav-item active" data-page="home" onclick="closeMobile()">Home</a>
+  <a href="/about/" class="mobile-nav-item" data-page="about" onclick="closeMobile()">About SAUS</a>
+  <a href="/campaigns/" class="mobile-nav-item" data-page="campaigns" onclick="closeMobile()">Campaigns</a>
+  <a href="/leadership/" class="mobile-nav-item" data-page="leadership" onclick="closeMobile()">Leadership</a>
+  <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
+  <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
+  <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>
+  <a href="/nsfas/" class="mobile-nav-item" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
+  <a href="/apply/" class="mobile-nav-item" data-page="apply" onclick="closeMobile()">Universities</a>
+  <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
 </div>
 <span id="main" tabindex="-1"></span>
 

@@ -11,17 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/assets/saus.css">
 <style>
-/* ── Header overrides (values differ from saus.css) ── */
-.header-seal{background:var(--white);}
-.header-contact-btn{text-decoration:none;cursor:pointer;font-family:var(--ff-sans);}
-.header-contact-btn:hover{text-decoration:none}
-.header-salogo{display:block;width:56px;height:56px;overflow:hidden;border-radius:2px;flex-shrink:0;}
-
-/* ── Nav overrides (padding/font-size differ from saus.css) ── */
-.nav-item{padding:0 13px;font-size:13px;text-decoration:none;}
-.nav-item:hover{text-decoration:none}
-.mobile-nav-item{text-decoration:none;display:block;}
-.mobile-nav-item:hover,.mobile-nav-item.active{text-decoration:none;}
+/* Header & nav are styled entirely by the shared /assets/saus.css canonical header —
+   page-specific overrides removed so this page's menu matches every other page. */
 
 /* ── Main (saus.css uses .page system, not main) ── */
 main{min-height:100vh;padding-top:var(--total-top)}
@@ -258,7 +249,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
       <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
       <a href="/events/" class="nav-item" data-page="events">Events</a>
       <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
-      <a href="/nsfas/" class="nav-item" data-page="nsfas">NSFAS</a>
+      <a href="/nsfas/" class="nav-item active" data-page="nsfas">NSFAS</a>
       <a href="/apply/" class="nav-item" data-page="apply">Universities</a>
       <a href="/contact/" class="nav-item" data-page="contact">Contact</a>
     </div>
@@ -274,7 +265,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
   <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
   <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>
-  <a href="/nsfas/" class="mobile-nav-item" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
+  <a href="/nsfas/" class="mobile-nav-item active" data-page="nsfas" onclick="closeMobile()">NSFAS Guide</a>
   <a href="/apply/" class="mobile-nav-item" data-page="apply" onclick="closeMobile()">Universities</a>
   <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
 </div>

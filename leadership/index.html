@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#0A1628"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/saus.css"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
@@ -179,10 +180,10 @@ main{min-height:100vh;padding-top:var(--total-top)}
   .grid-4{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  :root{--header-h:72px;--total-top:calc(var(--topbar-h) + 72px + var(--nav-h))}
+  :root{--header-h:84px;--total-top:calc(var(--topbar-h) + 84px + var(--nav-h))}
   .wrap{padding:0 20px}
   .header-established,.header-divider{display:none}
-  .header-ident-main{font-size:17px}
+  .header-ident-main{font-size:18px}
   .grid-4{grid-template-columns:1fr 1fr}
   .footer-cols{grid-template-columns:1fr}
   .official-hero{padding:48px 20px}
@@ -224,7 +225,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
   </div>
 </div>
 
-<div id="header">
+<div id="header" role="banner">
   <div class="header-inner">
     <a href="/" class="header-seal" title="SAUS Official Seal" style="text-decoration:none">
       <img src="/home/LOGOS/sauslogo.jpeg" alt="SAUS Logo" style="width:100%;height:100%;object-fit:cover;display:block;">
@@ -236,8 +237,9 @@ main{min-height:100vh;padding-top:var(--total-top)}
     <div class="header-divider"></div>
     <div class="header-established"><span>Established</span><strong>2006</strong><span>9th Congress</span></div>
     <div class="header-right">
-      <div class="header-contact-btn" style="background:transparent;border:none;padding:4px 8px;cursor:default;"><span style="display:block;width:60px;height:40px;overflow:hidden;border-radius:2px;flex-shrink:0;"><img src="/home/LOGOS/SALOGO.png" alt="South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span></div>
-      <button class="hamburger" onclick="toggleMenu()" id="ham"><span></span><span></span><span></span></button>
+      <span class="header-salogo"><img src="/home/LOGOS/SALOGO.png" alt="Republic of South Africa" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+      <a href="/contact/" class="header-contact-btn">Contact SAUS</a>
+      <button class="hamburger" onclick="toggleMenu()" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mnav"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
     </div>
   </div>
 </div>
@@ -248,7 +250,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
       <a href="/" class="nav-item" data-page="home">Home</a>
       <a href="/about/" class="nav-item" data-page="about">About SAUS</a>
       <a href="/campaigns/" class="nav-item" data-page="campaigns">Campaigns</a>
-      <a href="/leadership/" class="nav-item" data-page="leadership">Leadership</a>
+      <a href="/leadership/" class="nav-item active" data-page="leadership">Leadership</a>
       <a href="/news/" class="nav-item" data-page="news">Newsroom</a>
       <a href="/events/" class="nav-item" data-page="events">Events</a>
       <a href="/gallery/" class="nav-item" data-page="gallery">Gallery</a>
@@ -264,7 +266,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
   <a href="/" class="mobile-nav-item" data-page="home" onclick="closeMobile()">Home</a>
   <a href="/about/" class="mobile-nav-item" data-page="about" onclick="closeMobile()">About SAUS</a>
   <a href="/campaigns/" class="mobile-nav-item" data-page="campaigns" onclick="closeMobile()">Campaigns</a>
-  <a href="/leadership/" class="mobile-nav-item" data-page="leadership" onclick="closeMobile()">Leadership</a>
+  <a href="/leadership/" class="mobile-nav-item active" data-page="leadership" onclick="closeMobile()">Leadership</a>
   <a href="/news/" class="mobile-nav-item" data-page="news" onclick="closeMobile()">Newsroom</a>
   <a href="/events/" class="mobile-nav-item" data-page="events" onclick="closeMobile()">Events</a>
   <a href="/gallery/" class="mobile-nav-item" data-page="gallery" onclick="closeMobile()">Gallery</a>

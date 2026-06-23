@@ -2,7 +2,26 @@
    ROOT & RESET
 ═══════════════════════════════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
+html{scroll-behavior:smooth;font-size:16px;scrollbar-gutter:stable}
+
+/* ═══════════════════════════════════════
+   CROSS-PAGE NAVIGATION — keep the header stack fixed in one position
+   when navigating between the separate page documents (no reload "jump").
+   Progressive enhancement: ignored by browsers without View Transitions.
+═══════════════════════════════════════ */
+@view-transition{navigation:auto}
+/* The three header tiers persist across navigations (same name on every page),
+   so they morph in place (identical geometry → no visible movement) while the
+   page body cross-fades underneath. */
+#topbar{view-transition-name:saus-topbar}
+#header{view-transition-name:saus-header}
+#navbar{view-transition-name:saus-navbar}
+::view-transition-group(saus-topbar),
+::view-transition-group(saus-header),
+::view-transition-group(saus-navbar){animation-duration:.01ms}
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+}
 /* ── Accessibility: visible keyboard focus, skip link, screen-reader-only ── */
 :focus-visible{outline:2px solid var(--gold-lt);outline-offset:2px;border-radius:2px}
 a.skip-link{position:absolute;left:8px;top:-52px;z-index:2000;background:var(--navy);color:var(--white);
@@ -178,6 +197,8 @@ p:last-child{margin-bottom:0}
   color:var(--navy);letter-spacing:.02em;font-weight:600;
 }
 .header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.header-salogo{display:block;width:56px;height:56px;overflow:hidden;border-radius:2px;flex-shrink:0}
+.header-salogo img{width:100%;height:100%;object-fit:cover;display:block}
 .header-contact-btn{
   display:flex;align-items:center;gap:8px;
   padding:9px 20px;border-radius:3px;
