@@ -1320,7 +1320,7 @@
 /* ══════════════════════════════════════════════
    HERO OVERRIDES
 ══════════════════════════════════════════════ */
-.portal-hero{margin-top:calc(var(--total-top) + 24px);min-height:0;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;padding:0 0 64px;border-radius:14px 14px 0 0;}
+.portal-hero{background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;padding:48px 0 64px;min-height:460px;}
 .hero-bg-mesh{position:absolute;inset:0;pointer-events:none;}
 .mesh-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.18;}
 .mesh-orb-1{width:600px;height:600px;background:radial-gradient(circle,#1E3160,transparent);top:-20%;left:-10%;animation:mesh-pulse 8s ease-in-out infinite;}
@@ -1824,7 +1824,17 @@
   <a href="/contact/" class="mobile-nav-item" data-page="contact" onclick="closeMobile()">Contact</a>
 </div>
 
-<main id="main" tabindex="-1">
+<main id="main" tabindex="-1" style="padding-top:var(--total-top)">
+
+<!-- ══════════════════════════════════════════════
+     BREADCRUMB
+══════════════════════════════════════════════ -->
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span class="sep">›</span>
+    <span class="current">University Portal</span>
+  </div>
+</div>
 
 <!-- ══════════════════════════════════════════════
      HERO
