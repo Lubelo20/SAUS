@@ -71,7 +71,7 @@ a.skip-link:focus{top:8px}
 body{
   font-family:var(--ff-sans);
   background:var(--cream);
-  color:var(--ink,#1A1A1A);
+  color:var(--text);
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
@@ -1239,11 +1239,12 @@ textarea.form-control{resize:vertical;min-height:110px}
   background-position:center;background-size:cover;padding:var(--space-16) 0}
 .hero-photo::before{content:'';position:absolute;inset:0;
   background:linear-gradient(90deg,rgba(10,22,40,.92) 0%,rgba(10,22,40,.72) 45%,rgba(10,22,40,.25) 100%)}
-.hero-photo .wrap,.hero-photo .hero-inner{position:relative;width:100%;text-align:left}
+.hero-photo .wrap,.hero-photo .hero-inner{position:relative;width:100%;text-align:left;padding-left:32px;padding-right:32px}
 .hero-photo h1{color:#fff;margin:var(--space-3) 0 var(--space-4);max-width:18ch}
 .hero-photo .hero-lead{color:rgba(255,255,255,.85);max-width:52ch;margin-bottom:var(--space-6);font-size:clamp(15px,1.5vw,18px)}
 .hero-photo .kicker{color:var(--gold-lt)}
 @media (max-width:640px){
   .hero-photo::before{background:linear-gradient(180deg,rgba(10,22,40,.85),rgba(10,22,40,.92))}
   .hero-photo h1{max-width:100%}
+  .hero-photo .wrap,.hero-photo .hero-inner{padding-left:20px;padding-right:20px}
 }
