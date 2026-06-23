@@ -237,6 +237,10 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
   height:var(--nav-h);
   background:var(--navy-mid);
   border-bottom:3px solid var(--green);
+  /* Separate the fixed header stack from the content/hero below:
+     a soft drop shadow (reads on light pages) + a 1px light hairline just
+     under the green border (reads on dark heroes, where a shadow alone blends). */
+  box-shadow:0 1px 0 rgba(255,255,255,.10), 0 10px 24px rgba(10,22,40,.32);
 }
 .nav-inner{
   max-width:var(--max);margin:0 auto;
