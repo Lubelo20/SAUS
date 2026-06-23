@@ -52,7 +52,9 @@ export default function LoginPage() {
 
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center text-gold font-bold text-sm">S</div>
+            <div className="w-10 h-10 rounded-full border-2 border-gold overflow-hidden bg-white">
+              <img src="/saus-logo.jpeg" alt="SAUS logo" className="w-full h-full object-cover" />
+            </div>
             <div>
               <div className="text-white font-bold text-sm tracking-wide">SAUS CMS</div>
               <div className="text-white/40 text-xs font-mono tracking-widest uppercase">Admin Portal</div>
@@ -97,7 +99,9 @@ export default function LoginPage() {
         <div className="w-full max-w-md animate-fade-in">
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-3 mb-8 justify-center">
-            <div className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center text-gold font-bold">S</div>
+            <div className="w-10 h-10 rounded-full border-2 border-gold overflow-hidden bg-white">
+              <img src="/saus-logo.jpeg" alt="SAUS logo" className="w-full h-full object-cover" />
+            </div>
             <div className="text-white font-bold text-lg">SAUS CMS</div>
           </div>
 

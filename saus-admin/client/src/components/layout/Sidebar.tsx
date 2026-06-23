@@ -90,7 +90,9 @@ export default function Sidebar({ onClose }: Props) {
       {/* ── Logo ── */}
       <div className="flex items-center justify-between px-4 py-4 border-b border-white/8">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full border-2 border-gold flex items-center justify-center text-gold font-bold text-sm flex-shrink-0">S</div>
+          <div className="w-9 h-9 rounded-full border-2 border-gold overflow-hidden flex-shrink-0 bg-white">
+            <img src="/saus-logo.jpeg" alt="SAUS logo" className="w-full h-full object-cover" />
+          </div>
           <div>
             <div className="font-serif font-bold text-base leading-tight">SAUS CMS</div>
             <div className="text-white/35 text-[10px] font-mono tracking-widest uppercase">Admin Portal</div>
