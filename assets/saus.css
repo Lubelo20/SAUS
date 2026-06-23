@@ -1239,7 +1239,7 @@ textarea.form-control{resize:vertical;min-height:110px}
   background-position:center;background-size:cover;padding:var(--space-16) 0}
 .hero-photo::before{content:'';position:absolute;inset:0;
   background:linear-gradient(90deg,rgba(10,22,40,.92) 0%,rgba(10,22,40,.72) 45%,rgba(10,22,40,.25) 100%)}
-.hero-photo .wrap,.hero-photo .hero-inner{position:relative}
+.hero-photo .wrap,.hero-photo .hero-inner{position:relative;width:100%;text-align:left}
 .hero-photo h1{color:#fff;margin:var(--space-3) 0 var(--space-4);max-width:18ch}
 .hero-photo .hero-lead{color:rgba(255,255,255,.85);max-width:52ch;margin-bottom:var(--space-6);font-size:clamp(15px,1.5vw,18px)}
 .hero-photo .kicker{color:var(--gold-lt)}
