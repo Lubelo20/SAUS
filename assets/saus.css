@@ -322,7 +322,7 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
    LAYOUT
 ═══════════════════════════════════════ */
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
-.section{padding:72px 0}
+.section{padding:var(--section-y) 0}
 .section-lg{padding:96px 0}
 .section-sm{padding:48px 0}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
