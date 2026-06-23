@@ -410,29 +410,28 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
 ═══════════════════════════════════════ */
 .btn{
   display:inline-flex;align-items:center;gap:8px;
-  padding:12px 28px;border-radius:3px;
-  font-size:14px;font-weight:600;cursor:pointer;border:none;
-  font-family:var(--ff-sans);letter-spacing:.03em;
-  transition:all .2s var(--ease);text-decoration:none;
+  padding:12px 22px;border-radius:6px;
+  font:600 14px/1 var(--ff-sans);cursor:pointer;border:0;
+  transition:transform .15s,background .2s,box-shadow .2s;text-decoration:none;
 }
-.btn:hover{text-decoration:none}
+.btn:hover{transform:translateY(-1px);text-decoration:none}
 .btn-navy{background:var(--navy);color:var(--white)}
 .btn-navy:hover{background:var(--navy-light);box-shadow:0 4px 16px rgba(10,22,40,.25)}
 .btn-green{background:var(--green);color:var(--white)}
 .btn-green:hover{background:var(--green-lt);box-shadow:0 4px 16px rgba(0,105,47,.3)}
 .btn-gold{background:var(--gold);color:var(--navy)}
 .btn-gold:hover{background:var(--gold-lt)}
-.btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35)}
+.btn-outline{background:transparent;border:1.5px solid var(--navy);color:var(--navy)}
+.btn-outline:hover{background:var(--stone)}
+.btn-outline-white{background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#fff}
 .btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,.07)}
-.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border-dk)}
-.btn-outline:hover{border-color:var(--navy);background:var(--stone)}
-.btn-sm{padding:8px 20px;font-size:13px}
-.btn-lg{padding:15px 36px;font-size:15px}
+.btn-sm{padding:8px 16px;font-size:13px}
+.btn-lg{padding:15px 28px;font-size:15px}
 
 /* ═══════════════════════════════════════
    OFFICIAL SECTION HEADER
 ═══════════════════════════════════════ */
-.sec-header{margin-bottom:48px}
+.sec-header{margin-bottom:var(--space-8)}
 .sec-header .ref{
   font-family:var(--ff-mono);font-size:11px;
   color:var(--text-lt);letter-spacing:.15em;
@@ -442,11 +441,15 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
 .sec-header .ref::before{
   content:'';display:block;width:24px;height:2px;background:var(--green);
 }
+/* .kicker — gold eyebrow label used above section h2 */
+.sec-header .kicker,.kicker{display:inline-flex;align-items:center;gap:8px;font:600 11px/1 var(--ff-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:'';width:24px;height:2px;background:var(--gold)}
 .sec-header h2{
   font-family:var(--ff-serif);
   font-size:clamp(28px,4vw,42px);
   font-weight:700;line-height:1.2;
   color:var(--navy);
+  margin-top:var(--space-3);
 }
 .sec-header h2 em{font-style:italic;color:var(--green)}
 .sec-header .lead{
@@ -503,16 +506,17 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
   position:relative;
 }
 .stat-cell:last-child{border-right:none}
-.stat-num{
-  font-family:var(--ff-serif);
-  font-size:clamp(36px,5vw,52px);
+.stat-num,.stat b,.stat .num{
+  display:block;font-family:var(--ff-serif);
+  font-size:clamp(28px,3vw,36px);
   font-weight:700;line-height:1;
   color:var(--navy);
   margin-bottom:6px;
 }
-.stat-label{
-  font-size:13px;color:var(--text-lt);
-  font-weight:500;line-height:1.4;
+.stat-label,.stat span,.stat .label{
+  font:600 10px/1 var(--ff-sans);
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-mid,#5A5A5A);
 }
 .stat-cell::before{
   content:'';position:absolute;
@@ -1218,13 +1222,12 @@ textarea.form-control{resize:vertical;min-height:110px}
 ═══════════════════════════════════════ */
 /* Card hover-lift (transition is already set in each base rule above). */
 .panel:hover,.info-card:hover,.pillar:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(10,22,40,.13)}
-/* Primary buttons get a small, confident lift. */
-.btn-navy:hover,.btn-green:hover,.btn-gold:hover{transform:translateY(-1px)}
+/* Primary buttons: extra shadow on gold. Lift handled by .btn:hover above. */
 .btn-gold:hover{box-shadow:0 6px 18px rgba(201,162,39,.28)}
 /* Respect prefers-reduced-motion: neutralise transforms/animations entirely. */
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
   .panel,.info-card,.pillar{transition:none}
   .panel:hover,.info-card:hover,.pillar:hover{transform:none}
-  .btn-navy:hover,.btn-green:hover,.btn-gold:hover{transform:none}
+  .btn:hover{transform:none}
 }
