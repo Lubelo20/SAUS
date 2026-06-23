@@ -605,7 +605,9 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
   transition:transform .18s var(--ease),box-shadow .18s var(--ease);
 }
 .info-card-accent{
-  position:absolute;top:0;left:0;right:0;height:3px;
+  /* Hidden for the Airy & Soft direction — cards rely on the icon chip,
+     not a coloured top strip, to match the rest of the card system. */
+  display:none;
 }
 .info-card-accent.green{background:var(--green)}
 .info-card-accent.navy{background:var(--navy)}
