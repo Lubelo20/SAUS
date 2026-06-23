@@ -285,6 +285,90 @@ main{min-height:100vh;padding-top:var(--total-top)}
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════════
+       VIDEO COVERAGE
+  ══════════════════════════════════════════════ -->
+  <style>
+    .video-section .vid-featured{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:28px}
+    .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .video-card{background:#fff;border-radius:14px;box-shadow:0 8px 28px rgba(10,22,40,.09);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+    .video-card:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(10,22,40,.13)}
+    .video-card .vid-wrap{aspect-ratio:16/9;background:var(--navy)}
+    .video-card video{width:100%;height:100%;object-fit:contain;display:block;background:var(--navy)}
+    .video-card .vid-body{padding:15px 18px 18px}
+    .video-card .vid-tag{font:600 9.5px/1 var(--ff-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:7px;display:block}
+    .vid-featured .vid-tag{color:var(--gold)}
+    .video-card .vid-cap{font:400 13.5px/1.55 var(--ff-sans);color:var(--text);margin:0}
+    @media(max-width:900px){.video-grid{grid-template-columns:1fr 1fr}.video-section .vid-featured{grid-template-columns:1fr}}
+    @media(max-width:560px){.video-grid{grid-template-columns:1fr}}
+    @media (prefers-reduced-motion:reduce){.video-card{transition:none}.video-card:hover{transform:none}}
+  </style>
+  <section class="section video-section" style="background:var(--cream)">
+    <div class="wrap">
+      <div class="sec-header"><div class="ref">SAUS/MEDIA/VIDEO — Featured Coverage</div><h2>SAUS in the <em>Media</em></h2></div>
+      <div class="vid-featured">
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/295F7AC4-AA46-4A97-B139-ABB917ED517C.jpg"><source src="/news/NEWSVideos/295F7AC4-AA46-4A97-B139-ABB917ED517C.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Parliament</span><p class="vid-cap">SAUS addresses Parliament's Portfolio Committee on Higher Education on student funding and the future of NSFAS.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/D223EA1D-5429-4EDF-B34E-0BBC4186D8ED.jpg"><source src="/news/NEWSVideos/D223EA1D-5429-4EDF-B34E-0BBC4186D8ED.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Parliament</span><p class="vid-cap">SAUS makes submissions in Parliament on the challenges facing students and NSFAS.</p></div>
+        </article>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/232E84BE-EE7D-4F1D-BB46-4A600005CC22.jpg"><source src="/news/NEWSVideos/232E84BE-EE7D-4F1D-BB46-4A600005CC22.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Newzroom Afrika</span><p class="vid-cap">SAUS on NSFAS funding and student support.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/2FE04D3C-80B3-4193-9C18-BF0394C43AEF.jpg"><source src="/news/NEWSVideos/2FE04D3C-80B3-4193-9C18-BF0394C43AEF.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Newzroom Afrika</span><p class="vid-cap">SAUS on NSFAS stability, leadership and accountability.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/810BDAC3-1228-4A71-9F2B-F92C4AEB363F.jpg"><source src="/news/NEWSVideos/810BDAC3-1228-4A71-9F2B-F92C4AEB363F.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Newzroom Afrika</span><p class="vid-cap">SAUS spokesperson on the NSFAS funding crisis.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/F6E70F20-4DAE-456C-9F1C-C522D6461709.jpg"><source src="/news/NEWSVideos/F6E70F20-4DAE-456C-9F1C-C522D6461709.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Newzroom Afrika</span><p class="vid-cap">SAUS on students' expectations for higher education.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/CD7CEB5C-DB8D-47A5-8717-088BAE7E0298.jpg"><source src="/news/NEWSVideos/CD7CEB5C-DB8D-47A5-8717-088BAE7E0298.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">TV Interview</span><p class="vid-cap">SAUS on student funding and accountability in higher education.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/02372D65-BE6C-43BA-8BC3-07687545A036.jpg"><source src="/news/NEWSVideos/02372D65-BE6C-43BA-8BC3-07687545A036.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">TV Interview</span><p class="vid-cap">SAUS on student rights and access to higher education.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/A783CB5F-C1FA-4A59-91AC-C67ACE10DEE1.jpg"><source src="/news/NEWSVideos/A783CB5F-C1FA-4A59-91AC-C67ACE10DEE1.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Interview</span><p class="vid-cap">SAUS spokesperson on the NSFAS funding crisis affecting students.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/D0BD8A7A-6C29-4807-80F9-D921C690E24A.jpg"><source src="/news/NEWSVideos/D0BD8A7A-6C29-4807-80F9-D921C690E24A.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Interview</span><p class="vid-cap">SAUS spokesperson on the future of NSFAS.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/A79AD921-3536-4AA2-86DF-CE3C66A969BD.jpg"><source src="/news/NEWSVideos/A79AD921-3536-4AA2-86DF-CE3C66A969BD.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Radio</span><p class="vid-cap">UNISA Radio interview with a SAUS NEC member on key student issues.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/81320CE7-8DC6-4B7C-B99D-65F8AEDD923F.jpg"><source src="/news/NEWSVideos/81320CE7-8DC6-4B7C-B99D-65F8AEDD923F.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Radio</span><p class="vid-cap">SAUS radio interview on student funding and campus issues.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/BA154FB6-ABA7-41E9-9CBF-DD8FDB04ED82.jpg"><source src="/news/NEWSVideos/BA154FB6-ABA7-41E9-9CBF-DD8FDB04ED82.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">Media Briefing</span><p class="vid-cap">SAUS at an NSFAS media briefing on student funding.</p></div>
+        </article>
+        <article class="video-card">
+          <div class="vid-wrap"><video controls preload="none" playsinline poster="/news/NEWSVideos/posters/BB56F528-FACE-45E7-BBC4-B78686E1E29E.jpg"><source src="/news/NEWSVideos/BB56F528-FACE-45E7-BBC4-B78686E1E29E.MP4" type="video/mp4">Your browser does not support embedded video.</video></div>
+          <div class="vid-body"><span class="vid-tag">News Coverage</span><p class="vid-cap">SAUS featured in national news coverage on higher education.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="section" style="background:var(--white)">
     <div class="wrap">
       <div class="with-sidebar">
