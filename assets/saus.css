@@ -125,6 +125,8 @@ h3{font-size:clamp(17px,1.6vw,19px);font-weight:600}
   display:inline-flex;gap:2px;align-items:center;margin-right:14px;
 }
 .flag-seg{width:18px;height:12px;border-radius:1px}
+/* Correct South African flag (image) in the utility bar */
+.topbar-flag img{width:24px;height:16px;object-fit:cover;border-radius:1px;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 .topbar-right{
   display:flex;align-items:center;gap:20px;
 }
