@@ -1115,12 +1115,17 @@ textarea.form-control{resize:vertical;min-height:110px}
 }
 .logos-track:hover{animation-play-state:paused}
 .logos-track img{
-  height:36px;width:auto;max-width:100px;
-  opacity:.55;filter:grayscale(100%);
+  height:42px;width:auto;max-width:120px;
+  opacity:.85;filter:grayscale(70%);
   transition:opacity .25s,filter .25s;
   flex-shrink:0;object-fit:contain;display:block;
 }
 .logos-track img:hover{opacity:1;filter:none}
+/* Reduced-motion: don't freeze the marquee mid-scroll (which hides most logos) —
+   stop animating and let the logos wrap into a centred, fully-visible row. */
+@media(prefers-reduced-motion:reduce){
+  .logos-track{animation:none;flex-wrap:wrap;justify-content:center;width:100%;gap:20px 34px}
+}
 @keyframes scroll-logos{
   0%{transform:translateX(0)}
   100%{transform:translateX(-50%)}
