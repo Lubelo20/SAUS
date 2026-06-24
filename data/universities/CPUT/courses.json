@@ -1,344 +1,110 @@
 [
   {
-    "name": "Diploma in Biological Sciences",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Chemistry",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Computer Science",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Environmental Science",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Geology",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Mathematics & Statistics",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Physics",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied Sciences",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Accounting",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Business Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Economics",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Financial Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Human Resource Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Information Systems",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Marketing Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Business & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Education (Foundation Phase)",
-    "qual": "BEd",
+    "name": "Bachelor of Engineering Technology in Electrical Engineering",
+    "qual": "BEngTech",
     "type": "Degree",
-    "faculty": "Education",
-    "aps": 18,
+    "faculty": "Engineering and the Built Environment",
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "desc": "Accredited Engineering and the Built Environment qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Intermediate Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 18,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "name": "Diploma in Engineering Technology in Electrical Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and the Built Environment",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering and the Built Environment qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Senior & FET Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "name": "Diploma in Mechanical Engineering (Extended Curriculum)",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and the Built Environment",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering and the Built Environment qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Architectural Studies",
-    "qual": "BAS",
+    "name": "Diploma in Architectural Technology",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and the Built Environment",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering and the Built Environment qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Environmental Health",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Engineering",
+    "faculty": "Applied Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Marine Science",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Mathematical Sciences",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Agricultural Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
+    "aps": 26,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Biotechnology (ECP)",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
+    "aps": 26,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Consumer Science: Food and Nutrition (ECP)",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Diploma in Horticulture (ECP)",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied Sciences",
     "aps": 25,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Construction / Quantity Surveying",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Engineering",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Diploma in Engineering (Chemical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Civil)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Electrical & Electronic)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Industrial)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Mechanical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Applied Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Bachelor of Nursing",
-    "qual": "BNurs",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
-  },
-  {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Dietetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Occupational Therapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Physiotherapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health & Wellness Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Architecture",
-    "qual": "BArch",
-    "type": "Degree",
-    "faculty": "Informatics & Design",
-    "aps": 25,
+    "faculty": "Health and Wellness Sciences",
+    "aps": 28,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Arts in Fashion Design",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Informatics & Design",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Fine Arts",
-    "qual": "BAFA",
-    "type": "Degree",
-    "faculty": "Informatics & Design",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Arts in Graphic Design",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Informatics & Design",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Diploma in Data Science",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Informatics & Design",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Information Technology",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Informatics & Design",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Health and Wellness Sciences qualification (2027 undergraduate intake)."
   }
 ]

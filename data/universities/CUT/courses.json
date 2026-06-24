@@ -1,272 +1,380 @@
 [
   {
-    "name": "Bachelor of Architectural Studies",
-    "qual": "BAS",
+    "name": "Information Technology",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Information Technology",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "1 Year",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Computer Networking",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Construction",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "1 Year",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Renewable Energy Technologies",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Engineering & IT",
-    "aps": 24,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Construction / Quantity Surveying",
-    "qual": "BSc",
+    "name": "Construction Management",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Engineering & IT",
-    "aps": 24,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Data Science",
-    "qual": "Dip",
+    "name": "Health and Safety Management",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 24,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Engineering (Chemical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Civil)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Electrical & Electronic)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Industrial)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Mechanical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Information Technology",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & IT",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
+    "name": "Health and Safety Management",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 21,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Civil Engineering",
+    "qual": "Bachelor",
+    "type": "Degree",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
     "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
+    "name": "Quantity Surveying",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 21,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 28,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Nursing",
-    "qual": "BNurs",
-    "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 21,
+    "name": "Hydrology and Water Resources Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Electrical Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
     "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
+    "name": "Electrical Engineering",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 24,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
     "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Dietetics",
-    "qual": "BSc",
+    "name": "Mechanical Engineering",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Mechanical Engineering",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 24,
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 32,
     "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Occupational Therapy",
-    "qual": "BSc",
+    "name": "Mathematics for Engineering Technology",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 27,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Dental Assisting",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
+    "faculty": "Health and Environmental Sciences",
+    "aps": 27,
+    "duration": "1 Year",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Agricultural Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Health and Environmental Sciences",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Somatology",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Health and Environmental Sciences",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Health Sciences in Clinical Technology",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 24,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Health and Environmental Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Physiotherapy",
-    "qual": "BSc",
+    "name": "Health Science: Medical Laboratory Sciences",
+    "qual": "Bachelor",
     "type": "Degree",
-    "faculty": "Health & Environmental Sciences",
-    "aps": 24,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Health and Environmental Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts",
-    "qual": "BA",
+    "name": "Environmental Health",
+    "qual": "Bachelor",
+    "type": "Degree",
+    "faculty": "Health and Environmental Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Health and Environmental Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Design and Studio Art",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Humanities",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Language Practice and Media Studies",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Humanities",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Foundation Phase Teaching",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Languages & Literature",
-    "qual": "BA",
+    "name": "Computer Science Education (SP & FET)",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Political Science",
-    "qual": "BA",
+    "name": "Economic and Management Sciences Education (SP & FET)",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Psychology",
-    "qual": "BA",
+    "name": "Language Education (SP & FET)",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 21,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Social Science",
-    "qual": "BSocSci",
+    "name": "Mathematics Education (SP & FET)",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Social Work",
-    "qual": "BSW",
+    "name": "Natural Sciences Education (SP & FET)",
+    "qual": "BEd",
     "type": "Degree",
     "faculty": "Humanities",
-    "aps": 21,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Accounting",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Management Sciences",
-    "aps": 24,
+    "name": "Technology Education (SP & FET)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Humanities",
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Humanities qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Business Management",
-    "qual": "Dip",
-    "type": "Diploma",
+    "name": "Community Development Work",
+    "qual": "Higher Certificate",
+    "type": "Certificate",
     "faculty": "Management Sciences",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "aps": 27,
+    "duration": "1 Year",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Economics",
-    "qual": "Dip",
+    "name": "Human Resources Management",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 21,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Financial Management",
-    "qual": "Dip",
+    "name": "Management",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 21,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Human Resource Management",
-    "qual": "Dip",
+    "name": "Marketing",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Information Systems",
-    "qual": "Dip",
+    "name": "Office Management and Technology",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 21,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Management",
-    "qual": "Dip",
+    "name": "Public Management",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 18,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Marketing Management",
-    "qual": "Dip",
+    "name": "Hospitality Management",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 21,
+    "aps": 27,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Tourism Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Accountancy",
+    "qual": "Bachelor",
+    "type": "Degree",
+    "faculty": "Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Internal Auditing",
+    "qual": "Bachelor",
+    "type": "Degree",
+    "faculty": "Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Hospitality Management",
+    "qual": "Bachelor",
+    "type": "Degree",
+    "faculty": "Management Sciences",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   }
 ]

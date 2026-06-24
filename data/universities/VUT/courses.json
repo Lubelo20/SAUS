@@ -1,272 +1,344 @@
 [
   {
-    "name": "Diploma in Biological Sciences",
-    "qual": "Dip",
+    "name": "Information Technology",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 21,
+    "faculty": "Applied and Computer Sciences",
+    "aps": 26,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Chemistry",
-    "qual": "Dip",
+    "name": "Information Technology (Extended)",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Computer Science",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
+    "faculty": "Applied and Computer Sciences",
     "aps": 24,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Data Science",
-    "qual": "Dip",
+    "name": "Analytical Chemistry",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Biotechnology",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 23,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Agricultural Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Environmental Science",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 21,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Non-Destructive Testing",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 19,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Medical Laboratory Science",
+    "qual": "BHSc",
+    "type": "Degree",
+    "faculty": "Applied and Computer Sciences",
+    "aps": 27,
+    "duration": "3 Years",
+    "desc": "Accredited Applied and Computer Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Chemical Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
     "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Environmental Science",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Geology",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Information Technology",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Mathematics & Statistics",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Physics",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Applied & Computer Sciences",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Architectural Studies",
-    "qual": "BAS",
-    "type": "Degree",
-    "faculty": "Engineering & Technology",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Construction / Quantity Surveying",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Engineering & Technology",
-    "aps": 24,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Diploma in Engineering (Chemical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & Technology",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Civil)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & Technology",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Electrical & Electronic)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & Technology",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Industrial)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & Technology",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Diploma in Engineering (Mechanical)",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Engineering & Technology",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Arts",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Languages & Literature",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Political Science",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Psychology",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 21,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Social Science",
-    "qual": "BSocSci",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Social Work",
-    "qual": "BSW",
-    "type": "Degree",
-    "faculty": "Humanities",
-    "aps": 21,
     "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Accounting",
-    "qual": "Dip",
+    "name": "Civil Engineering",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Management Sciences",
+    "faculty": "Engineering and Technology",
     "aps": 24,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Business Management",
-    "qual": "Dip",
+    "name": "Industrial Engineering",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Management Sciences",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Mechanical Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Metallurgical Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Electronic Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Power Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Process Control Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Computer Systems Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 24,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Operations Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 23,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Operations Management (Extended)",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering and Technology",
+    "aps": 22,
+    "duration": "3 Years",
+    "desc": "Accredited Engineering and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Fashion, Photography, Graphic Design and Fine Art",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
     "aps": 21,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Economics",
-    "qual": "Dip",
+    "name": "Food Service Management",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Management Sciences",
+    "faculty": "Human Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Tourism Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Public Relations Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Ecotourism Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Legal Assistance",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
+    "aps": 23,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Labour Law",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
+    "aps": 23,
+    "duration": "3 Years",
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Safety Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Human Sciences",
     "aps": 21,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Financial Management",
-    "qual": "Dip",
+    "name": "Policing",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Management Sciences",
-    "aps": 21,
+    "faculty": "Human Sciences",
+    "aps": 20,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Human Resource Management",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Management Sciences",
-    "aps": 18,
+    "name": "Education (Senior Phase and FET Teaching)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Human Sciences",
+    "aps": 22,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Information Systems",
-    "qual": "Dip",
-    "type": "Diploma",
-    "faculty": "Management Sciences",
-    "aps": 21,
+    "name": "Communication Studies",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Human Sciences",
+    "aps": 20,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Human Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Management",
-    "qual": "Dip",
+    "name": "Financial Information Systems",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 18,
+    "aps": 20,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Diploma in Marketing Management",
-    "qual": "Dip",
+    "name": "Cost and Management Accounting",
+    "qual": "Diploma",
     "type": "Diploma",
     "faculty": "Management Sciences",
-    "aps": 21,
+    "aps": 20,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Internal Auditing",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Human Resources Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Logistics and Supply Chain Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Marketing",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Retail Business Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Sport Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management Sciences",
+    "aps": 20,
+    "duration": "3 Years",
+    "desc": "Accredited Management Sciences qualification (2027 undergraduate intake)."
   }
 ]

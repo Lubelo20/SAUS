@@ -1,326 +1,236 @@
 [
   {
-    "name": "Bachelor of Arts",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Languages & Literature",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Political Science",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Arts in Psychology",
-    "qual": "BA",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Social Science",
-    "qual": "BSocSci",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Social Work",
-    "qual": "BSW",
-    "type": "Degree",
-    "faculty": "Arts",
-    "aps": 27,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 27,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Nursing",
-    "qual": "BNurs",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 27,
-    "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
-  },
-  {
-    "name": "Bachelor of Pharmacy",
-    "qual": "BPharm",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 30,
-    "duration": "4 Years",
-    "desc": "Professional pharmacy degree registered with the SAPC."
-  },
-  {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 30,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Dietetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 30,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Occupational Therapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 30,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Physiotherapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Community & Health Sciences",
-    "aps": 30,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Dental Surgery",
+    "name": "Bachelor of Dental Surgery (BDS)",
     "qual": "BDS",
     "type": "Degree",
     "faculty": "Dentistry",
+    "aps": 40,
+    "duration": "3 Years",
+    "desc": "Accredited Dentistry qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Oral Health (BOH)",
+    "qual": "BOH",
+    "type": "Degree",
+    "faculty": "Dentistry",
+    "aps": 33,
+    "duration": "3 Years",
+    "desc": "Accredited Dentistry qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc Physiotherapy",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
+    "aps": 39,
+    "duration": "3 Years",
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc Occupational Therapy",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
+    "aps": 33,
+    "duration": "3 Years",
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc Dietetics and Nutrition",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
+    "aps": 33,
+    "duration": "3 Years",
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc Sport and Exercise Science",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
+    "aps": 33,
+    "duration": "3 Years",
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Nursing and Midwifery",
+    "qual": "BNurs",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Social Work",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Community and Health Sciences",
     "aps": 34,
-    "duration": "5 Years",
-    "desc": "Professional dentistry degree registered with the HPCSA."
-  },
-  {
-    "name": "Bachelor of Business Administration",
-    "qual": "BBA",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 22,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Accounting",
-    "qual": "BCom",
+    "name": "BA Sport, Recreation and Exercise Science",
+    "qual": "BA",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
+    "faculty": "Community and Health Sciences",
     "aps": 30,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Business Management",
-    "qual": "BCom",
+    "name": "Bachelor of Community Development",
+    "qual": "BA",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Economics",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Financial Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Human Resource Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Information Systems",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Marketing Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Education (Foundation Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Education (Intermediate Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Education (Senior & FET Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 27,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Arts in Law",
-    "qual": "BA Law",
-    "type": "Degree",
-    "faculty": "Law",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Commerce in Law",
-    "qual": "BCom Law",
-    "type": "Degree",
-    "faculty": "Law",
+    "faculty": "Community and Health Sciences",
     "aps": 30,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Community and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Laws",
+    "name": "BCom",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom Accounting",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom Financial Accounting",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom Information Systems",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BAdmin",
+    "qual": "BAdmin",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Arts (BA)",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Humanities",
+    "aps": 35,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Humanities qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Theology (BTh)",
+    "qual": "BTh",
+    "type": "Degree",
+    "faculty": "Arts and Humanities",
+    "aps": 35,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Humanities qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Library and Information Studies (BLIS)",
+    "qual": "BLIS",
+    "type": "Degree",
+    "faculty": "Arts and Humanities",
+    "aps": 35,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Humanities qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Laws (LLB) 4-year",
     "qual": "LLB",
     "type": "Degree",
     "faculty": "Law",
-    "aps": 30,
+    "aps": 37,
     "duration": "4 Years",
-    "desc": "Professional law degree — pathway to attorney or advocate."
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Biological Sciences",
-    "qual": "BSc",
+    "name": "BA Law",
+    "qual": "BA",
     "type": "Degree",
-    "faculty": "Natural Sciences",
-    "aps": 27,
+    "faculty": "Law",
+    "aps": 37,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Chemistry",
-    "qual": "BSc",
+    "name": "BCom Law",
+    "qual": "BCom",
     "type": "Degree",
-    "faculty": "Natural Sciences",
-    "aps": 27,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Computer Science",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences",
+    "faculty": "Law",
     "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Environmental Science",
+    "name": "Bachelor of Education (BEd)",
+    "qual": "BEd",
+    "type": "Degree",
+    "faculty": "Education",
+    "aps": 33,
+    "duration": "3 Years",
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Pharmacy (BPharm)",
+    "qual": "BPharm",
+    "type": "Degree",
+    "faculty": "Natural Sciences",
+    "aps": 38,
+    "duration": "3 Years",
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc (Natural Sciences programmes)",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Natural Sciences",
-    "aps": 27,
+    "aps": 33,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Geology",
+    "name": "BSc Mathematical and Statistical Sciences",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Natural Sciences",
-    "aps": 27,
+    "aps": 33,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Mathematics & Statistics",
+    "name": "BSc Computer Science",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Natural Sciences",
-    "aps": 30,
+    "aps": 33,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Physics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences",
-    "aps": 30,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   }
 ]

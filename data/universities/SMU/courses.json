@@ -1,92 +1,137 @@
 [
   {
-    "name": "Bachelor of Dental Surgery",
-    "qual": "BDS",
-    "type": "Degree",
-    "faculty": "Dentistry",
-    "aps": 44,
-    "duration": "5 Years",
-    "desc": "Professional dentistry degree registered with the HPCSA."
-  },
-  {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 38,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Medicine & Surgery",
+    "name": "MBChB (Bachelor of Medicine and Bachelor of Surgery)",
     "qual": "MBChB",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 44,
+    "faculty": "Medicine",
+    "aps": 38,
     "duration": "6 Years",
-    "desc": "Professional medical degree — pathway to becoming a doctor."
+    "desc": "Accredited Medicine qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Nursing",
-    "qual": "BNurs",
+    "name": "MBChB Extended Curriculum Programme (Foundation Year)",
+    "qual": "MBChB",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
+    "faculty": "Medicine",
+    "aps": 32,
+    "duration": "6 Years",
+    "desc": "Accredited Medicine qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BDS (Bachelor of Dental Surgery)",
+    "qual": "BDS",
+    "type": "Degree",
+    "faculty": "Oral Health Sciences",
+    "aps": 37,
+    "duration": "3 Years",
+    "desc": "Accredited Oral Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor in Dental Therapy",
+    "qual": "B Dent Ther",
+    "type": "Degree",
+    "faculty": "Oral Health Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Accredited Oral Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor in Oral Hygiene",
+    "qual": "B Oral Hyg",
+    "type": "Degree",
+    "faculty": "Oral Health Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Accredited Oral Health Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Bachelor of Pharmacy",
-    "qual": "BPharm",
+    "qual": "B Pharm",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 41,
-    "duration": "4 Years",
-    "desc": "Professional pharmacy degree registered with the SAPC."
+    "faculty": "Pharmacy",
+    "aps": 32,
+    "duration": "3 Years",
+    "desc": "Accredited Pharmacy qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 41,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Dietetics",
+    "name": "BSc (Physiotherapy)",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 41,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Health Care Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Occupational Therapy",
+    "name": "BSc (Dietetics)",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 41,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Health Care Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Physiotherapy",
+    "name": "Bachelor of Nursing and Midwifery",
+    "qual": "BNursing",
+    "type": "Degree",
+    "faculty": "Health Care Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Occupational Therapy",
+    "qual": "BOT",
+    "type": "Degree",
+    "faculty": "Health Care Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Speech Language Pathology",
+    "qual": "BSpeech",
+    "type": "Degree",
+    "faculty": "Health Care Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Audiology",
+    "qual": "BAud",
+    "type": "Degree",
+    "faculty": "Health Care Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Health Care Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc (Extended Curriculum Programme)",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 41,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Science and Technology",
+    "aps": 24,
+    "duration": "3 Years",
+    "desc": "Accredited Science and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc (Standard Programme)",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Science and Technology",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Science and Technology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "B Rad (Radiography)",
+    "qual": "B Rad",
+    "type": "Degree",
+    "faculty": "Medicine",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine qualification (2027 undergraduate intake)."
   }
 ]

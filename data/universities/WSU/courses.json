@@ -1,326 +1,137 @@
 [
   {
-    "name": "Bachelor of Arts in Law",
-    "qual": "BA Law",
+    "name": "Bachelor of Accounting",
+    "qual": "BAccounting",
     "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
+    "faculty": "Economic and Financial Sciences",
+    "aps": 28,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited Economic and Financial Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Business Administration",
-    "qual": "BBA",
+    "name": "Bachelor of Accounting Science (B Compt)",
+    "qual": "BCompt",
     "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 18,
+    "faculty": "Economic and Financial Sciences",
+    "aps": 32,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Economic and Financial Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Accounting",
+    "name": "Bachelor of Commerce (General)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 25,
+    "faculty": "Economic and Financial Sciences",
+    "aps": 28,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Financial Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Business Management",
+    "name": "Bachelor of Commerce (Economics)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
+    "faculty": "Economic and Financial Sciences",
+    "aps": 28,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Financial Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Economics",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Financial Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Human Resource Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 18,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Information Systems",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Law",
-    "qual": "BCom Law",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 25,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Marketing Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Laws",
+    "name": "Bachelor of Laws (LLB)",
     "qual": "LLB",
     "type": "Degree",
-    "faculty": "Business, Mgmt Sciences & Law",
-    "aps": 25,
+    "faculty": "Law, Humanities and Social Sciences",
+    "aps": 27,
     "duration": "4 Years",
-    "desc": "Professional law degree — pathway to attorney or advocate."
+    "desc": "Accredited Law, Humanities and Social Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Foundation Phase)",
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Law, Humanities and Social Sciences",
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Law, Humanities and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Education (FET) Humanities",
     "qual": "BEd",
     "type": "Degree",
     "faculty": "Education",
-    "aps": 18,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "aps": 25,
+    "duration": "3 Years",
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Intermediate Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 18,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Education (Senior & FET Phase)",
+    "name": "Bachelor of Education (FET) Natural Sciences",
     "qual": "BEd",
     "type": "Degree",
     "faculty": "Education",
     "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 22,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Medicine & Surgery",
-    "qual": "MBChB",
+    "name": "Bachelor of Education (FET) Economic and Management Sciences",
+    "qual": "BEd",
     "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 28,
-    "duration": "6 Years",
-    "desc": "Professional medical degree — pathway to becoming a doctor."
-  },
-  {
-    "name": "Bachelor of Nursing",
-    "qual": "BNurs",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
-  },
-  {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Dietetics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Occupational Therapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Physiotherapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Health Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Architectural Studies",
-    "qual": "BAS",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
+    "faculty": "Education",
     "aps": 25,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Engineering (Chemical)",
-    "qual": "BEng",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 28,
-    "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
-  },
-  {
-    "name": "Bachelor of Engineering (Civil)",
-    "qual": "BEng",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 28,
-    "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
-  },
-  {
-    "name": "Bachelor of Engineering (Electrical & Electronic)",
-    "qual": "BEng",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 28,
-    "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
-  },
-  {
-    "name": "Bachelor of Engineering (Industrial)",
-    "qual": "BEng",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
-  },
-  {
-    "name": "Bachelor of Engineering (Mechanical)",
-    "qual": "BEng",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 28,
-    "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
-  },
-  {
-    "name": "Bachelor of Science in Biological Sciences",
+    "name": "Bachelor of Science: Applied Mathematics / Biological Sciences",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Chemistry",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 22,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Computer Science",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
+    "faculty": "Natural Sciences",
     "aps": 25,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Construction / Quantity Surveying",
+    "name": "Bachelor of Science: Environmental Science",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
+    "faculty": "Natural Sciences",
     "aps": 25,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Environmental Science",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 22,
+    "name": "Diploma in Civil Engineering",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Engineering, Built Environment and Information Technology",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Engineering, Built Environment and Information Technology qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Geology",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 22,
+    "name": "Diploma in Analytical Chemistry",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Natural Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Mathematics & Statistics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 25,
+    "name": "Diploma in Marketing",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management and Public Administration Sciences",
+    "aps": 23,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Management and Public Administration Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Physics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Natural Sciences, Engineering & Technology",
-    "aps": 25,
+    "name": "Diploma in Sport Management",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Management and Public Administration Sciences",
+    "aps": 23,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Management and Public Administration Sciences qualification (2027 undergraduate intake)."
   }
 ]

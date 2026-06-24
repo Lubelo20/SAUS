@@ -1,146 +1,110 @@
 [
   {
-    "name": "Bachelor of Agricultural Management",
-    "qual": "BAgric",
+    "name": "Bachelor of Science",
+    "qual": "BSc",
     "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 22,
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Bachelor of Science in Agriculture",
-    "qual": "BSc Agric",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Animal Science",
-    "qual": "BSc Agric",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Biological Sciences",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 32,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Chemistry",
+    "name": "Bachelor of Science in Forestry",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Computer Science",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 28,
+    "name": "Diploma in Agriculture in Plant Production",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 23,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Environmental Science",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
+    "name": "Diploma in Animal Production",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 24,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Food Science & Technology",
-    "qual": "BSc",
+    "name": "Bachelor of Information and Communication Technology",
+    "qual": "BICT",
     "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Geology",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 25,
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 32,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Mathematics & Statistics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 28,
+    "name": "Diploma in ICT in Applications Development",
+    "qual": "Diploma",
+    "type": "Diploma",
+    "faculty": "Agriculture and Natural Sciences",
+    "aps": 24,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Agriculture and Natural Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Physics",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Agriculture & Natural Sciences",
-    "aps": 28,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Education (Foundation Phase)",
+    "name": "Bachelor of Education in Foundation Phase Teaching",
     "qual": "BEd",
     "type": "Degree",
     "faculty": "Education",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Education (Intermediate Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 22,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Education (Senior & FET Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 25,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Tourism Management",
-    "qual": "BTourism",
-    "type": "Degree",
-    "faculty": "Hospitality & Tourism",
-    "aps": 22,
+    "aps": 26,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Arts General",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Economics, Development and Business Sciences",
+    "aps": 28,
+    "duration": "3 Years",
+    "desc": "Accredited Economics, Development and Business Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economics, Development and Business Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economics, Development and Business Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "type": "Degree",
+    "faculty": "Economics, Development and Business Sciences",
+    "aps": 33,
+    "duration": "4 Years",
+    "desc": "Accredited Economics, Development and Business Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Diploma in Hospitality Management",
-    "qual": "Dip",
+    "qual": "Diploma",
     "type": "Diploma",
-    "faculty": "Hospitality & Tourism",
-    "aps": 22,
+    "faculty": "Economics, Development and Business Sciences",
+    "aps": 24,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Economics, Development and Business Sciences qualification (2027 undergraduate intake)."
   }
 ]

@@ -1,398 +1,560 @@
 [
   {
-    "name": "Bachelor of Arts",
-    "qual": "BA",
+    "name": "BAgric in Agribusiness Management",
+    "qual": "BAgric",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 36,
+    "faculty": "AgriSciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Languages & Literature",
-    "qual": "BA",
+    "name": "BScAgric in Agricultural Economics",
+    "qual": "BScAgric",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 36,
+    "faculty": "AgriSciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Political Science",
-    "qual": "BA",
+    "name": "BAgric in Agricultural Production and Management: Elsenburg",
+    "qual": "BAgric",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 36,
+    "faculty": "AgriSciences",
+    "aps": 24,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Psychology",
-    "qual": "BA",
+    "name": "BScAgric in Animal Production Systems",
+    "qual": "BScAgric",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 38,
+    "faculty": "AgriSciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Social Science",
-    "qual": "BSocSci",
+    "name": "BSc in Forestry (Forestry and Wood Sciences)",
+    "qual": "BSc",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 36,
+    "faculty": "AgriSciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc in Conservation Ecology",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "AgriSciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BScAgric in Plant and Soil Science",
+    "qual": "BScAgric",
+    "type": "Degree",
+    "faculty": "AgriSciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BScAgric in Viticulture and Oenology",
+    "qual": "BScAgric",
+    "type": "Degree",
+    "faculty": "AgriSciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc in Food Science",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "AgriSciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited AgriSciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Humanities",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Language and Culture",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Development and the Environment",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Drama and Theatre Studies",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Music",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Human Resource Management",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in International Studies",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Music",
+    "qual": "BMus",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BA in Political, Philosophical and Economic Studies",
+    "qual": "BA",
+    "type": "Degree",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Bachelor of Social Work",
-    "qual": "BSW",
+    "qual": "BSocWork",
     "type": "Degree",
-    "faculty": "Arts & Social Sciences",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Business Administration",
-    "qual": "BBA",
+    "name": "BA in Visual Arts",
+    "qual": "BA",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
+    "faculty": "Arts and Social Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Arts and Social Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom (Economic Sciences)",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom (Management Sciences)",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BCom (Mathematical Sciences)",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
     "aps": 36,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Accounting",
+    "name": "BCom (International Business)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 40,
+    "faculty": "Economic and Management Sciences",
+    "aps": 42,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Business Management",
+    "name": "BCom (Actuarial Science)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 38,
+    "faculty": "Economic and Management Sciences",
+    "aps": 42,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Economics",
+    "name": "BCom (Industrial Psychology)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 38,
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Financial Management",
-    "qual": "BCom",
+    "name": "BAcc",
+    "qual": "BAcc",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 38,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Commerce in Human Resource Management",
-    "qual": "BCom",
-    "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
+    "faculty": "Economic and Management Sciences",
     "aps": 36,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Information Systems",
+    "name": "BCom (Management Accounting)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 38,
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Commerce in Marketing Management",
+    "name": "BCom (Financial Accounting)",
     "qual": "BCom",
     "type": "Degree",
-    "faculty": "Economic & Mgmt Sciences",
-    "aps": 38,
+    "faculty": "Economic and Management Sciences",
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Foundation Phase)",
+    "name": "Bachelor of Data Science",
+    "qual": "BDatSci",
+    "type": "Degree",
+    "faculty": "Economic and Management Sciences",
+    "aps": 42,
+    "duration": "3 Years",
+    "desc": "Accredited Economic and Management Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BEd (Foundation Phase Education)",
     "qual": "BEd",
     "type": "Degree",
     "faculty": "Education",
-    "aps": 36,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Intermediate Phase)",
+    "name": "BEd (Intermediate Phase Education)",
     "qual": "BEd",
     "type": "Degree",
     "faculty": "Education",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Education qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BEng (Chemical)",
+    "qual": "BEng",
+    "type": "Degree",
+    "faculty": "Engineering",
     "aps": 36,
     "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Education (Senior & FET Phase)",
-    "qual": "BEd",
-    "type": "Degree",
-    "faculty": "Education",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Professional teacher training (SACE-recognised)."
-  },
-  {
-    "name": "Bachelor of Architectural Studies",
-    "qual": "BAS",
-    "type": "Degree",
-    "faculty": "Engineering",
-    "aps": 40,
-    "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Engineering (Chemical)",
+    "name": "BEng (Civil)",
     "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 42,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Engineering (Civil)",
+    "name": "BEng (Electrical and Electronic)",
     "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 42,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Engineering (Electrical & Electronic)",
+    "name": "BEng (Electrical and Electronic — Data Engineering)",
     "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 42,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Engineering (Industrial)",
+    "name": "BEng (Industrial)",
     "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 40,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Engineering (Mechanical)",
+    "name": "BEng (Mechanical)",
     "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 42,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Accredited professional engineering training (ECSA-recognised)."
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Construction / Quantity Surveying",
-    "qual": "BSc",
+    "name": "BEng (Mechatronic)",
+    "qual": "BEng",
     "type": "Degree",
     "faculty": "Engineering",
-    "aps": 40,
-    "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "aps": 36,
+    "duration": "4 Years",
+    "desc": "Accredited Engineering qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Arts in Law",
-    "qual": "BA Law",
-    "type": "Degree",
-    "faculty": "Law",
-    "aps": 38,
-    "duration": "3 Years",
-    "desc": "Broad humanities grounding across languages, society and thought."
-  },
-  {
-    "name": "Bachelor of Commerce in Law",
-    "qual": "BCom Law",
-    "type": "Degree",
-    "faculty": "Law",
-    "aps": 40,
-    "duration": "3 Years",
-    "desc": "Business, finance and management foundations with professional career pathways."
-  },
-  {
-    "name": "Bachelor of Laws",
+    "name": "LLB (four-year)",
     "qual": "LLB",
     "type": "Degree",
     "faculty": "Law",
-    "aps": 40,
+    "aps": 36,
     "duration": "4 Years",
-    "desc": "Professional law degree — pathway to attorney or advocate."
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Biokinetics",
-    "qual": "BSc",
+    "name": "BA (Law)",
+    "qual": "BA",
     "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Health Sciences",
-    "qual": "BHSc",
-    "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 38,
+    "faculty": "Law",
+    "aps": 36,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Medicine & Surgery",
+    "name": "BCom (Law)",
+    "qual": "BCom",
+    "type": "Degree",
+    "faculty": "Law",
+    "aps": 36,
+    "duration": "3 Years",
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BAccLLB",
+    "qual": "BAccLLB",
+    "type": "Degree",
+    "faculty": "Law",
+    "aps": 42,
+    "duration": "4 Years",
+    "desc": "Accredited Law qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "MBChB",
     "qual": "MBChB",
     "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 42,
+    "faculty": "Medicine and Health Sciences",
+    "aps": 36,
     "duration": "6 Years",
-    "desc": "Professional medical degree — pathway to becoming a doctor."
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Occupational Therapy",
+    "qual": "BOccTher",
+    "type": "Degree",
+    "faculty": "Medicine and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc in Physiotherapy",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Medicine and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "Bachelor of Speech-Language and Hearing Therapy",
+    "qual": "BSpeechHear",
+    "type": "Degree",
+    "faculty": "Medicine and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
     "name": "Bachelor of Nursing",
     "qual": "BNurs",
     "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Professional nursing registration with the SANC."
+    "faculty": "Medicine and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Radiography",
-    "qual": "BRad",
-    "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 40,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
-  },
-  {
-    "name": "Bachelor of Science in Dietetics",
+    "name": "BSc in Dietetics",
     "qual": "BSc",
     "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 40,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "faculty": "Medicine and Health Sciences",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Medicine and Health Sciences qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Occupational Therapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 40,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Physiotherapy",
-    "qual": "BSc",
-    "type": "Degree",
-    "faculty": "Medicine & Health Sciences",
-    "aps": 40,
-    "duration": "4 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
-  },
-  {
-    "name": "Bachelor of Science in Biological Sciences",
+    "name": "BSc Biodiversity and Ecology",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 38,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Chemistry",
+    "name": "BSc Human Life Sciences",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 38,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Computer Science",
+    "name": "BSc Molecular Biology and Biotechnology",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 40,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Environmental Science",
+    "name": "BSc Sport Science",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 38,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Geology",
+    "name": "BSc Chemistry",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 38,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Mathematics & Statistics",
+    "name": "BSc Earth Science",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 40,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Science in Physics",
+    "name": "BSc Physics",
     "qual": "BSc",
     "type": "Degree",
     "faculty": "Science",
-    "aps": 40,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Scientific theory, laboratory practice and research methods."
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Divinity",
-    "qual": "BDiv",
+    "name": "BSc Mathematical Sciences",
+    "qual": "BSc",
     "type": "Degree",
-    "faculty": "Theology",
-    "aps": 38,
-    "duration": "4 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "faculty": "Science",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
   },
   {
-    "name": "Bachelor of Theology",
+    "name": "BSc Computer Science",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Science",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc GeoInformatics",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Science",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BSc (Interdisciplinary — Biomedical/Bioinformatics/Applied Medicinal Chemistry)",
+    "qual": "BSc",
+    "type": "Degree",
+    "faculty": "Science",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Science qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BTh (Bachelor of Theology)",
     "qual": "BTh",
     "type": "Degree",
     "faculty": "Theology",
-    "aps": 36,
+    "aps": 30,
     "duration": "3 Years",
-    "desc": "Accredited South African higher-education qualification."
+    "desc": "Accredited Theology qualification (2027 undergraduate intake)."
+  },
+  {
+    "name": "BDiv (Bachelor of Divinity)",
+    "qual": "BDiv",
+    "type": "Degree",
+    "faculty": "Theology",
+    "aps": 30,
+    "duration": "3 Years",
+    "desc": "Accredited Theology qualification (2027 undergraduate intake)."
   }
 ]
