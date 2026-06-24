@@ -2742,23 +2742,32 @@
               <label class="dark-label" for="interestFilter">Study Interest</label>
               <select class="dark-select" id="interestFilter">
                 <option value="all">All Fields</option>
-                <option value="science">Science &amp; Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="engineering">Engineering &amp; Built Environment</option>
+                <option value="science">Natural &amp; Physical Sciences</option>
+                <option value="agriculture">Agriculture &amp; Environment</option>
                 <option value="health">Health &amp; Medicine</option>
                 <option value="commerce">Commerce &amp; Business</option>
-                <option value="humanities">Humanities &amp; Law</option>
+                <option value="law">Law</option>
+                <option value="arts">Arts, Design &amp; Media</option>
+                <option value="humanities">Humanities &amp; Social Sciences</option>
                 <option value="education">Education &amp; Teaching</option>
-                <option value="it">Information Technology</option>
               </select>
             </div>
             <div class="filter-group">
               <label class="dark-label" for="provinceFilter">Preferred Province</label>
               <select class="dark-select" id="provinceFilter">
                 <option value="all">All Provinces</option>
-                <option value="Western Cape">Western Cape</option>
+                <option value="Eastern Cape">Eastern Cape</option>
+                <option value="Free State">Free State</option>
                 <option value="Gauteng">Gauteng</option>
                 <option value="KwaZulu-Natal">KwaZulu-Natal</option>
-                <option value="Eastern Cape">Eastern Cape</option>
-                <option value="Other">Other Provinces</option>
+                <option value="Limpopo">Limpopo</option>
+                <option value="Mpumalanga">Mpumalanga</option>
+                <option value="North West">North West</option>
+                <option value="Northern Cape">Northern Cape</option>
+                <option value="Western Cape">Western Cape</option>
+                <option value="National">Distance / National (UNISA)</option>
               </select>
             </div>
           </div>
@@ -4114,10 +4123,9 @@ function findCourses(){
     fetch('/data/universities/_courses.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){COURSES=d;findCourses();});
     return;
   }
-  const MAIN_PROV=['Western Cape','Gauteng','KwaZulu-Natal','Eastern Cape'];
   let matches=COURSES.filter(c=>{
     const fieldOk=field==='all'||c.field===field;
-    const provOk=prov==='all'||c.province===prov||c.province==='National'||(prov==='Other'&&MAIN_PROV.indexOf(c.province)===-1);
+    const provOk=prov==='all'||c.province===prov;
     return fieldOk&&provOk;
   }).map(c=>({...c,qualifies:aps>=c.aps}))
     .sort((a,b)=>{
