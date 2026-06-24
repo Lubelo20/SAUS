@@ -1346,7 +1346,7 @@ function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.
 (function(){
   var h=location.hostname;
   var adminUrl=(h==='localhost'||h==='127.0.0.1'||h==='')
-    ? 'http://localhost:3300'
+    ? 'http://localhost:3100'
     : 'https://saus-admin.vercel.app';
   document.querySelectorAll('a.admin-link').forEach(function(a){a.href=adminUrl;});
 })();

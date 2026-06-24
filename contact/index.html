@@ -188,7 +188,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
           <div class="sidebar-panel" style="border-top-color:var(--gold);background:linear-gradient(135deg,#faf8f0 0%,#fff 100%)">
             <div class="sidebar-title" style="color:var(--navy)">Staff Portal</div>
             <p style="font-size:13px;color:var(--text-mid);margin:0 0 14px;line-height:1.6">SAUS staff and administrators can log in to the content management system to manage news, events, campaigns, and documents.</p>
-            <a href="http://localhost:3000" target="_blank" rel="noopener" class="btn btn-navy" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;text-decoration:none;font-size:13.5px">
+            <a href="https://saus-admin.vercel.app" class="admin-link btn btn-navy" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;text-decoration:none;font-size:13.5px">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
               Admin Login
             </a>
@@ -252,7 +252,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
       </div>
       <div class="footer-bottom">
         <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
-        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="http://localhost:3000" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="https://saus-admin.vercel.app" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
       </div>
     </div>
   </div>
@@ -350,5 +350,6 @@ function submitForm(){
 }
 </script>
 <script src="/assets/saus.js" defer></script>
+<script>(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();</script>
 </body>
 </html>

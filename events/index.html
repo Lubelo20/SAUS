@@ -383,7 +383,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
       </div>
       <div class="footer-bottom">
         <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
-        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="http://localhost:3000" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
+        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="https://saus-admin.vercel.app" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Staff Login</a></p>
       </div>
     </div>
   </div>
@@ -487,5 +487,6 @@ window.addEventListener('DOMContentLoaded',()=>{
   if(!localStorage.getItem('saus_gov_cookie')){setTimeout(()=>document.getElementById('cookie').classList.add('show'),1800);}
 });
 </script>
+<script>(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();</script>
 </body>
 </html>
