@@ -1197,12 +1197,13 @@ textarea.form-control{resize:vertical;min-height:110px}
 @media(max-width:640px){
   :root{--header-h:84px;--total-top:calc(var(--topbar-h) + 84px + var(--nav-h))}
   .wrap{padding:0 20px}
-  .header-established,.header-divider{display:none}
-  /* .header-salogo carries an inline display:block, so !important is needed to hide it on mobile */
+  /* !important so these win over the per-page inline header rules that load
+     after saus.css in the <head> — guarantees an identical mobile header everywhere. */
+  .header-established,.header-divider{display:none!important}
   .header-salogo{display:none!important}
   /* Declutter: drop the long descriptive subtitle on mobile, keep the name prominent */
-  .header-ident-sub{display:none}
-  .header-ident-main{font-size:18px;line-height:1.2}
+  .header-ident-sub{display:none!important}
+  .header-ident-main{font-size:18px!important;line-height:1.2!important}
   .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
   .footer-cols{grid-template-columns:1fr}
@@ -1214,18 +1215,18 @@ textarea.form-control{resize:vertical;min-height:110px}
   /* Topbar: strip utility labels (they overflow the 38px bar), keep the
      flag (if present) + tap-to-call phone. Hide the long email. */
   .topbar-inner{padding:0 16px}
-  .topbar-left > span:not(.topbar-flag){display:none}
+  .topbar-left > span:not(.topbar-flag){display:none!important}
   .topbar-right{gap:0}
-  .topbar-right a[href^="mailto:"]{display:none}
+  .topbar-right a[href^="mailto:"]{display:none!important}
   /* Header: drop the Contact button (reachable via the menu) so the org
      name has room; give the seal + name breathing space. */
-  .header-inner{gap:16px}
-  .header-contact-btn{display:none}
+  .header-inner{gap:16px!important}
+  .header-contact-btn{display:none!important}
 }
 @media(max-width:480px){
   /* Keep the seal large enough to read clearly on a phone */
-  .header-seal{width:56px;height:56px}
-  .header-ident-main{font-size:16.5px}
+  .header-seal{width:56px!important;height:56px!important}
+  .header-ident-main{font-size:16.5px!important}
 }
 
 /* ═══════════════════════════════════════
