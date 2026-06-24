@@ -1301,3 +1301,9 @@ textarea.form-control{resize:vertical;min-height:110px}
 /* Wide tables scroll horizontally inside their own box instead of stretching
    the whole page on small screens (keeps column alignment intact). */
 .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* Hero CTAs stack full-width on small phones (easier, bigger tap targets) */
+@media(max-width:480px){
+  .hero-actions{flex-direction:column;align-items:stretch;gap:10px}
+  .hero-actions .btn{width:100%;justify-content:center}
+}
