@@ -1254,3 +1254,38 @@ textarea.form-control{resize:vertical;min-height:110px}
   .hero-photo h1{max-width:100%}
   .hero-photo .wrap,.hero-photo .hero-inner{padding-left:20px;padding-right:20px}
 }
+
+/* ═══════════════════════════════════════
+   MOBILE CONSISTENCY  —  universal safeguards (phones)
+   Guarantees every page behaves the same on a phone: any multi-column or
+   sidebar grid (whether set via a class OR an inline style attribute) stacks
+   to a single column, and no media element forces horizontal scrolling.
+   Scoped to ≤640px so desktop/tablet layouts are untouched.
+═══════════════════════════════════════ */
+@media(max-width:640px){
+  /* Stack inline-styled card grids (e.g. home page 3-up rows) */
+  [style*="grid-template-columns:repeat("],
+  [style*="grid-template-columns: repeat("],
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"],
+  [style*="1.6fr 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+  /* Stack sidebar / content-aside layouts */
+  [style*="1fr 300px"],
+  [style*="1fr 320px"],
+  [style*="220px 1fr"],
+  [style*="240px 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+  /* Media must never overflow the viewport */
+  img,video,iframe{max-width:100%}
+  /* A touch-comfortable navigation */
+  .mobile-nav-item{min-height:48px;display:flex;align-items:center}
+}
+
+/* Small phones: tighten the very large hero headline so it never clips */
+@media(max-width:400px){
+  .hero-photo h1,.official-hero .hero-title{font-size:clamp(26px,8.5vw,34px);line-height:1.12}
+  .wrap{padding:0 16px}
+}
