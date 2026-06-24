@@ -3822,6 +3822,7 @@
         <h3 style="font-family:var(--ff-serif);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px">Student Guidance Request</h3>
         <p style="font-size:13px;color:var(--text-lt);margin-bottom:24px;font-family:var(--ff-mono);letter-spacing:.04em;text-transform:uppercase">SAUS/GUID/FORM/2026</p>
         <div id="guidanceForm">
+          <div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label for="gf-company">Company (leave this field blank)</label><input id="gf-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
             <div><label for="gf-fname" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">First Name <span style="color:var(--red)">*</span></label><input id="gf-fname" type="text" placeholder="First name" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
             <div><label for="gf-lname" style="display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px">Surname <span style="color:var(--red)">*</span></label><input id="gf-lname" type="text" placeholder="Surname" style="width:100%;padding:10px 12px;border:1.5px solid var(--border-dk);border-radius:2px;font-size:14px;font-family:var(--ff-sans);outline:none"></div>
@@ -3959,7 +3960,7 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 South African Union of Students (SAUS). All rights reserved.</p>
-        <p>Developed by Lubelo Tech Solutions · POPIA Act 4 of 2013 Compliant · <a href="https://saus-admin.vercel.app" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none">Staff Login</a></p>
+        <p>Developed by Lubelo Tech Solutions · <a href="/privacy/" style="color:inherit;text-decoration:underline">POPIA Act 4 of 2013 Compliant</a> · <a href="https://saus-admin.vercel.app" class="admin-link" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);text-decoration:none">Staff Login</a></p>
       </div>
     </div>
   </div>
@@ -4097,7 +4098,7 @@ function submitGuidanceForm(){
   var hN=location.hostname; var API=(hN==='localhost'||hN==='127.0.0.1'||hN==='')?'http://localhost:4400/api':'https://saus-admin-api.onrender.com/api';
   var btn=document.querySelector('button[onclick="submitGuidanceForm()"]'); var orig=btn?btn.textContent:'';
   if(btn){ btn.disabled=true; btn.textContent='Sending…'; }
-  fetch(API+'/contact',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ name:(fname+' '+lname).trim(), email:email, subject:'Student guidance request — '+fname+' '+lname, message:message, source:'guidance' }) })
+  fetch(API+'/contact',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ name:(fname+' '+lname).trim(), email:email, subject:'Student guidance request — '+fname+' '+lname, message:message, source:'guidance', company:v('gf-company') }) })
     .then(function(r){ return r.ok?r.json():Promise.reject(r); })
     .then(function(){
       if($('guidanceForm'))$('guidanceForm').style.display='none';

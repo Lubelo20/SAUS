@@ -19,6 +19,11 @@ const contactSchema = z.object({
 });
 
 router.post('/', async (req, res) => {
+  // Honeypot: a hidden field no human fills. If populated, it's a bot —
+  // pretend success (200) so the bot can't tell it was rejected, and save nothing.
+  if (req.body && typeof req.body.company === 'string' && req.body.company.trim() !== '') {
+    return res.status(200).json({ ok: true });
+  }
   const parsed = contactSchema.safeParse(req.body);
   if (!parsed.success) {
     return res.status(400).json({

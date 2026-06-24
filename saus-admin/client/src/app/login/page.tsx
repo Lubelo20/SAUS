@@ -123,6 +123,7 @@ export default function LoginPage() {
                   <input
                     type="email" required value={email} onChange={e => setEmail(e.target.value)}
                     placeholder="admin@saus.org.za"
+                    autoComplete="username"
                     className="input pl-9"
                   />
                 </div>
@@ -136,6 +137,7 @@ export default function LoginPage() {
                     type={showPwd ? 'text' : 'password'} required value={password}
                     onChange={e => setPassword(e.target.value)}
                     placeholder="••••••••"
+                    autoComplete="current-password"
                     className="input pl-9 pr-10"
                   />
                   <button type="button" onClick={() => setShowPwd(!showPwd)}
