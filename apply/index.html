@@ -1901,11 +1901,15 @@
 
     <div class="uni-filter-bar">
       <button class="filter-pill active" onclick="filterUnis('all',this)">All Provinces</button>
-      <button class="filter-pill" onclick="filterUnis('Western Cape',this)">Western Cape</button>
+      <button class="filter-pill" onclick="filterUnis('Eastern Cape',this)">Eastern Cape</button>
+      <button class="filter-pill" onclick="filterUnis('Free State',this)">Free State</button>
       <button class="filter-pill" onclick="filterUnis('Gauteng',this)">Gauteng</button>
       <button class="filter-pill" onclick="filterUnis('KwaZulu-Natal',this)">KwaZulu-Natal</button>
-      <button class="filter-pill" onclick="filterUnis('Eastern Cape',this)">Eastern Cape</button>
-      <button class="filter-pill" onclick="filterUnis('Other',this)">Other Provinces</button>
+      <button class="filter-pill" onclick="filterUnis('Limpopo',this)">Limpopo</button>
+      <button class="filter-pill" onclick="filterUnis('Mpumalanga',this)">Mpumalanga</button>
+      <button class="filter-pill" onclick="filterUnis('North West',this)">North West</button>
+      <button class="filter-pill" onclick="filterUnis('Northern Cape',this)">Northern Cape</button>
+      <button class="filter-pill" onclick="filterUnis('Western Cape',this)">Western Cape</button>
     </div>
     <div class="uni-filter-bar" id="typeFilters">
       <button class="filter-pill active" onclick="setTypeFilter('all',this)">All Types</button>
@@ -2172,7 +2176,7 @@
       </div>
 
       <!-- UFS -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Free State">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2197,7 +2201,7 @@
       </div>
 
       <!-- UNISA -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Gauteng">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2298,7 +2302,7 @@
       </div>
 
       <!-- NWU -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="North West">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2348,7 +2352,7 @@
       </div>
 
       <!-- UNIVEN -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Limpopo">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2373,7 +2377,7 @@
       </div>
 
       <!-- UL -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Limpopo">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2498,7 +2502,7 @@
       </div>
 
       <!-- SPU -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Northern Cape">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2523,7 +2527,7 @@
       </div>
 
       <!-- UMP -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Mpumalanga">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -2548,7 +2552,7 @@
       </div>
 
       <!-- CUT -->
-      <div class="uni-card" data-province="Other">
+      <div class="uni-card" data-province="Free State">
         <div class="uni-card-top"></div>
         <div class="uni-card-body">
           <div class="uni-card-logo-row">
@@ -4160,7 +4164,7 @@ function applyFilters(){
 }
 function filterUnis(province,btn){
   filterState.province=province;
-  document.querySelectorAll('.uni-filter-bar .filter-pill').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.uni-filter-bar:not(#typeFilters) .filter-pill').forEach(function(p){p.classList.remove('active');});
   if(btn)btn.classList.add('active'); applyFilters();
 }
 function setTypeFilter(type,btn){
