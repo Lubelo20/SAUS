@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Pencil, Trash2, Star, Calendar, ExternalLink } from 'lucide-react';
 import { format } from 'date-fns';
+import DOMPurify from 'isomorphic-dompurify';
 import toast from 'react-hot-toast';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
@@ -70,7 +71,7 @@ export default function ViewCampaignPage() {
           <div className="card p-6">
             {campaign.description ? (
               <div className="prose prose-sm max-w-none text-navy leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: campaign.description }} />
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(campaign.description || '') }} />
             ) : (
               <p className="text-gray-400 text-sm italic">No description provided.</p>
             )}

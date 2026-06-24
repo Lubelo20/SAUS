@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Pencil, Trash2, Star, Clock } from 'lucide-react';
 import { format } from 'date-fns';
+import DOMPurify from 'isomorphic-dompurify';
 import toast from 'react-hot-toast';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
@@ -75,7 +76,7 @@ export default function ViewArticlePage() {
             )}
             <div
               className="prose prose-sm max-w-none text-navy leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: article.content }}
+              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(article.content || '') }}
             />
           </div>
         </div>

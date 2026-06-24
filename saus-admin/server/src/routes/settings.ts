@@ -1,9 +1,13 @@
 import { Router, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
 import { authenticate, requireRole, AuthRequest } from '../middleware/auth';
+import { pick } from '../utils/pick';
 
 const router = Router();
 const prisma = new PrismaClient();
+
+// Client-settable fields for an announcement (mass-assignment allowlist).
+const ANNOUNCEMENT_FIELDS = ['message', 'type', 'isActive', 'startsAt', 'expiresAt', 'ctaLabel', 'ctaUrl'];
 router.use(authenticate);
 
 router.get('/', async (_req, res) => {
@@ -35,12 +39,12 @@ router.get('/announcements', async (_req, res) => {
 });
 
 router.post('/announcements', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING'), async (req: AuthRequest, res: Response) => {
-  const item = await prisma.announcement.create({ data: req.body });
+  const item = await prisma.announcement.create({ data: pick(req.body, ANNOUNCEMENT_FIELDS) });
   return res.status(201).json(item);
 });
 
 router.put('/announcements/:id', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING'), async (req: AuthRequest, res: Response) => {
-  const item = await prisma.announcement.update({ where: { id: req.params.id }, data: req.body });
+  const item = await prisma.announcement.update({ where: { id: req.params.id }, data: pick(req.body, ANNOUNCEMENT_FIELDS) });
   return res.json(item);
 });
 

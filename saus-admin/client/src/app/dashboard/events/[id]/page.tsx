@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Pencil, Trash2, Star, Calendar, MapPin, Clock, ExternalLink } from 'lucide-react';
 import { format, isPast } from 'date-fns';
+import DOMPurify from 'isomorphic-dompurify';
 import toast from 'react-hot-toast';
 
 const API = process.env.NEXT_PUBLIC_API_URL;
@@ -81,7 +82,7 @@ export default function ViewEventPage() {
             )}
             {event.description ? (
               <div className="prose prose-sm max-w-none text-navy leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: event.description }} />
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(event.description || '') }} />
             ) : (
               <p className="text-gray-400 text-sm italic">No description provided.</p>
             )}

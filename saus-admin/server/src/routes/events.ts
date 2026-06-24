@@ -2,8 +2,12 @@ import { Router, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
 import slugify from 'slugify';
 import { authenticate, requireRole, AuthRequest } from '../middleware/auth';
+import { pick } from '../utils/pick';
 
 const router = Router();
+
+// Client-settable fields for an event update (mass-assignment allowlist).
+const EVENT_FIELDS = ['title', 'description', 'shortDescription', 'bannerImage', 'venue', 'address', 'city', 'province', 'startDate', 'endDate', 'registrationUrl', 'rsvpEnabled', 'isFeatured', 'status', 'categoryId'];
 const prisma = new PrismaClient();
 router.use(authenticate);
 
@@ -44,9 +48,10 @@ router.post('/', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING', 'EDITOR'
 });
 
 router.put('/:id', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING', 'EDITOR'), async (req: AuthRequest, res: Response) => {
-  const event = await prisma.event.update({ where: { id: req.params.id },
-    data: { ...req.body, startDate: req.body.startDate ? new Date(req.body.startDate) : undefined,
-      endDate: req.body.endDate ? new Date(req.body.endDate) : null } });
+  const data = pick(req.body, EVENT_FIELDS);
+  if (data.startDate !== undefined) data.startDate = data.startDate ? new Date(data.startDate) : undefined;
+  if (data.endDate !== undefined) data.endDate = data.endDate ? new Date(data.endDate) : null;
+  const event = await prisma.event.update({ where: { id: req.params.id }, data });
   return res.json(event);
 });
 

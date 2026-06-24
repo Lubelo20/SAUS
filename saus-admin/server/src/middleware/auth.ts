@@ -15,13 +15,16 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
   }
   const token = authHeader.split(' ')[1];
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET!) as any;
+    // Pin the accepted algorithm so a forged `alg: none` / RS↔HS confusion token is rejected.
+    const decoded = jwt.verify(token, process.env.JWT_SECRET!, { algorithms: ['HS256'] }) as any;
     const user = await prisma.user.findUnique({
       where: { id: decoded.userId },
       select: { id: true, email: true, role: true, name: true, isActive: true },
     });
     if (!user || !user.isActive) return res.status(401).json({ error: 'Invalid or inactive account' });
     req.user = { id: user.id, email: user.email, role: user.role, name: user.name };
+    // Authenticated responses must never be cached by shared caches/browsers.
+    res.setHeader('Cache-Control', 'no-store');
     next();
   } catch {
     return res.status(401).json({ error: 'Invalid or expired token' });

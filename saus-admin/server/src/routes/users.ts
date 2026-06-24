@@ -25,6 +25,9 @@ router.get('/', requireRole(...ADMIN_ROLES), async (req: AuthRequest, res: Respo
 
 router.post('/', requireRole(...ADMIN_ROLES), async (req: AuthRequest, res: Response) => {
   const { name, email, password, role, department } = req.body;
+  if (typeof password !== 'string' || password.length < 12) {
+    return res.status(400).json({ error: 'Password must be at least 12 characters.' });
+  }
   const exists = await prisma.user.findUnique({ where: { email } });
   if (exists) return res.status(400).json({ error: 'Email already registered' });
   const passwordHash = await bcrypt.hash(password, 12);

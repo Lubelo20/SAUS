@@ -2,8 +2,12 @@ import { Router, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
 import slugify from 'slugify';
 import { authenticate, requireRole, AuthRequest } from '../middleware/auth';
+import { pick } from '../utils/pick';
 
 const router = Router();
+
+// Client-settable fields for a campaign update (mass-assignment allowlist).
+const CAMPAIGN_FIELDS = ['title', 'description', 'graphic', 'ctaLabel', 'ctaUrl', 'startDate', 'endDate', 'isFeatured', 'status', 'categoryId'];
 const prisma = new PrismaClient();
 router.use(authenticate);
 
@@ -41,7 +45,10 @@ router.post('/', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING'), async (
 });
 
 router.put('/:id', requireRole('SUPER_ADMIN', 'SECRETARIAT', 'MARKETING'), async (req: AuthRequest, res: Response) => {
-  const campaign = await prisma.campaign.update({ where: { id: req.params.id }, data: req.body });
+  const data = pick(req.body, CAMPAIGN_FIELDS);
+  if (data.startDate !== undefined) data.startDate = data.startDate ? new Date(data.startDate) : null;
+  if (data.endDate !== undefined) data.endDate = data.endDate ? new Date(data.endDate) : null;
+  const campaign = await prisma.campaign.update({ where: { id: req.params.id }, data });
   return res.json(campaign);
 });
 
