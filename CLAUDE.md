@@ -56,7 +56,7 @@ The CSS variable `--total-top` accounts for all three tiers; every `.page` uses 
 
 **Cookie consent:** appears after first visit; stored in `localStorage` key `saus_gov_cookie`.
 
-**Staff Login resolver:** a script near `</body>` (mirrored in `index.html`, `nsfas/index.html`, `apply/index.html`) rewrites every `a.admin-link` to the admin CMS URL — `http://localhost:3100` on localhost, otherwise `https://saus-admin.vercel.app`. If the deployed admin URL changes, update all three files (search `saus-admin.vercel.app`).
+**Staff Login resolver:** a script near `</body>` (now mirrored across **all 10 public pages** — `index.html` plus `about/`, `contact/`, `campaigns/`, `leadership/`, `news/`, `events/`, `gallery/`, `nsfas/`, `apply/`) rewrites every `a.admin-link` to the admin CMS URL — `http://localhost:3100` on localhost (the admin client's dev port), otherwise `https://saus-admin.vercel.app`. Every Staff Login link carries `class="admin-link"`. If the deployed admin URL changes, update all pages (search `saus-admin.vercel.app`).
 
 ## Data pipeline (`data/`)
 
