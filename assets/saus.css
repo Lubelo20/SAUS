@@ -1180,9 +1180,11 @@ textarea.form-control{resize:vertical;min-height:110px}
   .with-sidebar{grid-template-columns:1fr}
   .sidebar{position:static}
   .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .nav-ref{display:none}
+  /* !important so they beat the per-page inline base rules that load after saus.css
+     (e.g. each page's own .hamburger{display:none}) — keeps the mobile menu working everywhere. */
+  .nav-links{display:none!important}
+  .hamburger{display:flex!important}
+  .nav-ref{display:none!important}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
   .stat-cell:nth-child(2){border-right:none}
   .stat-cell:nth-child(3){border-right:1px solid var(--border)}
