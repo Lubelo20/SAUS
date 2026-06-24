@@ -4053,7 +4053,7 @@ function buildCourseIdx(){
   if(typeof UNI_INDEX==='undefined')return;
   window._courseIdx=window._courseIdx||{};
   Object.keys(UNI_INDEX).forEach(function(abbr){
-    fetch(DATA_BASE+abbr+'/courses.json').then(function(r){return r.json();}).then(function(list){
+    fetch(DATA_BASE+abbr+'/courses.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(list){
       var u=UNI_INDEX[abbr]||{};
       var txt=(Array.isArray(list)?list.map(function(c){return (c.name||'')+' '+(c.qual||'')+' '+(c.faculty||'');}).join(' '):'')+' '+(u.type||'');
       window._courseIdx[abbr]=txt.toLowerCase();
@@ -4098,7 +4098,7 @@ document.querySelectorAll('.mark-input,.subject-select').forEach(el=>{
 
 /* ── Course database (demo) ── */
 let COURSES=[];
-fetch('/data/universities/_courses.json').then(function(r){return r.json();}).then(function(d){COURSES=d;}).catch(function(){});
+fetch('/data/universities/_courses.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){COURSES=d;}).catch(function(){});
 
 function findCourses(){
   const aps=+document.getElementById('apsTotal').textContent||0;
@@ -4111,7 +4111,7 @@ function findCourses(){
   }
 
   if(!COURSES.length){
-    fetch('/data/universities/_courses.json').then(function(r){return r.json();}).then(function(d){COURSES=d;findCourses();});
+    fetch('/data/universities/_courses.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){COURSES=d;findCourses();});
     return;
   }
   const MAIN_PROV=['Western Cape','Gauteng','KwaZulu-Natal','Eastern Cape'];
@@ -4256,7 +4256,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 var DATA_BASE='/data/universities/';
 var UNI_INDEX={};      // lightweight catalogue from _index.json
 var _uniCache={};      // full merged per-university data
-var indexReady=fetch(DATA_BASE+'_index.json')
+var indexReady=fetch(DATA_BASE+'_index.json',{cache:'no-cache'})
   .then(function(r){return r.json();})
   .then(function(j){(j.universities||[]).forEach(function(u){UNI_INDEX[u.abbr]=u;});return UNI_INDEX;})
   .catch(function(e){console.warn('University index failed to load:',e);return UNI_INDEX;});
@@ -4264,11 +4264,11 @@ var indexReady=fetch(DATA_BASE+'_index.json')
 function loadUni(abbr){
   if(_uniCache[abbr])return Promise.resolve(_uniCache[abbr]);
   return Promise.all([
-    fetch(DATA_BASE+abbr+'/info.json').then(function(r){return r.json();}),
-    fetch(DATA_BASE+abbr+'/courses.json').then(function(r){return r.json();}).catch(function(){return [];}),
-    fetch(DATA_BASE+abbr+'/admissions.json').then(function(r){return r.json();}).catch(function(){return {};}),
-    fetch(DATA_BASE+abbr+'/contact.json').then(function(r){return r.json();}).catch(function(){return {};}),
-    fetch(DATA_BASE+abbr+'/nsfas.json').then(function(r){return r.json();}).catch(function(){return {};})
+    fetch(DATA_BASE+abbr+'/info.json',{cache:'no-cache'}).then(function(r){return r.json();}),
+    fetch(DATA_BASE+abbr+'/courses.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return [];}),
+    fetch(DATA_BASE+abbr+'/admissions.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return {};}),
+    fetch(DATA_BASE+abbr+'/contact.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return {};}),
+    fetch(DATA_BASE+abbr+'/nsfas.json',{cache:'no-cache'}).then(function(r){return r.json();}).catch(function(){return {};})
   ]).then(function(res){
     var info=res[0]||{},courses=res[1]||[],adm=res[2]||{},contact=res[3]||{},nsfas=res[4]||{},loc=info.location||{};
     var merged={abbr:abbr,name:info.name,type:info.type,founded:info.established,
