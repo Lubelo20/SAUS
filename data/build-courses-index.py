@@ -21,13 +21,36 @@ arr = idx if isinstance(idx, list) else idx.get('universities', [])
 meta = {u['abbr']: u for u in arr}
 
 def classify(name, faculty):
+    """Map a course to a matcher interest field. NAME signals take priority over
+    FACULTY (a degree's own title is the strongest signal); faculty is a fallback
+    only when the name is inconclusive. Order matters: teaching qualifications and
+    engineering are resolved before health/IT/commerce so e.g. 'Computer Science
+    Education' -> education and 'Biomedical Engineering' -> science."""
     n, f = name.lower(), faculty.lower()
-    if re.search(r'comput|informatic|information tech|information system|software|data scien|\bict\b|web develop|network engineer', n): return 'it'
-    if re.search(r'medic|mbchb|nurs|pharm|physio|dent|veterin|clinical|radiograph|optometr|diet|biokinet|midwif|occupational therap|speech therap|emergency medical', n) or re.search(r'health|medic|dent|pharmac|wellness|nursing', f): return 'health'
-    if re.search(r'educat|teaching|\bb\.?ed\b|foundation phase|intermediate phase|senior phase|fet teaching', n) or 'education' in f: return 'education'
-    if re.search(r'\blaw\b|\bllb\b|\barts\b|social scien|psycholog|politic|philosoph|languag|theolog|relig|communicat|journalism|fine art|drama|\bmusic\b|heritage|anthropolog|sociolog|\bhistory\b|graphic design|jurisprud', n) or re.search(r'\blaw\b|humanit|\barts\b|social scien|theolog|human scien|communicat|design', f): return 'humanities'
-    if re.search(r'commerce|\bb\.?com\b|account|finance|econom|business|\bmanagement\b|marketing|human resource|logistic|supply chain|entrepreneur|administration|banking|insurance|taxation|tourism|hospitality|retail|public admin', n) or re.search(r'commerce|management|econom|business|account|finance', f): return 'commerce'
-    if re.search(r'scien|\bb\.?sc\b|engineer|\bb\.?eng\b|agricultur|biolog|chemist|physic|mathemat|statist|geolog|environment|architect|construction|surveying|biotech|geograph|astronom|botany|zoolog', n) or re.search(r'scien|engineer|agricultur|natural|technolog|built env', f): return 'science'
+    # --- NAME-based, in priority order ---
+    if re.search(r'\beducation\b|teaching|foundation phase|intermediate phase|senior phase|fet teaching|\bb\.?ed\b', n):
+        return 'education'
+    if 'engineering' in n:                      # computer/biomedical/etc engineering -> science
+        return 'science'
+    if re.search(r'\bhealth\b|audiolog|speech.?language|communication patholog|speech.?ther|physiother|occupational therap|biokinet|radiograph|radiother|sonograph|optometr|dietetic|\bnursing\b|\bnurs\b|pharmac|dental|\bdent\b|oral health|medical|medicine|mbchb|mbbch|veterin|emergency medical|clinical med|clinical technolog|midwif|chiropract|podiatr|paramedic|prosthet|homeop|homoeop', n):
+        return 'health'
+    if re.search(r'politic|philosoph', n) and not re.search(r'\bb\.?com\b|commerce|account', n):
+        return 'humanities'                     # PPE etc. (but BCom Economics stays commerce)
+    if re.search(r'\bcommerce\b|\bb\.?com\b|accountan|account|\bfinanc|\beconom|\bbusiness\b|\bmanagement\b|marketing|human resource|supply chain|logistic|\bbanking\b|taxation|entrepreneur|auditing|industrial psycholog|insurance|public admin', n):
+        return 'commerce'
+    if re.search(r'\bcomputer|informatic|information system|information tech|\bict\b|software|data scien|web develop|machine learning', n):
+        return 'it'
+    if re.search(r'\blaw\b|\bllb\b|\barts\b|social scien|psycholog|languag|theolog|relig|communicat|journalism|fine art|drama|\bmusic\b|heritage|anthropolog|sociolog|\bhistory\b|graphic design|jurisprud|social work|development studies|\bhumanit', n):
+        return 'humanities'
+    if re.search(r'scien|\bb\.?sc\b|agricultur|biolog|chemist|physic|mathemat|statist|geolog|environment|architect|construction|surveying|biotech|geograph|astronom|botany|zoolog', n):
+        return 'science'
+    # --- FACULTY-based fallback (name inconclusive) ---
+    if 'education' in f: return 'education'
+    if re.search(r'health|medic|pharmac|nursing|dent', f): return 'health'
+    if re.search(r'engineer|built env', f): return 'science'
+    if re.search(r'\blaw\b|humanit|\barts\b|social|theolog|human scien|design', f): return 'humanities'
+    if re.search(r'commerce|management|account|finance|business|econom', f): return 'commerce'
+    if re.search(r'scien|agricultur|natural|technolog', f): return 'science'
     return 'science'
 
 out = []
