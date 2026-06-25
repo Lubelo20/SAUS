@@ -1,0 +1,57 @@
+{
+  "_title": "South African Higher Education — Funding, Accommodation & Spending (national)",
+  "_note": "National figures from official sources. Per-university splits of NSFAS / self-funded / external funding are NOT published consistently, so funding-mix and accommodation figures are given at national level. Per-university total enrolment is in each university's info.json (students).",
+  "_compiled": "2026-06",
+  "studentFunding": {
+    "nsfasBeneficiariesProvisional2024": 1244854,
+    "nsfasBeneficiariesProvisional2024Note": "Provisionally funded as at 1 March 2024 (universities + TVET colleges)",
+    "nsfasFundedApprox2024": "1.1–1.2 million (universities + TVET)",
+    "nsfasSpend2024Rands": 50000000000,
+    "nsfasSpend2024Note": "Almost R50 billion budgeted for the 2024 academic year",
+    "nsfas2023StudentsFunded": 764421,
+    "nsfas2023DisbursedRands": 46592801446,
+    "nsfasSinceInception": "More than 5 million beneficiaries funded since inception",
+    "missingMiddle": {
+      "householdIncomeBand": "R350,000 – R600,000 per year",
+      "loanAllocation2024_25Rands": 3800000000,
+      "studentsTargeted": 31800,
+      "note": "NSFAS Loan Scheme for the 'missing middle' — SA citizens/permanent residents above the R350k NSFAS bursary threshold"
+    },
+    "fundingCategories": [
+      { "category": "NSFAS bursary (poor & working class)", "eligibility": "Household income ≤ R350,000/year", "note": "Fully subsidised — tuition, accommodation, allowances; the largest funded group" },
+      { "category": "NSFAS 'missing middle' loan", "eligibility": "Household income R350,000–R600,000/year", "note": "Income-contingent loans (R3.8bn, ~31,800 students in 2024/25)" },
+      { "category": "Bursaries & external funders", "eligibility": "Merit / employer / foundation / SETA / international", "note": "Company bursaries, SETAs, foundations, university merit awards, international scholarships" },
+      { "category": "Self-funded", "eligibility": "Above R600,000/year or otherwise unfunded", "note": "Students/families paying fees directly — the remainder not covered by NSFAS or bursaries" }
+    ]
+  },
+  "studentAccommodation": {
+    "universityBedsRegisteredWithNSFAS_early2024": 77331,
+    "universityBedsAccredited_early2024": 49411,
+    "universityBedsAwaitingAccreditation_early2024": 27920,
+    "studentsWithoutBedsStart2024": "Over 36,000",
+    "nationalHousingBacklogBeds": "More than 500,000",
+    "ifc2021ShortfallBeds": 550000,
+    "privateAccommodationNote": "Provision of private student accommodation is largely unregulated; NSFAS accredits and grades private providers for funded students via the registration portal (nsfas.org.za).",
+    "note": "NSFAS-funded students may only be placed in NSFAS-accredited accommodation; the accreditation backlog and the broader bed shortfall remain major access barriers."
+  },
+  "higherEducationSpending": {
+    "dhetTotalBudget2025_26Rands": 142400000000,
+    "dhetTotalBudget2026_27Rands": 150000000000,
+    "universityEducationBudget2024Rands": 91700000000,
+    "universityEducationBudget2025Rands": 96000000000,
+    "universityEducationBudget2026Rands": 100400000000,
+    "psetBudget2026Approx": "≈ R149 billion (Post-School Education & Training vote, 2026)",
+    "universitiesBudgetDeficit2025Rands": 1400000000,
+    "note": "DHET (Vote: Higher Education) covers university subsidies, NSFAS transfers, TVET & CET colleges, SETAs and the National Skills Fund."
+  },
+  "sources": [
+    { "label": "NSFAS — official site & DHET Bursary Scheme", "url": "https://www.nsfas.org.za/" },
+    { "label": "Over one million students provisionally funded by NSFAS (SAnews)", "url": "https://www.sanews.gov.za/south-africa/over-one-million-students-provisionally-funded-nsfas" },
+    { "label": "Nzimande announces R3.8bn for 'missing middle' (SAnews)", "url": "https://www.sanews.gov.za/south-africa/nzimande-announces-r38bn-funding-missing-middle-students" },
+    { "label": "Minister of Higher Education Budget Vote 2025/26 (gov.za)", "url": "https://www.gov.za/news/speeches/minister-nobuhle-nkabane-higher-education-dept-budget-vote-202526-03-jul-2025" },
+    { "label": "Government to increase spending on learning and culture (SAnews)", "url": "https://www.sanews.gov.za/south-africa/government-increase-spending-learning-and-culture" },
+    { "label": "NSFAS: 36,000+ students still without beds in 2024 (Daily Maverick)", "url": "https://www.dailymaverick.co.za/article/2024-02-15-nsfas-reveals-myriad-challenges-with-over-36-000-students-still-without-beds-in-2024/" },
+    { "label": "Student housing backlog & private accommodation (Daily Maverick / DHET)", "url": "https://www.dhet.gov.za/ResearchNew/39.%20Student%20housing%20at%20South%20African%20universities.pdf" },
+    { "label": "Registering accommodation with NSFAS", "url": "https://www.nsfas.org.za/content/studentacom.html" }
+  ]
+}
