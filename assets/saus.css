@@ -1176,7 +1176,12 @@ textarea.form-control{resize:vertical;min-height:110px}
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:960px){
-  :root{--total-top:calc(var(--topbar-h) + var(--header-h) + var(--nav-h))}
+  /* The nav has collapsed to the hamburger, so the navy nav bar is empty —
+     hide it and move the green accent onto the header to reclaim ~52px of a
+     phone's screen. !important on --total-top beats leftover per-page recalcs. */
+  #navbar{display:none!important}
+  #header{border-bottom:3px solid var(--green)}
+  :root{--total-top:calc(var(--topbar-h) + var(--header-h))!important}
   .with-sidebar{grid-template-columns:1fr}
   .sidebar{position:static}
   .footer-cols{grid-template-columns:1fr 1fr;gap:32px}
@@ -1197,7 +1202,7 @@ textarea.form-control{resize:vertical;min-height:110px}
   .pillar-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  :root{--header-h:84px;--total-top:calc(var(--topbar-h) + 84px + var(--nav-h))}
+  :root{--header-h:84px;--total-top:calc(var(--topbar-h) + 84px)!important}
   .wrap{padding:0 20px}
   /* !important so these win over the per-page inline header rules that load
      after saus.css in the <head> — guarantees an identical mobile header everywhere. */
