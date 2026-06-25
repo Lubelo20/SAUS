@@ -401,11 +401,11 @@ main{min-height:100vh;padding-top:var(--total-top)}
             </table></div>
           </div>
 
-          <div class="sec-header">
+          <div class="sec-header" data-cms-fallback="leadership">
             <div class="ref">SAUS/NEC/INSTITUTIONS/2025</div>
             <h2>Institutional <em>Representatives</em></h2>
           </div>
-          <div class="grid-4">
+          <div class="grid-4" data-cms-fallback="leadership">
             <div class="leader-card-sm"><div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--navy),var(--green))">UJ</div><div class="leader-name">NEC Member</div><div class="leader-role">Representative</div><div class="leader-uni">Univ. of Johannesburg</div></div>
             <div class="leader-card-sm"><div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--green),#005c28)">NMU</div><div class="leader-name">NEC Member</div><div class="leader-role">Representative</div><div class="leader-uni">Nelson Mandela Univ.</div></div>
             <div class="leader-card-sm"><div class="leader-avatar-sm" style="background:linear-gradient(135deg,var(--navy-light),var(--navy))">NWU</div><div class="leader-name">NEC Member</div><div class="leader-role">Representative</div><div class="leader-uni">North-West University</div></div>
@@ -537,5 +537,10 @@ function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.g
 function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
 </script>
 <script>(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();</script>
+<script src="/assets/cms.js"></script>
+<script>document.addEventListener('DOMContentLoaded',function(){
+  SAUS_CMS.hydrate('leadership','.team-grid',SAUS_CMS.render.leadership,{hideWhenLive:['[data-cms-fallback="leadership"]']});
+  SAUS_CMS.announcement();
+});</script>
 </body>
 </html>
