@@ -1,0 +1,5926 @@
+[
+ {
+  "abbr": "UCT",
+  "name": "University of Cape Town",
+  "city": "Cape Town",
+  "province": "Western Cape",
+  "founded": 1829,
+  "students": 30000,
+  "website": "https://www.uct.ac.za",
+  "applyUrl": "https://applyonline.uct.ac.za/",
+  "prospectusUrl": "https://www.uct.ac.za/students/prospective-students/undergraduate-prospectus",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 July 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R100",
+  "feeIntl": "R300",
+  "apsSystem": "APS /600 (sum of 6 best NSC subject percentages, excluding Life Orientation; results below 40% score zero)",
+  "minApsRange": "300–450+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Commerce",
+   "Faculty of Engineering & the Built Environment",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Science",
+   "Graduate School of Business",
+   "Centre for Higher Education Development"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Commerce (BCom)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce",
+    "aps": 360
+   },
+   {
+    "name": "Bachelor of Business Science (BBusSc)",
+    "qual": "BBusSc",
+    "faculty": "Faculty of Commerce",
+    "aps": 400
+   },
+   {
+    "name": "BSc Engineering (Chemical, Civil, Electrical & Computer, Electro-Mechanical, Industrial, Mechanical, Mechatronics)",
+    "qual": "BSc",
+    "faculty": "Faculty of Engineering & the Built Environment",
+    "aps": 400
+   },
+   {
+    "name": "BSc Geomatics",
+    "qual": "BSc",
+    "faculty": "Faculty of Engineering & the Built Environment",
+    "aps": 360
+   },
+   {
+    "name": "Bachelor of Architectural Studies",
+    "qual": "BAS",
+    "faculty": "Faculty of Engineering & the Built Environment",
+    "aps": 360
+   },
+   {
+    "name": "BSc Construction Studies",
+    "qual": "BSc",
+    "faculty": "Faculty of Engineering & the Built Environment",
+    "aps": 360
+   },
+   {
+    "name": "BSc Property Studies",
+    "qual": "BSc",
+    "faculty": "Faculty of Engineering & the Built Environment",
+    "aps": 360
+   },
+   {
+    "name": "MBChB (Medicine and Surgery)",
+    "qual": "MBChB",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 450
+   },
+   {
+    "name": "BSc Audiology",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 400
+   },
+   {
+    "name": "BSc Physiotherapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 400
+   },
+   {
+    "name": "BSc Occupational Therapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 400
+   },
+   {
+    "name": "BSc Speech-Language Pathology",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 400
+   },
+   {
+    "name": "Bachelor of Arts (BA)",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 300
+   },
+   {
+    "name": "Bachelor of Social Science (BSocSci)",
+    "qual": "BSocSci",
+    "faculty": "Faculty of Humanities",
+    "aps": 300
+   },
+   {
+    "name": "Bachelor of Music (BMus)",
+    "qual": "BMus",
+    "faculty": "Faculty of Humanities",
+    "aps": 300
+   },
+   {
+    "name": "BA Fine Art",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 300
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 360
+   },
+   {
+    "name": "Bachelor of Science (BSc)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 360
+   },
+   {
+    "name": "BSc Computer Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 380
+   }
+  ],
+  "flags": [
+   "healthSciencesCloses: no separate earlier closing date for Health Sciences confirmed from official UCT sources — same 31 July 2026 deadline applies; third-party sources suggested NBT deadline differs but not application close date",
+   "minApsRange: expressed as APS/600 (UCT uses percentage-based scoring out of 600, not the standard /42 APS); range estimates based on third-party aggregator data cross-referenced with official subject requirements since official UCT site does not publish consolidated APS tables",
+   "programme APS values sourced from third-party aggregator (studentroom.co.za) cross-checked against official subject requirements; UCT official site directs to faculty-specific PDFs for exact cut-offs — treat as indicative only",
+   "MBChB aps:450 is a weighted score approximation; UCT uses a complex weighted formula for Health Sciences, not a simple APS sum",
+   "students: ~30,000 based on 2023 data from UCT News (17,862 UG + 11,638 PG + 465 occasional)"
+  ],
+  "sources": [
+   "https://uct.ac.za/students/applications/key-dates",
+   "https://uct.ac.za/students/applications-apply-undergraduate-qualifications/application-procedure",
+   "https://uct.ac.za/students/applications-admission-requirements/eligibility-admission",
+   "https://uct.ac.za/students/applications-admission-requirements/undergraduates",
+   "https://uct.ac.za/faculties",
+   "https://uct.ac.za/students/prospective-students/undergraduate-prospectus",
+   "https://commerce.uct.ac.za/educommerce/admissions",
+   "https://health.uct.ac.za/home/undergraduates/prospective-students/admissions/undergraduate-eligibility-and-process",
+   "https://law.uct.ac.za/undergrad-info-prospective-students/admissions",
+   "https://www.nsfas.org.za/content/institutions.html",
+   "https://www.news.uct.ac.za/article/-2024-01-27-about-uct-and-cape-town",
+   "https://uct.ac.za/institutional-planning/institutional-facts-and-figures",
+   "https://www.studentroom.co.za/university-of-cape-town-uct-degree-courses-and-aps-requirements-2026/"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "WITS",
+  "name": "University of the Witwatersrand",
+  "city": "Johannesburg",
+  "province": "Gauteng",
+  "founded": 1922,
+  "students": 41702,
+  "website": "https://www.wits.ac.za",
+  "applyUrl": "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+  "prospectusUrl": "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/",
+  "applicationOpens": "1 March 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "R100",
+  "feeIntl": "R100",
+  "apsSystem": "APS /56 (best 7 subjects including Life Orientation; English and Mathematics attract bonus points)",
+  "minApsRange": "37–46+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Commerce, Law and Management",
+   "Faculty of Engineering and the Built Environment",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Science"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Law and Management",
+    "aps": 38
+   },
+   {
+    "name": "Bachelor of Commerce (Accounting)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Law and Management",
+    "aps": 38
+   },
+   {
+    "name": "Bachelor of Commerce (Information Systems)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Law and Management",
+    "aps": 38
+   },
+   {
+    "name": "Bachelor of Commerce with Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Law and Management",
+    "aps": 43
+   },
+   {
+    "name": "LLB (Bachelor of Laws) — 4-year stream",
+    "qual": "LLB",
+    "faculty": "Faculty of Commerce, Law and Management",
+    "aps": 46
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 42
+   },
+   {
+    "name": "Aeronautical Engineering",
+    "qual": "BScEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 42
+   },
+   {
+    "name": "Mechanical Engineering",
+    "qual": "BScEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 42
+   },
+   {
+    "name": "Civil Engineering",
+    "qual": "BScEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 42
+   },
+   {
+    "name": "Biomedical Engineering",
+    "qual": "BEngSc",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 42
+   },
+   {
+    "name": "Bachelor of Engineering Science in Digital Arts",
+    "qual": "BEngSc",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 42
+   },
+   {
+    "name": "Medicine and Surgery",
+    "qual": "MBBCh",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "BEd Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 37
+   },
+   {
+    "name": "BEd Intermediate Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 37
+   },
+   {
+    "name": "BEd Senior Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 37
+   }
+  ],
+  "confidence": "high",
+  "flags": [
+   "feeIntl: The R100 application fee was confirmed for SA applicants; the international applicants page did not specify the same R100 fee — international students pay a separate non-refundable International Registration Fee of R6,970 at registration, but the application fee itself is not separately stated for international applicants on official pages",
+   "Medicine/MBBCh APS set to 0 because admission uses a Composite Index (60% matric average of 5 subjects + 40% NBT score), not a standard APS threshold",
+   "LLB 3-year and 2-year streams do not use matric APS — admitted based on undergraduate degree performance",
+   "Prospectus URL links to a landing page; the 2027 guide PDF is available for download from that page but a direct PDF URL was not confirmed",
+   "applicationOpens confirmed as March 2026 from timelines page — specific day (1 March) sourced from third-party aggregators; official Wits timelines page states only 'March 2026'",
+   "BA Film and TV and Bachelor of Architectural Studies also close 30 June 2026 (same as Health Sciences early deadline)"
+  ],
+  "sources": [
+   "https://www.wits.ac.za/undergraduate/apply-to-wits/",
+   "https://www.wits.ac.za/undergraduate/apply-to-wits/timelines/",
+   "https://www.wits.ac.za/undergraduate/entry-requirements/",
+   "https://www.wits.ac.za/undergraduate/entry-requirements/admission-requirements-nsc/",
+   "https://www.wits.ac.za/undergraduate/academic-programmes/",
+   "https://www.wits.ac.za/faculties-and-schools/",
+   "https://www.wits.ac.za/about-wits/facts-and-figures/",
+   "https://www.wits.ac.za/course-finder/undergraduate/science/bsc/",
+   "https://www.wits.ac.za/course-finder/undergraduate/clm/bcom/",
+   "https://www.wits.ac.za/course-finder/undergraduate/clm/accounting/",
+   "https://www.wits.ac.za/course-finder/undergraduate/clm/information-systems/",
+   "https://www.wits.ac.za/course-finder/undergraduate/clm/bcom-part-time-with-law/",
+   "https://www.wits.ac.za/course-finder/undergraduate/clm/llb-law/",
+   "https://www.wits.ac.za/course-finder/undergraduate/health/medicine-and-surgery/",
+   "https://www.wits.ac.za/course-finder/undergraduate/ebe/aeronautical-engineering/",
+   "https://www.wits.ac.za/course-finder/undergraduate/ebe/mechanical-engineering/",
+   "https://www.wits.ac.za/course-finder/undergraduate/ebe/biomedical-engineering/",
+   "https://www.wits.ac.za/course-finder/undergraduate/ebe/digital-arts/",
+   "https://www.wits.ac.za/course-finder/undergraduate/ebe/civil-engineering/",
+   "https://www.wits.ac.za/course-finder/undergraduate/humanities/bed-foundation-phase-teaching/",
+   "https://www.wits.ac.za/course-finder/undergraduate/humanities/bed-intermediate-phase-teaching/",
+   "https://www.wits.ac.za/course-finder/undergraduate/humanities/bed-senior-phase-teaching/",
+   "https://www.wits.ac.za/internationalstudents/financial-information/fee-structure/",
+   "https://www.wits.ac.za/undergraduate/guide-for-undergraduates/"
+  ]
+ },
+ {
+  "abbr": "SU",
+  "name": "Stellenbosch University",
+  "city": "Stellenbosch",
+  "province": "Western Cape",
+  "founded": 1918,
+  "students": 32000,
+  "website": "https://www.su.ac.za",
+  "applyUrl": "https://www.su.ac.za/en/apply/undergrad",
+  "prospectusUrl": "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 July 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R100",
+  "feeIntl": "R400",
+  "apsSystem": "NSC aggregate % (best 6 subjects excl. Life Orientation) — SU uses percentage aggregate out of 100, not APS /42",
+  "minApsRange": "55%–80% NSC aggregate (programme dependent)",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of AgriSciences",
+   "Faculty of Arts and Social Sciences",
+   "Faculty of Economic and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Engineering",
+   "Faculty of Law",
+   "Faculty of Medicine and Health Sciences",
+   "Faculty of Military Science",
+   "Faculty of Science",
+   "Faculty of Theology"
+  ],
+  "programmes": [
+   {
+    "name": "BAgric in Agribusiness Management",
+    "qual": "BAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BScAgric in Agricultural Economics",
+    "qual": "BScAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BAgric in Agricultural Production and Management: Elsenburg",
+    "qual": "BAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 55
+   },
+   {
+    "name": "BScAgric in Animal Production Systems",
+    "qual": "BScAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc in Forestry (Forestry and Wood Sciences)",
+    "qual": "BSc",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc in Conservation Ecology",
+    "qual": "BSc",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BScAgric in Plant and Soil Science",
+    "qual": "BScAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BScAgric in Viticulture and Oenology",
+    "qual": "BScAgric",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc in Food Science",
+    "qual": "BSc",
+    "faculty": "Faculty of AgriSciences",
+    "aps": 60
+   },
+   {
+    "name": "BA in Humanities",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "BA in Language and Culture",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "BA in Development and the Environment",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "BA in Drama and Theatre Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 65
+   },
+   {
+    "name": "BA in Music",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 60
+   },
+   {
+    "name": "BA in Human Resource Management",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "BA in International Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "Bachelor of Music",
+    "qual": "BMus",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 60
+   },
+   {
+    "name": "BA in Political, Philosophical and Economic Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSocWork",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 63
+   },
+   {
+    "name": "BA in Visual Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 60
+   },
+   {
+    "name": "Diploma in Sustainable Development",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Social Sciences",
+    "aps": 0
+   },
+   {
+    "name": "BCom (Economic Sciences)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 65
+   },
+   {
+    "name": "BCom (Management Sciences)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 65
+   },
+   {
+    "name": "BCom (Mathematical Sciences)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 70
+   },
+   {
+    "name": "BCom (International Business)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 80
+   },
+   {
+    "name": "BCom (Actuarial Science)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 80
+   },
+   {
+    "name": "BCom (Industrial Psychology)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 65
+   },
+   {
+    "name": "BAcc",
+    "qual": "BAcc",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 70
+   },
+   {
+    "name": "BCom (Management Accounting)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 65
+   },
+   {
+    "name": "BCom (Financial Accounting)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 65
+   },
+   {
+    "name": "Bachelor of Data Science",
+    "qual": "BDatSci",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 80
+   },
+   {
+    "name": "BEd (Foundation Phase Education)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 60
+   },
+   {
+    "name": "BEd (Intermediate Phase Education)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 60
+   },
+   {
+    "name": "BEng (Chemical)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Civil)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Electrical and Electronic)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Electrical and Electronic — Data Engineering)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Industrial)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Mechanical)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "BEng (Mechatronic)",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 70
+   },
+   {
+    "name": "LLB (four-year)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 70
+   },
+   {
+    "name": "BA (Law)",
+    "qual": "BA",
+    "faculty": "Faculty of Law",
+    "aps": 70
+   },
+   {
+    "name": "BCom (Law)",
+    "qual": "BCom",
+    "faculty": "Faculty of Law",
+    "aps": 70
+   },
+   {
+    "name": "BAccLLB",
+    "qual": "BAccLLB",
+    "faculty": "Faculty of Law",
+    "aps": 80
+   },
+   {
+    "name": "MBChB",
+    "qual": "MBChB",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 75
+   },
+   {
+    "name": "Bachelor of Occupational Therapy",
+    "qual": "BOccTher",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc in Physiotherapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 60
+   },
+   {
+    "name": "Bachelor of Speech-Language and Hearing Therapy",
+    "qual": "BSpeechHear",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 60
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNurs",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc in Dietetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 60
+   },
+   {
+    "name": "BSc Biodiversity and Ecology",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Human Life Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Molecular Biology and Biotechnology",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Sport Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Chemistry",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Earth Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Physics",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Mathematical Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc Computer Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc GeoInformatics",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BSc (Interdisciplinary — Biomedical/Bioinformatics/Applied Medicinal Chemistry)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 65
+   },
+   {
+    "name": "BTh (Bachelor of Theology)",
+    "qual": "BTh",
+    "faculty": "Faculty of Theology",
+    "aps": 60
+   },
+   {
+    "name": "BDiv (Bachelor of Divinity)",
+    "qual": "BDiv",
+    "faculty": "Faculty of Theology",
+    "aps": 60
+   }
+  ],
+  "sources": [
+   "https://files.su.ac.za/public/undergraduate-maties/documents/2026-01/su-admissions-booklet-2027.pdf",
+   "https://en.wikipedia.org/wiki/Stellenbosch_University",
+   "https://www.coursematch.co.za/blog/2027-applications-open-at-stellenbosch-university",
+   "https://www.varsitywise.com/posts/stellenbosch-university-opens-2027-online-applications",
+   "https://apsscore.com/medicine-degrees-south-africa-mbchb-requirements/",
+   "https://blogs.sun.ac.za/open-day/files/2026/03/How-to-Apply-Undergraduate-programmes-2027-intake.pdf"
+  ],
+  "flags": [
+   "SU uses NSC aggregate percentage (not the /42 APS scale) — aps values in programmes represent minimum NSC aggregate % thresholds, not APS points",
+   "healthSciencesCloses: MBChB and Health Sciences close 31 July like all programmes; no earlier health-sciences-specific date confirmed from official sources for 2027",
+   "Military Science (Faculty) undergraduate programmes are exclusively for SANDF personnel — not open to civilian applicants; no civilian admission requirements exist",
+   "feeSA exemption: quintile 1–4 school applicants are exempt from the R100 fee; international fee R400 confirmed from secondary sources citing official SU pages, not directly from su.ac.za (403 on application-fees page)",
+   "Enrolment figure of ~32 000 is approximate; Wikipedia cites 25 042 undergraduates and 10 051 postgraduates (total ~35 093) as of most recent data"
+  ],
+  "confidence": "high"
+ },
+ {
+  "name": "University of Pretoria",
+  "abbr": "UP",
+  "city": "Pretoria",
+  "province": "Gauteng",
+  "founded": 1908,
+  "students": 56409,
+  "website": "https://www.up.ac.za",
+  "applyUrl": "https://www.up.ac.za/online-application/apply-online",
+  "prospectusUrl": "https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_UG%20Prospectus%202027_NSC-IEB_DevV5_web_0.pdf?VersionId=mFTqP2HthIDn48ISjWf4b4g6CtdE6beU",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 June 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R300",
+  "feeIntl": "US$30",
+  "apsSystem": "APS /42",
+  "minApsRange": "28–42",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Economic and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Engineering, Built Environment and Information Technology",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Natural and Agricultural Sciences",
+   "Faculty of Theology and Religion",
+   "Faculty of Veterinary Science"
+  ],
+  "programmes": [
+   {
+    "name": "BCom (3-year)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom (4-year)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 26
+   },
+   {
+    "name": "BCom Accounting Sciences",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 34
+   },
+   {
+    "name": "BCom Economics",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BCom Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BCom Information Systems",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BEd Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEd Intermediate Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEd Senior Phase and FET Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEng Chemical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "BEng Civil Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "BEng Electrical, Electronic and Computer Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "BEng Mechanical and Aeronautical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "BSc Computer Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "BArch (Architecture)",
+    "qual": "BArch",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 35
+   },
+   {
+    "name": "MBChB (Medicine)",
+    "qual": "MBChB",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 35
+   },
+   {
+    "name": "BChD (Dental Surgery)",
+    "qual": "BChD",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 35
+   },
+   {
+    "name": "BSc Physiotherapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BSc Occupational Therapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BSc Nursing Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BSc Dietetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BA",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 30
+   },
+   {
+    "name": "BA Social Work",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 30
+   },
+   {
+    "name": "BA Audiology",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 32
+   },
+   {
+    "name": "BA Speech-Language Pathology",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 32
+   },
+   {
+    "name": "LLB",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 35
+   },
+   {
+    "name": "BSc (General)",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BSc Actuarial and Financial Mathematics",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 36
+   },
+   {
+    "name": "BSc Biotechnology",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BSc Chemistry",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 34
+   },
+   {
+    "name": "BSc Mathematics",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 34
+   },
+   {
+    "name": "BDivinity",
+    "qual": "BDivinity",
+    "faculty": "Faculty of Theology and Religion",
+    "aps": 28
+   },
+   {
+    "name": "BTheology",
+    "qual": "BTheology",
+    "faculty": "Faculty of Theology and Religion",
+    "aps": 28
+   },
+   {
+    "name": "BVSc (Veterinary Science)",
+    "qual": "BVSc",
+    "faculty": "Faculty of Veterinary Science",
+    "aps": 35
+   },
+   {
+    "name": "BVetNurs (Veterinary Nursing)",
+    "qual": "BVetNurs",
+    "faculty": "Faculty of Veterinary Science",
+    "aps": 28
+   }
+  ],
+  "sources": [
+   "https://www.up.ac.za/online-application",
+   "https://www.up.ac.za/online-application/important-dates",
+   "https://www.up.ac.za/online-application/application-fee",
+   "https://www.up.ac.za/students/admission-information",
+   "https://www.up.ac.za/students/faculty-brochures-2027",
+   "https://www.up.ac.za/article/2749393/faculties",
+   "https://www.up.ac.za/students/national-student-financial-aid-scheme-nsfas",
+   "https://www.matrichub.co.za/2026/04/05/university-of-pretoria-up-2027-applications-open-how-to-apply-online-closing-dates-fees-requirements/",
+   "https://www.varsitywise.com/posts/2027-applications-now-open-at-university-of-pretoria",
+   "https://www.studentroom.co.za/university-of-pretoria-up-aps-requirements-explained-for-2027/",
+   "https://briefly.co.za/24833-university-pretoria-courses-requirements.html",
+   "https://en.wikipedia.org/wiki/University_of_Pretoria",
+   "https://drupalwebprod-files.up.ac.za/Public/2026-01/UP_UG%20Prospectus%202027_NSC-IEB_DevV5_web_0.pdf?VersionId=mFTqP2HthIDn48ISjWf4b4g6CtdE6beU",
+   "https://drupalwebprod-files.up.ac.za/Public/2026-03/UP_DESA_Application%20requirements%20tables_2027_web.pdf?VersionId=vw30gCBk2BMAXzOhFSBflmkFOHOMFOoa"
+  ],
+  "flags": [
+   "healthSciencesCloses: Health Sciences/Medicine does not have a separately confirmed earlier closing date — only Veterinary Science has 31 May 2026; confirm if Medicine follows general 30 June deadline",
+   "feeIntl: International fee of US$30 confirmed from third-party sources; official up.ac.za application-fee page returned HTTP 403 and could not be directly verified",
+   "programme APS values sourced primarily from third-party aggregator sites (studentroom.co.za, briefly.co.za, coursematch.co.za) — official UP_DESA_Application requirements tables 2027 PDF returned HTTP 403; values should be verified against official prospectus PDF",
+   "prospectusUrl: PDF URL contains a VersionId parameter that may expire; the canonical page is https://www.up.ac.za/online-application",
+   "enrolment: 56,409 figure sourced from Wikipedia (citing official UP data); official up.ac.za statistics pages returned HTTP 403"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "UJ",
+  "name": "University of Johannesburg",
+  "city": "Johannesburg",
+  "province": "Gauteng",
+  "founded": 2005,
+  "students": 50786,
+  "website": "https://www.uj.ac.za",
+  "applyUrl": "https://registration.uj.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP",
+  "prospectusUrl": "https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "apsSystem": "APS /42",
+  "minApsRange": "22–34+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Art, Design and Architecture",
+   "College of Business and Economics",
+   "Faculty of Education",
+   "Faculty of Engineering and the Built Environment",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Science",
+   "Johannesburg Business School"
+  ],
+  "programmes": [
+   {
+    "name": "LLB in Law",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 31
+   },
+   {
+    "name": "BA Law",
+    "qual": "BA",
+    "faculty": "Faculty of Law",
+    "aps": 31
+   },
+   {
+    "name": "BCom Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Law",
+    "aps": 31
+   },
+   {
+    "name": "Bachelor of Accounting (CA-stream)",
+    "qual": "BAcc",
+    "faculty": "College of Business and Economics",
+    "aps": 33
+   },
+   {
+    "name": "BCom in Accounting",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 28
+   },
+   {
+    "name": "BCom in Accounting (Extended)",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 25
+   },
+   {
+    "name": "BCom in Business Management",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Economics and Econometrics",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Finance",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Marketing Management",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Human Resource Management",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Industrial Psychology",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BCom in Tourism Development and Management",
+    "qual": "BCom",
+    "faculty": "College of Business and Economics",
+    "aps": 26
+   },
+   {
+    "name": "BEd in Foundation Phase Teaching (Grade R-3)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEd in Intermediate Phase Teaching (Grade 4-7)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEd in Senior Phase and FET Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "BEngTech in Civil Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "BEngTech in Mechanical Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "BEngTech in Electrical Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "BEngTech in Mining Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 23
+   },
+   {
+    "name": "BEngTech in Chemical Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "BEng in Mechanical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Construction",
+    "qual": "BConstruction",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Urban and Regional Planning",
+    "qual": "BUrbanPlan",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BCur",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Health Sciences in Emergency Medical Care",
+    "qual": "BHSci",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Biokinetics",
+    "qual": "BBiokin",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Health Sciences in Complementary Medicine",
+    "qual": "BHSci",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Environmental Health",
+    "qual": "BEnvHealth",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Sport and Exercise Sciences",
+    "qual": "BSportSci",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSW",
+    "faculty": "Faculty of Humanities",
+    "aps": 31
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "BA in Strategic Communication",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BA in Politics, Economics and Technology",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "BSc in Computer Science and Informatics",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 30
+   },
+   {
+    "name": "BSc in Computer Science and Informatics (AI Specialisation)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 34
+   },
+   {
+    "name": "BSc in Computer Science and Informatics (Extended)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 26
+   }
+  ],
+  "sources": [
+   "https://www.uj.ac.za/admission-aid/undergraduate/",
+   "https://www.uj.ac.za/admission-aid/apply/",
+   "https://www.varsitywise.com/posts/university-of-johannesburg-now-accepting-2027-applications",
+   "https://coursematch.co.za/blog/uj-2027-applications-now-open-free-online-application-closes-31-october-2026",
+   "https://en.wikipedia.org/wiki/University_of_Johannesburg",
+   "https://www.uj.ac.za/faculties/",
+   "https://www.uj.ac.za/university-courses/llb-in-law/",
+   "https://www.uj.ac.za/university-courses/bcom-law/",
+   "https://www.uj.ac.za/university-courses/beng-tech-in-civil-engineering/",
+   "https://www.uj.ac.za/university-courses/bsc-in-computer-science-and-informatics/",
+   "https://www.uj.ac.za/university-courses/bachelor-of-nursing/",
+   "https://www.uj.ac.za/university-courses/bachelor-of-accounting-ca-stream/",
+   "https://www.uj.ac.za/admission-aid/student-finance/nsfas-national-financial-aid-scheme/",
+   "https://www.varsitywise.com/posts/courses-that-are-offered-at-uj",
+   "https://www.uj.ac.za/study-uj-and-aid/undergraduate/undergraduate-prospectus-downloadable/"
+  ],
+  "flags": [
+   "healthSciencesCloses: no specific early closing date for Health Sciences confirmed from official UJ source; programmes close on a rolling basis when full",
+   "feeIntl: confirmed free for online applications; R200 hardcopy fee applies — international-specific surcharge not confirmed",
+   "Several programme APS values sourced from secondary/aggregator sites (varsitywise, coursematch, southportal) as uj.ac.za returned HTTP 403; should be cross-checked against official prospectus PDF when accessible",
+   "No official 2027 prospectus PDF URL confirmed — prospectus download page URL used instead",
+   "Johannesburg Business School listed as separate entity but inclusion as a faculty/college requires verification"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "UKZN",
+  "name": "University of KwaZulu-Natal",
+  "city": "Durban",
+  "province": "KwaZulu-Natal",
+  "founded": 2004,
+  "students": 44628,
+  "website": "https://www.ukzn.ac.za",
+  "applyUrl": "https://www.cao.ac.za",
+  "prospectusUrl": "https://applications.ukzn.ac.za/prospectus/undergraduate/latest",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "R210",
+  "feeIntl": "R490 (SADC/Africa); US$153 (outside Africa)",
+  "apsSystem": "APS /48 (six NSC subjects, Life Orientation excluded)",
+  "minApsRange": "26–48",
+  "nsfasAccredited": true,
+  "faculties": [
+   "College of Humanities",
+   "College of Agriculture, Engineering and Science",
+   "College of Health Sciences",
+   "College of Law and Management Studies"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "College of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Social Science",
+    "qual": "BSocSci",
+    "faculty": "College of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Social Science (Extended Curriculum)",
+    "qual": "BSocSci",
+    "faculty": "College of Humanities",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "faculty": "College of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase)",
+    "qual": "BEd",
+    "faculty": "College of Humanities",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase/FET)",
+    "qual": "BEd",
+    "faculty": "College of Humanities",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "faculty": "College of Law and Management Studies",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Commerce (Accounting)",
+    "qual": "BCom",
+    "faculty": "College of Law and Management Studies",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Business Science",
+    "qual": "BBusSci",
+    "faculty": "College of Law and Management Studies",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Administration",
+    "qual": "BAdmin",
+    "faculty": "College of Law and Management Studies",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "College of Law and Management Studies",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Science Engineering (Civil)",
+    "qual": "BEng",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Science Engineering (Chemical)",
+    "qual": "BEng",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Science Engineering (Electrical)",
+    "qual": "BEng",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Science Engineering (Mechanical)",
+    "qual": "BEng",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Science (Statistics and Computer Science)",
+    "qual": "BSc",
+    "faculty": "College of Agriculture, Engineering and Science",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Medicine and Bachelor of Surgery",
+    "qual": "MBChB",
+    "faculty": "College of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNursing",
+    "faculty": "College of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "College of Health Sciences",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Physiotherapy",
+    "qual": "BPhysio",
+    "faculty": "College of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Occupational Therapy",
+    "qual": "BOT",
+    "faculty": "College of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Optometry",
+    "qual": "BOptom",
+    "faculty": "College of Health Sciences",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Audiology",
+    "qual": "BAud",
+    "faculty": "College of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Speech-Language Therapy",
+    "qual": "BSLT",
+    "faculty": "College of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Sports Science",
+    "qual": "BSportsSci",
+    "faculty": "College of Health Sciences",
+    "aps": 0
+   }
+  ],
+  "sources": [
+   "https://applications.ukzn.ac.za/uncategorized/2026-applications/",
+   "https://applications.ukzn.ac.za/applications/ukzn-applications/",
+   "https://applications.ukzn.ac.za/applications/online-applications/",
+   "https://applications.ukzn.ac.za/selection-procedure/undergraduate-selection-procedure/",
+   "https://applications.ukzn.ac.za/prospectus/",
+   "https://studyatukzn.ukzn.ac.za/apply-at-ukzn/how-to-apply/",
+   "https://www.ukzn.ac.za",
+   "https://ww2.chs.ukzn.ac.za/undergraduate-programmes-2/",
+   "https://health-sciences.ukzn.ac.za/degrees/b-nursing/",
+   "https://health-sciences.ukzn.ac.za/degrees/b-occupational-therapy/",
+   "https://ww2.chs.ukzn.ac.za/undergraduate-progra/bachelor-of-physiotherapy/",
+   "https://ww1.clms.ukzn.ac.za/faq/",
+   "https://law.ukzn.ac.za/undergraduates/bachelor-of-laws-full-time-llb/",
+   "https://ww2.engineering.ukzn.ac.za/chemical/",
+   "https://ww1.engineering.ukzn.ac.za/civil/",
+   "https://statistics.ukzn.ac.za/data-science/qualification/bachelor-of-science-statistics-computer-science/",
+   "https://casse.ukzn.ac.za/access-programmes/",
+   "https://education.ukzn.ac.za/information-for-high-school-learners/bed/",
+   "https://ukzn.ac.za/news/top-matriculants-enrol-at-ukzn-as-2025-academic-year-kicks-off/"
+  ],
+  "flags": [
+   "MBChB APS: Medicine applicants are ranked by average percentage score rather than APS — minimum APS not published; field set to 0",
+   "BEd Intermediate Phase and Senior Phase/FET APS: subject requirements confirmed but minimum APS score not explicitly published on official page; set to 0",
+   "BPhysio APS: subject requirements confirmed from official page but minimum APS score not listed; set to 0",
+   "BAud, BSLT, BSportsSci APS: programmes confirmed on CHS page but minimum APS not found on official programme pages; set to 0",
+   "Application opening date: 'April 2026' confirmed by official-linked news source (africazine.com citing UKZN); exact day not confirmed from ukzn.ac.za directly — '1 April 2026' is widely reported but treat as approximate",
+   "SA application fee R210 confirmed for 2026 intake on applications.ukzn.ac.za; 2027 fee not yet separately published — assumed same pending official update",
+   "enrolment figure 44,628 is for 2025 academic year per official UKZN news; on-file figure of 47,000 not confirmed from official sources"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "RU",
+  "name": "Rhodes University",
+  "city": "Makhanda",
+  "province": "Eastern Cape",
+  "founded": 1904,
+  "students": 7005,
+  "website": "https://www.ru.ac.za",
+  "applyUrl": "https://ross.ru.ac.za/ugadmissions",
+  "prospectusUrl": "https://www.ru.ac.za/media/rhodesuniversity/content/registrar/documents/information/studentrecruitment/RU_READY_Undergraduate_Prospectus_2026_DIGITAL_A5_Landscape_24pp_18Mar2026.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R100",
+  "feeIntl": "R100",
+  "apsSystem": "APS /42 (best 6 NSC subjects excluding Life Orientation; subjects below 40% excluded)",
+  "minApsRange": "33–45",
+  "faculties": [
+   "Faculty of Commerce",
+   "Faculty of Education",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Pharmacy",
+   "Faculty of Science"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Social Science",
+    "qual": "BSocSci",
+    "faculty": "Faculty of Humanities",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Journalism and Media Studies",
+    "qual": "BJourn",
+    "faculty": "Faculty of Humanities",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Fine Art",
+    "qual": "BFA",
+    "faculty": "Faculty of Humanities",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Music",
+    "qual": "BMus",
+    "faculty": "Faculty of Humanities",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Business Science",
+    "qual": "BBusSci",
+    "faculty": "Faculty of Commerce",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Economics",
+    "qual": "BEcon",
+    "faculty": "Faculty of Commerce",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Science in Information Systems",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Science in Software Development",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Pharmacy",
+    "aps": 45
+   },
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 40
+   },
+   {
+    "name": "Bachelor of Education",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 40
+   }
+  ],
+  "nsfasAccredited": true,
+  "sources": [
+   "https://ross.ru.ac.za/ugadmissions",
+   "https://www.ru.ac.za/admissiongateway/",
+   "https://www.varsitywise.com/posts/rhodes-university-2027-admission-now-open",
+   "https://www.bursariesafrica.co.za/universities/how-to-apply-to-rhodes-university-for-2026/",
+   "https://www.studentroom.co.za/rhodes-university-admission-entry-requirements/",
+   "https://johannesburglists.com/rhodes-university-courses-and-requirements/",
+   "https://en.wikipedia.org/wiki/Rhodes_University",
+   "https://www.ru.ac.za/registrar/nsfas/"
+  ],
+  "flags": [
+   "enrolment figure (7005) from Wikipedia — official Facts and Figures page at ru.ac.za returned HTTP 403; some sources cite ~8000–9000",
+   "international application fee not separately confirmed as R100 — same fee assumed from sources that do not differentiate",
+   "APS automatic-offer threshold is 45 for most programmes but precise minimum (floor) per programme varies by Dean discretion; floor APS values listed are indicative thresholds from third-party aggregators, not directly from official ru.ac.za programme pages (all returned 403)",
+   "LLB minimum APS not explicitly confirmed from official source — 40 cited by multiple aggregators",
+   "prospectus PDF URL is the 2027 intake document published March 2026; confirmed present in official Google index but direct fetch returned 403"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "CPUT",
+  "name": "Cape Peninsula University of Technology",
+  "city": "Cape Town",
+  "province": "Western Cape",
+  "founded": 2005,
+  "students": 35000,
+  "website": "https://www.cput.ac.za",
+  "applyUrl": "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+  "prospectusUrl": "https://www.cput.ac.za/study-at-cput/undergraduate/prospectus",
+  "applicationOpens": "11 May 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "apsSystem": "APS /42 (6 best NSC subjects excluding Life Orientation)",
+  "minApsRange": "24–36+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Applied Sciences",
+   "Faculty of Business and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Engineering and the Built Environment",
+   "Faculty of Health and Wellness Sciences",
+   "Faculty of Informatics and Design"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Engineering Technology in Electrical Engineering",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 36
+   },
+   {
+    "name": "Diploma in Engineering Technology in Electrical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Mechanical Engineering (Extended Curriculum)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 27
+   },
+   {
+    "name": "Diploma in Architectural Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Environmental Health",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Marine Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Mathematical Sciences",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Diploma in Agricultural Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Diploma in Biotechnology (ECP)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Diploma in Consumer Science: Food and Nutrition (ECP)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Horticulture (ECP)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Health and Wellness Sciences",
+    "aps": 28
+   },
+   {
+    "name": "B Ed Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Business Informatics",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Business and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Accountancy",
+    "qual": "Diploma",
+    "faculty": "Faculty of Business and Management Sciences",
+    "aps": 0
+   }
+  ],
+  "flags": [
+   "healthSciencesCloses: 30 June 2026 confirmed from official CPUT apply page for nursing/medical lab/radiography; Emergency Medical Care closes 31 July 2026; Education (BEd/PGCE) closes 31 August 2026 — multiple sub-deadlines exist within Health and Wellness Sciences",
+   "feeIntl: application is free per FAQ but international students pay a R1500 administration levy and R3500 upfront deposit after acceptance — not an application fee",
+   "Bachelor of Nursing minimum APS: prospectus page did not display numerical APS clearly; 28 sourced from third-party aggregator search snippet — treat with caution",
+   "BEd and Bachelor of Business Informatics APS not confirmed from official source — set to 0",
+   "prospectusUrl: official prospectus landing page confirmed; no direct 2027 PDF link retrievable",
+   "students: stated as 'over 35 000' on official About page — approximate figure"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "https://www.cput.ac.za/study-at-cput/undergraduate/apply",
+   "https://www.cput.ac.za/enquiries/application-faq",
+   "https://www.cput.ac.za/study-at-cput/undergraduate/prospectus",
+   "https://www.cput.ac.za/about",
+   "https://cput.ac.za/study/international-applicants/admission-requirements",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=BPETEE&f=140",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D2ETEE&f=140",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3MCHX&f=140",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3ARCT&f=220",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=BPENVH&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=DPMASC&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3MATH&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3AGRM&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3BITX&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3CNSX&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3HRCX&f=20",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=BPNURS&f=180",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=BGBICS&f=60",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=D3ACCY&f=60",
+   "https://prospectus.cput.ac.za/index.php/course-details?q=BEFNPT&f=100",
+   "https://www.cput.ac.za/component/rsblog/applications-for-2027-now-open?Itemid=101"
+  ]
+ },
+ {
+  "name": "Durban University of Technology",
+  "abbr": "DUT",
+  "city": "Durban",
+  "province": "KwaZulu-Natal",
+  "founded": 2002,
+  "students": 32000,
+  "website": "https://www.dut.ac.za",
+  "applyUrl": "https://www.cao.ac.za",
+  "prospectusUrl": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+  "applicationOpens": "1 March 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R250",
+  "feeIntl": "R300",
+  "apsSystem": "NSC points /42 (top 6 subjects, excluding Life Orientation)",
+  "minApsRange": "20–36+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Accounting and Informatics",
+   "Faculty of Applied Sciences",
+   "Faculty of Arts and Design",
+   "Faculty of Engineering and the Built Environment",
+   "Faculty of Health Sciences",
+   "Faculty of Management Sciences",
+   "DUT Business School"
+  ],
+  "programmes": [
+   {
+    "name": "Accounting Bridging Course",
+    "qual": "Bridging",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Information and Communications Technology",
+    "qual": "BICTech",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Information and Communications Technology (Internet of Things)",
+    "qual": "BICTech",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Business and Information Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Information and Communications Technology: Application Development",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Information and Communications Technology: Business Analysis",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Internal Auditing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Library and Information Studies",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Taxation",
+    "qual": "Diploma",
+    "faculty": "Faculty of Accounting and Informatics",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Applied Science in Biotechnology",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Applied Science in Food Science and Technology",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Applied Science in Industrial Chemistry",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Sport Science and Management",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Applied Science in Textile Technology",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Analytical Chemistry",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Clothing Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Consumer Sciences in Food and Nutrition",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Nautical Studies (Sea Going)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Shipping and Logistics (shore-based)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Sustainable Horticulture and Landscaping",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Higher Certificate in Applied Sciences",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Higher Certificate in Sport Management Science",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Applied Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Applied Arts in Commercial Photography",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Applied Arts in Screen Arts and Technology",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 36
+   },
+   {
+    "name": "Bachelor of Design in Visual Communication Design",
+    "qual": "BDes",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (FET) Specialisation",
+    "qual": "BEd",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Journalism",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 28
+   },
+   {
+    "name": "Diploma in Drama",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Fashion Design",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Fine Art",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Interior Design",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Jewellery Design and Manufacture",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Language Practice",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 0
+   },
+   {
+    "name": "Higher Certificate in Performing Arts Technology",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Chemical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Civil Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Electronic Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Industrial Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Mechanical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology in Power Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of the Built Environment in Architecture",
+    "qual": "BBE",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of the Built Environment in Construction Studies",
+    "qual": "BBE",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of the Built Environment in Geomatics",
+    "qual": "BBE",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of the Built Environment in Urban and Regional Planning",
+    "qual": "BBE",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Diploma in Engineering Technology in Civil Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Built Environment in Construction Studies",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Pulp and Paper Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Child and Youth Care",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Chiropractic",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Health Sciences in Clinical Technology",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Emergency Medical Care and Rescue",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Environmental Health",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Homoeopathy",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Medical Laboratory Science",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Medical Orthotics and Prosthetics",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Diagnostic Radiography",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Diagnostic Sonography",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Radiotherapy",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNurs",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Diploma in Somatology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Higher Certificate in Dental Assisting",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Catering Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Ecotourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Hospitality Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Business Administration",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Business Law",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Human Resources",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Operations Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Public Relations and Communication Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Management Sciences: Retail Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Administration: Disaster and Risk Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Administration: Local Government",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Administration: Public Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Administration: Supply Chain Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Tourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   }
+  ],
+  "flags": [
+   "applicationOpens: 1 March 2026 is widely reported by multiple sources but not explicitly stated in the official Study Opportunities 2027 PDF (which only states closing is 30 September 2026); treat as high-confidence but not page-confirmed",
+   "healthSciencesCloses: no earlier Health Sciences-specific closing date found in the official Study Opportunities 2027 PDF; all programmes listed with 30 September 2026 closing date",
+   "Most Diploma programme-level APS thresholds not explicitly published as a single number in the official PDF — entry requirements specify subject ratings rather than a total APS; aps:0 set for those",
+   "Engineering degree entry: ranked by sum of Mathematics and Physical Science scores rather than a single APS minimum; 28 points is the general NSC degree entry threshold stated",
+   "BHSc Chiropractic: listed as 30 points — sourced from third-party compilation; not independently confirmed from official Study Opportunities 2027 PDF page",
+   "prospectusUrl: PDF at this path confirmed to exist and downloaded (4.7MB, published May 2026) but the URL may change — verify at dut.ac.za/apply-4/"
+  ],
+  "sources": [
+   "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+   "https://www.dut.ac.za/admissions/",
+   "https://www.dut.ac.za/apply-4/",
+   "https://www.cao.ac.za/Apply.aspx?content=Apply",
+   "https://cao.ac.za/Institute.aspx?content=DU",
+   "https://www.dut.ac.za/faculties/",
+   "https://www.coursematch.co.za/blog/complete-cao-application-guide-2027-kzn-universities-colleges",
+   "https://checkcaostatus.co.za/cao-fees-calculator/"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "NMU",
+  "name": "Nelson Mandela University",
+  "city": "Gqeberha",
+  "province": "Eastern Cape",
+  "founded": 2005,
+  "students": 27000,
+  "website": "https://www.mandela.ac.za",
+  "applyUrl": "https://applyonline.mandela.ac.za/",
+  "prospectusUrl": "https://www.mandela.ac.za/study-at-mandela/discovery/quick-guides",
+  "applicationOpens": "13 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "Free",
+  "feeIntl": "R500",
+  "apsSystem": "NMU Applicant Score (AS) /600 — sum of top 6 NSC subject percentages (Life Orientation excluded); +7 bonus points for quintile 1–3 school applicants achieving 50%+ in LO",
+  "minApsRange": "240–430+ (AS out of 600)",
+  "faculties": [
+   "Faculty of Business and Economic Sciences",
+   "Faculty of Education",
+   "Faculty of Engineering, the Built Environment and Technology",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Science"
+  ],
+  "nsfasAccredited": true,
+  "programmes": [
+   {
+    "name": "Bachelor of Medicine and Bachelor of Surgery",
+    "qual": "MBChB",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 430
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNursing",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Radiography (Diagnostic)",
+    "qual": "BRad",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce (Accounting Science)",
+    "qual": "BCom",
+    "faculty": "Faculty of Business and Economic Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Civil)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering, the Built Environment and Technology",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Electrical)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering, the Built Environment and Technology",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Mechanical)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering, the Built Environment and Technology",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Music",
+    "qual": "BMus",
+    "faculty": "Faculty of Humanities",
+    "aps": 0
+   }
+  ],
+  "sources": [
+   "https://www.mandela.ac.za/Study-at-Mandela/Application/Closing-dates",
+   "https://www.mandela.ac.za/study-at-mandela/application/apply-undergraduate",
+   "https://www.mandela.ac.za/Study-at-Mandela/Application/Academic-admission",
+   "https://www.mandela.ac.za/Study-at-Mandela/Discovery/Entry-requirements",
+   "https://www.mandela.ac.za/faculties-and-schools",
+   "https://medicalschool.mandela.ac.za/Frequently-Asked-Questions/Prospective-Students",
+   "https://myfuture.mandela.ac.za/Applicant-Score",
+   "https://www.mandela.ac.za/study-at-mandela/discovery/quick-guides",
+   "https://www.mandela.ac.za/About-us"
+  ],
+  "flags": [
+   "minApsRange lower bound (240) is an approximate AS equivalent derived from third-party sources; official NMU website does not publish per-programme AS minimums in a single accessible location",
+   "students enrolment figure (27000) is the on-file estimate; one third-party source cites 30000+ but this was not confirmed from an official NMU source",
+   "programme-specific AS minimums other than MBChB (430) could not be confirmed from official NMU pages — all other programme aps fields set to 0",
+   "applicationCloses represents the late/final closing date (30 September 2026); early closing date is 3 August 2026 for most programmes"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "UFS",
+  "name": "University of the Free State",
+  "city": "Bloemfontein",
+  "province": "Free State",
+  "founded": 1904,
+  "students": 40000,
+  "website": "https://www.ufs.ac.za",
+  "applyUrl": "https://apply.ufs.ac.za/",
+  "prospectusUrl": "https://www.ufs.ac.za/docs/librariesprovider44/prospectus/ug-prospectus-2027.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "31 May 2026",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "apsSystem": "AP score /56 (best 6 NSC subjects + Life Orientation capped at 1 point if ≥60%)",
+  "minApsRange": "20–36",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Economic and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Health Sciences",
+   "Faculty of the Humanities",
+   "Faculty of Law",
+   "Faculty of Natural and Agricultural Sciences",
+   "Faculty of Theology and Religion"
+  ],
+  "programmes": [
+   {
+    "name": "Medicine and Surgery (MBChB)",
+    "qual": "MBChB",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 36
+   },
+   {
+    "name": "Optometry",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 36
+   },
+   {
+    "name": "Physiotherapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Occupational Therapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Radiation Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Biokinetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Dietetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Nursing",
+    "qual": "BCur",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 35
+   },
+   {
+    "name": "Accounting (BAcc)",
+    "qual": "BAcc",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Commerce (General)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 33
+   },
+   {
+    "name": "Computer Information Systems",
+    "qual": "BCIS",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Information Technology",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Music",
+    "qual": "BMus",
+    "faculty": "Faculty of the Humanities",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Music",
+    "qual": "Diploma",
+    "faculty": "Faculty of the Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Higher Certificate in Music Performance",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of the Humanities",
+    "aps": 20
+   },
+   {
+    "name": "Social Work",
+    "qual": "BA",
+    "faculty": "Faculty of the Humanities",
+    "aps": 0
+   },
+   {
+    "name": "Architecture",
+    "qual": "BArch",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Education (BEd)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Extended Curriculum Programme (ECP)",
+    "qual": "ECP",
+    "faculty": "Various",
+    "aps": 20
+   }
+  ],
+  "sources": [
+   "https://apply.ufs.ac.za/",
+   "https://www.ufs.ac.za/prospective",
+   "https://www.ufs.ac.za/health/faculty-of-health-sciences-home/academic-information/undergraduate-admission",
+   "https://www.ufs.ac.za/humanities/departments-and-divisions/odeion-school-of-music-home/admission-requirements/admission-requirements",
+   "https://www.ufs.ac.za/natagri/departments-and-divisions/computer-science-and-informatics-university-of-the-free-state-ufs-home/academic-information/undergraduate",
+   "https://www.varsitywise.com/posts/university-of-free-state-ufs-2027-applications",
+   "https://www.varsitywise.com/posts/apply-now-ufs-2027-applications-officially-open",
+   "https://www.ufs.ac.za/docs/librariesprovider25/default-document-library/2027-mbchb-selection-rules.pdf?sfvrsn=34af520_0"
+  ],
+  "confidence": "medium",
+  "flags": [
+   "BEd AP score (28) sourced from third-party aggregators, not directly confirmed from official UFS page",
+   "Social Work APS not confirmed from official source",
+   "Architecture APS not confirmed from official source",
+   "BCom General APS (30) is an aggregated estimate; official prospectus PDF was too large to parse",
+   "Nursing APS (35) sourced from third-party sites, not directly confirmed on official ufs.ac.za page",
+   "Prospectus PDF URL confirmed as live but content could not be read due to file size limits — programme-level APS sourced mainly from official faculty pages and one verified third-party summary",
+   "MBChB APS: varsitywise.com states 33, other sources state 36 — 36 used as it is the more commonly cited official figure"
+  ]
+ },
+ {
+  "abbr": "UNISA",
+  "name": "University of South Africa",
+  "city": "Pretoria",
+  "province": "Gauteng",
+  "founded": 1873,
+  "students": 370000,
+  "website": "https://www.unisa.ac.za",
+  "applyUrl": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission",
+  "prospectusUrl": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+  "applicationOpens": "18 August 2026",
+  "applicationCloses": "10 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R150",
+  "feeIntl": "R150",
+  "apsSystem": "APS /42 (programme-specific; calculated from NSC best 6 subjects excluding Life Orientation)",
+  "minApsRange": "15–23+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "College of Accounting Sciences",
+   "College of Agriculture and Environmental Sciences",
+   "College of Economic and Management Sciences",
+   "College of Education",
+   "College of Human Sciences",
+   "College of Law",
+   "College of Science, Engineering and Technology",
+   "Graduate School of Business Leadership",
+   "Thabo Mbeki African School of Public and International Affairs"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "College of Law",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Commerce (General)",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Bachelor of Commerce in Business Management",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce in Financial Management",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce in Human Resource Management",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce in Marketing Management",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce in Economics",
+    "qual": "BCom",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Administration",
+    "qual": "BAdmin",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Bachelor of Accounting Sciences in Financial Accounting",
+    "qual": "BAccSci",
+    "faculty": "College of Accounting Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Bachelor of Accounting Sciences in Internal Auditing",
+    "qual": "BAccSci",
+    "faculty": "College of Accounting Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Accounting Sciences in Management Accounting",
+    "qual": "BAccSci",
+    "faculty": "College of Accounting Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Accounting Sciences in Taxation",
+    "qual": "BAccSci",
+    "faculty": "College of Accounting Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Education in Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "College of Education",
+    "aps": 23
+   },
+   {
+    "name": "Bachelor of Education in Intermediate Phase Teaching (Mathematics, Natural Sciences and Technology)",
+    "qual": "BEd",
+    "faculty": "College of Education",
+    "aps": 23
+   },
+   {
+    "name": "Bachelor of Science in Computing",
+    "qual": "BSc",
+    "faculty": "College of Science, Engineering and Technology",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Science (Mathematics and Computer Science)",
+    "qual": "BSc",
+    "faculty": "College of Science, Engineering and Technology",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Science (Mathematics and Physics)",
+    "qual": "BSc",
+    "faculty": "College of Science, Engineering and Technology",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Arts in Psychology",
+    "qual": "BA",
+    "faculty": "College of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSocWork",
+    "faculty": "College of Human Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Bachelor of Arts in Nursing Science (Health Services Management, Education and Community Health)",
+    "qual": "BA",
+    "faculty": "College of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Bachelor of Arts (Criminology)",
+    "qual": "BA",
+    "faculty": "College of Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Arts (Forensic Science and Technology)",
+    "qual": "BA",
+    "faculty": "College of Law",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Accounting Sciences",
+    "qual": "Diploma",
+    "faculty": "College of Accounting Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Higher Certificate in Accounting Sciences",
+    "qual": "Higher Certificate",
+    "faculty": "College of Accounting Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Higher Certificate in Law",
+    "qual": "Higher Certificate",
+    "faculty": "College of Law",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Human Resource Management",
+    "qual": "Diploma",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Administration and Management",
+    "qual": "Diploma",
+    "faculty": "College of Economic and Management Sciences",
+    "aps": 0
+   }
+  ],
+  "sources": [
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Apply-for-admission",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/General-admission-requirements",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Laws-(98680-%E2%80%93-NEW)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-(98314-%E2%80%93-GEN)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Administration-(98315-%E2%80%93-BAD)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Accounting-Sciences-in-Financial-Accounting-(Revised-Curriculum-2020)-(98302-%E2%80%93-FA1)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Education-in-Foundation-Phase-Teaching-(90102)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Education-in-Intermediate-Phase-Teaching-School-subject-combination:-Mathematics-and-Natural-Sciences-and-Technology-(90103-%E2%80%93-MNT)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Science-in-Computing-(98906-%E2%80%93-COM)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Science-Mathematics-and-Computer-Science-(98801-%E2%80%93-MCS)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Psychology-(90180)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Social-Work-(90088)",
+   "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/International-students",
+   "https://www.unisa.ac.za/sites/corporate/default/Register-to-study-through-Unisa",
+   "https://www.unisa.ac.za/openapplications",
+   "https://www.unisa.ac.za/qualifications"
+  ],
+  "flags": [
+   "applicationOpens and applicationCloses for 2027 intake are projected based on the established UNISA annual pattern (2026 intake ran 18 Aug–11 Oct 2025); not yet officially published on unisa.ac.za as of June 2026",
+   "APS values for many programmes (BCom specialisations, BSc combinations, BAccSci specialisations, Law diplomas) not retrieved from official pages — set to 0",
+   "UNISA does not publish a separate international application fee; the R150 fee appears to apply equally to all applicants but this was not confirmed from a single definitive fee schedule page",
+   "No medical school or MBChB programme — UNISA does not offer Medicine, so healthSciencesCloses is inapplicable",
+   "BSc General (98801-GEN) APS not confirmed from official page",
+   "Enrolment figure of ~370,000 is the widely-cited historic figure; exact current enrolment not confirmed from a 2025/2026 official source"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "UWC",
+  "name": "University of the Western Cape",
+  "city": "Bellville",
+  "province": "Western Cape",
+  "founded": 1960,
+  "students": 23000,
+  "website": "https://www.uwc.ac.za",
+  "applyUrl": "https://student.uwc.ac.za",
+  "prospectusUrl": "https://www.uwc.ac.za/study/faculties-and-programmes",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "31 August 2026",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "apsSystem": "UWC Points /42 (weighted scale by subject and achievement level)",
+  "minApsRange": "30–40",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Arts and Humanities",
+   "Faculty of Community and Health Sciences",
+   "Faculty of Dentistry",
+   "Faculty of Economic and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Law",
+   "Faculty of Natural Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Dental Surgery (BDS)",
+    "qual": "BDS",
+    "faculty": "Faculty of Dentistry",
+    "aps": 40
+   },
+   {
+    "name": "Bachelor of Oral Health (BOH)",
+    "qual": "BOH",
+    "faculty": "Faculty of Dentistry",
+    "aps": 33
+   },
+   {
+    "name": "BSc Physiotherapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 39
+   },
+   {
+    "name": "BSc Occupational Therapy",
+    "qual": "BSc",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 33
+   },
+   {
+    "name": "BSc Dietetics and Nutrition",
+    "qual": "BSc",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 33
+   },
+   {
+    "name": "BSc Sport and Exercise Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Nursing and Midwifery",
+    "qual": "BNurs",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BA",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "BA Sport, Recreation and Exercise Science",
+    "qual": "BA",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Community Development",
+    "qual": "BA",
+    "faculty": "Faculty of Community and Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom Accounting",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom Financial Accounting",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom Information Systems",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BAdmin",
+    "qual": "BAdmin",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Arts (BA)",
+    "qual": "BA",
+    "faculty": "Faculty of Arts and Humanities",
+    "aps": 35
+   },
+   {
+    "name": "Bachelor of Theology (BTh)",
+    "qual": "BTh",
+    "faculty": "Faculty of Arts and Humanities",
+    "aps": 35
+   },
+   {
+    "name": "Bachelor of Library and Information Studies (BLIS)",
+    "qual": "BLIS",
+    "faculty": "Faculty of Arts and Humanities",
+    "aps": 35
+   },
+   {
+    "name": "Bachelor of Laws (LLB) 4-year",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 37
+   },
+   {
+    "name": "BA Law",
+    "qual": "BA",
+    "faculty": "Faculty of Law",
+    "aps": 37
+   },
+   {
+    "name": "BCom Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Law",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Education (BEd)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 33
+   },
+   {
+    "name": "Bachelor of Pharmacy (BPharm)",
+    "qual": "BPharm",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 38
+   },
+   {
+    "name": "BSc (Natural Sciences programmes)",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 33
+   },
+   {
+    "name": "BSc Mathematical and Statistical Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 33
+   },
+   {
+    "name": "BSc Computer Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 33
+   }
+  ],
+  "sources": [
+   "https://www.uwc.ac.za/admission-and-financial-aid/apply",
+   "https://www.uwc.ac.za/files/files/UWC-2027-Application-Guide.pdf",
+   "https://www.uwc.ac.za/files/files/SEMU-8-Panel-Print-Admissions-2027.pdf",
+   "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/undergraduate-admission-requirements",
+   "https://www.uwc.ac.za/admission-and-financial-aid/undergraduate-admission/faculty-specific-requirements",
+   "https://www.uwc.ac.za/study/faculties-and-programmes/faculty-of-law/programmes-2",
+   "https://law.uwc.ac.za/programme/bachelor-of-laws/",
+   "https://www.uwc.ac.za/study/faculties-and-programmes/faculty-of-economic-and-management-sciences/undergraduate-application-process",
+   "https://www.uwc.ac.za/study/faculties-and-programmes/faculty-of-education/admission-information",
+   "https://www.uwc.ac.za/study/faculties-and-programmes/faculty-of-natural-sciences/student-admission",
+   "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
+  ],
+  "flags": [
+   "APS values for programmes are drawn from the official 2025 General Admissions Criteria brochure (the 2027 brochure PDF was image-based and could not be fully parsed); values may change slightly for 2027 intake",
+   "International application fee listed as free based on application guide stating 'not required to pay an application fee' — confirm whether this applies equally to international applicants",
+   "Exact enrolment figure (~23000) not verified from a current official source",
+   "Application open date: Application Guide states 01 April 2026; the 2027 admissions brochure states 2 April 2026 — minor discrepancy, used 1 April 2026 as per the dedicated Application Guide",
+   "BDS APS of 40 is from the 2025 brochure; the 2021 SEMU document also cited 40 — treat as reliable but flag for 2027 confirmation"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "UFH",
+  "name": "University of Fort Hare",
+  "city": "Alice",
+  "province": "Eastern Cape",
+  "founded": 1916,
+  "students": 12000,
+  "website": "https://www.ufh.ac.za",
+  "applyUrl": "https://ienabler.ufh.ac.za/pls/prodi41/w99pkg.mi_login",
+  "prospectusUrl": "https://www.ufh.ac.za/admission",
+  "applicationOpens": "1 May 2026",
+  "applicationCloses": "31 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R120",
+  "feeIntl": "R500",
+  "apsSystem": "APS /42",
+  "minApsRange": "22–30",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Science and Agriculture",
+   "Faculty of Education",
+   "Faculty of Health Sciences",
+   "Faculty of Social Sciences and Humanities",
+   "Faculty of Law",
+   "Faculty of Management and Commerce"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Science Agriculture (Animal Production)",
+    "qual": "BSc Agriculture",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Science Agriculture (Horticulture Science)",
+    "qual": "BSc Agriculture",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Science Agriculture (Soil Science)",
+    "qual": "BSc Agriculture",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Science Agriculture (Agricultural Economics)",
+    "qual": "BSc Agriculture",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Science Agriculture (Livestock and Pasture)",
+    "qual": "BSc Agriculture",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase & FET — Social Sciences)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase & FET — Science)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase & FET — Commerce)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase & FET — Life Sciences)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNursing",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Health Sciences in Human Movement Science",
+    "qual": "BHS",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Arts in Philosophy, Politics and Law",
+    "qual": "BA",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSW",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Library and Information Science",
+    "qual": "BLIS",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Music",
+    "qual": "BMus",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Fine Arts",
+    "qual": "BFA",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Social Science in Communication",
+    "qual": "BSocSci",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Diploma in Fine Art",
+    "qual": "Diploma",
+    "faculty": "Faculty of Social Sciences and Humanities",
+    "aps": 22
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Commerce in Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Law",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce (Extended)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Commerce (Economics Stream)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce (Economics Stream, Extended)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Commerce (Industrial Psychology Stream)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 28
+   },
+   {
+    "name": "BCom Information Systems (Extended)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Commerce",
+    "aps": 27
+   }
+  ],
+  "flags": [
+   "healthSciencesCloses: no separate earlier closing date for Health Sciences confirmed from official sources — same 31 October 2026 deadline applies",
+   "prospectusUrl: no direct 2027 prospectus PDF found on official site; admissions page used as proxy",
+   "students: approximate figure (~12 000); official DHET-audited enrolment figure not confirmed for latest year",
+   "BSc in Speech-Language Pathology noted as not offered in 2026 — 2027 status unconfirmed",
+   "feeSA R120 confirmed via official UFH FAQ; online application may be free — conflicting signals in non-official sources not resolved"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "https://www.ufh.ac.za/admission",
+   "https://www.ufh.ac.za/apply/apply-undergraduate",
+   "https://www.ufh.ac.za/apply",
+   "https://fye.ufh.ac.za/faq-base/is-there-an-application-fee/",
+   "https://www.ufh.ac.za/international-office/undergraduate",
+   "https://www.ufh.ac.za/faculties/faculty-of-science-agriculture",
+   "https://www.ufh.ac.za/faculties/faculty-of-law",
+   "https://www.ufh.ac.za/faculties/faculty-of-management-commerce",
+   "https://www.ufh.ac.za/faculties/faculty-of-education",
+   "https://www.ufh.ac.za/faculties/faculty-of-social-sciences-and-humanities",
+   "https://www.ufh.ac.za/faculties/faculty-of-health-sciences",
+   "https://www.ufh.ac.za/faculties/healthsciences/admission-requirements"
+  ]
+ },
+ {
+  "abbr": "WSU",
+  "name": "Walter Sisulu University",
+  "city": "Mthatha",
+  "province": "Eastern Cape",
+  "founded": 2005,
+  "students": 30000,
+  "website": "https://www.wsu.ac.za",
+  "applyUrl": "https://applications.wsu.ac.za",
+  "prospectusUrl": "https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R100",
+  "feeIntl": "Free",
+  "apsSystem": "APS /42 (best 6 subjects; 7 subjects including Life Orientation for Education)",
+  "minApsRange": "20–37+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Engineering, Built Environment and Information Technology",
+   "Faculty of Management and Public Administration Sciences",
+   "Faculty of Economic and Financial Sciences",
+   "Faculty of Law, Humanities and Social Sciences",
+   "Faculty of Medicine and Health Sciences",
+   "Faculty of Natural Sciences",
+   "Faculty of Education"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Accounting",
+    "qual": "BAccounting",
+    "faculty": "Faculty of Economic and Financial Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Accounting Science (B Compt)",
+    "qual": "BCompt",
+    "faculty": "Faculty of Economic and Financial Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Commerce (General)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Financial Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce (Economics)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Financial Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law, Humanities and Social Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Law, Humanities and Social Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Education (FET) Humanities",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Education (FET) Natural Sciences",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 22
+   },
+   {
+    "name": "Bachelor of Education (FET) Economic and Management Sciences",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Science: Applied Mathematics / Biological Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Science: Environmental Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+    "qual": "MBChB",
+    "faculty": "Faculty of Medicine and Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Civil Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Analytical Chemistry",
+    "qual": "Diploma",
+    "faculty": "Faculty of Natural Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Diploma in Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management and Public Administration Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Sport Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management and Public Administration Sciences",
+    "aps": 23
+   }
+  ],
+  "sources": [
+   "https://www.wsu.ac.za/en/study-with-us/application-and-registration/how-to-apply-the-process",
+   "https://www.wsu.ac.za/index.php/en/study-with-us/undergraduate-programmes/new-students/admission-requirement",
+   "https://www.wsu.ac.za/index.php/en/study-with-us/international-students",
+   "https://wsu.ac.za/media/attachments/2026/05/27/2027-information-brochure-admission-requirements.pdf",
+   "https://www.bizcommunity.com/article/2027-university-application-dates-everything-you-need-to-know-514550a",
+   "https://www.varsitywise.com/posts/walter-sisulu-university-application-fee-details",
+   "https://southafricaportal.com/walter-sisulu-university-wsu-courses/",
+   "https://schoolhive.co.za/walter-sisulu-university-wsu-2027-application-guide/",
+   "https://fundiconnect.co.za/apply-to-wsu"
+  ],
+  "flags": [
+   "applicationOpens: official WSU 'How to Apply' page returned 1 June 2026 but multiple third-party aggregators (including FundiConnect/bizcommunity) state 1 April 2026 — could not definitively reconcile from official page alone",
+   "MBChB minimum APS not officially published in accessible sources; programme is listed with aps:0",
+   "healthSciencesCloses: no separate earlier closing date confirmed for Health Sciences/Medicine from official source — only a requirement to submit June Grade 12 report",
+   "Programme-level APS values for most programmes sourced from southafricaportal.com (third-party), not directly from official WSU prospectus PDF (binary, unreadable by tool)",
+   "feeSA: R100 confirmed on official 'How to Apply' page; some third-party sources incorrectly state free for all applicants"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "NWU",
+  "name": "North-West University",
+  "city": "Potchefstroom",
+  "province": "North West",
+  "founded": 2004,
+  "students": 56000,
+  "website": "https://www.nwu.ac.za",
+  "applyUrl": "https://applynow.nwu.ac.za/OnlineApplication/",
+  "prospectusUrl": "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027",
+  "applicationOpens": "1 June 2026",
+  "applicationCloses": "31 August 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "R150",
+  "feeIntl": "R600",
+  "apsSystem": "APS /42",
+  "minApsRange": "18–36",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Economic and Management Sciences",
+   "Faculty of Education",
+   "Faculty of Engineering",
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Law",
+   "Faculty of Natural and Agricultural Sciences",
+   "Faculty of Theology"
+  ],
+  "programmes": [
+   {
+    "name": "BCom Accounting (general)",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 24
+   },
+   {
+    "name": "BCom Chartered Accountancy",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BCom Financial Accountancy",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BCom Forensic Accountancy",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 36
+   },
+   {
+    "name": "BCom Management Accountancy",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom Information Systems",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 24
+   },
+   {
+    "name": "BCom Management Sciences",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 24
+   },
+   {
+    "name": "BCom Human Resource Management",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "BCom Economic Sciences",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "BCom Statistics",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "BCom Operations Research",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 24
+   },
+   {
+    "name": "BAdmin Human Resources Management",
+    "qual": "BA",
+    "faculty": "Faculty of Economic and Management Sciences",
+    "aps": 21
+   },
+   {
+    "name": "BEd Foundation Phase",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "BEd Intermediate Phase",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "BEd Senior and Further Education and Training",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "BEd Early Childhood Care and Education",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "BEng Chemical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "BEng Electrical and Electronic Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "BEng Computer and Electronic Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "BEng Mechanical Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "BEng Industrial Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "BEng Mechatronic Engineering",
+    "qual": "BEng",
+    "faculty": "Faculty of Engineering",
+    "aps": 34
+   },
+   {
+    "name": "Diploma in Coaching Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 18
+   },
+   {
+    "name": "Bachelor of Health Sciences (Sport Coaching and Human Movement Sciences)",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences (Recreation Science and Tourism Management)",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Biokinetics",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Health Sciences (Physiology and Biochemistry)",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences (Physiology and Psychology)",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Consumer Studies in Food Product Management",
+    "qual": "BCons",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Consumer Studies in Fashion Retail Management",
+    "qual": "BCons",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Science in Dietetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Health Sciences in Occupational Hygiene",
+    "qual": "BHSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Social Science in Psychology",
+    "qual": "BSocSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Arts in Behavioural Sciences",
+    "qual": "BA",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSW",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNurs",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 25
+   },
+   {
+    "name": "BA Communication",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BA Graphic Design",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BA Public Governance",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Social Sciences (Political Studies)",
+    "qual": "BSocSc",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BAdmin Development and Local Government",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 21
+   },
+   {
+    "name": "BA Language and Literary Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BA Language Technology",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Music",
+    "qual": "Diploma",
+    "faculty": "Faculty of Humanities",
+    "aps": 18
+   },
+   {
+    "name": "BA Music and Society",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 21
+   },
+   {
+    "name": "Baccalaureus Musicae",
+    "qual": "BMus",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Philosophy with Philosophy, Politics and Economics",
+    "qual": "BPhil",
+    "faculty": "Faculty of Humanities",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Philosophy (Language specializations)",
+    "qual": "BPhil",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Social Sciences",
+    "qual": "BSocSc",
+    "faculty": "Faculty of Humanities",
+    "aps": 22
+   },
+   {
+    "name": "BA Humanities",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "BA in Law",
+    "qual": "BA",
+    "faculty": "Faculty of Law",
+    "aps": 28
+   },
+   {
+    "name": "BCom in Law",
+    "qual": "BCom",
+    "faculty": "Faculty of Law",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 30
+   },
+   {
+    "name": "Extended Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Law",
+    "aps": 28
+   },
+   {
+    "name": "Diploma in Animal Health",
+    "qual": "Diploma",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Animal Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Plant Science (Crop Production)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 22
+   },
+   {
+    "name": "BSc (various science specializations)",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 26
+   },
+   {
+    "name": "BSc Financial Mathematics",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BSc Quantitative Risk Management",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BSc Business Analytics",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BSc Actuarial Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural and Agricultural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "BA Ancient Languages",
+    "qual": "BA",
+    "faculty": "Faculty of Theology",
+    "aps": 24
+   },
+   {
+    "name": "BA Pastoral Psychology",
+    "qual": "BA",
+    "faculty": "Faculty of Theology",
+    "aps": 26
+   },
+   {
+    "name": "BTh Pastoral Counselling and Psychology",
+    "qual": "BTh",
+    "faculty": "Faculty of Theology",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Divinity (BDiv)",
+    "qual": "BDiv",
+    "faculty": "Faculty of Theology",
+    "aps": 24
+   },
+   {
+    "name": "BTh Bible Languages and Translation",
+    "qual": "BTh",
+    "faculty": "Faculty of Theology",
+    "aps": 24
+   },
+   {
+    "name": "BTh Christian Ministry",
+    "qual": "BTh",
+    "faculty": "Faculty of Theology",
+    "aps": 24
+   }
+  ],
+  "sources": [
+   "https://studies.nwu.ac.za/undergraduate-studies/application",
+   "https://studies.nwu.ac.za/studies/apply",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study-economic",
+   "https://studies.nwu.ac.za/undergraduate-studies/education-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study-education",
+   "https://studies.nwu.ac.za/undergraduate-studies/health-sciences-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study-health-sciences",
+   "https://studies.nwu.ac.za/undergraduate-studies/engineering-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/fields-study-fnas",
+   "https://studies.nwu.ac.za/undergraduate-studies/law-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/humanities-2027",
+   "https://studies.nwu.ac.za/undergraduate-studies/theology-2027",
+   "https://news.nwu.ac.za/apply-study-university-you-know-and-trust-mynwu",
+   "https://www.nwu.ac.za/nsfas",
+   "https://www.nwu.ac.za/"
+  ],
+  "flags": [
+   "applicationOpens: 2027 cycle opened 1 June 2026 per official NWU news — confirm 2028-intake opening date when announced",
+   "healthSciencesCloses: 30 June closing applies to multiple selection-course programmes (Pharmacy, Consumer Studies, Social Work, Biokinetics, Dietetics, Occupational Hygiene) — not a single named 'Health Sciences' faculty deadline",
+   "students: 56,000 figure from Wikipedia; official Quick Stats PDF could not be parsed to verify exact current headcount",
+   "BCom Statistics minimum APS range is 20–24 (extended option 20); flagged as range rather than single value",
+   "BCom Economic Sciences minimum APS range is 20–26 depending on specialization",
+   "BAdmin Human Resources Management minimum APS range is 21–23 depending on campus",
+   "BSc (general) APS 26 covers multiple specializations; some extended versions accept APS 24–28",
+   "Desmond Tutu School of Medicine under construction — first MBChB enrolment not until 2028, so no Medicine programme listed"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "UniZ",
+  "name": "University of Zululand",
+  "city": "KwaDlangezwa",
+  "province": "KwaZulu-Natal",
+  "founded": 1960,
+  "students": 16337,
+  "website": "https://www.unizulu.ac.za",
+  "applyUrl": "https://www.cao.ac.za",
+  "prospectusUrl": "https://www.unizulu.ac.za/wp-content/uploads/2025/02/2026-Brochure-for-undergraduate.pdf",
+  "applicationOpens": "1 March 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R250",
+  "feeIntl": "R300",
+  "apsSystem": "APS /42",
+  "minApsRange": "26–36+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Humanities and Social Sciences",
+   "Faculty of Education",
+   "Faculty of Commerce, Administration and Law",
+   "Faculty of Science, Agriculture and Engineering"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Education (Foundation Phase Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase and FET Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Nursing Science",
+    "qual": "BNursing",
+    "faculty": "Faculty of Science, Agriculture and Engineering",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities and Social Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Arts in Social Work",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities and Social Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce (Accounting)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce (Business Management)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce (Economics)",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Commerce in Accounting Science",
+    "qual": "BCom",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Public Administration",
+    "qual": "BAdmin",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Logistics Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Transport Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Commerce, Administration and Law",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Agriculture and Engineering",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Agriculture",
+    "qual": "BAgric",
+    "faculty": "Faculty of Science, Agriculture and Engineering",
+    "aps": 0
+   }
+  ],
+  "sources": [
+   "https://www.unizulu.ac.za/office-of-the-registrar/admissions/",
+   "https://www.unizulu.ac.za/apply/",
+   "https://www.unizulu.ac.za/faculties-and-departments/",
+   "https://www.unizulu.ac.za/",
+   "https://www.unizulu.ac.za/overview/",
+   "https://www.cao.ac.za/",
+   "https://www.cao.ac.za/Apply.aspx?content=Apply",
+   "https://www.education.unizulu.ac.za/undergraduate/",
+   "https://www.science.unizulu.ac.za/nursing/undergraduate/",
+   "https://www.fcal.unizulu.ac.za/about-us/",
+   "https://www.nsfas.org.za/content/institutions.html",
+   "https://en.wikipedia.org/wiki/University_of_Zululand"
+  ],
+  "confidence": "medium",
+  "flags": [
+   "applicationCloses: 30 September 2026 confirmed via third-party aggregators cross-referencing CAO; the CAO UNIZULU closing-date PDF (cao.ac.za) was binary-encoded and could not be read directly — value is consistent but not read from raw official document",
+   "healthSciencesCloses: UNIZULU does not have a standalone health sciences / medical faculty; Nursing is under Science, Agriculture and Engineering — no earlier closing date found from official source",
+   "minApsRange: range 26–36+ is derived from officially confirmed BEd APS 26 and Nursing APS 30 plus third-party estimates for engineering; no single official document listing all programme APS values was readable",
+   "aps values: only BEd (26) and Nursing (30) confirmed from official faculty sub-pages; all other programme APS fields set to 0 as no official document could be parsed",
+   "feeIntl: R300 confirmed via CAO third-party sources; not confirmed from official CAO document directly",
+   "prospectusUrl: the 2026 undergraduate brochure PDF is linked — a 2027-specific brochure had not been published as of the research date",
+   "students: 16,337 figure is from Wikipedia citing 2022 data; no more recent official headcount was found"
+  ]
+ },
+ {
+  "abbr": "UNIVEN",
+  "name": "University of Venda",
+  "city": "Thohoyandou",
+  "province": "Limpopo",
+  "founded": 1982,
+  "students": 15248,
+  "website": "https://www.univen.ac.za",
+  "applyUrl": "https://admission.univen.ac.za/",
+  "prospectusUrl": "https://www.univen.ac.za/wp-content/uploads/2026/03/2027-Univen-Undergraduate-Prospectus.pdf",
+  "applicationOpens": "1 May 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 June 2026",
+  "feeSA": "Free",
+  "feeIntl": "R300",
+  "apsSystem": "APS /42",
+  "minApsRange": "26–38+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Science, Engineering and Agriculture",
+   "Faculty of Management, Commerce and Law",
+   "Faculty of Humanities, Social Sciences and Education",
+   "Faculty of Health Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Arts (BA)",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities, Social Sciences and Education",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Arts in Social Work",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities, Social Sciences and Education",
+    "aps": 35
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities, Social Sciences and Education",
+    "aps": 36
+   },
+   {
+    "name": "Bachelor of Education (Senior Phase and FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities, Social Sciences and Education",
+    "aps": 36
+   },
+   {
+    "name": "Bachelor of Psychology",
+    "qual": "BA",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 36
+   },
+   {
+    "name": "Bachelor of Nursing Science (BCur)",
+    "qual": "BCur",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 36
+   },
+   {
+    "name": "Diploma in Nursing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BSc Nutrition",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "BSc Sports and Exercise Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 34
+   },
+   {
+    "name": "Bachelor of Commerce (BCom)",
+    "qual": "BCom",
+    "faculty": "Faculty of Management, Commerce and Law",
+    "aps": 32
+   },
+   {
+    "name": "BCom Accounting Sciences",
+    "qual": "BCom",
+    "faculty": "Faculty of Management, Commerce and Law",
+    "aps": 35
+   },
+   {
+    "name": "Bachelor of Administration (BAdmin)",
+    "qual": "BAdmin",
+    "faculty": "Faculty of Management, Commerce and Law",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Management, Commerce and Law",
+    "aps": 38
+   },
+   {
+    "name": "Bachelor of Science (BSc)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Agriculture",
+    "qual": "BAgric",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Science in Agriculture",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Science in Forestry Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Science in Food Science and Technology",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Environmental Sciences (BEnvSc)",
+    "qual": "BEnvSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Earth Sciences in Mining and Environmental Geology",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor of Urban and Regional Planning (BURP)",
+    "qual": "BURP",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   },
+   {
+    "name": "Bachelor in Disaster Risk Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science, Engineering and Agriculture",
+    "aps": 0
+   }
+  ],
+  "flags": [
+   "applicationOpens (1 May 2026) and applicationCloses (30 September 2026) sourced from third-party sites (coursematch.co.za, varsitywise.com), not confirmed directly from the official UNIVEN website or prospectus PDF (PDF too large to fetch)",
+   "healthSciencesCloses date of 30 June 2026 sourced from third-party; official prospectus PDF could not be fetched to confirm",
+   "feeIntl of R300 sourced from coursematch.co.za, not confirmed on official UNIVEN domain",
+   "Programme-level APS values (BA=30, Social Work=35, BEd=36, BCur=36, etc.) sourced from varsitywise.com third-party; official prospectus PDF was too large to fetch for direct verification",
+   "Enrollment figure of 15,248 is from Wikipedia citing 2023 data; official current figure not confirmed from univen.ac.za"
+  ],
+  "sources": [
+   "https://www.univen.ac.za/students/student-support-services/how-to-apply/",
+   "https://www.univen.ac.za/students/student-support-services/how-to-apply/general-information/",
+   "https://www.univen.ac.za/students/student-support-services/how-to-apply/prospectus/",
+   "https://www.univen.ac.za/apply/",
+   "https://www.univen.ac.za/",
+   "https://www.univen.ac.za/faculties/health/",
+   "https://coursematch.co.za/blog/university-of-venda-univen-2027-admissions-guide",
+   "https://www.varsitywise.com/posts/univen-is-open-for-2027-application",
+   "https://www.varsitywise.com/posts/understanding-univens-admission-point-score-aps-system-2027",
+   "https://en.wikipedia.org/wiki/University_of_Venda",
+   "https://southafricaportal.com/univen-courses/"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "UL",
+  "name": "University of Limpopo",
+  "city": "Mankweng",
+  "province": "Limpopo",
+  "founded": 1959,
+  "students": 23455,
+  "website": "https://www.ul.ac.za",
+  "applyUrl": "https://ulc-prod-webserver.ul.ac.za/pls/prodi41/gen.gw1pkg.gw1view",
+  "prospectusUrl": "https://www.ul.ac.za/wp-content/uploads/2025/03/Undergraduate-Prospectus-2027.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "30 July 2026",
+  "feeSA": "R200",
+  "feeIntl": "R750",
+  "apsSystem": "APS /42",
+  "minApsRange": "22–30",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Health Sciences",
+   "Faculty of Humanities",
+   "Faculty of Science and Agriculture",
+   "Faculty of Management and Law"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+    "qual": "MBChB",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Optometry",
+    "qual": "BOptom",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNurs",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "BSc in Dietetics",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "BSc in Medical Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Health Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Laws (LLB)",
+    "qual": "LLB",
+    "faculty": "Faculty of Management and Law",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Laws Extended Curriculum (LLB ECP)",
+    "qual": "LLB",
+    "faculty": "Faculty of Management and Law",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Accountancy",
+    "qual": "BAcc",
+    "faculty": "Faculty of Management and Law",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Commerce in Accountancy",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Law",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce in Business Management",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Law",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Commerce in Economics",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Law",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Commerce in Human Resource Management",
+    "qual": "BCom",
+    "faculty": "Faculty of Management and Law",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Administration",
+    "qual": "BAdmin",
+    "faculty": "Faculty of Management and Law",
+    "aps": 26
+   },
+   {
+    "name": "BSc in Computer Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 30
+   },
+   {
+    "name": "BSc (Life Sciences)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 26
+   },
+   {
+    "name": "BSc (Physical Sciences)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 26
+   },
+   {
+    "name": "BSc in Geology",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 26
+   },
+   {
+    "name": "BSc in Mathematical Sciences",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 24
+   },
+   {
+    "name": "BSc in Agriculture (Plant Production)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 24
+   },
+   {
+    "name": "BSc in Agriculture (Animal Production)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 24
+   },
+   {
+    "name": "BSc in Agriculture (Soil Science)",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 24
+   },
+   {
+    "name": "BSc in Environmental and Resource Studies",
+    "qual": "BSc",
+    "faculty": "Faculty of Science and Agriculture",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Psychology",
+    "qual": "BPsych",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Social Work",
+    "qual": "BSW",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "BA in Media Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "BA in Communication",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "BA in Criminology and Psychology",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Education (Senior and FET Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   }
+  ],
+  "sources": [
+   "https://www.ul.ac.za/study-with-us-university-of-limpopo-2027-application-now-open/",
+   "https://www.ul.ac.za/admissions/undergraduate-studies/",
+   "https://www.ul.ac.za/admissions/",
+   "https://www.ul.ac.za/faculty-of-management-and-law/school-of-law/",
+   "https://www.ul.ac.za/faculty-of-health-sciences/school-of-medicine/",
+   "https://www.ul.ac.za/late-application-open-selected-programmes-in-faculty-of-science-and-agriculture/",
+   "https://www.studentroom.co.za/university-of-limpopo-ul-2026-aps-requirements-for-all-undergraduate-courses/",
+   "https://en.wikipedia.org/wiki/University_of_Limpopo"
+  ],
+  "flags": [
+   "APS values for individual programmes sourced from third-party StudentRoom.co.za (based on 2026 prospectus) — not directly verifiable from the 2027 prospectus PDF (binary-compressed, not readable by WebFetch)",
+   "International application fee of R750 sourced from ul.ac.za/admissions/undergraduate-studies/ — the 2027 announcement page only mentioned R200 without distinguishing SA vs international",
+   "Student enrolment figure (23,455) is from 2024 data — 2025/2026 official figure not confirmed",
+   "Founded year 1959 reflects University of the North origins; formal UL merger date is 2005",
+   "BSc Agriculture APS values cross-referenced from varsitywise.com (2024 article) and studentroom.co.za — treat as indicative, not guaranteed 2027 values",
+   "MBChB APS of 27 is widely reported but the official UL Medicine page does not publish a numeric APS minimum — verify in prospectus"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "SMU",
+  "name": "Sefako Makgatho Health Sciences University",
+  "city": "Ga-Rankuwa",
+  "province": "Gauteng",
+  "founded": 2015,
+  "students": 7000,
+  "website": "https://www.smu.ac.za",
+  "applyUrl": "https://onlineapplication.smu.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP",
+  "prospectusUrl": "https://www.smu.ac.za/students/apply/undergraduate-students/",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 July 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R300",
+  "feeIntl": "R300",
+  "apsSystem": "APS /42",
+  "minApsRange": "24–38",
+  "nsfasAccredited": true,
+  "faculties": [
+   "School of Medicine",
+   "School of Pharmacy",
+   "School of Health Care Sciences",
+   "School of Science and Technology",
+   "School of Oral Health Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "MBChB (Bachelor of Medicine and Bachelor of Surgery)",
+    "qual": "MBChB",
+    "faculty": "School of Medicine",
+    "aps": 38
+   },
+   {
+    "name": "MBChB Extended Curriculum Programme (Foundation Year)",
+    "qual": "MBChB",
+    "faculty": "School of Medicine",
+    "aps": 32
+   },
+   {
+    "name": "BDS (Bachelor of Dental Surgery)",
+    "qual": "BDS",
+    "faculty": "School of Oral Health Sciences",
+    "aps": 37
+   },
+   {
+    "name": "Bachelor in Dental Therapy",
+    "qual": "B Dent Ther",
+    "faculty": "School of Oral Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor in Oral Hygiene",
+    "qual": "B Oral Hyg",
+    "faculty": "School of Oral Health Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "B Pharm",
+    "faculty": "School of Pharmacy",
+    "aps": 32
+   },
+   {
+    "name": "BSc (Physiotherapy)",
+    "qual": "BSc",
+    "faculty": "School of Health Care Sciences",
+    "aps": 28
+   },
+   {
+    "name": "BSc (Dietetics)",
+    "qual": "BSc",
+    "faculty": "School of Health Care Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Nursing and Midwifery",
+    "qual": "BNursing",
+    "faculty": "School of Health Care Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Occupational Therapy",
+    "qual": "BOT",
+    "faculty": "School of Health Care Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Speech Language Pathology",
+    "qual": "BSpeech",
+    "faculty": "School of Health Care Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Audiology",
+    "qual": "BAud",
+    "faculty": "School of Health Care Sciences",
+    "aps": 25
+   },
+   {
+    "name": "BSc (Extended Curriculum Programme)",
+    "qual": "BSc",
+    "faculty": "School of Science and Technology",
+    "aps": 24
+   },
+   {
+    "name": "BSc (Standard Programme)",
+    "qual": "BSc",
+    "faculty": "School of Science and Technology",
+    "aps": 25
+   },
+   {
+    "name": "B Rad (Radiography)",
+    "qual": "B Rad",
+    "faculty": "School of Medicine",
+    "aps": 25
+   }
+  ],
+  "sources": [
+   "https://www.smu.ac.za/students/apply/",
+   "https://www.smu.ac.za/students/apply/undergraduate-students/",
+   "https://www.smu.ac.za/students/apply/online-application/",
+   "https://www.smu.ac.za/students/apply/faqs/",
+   "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
+   "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
+   "https://www.smu.ac.za/schools/science-and-technology/science-and-technology-undergraduate-admission-requirements/",
+   "https://www.smu.ac.za/schools/pharmacy/pharmacy-undergraduate-admission-requirements/",
+   "https://www.smu.ac.za/schools/oral-health-sciences/oral-health-sciences-undergraduate-admission-requirements/",
+   "https://en.wikipedia.org/wiki/Sefako_Makgatho_Health_Sciences_University"
+  ],
+  "flags": [
+   "healthSciencesCloses: no separate earlier deadline confirmed for medicine/health sciences — all undergraduate programmes share the 31 July 2026 date; verify with SMU directly",
+   "feeIntl: international fee not separately listed on the official site; R300 appears to apply universally but should be confirmed",
+   "prospectusUrl: no 2026/2027-specific prospectus PDF found; the undergraduate students page references a 2026/2027 flipbook but direct URL not confirmed — on-file URL (2025/2026 PDF) is the most recent PDF available",
+   "students: enrolment figure of ~7000 from Wikipedia; official SMU institutional data not directly confirmed on smu.ac.za",
+   "B Rad (Radiography) listed under School of Medicine — school attribution should be verified as it may fall under Health Care Sciences"
+  ],
+  "confidence": "high"
+ },
+ {
+  "abbr": "TUT",
+  "name": "Tshwane University of Technology",
+  "city": "Pretoria",
+  "province": "Gauteng",
+  "founded": 2004,
+  "students": 60000,
+  "website": "https://www.tut.ac.za",
+  "applyUrl": "https://applications-prod.tut.ac.za/",
+  "prospectusUrl": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "15 June 2026",
+  "feeSA": "R240",
+  "feeIntl": "R240",
+  "apsSystem": "APS /42 (7-point NSC rating scale; Life Orientation included for most programmes)",
+  "minApsRange": "18–30",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Arts and Design",
+   "Faculty of Economics and Finance",
+   "Faculty of Engineering and the Built Environment",
+   "Faculty of Humanities",
+   "Faculty of Information and Communication Technology",
+   "Faculty of Management Sciences",
+   "Faculty of Science",
+   "Tshwane School for Business and Society"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Engineering Technology (Civil Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Electrical Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Mechanical Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Chemical Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Industrial Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Mechatronics Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Engineering Technology (Metallurgical Engineering)",
+    "qual": "BEngTech",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Architecture",
+    "qual": "BArch",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Geomatics",
+    "qual": "BGeomatics",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Civil Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 26
+   },
+   {
+    "name": "Diploma in Electrical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 26
+   },
+   {
+    "name": "Diploma in Building Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 26
+   },
+   {
+    "name": "Diploma in Geomatics",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Industrial Design",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and the Built Environment",
+    "aps": 21
+   },
+   {
+    "name": "Bachelor of Nursing",
+    "qual": "BNursing",
+    "faculty": "Faculty of Science",
+    "aps": 27
+   },
+   {
+    "name": "Bachelor of Pharmacy",
+    "qual": "BPharm",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Radiography in Diagnostics",
+    "qual": "BRad",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Environmental Health",
+    "qual": "BEnvironmentalHealth",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Biokinetics",
+    "qual": "BHSci",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Clinical Technology",
+    "qual": "BHSci",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Medical Laboratory Science",
+    "qual": "BHSci",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Medical Orthotics and Prosthetics",
+    "qual": "BHSci",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Health Sciences in Veterinary Technology",
+    "qual": "BHSci",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Information Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Information and Communication Technology",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Computer Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Information and Communication Technology",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Informatics",
+    "qual": "Diploma",
+    "faculty": "Faculty of Information and Communication Technology",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Multimedia Computing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Information and Communication Technology",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Economics and Finance",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Financial Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Economics and Finance",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Internal Auditing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Economics and Finance",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Human Resource Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Hospitality Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Tourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Supply Chain Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Bachelor of Education (Foundation Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Bachelor of Education (Intermediate Phase)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Journalism",
+    "qual": "Diploma",
+    "faculty": "Faculty of Humanities",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Commercial Photography",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Diploma in Interior Design",
+    "qual": "Diploma",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 22
+   },
+   {
+    "name": "Higher Certificate in Music",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Arts and Design",
+    "aps": 18
+   },
+   {
+    "name": "Diploma in Analytical Chemistry",
+    "qual": "Diploma",
+    "faculty": "Faculty of Science",
+    "aps": 21
+   },
+   {
+    "name": "Diploma in Biotechnology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Science",
+    "aps": 21
+   },
+   {
+    "name": "Diploma in Food Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Nature Conservation",
+    "qual": "Diploma",
+    "faculty": "Faculty of Science",
+    "aps": 24
+   }
+  ],
+  "sources": [
+   "https://www.tut.ac.za/study-at-tut/undergraduate/",
+   "https://www.tut.ac.za/programme-closing-dates/",
+   "https://www.tut.ac.za/international-office/fees/",
+   "https://www.tut.ac.za/engineering/",
+   "https://www.tut.ac.za/science/",
+   "https://www.tut.ac.za/",
+   "https://www.varsitywise.com/posts/health-sciences-at-tut-from-nursing-to-pharmacy-to-biokinetics",
+   "https://www.varsitywise.com/posts/tshwane-university-of-technology-tut-courses-tha-3/",
+   "https://www.varsitywise.com/posts/tut-courses-that-require-20-to-30-points-aps/",
+   "https://www.coursematch.co.za/blog/engineering-at-tut-programmes-requirements-and-career-opportunities",
+   "https://www.navyblue.co.za/universities/tut",
+   "https://learnerstag.org/tut-2027-applications/",
+   "https://www.coursematch.co.za/blog/tshwane-university-of-technology-2027-application-deadlines",
+   "https://www.nsfas.org.za/content/institutions.html"
+  ],
+  "flags": [
+   "feeIntl: international application fee not separately confirmed on official tut.ac.za — R240 appears to apply to all first-time applicants; international students additionally pay an annual levy of R1,820",
+   "healthSciencesCloses: 15 June 2026 confirmed for Nursing and Radiography from programme-closing-dates page; Pharmacy listed as 30 Sept 2026",
+   "APS values for several programmes sourced from third-party sites (varsitywise.com, coursematch.co.za) cross-referenced but not directly read from the official 2027 PDF (binary-encoded, not machine-readable)",
+   "Tshwane School for Business and Society — faculty listed on official undergraduate page but no programmes with APS confirmed from official source",
+   "prospectusUrl is the official 2027 First Year Course Information PDF on tut.ac.za; the traditional PART prospectus series (Part 1–9) is the 2026 series"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "VUT",
+  "name": "Vaal University of Technology",
+  "city": "Vanderbijlpark",
+  "province": "Gauteng",
+  "founded": 1966,
+  "students": 23000,
+  "website": "https://www.vut.ac.za",
+  "applyUrl": "https://vut.ac.za/how-to-apply/",
+  "prospectusUrl": "https://vut.ac.za/wp-content/uploads/2026/01/2025-GENERAL-PROSPECTUS.pdf",
+  "applicationOpens": "21 May 2026",
+  "applicationCloses": "30 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R110",
+  "feeIntl": "R110",
+  "apsSystem": "APS /42 (best 6 subjects, excluding Life Orientation)",
+  "minApsRange": "19–27+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Applied and Computer Sciences",
+   "Faculty of Engineering and Technology",
+   "Faculty of Human Sciences",
+   "Faculty of Management Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Information Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 26
+   },
+   {
+    "name": "Information Technology (Extended)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Analytical Chemistry",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Biotechnology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Agricultural Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Environmental Science",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Non-Destructive Testing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 19
+   },
+   {
+    "name": "Medical Laboratory Science",
+    "qual": "BHSc",
+    "faculty": "Faculty of Applied and Computer Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Chemical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Civil Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Industrial Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Mechanical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Metallurgical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Electronic Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Power Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Process Control Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Computer Systems Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 24
+   },
+   {
+    "name": "Operations Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 23
+   },
+   {
+    "name": "Operations Management (Extended)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering and Technology",
+    "aps": 22
+   },
+   {
+    "name": "Fashion, Photography, Graphic Design and Fine Art",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Food Service Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Tourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Public Relations Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Ecotourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Legal Assistance",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Labour Law",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Safety Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 21
+   },
+   {
+    "name": "Policing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Education (Senior Phase and FET Teaching)",
+    "qual": "BEd",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 22
+   },
+   {
+    "name": "Communication Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Human Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Financial Information Systems",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Cost and Management Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Internal Auditing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Human Resources Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Logistics and Supply Chain Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Retail Business Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   },
+   {
+    "name": "Sport Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 20
+   }
+  ],
+  "flags": [
+   "International application fee not separately confirmed — R110 cited on how-to-apply page appears to apply to all applicants but no explicit SA vs international fee split found",
+   "Prospectus URL links to 2025 General Prospectus (2027-specific prospectus PDF not yet published as of search date)",
+   "Health Sciences closing date not separately confirmed — no evidence of earlier closure for Medical Laboratory Science",
+   "Some programme-level APS values sourced from faculty pages which may reflect 2026 intake; 2027-specific PDF was not readable in binary form",
+   "Student enrolment figure of 23,000 is from homepage text ('over 23,000') — exact figure unconfirmed"
+  ],
+  "confidence": "medium",
+  "sources": [
+   "https://vut.ac.za/how-to-apply/",
+   "https://vut.ac.za/admission-requirements/",
+   "https://vut.ac.za/applied-and-computer-sciences-programme/",
+   "https://vut.ac.za/engineering-programmes-vaal-university-of-technology/",
+   "https://vut.ac.za/human-sciences-programmes-vaal-university-of-technology/",
+   "https://vut.ac.za/management-sciences-programmes-vaal-university-of-technology/",
+   "https://www.vut.ac.za/",
+   "https://vut.ac.za/wp-content/uploads/2026/03/2027-Undergraduate-Minimum-Admission-Requirements.pdf",
+   "https://vut.ac.za/wp-content/uploads/2026/01/2025-GENERAL-PROSPECTUS.pdf"
+  ]
+ },
+ {
+  "abbr": "MUT",
+  "name": "Mangosuthu University of Technology",
+  "city": "Umlazi (Durban)",
+  "province": "KwaZulu-Natal",
+  "founded": 1979,
+  "students": 13072,
+  "website": "https://www.mut.ac.za",
+  "applyUrl": "https://www.cao.ac.za",
+  "prospectusUrl": "https://www.mut.ac.za/prospective-students/apply/",
+  "applicationOpens": "1 March 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R250 (on-time via CAO); R470 late (from 1 November)",
+  "feeIntl": "R300 (on-time via CAO); R580 late (from 1 November)",
+  "apsSystem": "APS based on best 5 subjects (NSC rating scale: 90-100%=8pts down to 40-49%=3pts); minimum varies by faculty/programme",
+  "minApsRange": "20–25+",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Engineering",
+   "Faculty of Management Sciences",
+   "Faculty of Applied and Health Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Diploma in Chemical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Civil Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 20
+   },
+   {
+    "name": "Diploma in Surveying",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 20
+   },
+   {
+    "name": "Diploma in Construction Management and Quantity Surveying",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Electrical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Mechanical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Cost and Management Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Public Finance and Accounting",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Human Resource Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Office Management and Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Public Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 25
+   },
+   {
+    "name": "Diploma in Information Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Diploma in Information Technology (Extended Curriculum)",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Bachelor of Health Sciences: Medical Laboratory Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Agriculture",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Nature Conservation",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Environmental Health",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Analytical Chemistry",
+    "qual": "Diploma",
+    "faculty": "Faculty of Applied and Health Sciences",
+    "aps": 0
+   }
+  ],
+  "flags": [
+   "2027-specific APS minimums not yet published for most Engineering and Applied/Health Sciences programmes — values sourced from current/recent prospectuses which may differ for 2027 intake",
+   "CAO fee amounts (R250/R300/R470/R580) confirmed for 2026 entry structure; 2027 fee amounts assumed same but not yet officially confirmed for 2027 entry on CAO website",
+   "Prospectus URL on file (mut.ac.za/prospective-students/apply/) is a process page, not a PDF prospectus — no dedicated 2027 undergraduate prospectus PDF found yet on mut.ac.za",
+   "Health Sciences/Medical Laboratory Science minimum APS not published on official MUT department page",
+   "Engineering programme-specific APS totals not published on official MUT pages — only subject-level requirements (Math 4, Phys Sci 4, English 4) given; APS of 20 for Civil/Surveying sourced from department page",
+   "Second-semester programmes (Engineering, Analytical Chemistry) close 31 May 2026 via CAO — not reflected as a separate healthSciencesCloses field",
+   "Enrolment figure of 13,072 sourced from MUT homepage live count; may fluctuate"
+  ],
+  "sources": [
+   "https://www.mut.ac.za/",
+   "https://www.mut.ac.za/prospective-students/apply/",
+   "https://www.mut.ac.za/admission-requirements/",
+   "https://www.mut.ac.za/prospective-students/study-at-mut/how-to-apply-to-mut/",
+   "https://www.mut.ac.za/faculties/faculty-of-engineering/",
+   "https://www.mut.ac.za/faculties/department-of-civil-engineering-and-survey/",
+   "https://www.mut.ac.za/faculties/department-of-mechanical-engineering/",
+   "https://www.mut.ac.za/prospective-students/study-at-mut/study-engineering/",
+   "https://www.mut.ac.za/faculty-of-applied-and-health-sciences/department-of-information-and-communication-technology/",
+   "https://www.mut.ac.za/faculty-of-applied-and-health-sciences/department-of-biomedical-sciences/",
+   "https://www.mut.ac.za/faculty-of-management-sciences/department-of-human-resource-management/",
+   "https://www.mut.ac.za/faculty-of-management-sciences/department-of-marketing/",
+   "https://www.mut.ac.za/faculty-of-management-sciences/department-of-public-administration-and-economics/",
+   "https://www.mut.ac.za/prospective-students/study-at-mut/study-management-sciences/",
+   "https://www.mut.ac.za/important-application-documents/",
+   "https://www.cao.ac.za/",
+   "https://www.cao.ac.za/Apply.aspx?content=Apply",
+   "https://www.cao.ac.za/Apply.aspx?content=Terms",
+   "https://cao.ac.za/Institute.aspx?content=MN",
+   "https://www.cao.ac.za/download/A5_Applications%20for%202027%20Entry.pdf"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "SPU",
+  "name": "Sol Plaatje University",
+  "city": "Kimberley",
+  "province": "Northern Cape",
+  "founded": 2014,
+  "students": 7183,
+  "website": "https://www.spu.ac.za",
+  "applyUrl": "https://applications-prod.spu.ac.za/",
+  "prospectusUrl": "https://www.spu.ac.za/wp-content/uploads/2025/04/2026-Undergraduate-Prospectus.pdf",
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "31 October 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "apsSystem": "APS /42 (8-subject scale, includes Life Orientation)",
+  "minApsRange": "28–32",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Economic & Management Sciences",
+   "Faculty of Education",
+   "Faculty of Humanities",
+   "Faculty of Natural & Applied Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Commerce in Accounting",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic & Management Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Commerce in Economics and Econometrics",
+    "qual": "BCom",
+    "faculty": "Faculty of Economic & Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Public Administration",
+    "qual": "BPA",
+    "faculty": "Faculty of Economic & Management Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Arts",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Arts in Heritage Studies",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Arts in English and Creative Writing",
+    "qual": "BA",
+    "faculty": "Faculty of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Social Science",
+    "qual": "BSocSci",
+    "faculty": "Faculty of Humanities",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Education Foundation Phase (Grade R–3)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Education Intermediate Phase (Grade 4–6)",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Education Senior Phase & FET Phase",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural & Applied Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Science in Data Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural & Applied Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Science in Environmental Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Natural & Applied Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Information Technology",
+    "qual": "BIT",
+    "faculty": "Faculty of Natural & Applied Sciences",
+    "aps": 28
+   }
+  ],
+  "sources": [
+   "https://www.spu.ac.za/index.php/how-to-apply/",
+   "https://www.spu.ac.za/",
+   "https://www.spu.ac.za/index.php/admission-requirements-2/",
+   "https://www.spu.ac.za/index.php/faculty-of-edu-programmes/",
+   "https://www.spu.ac.za/index.php/prospectus-2026/",
+   "https://apply.org.za/university/spu",
+   "https://schoolhive.co.za/sol-plaatje-university-spu-2027-application-guide/",
+   "https://applyvasities.com/sol-plaatje-university-application-2027-key-dates/",
+   "https://southportal.co.za/sol-plaatje-university-courses-and-requirements/",
+   "https://www.universityinfo.co.za/institutions/spu.html"
+  ],
+  "flags": [
+   "applicationOpens: '1 April 2026' sourced from third-party aggregators (applyvasities.com, schoolhive.co.za, apply.org.za) — official SPU how-to-apply page only confirms 31 October 2026 closing date, not the opening date",
+   "Programme-level APS scores sourced from third-party sites (southportal.co.za, apply.org.za) and cross-referenced — could not be verified directly from official SPU prospectus PDF (binary/image-only)",
+   "feeIntl: Multiple sources confirm free for all applicants including international, but official SPU site does not explicitly state this for international students",
+   "BEd Foundation Phase APS may be as low as 25 on some sources — 30 used as the consistent figure from official-adjacent sources",
+   "2027 prospectus PDF not yet confirmed as a separate URL; on-file 2026 prospectus URL used"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "abbr": "UMP",
+  "name": "University of Mpumalanga",
+  "city": "Mbombela",
+  "province": "Mpumalanga",
+  "founded": 2014,
+  "students": 8000,
+  "website": "https://www.ump.ac.za",
+  "applyUrl": "https://ienabler.ump.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP",
+  "prospectusUrl": "https://www.ump.ac.za/getattachment/Study-with-us/Application-Process/Online-Applications/Undergraduate-Programmes.pdf.aspx?lang=en-US",
+  "applicationOpens": "1 June 2026",
+  "applicationCloses": "30 November 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "R200",
+  "feeIntl": "R550",
+  "apsSystem": "APS /42 (Life Orientation counted at half value; all 7 NSC subjects included)",
+  "minApsRange": "23–33",
+  "nsfasAccredited": true,
+  "faculties": [
+   "Faculty of Agriculture and Natural Sciences",
+   "Faculty of Education",
+   "Faculty of Economics, Development and Business Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Bachelor of Science",
+    "qual": "BSc",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Science in Agriculture",
+    "qual": "BSc",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Bachelor of Science in Forestry",
+    "qual": "BSc",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Agriculture in Agricultural Extension and Rural Resource Management",
+    "qual": "BAgric",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 0
+   },
+   {
+    "name": "Diploma in Agriculture in Plant Production",
+    "qual": "Diploma",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 23
+   },
+   {
+    "name": "Diploma in Animal Production",
+    "qual": "Diploma",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Information and Communication Technology",
+    "qual": "BICT",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 32
+   },
+   {
+    "name": "Diploma in ICT in Applications Development",
+    "qual": "Diploma",
+    "faculty": "Faculty of Agriculture and Natural Sciences",
+    "aps": 24
+   },
+   {
+    "name": "Bachelor of Education in Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Education",
+    "aps": 26
+   },
+   {
+    "name": "Bachelor of Arts General",
+    "qual": "BA",
+    "faculty": "Faculty of Economics, Development and Business Sciences",
+    "aps": 28
+   },
+   {
+    "name": "Bachelor of Commerce",
+    "qual": "BCom",
+    "faculty": "Faculty of Economics, Development and Business Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Bachelor of Laws",
+    "qual": "LLB",
+    "faculty": "Faculty of Economics, Development and Business Sciences",
+    "aps": 33
+   },
+   {
+    "name": "Diploma in Hospitality Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Economics, Development and Business Sciences",
+    "aps": 24
+   }
+  ],
+  "flags": [
+   "applyUrl: The on-file URL (Online-Applications page) redirects to a general info page; the direct iEnabler application portal URL is used instead — verify this is the correct direct application link",
+   "students: On-file figure of ~5000 is outdated; UMP had ~7100 in 2022 and targeted ~8000 for 2023 — used ~8000 as estimate; no more recent official headcount confirmed",
+   "BAgric Agricultural Extension APS not confirmed from official programme page (404 error returned)",
+   "SADC fee of R400 confirmed from official site but not included in schema field — feeSA field reflects SA-citizen rate only",
+   "prospectusUrl: The PDF is a binary download; may not render in browser — verify accessibility",
+   "No Health Sciences or Medicine faculty at UMP; healthSciencesCloses left empty"
+  ],
+  "confidence": "high",
+  "sources": [
+   "https://www.ump.ac.za/Study-with-us/Application-Process/Online-Applications",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Biology-and-Environmental-Sciences/Bachelor-of-Science-Degree.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Education/School-of-Early-Childhood-Education/Bachelor-of-Education-in-Foundation-Phase-Teaching.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Social-Sciences/Bachelor-of-Arts-General.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Development-Studies/Bachelor-of-Commerce.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Development-Studies/Bachelor-of-Laws.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Computing-and-Mathematical-Sciences/Diploma-in-ICT-in-Applications-Development.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Computing-and-Mathematical-Sciences/Bachelor-of-Information-and-Communication-Technolo.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Agricultural-Sciences/Diploma-in-Agriculture-in-Plant-Production.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Agricultural-Sciences/Diploma-in-Animal-Production.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Agricultural-Sciences/Bachelor-of-Science-in-Agriculture.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Agriculture-and-Natural-Sciences/School-of-Agricultural-Sciences/Bachelor-of-Science-in-Forestry.aspx",
+   "https://www.ump.ac.za/Study-with-us/Faculties-and-Schools/Faculty-of-Economics,-Development-and-Business-Sci/School-of-Hospitality-and-Tourism-Management/Diploma-in-Hospitality-Management.aspx",
+   "https://www.ump.ac.za/News-and-Events/News/2023/UMP-BECOMES-UNIVERSITY-OF-CHOICE",
+   "https://www.ump.ac.za/About-us/Annual-Report.aspx"
+  ]
+ },
+ {
+  "abbr": "CUT",
+  "name": "Central University of Technology, Free State",
+  "city": "Bloemfontein",
+  "province": "Free State",
+  "website": "https://www.cut.ac.za",
+  "founded": 1981,
+  "students": 22380,
+  "nsfasAccredited": true,
+  "applicationOpens": "1 April 2026",
+  "applicationCloses": "30 September 2026",
+  "healthSciencesCloses": "",
+  "feeSA": "Free",
+  "feeIntl": "Free",
+  "applyUrl": "https://enroll.cut.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP",
+  "prospectusUrl": "https://www.cut.ac.za/programmes-offered",
+  "apsSystem": "APS /48 (8-point scale per subject; Life Orientation counts max 1 point)",
+  "minApsRange": "27–32+",
+  "faculties": [
+   "Faculty of Engineering, Built Environment and Information Technology",
+   "Faculty of Health and Environmental Sciences",
+   "Faculty of Humanities",
+   "Faculty of Management Sciences"
+  ],
+  "programmes": [
+   {
+    "name": "Information Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Information Technology",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Computer Networking",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Construction",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Renewable Energy Technologies",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Construction Management",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Health and Safety Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Health and Safety Management",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Civil Engineering",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Quantity Surveying",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 28
+   },
+   {
+    "name": "Hydrology and Water Resources Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Electrical Engineering",
+    "qual": "Diploma",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Electrical Engineering",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Mechanical Engineering",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Mechanical Engineering",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 32
+   },
+   {
+    "name": "Mathematics for Engineering Technology",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Engineering, Built Environment and Information Technology",
+    "aps": 27
+   },
+   {
+    "name": "Dental Assisting",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Agricultural Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Somatology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Health Sciences in Clinical Technology",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Health Science: Medical Laboratory Sciences",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Environmental Health",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Health and Environmental Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Design and Studio Art",
+    "qual": "Diploma",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Language Practice and Media Studies",
+    "qual": "Diploma",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Foundation Phase Teaching",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Computer Science Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Economic and Management Sciences Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Language Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Mathematics Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Natural Sciences Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Technology Education (SP & FET)",
+    "qual": "BEd",
+    "faculty": "Faculty of Humanities",
+    "aps": 27
+   },
+   {
+    "name": "Community Development Work",
+    "qual": "Higher Certificate",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Human Resources Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Marketing",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Office Management and Technology",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Public Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Hospitality Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Tourism Management",
+    "qual": "Diploma",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   },
+   {
+    "name": "Accountancy",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Internal Auditing",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 30
+   },
+   {
+    "name": "Hospitality Management",
+    "qual": "Bachelor",
+    "faculty": "Faculty of Management Sciences",
+    "aps": 27
+   }
+  ],
+  "sources": [
+   "https://www.cut.ac.za/application-process",
+   "https://www.cut.ac.za/programmes-offered",
+   "https://www.cut.ac.za/admission-points-ap",
+   "https://www.cut.ac.za/cut-at-a-glance",
+   "https://www.cut.ac.za/faculty",
+   "https://www.cut.ac.za/nsfas",
+   "https://www.cut.ac.za/announcements/166",
+   "https://askcut.cut.ac.za/support/solutions/articles/103000016975-closing-date-for-cut-online-applications-for-local-and-international-",
+   "https://askcut.cut.ac.za/support/solutions/articles/103000016976-is-the-university-taking-any-late-application-or-walk-ins-"
+  ],
+  "flags": [
+   "Per-programme APS values above 27 (e.g. 28, 30, 32) are drawn from the cut.ac.za/programmes-offered page as AI-rendered; CUT's official admission-points-ap page only confirms the 27-point general minimum — verify exact per-programme thresholds from the official CUT Calendar or faculty pages",
+   "International application fee confirmed as free from the general announcement (cut.ac.za/announcements/166) but no specific 2027 international-student fee schedule was found — flag if a processing fee applies",
+   "CUT was established via merger in 2004 but its predecessor (Technikon Free State) opened in 1981 — founded year of 1981 used to reflect institutional lineage as commonly cited",
+   "Health Sciences early closing date not found on official site — all programmes share 30 September 2026 deadline per official sources",
+   "Application open date of 1 April 2026 confirmed by third-party sources (coursematch.co.za) but not explicitly stated on the official cut.ac.za application-process page — verify directly"
+  ],
+  "confidence": "medium"
+ }
+]

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /apply/logos/
+
+Sitemap: https://www.saus.org.za/sitemap.xml
