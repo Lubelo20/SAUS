@@ -69,29 +69,33 @@
         (p.university ? '<div class="team-card-uni" style="font-size:12px;color:var(--text-lt);margin-top:2px">' + esc(p.university) + '</div>' : '') +
         '</div></div>';
     },
-    // news → .news-card (generic article card)
+    // news → .news-item (news/index.html "Latest Statements" list)
     news: function (a) {
-      var cover = a.coverImage
-        ? '<div class="news-card-img"><img src="' + esc(a.coverImage) + '" alt="' + esc(a.title) + '" loading="lazy" decoding="async"></div>' : '';
-      var meta = [a.category && a.category.name, fmtDate(a.publishedAt)].filter(Boolean).map(esc).join(' · ');
-      return '<article class="news-card">' + cover +
-        '<div class="news-card-body">' +
-        (meta ? '<div class="news-card-meta">' + meta + '</div>' : '') +
-        '<h3 class="news-card-title">' + esc(a.title) + '</h3>' +
-        (a.excerpt ? '<p class="news-card-excerpt">' + esc(a.excerpt) + '</p>' : '') +
-        '</div></article>';
+      var d = a.publishedAt ? new Date(a.publishedAt) : null;
+      var day = d ? d.getDate() : '';
+      var mon = '';
+      try { mon = d ? d.toLocaleString('en-ZA', { month: 'short' }) + " '" + String(d.getFullYear()).slice(2) : ''; } catch (e) {}
+      var cat = (a.category && a.category.name) || 'Newsroom';
+      return '<div class="news-item">' +
+        '<div class="news-date-col"><div class="news-day">' + esc(day) + '</div><div class="news-month">' + esc(mon) + '</div></div>' +
+        '<div style="flex:1">' +
+        '<div style="display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap"><div class="news-type">' + esc(cat) + '</div></div>' +
+        '<div class="news-title">' + esc(a.title) + '</div>' +
+        (a.excerpt ? '<div class="news-excerpt">' + esc(a.excerpt) + '</div>' : '') +
+        '</div></div>';
     },
-    // campaigns → .campaign-card
-    campaigns: function (c) {
-      var img = c.graphic
-        ? '<div class="campaign-card-img"><img src="' + esc(c.graphic) + '" alt="' + esc(c.title) + '" loading="lazy" decoding="async"></div>' : '';
+    // campaigns → .resolution card (campaigns/index.html)
+    campaigns: function (c, i) {
+      var num = ('0' + ((i || 0) + 1)).slice(-2);
+      var dates = [fmtDate(c.startDate), fmtDate(c.endDate)].filter(Boolean).join(' – ');
       var cta = c.ctaUrl
-        ? '<a class="btn btn-green btn-sm" href="' + esc(c.ctaUrl) + '">' + esc(c.ctaLabel || 'Learn more') + '</a>' : '';
-      return '<div class="campaign-card">' + img +
-        '<div class="campaign-card-body">' +
-        '<h3 class="campaign-card-title">' + esc(c.title) + '</h3>' +
-        (c.description ? '<p class="campaign-card-desc">' + esc(c.description) + '</p>' : '') +
-        cta + '</div></div>';
+        ? '<div class="resolution-footer"><a class="btn btn-green btn-sm" href="' + esc(c.ctaUrl) + '">' + esc(c.ctaLabel || 'Learn more') + ' →</a></div>' : '';
+      return '<div class="resolution"><div class="resolution-head"><div class="res-num green">RES ' + num + '</div><div>' +
+        '<div class="resolution-title">' + esc(c.title) + '</div>' +
+        '<div class="resolution-meta"><span>Status: <strong>Active</strong></span>' + (dates ? '<span>' + esc(dates) + '</span>' : '') + '</div>' +
+        '</div></div>' +
+        (c.description ? '<div class="resolution-body"><p>' + esc(c.description) + '</p></div>' : '') +
+        cta + '</div>';
     }
   };
 

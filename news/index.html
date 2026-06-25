@@ -383,7 +383,7 @@ main{min-height:100vh;padding-top:var(--total-top)}
             </div>
           </div>
 
-          <div>
+          <div id="news-list">
             <div class="news-item">
               <div class="news-date-col"><div class="news-day">14</div><div class="news-month">Jul '25</div></div>
               <div style="flex:1">
@@ -557,7 +557,7 @@ function acceptC(){localStorage.setItem('saus_gov_cookie','accepted');document.g
 function declineC(){localStorage.setItem('saus_gov_cookie','declined');document.getElementById('cookie').classList.remove('show')}
 </script>
 <script src="/assets/cms.js"></script>
-<script>document.addEventListener("DOMContentLoaded",function(){if(window.SAUS_CMS)SAUS_CMS.announcement();});</script>
+<script>document.addEventListener("DOMContentLoaded",function(){if(window.SAUS_CMS){SAUS_CMS.hydrate('news','#news-list',SAUS_CMS.render.news);SAUS_CMS.announcement();}});</script>
 <script>(function(){var h=location.hostname;var u=(h==='localhost'||h==='127.0.0.1'||h==='')?'http://localhost:3100':'https://saus-admin.vercel.app';document.querySelectorAll('a.admin-link').forEach(function(a){a.href=u;});})();</script>
 </body>
 </html>
