@@ -44,6 +44,18 @@
     "universitiesBudgetDeficit2025Rands": 1400000000,
     "note": "DHET (Vote: Higher Education) covers university subsidies, NSFAS transfers, TVET & CET colleges, SETAs and the National Skills Fund."
   },
+  "perUniversity": {
+    "_note": "Per-university NSFAS beneficiary counts are NOT published in a consolidated, current form. Counts vary enormously between institutions (e.g. TUT ~30,000 vs Stellenbosch ~5,000), so extrapolating from a national rate is unreliable and is NOT done here. Only individually-sourced figures are listed; the remaining universities do not publish a comparable figure. Each university's total enrolment is in its info.json (students).",
+    "benchmarks": {
+      "minimumShare": "Parliament: no university funds fewer than 50% of its students via NSFAS — but research-intensive universities are lower in practice (Stellenbosch ~5,000 of ~33,000 ≈ 15%).",
+      "concentration": "The majority of NSFAS beneficiaries are at universities (vs TVET colleges); the largest numbers are at Gauteng institutions.",
+      "approved2026": "1.24 million+ students approved for 2026 funding; R6.3 billion disbursed early 2026; ~660,000 cleared and ~190,000 did not meet the academic criteria."
+    },
+    "verified": [
+      { "abbr": "TUT", "name": "Tshwane University of Technology", "nsfasStudents": "~30,000", "year": "2024", "note": "~30,000 students assisted with more than R1.4 billion in financial aid annually", "source": "TUT / FundiConnect" },
+      { "abbr": "SU", "name": "Stellenbosch University", "nsfasStudents": "~5,000", "year": "2024", "note": "~5,000 registered NSFAS-funded students (subject to change during the funding cycle)", "source": "Daily Maverick" }
+    ]
+  },
   "sources": [
     { "label": "NSFAS — official site & DHET Bursary Scheme", "url": "https://www.nsfas.org.za/" },
     { "label": "Over one million students provisionally funded by NSFAS (SAnews)", "url": "https://www.sanews.gov.za/south-africa/over-one-million-students-provisionally-funded-nsfas" },
@@ -52,6 +64,10 @@
     { "label": "Government to increase spending on learning and culture (SAnews)", "url": "https://www.sanews.gov.za/south-africa/government-increase-spending-learning-and-culture" },
     { "label": "NSFAS: 36,000+ students still without beds in 2024 (Daily Maverick)", "url": "https://www.dailymaverick.co.za/article/2024-02-15-nsfas-reveals-myriad-challenges-with-over-36-000-students-still-without-beds-in-2024/" },
     { "label": "Student housing backlog & private accommodation (Daily Maverick / DHET)", "url": "https://www.dhet.gov.za/ResearchNew/39.%20Student%20housing%20at%20South%20African%20universities.pdf" },
-    { "label": "Registering accommodation with NSFAS", "url": "https://www.nsfas.org.za/content/studentacom.html" }
+    { "label": "Registering accommodation with NSFAS", "url": "https://www.nsfas.org.za/content/studentacom.html" },
+    { "label": "TUT financial aid (~30,000 students assisted) — FundiConnect", "url": "https://fundiconnect.co.za/institutions/tshwane-university-of-technology-tut" },
+    { "label": "Stellenbosch ~5,000 NSFAS students — Daily Maverick", "url": "https://www.dailymaverick.co.za/article/2024-02-16-from-stellies-to-wits-nsfass-caps-on-accommodation-allowances-fuel-tension-at-universities-across-sa/" },
+    { "label": "No university funds <50% via NSFAS; 2026 approvals — Parliament / IOL", "url": "https://iol.co.za/news/south-africa/2026-03-05-nsfas-disburses-over-r63-billion-as-more-than-124-million-students-approved-for-2026-funding/" },
+    { "label": "NSFAS Vital Statistics 2018 (provincial split, female/African majority)", "url": "https://www.nsfas.org.za/content/reports/researchreport_vital%20Statistics.pdf" }
   ]
 }
