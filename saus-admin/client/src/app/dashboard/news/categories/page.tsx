@@ -121,7 +121,7 @@ export default function NewsCategoriesPage() {
             <button onClick={() => setShowForm(true)} className="btn-primary btn-sm">Create first category</button>
           </div>
         ) : (
-          <table className="w-full table-base">
+          <div className="overflow-x-auto"><table className="w-full table-base">
             <thead>
               <tr>
                 <th>Category</th>
@@ -155,7 +155,7 @@ export default function NewsCategoriesPage() {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table></div>
         )}
       </div>
     </div>

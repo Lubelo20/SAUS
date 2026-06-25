@@ -120,7 +120,7 @@ export default function DashboardPage() {
       <div className="grid lg:grid-cols-3 gap-4">
         {/* Chart */}
         <div className="card p-5 lg:col-span-2">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <div>
               <h3 className="font-semibold text-navy text-sm">Website Traffic</h3>
               <p className="text-xs text-gray-400">Monthly page views</p>
@@ -153,7 +153,7 @@ export default function DashboardPage() {
 
         {/* Recent News */}
         <div className="card p-5">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <h3 className="font-semibold text-navy text-sm">Recent Articles</h3>
             <Link href="/dashboard/news" className="text-xs text-navy/50 hover:text-navy transition-colors">View all</Link>
           </div>
@@ -208,7 +208,7 @@ export default function DashboardPage() {
 
         {/* Activity Feed */}
         <div className="card p-5 lg:col-span-2">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <h3 className="font-semibold text-navy text-sm">Recent Activity</h3>
             <span className="text-xs text-gray-400 font-mono">Audit Log</span>
           </div>

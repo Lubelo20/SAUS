@@ -279,7 +279,7 @@ export default function NsfasEditorPage() {
   return (
     <div className="space-y-4 max-w-4xl">
       {/* Header */}
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <button onClick={() => router.push('/dashboard/pages')} className="btn-ghost btn-icon">
             <ArrowLeft className="w-4 h-4" />

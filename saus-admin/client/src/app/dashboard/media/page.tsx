@@ -86,7 +86,7 @@ export default function MediaPage() {
       {/* ── Main panel ── */}
       <div className="flex-1 flex flex-col min-w-0 space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <div className="text-[10px] font-mono tracking-[0.15em] uppercase text-navy/40 mb-1">SAUS/CMS/MEDIA</div>
             <h1 className="text-xl font-bold text-navy">Media Library</h1>
@@ -151,7 +151,7 @@ export default function MediaPage() {
             ))}
           </div>
         ) : (
-          <div className="card overflow-hidden overflow-y-auto">
+          <div className="card overflow-x-auto">
             <table className="w-full table-base">
               <thead><tr><th>File</th><th>Type</th><th>Size</th><th>Uploaded</th><th>Actions</th></tr></thead>
               <tbody>

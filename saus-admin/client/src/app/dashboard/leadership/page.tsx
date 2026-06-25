@@ -141,7 +141,7 @@ export default function LeadershipPage() {
             <button onClick={openNew} className="btn-primary btn-sm">Add first leader</button>
           </div>
         ) : (
-          <table className="w-full table-base">
+          <div className="overflow-x-auto"><table className="w-full table-base">
             <thead>
               <tr>
                 <th className="w-8"></th>
@@ -188,7 +188,7 @@ export default function LeadershipPage() {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table></div>
         )}
       </div>
     </div>
